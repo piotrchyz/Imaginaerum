@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="20.1">
+    <meta>
+        <filters directoryPatterns="" filePatterns="energo80_oxygen_imaginaerum.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="energo80_oxygen_imaginaerum.xpr">
+        <folder path="."/>
+    </projectTree>
+</project>

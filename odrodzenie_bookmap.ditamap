@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <booklibrary>Życie i dramaty</booklibrary>
+        <mainbooktitle>Odrodzenie</mainbooktitle>
+        <booktitlealt>Takie tam odrodzenie</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <author>Piotr</author>
+        <authorinformation>
+            <personinfo>
+                <addressdetails>Gdańsk</addressdetails>
+            </personinfo>
+        </authorinformation>
+        <bookrights>
+            <bookowner>
+                <person>Piotr</person>
+            </bookowner>
+        </bookrights>
+    </bookmeta>
+    <frontmatter>
+        <bookabstract href="abstract.dita"/>
+    </frontmatter>
+    <chapter>
+        <mapref href="Odrodzenie.ditamap"/>
+    </chapter>
+    <appendix href="zawarto.dita"/>
+</bookmap>

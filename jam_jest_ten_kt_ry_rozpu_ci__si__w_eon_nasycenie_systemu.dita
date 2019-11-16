@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="section_bzt_311_tjb">
+   <title>Nasycenie systemu</title>
+   <body>
+            
+            <p>System był nienasycony. Brał zawsze tyle ile zostało mu dane, rozrastał się z każdym
+                cyklem i dzielił swoje wątki, a te dzieliły się znowu na następne –<equation-inline>
+                    wirtualność tych procesów przenikała się z rzeczywistością, tak że po dziesięciu
+                    latach nie można było się już niczego w tym dopatrzyć, albo też dopatrzyć się
+                    wszystkiego</equation-inline> – <equation-inline>zdania bowiem były
+                    podzielone</equation-inline>. System stał się pierwszym wynalazkiem ludzkości,
+                który przerósł swoich twórców, tak przynajmniej twierdziło SBS (Stowarzyszenie Badań
+                nad Systemem).<cite>System to postępujący proces, a my staliśmy się od niego
+                    zależni, ponieważ jesteśmy jego częścią. Nasza kora mózgowa odbiera jego
+                    wibrację i dostraja się na poziomie podświadomym do jego działania, zupełnie
+                    jakby zachodziła pomiędzy nimi jakaś niezrozumiałą dla nas komunikacja
+                        <equation-inline>powiedział dr David Wright, przewodniczący
+                        SBS.</equation-inline>
+                </cite>
+      </p>
+        </body>
+</topic>

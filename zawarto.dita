@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="zawarto">
+    <title>Zawartość</title>
+    <related-links>
+        <linklist>
+            <title>to jest to coś</title>
+            <link href="przeslanie.dita"/>
+            <linkinfo>Coś co jest tym czymś</linkinfo>
+        </linklist>
+        <linklist>
+            <title>no i początek</title>
+            <link href="jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita"/>
+            <linkinfo>Warte i zwarte</linkinfo>
+        </linklist>
+    </related-links>
+</topic>
