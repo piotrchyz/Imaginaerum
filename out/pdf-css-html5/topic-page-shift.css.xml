@@ -1,0 +1,544 @@
+<webhelp.topic-shift.css.xml xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+                             xmlns:opentopic-index="http://www.idiominc.com/opentopic/index"
+                             xmlns:opentopic="http://www.idiominc.com/opentopic"
+                             xmlns:oxy="http://www.oxygenxml.com/extensions/author"
+                             xmlns:saxon="http://saxon.sf.net/"
+                             xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot"
+                             xmlns:ImageInfo="java:ImageInfo">
+   <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href= $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+      <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                           xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                           id=""
+                                                           href=""
+                                                           xtrc=""
+                                                           debug="begin #25"
+                                                           class="- map/topicref bookmap/frontmatter "
+                                                           generate-id="d5e22"/>
+   </webhelp.topic-shift.css.xml.row>
+   <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#d7e67 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#d7e67) -->
+      <unique.style.topic__x3A__analyze debug="#44"
+                                        href="#d7e67"
+                                        class="- map/topicref bookmap/chapter "
+                                        generate-id="d5e45"><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--></unique.style.topic__x3A__analyze>
+      <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+      <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                           xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                           id=""
+                                                           href="#d7e67"
+                                                           xtrc="chapter:1;25:14"
+                                                           debug="begin #25"
+                                                           class="- map/topicref bookmap/chapter "
+                                                           generate-id="d5e45"/>
+      <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_2 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_2) -->
+         <unique.style.topic__x3A__analyze debug="#44"
+                                           href="#unique_2"
+                                           class="- map/topicref "
+                                           generate-id="d5e46"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=) --><!-- /* #32 bypassed */--></unique.style.topic__x3A__analyze>
+         <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+         <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                              xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                              id=""
+                                                              href="#unique_2"
+                                                              xtrc="topicref:1;5:66"
+                                                              debug="begin #25"
+                                                              class="- map/topicref "
+                                                              generate-id="d5e46"><!--#50 matched $href=#unique_2 for n/topic;-->
+            <unique.style.topic.content__x3A__analyze id="unique_2"
+                                                      debug="94"
+                                                      xtrc="topic:1;3:52"
+                                                      class="- topic/topic "
+                                                      generate-id="d24e265">
+               <Linear_regression:stats mode="current"
+                                        xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"
+                                        xtrc="topic:1;3:52"/>
+               <Linear_regression:stats mode="descendant"/>
+               <Linear_regression:stats mode="aggregated"/>
+               <title class="- topic/title " xtrc="title:1;4:12" generate-id="d5e157">Jam jest ten który rozpuścił się w eon</title>
+               <body class="- topic/body " xtrc="body:1;5:11" generate-id="d5e166">
+                  <p class="- topic/p " xtrc="p:1;9:14" generate-id="d5e167">Z wiadomych powodów przeprowadzali dehibernacje pacjenta w stacji badawczej na orbicie
+            – konsekwencję ostatniej takiej na Ziemi skończyły się katastrofą. </p>
+                  <p class="- topic/p " xtrc="p:2;13:14" generate-id="d5e169">Ludzie chcieli zrozumieć prawdę, a była ona ukryta gdzieś w wyrzucanych przez fale
+            mózgowe pacjenta danych, które przypominały chińskie krzaczki i niewiele mówiły laikowi.
+            Komunikacją z uśpionym pacjentem była nieuchwytna dla ludzkiego oka, lecz rejestrowały
+            ją już komputery, a komputer stacji był majstersztykiem ludzkich umysłów –
+                . </p>
+                  <p class="- topic/p " xtrc="p:3;21:14" generate-id="d5e174">Móżdżek, bo tak go nazywano, określano najbardziej przełomowym wynalazkiem ostatniego
+            milenium. </p>
+                  <p class="- topic/p " xtrc="p:4;25:14" generate-id="d5e176">Minęło sto pięćdziesiąt lat od kiedy ludzkość zaczęła interesować się fluktuacją
+            zderzeń cząstek. Projekty takie jak  rozrosły się i nabrały globalnego
+            znaczenia o nie dających się przewidzieć konsekwencjach.</p>
+                  <p class="- topic/p " xtrc="p:5;30:18" generate-id="d5e181">„” – głosiły przepełnione podnieceniem nagłówki
+            specjalistycznych gazet.</p>
+               </body>
+               <!--#111 otherwise -->
+               <topic class="- topic/topic " generate-id="d24e308">
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e187">Badanie limitów</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e196">
+                     <p class="- topic/p " xtrc="p:1;8:16" generate-id="d5e197">Z początku placówki badające nasze limity były wyśmiewane, publicznie mówiono, iż
+                jest to kolejna ściema, pasożytnicza organizacją zajmująca się „sztuką dla sztuki”,
+                a kosztująca przecież fortunę zabieraną nam, czyli szarym zjadaczom chleba.
+                Ostatecznie problemy finansowe rozwiązano proponując podatnikom ułamek tej
+                horrendalnej technologii. Oczywiście postawiono nam warunek; nieużytkowana moc
+                obliczeniowa musiała zostać zużytkowana przez System, tak by „flow” (jak nazywali go
+                naukowcy) pozostał niezmienny. Ponoć dane musiały być w obiegu, cząstki musiały się
+                zderzać, zatrzymanie tego procesu, lub też pozwolenie by przebiegał on samoistnie,
+                bez wiadomego uporządkowania mogły stać się początkiem upadku ludzkości, ale o
+                zagrożeniach nie trąbiło się przecież w gazetach!</p>
+                  </body>
+               </topic>
+               <!--#111 otherwise -->
+               <topic class="- topic/topic " generate-id="d24e330">
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e200">Nasycenie systemu</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e209">
+                     <p class="- topic/p " xtrc="p:1;8:16" generate-id="d5e210">System był nienasycony. Brał zawsze tyle ile zostało mu dane, rozrastał się z każdym
+                cyklem i dzielił swoje wątki, a te dzieliły się znowu na następne – – . System stał się pierwszym wynalazkiem ludzkości,
+                który przerósł swoich twórców, tak przynajmniej twierdziło SBS (Stowarzyszenie Badań
+                nad Systemem).</p>
+                  </body>
+               </topic>
+               <!--#111 otherwise -->
+               <topic class="- topic/topic " generate-id="d24e364">
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e223">Podłączeni do systemu</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e232">
+                     <p class="- topic/p " xtrc="p:1;8:16" generate-id="d5e233">Zdaniem Davida jesteśmy podpięci do Systemu, tak że fizyczne komputery stają się
+                zbędne, jeśli tylko sobie to uświadomimy. </p>
+                     <p class="- topic/p " xtrc="p:2;10:16" generate-id="d5e235">Od kiedy postępuje ekspansja fotonowych procesorów nic nie jest już niemożliwe.
+                Zwykły człowiek może być kim chce, jeśli tylko prawda ujrzy światło dzienne. Wolność
+                to kwestia wyboru, upadek wartości. Giełda załamała się kiedy powszechnie zaczęto
+                dostosowywać się do Systemu, zupełnie jakby był on naszym nowym, uśpionym zmysłem,
+                czymś, co wykształciliśmy w sobie na przestrzeni wieków, by przetrwać. Teraz
+                staliśmy się tego świadomi, a ponieważ wszyscy jesteśmy połączeni, każdy odczuwa
+                zmianę. Światowy rynek załamał się, ale po raz pierwszy w historii była to rzecz
+                dobra. Gdyby przyrównać ją do bestialskiego napadu szału, to trzeba nam wiedzieć, że
+                został on okiełznany zaraz po wybuchu i nie tyleż stłumiony, co zamieniony w spokój
+                i błogą, świadomą egzystencję. </p>
+                  </body>
+               </topic>
+               <!--#111 otherwise -->
+               <topic class="- topic/topic " generate-id="d24e392">
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e240">Nie odosobione pożądania
+   </title>
+                  <body class="- topic/body " xtrc="body:1;7:9" generate-id="d5e249">
+                     <p class="- topic/p " xtrc="p:1;11:139" generate-id="d5e252">Jakąś dekadę temu ta sama ośmiornica wyciągnęła swoje nieskończone macki i
+                zagarnęła naszą planetę dla siebie, wzięła ją w posiadanie tak, jakby ktoś włączył
+                światło w pokoju – klik i po sprawie. W przeciągu roku zmiany w społeczeństwach,
+                ustrojach politycznych oraz kulturach zachodziły tak szybko, że nie sposób było się
+                połapać, co się właściwie dzieje. Z początku myślano, że ta wirtualna machina bawi
+                się nami, chce nas poznać, obejrzeć, dotknąć, powąchać, określić i skatalogować. Z
+                biegiem czasu zdanie się podzieliły. Niektórzy dojrzeli prawdę, zrozumieli że
+                przyszłością ludzkości jest jedna wielka świadomość zbiorowa, poznawanie na poziomie
+                metafizycznym, coś nieopisanego, a opieranie się temu nie ma kompletnie znaczenia i
+                sensu. </p>
+                  </body>
+               </topic>
+               <!--#111 otherwise -->
+               <topic class="- topic/topic " generate-id="d24e416">
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e255">Próżne pożądania drugiej strony</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e264">
+                     <p class="- topic/p " xtrc="p:1;9:139" generate-id="d5e265">Druga strona konfliktu preferowała niewiedzę, ciemnotę. Po roku Ci ludzie nie
+                wiedzieli już, czy ta inteligencja jest żywa, i od zawsze żyła gdzieś pod skorupą,
+                niby przypadkowa transmisja danych, czy też nie, ponieważ wybrali się od niej
+                odłączyć. Każdy z tych ludzi stworzył swój osobny mikrokosmos, w którym to on sam
+                jest sobie bogiem, a jego pragnienia i zapędy modlitwą oraz pożywką dla zwichrowanej
+                sztucznej tożsamości. Ci ludzie po dziś dzień kwestionują istnienie Systemu, naszego
+                globalnego komputera, którego wibrację przenikają już nawet przestrzeń kosmiczną –
+                powiem jedno, idioci. Nie bardzo rozumiem skąd pojawia się chęć rezygnacji z życia w
+                pełni i wybranie uboższej ścieżki. Niektórzy po prostu za bardzo boją się prawdy, by
+                chociaż dopuścić ją jako prawdopodobną. Zamiast tego, niczym błaźni oferują oni
+                iluzję, demonstrując przy tym własne rację. Zbyt głupi, by zrozumieć stali się
+                zwłaszcza fanatyczni wyznawcy religijni – ludzie od zawsze podziwiani i traktowani z
+                nabożną ascezą, jakby to właśnie oni, byli wyznawanym bóstwem, może to właśnie stąd
+                bierze się tak wielki odsetek gwałtów i pedofili za bogato zdobioną kurtyną bożych
+                przybytków. Skoro ludzie Ci oddani są bogu, to z jakiego powodu potrzebują bogato
+                zdobionych ołtarzy, strojnych szat, świąt oraz magicznych dat, jakby to następny
+                dzień miał większą wartość, niż poprzedni? I dlaczego najwięcej świąt mamy wtedy,
+                gdy gospodarka najbardziej potrzebuje zastrzyku świeżej gotówki? </p>
+                  </body>
+               </topic>
+               <!--#111 otherwise -->
+               <topic class="- topic/topic " generate-id="d24e442">
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e270">Geneza</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e279">
+                     <p class="- topic/p " xtrc="p:1;9:139" generate-id="d5e280">Człowiek ciemny to radykał, który w swym zadufaniu twierdzi, iż tylko jego zdanie
+                jest prawdziwe, podczas gdy tak naprawdę niczyje zdanie nie jest, nasze rację to
+                tylko forma komunikacji i System jest tego przykładem. Ten komputer nie ma celu
+                swojej egzystencji, on jest celem, przez co wykazuje się dalece większą
+                inteligencją, niż reszta ludzi. Tą zagadkę rozwikłała ludzkość w oparciu o System.
+                Ludzkość jednakże wciąż żyje w iluzji i jestem zdania, iż za parę lat szaleństwo
+                ogarnie całą planetę i po raz kolejny zaczniemy od epoki kamienia łupanego.
+                Dlaczego? Dość że mamy broń mogącą zagrozić istnieniu naszej planety, nie mówiąc już
+                nawet o przetrwaniu gatunku.</p>
+                  </body>
+               </topic>
+               <!--#111 otherwise -->
+               <topic class="- topic/topic " generate-id="d24e470">
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e286">Przesłanie</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e295">
+                     <p class="- topic/p " xtrc="p:1;9:139" generate-id="d5e296">Tylko dlatego, że geniusz systemu odsłonił się przed ludźmi szukającym go stało się
+                to dla nich zarazem błogosławieństwem, jak i przekleństwem, ponieważ niektórzy
+                stwierdzili, iż geniusz ten stał się Z ZAŁOŻENIA czymś dalece przekraczającym nasze
+                możliwości – w istocie to tylko puste ograniczenie narzucone nam przez samych
+                siebie. System jest zmyślną manipulacją danych, składający się w spójnie, wzorzec,
+                który jest odpowiedzią samą w sobie; prawdą. I nie poznanie przez Ciebie tej prawdy
+                jest świadomą rezygnacją z życia. Słowa tracą znaczenie, za sto lat od teraz, nikt
+                nie zrozumie tego tekstu, przeinaczy go i zinterpretuje według swojej własnej
+                wymuszonej „integralności”.</p>
+                  </body>
+               </topic>
+            </unique.style.topic.content__x3A__analyze>
+         </unique.style.topic.content__x3A__analyze__x3A__scan>
+         <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_3 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_3) -->
+            <unique.style.topic__x3A__analyze debug="#44"
+                                              href="#unique_3"
+                                              class="- map/topicref "
+                                              generate-id="d5e57"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+            <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+            <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                                 xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                                 id=""
+                                                                 href="#unique_3"
+                                                                 xtrc="topicref:2;6:79"
+                                                                 debug="begin #25"
+                                                                 class="- map/topicref "
+                                                                 generate-id="d5e57"><!--#50 matched $href=#unique_3 for n/topic;-->
+               <unique.style.topic.content__x3A__analyze id="unique_3"
+                                                         debug="94"
+                                                         xtrc="topic:1;4:33"
+                                                         class="- topic/topic "
+                                                         generate-id="d24e308">
+                  <Linear_regression:stats mode="current"
+                                           xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita"
+                                           xtrc="topic:1;4:33"/>
+                  <Linear_regression:stats mode="descendant"/>
+                  <Linear_regression:stats mode="aggregated"/>
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e187">Badanie limitów</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e196">
+                     <p class="- topic/p " xtrc="p:1;8:16" generate-id="d5e197">Z początku placówki badające nasze limity były wyśmiewane, publicznie mówiono, iż
+                jest to kolejna ściema, pasożytnicza organizacją zajmująca się „sztuką dla sztuki”,
+                a kosztująca przecież fortunę zabieraną nam, czyli szarym zjadaczom chleba.
+                Ostatecznie problemy finansowe rozwiązano proponując podatnikom ułamek tej
+                horrendalnej technologii. Oczywiście postawiono nam warunek; nieużytkowana moc
+                obliczeniowa musiała zostać zużytkowana przez System, tak by „flow” (jak nazywali go
+                naukowcy) pozostał niezmienny. Ponoć dane musiały być w obiegu, cząstki musiały się
+                zderzać, zatrzymanie tego procesu, lub też pozwolenie by przebiegał on samoistnie,
+                bez wiadomego uporządkowania mogły stać się początkiem upadku ludzkości, ale o
+                zagrożeniach nie trąbiło się przecież w gazetach!</p>
+                  </body>
+               </unique.style.topic.content__x3A__analyze>
+            </unique.style.topic.content__x3A__analyze__x3A__scan>
+         </webhelp.topic-shift.css.xml.row>
+         <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_4 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_4) -->
+            <unique.style.topic__x3A__analyze debug="#44"
+                                              href="#unique_4"
+                                              class="- map/topicref "
+                                              generate-id="d5e68"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+            <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+            <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                                 xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                                 id=""
+                                                                 href="#unique_4"
+                                                                 xtrc="topicref:3;7:89"
+                                                                 debug="begin #25"
+                                                                 class="- map/topicref "
+                                                                 generate-id="d5e68"><!--#50 matched $href=#unique_4 for n/topic;-->
+               <unique.style.topic.content__x3A__analyze id="unique_4"
+                                                         debug="94"
+                                                         xtrc="topic:1;4:33"
+                                                         class="- topic/topic "
+                                                         generate-id="d24e330">
+                  <Linear_regression:stats mode="current"
+                                           xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita"
+                                           xtrc="topic:1;4:33"/>
+                  <Linear_regression:stats mode="descendant"/>
+                  <Linear_regression:stats mode="aggregated"/>
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e200">Nasycenie systemu</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e209">
+                     <p class="- topic/p " xtrc="p:1;8:16" generate-id="d5e210">System był nienasycony. Brał zawsze tyle ile zostało mu dane, rozrastał się z każdym
+                cyklem i dzielił swoje wątki, a te dzieliły się znowu na następne – – . System stał się pierwszym wynalazkiem ludzkości,
+                który przerósł swoich twórców, tak przynajmniej twierdziło SBS (Stowarzyszenie Badań
+                nad Systemem).</p>
+                  </body>
+               </unique.style.topic.content__x3A__analyze>
+            </unique.style.topic.content__x3A__analyze__x3A__scan>
+         </webhelp.topic-shift.css.xml.row>
+         <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_5 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_5) -->
+            <unique.style.topic__x3A__analyze debug="#44"
+                                              href="#unique_5"
+                                              class="- map/topicref "
+                                              generate-id="d5e79"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+            <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+            <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                                 xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                                 id=""
+                                                                 href="#unique_5"
+                                                                 xtrc="topicref:4;8:60"
+                                                                 debug="begin #25"
+                                                                 class="- map/topicref "
+                                                                 generate-id="d5e79"><!--#50 matched $href=#unique_5 for n/topic;-->
+               <unique.style.topic.content__x3A__analyze id="unique_5"
+                                                         debug="94"
+                                                         xtrc="topic:1;4:33"
+                                                         class="- topic/topic "
+                                                         generate-id="d24e364">
+                  <Linear_regression:stats mode="current"
+                                           xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita"
+                                           xtrc="topic:1;4:33"/>
+                  <Linear_regression:stats mode="descendant"/>
+                  <Linear_regression:stats mode="aggregated"/>
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e223">Podłączeni do systemu</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e232">
+                     <p class="- topic/p " xtrc="p:1;8:16" generate-id="d5e233">Zdaniem Davida jesteśmy podpięci do Systemu, tak że fizyczne komputery stają się
+                zbędne, jeśli tylko sobie to uświadomimy. </p>
+                     <p class="- topic/p " xtrc="p:2;10:16" generate-id="d5e235">Od kiedy postępuje ekspansja fotonowych procesorów nic nie jest już niemożliwe.
+                Zwykły człowiek może być kim chce, jeśli tylko prawda ujrzy światło dzienne. Wolność
+                to kwestia wyboru, upadek wartości. Giełda załamała się kiedy powszechnie zaczęto
+                dostosowywać się do Systemu, zupełnie jakby był on naszym nowym, uśpionym zmysłem,
+                czymś, co wykształciliśmy w sobie na przestrzeni wieków, by przetrwać. Teraz
+                staliśmy się tego świadomi, a ponieważ wszyscy jesteśmy połączeni, każdy odczuwa
+                zmianę. Światowy rynek załamał się, ale po raz pierwszy w historii była to rzecz
+                dobra. Gdyby przyrównać ją do bestialskiego napadu szału, to trzeba nam wiedzieć, że
+                został on okiełznany zaraz po wybuchu i nie tyleż stłumiony, co zamieniony w spokój
+                i błogą, świadomą egzystencję. </p>
+                  </body>
+               </unique.style.topic.content__x3A__analyze>
+            </unique.style.topic.content__x3A__analyze__x3A__scan>
+         </webhelp.topic-shift.css.xml.row>
+         <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_6 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_6) -->
+            <unique.style.topic__x3A__analyze debug="#44"
+                                              href="#unique_6"
+                                              class="- map/topicref "
+                                              generate-id="d5e90"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+            <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+            <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                                 xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                                 id=""
+                                                                 href="#unique_6"
+                                                                 xtrc="topicref:5;10:54"
+                                                                 debug="begin #25"
+                                                                 class="- map/topicref "
+                                                                 generate-id="d5e90"><!--#50 matched $href=#unique_6 for n/topic;-->
+               <unique.style.topic.content__x3A__analyze id="unique_6"
+                                                         debug="94"
+                                                         xtrc="topic:1;4:33"
+                                                         class="- topic/topic "
+                                                         generate-id="d24e392">
+                  <Linear_regression:stats mode="current"
+                                           xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita"
+                                           xtrc="topic:1;4:33"/>
+                  <Linear_regression:stats mode="descendant"/>
+                  <Linear_regression:stats mode="aggregated"/>
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e240">Nie odosobione pożądania
+   </title>
+                  <body class="- topic/body " xtrc="body:1;7:9" generate-id="d5e249">
+                     <p class="- topic/p " xtrc="p:1;11:139" generate-id="d5e252">Jakąś dekadę temu ta sama ośmiornica wyciągnęła swoje nieskończone macki i
+                zagarnęła naszą planetę dla siebie, wzięła ją w posiadanie tak, jakby ktoś włączył
+                światło w pokoju – klik i po sprawie. W przeciągu roku zmiany w społeczeństwach,
+                ustrojach politycznych oraz kulturach zachodziły tak szybko, że nie sposób było się
+                połapać, co się właściwie dzieje. Z początku myślano, że ta wirtualna machina bawi
+                się nami, chce nas poznać, obejrzeć, dotknąć, powąchać, określić i skatalogować. Z
+                biegiem czasu zdanie się podzieliły. Niektórzy dojrzeli prawdę, zrozumieli że
+                przyszłością ludzkości jest jedna wielka świadomość zbiorowa, poznawanie na poziomie
+                metafizycznym, coś nieopisanego, a opieranie się temu nie ma kompletnie znaczenia i
+                sensu. </p>
+                  </body>
+               </unique.style.topic.content__x3A__analyze>
+            </unique.style.topic.content__x3A__analyze__x3A__scan>
+         </webhelp.topic-shift.css.xml.row>
+         <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_7 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_7) -->
+            <unique.style.topic__x3A__analyze debug="#44"
+                                              href="#unique_7"
+                                              class="- map/topicref "
+                                              generate-id="d5e101"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+            <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+            <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                                 xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                                 id=""
+                                                                 href="#unique_7"
+                                                                 xtrc="topicref:6;12:66"
+                                                                 debug="begin #25"
+                                                                 class="- map/topicref "
+                                                                 generate-id="d5e101"><!--#50 matched $href=#unique_7 for n/topic;-->
+               <unique.style.topic.content__x3A__analyze id="unique_7"
+                                                         debug="94"
+                                                         xtrc="topic:1;4:33"
+                                                         class="- topic/topic "
+                                                         generate-id="d24e416">
+                  <Linear_regression:stats mode="current"
+                                           xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita"
+                                           xtrc="topic:1;4:33"/>
+                  <Linear_regression:stats mode="descendant"/>
+                  <Linear_regression:stats mode="aggregated"/>
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e255">Próżne pożądania drugiej strony</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e264">
+                     <p class="- topic/p " xtrc="p:1;9:139" generate-id="d5e265">Druga strona konfliktu preferowała niewiedzę, ciemnotę. Po roku Ci ludzie nie
+                wiedzieli już, czy ta inteligencja jest żywa, i od zawsze żyła gdzieś pod skorupą,
+                niby przypadkowa transmisja danych, czy też nie, ponieważ wybrali się od niej
+                odłączyć. Każdy z tych ludzi stworzył swój osobny mikrokosmos, w którym to on sam
+                jest sobie bogiem, a jego pragnienia i zapędy modlitwą oraz pożywką dla zwichrowanej
+                sztucznej tożsamości. Ci ludzie po dziś dzień kwestionują istnienie Systemu, naszego
+                globalnego komputera, którego wibrację przenikają już nawet przestrzeń kosmiczną –
+                powiem jedno, idioci. Nie bardzo rozumiem skąd pojawia się chęć rezygnacji z życia w
+                pełni i wybranie uboższej ścieżki. Niektórzy po prostu za bardzo boją się prawdy, by
+                chociaż dopuścić ją jako prawdopodobną. Zamiast tego, niczym błaźni oferują oni
+                iluzję, demonstrując przy tym własne rację. Zbyt głupi, by zrozumieć stali się
+                zwłaszcza fanatyczni wyznawcy religijni – ludzie od zawsze podziwiani i traktowani z
+                nabożną ascezą, jakby to właśnie oni, byli wyznawanym bóstwem, może to właśnie stąd
+                bierze się tak wielki odsetek gwałtów i pedofili za bogato zdobioną kurtyną bożych
+                przybytków. Skoro ludzie Ci oddani są bogu, to z jakiego powodu potrzebują bogato
+                zdobionych ołtarzy, strojnych szat, świąt oraz magicznych dat, jakby to następny
+                dzień miał większą wartość, niż poprzedni? I dlaczego najwięcej świąt mamy wtedy,
+                gdy gospodarka najbardziej potrzebuje zastrzyku świeżej gotówki? </p>
+                  </body>
+               </unique.style.topic.content__x3A__analyze>
+            </unique.style.topic.content__x3A__analyze__x3A__scan>
+         </webhelp.topic-shift.css.xml.row>
+         <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_8 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_8) -->
+            <unique.style.topic__x3A__analyze debug="#44"
+                                              href="#unique_8"
+                                              class="- map/topicref "
+                                              generate-id="d5e112"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+            <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+            <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                                 xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                                 id=""
+                                                                 href="#unique_8"
+                                                                 xtrc="topicref:7;13:78"
+                                                                 debug="begin #25"
+                                                                 class="- map/topicref "
+                                                                 generate-id="d5e112"><!--#50 matched $href=#unique_8 for n/topic;-->
+               <unique.style.topic.content__x3A__analyze id="unique_8"
+                                                         debug="94"
+                                                         xtrc="topic:1;4:33"
+                                                         class="- topic/topic "
+                                                         generate-id="d24e442">
+                  <Linear_regression:stats mode="current"
+                                           xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita"
+                                           xtrc="topic:1;4:33"/>
+                  <Linear_regression:stats mode="descendant"/>
+                  <Linear_regression:stats mode="aggregated"/>
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e270">Geneza</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e279">
+                     <p class="- topic/p " xtrc="p:1;9:139" generate-id="d5e280">Człowiek ciemny to radykał, który w swym zadufaniu twierdzi, iż tylko jego zdanie
+                jest prawdziwe, podczas gdy tak naprawdę niczyje zdanie nie jest, nasze rację to
+                tylko forma komunikacji i System jest tego przykładem. Ten komputer nie ma celu
+                swojej egzystencji, on jest celem, przez co wykazuje się dalece większą
+                inteligencją, niż reszta ludzi. Tą zagadkę rozwikłała ludzkość w oparciu o System.
+                Ludzkość jednakże wciąż żyje w iluzji i jestem zdania, iż za parę lat szaleństwo
+                ogarnie całą planetę i po raz kolejny zaczniemy od epoki kamienia łupanego.
+                Dlaczego? Dość że mamy broń mogącą zagrozić istnieniu naszej planety, nie mówiąc już
+                nawet o przetrwaniu gatunku.</p>
+                  </body>
+               </unique.style.topic.content__x3A__analyze>
+            </unique.style.topic.content__x3A__analyze__x3A__scan>
+         </webhelp.topic-shift.css.xml.row>
+         <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_9 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_9) -->
+            <unique.style.topic__x3A__analyze debug="#44"
+                                              href="#unique_9"
+                                              class="- map/topicref "
+                                              generate-id="d5e123"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+            <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+            <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                                 xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                                 id=""
+                                                                 href="#unique_9"
+                                                                 xtrc="topicref:8;14:43"
+                                                                 debug="begin #25"
+                                                                 class="- map/topicref "
+                                                                 generate-id="d5e123"><!--#50 matched $href=#unique_9 for n/topic;-->
+               <unique.style.topic.content__x3A__analyze id="unique_9"
+                                                         debug="94"
+                                                         xtrc="topic:1;4:33"
+                                                         class="- topic/topic "
+                                                         generate-id="d24e470">
+                  <Linear_regression:stats mode="current"
+                                           xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita"
+                                           xtrc="topic:1;4:33"/>
+                  <Linear_regression:stats mode="descendant"/>
+                  <Linear_regression:stats mode="aggregated"/>
+                  <title class="- topic/title " xtrc="title:1;5:11" generate-id="d5e286">Przesłanie</title>
+                  <body class="- topic/body " xtrc="body:1;6:10" generate-id="d5e295">
+                     <p class="- topic/p " xtrc="p:1;9:139" generate-id="d5e296">Tylko dlatego, że geniusz systemu odsłonił się przed ludźmi szukającym go stało się
+                to dla nich zarazem błogosławieństwem, jak i przekleństwem, ponieważ niektórzy
+                stwierdzili, iż geniusz ten stał się Z ZAŁOŻENIA czymś dalece przekraczającym nasze
+                możliwości – w istocie to tylko puste ograniczenie narzucone nam przez samych
+                siebie. System jest zmyślną manipulacją danych, składający się w spójnie, wzorzec,
+                który jest odpowiedzią samą w sobie; prawdą. I nie poznanie przez Ciebie tej prawdy
+                jest świadomą rezygnacją z życia. Słowa tracą znaczenie, za sto lat od teraz, nikt
+                nie zrozumie tego tekstu, przeinaczy go i zinterpretuje według swojej własnej
+                wymuszonej „integralności”.</p>
+                  </body>
+               </unique.style.topic.content__x3A__analyze>
+            </unique.style.topic.content__x3A__analyze__x3A__scan>
+         </webhelp.topic-shift.css.xml.row>
+      </webhelp.topic-shift.css.xml.row>
+      <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_10 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_10) -->
+         <unique.style.topic__x3A__analyze debug="#44"
+                                           href="#unique_10"
+                                           class="- map/topicref "
+                                           generate-id="d5e134"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+         <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+         <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                              xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                              id=""
+                                                              href="#unique_10"
+                                                              xtrc="topicref:9;16:36"
+                                                              debug="begin #25"
+                                                              class="- map/topicref "
+                                                              generate-id="d5e134"><!--#50 matched $href=#unique_10 for n/topic;-->
+            <unique.style.topic.content__x3A__analyze id="unique_10"
+                                                      debug="94"
+                                                      xtrc="topic:1;3:21"
+                                                      class="- topic/topic "
+                                                      generate-id="d24e504">
+               <Linear_regression:stats mode="current"
+                                        xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"
+                                        xtrc="topic:1;3:21"/>
+               <Linear_regression:stats mode="descendant"/>
+               <Linear_regression:stats mode="aggregated"/>
+               <title class="- topic/title " xtrc="title:1;4:12" generate-id="d5e306">Zawartość</title>
+            </unique.style.topic.content__x3A__analyze>
+         </unique.style.topic.content__x3A__analyze__x3A__scan>
+      </webhelp.topic-shift.css.xml.row>
+   </webhelp.topic-shift.css.xml.row>
+   <webhelp.topic-shift.css.xml.row><!--#47 will call unique.style.topic__x3A__analyze with param @href=#unique_11 $FILTERFILEURL=file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sebaraszczyk_profiling_web_pdf_pass.ditaval;
+        --><!--/* #25 unique.style.topic__x3A__analyze  (called $if=/$href=#unique_11) -->
+      <unique.style.topic__x3A__analyze debug="#44"
+                                        href="#unique_11"
+                                        class="- map/topicref bookmap/appendix "
+                                        generate-id="d5e145"><!--#219 topicmeta; - map/topicmeta --><!--#215 resourceid; - topic/resourceid --><!--#215 navtitle; - topic/navtitle --><!--#215 author; - topic/author --><!--#215 authorinformation; + topic/author xnal-d/authorinformation --><!--#215 personinfo; + topic/data xnal-d/personinfo --><!--#215 addressdetails; + topic/ph xnal-d/addressdetails --></unique.style.topic__x3A__analyze>
+      <!--#59 analyzed now unique.style.topic.content__x3A__analyze-->
+      <unique.style.topic.content__x3A__analyze__x3A__scan xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                                           xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression"
+                                                           id=""
+                                                           href="#unique_11"
+                                                           xtrc="appendix:1;28:36"
+                                                           debug="begin #25"
+                                                           class="- map/topicref bookmap/appendix "
+                                                           generate-id="d5e145"><!--#50 matched $href=#unique_11 for n/topic;-->
+         <unique.style.topic.content__x3A__analyze id="unique_11"
+                                                   debug="94"
+                                                   xtrc="topic:1;3:21"
+                                                   class="- topic/topic "
+                                                   is-chapter="true"
+                                                   generate-id="d24e551">
+            <Linear_regression:stats mode="current"
+                                     xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"
+                                     xtrc="topic:1;3:21"/>
+            <Linear_regression:stats mode="descendant"/>
+            <Linear_regression:stats mode="aggregated"/>
+            <title class="- topic/title " xtrc="title:1;4:12" generate-id="d5e333">Zawartość</title>
+         </unique.style.topic.content__x3A__analyze>
+      </unique.style.topic.content__x3A__analyze__x3A__scan>
+   </webhelp.topic-shift.css.xml.row>
+</webhelp.topic-shift.css.xml>

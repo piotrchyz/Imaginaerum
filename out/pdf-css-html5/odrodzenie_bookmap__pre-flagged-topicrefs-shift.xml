@@ -1,0 +1,592 @@
+<html>
+   <head>
+      <meta charset="UTF-8"></meta>
+      <meta name="copyright" content="(C) Copyright 2019"></meta>
+      <meta name="DC.rights.owner" content="(C) Copyright 2019"></meta>
+      <meta name="DC.type" content="bookmap"></meta>
+      <meta name="DC.format" content="HTML5"></meta>
+      <link rel='stylesheet' type='text/css' href='file:/Users/a.binder/procesy5-dita-templates-druki/Applications/dita-ot-3.2/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page.css' />
+<link rel='stylesheet' type='text/css' href='file:/Users/a.binder/procesy5-dita-templates-druki/Applications/dita-ot-3.2/plugins/com.oxygenxml.pdf.css/css/print/p-dita.css' />
+<link rel='stylesheet' type='text/css' href='file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sag_p5-print__x3A__init.css' />
+<link rel='stylesheet' type='text/css' href='file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sag_p5-print.page__x3A__init.css' />
+<link rel='stylesheet' type='text/css' href='file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sag_p5-print__x3A__default.css' />
+<link rel='stylesheet' type='text/css' href='file:/Users/a.binder/procesy5-dita-templates-druki/6927.Projekt_Badawczo_Roz_Procesy5_Stratego/sebastianbinder/raszczyk2.0/custom_template_webhelp/SebaRaszczyk/sag_p5-print.page__x3A__match__x3A__default.css' />
+
+      
+      <link rel="stylesheet" type="text/css" href="topic-page-shift.css"></link>
+      <title>Odrodzenie</title>
+   </head>
+   <body class="wh_topic_page">
+      <div class="wh_content_area">
+         <div class="wh_topic_body">
+            <div class="wh_topic_content">
+               <div xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xtrc="bookmap:1;3:10" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" cascade="merge" class="- map/map bookmap/bookmap map bookmap" ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d) (map bookmap) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic xnal-d) (topic markup-d xml-d)">
+                  <div class=" front-page/front-page front-page">
+                     <div xtrc="bookmeta:1;9:15" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- map/topicmeta bookmap/bookmeta topicmeta bookmeta">
+                        
+                        <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                        
+                        <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                           
+                           <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                              
+                              <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                        <div xtrc="bookrights:1;16:21" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/data bookmap/bookrights data bookrights">
+                           
+                           <div xtrc="bookowner:1;17:24" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/data bookmap/bookowner data bookowner">
+                              
+                              <div xtrc="person:1;18:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/data bookmap/person data person">Piotr</div>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </div>
+                     <div class=" front-page/front-page-title front-page-title">
+                        <div xtrc="booktitle:1;4:16" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/title bookmap/booktitle title booktitle">  
+                           <div xtrc="booklibrary:1;5:22" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/ph bookmap/booklibrary ph booklibrary">Życie i dramaty</div>  
+                           <div xtrc="mainbooktitle:1;6:24" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/ph bookmap/mainbooktitle ph mainbooktitle">Odrodzenie</div>  
+                           <div xtrc="booktitlealt:1;7:23" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/ph bookmap/booktitlealt ph booktitlealt">Takie tam odrodzenie</div>  
+                        </div>
+                     </div>
+                  </div>
+                  <div class="- map/topicref bookmap/frontmatter topicref frontmatter">
+                     <article class="- topic/topic topic nested0" aria-labelledby="ariaid-title1" xtrc="topic:1;3:22" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita" id="unique_1" oid="abstract" generate-id="d24e243">
+                        
+                        <h1 class="- topic/title title topictitle1" xtrc="title:1;4:12" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita" id="ariaid-title1">Abstract</h1>
+                        
+                        <div xtrc="body:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita" class="- topic/body body">
+                           
+                           <p xtrc="p:1;6:12" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita" class="- topic/p p">Jak pisałem to było kiedyś</p>
+                           
+                        </div>
+                        
+                     </article>
+                  </div>
+                  <div class=" toc/toc toc">
+                     <div empty="true" class=" toc/titletitle"></div>
+                     
+                     <div xtrc="booktitle:1;4:16" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/title bookmap/booktitle title booktitle">  
+                        <div xtrc="booklibrary:1;5:22" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/ph bookmap/booklibrary ph booklibrary">Życie i dramaty</div>  
+                        <div xtrc="mainbooktitle:1;6:24" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/ph bookmap/mainbooktitle ph mainbooktitle">Odrodzenie</div>  
+                        <div xtrc="booktitlealt:1;7:23" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/ph bookmap/booktitlealt ph booktitlealt">Takie tam odrodzenie</div>  
+                     </div>
+                     
+                     
+                     
+                     <div xtrc="chapter:1;25:14" is-chapter="true" product.debug.1123="" href="#d7e67" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- map/topicref bookmap/chapter topicref chapter">
+                        <div xtrc="topicref:1;5:66" first_topic_id="#unique_2" href="#unique_2" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                           <div data-topic-id="jam_jest_ten_kt_ry_rozpu_ci__si__w_eon" class="- map/topicmeta topicmeta">
+                              <div appid="jam_jest_ten_kt_ry_rozpu_ci__si__w_eon" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                              <div href="#unique_2" class="- topic/navtitle navtitle">Jam jest ten który rozpuścił się w eon</div>
+                              <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                              <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                 
+                                 <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                    
+                                    <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                    
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                           <div xtrc="topicref:2;6:79" first_topic_id="#unique_3" href="#unique_3" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                              <div data-topic-id="section_umm_g11_tjb" class="- map/topicmeta topicmeta">
+                                 <div appid="section_umm_g11_tjb" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                                 <div href="#unique_3" class="- topic/navtitle navtitle">Badanie limitów</div>
+                                 <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                                 <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                    
+                                    <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                       
+                                       <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                       
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <div xtrc="topicref:3;7:89" first_topic_id="#unique_4" href="#unique_4" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                              <div data-topic-id="section_bzt_311_tjb" class="- map/topicmeta topicmeta">
+                                 <div appid="section_bzt_311_tjb" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                                 <div href="#unique_4" class="- topic/navtitle navtitle">Nasycenie systemu</div>
+                                 <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                                 <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                    
+                                    <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                       
+                                       <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                       
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <div xtrc="topicref:4;8:60" first_topic_id="#unique_5" href="#unique_5" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                              <div data-topic-id="section_wkc_q11_tjb" class="- map/topicmeta topicmeta">
+                                 <div appid="section_wkc_q11_tjb" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                                 <div href="#unique_5" class="- topic/navtitle navtitle">Podłączeni do systemu</div>
+                                 <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                                 <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                    
+                                    <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                       
+                                       <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                       
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <div xtrc="topicref:5;10:54" first_topic_id="#unique_6" href="#unique_6" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                              <div data-topic-id="section_oc4_w11_tjb" class="- map/topicmeta topicmeta">
+                                 <div appid="section_oc4_w11_tjb" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                                 <div href="#unique_6" class="- topic/navtitle navtitle">Nie odosobione pożądania </div>
+                                 <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                                 <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                    
+                                    <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                       
+                                       <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                       
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <div xtrc="topicref:6;12:66" first_topic_id="#unique_7" href="#unique_7" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                              <div data-topic-id="section_xxj_1b1_tjb" class="- map/topicmeta topicmeta">
+                                 <div appid="section_xxj_1b1_tjb" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                                 <div href="#unique_7" class="- topic/navtitle navtitle">Próżne pożądania drugiej strony</div>
+                                 <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                                 <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                    
+                                    <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                       
+                                       <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                       
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <div xtrc="topicref:7;13:78" first_topic_id="#unique_8" href="#unique_8" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                              <div data-topic-id="section_jwv_hb1_tjb" class="- map/topicmeta topicmeta">
+                                 <div appid="section_jwv_hb1_tjb" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                                 <div href="#unique_8" class="- topic/navtitle navtitle">Geneza</div>
+                                 <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                                 <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                    
+                                    <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                       
+                                       <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                       
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <div xtrc="topicref:8;14:43" first_topic_id="#unique_9" href="#unique_9" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                              <div data-topic-id="section_h42_kb1_tjb" class="- map/topicmeta topicmeta">
+                                 <div appid="section_h42_kb1_tjb" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                                 <div href="#unique_9" class="- topic/navtitle navtitle">Przesłanie</div>
+                                 <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                                 <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                    
+                                    <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                       
+                                       <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                       
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div xtrc="topicref:9;16:36" first_topic_id="#unique_10" href="#unique_10" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap" class="- map/topicref topicref">
+                           <div data-topic-id="zawarto" class="- map/topicmeta topicmeta">
+                              <div appid="zawarto" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                              <div href="#unique_10" class="- topic/navtitle navtitle">Zawartość</div>
+                              <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                              <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                                 
+                                 <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                    
+                                    <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                    
+                                 </div>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div xtrc="appendix:1;28:36" is-chapter="true" product.debug.1123="" copy-to="zawarto_2.dita" first_topic_id="#unique_11" href="#unique_11" type="topic" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- map/topicref bookmap/appendix topicref appendix">
+                        <div data-topic-id="zawarto" class="- map/topicmeta topicmeta">
+                           <div appid="zawarto" oxy-source="topic" class="- topic/resourceid resourceid"></div>
+                           <div href="#unique_11" class="- topic/navtitle navtitle">Zawartość</div>
+                           <div xtrc="author:1;10:17" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="- topic/author author">Piotr</div>
+                           <div xtrc="authorinformation:1;11:28" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/author xnal-d/authorinformation author authorinformation">
+                              
+                              <div xtrc="personinfo:1;12:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/data xnal-d/personinfo data personinfo">
+                                 
+                                 <div xtrc="addressdetails:1;13:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap" class="+ topic/ph xnal-d/addressdetails ph addressdetails">Gdańsk</div>
+                                 
+                              </div>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <article class="- topic/topic topic nested0" aria-labelledby="ariaid-title2" xtrc="topic:1;3:52" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" id="unique_2" oid="jam_jest_ten_kt_ry_rozpu_ci__si__w_eon" generate-id="d24e265">
+                     
+                     <h1 class="- topic/title title topictitle1" xtrc="title:1;4:12" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" id="ariaid-title2">Jam jest ten który rozpuścił się w eon</h1>
+                     
+                     <div xtrc="body:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" class="- topic/body body">
+                        
+                        
+                        <p xtrc="p:1;9:14" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" class="- topic/p p">Z wiadomych powodów przeprowadzali dehibernacje pacjenta w stacji badawczej na orbicie
+                           – konsekwencję ostatniej takiej na Ziemi skończyły się katastrofą. 
+                        </p>
+                        
+                        <p xtrc="p:2;13:14" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" class="- topic/p p">Ludzie chcieli zrozumieć prawdę, a była ona ukryta gdzieś w wyrzucanych przez fale
+                           mózgowe pacjenta danych, które przypominały chińskie krzaczki i niewiele mówiły laikowi.
+                           Komunikacją z uśpionym pacjentem była nieuchwytna dla ludzkiego oka, lecz rejestrowały
+                           ją już komputery, a komputer stacji był majstersztykiem ludzkich umysłów –
+                           
+                           <span xtrc="equation-inline:1;17:34" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" class="+ topic/ph equation-d/equation-inline ph equation-inline">liczba mnoga, ponieważ nawet szalony naukowiec nie mógłby wymyślić
+                              czegoś takiego w pojedynkę
+                           </span>. 
+                        </p>
+                        
+                        <p xtrc="p:3;21:14" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" class="- topic/p p">Móżdżek, bo tak go nazywano, określano najbardziej przełomowym wynalazkiem ostatniego
+                           milenium. 
+                        </p>
+                        
+                        <p xtrc="p:4;25:14" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" class="- topic/p p">Minęło sto pięćdziesiąt lat od kiedy ludzkość zaczęła interesować się fluktuacją
+                           zderzeń cząstek. Projekty takie jak 
+                           <dfn class="- topic/term term" xtrc="term:1;26:55" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita">CERN</dfn> rozrosły się i nabrały globalnego
+                           znaczenia o nie dających się przewidzieć konsekwencjach.
+                        </p>
+                        
+                        <p xtrc="p:5;30:18" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita" class="- topic/p p">„
+                           <dfn class="- topic/term term" xtrc="term:2;30:25" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita">Zmiany metafizyczne</dfn>” – głosiły przepełnione podnieceniem nagłówki
+                           specjalistycznych gazet.
+                        </p>
+                        
+                     </div>
+                     
+                     <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title3" xtrc="topic:1;4:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita" id="unique_3" oid="section_umm_g11_tjb" generate-id="d24e308">
+                        
+                        <h2 class="- topic/title title topictitle2" xtrc="title:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita" id="ariaid-title3">Badanie limitów</h2>
+                        
+                        <div xtrc="body:1;6:10" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita" class="- topic/body body">
+                           
+                           
+                           <p xtrc="p:1;8:16" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita" class="- topic/p p">Z początku placówki badające nasze limity były wyśmiewane, publicznie mówiono, iż
+                              jest to kolejna ściema, pasożytnicza organizacją zajmująca się „sztuką dla sztuki”,
+                              a kosztująca przecież fortunę zabieraną nam, czyli szarym zjadaczom chleba.
+                              Ostatecznie problemy finansowe rozwiązano proponując podatnikom ułamek tej
+                              horrendalnej technologii. Oczywiście postawiono nam warunek; nieużytkowana moc
+                              obliczeniowa musiała zostać zużytkowana przez System, tak by „flow” (jak nazywali
+                              go
+                              naukowcy) pozostał niezmienny. Ponoć dane musiały być w obiegu, cząstki musiały się
+                              zderzać, zatrzymanie tego procesu, lub też pozwolenie by przebiegał on samoistnie,
+                              bez wiadomego uporządkowania mogły stać się początkiem upadku ludzkości, ale o
+                              zagrożeniach nie trąbiło się przecież w gazetach!
+                           </p>
+                           
+                        </div>
+                        
+                     </article>
+                     <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title4" xtrc="topic:1;4:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" id="unique_4" oid="section_bzt_311_tjb" generate-id="d24e330">
+                        
+                        <h2 class="- topic/title title topictitle2" xtrc="title:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" id="ariaid-title4">Nasycenie systemu</h2>
+                        
+                        <div xtrc="body:1;6:10" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" class="- topic/body body">
+                           
+                           
+                           <p xtrc="p:1;8:16" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" class="- topic/p p">System był nienasycony. Brał zawsze tyle ile zostało mu dane, rozrastał się z każdym
+                              cyklem i dzielił swoje wątki, a te dzieliły się znowu na następne –
+                              <span xtrc="equation-inline:1;9:101" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" class="+ topic/ph equation-d/equation-inline ph equation-inline">
+                                 wirtualność tych procesów przenikała się z rzeczywistością, tak że po dziesięciu
+                                 latach nie można było się już niczego w tym dopatrzyć, albo też dopatrzyć się
+                                 wszystkiego
+                              </span> – 
+                              <span xtrc="equation-inline:2;12:70" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" class="+ topic/ph equation-d/equation-inline ph equation-inline">zdania bowiem były
+                                 podzielone
+                              </span>. System stał się pierwszym wynalazkiem ludzkości,
+                              który przerósł swoich twórców, tak przynajmniej twierdziło SBS (Stowarzyszenie Badań
+                              nad Systemem).
+                              <cite xtrc="cite:1;15:37" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" class="- topic/cite cite">System to postępujący proces, a my staliśmy się od niego
+                                 zależni, ponieważ jesteśmy jego częścią. Nasza kora mózgowa odbiera jego
+                                 wibrację i dostraja się na poziomie podświadomym do jego działania, zupełnie
+                                 jakby zachodziła pomiędzy nimi jakaś niezrozumiałą dla nas komunikacja
+                                 
+                                 <span xtrc="equation-inline:3;19:42" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita" class="+ topic/ph equation-d/equation-inline ph equation-inline">powiedział dr David Wright, przewodniczący
+                                    SBS.
+                                 </span>
+                                 
+                              </cite>
+                              
+                           </p>
+                           
+                        </div>
+                        
+                     </article>
+                     <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title5" xtrc="topic:1;4:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita" id="unique_5" oid="section_wkc_q11_tjb" generate-id="d24e364">
+                        
+                        <h2 class="- topic/title title topictitle2" xtrc="title:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita" id="ariaid-title5">Podłączeni do systemu</h2>
+                        
+                        <div xtrc="body:1;6:10" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita" class="- topic/body body">
+                           
+                           
+                           <p xtrc="p:1;8:16" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita" class="- topic/p p">Zdaniem Davida jesteśmy podpięci do Systemu, tak że fizyczne komputery stają się
+                              zbędne, jeśli tylko sobie to uświadomimy. 
+                           </p>
+                           
+                           <p xtrc="p:2;10:16" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita" class="- topic/p p">Od kiedy postępuje ekspansja fotonowych procesorów nic nie jest już niemożliwe.
+                              Zwykły człowiek może być kim chce, jeśli tylko prawda ujrzy światło dzienne. Wolność
+                              to kwestia wyboru, upadek wartości. Giełda załamała się kiedy powszechnie zaczęto
+                              dostosowywać się do Systemu, zupełnie jakby był on naszym nowym, uśpionym zmysłem,
+                              czymś, co wykształciliśmy w sobie na przestrzeni wieków, by przetrwać. Teraz
+                              staliśmy się tego świadomi, a ponieważ wszyscy jesteśmy połączeni, każdy odczuwa
+                              zmianę. Światowy rynek załamał się, ale po raz pierwszy w historii była to rzecz
+                              dobra. Gdyby przyrównać ją do bestialskiego napadu szału, to trzeba nam wiedzieć,
+                              że
+                              został on okiełznany zaraz po wybuchu i nie tyleż stłumiony, co zamieniony w spokój
+                              i błogą, świadomą egzystencję. 
+                              <div xtrc="div:1;19:53" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita" class="- topic/div div">System z początku był jak wielka ośmiornica
+                                 dojrzewająca pod powierzchnią oceanu; ośmiornica pozostawiona ewolucji sama
+                                 sobie, zlekceważona przez nieuważnych, doceniana przez bojaźliwych i karmiona
+                                 przez wnikliwych. 
+                              </div>
+                              
+                           </p>
+                           
+                        </div>
+                        
+                     </article>
+                     <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title6" xtrc="topic:1;4:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita" id="unique_6" oid="section_oc4_w11_tjb" generate-id="d24e392">
+                        
+                        <h2 class="- topic/title title topictitle2" xtrc="title:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita" id="ariaid-title6">Nie odosobione pożądania
+                           
+                        </h2>
+                        
+                        <div xtrc="body:1;7:9" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita" class="- topic/body body">
+                           
+                           
+                           <p xtrc="p:1;11:139" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita" class="- topic/p p">Jakąś dekadę temu ta sama ośmiornica wyciągnęła swoje nieskończone macki i
+                              zagarnęła naszą planetę dla siebie, wzięła ją w posiadanie tak, jakby ktoś włączył
+                              światło w pokoju – klik i po sprawie. W przeciągu roku zmiany w społeczeństwach,
+                              ustrojach politycznych oraz kulturach zachodziły tak szybko, że nie sposób było się
+                              połapać, co się właściwie dzieje. Z początku myślano, że ta wirtualna machina bawi
+                              się nami, chce nas poznać, obejrzeć, dotknąć, powąchać, określić i skatalogować. Z
+                              biegiem czasu zdanie się podzieliły. Niektórzy dojrzeli prawdę, zrozumieli że
+                              przyszłością ludzkości jest jedna wielka świadomość zbiorowa, poznawanie na poziomie
+                              metafizycznym, coś nieopisanego, a opieranie się temu nie ma kompletnie znaczenia
+                              i
+                              sensu. 
+                           </p>
+                           
+                        </div>
+                        
+                     </article>
+                     <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title7" xtrc="topic:1;4:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita" id="unique_7" oid="section_xxj_1b1_tjb" generate-id="d24e416">
+                        
+                        <h2 class="- topic/title title topictitle2" xtrc="title:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita" id="ariaid-title7">Próżne pożądania drugiej strony</h2>
+                        
+                        <div xtrc="body:1;6:10" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita" class="- topic/body body">
+                           
+                           
+                           <p xtrc="p:1;9:139" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita" class="- topic/p p">Druga strona konfliktu preferowała niewiedzę, ciemnotę. Po roku Ci ludzie nie
+                              wiedzieli już, czy ta inteligencja jest żywa, i od zawsze żyła gdzieś pod skorupą,
+                              niby przypadkowa transmisja danych, czy też nie, ponieważ wybrali się od niej
+                              odłączyć. Każdy z tych ludzi stworzył swój osobny mikrokosmos, w którym to on sam
+                              jest sobie bogiem, a jego pragnienia i zapędy modlitwą oraz pożywką dla zwichrowanej
+                              sztucznej tożsamości. Ci ludzie po dziś dzień kwestionują istnienie Systemu, naszego
+                              globalnego komputera, którego wibrację przenikają już nawet przestrzeń kosmiczną –
+                              powiem jedno, idioci. Nie bardzo rozumiem skąd pojawia się chęć rezygnacji z życia
+                              w
+                              pełni i wybranie uboższej ścieżki. Niektórzy po prostu za bardzo boją się prawdy,
+                              by
+                              chociaż dopuścić ją jako prawdopodobną. Zamiast tego, niczym błaźni oferują oni
+                              iluzję, demonstrując przy tym własne rację. Zbyt głupi, by zrozumieć stali się
+                              zwłaszcza fanatyczni wyznawcy religijni – ludzie od zawsze podziwiani i traktowani
+                              z
+                              nabożną ascezą, jakby to właśnie oni, byli wyznawanym bóstwem, może to właśnie stąd
+                              bierze się tak wielki odsetek gwałtów i pedofili za bogato zdobioną kurtyną bożych
+                              przybytków. Skoro ludzie Ci oddani są bogu, to z jakiego powodu potrzebują bogato
+                              zdobionych ołtarzy, strojnych szat, świąt oraz magicznych dat, jakby to następny
+                              dzień miał większą wartość, niż poprzedni? I dlaczego najwięcej świąt mamy wtedy,
+                              gdy gospodarka najbardziej potrzebuje zastrzyku świeżej gotówki? 
+                              <div xtrc="div:1;26:87" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita" class="- topic/div div">Znane są
+                                 przecież przypadki samopodpaleń, czy też masowe nawoływania do wojny w imię
+                                 „wyższych racji”, nie tylko religii, ale i wolności, równości, czy tolerancji.
+                                 Ciemnota tego świata nie zna wstydu, a bycie geniuszem wśród bandy kretynów to
+                                 żaden przywilej. 
+                              </div>
+                              
+                           </p>
+                           
+                        </div>
+                        
+                     </article>
+                     <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title8" xtrc="topic:1;4:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita" id="unique_8" oid="section_jwv_hb1_tjb" generate-id="d24e442">
+                        
+                        <h2 class="- topic/title title topictitle2" xtrc="title:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita" id="ariaid-title8">Geneza</h2>
+                        
+                        <div xtrc="body:1;6:10" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita" class="- topic/body body">
+                           
+                           
+                           <p xtrc="p:1;9:139" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita" class="- topic/p p">Człowiek ciemny to radykał, który w swym zadufaniu twierdzi, iż tylko jego zdanie
+                              jest prawdziwe, podczas gdy tak naprawdę niczyje zdanie nie jest, nasze rację to
+                              tylko forma komunikacji i System jest tego przykładem. Ten komputer nie ma celu
+                              swojej egzystencji, on jest celem, przez co wykazuje się dalece większą
+                              inteligencją, niż reszta ludzi. Tą zagadkę rozwikłała ludzkość w oparciu o System.
+                              Ludzkość jednakże wciąż żyje w iluzji i jestem zdania, iż za parę lat szaleństwo
+                              ogarnie całą planetę i po raz kolejny zaczniemy od epoki kamienia łupanego.
+                              Dlaczego? Dość że mamy broń mogącą zagrozić istnieniu naszej planety, nie mówiąc już
+                              nawet o przetrwaniu gatunku.
+                           </p>
+                           
+                           <div xtrc="div:1;18:18" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita" class="- topic/div div">
+                              
+                              <p xtrc="p:2;20:142" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita" class="- topic/p p">Zdarzali się też ludzie ciekawscy, dociekliwi, tacy, którzy doświadczyli
+                                 geniuszu Systemu, połączyli się w jakiś sposób z jego rdzeniem, jaźnią i
+                                 zrozumieli całość. I zrozumienie to stało się tak wielkim szokiem dla umysłu, iż
+                                 bezpowrotnie go zmieniło. Ludzie Ci, zupełnie ja jak, przeszli z jednej kasty do
+                                 zupełnie innej. Wyglądało to tak, jakby byli przez całe życie niczego
+                                 nieświadomą mrówką-robotnicą, a w następnej chwili pojęli, że stanie się
+                                 mrówką-wojownikiem jest tylko kwestią wyboru, a nie zadaniem do wykonania. I nie
+                                 jest to koniecznie czymś lepszym, a po prostu skrajnie innym w swej formie. Tak
+                                 samo jak młotek wbija gwóźdź w ścianę i można potem zawiesić obrazek, tak samo
+                                 System, nasz wirtualny komputer, potrafił wyzwalać od formy. I dlatego właśnie
+                                 stał się on dla niektórych zalążkiem kultu, czymś co niepojęte w swej istocie
+                                 musi zostać opiewane w miliardach pieśni, opisane w tysiącach książek
+                                 traktujących o tym samym, choć ich autorzy nie zgadzają się, co do cudzych
+                                 poglądów, zupełnie jakby szukali integralności, która przecież nie istnieje,
+                                 ponieważ całą wiedza jaką ludzkość zebrała do tej pory jest zwyczajną
+                                 komunikacją, sztuką dla sztuki. Mądrość polega natomiast na tym, by to dostrzec.
+                                 Dostęp do Systemu mają nieliczni, jakby był on zaszczytem i czymś
+                                 niewyobrażalnie ostatecznym, zamiast po prostu początkiem i końcem, alfą i
+                                 omegą. 
+                              </p>
+                              
+                           </div>
+                           
+                        </div>
+                        
+                     </article>
+                     <article class="- topic/topic topic nested1" aria-labelledby="ariaid-title9" xtrc="topic:1;4:33" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" id="unique_9" oid="section_h42_kb1_tjb" generate-id="d24e470">
+                        
+                        <h2 class="- topic/title title topictitle2" xtrc="title:1;5:11" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" id="ariaid-title9">Przesłanie</h2>
+                        
+                        <div xtrc="body:1;6:10" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" class="- topic/body body">
+                           
+                           
+                           <p xtrc="p:1;9:139" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" class="- topic/p p">Tylko dlatego, że geniusz systemu odsłonił się przed ludźmi szukającym go stało się
+                              to dla nich zarazem błogosławieństwem, jak i przekleństwem, ponieważ niektórzy
+                              stwierdzili, iż geniusz ten stał się Z ZAŁOŻENIA czymś dalece przekraczającym nasze
+                              możliwości – w istocie to tylko puste ograniczenie narzucone nam przez samych
+                              siebie. System jest zmyślną manipulacją danych, składający się w spójnie, wzorzec,
+                              który jest odpowiedzią samą w sobie; prawdą. I nie poznanie przez Ciebie tej prawdy
+                              jest świadomą rezygnacją z życia. Słowa tracą znaczenie, za sto lat od teraz, nikt
+                              nie zrozumie tego tekstu, przeinaczy go i zinterpretuje według swojej własnej
+                              wymuszonej „integralności”.
+                              <div xtrc="div:1;17:49" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" class="- topic/div div">Stosunkowo niedawno „niewierzący” natknęli się na
+                                 nowy problem. Zaczęto hibernować ludzi, a po ich wybudzeniu okazało się, iż
+                                 tendencjonalnie łączą się oni z Systemem! Czyżby fakt ten zaświadczał, iż
+                                 dążenie do jedności jest naszą naturalną potrzebą, a jej rozgraniczanie było
+                                 wypaczeniem, stanem patologicznym? A cóż to znaczy dla Ciebie czytelniku?
+                                 
+                                 <span xtrc="equation-inline:1;22:42" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" class="+ topic/ph equation-d/equation-inline ph equation-inline">Czy
+                                    pojmujesz?
+                                 </span>
+                                 
+                                 <div xtrc="div:2;24:18" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" class="- topic/div div">
+                                    
+                                    <strong xtrc="b:1;25:19" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita" class="+ topic/ph hi-d/b ph b">Zrozum.</strong>
+                                    
+                                 </div>
+                                 
+                              </div>
+                              
+                           </p>
+                           
+                        </div>
+                        
+                     </article>
+                  </article>
+                  <article class="- topic/topic topic nested0" aria-labelledby="ariaid-title10" xtrc="topic:1;3:21" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" id="unique_10" oid="zawarto" generate-id="d24e504">
+                     
+                     <h1 class="- topic/title title topictitle1" xtrc="title:1;4:12" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" id="ariaid-title10">Zawartość</h1>
+                     
+                     <div class="wh_related_links">
+                        <nav role="navigation" xtrc="related-links:1;5:20" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" class="- topic/related-links related-links">
+                           <div class="- topic/linklist linklist" xtrc="linklist:1;6:19" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                              <strong>to jest to coś</strong>
+                              <br></br>
+                              <ul class="linklist">
+                                 <li class="linklist">
+                                    <a xtrc="link:1;8:43" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" class="- topic/link link" href="#unique_9" type="topic">Przesłanie</a>
+                                 </li>
+                              </ul>Coś co jest tym czymś
+                              <br></br>
+                           </div>
+                           <div class="- topic/linklist linklist" xtrc="linklist:2;11:19" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                              <strong>no i początek</strong>
+                              <br></br>
+                              <ul class="linklist">
+                                 <li class="linklist">
+                                    <a xtrc="link:2;13:78" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" class="- topic/link link" href="#unique_8" type="topic">Geneza</a>
+                                 </li>
+                              </ul>Warte i zwarte
+                              <br></br>
+                           </div>
+                        </nav>
+                     </div>
+                     
+                  </article>
+                  <article xmlns:oxy="http://www.oxygenxml.com/extensions/author" class="- topic/topic topic nested0" aria-labelledby="ariaid-title11" xtrc="topic:1;3:21" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" is-chapter="true" oxy:topicref-class="- map/topicref bookmap/appendix " debug.109.product="" debug.109.pos="1" debug.109.followi="2" id="unique_11" oid="zawarto" generate-id="d24e551">
+                     
+                     <h1 class="- topic/title title topictitle1" xtrc="title:1;4:12" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" id="ariaid-title11">Zawartość</h1>
+                     
+                     <div class="wh_related_links">
+                        <nav role="navigation" xtrc="related-links:1;5:20" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" class="- topic/related-links related-links">
+                           <div class="- topic/linklist linklist" xtrc="linklist:1;6:19" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                              <strong>to jest to coś</strong>
+                              <br></br>
+                              <ul class="linklist">
+                                 <li class="linklist">
+                                    <a xtrc="link:1;8:43" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" class="- topic/link link" href="#unique_9" type="topic">Przesłanie</a>
+                                 </li>
+                              </ul>Coś co jest tym czymś
+                              <br></br>
+                           </div>
+                           <div class="- topic/linklist linklist" xtrc="linklist:2;11:19" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                              <strong>no i początek</strong>
+                              <br></br>
+                              <ul class="linklist">
+                                 <li class="linklist">
+                                    <a xtrc="link:2;13:78" xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita" class="- topic/link link" href="#unique_8" type="topic">Geneza</a>
+                                 </li>
+                              </ul>Warte i zwarte
+                              <br></br>
+                           </div>
+                        </nav>
+                     </div>
+                     
+                  </article>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

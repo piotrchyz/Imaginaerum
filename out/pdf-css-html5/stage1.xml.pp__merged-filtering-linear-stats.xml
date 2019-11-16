@@ -1,0 +1,561 @@
+<Linear_regression:stats xmlns:Linear_regression="https://en.wikipedia.org/wiki/Linear_regression">
+   <html>
+      <head>
+         <meta/>
+         <meta/>
+         <meta/>
+         <meta/>
+         <meta/>
+         <link/>
+         <link/>
+         <link/>
+         <link/>
+         <link/>
+         <link/>
+         <link/>
+         <title/>
+      </head>
+      <body>
+         <div>
+            <div>
+               <div>
+                  <div xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+                       xtrc="bookmap:1;3:10"
+                       xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                     <div>
+                        <div xtrc="bookmeta:1;9:15"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                           <div xtrc="author:1;10:17"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                           <div xtrc="authorinformation:1;11:28"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                              <div xtrc="personinfo:1;12:25"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                 <div xtrc="addressdetails:1;13:33"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                              </div>
+                           </div>
+                           <div xtrc="bookrights:1;16:21"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                              <div xtrc="bookowner:1;17:24"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                 <div xtrc="person:1;18:25"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <div xtrc="booktitle:1;4:16"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                              <div xtrc="booklibrary:1;5:22"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                              <div xtrc="mainbooktitle:1;6:24"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                              <div xtrc="booktitlealt:1;7:23"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                           </div>
+                        </div>
+                     </div>
+                     <div>
+                        <img xtrc="topic:1;3:22"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita"/>
+                        <article xtrc="topic:1;3:22"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita">
+                           <h1 xtrc="title:1;4:12"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita"/>
+                           <div xtrc="body:1;5:11"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita">
+                              <p xtrc="p:1;6:12"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/abstract.dita"/>
+                           </div>
+                        </article>
+                     </div>
+                     <div>
+                        <div>
+                           <span>
+                              <span parent.class=" toc/titletitle"
+                                    Linear_regression-class="Linear_regression/result"
+                                    sibling__x3A__set="true"
+                                    XY11-n="1"
+                                    XY11-Ex="300"
+                                    XY11-Ey="3"
+                                    XY11-Exy="900"
+                                    XY11-Ex2="10000"
+                                    XY11-Ey2="9"
+                                    XY16-slope-m="0"
+                                    XY16-y-int-b="3"
+                                    XY16-r="0"
+                                    filter-="true"
+                                    sibling__x3A__set_current="div"
+                                    stats-position="1"
+                                    stats-count="2"
+                                    stats-XY16-r="0"
+                                    stats-XY16-slope-m="0"/>
+                              <span parent.class=" toc/titletitle"
+                                    Linear_regression-class="Linear_regression/result/filtered"
+                                    sibling__x3A__set="true"
+                                    XY11-n="1"
+                                    XY11-Ex="300"
+                                    XY11-Ey="3"
+                                    XY11-Exy="900"
+                                    XY11-Ex2="10000"
+                                    XY11-Ey2="9"
+                                    XY16-slope-m="0"
+                                    XY16-y-int-b="3"
+                                    XY16-r="0"
+                                    filter-="true"
+                                    sibling__x3A__set_current="div"
+                                    filter-elements="div"
+                                    stats-position="1"
+                                    stats-count="2"
+                                    stats-XY16-r="0"
+                                    stats-XY16-slope-m="0"/>
+                              <span parent.class=" toc/titletitle"
+                                    Linear_regression-class="Linear_regression/ancestor-or-self/result/filtered-value/class/map/topicref"
+                                    sibling__x3A__set="true"
+                                    XY11-n="8"
+                                    XY11-Ex="1000"
+                                    XY11-Ey="3"
+                                    XY11-Exy="900"
+                                    XY11-Ex2="30000"
+                                    XY11-Ey2="9"
+                                    XY16-slope-m="3000"
+                                    XY16-y-int-b="-6528"
+                                    XY16-r="1"
+                                    filter-="true"
+                                    sibling__x3A__set_current="div"
+                                    filter-elements="div"
+                                    filter-atributes="class"/>
+                           </span>
+                        </div>
+                        <div xtrc="booktitle:1;4:16"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                           <div xtrc="booklibrary:1;5:22"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                           <div xtrc="mainbooktitle:1;6:24"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                           <div xtrc="booktitlealt:1;7:23"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                        </div>
+                        <div xtrc="chapter:1;25:14"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                           <div xtrc="topicref:1;5:66"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                              <img xtrc="topicref:1;5:66"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                              <div>
+                                 <div/>
+                                 <div/>
+                                 <div xtrc="author:1;10:17"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                 <div xtrc="authorinformation:1;11:28"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                    <div xtrc="personinfo:1;12:25"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="addressdetails:1;13:33"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div xtrc="topicref:2;6:79"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                                 <img xtrc="topicref:2;6:79"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                                 <div>
+                                    <div/>
+                                    <div/>
+                                    <div xtrc="author:1;10:17"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    <div xtrc="authorinformation:1;11:28"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="personinfo:1;12:25"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                          <div xtrc="addressdetails:1;13:33"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div xtrc="topicref:3;7:89"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                                 <img xtrc="topicref:3;7:89"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                                 <div>
+                                    <div/>
+                                    <div/>
+                                    <div xtrc="author:1;10:17"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    <div xtrc="authorinformation:1;11:28"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="personinfo:1;12:25"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                          <div xtrc="addressdetails:1;13:33"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div xtrc="topicref:4;8:60"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                                 <img xtrc="topicref:4;8:60"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                                 <div>
+                                    <div/>
+                                    <div/>
+                                    <div xtrc="author:1;10:17"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    <div xtrc="authorinformation:1;11:28"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="personinfo:1;12:25"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                          <div xtrc="addressdetails:1;13:33"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div xtrc="topicref:5;10:54"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                                 <img xtrc="topicref:5;10:54"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                                 <div>
+                                    <div/>
+                                    <div/>
+                                    <div xtrc="author:1;10:17"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    <div xtrc="authorinformation:1;11:28"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="personinfo:1;12:25"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                          <div xtrc="addressdetails:1;13:33"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div xtrc="topicref:6;12:66"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                                 <img xtrc="topicref:6;12:66"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                                 <div>
+                                    <div/>
+                                    <div/>
+                                    <div xtrc="author:1;10:17"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    <div xtrc="authorinformation:1;11:28"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="personinfo:1;12:25"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                          <div xtrc="addressdetails:1;13:33"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div xtrc="topicref:7;13:78"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                                 <img xtrc="topicref:7;13:78"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                                 <div>
+                                    <div/>
+                                    <div/>
+                                    <div xtrc="author:1;10:17"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    <div xtrc="authorinformation:1;11:28"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="personinfo:1;12:25"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                          <div xtrc="addressdetails:1;13:33"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div xtrc="topicref:8;14:43"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                                 <img xtrc="topicref:8;14:43"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                                 <div>
+                                    <div/>
+                                    <div/>
+                                    <div xtrc="author:1;10:17"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    <div xtrc="authorinformation:1;11:28"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="personinfo:1;12:25"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                          <div xtrc="addressdetails:1;13:33"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div xtrc="topicref:9;16:36"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap">
+                              <img xtrc="topicref:9;16:36"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/Odrodzenie.ditamap"/>
+                              <div>
+                                 <div/>
+                                 <div/>
+                                 <div xtrc="author:1;10:17"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                 <div xtrc="authorinformation:1;11:28"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                    <div xtrc="personinfo:1;12:25"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                       <div xtrc="addressdetails:1;13:33"
+                                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div xtrc="appendix:1;28:36"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                           <img xtrc="appendix:1;28:36"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                           <div>
+                              <div/>
+                              <div/>
+                              <div xtrc="author:1;10:17"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                              <div xtrc="authorinformation:1;11:28"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                 <div xtrc="personinfo:1;12:25"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap">
+                                    <div xtrc="addressdetails:1;13:33"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/odrodzenie_bookmap.ditamap"/>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <img xtrc="topic:1;3:52"
+                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"/>
+                     <article xtrc="topic:1;3:52"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita">
+                        <h1 xtrc="title:1;4:12"
+                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"/>
+                        <div xtrc="body:1;5:11"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita">
+                           <p xtrc="p:1;9:14"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"/>
+                           <p xtrc="p:2;13:14"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita">
+                              <span xtrc="equation-inline:1;17:34"
+                                    xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"/>
+                           </p>
+                           <p xtrc="p:3;21:14"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"/>
+                           <p xtrc="p:4;25:14"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita">
+                              <dfn xtrc="term:1;26:55"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"/>
+                           </p>
+                           <p xtrc="p:5;30:18"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita">
+                              <dfn xtrc="term:2;30:25"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon.dita"/>
+                           </p>
+                        </div>
+                        <img xtrc="topic:1;4:33"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita"/>
+                        <article xtrc="topic:1;4:33"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita">
+                           <h2 xtrc="title:1;5:11"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita"/>
+                           <div xtrc="body:1;6:10"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita">
+                              <p xtrc="p:1;8:16"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_badanie.dita"/>
+                           </div>
+                        </article>
+                        <img xtrc="topic:1;4:33"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita"/>
+                        <article xtrc="topic:1;4:33"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita">
+                           <h2 xtrc="title:1;5:11"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita"/>
+                           <div xtrc="body:1;6:10"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita">
+                              <p xtrc="p:1;8:16"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita">
+                                 <span xtrc="equation-inline:1;9:101"
+                                       xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita"/>
+                                 <span xtrc="equation-inline:2;12:70"
+                                       xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita"/>
+                                 <cite xtrc="cite:1;15:37"
+                                       xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita">
+                                    <span xtrc="equation-inline:3;19:42"
+                                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_nasycenie_systemu.dita"/>
+                                 </cite>
+                              </p>
+                           </div>
+                        </article>
+                        <img xtrc="topic:1;4:33"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita"/>
+                        <article xtrc="topic:1;4:33"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita">
+                           <h2 xtrc="title:1;5:11"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita"/>
+                           <div xtrc="body:1;6:10"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita">
+                              <p xtrc="p:1;8:16"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita"/>
+                              <p xtrc="p:2;10:16"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita">
+                                 <div xtrc="div:1;19:53"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/w_eon_podlaczeni_do_systemu.dita"/>
+                              </p>
+                           </div>
+                        </article>
+                        <img xtrc="topic:1;4:33"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita"/>
+                        <article xtrc="topic:1;4:33"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita">
+                           <h2 xtrc="title:1;5:11"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita"/>
+                           <div xtrc="body:1;7:9"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita">
+                              <p xtrc="p:1;11:139"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci.dita"/>
+                           </div>
+                        </article>
+                        <img xtrc="topic:1;4:33"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita"/>
+                        <article xtrc="topic:1;4:33"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita">
+                           <h2 xtrc="title:1;5:11"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita"/>
+                           <div xtrc="body:1;6:10"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita">
+                              <p xtrc="p:1;9:139"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita">
+                                 <div xtrc="div:1;26:87"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_.dita"/>
+                              </p>
+                           </div>
+                        </article>
+                        <img xtrc="topic:1;4:33"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita"/>
+                        <article xtrc="topic:1;4:33"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita">
+                           <h2 xtrc="title:1;5:11"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita"/>
+                           <div xtrc="body:1;6:10"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita">
+                              <p xtrc="p:1;9:139"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita"/>
+                              <div xtrc="div:1;18:18"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita">
+                                 <p xtrc="p:2;20:142"
+                                    xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/jam_jest_ten_kt_ry_rozpu_ci__si__w_eon_geneza.dita"/>
+                              </div>
+                           </div>
+                        </article>
+                        <img xtrc="topic:1;4:33"
+                             xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita"/>
+                        <article xtrc="topic:1;4:33"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita">
+                           <h2 xtrc="title:1;5:11"
+                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita"/>
+                           <div xtrc="body:1;6:10"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita">
+                              <p xtrc="p:1;9:139"
+                                 xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita">
+                                 <div xtrc="div:1;17:49"
+                                      xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita">
+                                    <span xtrc="equation-inline:1;22:42"
+                                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita"/>
+                                    <div xtrc="div:2;24:18"
+                                         xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita">
+                                       <strong xtrc="b:1;25:19"
+                                               xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/przeslanie.dita"/>
+                                    </div>
+                                 </div>
+                              </p>
+                           </div>
+                        </article>
+                     </article>
+                     <img xtrc="topic:1;3:21"
+                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                     <article xtrc="topic:1;3:21"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                        <h1 xtrc="title:1;4:12"
+                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                        <div>
+                           <nav xtrc="related-links:1;5:20"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                              <div xtrc="linklist:1;6:19"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                                 <strong/>
+                                 <br/>
+                                 <ul>
+                                    <li>
+                                       <a xtrc="link:1;8:43"
+                                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                                    </li>
+                                 </ul>
+                                 <br/>
+                              </div>
+                              <div xtrc="linklist:2;11:19"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                                 <strong/>
+                                 <br/>
+                                 <ul>
+                                    <li>
+                                       <a xtrc="link:2;13:78"
+                                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                                    </li>
+                                 </ul>
+                                 <br/>
+                              </div>
+                           </nav>
+                        </div>
+                     </article>
+                     <img xmlns:oxy="http://www.oxygenxml.com/extensions/author"
+                          xtrc="topic:1;3:21"
+                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                     <article xmlns:oxy="http://www.oxygenxml.com/extensions/author"
+                              xtrc="topic:1;3:21"
+                              xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                        <h1 xtrc="title:1;4:12"
+                            xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                        <div>
+                           <nav xtrc="related-links:1;5:20"
+                                xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                              <div xtrc="linklist:1;6:19"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                                 <strong/>
+                                 <br/>
+                                 <ul>
+                                    <li>
+                                       <a xtrc="link:1;8:43"
+                                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                                    </li>
+                                 </ul>
+                                 <br/>
+                              </div>
+                              <div xtrc="linklist:2;11:19"
+                                   xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita">
+                                 <strong/>
+                                 <br/>
+                                 <ul>
+                                    <li>
+                                       <a xtrc="link:2;13:78"
+                                          xtrf="file:/private/var/folders/0b/_6f8_rks205flq_2k5gd6s180000gr/T/OxygenXMLTemp/ditaTemporaryOutputDir-1573877066615/t1/t2/t3/t4/t5/zawarto.dita"/>
+                                    </li>
+                                 </ul>
+                                 <br/>
+                              </div>
+                           </nav>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </html>
+</Linear_regression:stats>
