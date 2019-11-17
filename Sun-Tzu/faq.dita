@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="faq">
+    <title>FAQ</title>
+    <body>
+        <p>Tutaj zapisze ważniejsze spostrzeżenia. Ważne jest, że w gałęziach, każdej kolejnej
+            powinniśmy zadać sobie w tej kolejności pytania:<ol id="ol_csm_41f_tjb">
+                <!--to tak na początek coś zakłądamy z dupy.-->
+                <li>Dlaczego?</li>
+                <li>Jak?</li>
+                <li>Co?</li>
+                <li>Kiedy? Kto?</li>
+            </ol></p>
+    </body>
+</topic>

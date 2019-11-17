@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="uk_adanie_plan_w_0" class="- topic/topic ">
+    <title>Taktyka 2D</title>
+    <shortdesc><xref href="strategia.dita"><keyword>Cel</keyword> taktyki zależy od
+                <keyword>strategii</keyword></xref>.</shortdesc>
+    <taskbody>
+        <context><keyword>Wynik</keyword> wojny zależy od 5 głównych czynników:<p/></context>
+        <steps>
+            <step>
+                <cmd>Prawo moralne</cmd>
+                <stepresult>Jedność</stepresult>
+                <steptroubleshooting>Harmonia z dowódcą</steptroubleshooting>
+            </step>
+            <step>
+                <cmd>Niebo</cmd>
+                <choices id="choices_yc3_5rz_sjb">
+                    <choice><boolean state="yes">dzień</boolean></choice>
+                    <choice><boolean state="no">noc</boolean></choice>
+                    <choice><boolean state="no">zimno</boolean></choice>
+                    <choice><boolean state="yes">ciepło</boolean>
+                    </choice>
+                </choices>
+                <info>reprezentuje atmosferę, pory roku</info>
+            </step>
+            <step>
+                <cmd>Ziemia</cmd>
+                <info>
+                    <ol id="ol_ixd_4sz_sjb">
+                        <li><boolean state="no">restrykcje</boolean></li>
+                        <li><boolean state="yes">swobody</boolean></li>
+                        <li><boolean state="no">zagrożenie</boolean></li>
+                        <li><boolean state="yes">komfort</boolean></li>
+                        <li><boolean state="no">nakazy</boolean></li>
+                        <li><boolean state="no">zakazy</boolean></li>
+                        <li>procesy</li>
+                    </ol>
+                </info>
+                <info>reprezentuje różne dziedziny</info>
+            </step>
+            <step>
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+</task>

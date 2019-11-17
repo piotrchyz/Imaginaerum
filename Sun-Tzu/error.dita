@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="error">
+    <title>error</title>
+    <shortdesc>Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc>
+    <taskbody>
+        <context>Zadanie opisuje w jaki sposób zdecydować o błędzie<p/></context>
+        <steps>
+            <step>
+                <cmd>Popełnienie błędu nieświadomie 0D</cmd>
+            </step>
+            <step>
+                <cmd>Dopóki się nie przytrafi wyczekiwać 4D błędu przeciwnika</cmd>
+            </step>
+            <step>
+                <cmd>Porównywać obserwacje 6D2P z doświadczeniem 3D</cmd>
+            </step>
+            <step>
+                <cmd>Porównywać doświadczenie 3D z cechami wspólnymi 7D</cmd>
+            </step>
+            <step>
+                <cmd>W zgodzie z sumieniem 8D i założeniem 8P wykonać proces 1D</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

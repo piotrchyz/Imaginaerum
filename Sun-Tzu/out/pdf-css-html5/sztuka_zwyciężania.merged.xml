@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/css' href='file:/opt/OxygenXMLEditor21/frameworks/dita/DITA-OT3.x/plugins/com.oxygenxml.webhelp.responsive/oxygen-webhelp/app/topic-page-print.css'?>
+<?xml-stylesheet type='text/css' href='file:/opt/OxygenXMLEditor21/frameworks/dita/css/print/p-dita.css'?>
+<?xml-stylesheet type='text/css' href='file:/opt/OxygenXMLEditor21/frameworks/dita/DITA-OT3.x/plugins/com.oxygenxml.editlink/pdf-css.css'?>
+<map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:opentopic-index="http://www.idiominc.com/opentopic/index" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:oxy="http://www.oxygenxml.com/extensions/author" xmlns:nd="http://www.oxygenxml.com/css2fo/named-destinations" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:css2fo="http://www.oxygenxml.com/css2fo" xmlns:dita-ot="dita-ot.sourceforge.net/ns/201007/dita-ot" cascade="merge" class="- map/map " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d) (topic abbrev-d) (topic delay-d) a(props deliveryTarget) (map ditavalref-d) (map glossref-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d) (topic pr-d) (topic relmgmt-d) (topic sw-d) (topic ui-d) (topic ut-d) (topic markup-d xml-d)" xtrc="map:1;3:6" xtrf="file:/root/OxygenXMLEditor/Imaginaerum/Sun-Tzu/sztuka_zwyciężania.ditamap" xml:lang="en"><oxy:front-page class="- front-page/front-page "><oxy:front-page-title class="- front-page/front-page-title "><title xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder" class="- topic/title "><keyword class="- topic/keyword ">Działania</keyword> wojenne</title></oxy:front-page-title></oxy:front-page><opentopic:map xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder" class="- toc/toc "><oxy:toc-title class="- toc/title " empty="true"/>
+    <title xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" class="- topic/title "><keyword class="- topic/keyword ">Działania</keyword> wojenne</title>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_1" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="energia_9d"><resourceid appid="energia_9d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_1" class="- topic/navtitle ">Energia 9D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_2" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zwodzenie"><resourceid appid="zwodzenie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_2" class="- topic/navtitle ">zwodzenie 10P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_3" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="po_rednia"><resourceid appid="po_rednia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_3" class="- topic/navtitle ">pośrednio 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_4" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obyczajowosc"><resourceid appid="obyczajowosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_4" class="- topic/navtitle ">obyczajowosc</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_5" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="bezposrednia"><resourceid appid="bezposrednia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_5" class="- topic/navtitle ">bezposrednio 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_6" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zarzadzanie"><resourceid appid="zarzadzanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_6" class="- topic/navtitle ">zarzadzanie</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_7" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="unia"><resourceid appid="unia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_7" class="- topic/navtitle ">unia</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_9" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="odwaga"><resourceid appid="odwaga" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_9" class="- topic/navtitle ">odwaga 4D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="atakowanie"><resourceid appid="atakowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10" class="- topic/navtitle ">atak 4D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na supresji zagrożenia</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_11" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="momentum"><resourceid appid="momentum" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_11" class="- topic/navtitle ">momentum 6P</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_12" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="homeostaza"><resourceid appid="homeostaza" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_12" class="- topic/navtitle ">spokój 3D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_13" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zgranie"><resourceid appid="zgranie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_13" class="- topic/navtitle ">zgranie 5P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="atakowanie"><resourceid appid="atakowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10_ssol1" class="- topic/navtitle ">atak 4D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na supresji zagrożenia</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_14" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obrona_4d"><resourceid appid="obrona_4d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_14" class="- topic/navtitle ">obrona 4D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_15" type="task"><topicmeta class="- map/topicmeta " data-topic-id="ucieczka"><resourceid appid="ucieczka" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_15" class="- topic/navtitle ">ucieczka 2D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na wyparciu zagrożenia</shortdesc></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_16" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="komfort"><resourceid appid="komfort" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_16" class="- topic/navtitle ">komfort 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_14" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obrona_4d"><resourceid appid="obrona_4d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_14_ssol1" class="- topic/navtitle ">obrona 4D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_4" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obyczajowosc"><resourceid appid="obyczajowosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_4_ssol1" class="- topic/navtitle ">obyczajowosc</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_17" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="strach"><resourceid appid="strach" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_17" class="- topic/navtitle ">strach 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_15" type="task"><topicmeta class="- map/topicmeta " data-topic-id="ucieczka"><resourceid appid="ucieczka" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_15_ssol1" class="- topic/navtitle ">ucieczka 2D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na wyparciu zagrożenia</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_18" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="nieprzewidywalnosc"><resourceid appid="nieprzewidywalnosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_18" class="- topic/navtitle ">nieprzewidywalnosc</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_19" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="grawitacja_8d"><resourceid appid="grawitacja_8d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_19" class="- topic/navtitle ">grawitacja 8D8P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_20" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zagrozenie"><resourceid appid="zagrozenie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_20" class="- topic/navtitle ">zagrozenie</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_21" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="cechy_dowodcy"><resourceid appid="cechy_dowodcy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_21" class="- topic/navtitle ">Dowódca 5D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_22" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="tomnosc_4d_umyslu_6d"><resourceid appid="tomnosc_4d_umyslu_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_22" class="- topic/navtitle ">utrata tomnosc 4D umyslu 6D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_23" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="brak_rowowagi"><resourceid appid="brak_rowowagi" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_23" class="- topic/navtitle ">brak rowowagi</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_17" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="strach"><resourceid appid="strach" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_17_ssol1" class="- topic/navtitle ">strach 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_24" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="pojmanie"><resourceid appid="pojmanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_24" class="- topic/navtitle ">pojmanie 0D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_25" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="lekkomyslnosc"><resourceid appid="lekkomyslnosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_25" class="- topic/navtitle ">lekkomyslnosc 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_26" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="destrukcja_1d"><resourceid appid="destrukcja_1d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_26" class="- topic/navtitle ">destrukcja 1D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_27" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="porywczosc"><resourceid appid="porywczosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_27" class="- topic/navtitle ">porywczosc 3D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_28" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="proznosc_3d"><resourceid appid="proznosc_3d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_28" class="- topic/navtitle ">proznosc 3D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_29" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zadufanie_4d"><resourceid appid="zadufanie_4d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_29" class="- topic/navtitle ">zadufanie 4D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_30" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="wrazliwosc"><resourceid appid="wrazliwosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_30" class="- topic/navtitle ">wrazliwosc</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_31" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="wstyd"><resourceid appid="wstyd" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_31" class="- topic/navtitle ">wstyd</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_32" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="troskliwosc"><resourceid appid="troskliwosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_32" class="- topic/navtitle ">troskliwosc</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_17" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="strach"><resourceid appid="strach" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_17_ssol2" class="- topic/navtitle ">strach 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol1" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_17" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="strach"><resourceid appid="strach" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_17_ssol3" class="- topic/navtitle ">strach 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_33" type="task"><topicmeta class="- map/topicmeta " data-topic-id="error"><resourceid appid="error" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_33" class="- topic/navtitle ">error</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc></topicmeta></topicref></topicref></topicref></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_34" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="ekonomia"><resourceid appid="ekonomia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_34" class="- topic/navtitle ">Ekonomia 7D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_35" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="kalkulacja"><resourceid appid="kalkulacja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_35" class="- topic/navtitle ">kalkulacja 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_36" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zasoby"><resourceid appid="zasoby" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_36" class="- topic/navtitle ">zasoby</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_37" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="wiedza"><resourceid appid="wiedza" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_37" class="- topic/navtitle ">poznanie</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_38" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="o_sobie"><resourceid appid="o_sobie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_38" class="- topic/navtitle ">siebie</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_39" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="o_wrogu"><resourceid appid="o_wrogu" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_39" class="- topic/navtitle ">wroga</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_40" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="finanse"><resourceid appid="finanse" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_40" class="- topic/navtitle ">finanse</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="przychody.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref><topicref class="- map/topicref " href="rozchody.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_41" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szansa_6d"><resourceid appid="szansa_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_41" class="- topic/navtitle ">szansa 6D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol2" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_43" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="liczebnosc_0"><resourceid appid="liczebnosc_0" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_43" class="- topic/navtitle ">liczebność</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_44" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="wielkosc"><resourceid appid="wielkosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_44" class="- topic/navtitle ">wielkosc</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol1" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="wieksze.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref><topicref class="- map/topicref " href="mniejsze.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol3" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="wieksze_0.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref><topicref class="- map/topicref " href="mniejsze_0.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_45" type="task"><topicmeta class="- map/topicmeta " data-topic-id="opasanie"><resourceid appid="opasanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_45" class="- topic/navtitle ">opasanie</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na otoczeniu wroga</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="atakowanie"><resourceid appid="atakowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10_ssol2" class="- topic/navtitle ">atak 4D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na supresji zagrożenia</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_15" type="task"><topicmeta class="- map/topicmeta " data-topic-id="ucieczka"><resourceid appid="ucieczka" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_15_ssol2" class="- topic/navtitle ">ucieczka 2D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na wyparciu zagrożenia</shortdesc></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_46" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="planowanie"><resourceid appid="planowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_46" class="- topic/navtitle ">planowanie</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_47" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="kierunek"><resourceid appid="kierunek" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_47" class="- topic/navtitle ">kierunek</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_48" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przypuszczenia"><resourceid appid="przypuszczenia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_48" class="- topic/navtitle ">przypuszczenia</navtitle><?ditaot gentext?></topicmeta></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_49" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="strategia"><resourceid appid="strategia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_49" class="- topic/navtitle ">strategia 1D+6D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_50" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="ramy"><resourceid appid="ramy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_50" class="- topic/navtitle ">ramy 2D5P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="destrukcja.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref><topicref class="- map/topicref " href="doskonalosc.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_11" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="momentum"><resourceid appid="momentum" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_11_ssol1" class="- topic/navtitle ">momentum 6P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_13" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zgranie"><resourceid appid="zgranie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_13_ssol1" class="- topic/navtitle ">zgranie 5P</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_51" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="improwizacja"><resourceid appid="improwizacja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_51" class="- topic/navtitle ">improwizacja</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_33" type="task"><topicmeta class="- map/topicmeta " data-topic-id="error"><resourceid appid="error" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_33_ssol1" class="- topic/navtitle ">error</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_52" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="zaleta"><resourceid appid="zaleta" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_52" class="- topic/navtitle ">zaleta</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_53" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="wada"><resourceid appid="wada" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_53" class="- topic/navtitle ">wada</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_21" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="cechy_dowodcy"><resourceid appid="cechy_dowodcy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_21_ssol1" class="- topic/navtitle ">Dowódca 5D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_54" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="odpowiedzialnosc"><resourceid appid="odpowiedzialnosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_54" class="- topic/navtitle ">odpowiedzialnosc</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_55" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="dezorganizacja"><resourceid appid="dezorganizacja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_55" class="- topic/navtitle ">dezorganizacja</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_15" type="task"><topicmeta class="- map/topicmeta " data-topic-id="ucieczka"><resourceid appid="ucieczka" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_15_ssol3" class="- topic/navtitle ">ucieczka 2D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na wyparciu zagrożenia</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_56" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="niesubordynacja"><resourceid appid="niesubordynacja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_56" class="- topic/navtitle ">niesubordynacja 1D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_57" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="kleska_0"><resourceid appid="kleska_0" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_57" class="- topic/navtitle ">klęska 3D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_58" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="bankructwo"><resourceid appid="bankructwo" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_58" class="- topic/navtitle ">bankructwo</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_59" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="bunt"><resourceid appid="bunt" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_59" class="- topic/navtitle ">bunt</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_60" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="umiejetnosc"><resourceid appid="umiejetnosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_60" class="- topic/navtitle ">umiejętności</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_61" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="decyzyjnosc"><resourceid appid="decyzyjnosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_61" class="- topic/navtitle ">decyzyjność</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_62" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zaradno"><resourceid appid="zaradno" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_62" class="- topic/navtitle ">zaradność</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_63" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sukcesja"><resourceid appid="sukcesja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_63" class="- topic/navtitle ">sukcesja</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_64" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="cele_0"><resourceid appid="cele_0" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_64" class="- topic/navtitle ">cele</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_65" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zwyciestwo"><resourceid appid="zwyciestwo" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_65" class="- topic/navtitle ">zwycięstwo</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_66" type="task"><topicmeta class="- map/topicmeta " data-topic-id="efektywnosc"><resourceid appid="efektywnosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_66" class="- topic/navtitle ">efektywność</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Nie przedłużanie kampani.</shortdesc></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_67" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="cechy_0"><resourceid appid="cechy_0" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_67" class="- topic/navtitle ">cechy</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol4" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_68" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="madrosc"><resourceid appid="madrosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_68" class="- topic/navtitle ">mądrość</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_69" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szczerosc"><resourceid appid="szczerosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_69" class="- topic/navtitle ">szczerość</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_9" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="odwaga"><resourceid appid="odwaga" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_9_ssol1" class="- topic/navtitle ">odwaga 4D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_70" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="wiara"><resourceid appid="wiara" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_70" class="- topic/navtitle ">wiara</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_71" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="dyscyplina"><resourceid appid="dyscyplina" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_71" class="- topic/navtitle ">dyscyplina</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_72" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="kontrola"><resourceid appid="kontrola" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_72" class="- topic/navtitle ">kontrola</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_73" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szczodrobliwo"><resourceid appid="szczodrobliwo" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_73" class="- topic/navtitle ">szczodrobliwość</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_74" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="traktowanie"><resourceid appid="traktowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_74" class="- topic/navtitle ">traktowanie</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_70" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="wiara"><resourceid appid="wiara" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_70_ssol1" class="- topic/navtitle ">wiara</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol2" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_75" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="poczucie_koherencji"><resourceid appid="poczucie_koherencji" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_75" class="- topic/navtitle ">poczucie koherencji 12P</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_2" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zwodzenie"><resourceid appid="zwodzenie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_2_ssol1" class="- topic/navtitle ">zwodzenie 10P</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_13" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zgranie"><resourceid appid="zgranie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_13_ssol2" class="- topic/navtitle ">zgranie 5P</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_76" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="efektywny_lider"><resourceid appid="efektywny_lider" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_76" class="- topic/navtitle ">efektywny lider</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_57" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="kleska_0"><resourceid appid="kleska_0" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_57_ssol1" class="- topic/navtitle ">klęska 3D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="taktyka.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta><topicref class="- map/topicref " href="#unique_77" broken-link="true" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="narcyzm"><resourceid appid="narcyzm" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_77" class="- topic/navtitle ">narcyzm</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="strategia_0.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta><topicref class="- map/topicref " href="#unique_28" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="proznosc_3d"><resourceid appid="proznosc_3d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_28_ssol1" class="- topic/navtitle ">proznosc 3D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="uk_adanie_plan_w_0.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta><topicref class="- map/topicref " href="#unique_78" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="prawo_moralne"><resourceid appid="prawo_moralne" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_78" class="- topic/navtitle ">prawo moralne 4D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="jednosc.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref><topicref class="- map/topicref " href="liczebnosc.dita"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_79" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="niebo"><resourceid appid="niebo" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_79" class="- topic/navtitle ">niebo 6D2P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_80" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="doba"><resourceid appid="doba" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_80" class="- topic/navtitle ">doba</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_81" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="dzien"><resourceid appid="dzien" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_81" class="- topic/navtitle ">dzien 1D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_82" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="noc"><resourceid appid="noc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_82" class="- topic/navtitle ">noc 2D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_83" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="warunki"><resourceid appid="warunki" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_83" class="- topic/navtitle ">warunki</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_84" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="cieplo"><resourceid appid="cieplo" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_84" class="- topic/navtitle ">cieplo 2D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_85" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zimno"><resourceid appid="zimno" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_85" class="- topic/navtitle ">zimno 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_86" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="opisuje"><resourceid appid="opisuje" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_86" class="- topic/navtitle ">zapis</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_87" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="atmosfere_2d"><resourceid appid="atmosfere_2d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_87" class="- topic/navtitle ">atmosfere 2D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_88" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="pore_roku_1d"><resourceid appid="pore_roku_1d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_88" class="- topic/navtitle ">pore roku 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_89" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="ziemia_1d"><resourceid appid="ziemia_1d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_89" class="- topic/navtitle ">ziemia 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_90" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="podporzadkowanie"><resourceid appid="podporzadkowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_90" class="- topic/navtitle ">podporzadkowanie 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_91" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="dzialaniom_4p"><resourceid appid="dzialaniom_4p" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_91" class="- topic/navtitle ">dzialania 1D4P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_92" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="nakazy"><resourceid appid="nakazy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_92" class="- topic/navtitle ">nakazy</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_93" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zakazy"><resourceid appid="zakazy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_93" class="- topic/navtitle ">zakazy</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_94" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sytuacji_6p"><resourceid appid="sytuacji_6p" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_94" class="- topic/navtitle ">sytuacji 2D6P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_20" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zagrozenie"><resourceid appid="zagrozenie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_20_ssol1" class="- topic/navtitle ">zagrozenie</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_16" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="komfort"><resourceid appid="komfort" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_16_ssol1" class="- topic/navtitle ">komfort 2D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_95" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="doswiadczeniu_10p"><resourceid appid="doswiadczeniu_10p" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_95" class="- topic/navtitle ">doswiadczeniu 3D10P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_96" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="restrykcja"><resourceid appid="restrykcja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_96" class="- topic/navtitle ">restrykcja</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_97" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="swoboda"><resourceid appid="swoboda" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_97" class="- topic/navtitle ">swoboda</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_14" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obrona_4d"><resourceid appid="obrona_4d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_14_ssol2" class="- topic/navtitle ">obrona 4D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_41" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szansa_6d"><resourceid appid="szansa_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_41_ssol1" class="- topic/navtitle ">szansa 6D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_33" type="task"><topicmeta class="- map/topicmeta " data-topic-id="error"><resourceid appid="error" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_33_ssol2" class="- topic/navtitle ">error</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol5" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_98" broken-link="true" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="opis"><resourceid appid="opis" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_98" class="- topic/navtitle ">zapis</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_91" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="dzialaniom_4p"><resourceid appid="dzialaniom_4p" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_91_ssol1" class="- topic/navtitle ">dzialania 1D4P</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_99" broken-link="true" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="odczyt"><resourceid appid="odczyt" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_99" class="- topic/navtitle ">odczyt</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_100" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="dziedziny"><resourceid appid="dziedziny" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_100" class="- topic/navtitle ">doświadczenie 3D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_101" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="wolna_wola"><resourceid appid="wolna_wola" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_101" class="- topic/navtitle ">wolna wola 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="atakowanie"><resourceid appid="atakowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10_ssol3" class="- topic/navtitle ">atak 4D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na supresji zagrożenia</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_41" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szansa_6d"><resourceid appid="szansa_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_41_ssol2" class="- topic/navtitle ">szansa 6D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_33" type="task"><topicmeta class="- map/topicmeta " data-topic-id="error"><resourceid appid="error" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_33_ssol3" class="- topic/navtitle ">error</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol3" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_48" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przypuszczenia"><resourceid appid="przypuszczenia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_48_ssol1" class="- topic/navtitle ">przypuszczenia</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_50" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="ramy"><resourceid appid="ramy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_50_ssol1" class="- topic/navtitle ">ramy 2D5P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_35" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="kalkulacja"><resourceid appid="kalkulacja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_35_ssol1" class="- topic/navtitle ">kalkulacja 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_41" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szansa_6d"><resourceid appid="szansa_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_41_ssol3" class="- topic/navtitle ">szansa 6D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_102" broken-link="true" type="task"><topicmeta class="- map/topicmeta " data-topic-id="trendy_2d5p"><resourceid appid="trendy_2d5p" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_102" class="- topic/navtitle ">trendy 2D5P</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_103" broken-link="true" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przygotowanie"><resourceid appid="przygotowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_103" class="- topic/navtitle ">przygotowanie</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_104" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="wygrywanie"><resourceid appid="wygrywanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_104" class="- topic/navtitle ">zwycięstwo 1D+2D 5P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_2" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zwodzenie"><resourceid appid="zwodzenie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_2_ssol2" class="- topic/navtitle ">zwodzenie 10P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol4" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="atakowanie"><resourceid appid="atakowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10_ssol4" class="- topic/navtitle ">atak 4D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na supresji zagrożenia</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_5" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="bezposrednia"><resourceid appid="bezposrednia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_5_ssol1" class="- topic/navtitle ">bezposrednio 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol6" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_14" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obrona_4d"><resourceid appid="obrona_4d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_14_ssol3" class="- topic/navtitle ">obrona 4D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_3" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="po_rednia"><resourceid appid="po_rednia" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_3_ssol1" class="- topic/navtitle ">pośrednio 2D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_105" type="task"><topicmeta class="- map/topicmeta " data-topic-id="modyfikowanie_plan_w"><resourceid appid="modyfikowanie_plan_w" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_105" class="- topic/navtitle ">modyfikowanie planów 9P</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">rezultat zależy od okoliczności</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_33" type="task"><topicmeta class="- map/topicmeta " data-topic-id="error"><resourceid appid="error" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_33_ssol4" class="- topic/navtitle ">error</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_41" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szansa_6d"><resourceid appid="szansa_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_41_ssol4" class="- topic/navtitle ">szansa 6D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_106" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="rekalibracja"><resourceid appid="rekalibracja" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_106" class="- topic/navtitle ">rekalibracja 8P</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_107" type="task"><topicmeta class="- map/topicmeta " data-topic-id="przewidywanie"><resourceid appid="przewidywanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_107" class="- topic/navtitle ">przewidywanie 8P</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_50" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="ramy"><resourceid appid="ramy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_50_ssol2" class="- topic/navtitle ">ramy 2D5P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_108" type="task"><topicmeta class="- map/topicmeta " data-topic-id="znane"><resourceid appid="znane" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_108" class="- topic/navtitle ">znane</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_109" type="task"><topicmeta class="- map/topicmeta " data-topic-id="nieznane"><resourceid appid="nieznane" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_109" class="- topic/navtitle ">nieznane</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_41" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szansa_6d"><resourceid appid="szansa_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_41_ssol5" class="- topic/navtitle ">szansa 6D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="atakowanie"><resourceid appid="atakowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10_ssol5" class="- topic/navtitle ">atak 4D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na supresji zagrożenia</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_15" type="task"><topicmeta class="- map/topicmeta " data-topic-id="ucieczka"><resourceid appid="ucieczka" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_15_ssol4" class="- topic/navtitle ">ucieczka 2D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na wyparciu zagrożenia</shortdesc></topicmeta></topicref><topicref class="- map/topicref " href="#unique_33" type="task"><topicmeta class="- map/topicmeta " data-topic-id="error"><resourceid appid="error" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_33_ssol5" class="- topic/navtitle ">error</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc></topicmeta><topicref class="- map/topicref " href="#null" broken-link="true"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta><topicref class="- map/topicref " href="#unique_108" type="task"><topicmeta class="- map/topicmeta " data-topic-id="znane"><resourceid appid="znane" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_108_ssol1" class="- topic/navtitle ">znane</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#null" broken-link="true"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta><topicref class="- map/topicref " href="#unique_109" type="task"><topicmeta class="- map/topicmeta " data-topic-id="nieznane"><resourceid appid="nieznane" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_109_ssol1" class="- topic/navtitle ">nieznane</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_110" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="gdzie"><resourceid appid="gdzie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_110" class="- topic/navtitle ">gdzie?</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_111" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="kiedy"><resourceid appid="kiedy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_111" class="- topic/navtitle ">kiedy?</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_112" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="jak"><resourceid appid="jak" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_112" class="- topic/navtitle ">jak?</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_62" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zaradno"><resourceid appid="zaradno" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_62_ssol1" class="- topic/navtitle ">zaradność</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_113" type="task"><topicmeta class="- map/topicmeta " data-topic-id="miara"><resourceid appid="miara" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_113" class="- topic/navtitle ">miarą</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_114" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sily"><resourceid appid="sily" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_114" class="- topic/navtitle ">siły</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_115" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="metody_posrednie"><resourceid appid="metody_posrednie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_115" class="- topic/navtitle ">metody posrednie 2D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_116" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="podzielenie"><resourceid appid="podzielenie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_116" class="- topic/navtitle ">podzielenie</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol5" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_117" type="reference"><topicmeta class="- map/topicmeta " data-topic-id="przynaleznosc"><resourceid appid="przynaleznosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_117" class="- topic/navtitle ">przynaleznosc</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol6" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_118" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="wywiad"><resourceid appid="wywiad" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_118" class="- topic/navtitle ">wywiad</navtitle><?ditaot gentext?></topicmeta></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_119" type="task"><topicmeta class="- map/topicmeta " data-topic-id="metody_dyscypliny"><resourceid appid="metody_dyscypliny" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_119" class="- topic/navtitle ">Dyscyplinowanie 1D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Czynniki po których rozpoznasz dobrą dyscyplinę</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_120" type="task"><topicmeta class="- map/topicmeta " data-topic-id="podporzadkowanie_autorytetow"><resourceid appid="podporzadkowanie_autorytetow" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_120" class="- topic/navtitle ">podporządkowanie autorytetów</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_121" type="task"><topicmeta class="- map/topicmeta " data-topic-id="specjalizowanie_kadry"><resourceid appid="specjalizowanie_kadry" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_121" class="- topic/navtitle ">specjalizowanie kadry</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref><topicref class="- map/topicref " href="#unique_122" type="task"><topicmeta class="- map/topicmeta " data-topic-id="kontrola_nad_wydatkami"><resourceid appid="kontrola_nad_wydatkami" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_122" class="- topic/navtitle ">kontrolę nad wydatkami</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc "/></topicmeta></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_123" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="niszczenie_1d"><resourceid appid="niszczenie_1d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_123" class="- topic/navtitle ">niszczenie 1D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_124" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="teren_ciezki"><resourceid appid="teren_ciezki" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_124" class="- topic/navtitle ">teren ciezki</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_13" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zgranie"><resourceid appid="zgranie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_13_ssol3" class="- topic/navtitle ">zgranie 5P</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_125" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="terytorium_0d"><resourceid appid="terytorium_0d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_125" class="- topic/navtitle ">terytorium 0D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_126" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="gory"><resourceid appid="gory" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_126" class="- topic/navtitle ">Gory</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_127" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="rzeki"><resourceid appid="rzeki" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_127" class="- topic/navtitle ">rzeki</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_128" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="bagna"><resourceid appid="bagna" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_128" class="- topic/navtitle ">bagna</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_129" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="rowniny"><resourceid appid="rowniny" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_129" class="- topic/navtitle ">rowniny</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_130" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obserwacja_2p"><resourceid appid="obserwacja_2p" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_130" class="- topic/navtitle ">obserwacja 2P</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_68" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="madrosc"><resourceid appid="madrosc" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_68_ssol1" class="- topic/navtitle ">mądrość</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#null" broken-link="true"><topicmeta class="- map/topicmeta " data-topic-id=""><resourceid appid="" class="- topic/resourceid " oxy-source="topic"/></topicmeta><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol7" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_131" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="teren_dostepny"><resourceid appid="teren_dostepny" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_131" class="- topic/navtitle ">Teren dostepny</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol7" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol8" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_132" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="rubikon"><resourceid appid="rubikon" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_132" class="- topic/navtitle ">rubikon</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_133" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="opozniajacy"><resourceid appid="opozniajacy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_133" class="- topic/navtitle ">opozniajacy</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol8" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol9" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_134" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="waskie_przejscie"><resourceid appid="waskie_przejscie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_134" class="- topic/navtitle ">waskie przejscie</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_14" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="obrona_4d"><resourceid appid="obrona_4d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_14_ssol4" class="- topic/navtitle ">obrona 4D</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_41" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="szansa_6d"><resourceid appid="szansa_6d" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_41_ssol6" class="- topic/navtitle ">szansa 6D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_10" type="task"><topicmeta class="- map/topicmeta " data-topic-id="atakowanie"><resourceid appid="atakowanie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_10_ssol6" class="- topic/navtitle ">atak 4D</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">polega na supresji zagrożenia</shortdesc></topicmeta><topicref class="- map/topicref " href="#unique_33" type="task"><topicmeta class="- map/topicmeta " data-topic-id="error"><resourceid appid="error" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_33_ssol6" class="- topic/navtitle ">error</navtitle><?ditaot gentext?><?ditaot genshortdesc?><shortdesc class="- map/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc></topicmeta></topicref></topicref></topicref><topicref class="- map/topicref " href="#unique_135" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="stromy"><resourceid appid="stromy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_135" class="- topic/navtitle ">strome wzniesienie</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_136" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="zdystansowany_do_wroga"><resourceid appid="zdystansowany_do_wroga" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_136" class="- topic/navtitle ">zdystansowany do wroga</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_137" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="desperackie"><resourceid appid="desperackie" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_137" class="- topic/navtitle ">teren desperacki</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_138" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="terytorium_powierzchowne"><resourceid appid="terytorium_powierzchowne" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_138" class="- topic/navtitle ">terytorium powierzchowne</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_139" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="swarliwy"><resourceid appid="swarliwy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_139" class="- topic/navtitle ">swarliwy</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_140" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="otwarty_teren"><resourceid appid="otwarty_teren" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_140" class="- topic/navtitle ">otwarty teren</navtitle><?ditaot gentext?></topicmeta><topicref class="- map/topicref " href="#unique_8" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="sojusznik"><resourceid appid="sojusznik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_8_ssol9" class="- topic/navtitle ">sojusznik 2D</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_42" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="przeciwnik"><resourceid appid="przeciwnik" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_42_ssol10" class="- topic/navtitle ">przeciwnik 1D</navtitle><?ditaot gentext?></topicmeta></topicref></topicref><topicref class="- map/topicref " href="#unique_141" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="autostrada"><resourceid appid="autostrada" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_141" class="- topic/navtitle ">autostrada</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_142" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="teren_powazny"><resourceid appid="teren_powazny" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_142" class="- topic/navtitle ">teren powazny</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_124" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="teren_ciezki"><resourceid appid="teren_ciezki" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_124_ssol1" class="- topic/navtitle ">teren ciezki</navtitle><?ditaot gentext?></topicmeta></topicref><topicref class="- map/topicref " href="#unique_143" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="teren_obrebowy"><resourceid appid="teren_obrebowy" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_143" class="- topic/navtitle ">teren obrębowy</navtitle><?ditaot gentext?></topicmeta></topicref></topicref>
+    <topicref xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" is-chapter="true" class="- map/topicref " href="#unique_144" type="topic"><topicmeta class="- map/topicmeta " data-topic-id="faq"><resourceid appid="faq" class="- topic/resourceid " oxy-source="topic"/><navtitle href="#unique_144" class="- topic/navtitle ">FAQ</navtitle><?ditaot gentext?></topicmeta></topicref>
+</opentopic:map><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_1" topicrefclass="- map/topicref " nd:nd-id="energia_9d" oid="energia_9d">
+    <title class="- topic/title ">Energia 9D</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_1_Connect_42_ol_nkp_jdf_tjb" nd:nd-id="ol_nkp_jdf_tjb">
+            <li class="- topic/li ">Jing / Jang</li>
+            <li class="- topic/li ">Prawo / Lewo</li>
+            <li class="- topic/li ">Supresja / Subtelność</li>
+            <li class="- topic/li ">Męska / Żeńska</li>
+            <li class="- topic/li ">Słońce / Księżyc</li>
+            <li class="- topic/li ">Bezpośrednio / Pośrednio</li>
+            <li class="- topic/li ">Ból / Przyjemność</li>
+            <li class="- topic/li ">Nienawiść / Namiętność</li>
+            <li class="- topic/li ">Rozsierdzenie / Miłosierdzie</li>
+            <li class="- topic/li ">Wiedza / Wiara</li>
+        </ol>
+    </body>
+<topic class="- topic/topic " id="unique_2" topicrefclass="- map/topicref " nd:nd-id="zwodzenie" oid="zwodzenie">
+    <title class="- topic/title ">zwodzenie 10P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_3" topicrefclass="- map/topicref " nd:nd-id="po_rednia" oid="po_rednia">
+    <title class="- topic/title ">pośrednio 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_4" topicrefclass="- map/topicref " nd:nd-id="obyczajowosc" oid="obyczajowosc">
+    <title class="- topic/title ">obyczajowosc</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_5" topicrefclass="- map/topicref " nd:nd-id="bezposrednia" oid="bezposrednia">
+    <title class="- topic/title ">bezposrednio 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_6" topicrefclass="- map/topicref " nd:nd-id="zarzadzanie" oid="zarzadzanie">
+    <title class="- topic/title ">zarzadzanie</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic></topic><topic class="- topic/topic " id="unique_7" topicrefclass="- map/topicref " nd:nd-id="unia" oid="unia">
+    <title class="- topic/title ">unia</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_8" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+<topic class="- topic/topic " id="unique_9" topicrefclass="- map/topicref " nd:nd-id="odwaga" oid="odwaga">
+    <title class="- topic/title ">odwaga 4D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<task class="- topic/topic task/task " id="unique_10" topicrefclass="- map/topicref " nd:nd-id="atakowanie" oid="atakowanie">
+    <title class="- topic/title ">atak 4D</title>
+    <shortdesc class="- topic/shortdesc ">polega na supresji zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Wyczekiwać na błąd przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Po wykryciu błędu atakować</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><topic class="- topic/topic " id="unique_11" topicrefclass="- map/topicref " nd:nd-id="momentum" oid="momentum">
+    <title class="- topic/title ">momentum 6P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">pęd trendów, kultura, efekt socjalny</p>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_12" topicrefclass="- map/topicref " nd:nd-id="homeostaza" oid="homeostaza">
+    <title class="- topic/title ">spokój 3D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+        <p class="- topic/p ">zachowanie równowagi/homeostazy jest kluczowe.</p>
+    </body>
+<topic class="- topic/topic " id="unique_13" topicrefclass="- map/topicref " nd:nd-id="zgranie" oid="zgranie">
+    <title class="- topic/title ">zgranie 5P</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_13_Connect_42_ol_q4h_mmf_tjb" nd:nd-id="ol_q4h_mmf_tjb">
+            <li class="- topic/li ">Timing, wyczucie czasu.</li>
+            <li class="- topic/li ">Refleks względem sytuacji.</li>
+            <li class="- topic/li ">Sprawność działań.</li>
+            <li class="- topic/li ">Szybkość realizacji.</li>
+        </ol>
+        <p class="- topic/p "/>
+    </body>
+<task class="- topic/topic task/task " id="unique_10_ssol1" topicrefclass="- map/topicref " nd:nd-id="atakowanie" oid="atakowanie">
+    <title class="- topic/title ">atak 4D</title>
+    <shortdesc class="- topic/shortdesc ">polega na supresji zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Wyczekiwać na błąd przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Po wykryciu błędu atakować</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><topic class="- topic/topic " id="unique_14" topicrefclass="- map/topicref " nd:nd-id="obrona_4d" oid="obrona_4d">
+    <title class="- topic/title ">obrona 4D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Trwanie w obronie aż do błędu przeciwnika</p>
+    </body>
+</topic><task class="- topic/topic task/task " id="unique_15" topicrefclass="- map/topicref " nd:nd-id="ucieczka" oid="ucieczka">
+    <title class="- topic/title ">ucieczka 2D</title>
+    <shortdesc class="- topic/shortdesc ">polega na wyparciu zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task></topic></topic><topic class="- topic/topic " id="unique_16" topicrefclass="- map/topicref " nd:nd-id="komfort" oid="komfort">
+    <title class="- topic/title ">komfort 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_14_ssol1" topicrefclass="- map/topicref " nd:nd-id="obrona_4d" oid="obrona_4d">
+    <title class="- topic/title ">obrona 4D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Trwanie w obronie aż do błędu przeciwnika</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_4_ssol1" topicrefclass="- map/topicref " nd:nd-id="obyczajowosc" oid="obyczajowosc">
+    <title class="- topic/title ">obyczajowosc</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_17" topicrefclass="- map/topicref " nd:nd-id="strach" oid="strach">
+    <title class="- topic/title ">strach 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<task class="- topic/topic task/task " id="unique_15_ssol1" topicrefclass="- map/topicref " nd:nd-id="ucieczka" oid="ucieczka">
+    <title class="- topic/title ">ucieczka 2D</title>
+    <shortdesc class="- topic/shortdesc ">polega na wyparciu zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task><topic class="- topic/topic " id="unique_18" topicrefclass="- map/topicref " nd:nd-id="nieprzewidywalnosc" oid="nieprzewidywalnosc">
+    <title class="- topic/title ">nieprzewidywalnosc</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic></topic></topic></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_19" topicrefclass="- map/topicref " nd:nd-id="grawitacja_8d" oid="grawitacja_8d">
+    <title class="- topic/title ">grawitacja 8D8P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_20" topicrefclass="- map/topicref " nd:nd-id="zagrozenie" oid="zagrozenie">
+    <title class="- topic/title ">zagrozenie</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_21" topicrefclass="- map/topicref " nd:nd-id="cechy_dowodcy" oid="cechy_dowodcy">
+    <title class="- topic/title "><keyword class="- topic/keyword ">Dowódca</keyword> 5D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Jednostka świadoma wpływu, ugruntowana w Jaźni.</p>
+    </body>
+<reference class="- topic/topic       reference/reference " id="unique_22" topicrefclass="- map/topicref " nd:nd-id="tomnosc_4d_umyslu_6d" oid="tomnosc_4d_umyslu_6d">
+    <title class="- topic/title ">utrata tomnosc 4D umyslu 6D</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference><topic class="- topic/topic " id="unique_23" topicrefclass="- map/topicref " nd:nd-id="brak_rowowagi" oid="brak_rowowagi">
+    <title class="- topic/title ">brak rowowagi</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_17_ssol1" topicrefclass="- map/topicref " nd:nd-id="strach" oid="strach">
+    <title class="- topic/title ">strach 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_24" topicrefclass="- map/topicref " nd:nd-id="pojmanie" oid="pojmanie">
+    <title class="- topic/title ">pojmanie 0D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_25" topicrefclass="- map/topicref " nd:nd-id="lekkomyslnosc" oid="lekkomyslnosc">
+    <title class="- topic/title ">lekkomyslnosc 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<reference class="- topic/topic       reference/reference " id="unique_26" topicrefclass="- map/topicref " nd:nd-id="destrukcja_1d" oid="destrukcja_1d">
+    <title class="- topic/title ">destrukcja 1D</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference></topic><topic class="- topic/topic " id="unique_27" topicrefclass="- map/topicref " nd:nd-id="porywczosc" oid="porywczosc">
+    <title class="- topic/title ">porywczosc 3D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><reference class="- topic/topic       reference/reference " id="unique_28" topicrefclass="- map/topicref " nd:nd-id="proznosc_3d" oid="proznosc_3d">
+    <title class="- topic/title ">proznosc 3D</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference><topic class="- topic/topic " id="unique_29" topicrefclass="- map/topicref " nd:nd-id="zadufanie_4d" oid="zadufanie_4d">
+    <title class="- topic/title ">zadufanie 4D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<reference class="- topic/topic       reference/reference " id="unique_30" topicrefclass="- map/topicref " nd:nd-id="wrazliwosc" oid="wrazliwosc">
+    <title class="- topic/title ">wrazliwosc</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+<reference class="- topic/topic       reference/reference " id="unique_31" topicrefclass="- map/topicref " nd:nd-id="wstyd" oid="wstyd">
+    <title class="- topic/title ">wstyd</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference></reference></topic><reference class="- topic/topic       reference/reference " id="unique_32" topicrefclass="- map/topicref " nd:nd-id="troskliwosc" oid="troskliwosc">
+    <title class="- topic/title ">troskliwosc</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+<topic class="- topic/topic " id="unique_17_ssol2" topicrefclass="- map/topicref " nd:nd-id="strach" oid="strach">
+    <title class="- topic/title ">strach 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></reference></topic></topic><topic class="- topic/topic " id="unique_8_ssol1" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+<topic class="- topic/topic " id="unique_17_ssol3" topicrefclass="- map/topicref " nd:nd-id="strach" oid="strach">
+    <title class="- topic/title ">strach 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<task class="- topic/topic task/task " id="unique_33" topicrefclass="- map/topicref " nd:nd-id="error" oid="error">
+    <title class="- topic/title ">error</title>
+    <shortdesc class="- topic/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">Zadanie opisuje w jaki sposób zdecydować o błędzie<p class="- topic/p "/></context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Popełnienie błędu nieświadomie 0D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Dopóki się nie przytrafi wyczekiwać 4D błędu przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać obserwacje 6D2P z doświadczeniem 3D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać doświadczenie 3D z cechami wspólnymi 7D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">W zgodzie z sumieniem 8D i założeniem 8P wykonać proces 1D</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task></topic></topic></topic></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_34" topicrefclass="- map/topicref " nd:nd-id="ekonomia" oid="ekonomia">
+    <title class="- topic/title ">Ekonomia 7D</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_34_Connect_42_ol_o4f_tmc_tjb" nd:nd-id="ol_o4f_tmc_tjb">
+            <li class="- topic/li "><keyword class="- topic/keyword ">Kalkulacja</keyword></li>
+            <li class="- topic/li "><keyword class="- topic/keyword ">Planowanie</keyword></li>
+            <li class="- topic/li "><keyword class="- topic/keyword ">Kierunek</keyword></li>
+            <li class="- topic/li "><keyword class="- topic/keyword ">Cele</keyword></li>
+        </ol>
+    </body>
+<topic class="- topic/topic " id="unique_35" topicrefclass="- map/topicref " nd:nd-id="kalkulacja" oid="kalkulacja">
+    <title class="- topic/title ">kalkulacja 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">opanowanie 5P, nabieranie dystansu do sytuacji 6P, ocena przypuszczeń 7P</p>
+    </body>
+<topic class="- topic/topic " id="unique_36" topicrefclass="- map/topicref " nd:nd-id="zasoby" oid="zasoby">
+    <title class="- topic/title ">zasoby</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_37" topicrefclass="- map/topicref " nd:nd-id="wiedza" oid="wiedza">
+    <title class="- topic/title ">poznanie</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+        <p class="- topic/p ">to klucz wygrywania bitew</p>
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_38" topicrefclass="- map/topicref " nd:nd-id="o_sobie" oid="o_sobie">
+    <title class="- topic/title ">siebie</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_39" topicrefclass="- map/topicref " nd:nd-id="o_wrogu" oid="o_wrogu">
+    <title class="- topic/title ">wroga</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_40" topicrefclass="- map/topicref " nd:nd-id="finanse" oid="finanse">
+    <title class="- topic/title ">finanse</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_41" topicrefclass="- map/topicref " nd:nd-id="szansa_6d" oid="szansa_6d">
+    <title class="- topic/title ">szansa 6D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">wynika z obserwacji 6D i doświadczenia 3D</p>
+    </body>
+<topic class="- topic/topic " id="unique_8_ssol2" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_42" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic></topic></topic><topic class="- topic/topic " id="unique_43" topicrefclass="- map/topicref " nd:nd-id="liczebnosc_0" oid="liczebnosc_0">
+    <title class="- topic/title ">liczebność</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_44" topicrefclass="- map/topicref " nd:nd-id="wielkosc" oid="wielkosc">
+    <title class="- topic/title ">wielkosc</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_42_ssol1" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_8_ssol3" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic></topic><task class="- topic/topic task/task " id="unique_45" topicrefclass="- map/topicref " nd:nd-id="opasanie" oid="opasanie">
+    <title class="- topic/title ">opasanie</title>
+    <shortdesc class="- topic/shortdesc ">polega na otoczeniu wroga</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task><task class="- topic/topic task/task " id="unique_10_ssol2" topicrefclass="- map/topicref " nd:nd-id="atakowanie" oid="atakowanie">
+    <title class="- topic/title ">atak 4D</title>
+    <shortdesc class="- topic/shortdesc ">polega na supresji zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Wyczekiwać na błąd przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Po wykryciu błędu atakować</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><task class="- topic/topic task/task " id="unique_15_ssol2" topicrefclass="- map/topicref " nd:nd-id="ucieczka" oid="ucieczka">
+    <title class="- topic/title ">ucieczka 2D</title>
+    <shortdesc class="- topic/shortdesc ">polega na wyparciu zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task></topic></topic><topic class="- topic/topic " id="unique_46" topicrefclass="- map/topicref " nd:nd-id="planowanie" oid="planowanie">
+    <title class="- topic/title ">planowanie</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_47" topicrefclass="- map/topicref " nd:nd-id="kierunek" oid="kierunek">
+    <title class="- topic/title ">kierunek</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_48" topicrefclass="- map/topicref " nd:nd-id="przypuszczenia" oid="przypuszczenia">
+    <title class="- topic/title ">przypuszczenia</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+        <p class="- topic/p ">założenia, są instynktowne 1D</p>
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_49" topicrefclass="- map/topicref " nd:nd-id="strategia" oid="strategia">
+    <title class="- topic/title ">strategia 1D+6D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_50" topicrefclass="- map/topicref " nd:nd-id="ramy" oid="ramy">
+    <title class="- topic/title ">ramy 2D5P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_11_ssol1" topicrefclass="- map/topicref " nd:nd-id="momentum" oid="momentum">
+    <title class="- topic/title ">momentum 6P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">pęd trendów, kultura, efekt socjalny</p>
+    </body>
+<topic class="- topic/topic " id="unique_13_ssol1" topicrefclass="- map/topicref " nd:nd-id="zgranie" oid="zgranie">
+    <title class="- topic/title ">zgranie 5P</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_13_ssol1_Connect_42_ol_q4h_mmf_tjb">
+            <li class="- topic/li ">Timing, wyczucie czasu.</li>
+            <li class="- topic/li ">Refleks względem sytuacji.</li>
+            <li class="- topic/li ">Sprawność działań.</li>
+            <li class="- topic/li ">Szybkość realizacji.</li>
+        </ol>
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_51" topicrefclass="- map/topicref " nd:nd-id="improwizacja" oid="improwizacja">
+    <title class="- topic/title ">improwizacja</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">kreatywność</p>
+    </body>
+</topic></topic><task class="- topic/topic task/task " id="unique_33_ssol1" topicrefclass="- map/topicref " nd:nd-id="error" oid="error">
+    <title class="- topic/title ">error</title>
+    <shortdesc class="- topic/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">Zadanie opisuje w jaki sposób zdecydować o błędzie<p class="- topic/p "/></context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Popełnienie błędu nieświadomie 0D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Dopóki się nie przytrafi wyczekiwać 4D błędu przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać obserwacje 6D2P z doświadczeniem 3D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać doświadczenie 3D z cechami wspólnymi 7D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">W zgodzie z sumieniem 8D i założeniem 8P wykonać proces 1D</cmd>
+            </step>
+        </steps>
+    </taskbody>
+<reference class="- topic/topic       reference/reference " id="unique_52" topicrefclass="- map/topicref " nd:nd-id="zaleta" oid="zaleta">
+    <title class="- topic/title ">zaleta</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference><reference class="- topic/topic       reference/reference " id="unique_53" topicrefclass="- map/topicref " nd:nd-id="wada" oid="wada">
+    <title class="- topic/title ">wada</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference></task></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_21_ssol1" topicrefclass="- map/topicref " nd:nd-id="cechy_dowodcy" oid="cechy_dowodcy">
+    <title class="- topic/title "><keyword class="- topic/keyword ">Dowódca</keyword> 5D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Jednostka świadoma wpływu, ugruntowana w Jaźni.</p>
+    </body>
+<reference class="- topic/topic       reference/reference " id="unique_54" topicrefclass="- map/topicref " nd:nd-id="odpowiedzialnosc" oid="odpowiedzialnosc">
+    <title class="- topic/title ">odpowiedzialnosc</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+<reference class="- topic/topic       reference/reference " id="unique_55" topicrefclass="- map/topicref " nd:nd-id="dezorganizacja" oid="dezorganizacja">
+    <title class="- topic/title ">dezorganizacja</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference><task class="- topic/topic task/task " id="unique_15_ssol3" topicrefclass="- map/topicref " nd:nd-id="ucieczka" oid="ucieczka">
+    <title class="- topic/title ">ucieczka 2D</title>
+    <shortdesc class="- topic/shortdesc ">polega na wyparciu zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task><reference class="- topic/topic       reference/reference " id="unique_56" topicrefclass="- map/topicref " nd:nd-id="niesubordynacja" oid="niesubordynacja">
+    <title class="- topic/title ">niesubordynacja 1D</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference><topic class="- topic/topic " id="unique_57" topicrefclass="- map/topicref " nd:nd-id="kleska_0" oid="kleska_0">
+    <title class="- topic/title ">klęska 3D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><reference class="- topic/topic       reference/reference " id="unique_58" topicrefclass="- map/topicref " nd:nd-id="bankructwo" oid="bankructwo">
+    <title class="- topic/title ">bankructwo</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference><reference class="- topic/topic       reference/reference " id="unique_59" topicrefclass="- map/topicref " nd:nd-id="bunt" oid="bunt">
+    <title class="- topic/title ">bunt</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference></reference><topic class="- topic/topic " id="unique_60" topicrefclass="- map/topicref " nd:nd-id="umiejetnosc" oid="umiejetnosc">
+    <title class="- topic/title ">umiejętności</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">zbiór umiejętności </p>
+    </body>
+<topic class="- topic/topic " id="unique_61" topicrefclass="- map/topicref " nd:nd-id="decyzyjnosc" oid="decyzyjnosc">
+    <title class="- topic/title ">decyzyjność</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Umiejętność podejmowania decyzji</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_62" topicrefclass="- map/topicref " nd:nd-id="zaradno" oid="zaradno">
+    <title class="- topic/title ">zaradność</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">to umiejętność wygrania szybko </p>
+    </body>
+<topic class="- topic/topic " id="unique_63" topicrefclass="- map/topicref " nd:nd-id="sukcesja" oid="sukcesja">
+    <title class="- topic/title ">sukcesja</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">umiejętność kończenia procesu</p>
+    </body>
+</topic></topic></topic><topic class="- topic/topic " id="unique_64" topicrefclass="- map/topicref " nd:nd-id="cele_0" oid="cele_0">
+    <title class="- topic/title ">cele</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Określenie priorytetów</p>
+    </body>
+<topic class="- topic/topic " id="unique_65" topicrefclass="- map/topicref " nd:nd-id="zwyciestwo" oid="zwyciestwo">
+    <title class="- topic/title ">zwycięstwo</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><task class="- topic/topic task/task " id="unique_66" topicrefclass="- map/topicref " nd:nd-id="efektywnosc" oid="efektywnosc">
+    <title class="- topic/title ">efektywność</title>
+    <shortdesc class="- topic/shortdesc ">Nie przedłużanie kampani.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task></topic><topic class="- topic/topic " id="unique_67" topicrefclass="- map/topicref " nd:nd-id="cechy_0" oid="cechy_0">
+    <title class="- topic/title ">cechy</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">zbiór cech</p>
+    </body>
+<topic class="- topic/topic " id="unique_8_ssol4" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+<topic class="- topic/topic " id="unique_68" topicrefclass="- map/topicref " nd:nd-id="madrosc" oid="madrosc">
+    <title class="- topic/title ">mądrość</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_69" topicrefclass="- map/topicref " nd:nd-id="szczerosc" oid="szczerosc">
+    <title class="- topic/title ">szczerość</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_9_ssol1" topicrefclass="- map/topicref " nd:nd-id="odwaga" oid="odwaga">
+    <title class="- topic/title ">odwaga 4D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_70" topicrefclass="- map/topicref " nd:nd-id="wiara" oid="wiara">
+    <title class="- topic/title ">wiara</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_71" topicrefclass="- map/topicref " nd:nd-id="dyscyplina" oid="dyscyplina">
+    <title class="- topic/title ">dyscyplina</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_72" topicrefclass="- map/topicref " nd:nd-id="kontrola" oid="kontrola">
+    <title class="- topic/title ">kontrola</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_73" topicrefclass="- map/topicref " nd:nd-id="szczodrobliwo" oid="szczodrobliwo">
+    <title class="- topic/title ">szczodrobliwość</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<reference class="- topic/topic       reference/reference " id="unique_74" topicrefclass="- map/topicref " nd:nd-id="traktowanie" oid="traktowanie">
+    <title class="- topic/title ">traktowanie</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference></topic><topic class="- topic/topic " id="unique_70_ssol1" topicrefclass="- map/topicref " nd:nd-id="wiara" oid="wiara">
+    <title class="- topic/title ">wiara</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_42_ssol2" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+<topic class="- topic/topic " id="unique_75" topicrefclass="- map/topicref " nd:nd-id="poczucie_koherencji" oid="poczucie_koherencji">
+    <title class="- topic/title ">poczucie koherencji 12P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">oznacza globalną orientację człowieka, wyrażającą stopień, w jakim ma on trwałe, choć
+            dynamiczne poczucie pewności, że: <ol class="- topic/ol " id="unique_75_Connect_42_ol_q4l_mnf_tjb" nd:nd-id="ol_q4l_mnf_tjb">
+                <li class="- topic/li "><xref class="- topic/xref " format="html" href="https://pl.wikipedia.org/wiki/Bodziec_(psychologia)" scope="external"><?ditaot usertext?>bodźce</xref> napływające w ciągu życia ze <xref class="- topic/xref " format="html" href="https://pl.wikipedia.org/wiki/%C5%9Arodowisko" scope="external"><?ditaot usertext?>środowiska</xref> wewnętrznego i zewnętrznego mają
+                    charakter ustrukturowany, przewidywalny i wytłumaczalny
+                    (<b class="+ topic/ph hi-d/b ">zrozumiałość</b>);</li>
+                <li class="- topic/li ">dostępne są <xref class="- topic/xref " format="html" href="https://pl.wikipedia.org/wiki/Zasoby_(psychologia)" scope="external"><?ditaot usertext?>zasoby</xref>, które pozwolą mu sprostać
+                        <xref class="- topic/xref " format="html" href="https://pl.wikipedia.org/wiki/Stres" scope="external"><?ditaot usertext?>wymaganiom</xref> stawianym przez bodźce
+                    (<b class="+ topic/ph hi-d/b ">zaradność</b>);</li>
+                <li class="- topic/li ">wymagania te są dla niego wyzwaniem wartym wysiłku i zaangażowania
+                        (<b class="+ topic/ph hi-d/b ">sensowność</b>).</li>
+            </ol></p>
+    </body>
+    <related-links class="- topic/related-links ">
+        <link class="- topic/link " format="html" href="https://pl.wikipedia.org/wiki/Bodziec_(psychologia)" scope="external"/>
+    </related-links>
+</topic><topic class="- topic/topic " id="unique_2_ssol1" topicrefclass="- map/topicref " nd:nd-id="zwodzenie" oid="zwodzenie">
+    <title class="- topic/title ">zwodzenie 10P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_13_ssol2" topicrefclass="- map/topicref " nd:nd-id="zgranie" oid="zgranie">
+    <title class="- topic/title ">zgranie 5P</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_13_ssol2_Connect_42_ol_q4h_mmf_tjb">
+            <li class="- topic/li ">Timing, wyczucie czasu.</li>
+            <li class="- topic/li ">Refleks względem sytuacji.</li>
+            <li class="- topic/li ">Sprawność działań.</li>
+            <li class="- topic/li ">Szybkość realizacji.</li>
+        </ol>
+        <p class="- topic/p "/>
+    </body>
+</topic></topic></topic><reference class="- topic/topic       reference/reference " id="unique_76" topicrefclass="- map/topicref " nd:nd-id="efektywny_lider" oid="efektywny_lider">
+    <title class="- topic/title ">efektywny lider</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_57_ssol1" topicrefclass="- map/topicref " nd:nd-id="kleska_0" oid="kleska_0">
+    <title class="- topic/title ">klęska 3D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_104" topicrefclass="- map/topicref " nd:nd-id="wygrywanie" oid="wygrywanie">
+    <title class="- topic/title ">zwycięstwo 1D+2D 5P</title>
+    <abstract class="- topic/abstract ">
+        <equation-figure class="+ topic/fig equation-d/equation-figure "><desc class="- topic/desc ">kluczowe czynniki niezbędne do zabezpieczenia zwycięstwa</desc></equation-figure>
+    </abstract>
+    <body class="- topic/body ">
+        <p class="- topic/p ">
+            <ol class="- topic/ol " id="unique_104_Connect_42_ol_ffh_y2d_tjb" nd:nd-id="ol_ffh_y2d_tjb">
+                <li class="- topic/li ">modyfikowanie planów</li>
+                <li class="- topic/li ">zwodzenie przeciwnika</li>
+                <li class="- topic/li ">przewidywanie</li>
+            </ol>
+        </p>
+    </body>
+<topic class="- topic/topic " id="unique_2_ssol2" topicrefclass="- map/topicref " nd:nd-id="zwodzenie" oid="zwodzenie">
+    <title class="- topic/title ">zwodzenie 10P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_42_ssol4" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+<task class="- topic/topic task/task " id="unique_10_ssol4" topicrefclass="- map/topicref " nd:nd-id="atakowanie" oid="atakowanie">
+    <title class="- topic/title ">atak 4D</title>
+    <shortdesc class="- topic/shortdesc ">polega na supresji zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Wyczekiwać na błąd przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Po wykryciu błędu atakować</cmd>
+            </step>
+        </steps>
+    </taskbody>
+<topic class="- topic/topic " id="unique_5_ssol1" topicrefclass="- map/topicref " nd:nd-id="bezposrednia" oid="bezposrednia">
+    <title class="- topic/title ">bezposrednio 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></task></topic><topic class="- topic/topic " id="unique_8_ssol6" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+<topic class="- topic/topic " id="unique_14_ssol3" topicrefclass="- map/topicref " nd:nd-id="obrona_4d" oid="obrona_4d">
+    <title class="- topic/title ">obrona 4D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Trwanie w obronie aż do błędu przeciwnika</p>
+    </body>
+<topic class="- topic/topic " id="unique_3_ssol1" topicrefclass="- map/topicref " nd:nd-id="po_rednia" oid="po_rednia">
+    <title class="- topic/title ">pośrednio 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic></topic></topic><task class="- topic/topic task/task " id="unique_105" topicrefclass="- map/topicref " nd:nd-id="modyfikowanie_plan_w" oid="modyfikowanie_plan_w">
+    <title class="- topic/title ">modyfikowanie planów 9P</title>
+    <shortdesc class="- topic/shortdesc ">rezultat zależy od okoliczności</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">atakować obszar, który nie jest broniony</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">bronić obszar, który nie może być zdobyty</cmd>
+            </step>
+        </steps>
+    </taskbody>
+<task class="- topic/topic task/task " id="unique_33_ssol4" topicrefclass="- map/topicref " nd:nd-id="error" oid="error">
+    <title class="- topic/title ">error</title>
+    <shortdesc class="- topic/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">Zadanie opisuje w jaki sposób zdecydować o błędzie<p class="- topic/p "/></context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Popełnienie błędu nieświadomie 0D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Dopóki się nie przytrafi wyczekiwać 4D błędu przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać obserwacje 6D2P z doświadczeniem 3D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać doświadczenie 3D z cechami wspólnymi 7D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">W zgodzie z sumieniem 8D i założeniem 8P wykonać proces 1D</cmd>
+            </step>
+        </steps>
+    </taskbody>
+<topic class="- topic/topic " id="unique_41_ssol4" topicrefclass="- map/topicref " nd:nd-id="szansa_6d" oid="szansa_6d">
+    <title class="- topic/title ">szansa 6D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">wynika z obserwacji 6D i doświadczenia 3D</p>
+    </body>
+<topic class="- topic/topic " id="unique_106" topicrefclass="- map/topicref " nd:nd-id="rekalibracja" oid="rekalibracja">
+    <title class="- topic/title ">rekalibracja 8P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">użycie zasobu na słabości wroga</p>
+    </body>
+</topic></topic></task></task><task class="- topic/topic task/task " id="unique_107" topicrefclass="- map/topicref " nd:nd-id="przewidywanie" oid="przewidywanie">
+    <title class="- topic/title ">przewidywanie 8P</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Znać swoje słabości i siły</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Poznawać słabości i sił wroga</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Nie zdradzać swoich sił i słabości</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Zabezpieczyć wygraną</cmd>
+            </step>
+        </steps>
+    </taskbody>
+<topic class="- topic/topic " id="unique_50_ssol2" topicrefclass="- map/topicref " nd:nd-id="ramy" oid="ramy">
+    <title class="- topic/title ">ramy 2D5P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<task class="- topic/topic " id="unique_108" topicrefclass="- map/topicref " nd:nd-id="znane" oid="znane">
+    <title class="- topic/title ">znane</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task><task class="- topic/topic " id="unique_109" topicrefclass="- map/topicref " nd:nd-id="nieznane" oid="nieznane">
+    <title class="- topic/title ">nieznane</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task></topic><topic class="- topic/topic " id="unique_41_ssol5" topicrefclass="- map/topicref " nd:nd-id="szansa_6d" oid="szansa_6d">
+    <title class="- topic/title ">szansa 6D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">wynika z obserwacji 6D i doświadczenia 3D</p>
+    </body>
+<task class="- topic/topic task/task " id="unique_10_ssol5" topicrefclass="- map/topicref " nd:nd-id="atakowanie" oid="atakowanie">
+    <title class="- topic/title ">atak 4D</title>
+    <shortdesc class="- topic/shortdesc ">polega na supresji zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Wyczekiwać na błąd przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Po wykryciu błędu atakować</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task><task class="- topic/topic task/task " id="unique_15_ssol4" topicrefclass="- map/topicref " nd:nd-id="ucieczka" oid="ucieczka">
+    <title class="- topic/title ">ucieczka 2D</title>
+    <shortdesc class="- topic/shortdesc ">polega na wyparciu zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task><task class="- topic/topic task/task " id="unique_33_ssol5" topicrefclass="- map/topicref " nd:nd-id="error" oid="error">
+    <title class="- topic/title ">error</title>
+    <shortdesc class="- topic/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">Zadanie opisuje w jaki sposób zdecydować o błędzie<p class="- topic/p "/></context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Popełnienie błędu nieświadomie 0D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Dopóki się nie przytrafi wyczekiwać 4D błędu przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać obserwacje 6D2P z doświadczeniem 3D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać doświadczenie 3D z cechami wspólnymi 7D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">W zgodzie z sumieniem 8D i założeniem 8P wykonać proces 1D</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task></topic><topic class="- topic/topic " id="unique_110" topicrefclass="- map/topicref " nd:nd-id="gdzie" oid="gdzie">
+    <title class="- topic/title ">gdzie?</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><reference class="- topic/topic       reference/reference " id="unique_111" topicrefclass="- map/topicref " nd:nd-id="kiedy" oid="kiedy">
+    <title class="- topic/title ">kiedy?</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference><reference class="- topic/topic       reference/reference " id="unique_112" topicrefclass="- map/topicref " nd:nd-id="jak" oid="jak">
+    <title class="- topic/title ">jak?</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+</reference></task><topic class="- topic/topic " id="unique_62_ssol1" topicrefclass="- map/topicref " nd:nd-id="zaradno" oid="zaradno">
+    <title class="- topic/title ">zaradność</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">to umiejętność wygrania szybko </p>
+    </body>
+<task class="- topic/topic task/task " id="unique_113" topicrefclass="- map/topicref " nd:nd-id="miara" oid="miara">
+    <title class="- topic/title ">miarą</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+<topic class="- topic/topic " id="unique_114" topicrefclass="- map/topicref " nd:nd-id="sily" oid="sily">
+    <title class="- topic/title ">siły</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></task></topic></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_115" topicrefclass="- map/topicref " nd:nd-id="metody_posrednie" oid="metody_posrednie">
+    <title class="- topic/title ">metody posrednie 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<reference class="- topic/topic       reference/reference " id="unique_116" topicrefclass="- map/topicref " nd:nd-id="podzielenie" oid="podzielenie">
+    <title class="- topic/title ">podzielenie</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+<topic class="- topic/topic " id="unique_42_ssol5" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+<reference class="- topic/topic       reference/reference " id="unique_117" topicrefclass="- map/topicref " nd:nd-id="przynaleznosc" oid="przynaleznosc">
+    <title class="- topic/title ">przynaleznosc</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <refbody class="- topic/body        reference/refbody "> </refbody>
+<topic class="- topic/topic " id="unique_42_ssol6" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic></reference></topic></reference><topic class="- topic/topic " id="unique_118" topicrefclass="- map/topicref " nd:nd-id="wywiad" oid="wywiad">
+    <title class="- topic/title ">wywiad</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">odgrywa ważną rolę w prowadzeniu wojny. Pozwala osiągnąć to, czego bez wiedzy osiągnąć
+            się nie da. Jest 5 typów szpiegów:<ol class="- topic/ol " id="unique_118_Connect_42_ol_ax5_kcg_tjb" nd:nd-id="ol_ax5_kcg_tjb">
+                <li class="- topic/li ">lokalni; ci którzy zamieszkują okolicę.</li>
+                <li class="- topic/li ">wewnętrzni; oficjele wroga.</li>
+                <li class="- topic/li ">nawróceni; szpiedzy wroga przekonani do naszych korzyści.</li>
+                <li class="- topic/li ">przeklęci; Ci którzy szerzą dezinformację.</li>
+                <li class="- topic/li ">ocaleli; Ci, którzy przynoszą informacje.</li>
+            </ol></p>
+    </body>
+</topic></topic><task xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_119" topicrefclass="- map/topicref " nd:nd-id="metody_dyscypliny" oid="metody_dyscypliny">
+    <title class="- topic/title ">Dyscyplinowanie 1D</title>
+    <shortdesc class="- topic/shortdesc ">Czynniki po których rozpoznasz dobrą dyscyplinę</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p ">Dyscyplinę osiąga się poprzez</p>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">podporządkowanie autorytetu</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">specjalizowanie kadry</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">kontrolę nad wydatkami</cmd>
+            </step>
+        </steps>
+    </taskbody>
+<task class="- topic/topic task/task " id="unique_120" topicrefclass="- map/topicref " nd:nd-id="podporzadkowanie_autorytetow" oid="podporzadkowanie_autorytetow">
+    <title class="- topic/title ">podporządkowanie autorytetów</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task><task class="- topic/topic task/task " id="unique_121" topicrefclass="- map/topicref " nd:nd-id="specjalizowanie_kadry" oid="specjalizowanie_kadry">
+    <title class="- topic/title ">specjalizowanie kadry</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task><task class="- topic/topic task/task " id="unique_122" topicrefclass="- map/topicref " nd:nd-id="kontrola_nad_wydatkami" oid="kontrola_nad_wydatkami">
+    <title class="- topic/title ">kontrolę nad wydatkami</title>
+    <shortdesc class="- topic/shortdesc "/>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd "/>
+            </step>
+        </steps>
+    </taskbody>
+</task></task><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_123" topicrefclass="- map/topicref " nd:nd-id="niszczenie_1d" oid="niszczenie_1d">
+    <title class="- topic/title ">niszczenie 1D</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_123_Connect_42_ol_msm_4bg_tjb" nd:nd-id="ol_msm_4bg_tjb">
+            <li class="- topic/li ">obozów, placówek</li>
+            <li class="- topic/li ">magazyny</li>
+            <li class="- topic/li ">transporty</li>
+            <li class="- topic/li ">arsenały</li>
+        </ol>
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_124" topicrefclass="- map/topicref " nd:nd-id="teren_ciezki" oid="teren_ciezki">
+    <title class="- topic/title ">teren ciezki</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">to taki, który ciężko przekroczyć</p>
+    </body>
+<topic class="- topic/topic " id="unique_13_ssol3" topicrefclass="- map/topicref " nd:nd-id="zgranie" oid="zgranie">
+    <title class="- topic/title ">zgranie 5P</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_13_ssol3_Connect_42_ol_q4h_mmf_tjb">
+            <li class="- topic/li ">Timing, wyczucie czasu.</li>
+            <li class="- topic/li ">Refleks względem sytuacji.</li>
+            <li class="- topic/li ">Sprawność działań.</li>
+            <li class="- topic/li ">Szybkość realizacji.</li>
+        </ol>
+        <p class="- topic/p "/>
+    </body>
+</topic></topic></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_125" topicrefclass="- map/topicref " nd:nd-id="terytorium_0d" oid="terytorium_0d">
+    <title class="- topic/title ">terytorium 0D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_126" topicrefclass="- map/topicref " nd:nd-id="gory" oid="gory">
+    <title class="- topic/title ">Gory</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_127" topicrefclass="- map/topicref " nd:nd-id="rzeki" oid="rzeki">
+    <title class="- topic/title ">rzeki</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_128" topicrefclass="- map/topicref " nd:nd-id="bagna" oid="bagna">
+    <title class="- topic/title ">bagna</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_129" topicrefclass="- map/topicref " nd:nd-id="rowniny" oid="rowniny">
+    <title class="- topic/title ">rowniny</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_130" topicrefclass="- map/topicref " nd:nd-id="obserwacja_2p" oid="obserwacja_2p">
+    <title class="- topic/title ">obserwacja 2P</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_68_ssol1" topicrefclass="- map/topicref " nd:nd-id="madrosc" oid="madrosc">
+    <title class="- topic/title ">mądrość</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_131" topicrefclass="- map/topicref " nd:nd-id="teren_dostepny" oid="teren_dostepny">
+    <title class="- topic/title ">Teren dostepny</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">taki może być przemierzany przez obie strony konfliktu</p>
+    </body>
+<topic class="- topic/topic " id="unique_8_ssol7" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_42_ssol8" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_132" topicrefclass="- map/topicref " nd:nd-id="rubikon" oid="rubikon">
+    <title class="- topic/title ">rubikon</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">taki teren, z którego nie można zawrócić</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_133" topicrefclass="- map/topicref " nd:nd-id="opozniajacy" oid="opozniajacy">
+    <title class="- topic/title ">opozniajacy</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">jest niekorzystny dla obu stron</p>
+    </body>
+<topic class="- topic/topic " id="unique_8_ssol8" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_42_ssol9" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_134" topicrefclass="- map/topicref " nd:nd-id="waskie_przejscie" oid="waskie_przejscie">
+    <title class="- topic/title ">waskie przejscie</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+    </body>
+<topic class="- topic/topic " id="unique_14_ssol4" topicrefclass="- map/topicref " nd:nd-id="obrona_4d" oid="obrona_4d">
+    <title class="- topic/title ">obrona 4D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Trwanie w obronie aż do błędu przeciwnika</p>
+    </body>
+<topic class="- topic/topic " id="unique_41_ssol6" topicrefclass="- map/topicref " nd:nd-id="szansa_6d" oid="szansa_6d">
+    <title class="- topic/title ">szansa 6D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">wynika z obserwacji 6D i doświadczenia 3D</p>
+    </body>
+</topic></topic><task class="- topic/topic task/task " id="unique_10_ssol6" topicrefclass="- map/topicref " nd:nd-id="atakowanie" oid="atakowanie">
+    <title class="- topic/title ">atak 4D</title>
+    <shortdesc class="- topic/shortdesc ">polega na supresji zagrożenia</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">
+            <p class="- topic/p "/>
+        </context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Wyczekiwać na błąd przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Po wykryciu błędu atakować</cmd>
+            </step>
+        </steps>
+    </taskbody>
+<task class="- topic/topic task/task " id="unique_33_ssol6" topicrefclass="- map/topicref " nd:nd-id="error" oid="error">
+    <title class="- topic/title ">error</title>
+    <shortdesc class="- topic/shortdesc ">Błąd to zmienna. Ewolucja użyła błędu, w celu rozwoju.</shortdesc>
+    <taskbody class="- topic/body task/taskbody ">
+        <context class="- topic/section task/context ">Zadanie opisuje w jaki sposób zdecydować o błędzie<p class="- topic/p "/></context>
+        <steps class="- topic/ol task/steps ">
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Popełnienie błędu nieświadomie 0D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Dopóki się nie przytrafi wyczekiwać 4D błędu przeciwnika</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać obserwacje 6D2P z doświadczeniem 3D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">Porównywać doświadczenie 3D z cechami wspólnymi 7D</cmd>
+            </step>
+            <step class="- topic/li task/step ">
+                <cmd class="- topic/ph task/cmd ">W zgodzie z sumieniem 8D i założeniem 8P wykonać proces 1D</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task></task></topic><topic class="- topic/topic " id="unique_135" topicrefclass="- map/topicref " nd:nd-id="stromy" oid="stromy">
+    <title class="- topic/title ">strome wzniesienie</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">powiniene byc okupowany od razu, albo nigdy.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_136" topicrefclass="- map/topicref " nd:nd-id="zdystansowany_do_wroga" oid="zdystansowany_do_wroga">
+    <title class="- topic/title ">zdystansowany do wroga</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">jesli armie są podobnych rozmiarów, walka będzie na Twą niekorzyść</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_137" topicrefclass="- map/topicref " nd:nd-id="desperackie" oid="desperackie">
+    <title class="- topic/title ">teren desperacki</title>
+    <body class="- topic/body ">
+        <ol class="- topic/ol " id="unique_137_Connect_42_ol_mlx_3bg_tjb" nd:nd-id="ol_mlx_3bg_tjb">
+            <li class="- topic/li ">Terytorium, którego bronisz.</li>
+            <li class="- topic/li ">Terytorium, w którym musisz walczyć o przetrwanie.</li>
+        </ol>
+        <p class="- topic/p "/>
+        <p class="- topic/p "/>
+    </body>
+</topic><topic class="- topic/topic " id="unique_138" topicrefclass="- map/topicref " nd:nd-id="terytorium_powierzchowne" oid="terytorium_powierzchowne">
+    <title class="- topic/title ">terytorium powierzchowne</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+        <p class="- topic/p ">gdy wchodzimy lekko w terytorium wroga</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_139" topicrefclass="- map/topicref " nd:nd-id="swarliwy" oid="swarliwy">
+    <title class="- topic/title ">swarliwy</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">to teren korzystny dla obu stron.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_140" topicrefclass="- map/topicref " nd:nd-id="otwarty_teren" oid="otwarty_teren">
+    <title class="- topic/title ">otwarty teren</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">to taki, gdzie każda ze stron ma swobodę ruchu</p>
+    </body>
+<topic class="- topic/topic " id="unique_8_ssol9" topicrefclass="- map/topicref " nd:nd-id="sojusznik" oid="sojusznik">
+    <title class="- topic/title ">sojusznik 2D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_42_ssol10" topicrefclass="- map/topicref " nd:nd-id="przeciwnik" oid="przeciwnik">
+    <title class="- topic/title ">przeciwnik 1D</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">To jednostka indywidualna, bądź kolektywna.</p>
+    </body>
+</topic></topic><topic class="- topic/topic " id="unique_141" topicrefclass="- map/topicref " nd:nd-id="autostrada" oid="autostrada">
+    <title class="- topic/title ">autostrada</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">to terytorium, które łączy 3 terytoria, tak jak stawy łączą kości.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_142" topicrefclass="- map/topicref " nd:nd-id="teren_powazny" oid="teren_powazny">
+    <title class="- topic/title ">teren powazny</title>
+    <body class="- topic/body ">
+        <p class="- topic/p "/>
+        <p class="- topic/p ">gdy armia jest głęboko na terytorium wroga.</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_124_ssol1" topicrefclass="- map/topicref " nd:nd-id="teren_ciezki" oid="teren_ciezki">
+    <title class="- topic/title ">teren ciezki</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">to taki, który ciężko przekroczyć</p>
+    </body>
+</topic><topic class="- topic/topic " id="unique_143" topicrefclass="- map/topicref " nd:nd-id="teren_obrebowy" oid="teren_obrebowy">
+    <title class="- topic/title ">teren obrębowy</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">gdy wejście jest wąskie, a wyjście szerokie.</p>
+    </body>
+</topic></topic><topic xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" break-before="true" is-chapter="true" class="- topic/topic " id="unique_144" topicrefclass="- map/topicref " nd:nd-id="faq" oid="faq">
+    <title class="- topic/title ">FAQ</title>
+    <body class="- topic/body ">
+        <p class="- topic/p ">Tutaj zapisze ważniejsze spostrzeżenia. Ważne jest, że w gałęziach, każdej kolejnej
+            powinniśmy zadać sobie w tej kolejności pytania:<ol class="- topic/ol " id="unique_144_Connect_42_ol_csm_41f_tjb" nd:nd-id="ol_csm_41f_tjb">
+                
+                <li class="- topic/li ">Dlaczego?</li>
+                <li class="- topic/li ">Jak?</li>
+                <li class="- topic/li ">Co?</li>
+                <li class="- topic/li ">Kiedy? Kto?</li>
+            </ol></p>
+    </body>
+</topic></map>

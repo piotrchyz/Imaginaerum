@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title><keyword>Działania</keyword> wojenne</title>
+    <topicref href="energia_9d.dita">
+        <topicref href="zwodzenie.dita">
+            <topicref href="po_rednia.dita">
+                <topicref href="obyczajowosc.dita"/>
+            </topicref>
+            <topicref href="bezposrednia.dita">
+                <topicref href="zarzadzanie.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="unia.dita">
+            <topicref href="sojusznik.dita">
+                <topicref href="odwaga.dita">
+                    <topicref href="atakowanie.dita"/>
+                    <topicref href="momentum.dita"/>
+                </topicref>
+                <topicref href="homeostaza.dita">
+                    <topicref href="zgranie.dita">
+                        <topicref href="atakowanie.dita"/>
+                        <topicref href="obrona_4d.dita"/>
+                        <topicref href="ucieczka.dita"/>
+                    </topicref>
+                </topicref>
+                <topicref href="komfort.dita">
+                    <topicref href="obrona_4d.dita"/>
+                    <topicref href="obyczajowosc.dita"/>
+                </topicref>
+                <topicref href="strach.dita">
+                    <topicref href="ucieczka.dita"/>
+                    <topicref href="nieprzewidywalnosc.dita"/>
+                </topicref>
+            </topicref>
+        </topicref>
+    </topicref>
+    <topicref href="grawitacja_8d.dita">
+        <topicref href="zagrozenie.dita">
+            <topicref href="cechy_dowodcy.dita">
+                <topicref href="tomnosc_4d_umyslu_6d.dita"/>
+                <topicref href="brak_rowowagi.dita">
+                    <topicref href="strach.dita">
+                        <topicref href="pojmanie.dita"/>
+                    </topicref>
+                    <topicref href="lekkomyslnosc.dita">
+                        <topicref href="destrukcja_1d.dita"/>
+                    </topicref>
+                    <topicref href="porywczosc.dita"/>
+                    <topicref href="proznosc_3d.dita"/>
+                    <topicref href="zadufanie_4d.dita">
+                        <topicref href="wrazliwosc.dita">
+                            <topicref href="wstyd.dita"/>
+                        </topicref>
+                    </topicref>
+                    <topicref href="troskliwosc.dita">
+                        <topicref href="strach.dita"/>
+                    </topicref>
+                </topicref>
+            </topicref>
+            <topicref href="sojusznik.dita">
+                <topicref href="strach.dita">
+                    <topicref href="error.dita"/>
+                </topicref>
+            </topicref>
+        </topicref>
+    </topicref>
+    <topicref href="ekonomia.dita">
+        <topicref href="kalkulacja.dita">
+            <topicref href="zasoby.dita">
+                <topicref href="wiedza.dita">
+                    <topicref href="o_sobie.dita"/>
+                    <topicref href="o_wrogu.dita"/>
+                </topicref>
+                <topicref href="finanse.dita">
+                    <topicref href="przychody.dita"/>
+                    <topicref href="rozchody.dita"/>
+                </topicref>
+                <topicref href="szansa_6d.dita">
+                    <topicref href="sojusznik.dita"/>
+                    <topicref href="przeciwnik.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="liczebnosc_0.dita">
+                <topicref href="wielkosc.dita">
+                    <topicref href="przeciwnik.dita">
+                        <topicref href="wieksze.dita"/>
+                        <topicref href="mniejsze.dita"/>
+                    </topicref>
+                    <topicref href="sojusznik.dita">
+                        <topicref href="wieksze_0.dita"/>
+                        <topicref href="mniejsze_0.dita"/>
+                    </topicref>
+                </topicref>
+                <topicref href="opasanie.dita"/>
+                <topicref href="atakowanie.dita"/>
+                <topicref href="ucieczka.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="planowanie.dita"/>
+        <topicref href="kierunek.dita"/>
+        <topicref href="przypuszczenia.dita"/>
+    </topicref>
+    <topicref href="strategia.dita">
+        <topicref href="ramy.dita">
+            <topicref href="destrukcja.dita"/>
+            <topicref href="doskonalosc.dita"/>
+        </topicref>
+        <topicref href="momentum.dita">
+            <topicref href="zgranie.dita"/>
+            <topicref href="improwizacja.dita"/>
+        </topicref>
+        <topicref href="error.dita">
+            <topicref href="zaleta.dita"/>
+            <topicref href="wada.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="cechy_dowodcy.dita">
+        <topicref href="odpowiedzialnosc.dita">
+            <topicref href="dezorganizacja.dita"/>
+            <topicref href="ucieczka.dita"/>
+            <topicref href="niesubordynacja.dita"/>
+            <topicref href="kleska_0.dita"/>
+            <topicref href="bankructwo.dita"/>
+            <topicref href="bunt.dita"/>
+        </topicref>
+        <topicref href="umiejetnosc.dita">
+            <topicref href="decyzyjnosc.dita"/>
+            <topicref href="zaradno.dita">
+                <topicref href="sukcesja.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="cele_0.dita">
+            <topicref href="zwyciestwo.dita"/>
+            <topicref href="efektywnosc.dita"/>
+        </topicref>
+        <topicref href="cechy_0.dita">
+            <topicref href="sojusznik.dita">
+                <topicref href="madrosc.dita"/>
+                <topicref href="szczerosc.dita"/>
+                <topicref href="odwaga.dita">
+                    <topicref href="wiara.dita"/>
+                </topicref>
+                <topicref href="dyscyplina.dita">
+                    <topicref href="kontrola.dita"/>
+                </topicref>
+                <topicref href="szczodrobliwo.dita">
+                    <topicref href="traktowanie.dita"/>
+                </topicref>
+                <topicref href="wiara.dita"/>
+            </topicref>
+            <topicref href="przeciwnik.dita">
+                <topicref href="poczucie_koherencji.dita"/>
+                <topicref href="zwodzenie.dita"/>
+                <topicref href="zgranie.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="efektywny_lider.dita"/>
+    </topicref>
+    <topicref href="kleska_0.dita">
+        <topicref href="taktyka.dita">
+            <topicref href="narcyzm.dita"/>
+        </topicref>
+        <topicref href="strategia_0.dita">
+            <topicref href="proznosc_3d.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="uk_adanie_plan_w_0.dita">
+        <topicref href="prawo_moralne.dita">
+            <topicref href="jednosc.dita"/>
+            <topicref href="liczebnosc.dita"/>
+        </topicref>
+        <topicref href="niebo.dita">
+            <topicref href="doba.dita">
+                <topicref href="dzien.dita"/>
+                <topicref href="noc.dita"/>
+            </topicref>
+            <topicref href="warunki.dita">
+                <topicref href="cieplo.dita"/>
+                <topicref href="zimno.dita"/>
+            </topicref>
+            <topicref href="opisuje.dita">
+                <topicref href="atmosfere_2d.dita"/>
+                <topicref href="pore_roku_1d.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="ziemia_1d.dita">
+            <topicref href="podporzadkowanie.dita">
+                <topicref href="dzialaniom_4p.dita">
+                    <topicref href="nakazy.dita"/>
+                    <topicref href="zakazy.dita"/>
+                </topicref>
+                <topicref href="sytuacji_6p.dita">
+                    <topicref href="zagrozenie.dita"/>
+                    <topicref href="komfort.dita"/>
+                </topicref>
+                <topicref href="doswiadczeniu_10p.dita">
+                    <topicref href="restrykcja.dita"/>
+                    <topicref href="swoboda.dita"/>
+                </topicref>
+                <topicref href="obrona_4d.dita">
+                    <topicref href="szansa_6d.dita">
+                        <topicref href="error.dita">
+                            <topicref href="sojusznik.dita"/>
+                        </topicref>
+                    </topicref>
+                </topicref>
+            </topicref>
+            <topicref href="opis.dita">
+                <topicref href="dzialaniom_4p.dita"/>
+            </topicref>
+            <topicref href="odczyt.dita">
+                <topicref href="dziedziny.dita"/>
+            </topicref>
+            <topicref href="wolna_wola.dita">
+                <topicref href="atakowanie.dita">
+                    <topicref href="szansa_6d.dita">
+                        <topicref href="error.dita">
+                            <topicref href="przeciwnik.dita"/>
+                        </topicref>
+                    </topicref>
+                </topicref>
+            </topicref>
+            <topicref href="przypuszczenia.dita">
+                <topicref href="ramy.dita">
+                    <topicref href="kalkulacja.dita">
+                        <topicref href="szansa_6d.dita"/>
+                    </topicref>
+                </topicref>
+            </topicref>
+        </topicref>
+        <topicref href="trendy_2d5p.dita">
+            <topicref href="przygotowanie.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="wygrywanie.dita">
+        <topicref href="zwodzenie.dita">
+            <topicref href="przeciwnik.dita">
+                <topicref href="atakowanie.dita">
+                    <topicref href="bezposrednia.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="sojusznik.dita">
+                <topicref href="obrona_4d.dita">
+                    <topicref href="po_rednia.dita"/>
+                </topicref>
+            </topicref>
+        </topicref>
+        <topicref href="modyfikowanie_plan_w.dita">
+            <topicref href="error.dita">
+                <topicref href="szansa_6d.dita">
+                    <topicref href="rekalibracja.dita"/>
+                </topicref>
+            </topicref>
+        </topicref>
+        <topicref href="przewidywanie.dita">
+            <topicref href="ramy.dita">
+                <topicref href="znane.dita"/>
+                <topicref href="nieznane.dita"/>
+            </topicref>
+            <topicref href="szansa_6d.dita">
+                <topicref href="atakowanie.dita"/>
+                <topicref href="ucieczka.dita"/>
+                <topicref href="error.dita">
+                    <topicref href="taktyka.dita">
+                        <topicref href="znane.dita"/>
+                    </topicref>
+                    <topicref href="strategia_0.dita">
+                        <topicref href="nieznane.dita"/>
+                    </topicref>
+                </topicref>
+            </topicref>
+            <topicref href="gdzie.dita"/>
+            <topicref href="kiedy.dita"/>
+            <topicref href="jak.dita"/>
+        </topicref>
+        <topicref href="zaradno.dita">
+            <topicref href="miara.dita">
+                <topicref href="sily.dita"/>
+            </topicref>
+        </topicref>
+    </topicref>
+    <topicref href="metody_posrednie.dita">
+        <topicref href="podzielenie.dita">
+            <topicref href="przeciwnik.dita">
+                <topicref href="przynaleznosc.dita">
+                    <topicref href="przeciwnik.dita"/>
+                </topicref>
+            </topicref>
+        </topicref>
+        <topicref href="wywiad.dita"/>
+    </topicref>
+    <topicref href="metody_dyscypliny.dita">
+        <topicref href="podporzadkowanie_autorytetow.dita"/>
+        <topicref href="specjalizowanie_kadry.dita"/>
+        <topicref href="kontrola_nad_wydatkami.dita"/>
+    </topicref>
+    <topicref href="niszczenie_1d.dita">
+        <topicref href="teren_ciezki.dita">
+            <topicref href="zgranie.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="terytorium_0d.dita">
+        <topicref href="gory.dita"/>
+        <topicref href="rzeki.dita"/>
+        <topicref href="bagna.dita"/>
+        <topicref href="rowniny.dita"/>
+        <topicref href="obserwacja_2p.dita">
+            <topicref href="madrosc.dita">
+                <topicref href="taktyka.dita">
+                    <topicref href="przeciwnik.dita"/>
+                </topicref>
+            </topicref>
+        </topicref>
+        <topicref href="teren_dostepny.dita">
+            <topicref href="sojusznik.dita"/>
+            <topicref href="przeciwnik.dita"/>
+        </topicref>
+        <topicref href="rubikon.dita"/>
+        <topicref href="opozniajacy.dita">
+            <topicref href="sojusznik.dita"/>
+            <topicref href="przeciwnik.dita"/>
+        </topicref>
+        <topicref href="waskie_przejscie.dita">
+            <topicref href="obrona_4d.dita">
+                <topicref href="szansa_6d.dita"/>
+            </topicref>
+            <topicref href="atakowanie.dita">
+                <topicref href="error.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="stromy.dita"/>
+        <topicref href="zdystansowany_do_wroga.dita"/>
+        <topicref href="desperackie.dita"/>
+        <topicref href="terytorium_powierzchowne.dita"/>
+        <topicref href="swarliwy.dita"/>
+        <topicref href="otwarty_teren.dita">
+            <topicref href="sojusznik.dita"/>
+            <topicref href="przeciwnik.dita"/>
+        </topicref>
+        <topicref href="autostrada.dita"/>
+        <topicref href="teren_powazny.dita"/>
+        <topicref href="teren_ciezki.dita"/>
+        <topicref href="teren_obrebowy.dita"/>
+    </topicref>
+    <topicref href="faq.dita"/>
+</map>

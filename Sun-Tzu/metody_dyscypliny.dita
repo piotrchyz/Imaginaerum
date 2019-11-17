@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="metody_dyscypliny" class="- topic/topic ">
+    <title>Dyscyplinowanie 1D</title>
+    <shortdesc>Czynniki po których rozpoznasz dobrą dyscyplinę</shortdesc>
+    <taskbody>
+        <context>
+            <p>Dyscyplinę osiąga się poprzez</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>podporządkowanie autorytetu</cmd>
+            </step>
+            <step>
+                <cmd>specjalizowanie kadry</cmd>
+            </step>
+            <step>
+                <cmd>kontrolę nad wydatkami</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

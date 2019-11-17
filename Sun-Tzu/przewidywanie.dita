@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="przewidywanie">
+    <title>przewidywanie 8P</title>
+    <shortdesc/>
+    <taskbody>
+        <context>
+            <p></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Znać swoje słabości i siły</cmd>
+            </step>
+            <step>
+                <cmd>Poznawać słabości i sił wroga</cmd>
+            </step>
+            <step>
+                <cmd>Nie zdradzać swoich sił i słabości</cmd>
+            </step>
+            <step>
+                <cmd>Zabezpieczyć wygraną</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

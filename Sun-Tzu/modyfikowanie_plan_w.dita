@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="modyfikowanie_plan_w">
+    <title>modyfikowanie planów 9P</title>
+    <shortdesc>rezultat zależy od okoliczności</shortdesc>
+    <taskbody>
+        <context>
+            <p/>
+        </context>
+        <steps>
+            <step>
+                <cmd>atakować obszar, który nie jest broniony</cmd>
+            </step>
+            <step>
+                <cmd>bronić obszar, który nie może być zdobyty</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

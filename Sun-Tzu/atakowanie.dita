@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="atakowanie">
+    <title>atak 4D</title>
+    <shortdesc>polega na supresji zagrożenia</shortdesc>
+    <taskbody>
+        <context>
+            <p></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Wyczekiwać na błąd przeciwnika</cmd>
+            </step>
+            <step>
+                <cmd>Po wykryciu błędu atakować</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

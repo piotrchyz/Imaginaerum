@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="wygrywanie">
+    <title>zwycięstwo 1D+2D 5P</title>
+    <abstract>
+        <equation-figure>
+            <desc>kluczowe czynniki niezbędne do zabezpieczenia zwycięstwa</desc>
+        </equation-figure>
+    </abstract>
+    <body>
+        <p>
+            <ol id="ol_ffh_y2d_tjb">
+                <li>modyfikowanie planów</li>
+                <li>zwodzenie przeciwnika</li>
+                <li>przewidywanie</li>
+            </ol>
+        </p>
+    </body>
+</topic>
