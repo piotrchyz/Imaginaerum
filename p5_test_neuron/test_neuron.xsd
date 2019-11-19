@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="p5_test_neuron" vc:minVersion="1.1" xmlns:ptn="p5_test_neuron"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+    <xs:annotation>
+        <xs:documentation>Test neuron model 2019-11 a.binder</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="Capacitance">
+        <xs:annotation>
+            <xs:documentation>Membrane Capacitance from 0.01 to 2nF</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.01"/>
+            <xs:maxInclusive value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Resistance">
+        <xs:annotation>
+            <xs:documentation>Membrane Resistance 1...200M Ohm
+</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="200"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="voltage">
+        <xs:annotation>
+            <xs:documentation>Membrane Minimum Voltage -200 to 200mV</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-200"/>
+            <xs:maxInclusive value="200"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Minimum_voltage">
+        <xs:restriction base="ptn:voltage"/>
+    </xs:simpleType>
+    <xs:simpleType name="Maximum_voltage">
+        <xs:restriction base="ptn:voltage"/>
+    </xs:simpleType>
+    <xs:simpleType name="Potentials">
+        <xs:annotation>
+            <xs:documentation>Membrane Potentials -100 to 50mV</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-100"/>
+            <xs:maxInclusive value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Resting_potential">
+        <xs:restriction base="ptn:Potentials"/>
+    </xs:simpleType>
+    <xs:simpleType name="Reset_potential">
+        <xs:restriction base="ptn:Potentials"/>
+    </xs:simpleType>
+    <xs:simpleType name="Firing_threshold">
+        <xs:restriction base="ptn:Potentials"/>
+    </xs:simpleType>
+    <xs:simpleType name="Adaptation_conductance">
+        <xs:annotation>
+            <xs:documentation>Adaptation Conductance of Adaptive Neuron 0.0 to 1000.0nS</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.1"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Adaptation_time_constant">
+        <xs:annotation>
+            <xs:documentation>Adaptation Time Constant of Adaptive Neuron 0.0 to 600ms</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.1"/>
+            <xs:maxInclusive value="600"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Refactory_period">
+        <xs:annotation>
+            <xs:documentation>Synapse Refactory Period 0 to 50ms</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Maximum_current">
+        <xs:annotation>
+            <xs:documentation>Synapse Maximum Current 0.01 to 10.00 nA - with Time Constant - how much amperage will be unloaded</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.01"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Time_constant">
+        <xs:annotation>
+            <xs:documentation>Synapse Time Constant 0.10 to 6 ms (how long time will overload - more will more load another membrane)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.1"/>
+            <xs:maxInclusive value="6"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Delay">
+        <xs:annotation>
+            <xs:documentation>Synapse Delay 0 to 30ms</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="30"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Simulator_tick">
+        <xs:annotation>
+            <xs:documentation>Simulator tick-time [ms] 0.01 ms  to 1000 ms</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0.01"/>
+            <xs:maxInclusive value="1000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Simulation_ticks">
+        <xs:annotation>
+            <xs:documentation>How many simulation instances generate</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+            <xs:minExclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Label">
+        <xs:annotation>
+            <xs:documentation>Node Label</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:ID"/>
+    </xs:simpleType>
+    <xs:simpleType name="Coordinate">
+        <xs:annotation>
+            <xs:documentation>Coordinate of node X Y or Z or more?</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Receptor_regex_filter">
+        <xs:annotation>
+            <xs:documentation>Simple filter for receptor s/A/g  - for A letter</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="Input_exec_time">
+        <xs:annotation>
+            <xs:documentation>ms - in which some input should be executed</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Input_exec_receptor">
+        <xs:annotation>
+            <xs:documentation>Which receptor should be triggered at some exec time</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:IDREF"/>
+    </xs:simpleType>
+    <xs:simpleType name="Input_exec_Time_constant">
+        <xs:annotation>
+            <xs:documentation>How long input receptor will be loaded</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="ptn:Time_constant"/>
+    </xs:simpleType>
+    <xs:simpleType name="Input_exec_Maximum_current">
+        <xs:annotation>
+            <xs:documentation>How much current will input be loaded</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="ptn:Maximum_current"/>
+    </xs:simpleType>
+    <xs:complexType name="Node">
+        <xs:sequence>
+            <xs:element name="Label" type="ptn:Label"/>
+            <xs:element default="0" name="Coordinate_X" type="ptn:Coordinate"/>
+            <xs:element default="0" name="Coordinate_Y" type="ptn:Coordinate"/>
+            <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance" minOccurs="0"/>
+            <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="0"/>
+            <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                minOccurs="0"/>
+            <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage" minOccurs="0"/>
+            <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                minOccurs="0"/>
+            <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                minOccurs="0"/>
+            <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                minOccurs="0"/>
+            <xs:element default="10" minOccurs="0" name="Adaptation_conductance"
+                type="ptn:Adaptation_conductance"/>
+            <xs:element default="500" minOccurs="0" name="Adaptation_time_constant"
+                type="ptn:Adaptation_time_constant"/>
+            <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Leaky_neuron">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Node">
+                <xs:sequence>
+                    <xs:element name="Label" type="ptn:Label"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                        minOccurs="1"/>
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                        minOccurs="1"/>
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                        minOccurs="1"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        minOccurs="1"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                        minOccurs="1"/>
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                        minOccurs="1"/>
+                    <xs:element default="10" maxOccurs="0" minOccurs="0"
+                        name="Adaptation_conductance" type="ptn:Adaptation_conductance"/>
+                    <xs:element default="500" maxOccurs="0" minOccurs="0"
+                        name="Adaptation_time_constant" type="ptn:Adaptation_time_constant"/>
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                        minOccurs="1"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Adaptive_neuron">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Node">
+                <xs:sequence>
+                    <xs:element name="Label" type="ptn:Label"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
+                        minOccurs="0"/>
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="10" minOccurs="1" name="Adaptation_conductance"
+                        type="ptn:Adaptation_conductance"/>
+                    <xs:element default="500" minOccurs="1" name="Adaptation_time_constant"
+                        type="ptn:Adaptation_time_constant"/>
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                        maxOccurs="0" minOccurs="0"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Receptor">
+        <xs:annotation>
+            <xs:documentation>First neuron for input</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ptn:Leaky_neuron">
+                <xs:sequence>
+                    <xs:element name="Receptor_regex_filter" type="ptn:Receptor_regex_filter"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Input">
+        <xs:sequence>
+            <xs:element name="Input_exec_time" type="ptn:Input_exec_time"/>
+            <xs:element name="Input_exec_receptor" type="ptn:Input_exec_receptor"/>
+            <xs:element name="Input_exec_Time_constant" type="ptn:Input_exec_Time_constant"/>
+            <xs:element name="Input_exec_Maximum_current" type="ptn:Input_exec_Maximum_current"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Config">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ptn:Defaults"/>
+                <xs:element ref="ptn:Receptors"/>
+                <xs:element ref="ptn:Inputs"/>
+                <xs:element ref="ptn:Simulation"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Defaults">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"/>
+                <xs:element default="100" name="Resistance" type="ptn:Resistance"/>
+                <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"/>
+                <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"/>
+                <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"/>
+                <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"/>
+                <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"/>
+                <xs:element default="10" name="Adaptation_conductance"
+                    type="ptn:Adaptation_conductance"/>
+                <xs:element default="500" name="Adaptation_time_constant"
+                    type="ptn:Adaptation_time_constant"/>
+                <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"/>
+                <xs:element default="3" name="Maximum_current" type="ptn:Maximum_current"/>
+                <xs:element default="2" name="Time_constant" type="ptn:Delay"/>
+                <xs:element default="5" name="Delay" type="ptn:Delay"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Receptors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="Receptor" type="ptn:Receptor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Inputs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="Input" type="ptn:Input"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Simulation">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element default="1" name="Simulator_tick" type="ptn:Simulator_tick"/>
+                <xs:element default="10" name="Simulation_ticks" type="ptn:Simulation_ticks"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

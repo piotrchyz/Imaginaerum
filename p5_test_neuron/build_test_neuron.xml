@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="default">
+    
+    
+    <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
+    <property name="p5_test_neuron.repository" location="${basedir}/p5_test_neuron/repository"/>
+    <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
+    <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
+    
+    
+    
+    
+    
+    <target name="default" depends="generate_simulation_build">
+        <echo> Running p5_test_neuron
+            $p5_test_neuron.Config = ${p5_test_neuron.Config}
+        </echo>
+    </target>
+    
+    
+    <target name="param">
+        <property name="p5_test_neuron.Simulation_ticks" value="10"/>
+        <property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation"/>
+        <property name="p5_test_neuron.Simulation.build.analys.xml" location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"/>
+        <echo>Eventually some params override
+            $p5_test_neuron.Simulation_ticks} = ${p5_test_neuron.Simulation_ticks}
+            $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
+        </echo>
+    </target>
+    
+    
+    <target name="generate_simulation_build" depends="param">
+        <input addproperty="p5_test_neuron.Simulation.dir" message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
+        <input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
+        <input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>
+        <input addproperty="p5_test_neuron.Simulation.build.analys.xml" message="p5_test_neuron.Simulation.build.analys.xml"/>
+        <echo>
+            #34 will read $p5_test_neuron.Config[${p5_test_neuron.Config}]
+            to generate $p5_test_neuron.Simulation.build.analys.xml[${p5_test_neuron.Simulation.build.analys.xml}]
+        </echo>
+        <xslt in="${p5_test_neuron.Config}" 
+            out="${p5_test_neuron.Simulation.build.analys.xml}"
+            style="${p5_test_neuron.xsl}"
+            force="true">
+            <factory name="net.sf.saxon.TransformerFactoryImpl">
+                <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                <attribute name="http://saxon.sf.net/feature/initialMode"
+                    value="{p5_test_neuron}Simulation.build.analys.xml"/>
+                <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+            </factory>
+            
+            <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>
+            <param name="{p5_test_neuron}Simulation_ticks" expression="${p5_test_neuron.Simulation_ticks}"/>
+            <param name="{p5_test_neuron}Simulation.dir" expression="${p5_test_neuron.Simulation.dir}"/>
+            <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
+            <param name="basedir" expression="${basedir}"/>
+            <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
+            
+            <classpath location="/opt/local/share/java/saxon9he.jar"/>
+        </xslt>
+        
+        
+        
+    </target>
+  
+  
+</project>
