@@ -1,3 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation_body xmlns:ptn="p5_test_neuron"
-                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     ptn:Simulation_body_tick="6"
+                     ptn:Simulation_body_time="6"
+                     ptn:Simulator_tick="1">
+   <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+      <ptn:Receptor>
+         <ptn:Label>A</ptn:Label>
+         <ptn:Coordinate_X>0</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Capacitance>0.2</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Simulated_potential>-69.29141200000001</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-69.21268">
+            <ptn:Simulated_potential.resting.vector>-0.07873199999999939</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
+         <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor>
+         <ptn:Label>B</ptn:Label>
+         <ptn:Coordinate_X>10</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Capacitance>0.2</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-80.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Simulated_potential>-75.609655</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-76.23295">
+            <ptn:Simulated_potential.resting.vector>0.6232950000000002</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
+         <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor>
+         <ptn:Label>C</ptn:Label>
+         <ptn:Coordinate_X>20</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Capacitance>0.2</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-80.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Simulated_potential>-75.609655</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-76.23295">
+            <ptn:Simulated_potential.resting.vector>0.6232950000000002</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
+         <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+   </ptn:Receptors>
+   <ptn:Nodes/>
+</ptn:Simulation_body>

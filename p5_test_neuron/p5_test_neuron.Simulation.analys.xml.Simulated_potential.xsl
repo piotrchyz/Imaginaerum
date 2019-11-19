@@ -16,11 +16,20 @@
     
     <xsl:template mode="ptn:Simulated_potential"  match="ptn:Simulated_potential[preceding-sibling::ptn:Capacitance][preceding-sibling::ptn:Resistance][preceding-sibling::ptn:Resting_potential]">
         
-        <xsl:copy>
-            <xsl:apply-templates mode="ptn:Simulated_potential.resting.vector" select="."/>
-            <xsl:apply-templates mode="ptn:Simulated_potential.input.vector" select="."/>
+        
+             
             <xsl:message terminate="no">#13-13 name()<xsl:value-of select="name()"/> TODO </xsl:message>
+        <xsl:variable name="ptn:Simulated_potential__x3A__vectors">
+            <ptn:Simulated_potential__x3A__vectors>
+                <xsl:attribute name="ptn:Simulated_potential__x3A__previous" select="text()"/>
+                <xsl:apply-templates mode="ptn:Simulated_potential.resting.vector" select="."/>
+                <xsl:apply-templates mode="ptn:Simulated_potential.input.vector" select="."/>
+            </ptn:Simulated_potential__x3A__vectors>
+        </xsl:variable>
+        <xsl:copy>
+            <xsl:value-of select="text() + sum($ptn:Simulated_potential__x3A__vectors//text())"/>
         </xsl:copy>
+        <xsl:copy-of select="$ptn:Simulated_potential__x3A__vectors"></xsl:copy-of>
     </xsl:template>
     
     
@@ -45,7 +54,7 @@
         <!--<xsl:attribute name="ptn:Simulated_potential.resting.vector.1_div_membr" select="1 div preceding-sibling::ptn:Resistance"/>
         <xsl:attribute name="ptn:Simulated_potential.resting.vector.rest_pot" select=". - preceding-sibling::ptn:Resting_potential"/>-->
         <ptn:Simulated_potential.resting.vector>
-            <xsl:value-of select=". - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick"/>
+            <xsl:value-of select=" - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick"/>
         </ptn:Simulated_potential.resting.vector>
         <!-- b3==current - m4===resting -->
     </xsl:template>
@@ -80,6 +89,8 @@
         <xsl:choose>
             <xsl:when test="ptn:Input_exec_receptor = $ptn:Label and ptn:Input_exec_time &gt;= $ptn:Simulation_body_time and ptn:Input_exec_time &lt; ( $ptn:Simulation_body_time + $ptn:Simulator_tick )">
                 <ptn:Simulated_potential.input.vector>
+                    <!--<xsl:attribute name="ptn:Input_exec_Time_constant" select="ptn:Input_exec_Time_constant"/>
+                    <xsl:attribute name="ptn:Input_exec_Maximum_current" select="ptn:Input_exec_Maximum_current"/>-->
                     <xsl:value-of select="ptn:Input_exec_Time_constant * ptn:Input_exec_Maximum_current div (1 div $ptn:Capacitance)"/><!-- todo simulating input divided to Time Constant vs simulation ticks -->
                 </ptn:Simulated_potential.input.vector>
             </xsl:when>

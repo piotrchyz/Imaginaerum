@@ -228,6 +228,8 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
                 type="ptn:Current_synapse"/>
             <xs:element default="-80" name="Simulated_potential" type="ptn:Simulated_potential"/>
+            <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
+                type="ptn:Simulated_potential__x3A__vectors"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="Leaky_neuron">
@@ -261,6 +263,8 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
+                        type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -296,6 +300,8 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
+                        type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -331,6 +337,8 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
+                        type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -369,6 +377,8 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
+                        type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -407,6 +417,8 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
+                        type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -445,6 +457,8 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
+                        type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -580,4 +594,34 @@
             </xs:attribute>
         </xs:complexType>
     </xs:element>
+    <xs:simpleType name="Simulated_potential.resting.vector">
+        <xs:annotation>
+            <xs:documentation>Based on resting potential vector</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="ptn:Simulated_potential"/>
+    </xs:simpleType>
+    <xs:simpleType name="Simulated_potential__x3A__previous">
+        <xs:annotation>
+            <xs:documentation>TODO previous Simulated_potential - to compare/analysis/validate</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="ptn:Simulated_potential"/>
+    </xs:simpleType>
+    <xs:simpleType name="Simulated_potential.input.vector">
+        <xs:annotation>
+            <xs:documentation>To calculate based on input vector - todo analys time_constant and symulation ticks to make input during several steps - 
+ or divide on start based on ticks
+ or use smart during analys based on ticks</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="ptn:Simulated_potential"/>
+    </xs:simpleType>
+    <xs:attribute name="Simulated_potential__x3A__previous"/>
+    <xs:complexType name="Simulated_potential__x3A__vectors">
+        <xs:sequence>
+            <xs:element name="Simulated_potential.resting.vector"
+                type="ptn:Simulated_potential.resting.vector"/>
+            <xs:element minOccurs="0" name="Simulated_potential.input.vector"
+                type="ptn:Simulated_potential.input.vector"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__previous" use="required"/>
+    </xs:complexType>
 </xs:schema>

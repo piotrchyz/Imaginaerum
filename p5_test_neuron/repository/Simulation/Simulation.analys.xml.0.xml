@@ -15,14 +15,15 @@
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
          <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
          <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-80.0</ptn:Reset_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Simulated_potential>
-            <ptn:Simulated_potential.resting.vector>-79.5</ptn:Simulated_potential.resting.vector>
+         <ptn:Simulated_potential>-68.8</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70.0">
+            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
             <ptn:Simulated_potential.input.vector>1.2</ptn:Simulated_potential.input.vector>
-         </ptn:Simulated_potential>
+         </ptn:Simulated_potential__x3A__vectors>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -38,9 +39,10 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Simulated_potential>
-            <ptn:Simulated_potential.resting.vector>-79.5</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential>
+         <ptn:Simulated_potential>-79.5</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-80.0">
+            <ptn:Simulated_potential.resting.vector>0.5</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -56,9 +58,10 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Simulated_potential>
-            <ptn:Simulated_potential.resting.vector>-79.5</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential>
+         <ptn:Simulated_potential>-79.5</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-80.0">
+            <ptn:Simulated_potential.resting.vector>0.5</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>

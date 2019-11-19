@@ -31,9 +31,18 @@
         </ptn:Simulation_body>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation_body">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation_body[@ptn:Simulator_tick][@ptn:Simulation_body_time]">
         <xsl:message>#14 todo ptn:Config</xsl:message>
-        <xsl:copy></xsl:copy>
+        <xsl:copy>
+            <xsl:attribute name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick + 1"/>
+            <xsl:attribute name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time + @ptn:Simulator_tick"/>
+            <xsl:copy-of select="@ptn:Simulator_tick"/>
+            <xsl:apply-templates mode="#current">
+                <xsl:with-param name="ptn:Simulator_tick" select="@ptn:Simulator_tick + 1" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time + @ptn:Simulator_tick" tunnel="yes"/>
+                <xsl:with-param name="ptn:Inputs" select="doc($ptn:Config)//ptn:Inputs" tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:copy>
     </xsl:template>
     
     
@@ -71,13 +80,21 @@
         <xsl:copy-of select="."/>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Defaults">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Defaults|ptn:Simulated_potential__x3A__vectors">
         <xsl:message >#52 bypassed <xsl:value-of select="name()"/></xsl:message>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="*">
         <xsl:message terminate="yes">#15 todo <xsl:value-of select="name()"/></xsl:message>
     </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Nodes">
+        <xsl:copy>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
     
     
     
