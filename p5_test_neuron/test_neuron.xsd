@@ -228,8 +228,13 @@
             <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
                 type="ptn:Current_synapse"/>
             <xs:element default="-80" name="Simulated_potential" type="ptn:Simulated_potential"/>
+            <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+            <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
             <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                 type="ptn:Simulated_potential__x3A__vectors"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                name="Simulated_potential__x3A__vectors.sum"
+                type="ptn:Simulated_potential__x3A__vectors.sum"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="Leaky_neuron">
@@ -263,8 +268,13 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0"
+                        name="Simulated_potential__x3A__vectors.sum"
+                        type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -300,8 +310,13 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0"
+                        name="Simulated_potential__x3A__vectors.sum"
+                        type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -377,8 +392,13 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0"
+                        name="Simulated_potential__x3A__vectors.sum"
+                        type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -417,6 +437,8 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
@@ -457,8 +479,13 @@
                         type="ptn:Current_synapse"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0"
+                        name="Simulated_potential__x3A__vectors.sum"
+                        type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -522,6 +549,7 @@
                 <xs:element default="3" name="Maximum_current" type="ptn:Maximum_current"/>
                 <xs:element default="2" name="Time_constant" type="ptn:Delay"/>
                 <xs:element default="5" name="Delay" type="ptn:Delay"/>
+                <xs:element default="-60" name="Attract_min" type="ptn:Attract_min"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -624,4 +652,29 @@
         </xs:sequence>
         <xs:attribute ref="ptn:Simulated_potential__x3A__previous" use="required"/>
     </xs:complexType>
+    <xs:simpleType name="Output__x3A__flag">
+        <xs:annotation>
+            <xs:documentation>When caused node to fire - than this flag... to be transformed to Output synapses</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+    <xs:simpleType name="Stress__x3A__flag">
+        <xs:annotation>
+            <xs:documentation>TODO no variant - fire everywhere</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+    <xs:simpleType name="Simulated_potential__x3A__vectors.sum">
+        <xs:annotation>
+            <xs:documentation>Calculated values in sequence - which were serialized to potential 
+debug most feature</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="Attract_min">
+        <xs:annotation>
+            <xs:documentation>Which min value potential affect to create new variant</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="ptn:voltage"/>
+    </xs:simpleType>
 </xs:schema>

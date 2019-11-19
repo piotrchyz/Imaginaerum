@@ -4,7 +4,8 @@
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                      ptn:Simulation_body_tick="2"
                      ptn:Simulation_body_time="2"
-                     ptn:Simulator_tick="1">
+                     ptn:Simulator_tick="1"
+                     ptn:Simulation.attract.xml="true">
    <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -20,12 +21,9 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Simulated_potential>-55.6724</ptn:Simulated_potential>
-         <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-55.38">
-            <ptn:Simulated_potential.resting.vector>-0.29239999999999994</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-55.6724</ptn:Simulated_potential__x3A__vectors.sum>
-         <!--#107 todo implement n/[ptn:Attract__x3A__flag]-->
+         <ptn:Attract__x3A__flag ptn:Attract__x3A__flag.nodes.count="1">true</ptn:Attract__x3A__flag>
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -42,10 +40,8 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Simulated_potential>-70.9604</ptn:Simulated_potential>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70.98">
-            <ptn:Simulated_potential.resting.vector>0.01960000000000008</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-70.9604</ptn:Simulated_potential__x3A__vectors.sum>
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -62,10 +58,8 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Simulated_potential>-70.9604</ptn:Simulated_potential>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70.98">
-            <ptn:Simulated_potential.resting.vector>0.01960000000000008</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-70.9604</ptn:Simulated_potential__x3A__vectors.sum>
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>

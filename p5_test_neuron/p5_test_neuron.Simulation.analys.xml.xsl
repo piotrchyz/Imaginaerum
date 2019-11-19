@@ -11,7 +11,8 @@
     
     <xsl:include href="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"/>
    
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Config[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs]">
+   
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Config[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]">
         <xsl:message>#13 todo ptn:Config</xsl:message>
         <ptn:Simulation_body
             xsi:schemaLocation="p5_test_neuron file:{$ptn:xsd}"
@@ -24,6 +25,7 @@
                 <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Inputs" select="ptn:Inputs" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
+                <xsl:with-param name="ptn:Attract_min" tunnel="yes" select="ptn:Defaults/ptn:Attract_min"/>
             </xsl:apply-templates>
             <ptn:Nodes>
                 
@@ -34,13 +36,15 @@
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation_body[@ptn:Simulator_tick][@ptn:Simulation_body_time]">
         <xsl:message>#14 todo ptn:Config</xsl:message>
         <xsl:copy>
+            <xsl:copy-of select="@xsi:schemaLocation"/>
             <xsl:attribute name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick + 1"/>
             <xsl:attribute name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time + @ptn:Simulator_tick"/>
             <xsl:copy-of select="@ptn:Simulator_tick"/>
             <xsl:apply-templates mode="#current">
-                <xsl:with-param name="ptn:Simulator_tick" select="@ptn:Simulator_tick + 1" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulator_tick" select="@ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time + @ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Inputs" select="doc($ptn:Config)//ptn:Inputs" tunnel="yes"/>
+                <xsl:with-param name="ptn:Attract_min" select="doc($ptn:Config)//ptn:Defaults/ptn:Attract_min" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
@@ -65,6 +69,8 @@
     
     
     
+    
+    
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation">
         <xsl:comment>#59 transformed ptn:Simulation</xsl:comment>
     </xsl:template>
@@ -80,7 +86,7 @@
         <xsl:copy-of select="."/>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Defaults|ptn:Simulated_potential__x3A__vectors">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Defaults|ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum">
         <xsl:message >#52 bypassed <xsl:value-of select="name()"/></xsl:message>
     </xsl:template>
     
@@ -96,6 +102,11 @@
     </xsl:template>
     
     
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag|ptn:Stress__x3A__flag|ptn:Attract__x3A__flag">
+        <xsl:comment>#107 todo implement n/[<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
     
     
     
