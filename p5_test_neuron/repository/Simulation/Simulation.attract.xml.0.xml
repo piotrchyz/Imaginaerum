@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation_body xmlns:ptn="p5_test_neuron"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xmlns:math="http://exslt.org/math"
+                     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                      ptn:Simulation_body_tick="1"
                      ptn:Simulation_body_time="1"
-                     ptn:Simulator_tick="1"
-                     ptn:Simulation.attract.xml="true">
-   <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+                     ptn:Simulator_tick="1">
+   <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
@@ -20,8 +21,9 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
          <ptn:Simulated_potential>-55.38</ptn:Simulated_potential>
-         <ptn:Attract__x3A__flag ptn:Attract__x3A__flag.nodes.count="1">true</ptn:Attract__x3A__flag>
+         <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
@@ -40,6 +42,7 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
          <ptn:Simulated_potential>-70.98</ptn:Simulated_potential>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
@@ -58,10 +61,11 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
          <ptn:Simulated_potential>-70.98</ptn:Simulated_potential>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
-         <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+         <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes/>

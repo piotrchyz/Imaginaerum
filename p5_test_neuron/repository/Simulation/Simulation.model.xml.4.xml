@@ -4,10 +4,22 @@
                      xmlns:math="http://exslt.org/math"
                      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
-                     ptn:Simulation_body_tick="6"
-                     ptn:Simulation_body_time="6"
-                     ptn:Simulation_body_time__x3A__last="5"
+                     ptn:Simulation_body_tick="5"
+                     ptn:Simulation_body_time="5"
+                     ptn:Simulation_body_time__x3A__last="4"
                      ptn:Simulator_tick="1">
+   <ptn:Simulation.attract__x3A__calculate.best.unique>
+      <ptn:Simulation.attract__x3A__calculate ptn:Simulation.attract__x3A__calculate.best.unique.position="1"
+                                              ptn:Label__x3A__context="C"
+                                              ptn:Label="B"
+                                              ptn:Distance="10"
+                                              ptn:Simulated_potential__x3A__diff="0.617759999999997"/>
+      <ptn:Simulation.attract__x3A__calculate ptn:Simulation.attract__x3A__calculate.best.unique.position="2"
+                                              ptn:Label__x3A__context="C"
+                                              ptn:Label="A"
+                                              ptn:Distance="20"
+                                              ptn:Simulated_potential__x3A__diff="1.2110567039999935"/>
+   </ptn:Simulation.attract__x3A__calculate.best.unique>
    <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -23,19 +35,9 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-56.784677950784</ptn:Simulated_potential>
-         <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
-         <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
-                                                 ptn:Label="B"
-                                                 ptn:Distance="10"
-                                                 ptn:Simulated_potential__x3A__diff="-0.5814307699199972"/>
-         <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
-                                                 ptn:Label="C"
-                                                 ptn:Distance="20"
-                                                 ptn:Simulated_potential__x3A__diff="-1.1868355699199924"/>
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
+         <ptn:Simulated_potential>-56.5149775008</ptn:Simulated_potential>
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -56,11 +58,7 @@
                <ptn:Output_Node>A</ptn:Output_Node>
             </ptn:Current_synapse>
          </ptn:Outputs>
-         <ptn:Simulated_potential>-56.203247180864004</ptn:Simulated_potential>
-         <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
+         <ptn:Simulated_potential>-55.921680796800004</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -84,11 +82,9 @@
                <ptn:Output_Node>A</ptn:Output_Node>
             </ptn:Current_synapse>
          </ptn:Outputs>
-         <ptn:Simulated_potential>-55.59784238086401</ptn:Simulated_potential>
-         <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
+         <ptn:Simulated_potential>-55.30392079680001</ptn:Simulated_potential>
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>

@@ -51,10 +51,10 @@
             </xsl:otherwise>
         </xsl:choose>
         <xsl:choose>
-            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; preceding-sibling::ptn:Firing_threshold and not(preceding-sibling::Current_synapse)">
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; preceding-sibling::ptn:Firing_threshold and not(preceding-sibling::ptn:Outputs/ptn:Current_synapse)">
                 <ptn:Stress__x3A__flag><xsl:value-of select="true()"/></ptn:Stress__x3A__flag>
             </xsl:when>
-            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; preceding-sibling::ptn:Firing_threshold and preceding-sibling::Current_synapse">
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; preceding-sibling::ptn:Firing_threshold and preceding-sibling::ptn:Outputs/ptn:Current_synapse">
                 <!-- when fired no attract variant should be created  -->
             </xsl:when>
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; $ptn:Attract_min">

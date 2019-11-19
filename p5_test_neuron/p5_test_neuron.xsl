@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:ptn="p5_test_neuron"
+    xmlns:math="http://exslt.org/math"
     exclude-result-prefixes="xs"
     version="2.0">
     
@@ -20,8 +21,11 @@
     
     <xsl:param name="ptn:xsd" required="yes"/>
     
+    
+    <xsl:include href="sqrt.xsl"/>
     <xsl:include href="p5_test_neuron.Simulation.analys.xml.xsl"/>
     <xsl:include href="p5_test_neuron.Simulation.attract.xml.xsl"/>
+    <xsl:include href="p5_test_neuron.Simulation.model.xml.xsl"/>
     
     <xsl:template mode="ptn:Simulation.build.analys.xml" match="ptn:Config">
         <xsl:message>#16 will 
@@ -127,6 +131,43 @@
                     <classpath location="/opt/local/share/java/saxon9he.jar"/>
                 </xslt>
                 
+                <xslt  
+                    style="{$ptn:xsl}"
+                    in="{$ptn:Simulation.dir}/Simulation.attract.xml.0.xml"
+                    out="{$ptn:Simulation.dir}/Simulation.model.xml.0.xml" 
+                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    <factory name="net.sf.saxon.TransformerFactoryImpl">
+                        <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                        <attribute name="http://saxon.sf.net/feature/initialMode">
+                            <xsl:attribute name="value">{p5_test_neuron}Simulation.model.xml</xsl:attribute>
+                        </attribute>
+                        <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+                    </factory>
+                    
+                    <param  expression="{$ptn:Config}">
+                        <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:xsl}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:xsd}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsd</xsl:attribute>
+                    </param>
+                    
+                    <param  expression="{$ptn:Simulation_ticks}">
+                        <xsl:attribute name="name">{p5_test_neuron}Simulation_ticks</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:Simulation.dir}">
+                        <xsl:attribute name="name">{p5_test_neuron}Simulation.dir</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:basedir}">
+                        <xsl:attribute name="name">{p5_test_neuron}basedir</xsl:attribute>
+                    </param>
+                    <param name="basedir" expression="{$basedir}"/>
+                    
+                    <classpath location="/opt/local/share/java/saxon9he.jar"/>
+                </xslt>
+                
             </target>
             
         <xsl:for-each select="1 to ptn:Simulation_ticks">
@@ -134,7 +175,7 @@
               <xsl:attribute name="depends">Simulation.build.analys.xml.<xsl:value-of select=". - 1"/></xsl:attribute>
                 <xslt  
                     style="{$ptn:xsl}"
-                    in="{$ptn:Simulation.dir}/Simulation.attract.xml.{. - 1}.xml"
+                    in="{$ptn:Simulation.dir}/Simulation.model.xml.{. - 1}.xml"
                     out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" 
                     force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -171,7 +212,7 @@
                 
                 <xslt  
                     style="{$ptn:xsl}"
-                    in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml"
+                    in="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml"
                     out="{$ptn:Simulation.dir}/Simulation.attract.xml.{.}.xml" 
                     force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -205,6 +246,42 @@
                     <classpath location="/opt/local/share/java/saxon9he.jar"/>
                 </xslt>
                 
+                
+                <xslt  
+                    style="{$ptn:xsl}"
+                    in="{$ptn:Simulation.dir}/Simulation.attract.xml.{.}.xml"
+                    out="{$ptn:Simulation.dir}/Simulation.model.xml.{.}.xml" 
+                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    <factory name="net.sf.saxon.TransformerFactoryImpl">
+                        <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                        <attribute name="http://saxon.sf.net/feature/initialMode">
+                            <xsl:attribute name="value">{p5_test_neuron}Simulation.model.xml</xsl:attribute>
+                        </attribute>
+                        <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+                    </factory>
+                    <param  expression="{$ptn:Config}">
+                        <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
+                    </param>
+                    
+                    <param  expression="{$ptn:xsl}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:xsd}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsd</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:Simulation_ticks}">
+                        <xsl:attribute name="name">{p5_test_neuron}Simulation_ticks</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:Simulation.dir}">
+                        <xsl:attribute name="name">{p5_test_neuron}Simulation.dir</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:basedir}">
+                        <xsl:attribute name="name">{p5_test_neuron}basedir</xsl:attribute>
+                    </param>
+                    <param name="basedir" expression="{$basedir}"/>
+                    
+                    <classpath location="/opt/local/share/java/saxon9he.jar"/>
+                </xslt>
 
             </target>
         </xsl:for-each>

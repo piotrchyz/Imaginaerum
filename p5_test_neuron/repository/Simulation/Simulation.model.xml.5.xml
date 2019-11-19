@@ -8,6 +8,7 @@
                      ptn:Simulation_body_time="6"
                      ptn:Simulation_body_time__x3A__last="5"
                      ptn:Simulator_tick="1">
+   <ptn:Simulation.attract__x3A__calculate.best.unique/>
    <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -24,18 +25,8 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Simulated_potential>-56.784677950784</ptn:Simulated_potential>
-         <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
-         <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
-                                                 ptn:Label="B"
-                                                 ptn:Distance="10"
-                                                 ptn:Simulated_potential__x3A__diff="-0.5814307699199972"/>
-         <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
-                                                 ptn:Label="C"
-                                                 ptn:Distance="20"
-                                                 ptn:Simulated_potential__x3A__diff="-1.1868355699199924"/>
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -57,10 +48,6 @@
             </ptn:Current_synapse>
          </ptn:Outputs>
          <ptn:Simulated_potential>-56.203247180864004</ptn:Simulated_potential>
-         <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -85,10 +72,6 @@
             </ptn:Current_synapse>
          </ptn:Outputs>
          <ptn:Simulated_potential>-55.59784238086401</ptn:Simulated_potential>
-         <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>

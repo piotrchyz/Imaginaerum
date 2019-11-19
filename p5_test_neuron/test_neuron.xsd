@@ -225,9 +225,12 @@
             <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                 minOccurs="0"/>
             <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
-            <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                type="ptn:Current_synapse"/>
+            <xs:element ref="ptn:Outputs"/>
             <xs:element default="-80" name="Simulated_potential" type="ptn:Simulated_potential"/>
+            <xs:element minOccurs="0" name="Attract__x3A__flag" type="ptn:Attract__x3A__flag"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                name="Simulation.attract__x3A__calculate"
+                type="ptn:Simulation.attract__x3A__calculate"/>
             <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
             <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
             <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
@@ -264,10 +267,14 @@
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         minOccurs="1"/>
                     <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
-                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                        type="ptn:Current_synapse"/>
+                    <xs:element ref="ptn:Outputs"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Attract__x3A__flag"
+                        type="ptn:Attract__x3A__flag"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0"
+                        name="Simulation.attract__x3A__calculate"
+                        type="ptn:Simulation.attract__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
@@ -306,10 +313,14 @@
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         minOccurs="1"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_false"/>
-                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                        type="ptn:Current_synapse"/>
+                    <xs:element ref="ptn:Outputs"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Attract__x3A__flag"
+                        type="ptn:Attract__x3A__flag"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0"
+                        name="Simulation.attract__x3A__calculate"
+                        type="ptn:Simulation.attract__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
@@ -348,8 +359,7 @@
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         minOccurs="1"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_true"/>
-                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                        type="ptn:Current_synapse"/>
+                    <xs:element ref="ptn:Outputs"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
@@ -388,8 +398,7 @@
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
-                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                        type="ptn:Current_synapse"/>
+                    <xs:element ref="ptn:Outputs"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
@@ -433,8 +442,7 @@
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_false"/>
-                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                        type="ptn:Current_synapse"/>
+                    <xs:element ref="ptn:Outputs"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
@@ -475,8 +483,7 @@
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_true"/>
-                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                        type="ptn:Current_synapse"/>
+                    <xs:element ref="ptn:Outputs"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
@@ -521,6 +528,14 @@
             <xs:element name="Input_exec_Maximum_current" type="ptn:Input_exec_Maximum_current"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:element name="Outputs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                    type="ptn:Current_synapse"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
     <xs:element name="Config">
         <xs:complexType>
             <xs:sequence>
@@ -603,6 +618,7 @@
     </xs:simpleType>
     <xs:attribute default="1" name="Simulation_body_tick" type="ptn:Simulation_body_tick"/>
     <xs:attribute name="Simulation_body_time" type="ptn:Simulation_body_time"/>
+    <xs:attribute name="Simulation_body_time__x3A__last" type="ptn:Simulation_body_time"/>
     <xs:attribute name="Simulator_tick" type="ptn:Simulator_tick"/>
     <xs:element name="Simulation_body">
         <xs:annotation>
@@ -610,11 +626,17 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
+                <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__calculate.best.unique">
+                    <xs:annotation>
+                        <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
                 <xs:element ref="ptn:Receptors"/>
                 <xs:element ref="ptn:Nodes"/>
             </xs:sequence>
             <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
             <xs:attribute ref="ptn:Simulation_body_time" use="required"/>
+            <xs:attribute ref="ptn:Simulation_body_time__x3A__last" use="required"/>
             <xs:attribute ref="ptn:Simulator_tick" use="required">
                 <xs:annotation>
                     <xs:documentation>Todo ? optimize in config</xs:documentation>
@@ -642,7 +664,8 @@
         </xs:annotation>
         <xs:restriction base="ptn:Simulated_potential"/>
     </xs:simpleType>
-    <xs:attribute name="Simulated_potential__x3A__previous"/>
+    <xs:attribute name="Simulated_potential__x3A__previous"
+        type="ptn:Simulated_potential__x3A__previous"/>
     <xs:complexType name="Simulated_potential__x3A__vectors">
         <xs:sequence>
             <xs:element name="Simulated_potential.resting.vector"
@@ -664,6 +687,12 @@
         </xs:annotation>
         <xs:restriction base="xs:boolean"/>
     </xs:simpleType>
+    <xs:simpleType name="Attract__x3A__flag">
+        <xs:annotation>
+            <xs:documentation>When lower than fire and higher than Min Attract param - should create variant</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
     <xs:simpleType name="Simulated_potential__x3A__vectors.sum">
         <xs:annotation>
             <xs:documentation>Calculated values in sequence - which were serialized to potential 
@@ -677,4 +706,41 @@ debug most feature</xs:documentation>
         </xs:annotation>
         <xs:restriction base="ptn:voltage"/>
     </xs:simpleType>
+    <xs:attributeGroup name="Simulation.attract__x3A__calculate">
+        <xs:attribute ref="ptn:Label__x3A__context"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__diff"/>
+        <xs:attribute ref="ptn:Distance"/>
+        <xs:attribute ref="ptn:Label"/>
+        <xs:attribute ref="ptn:Simulation.attract__x3A__calculate.best.unique.position"/>
+    </xs:attributeGroup>
+    <xs:complexType name="Simulation.attract__x3A__calculate">
+        <xs:annotation>
+            <xs:documentation>Transformed from ptn:Attract__x3A__flag - to analyze generate new structure variant</xs:documentation>
+        </xs:annotation>
+        <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
+    </xs:complexType>
+    <xs:attribute name="Label" type="ptn:Output_Node"/>
+    <xs:attribute name="Label__x3A__context" type="ptn:Output_Node">
+        <xs:annotation>
+            <xs:documentation>Used in attract to provide linking for model</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="Simulated_potential__x3A__diff" type="ptn:Simulated_potential"/>
+    <xs:simpleType name="Distance">
+        <xs:restriction base="xs:decimal"/>
+    </xs:simpleType>
+    <xs:attribute name="Distance" type="ptn:Distance"/>
+    <xs:attribute name="Simulation.attract__x3A__calculate.best.unique.position" type="xs:int">
+        <xs:annotation>
+            <xs:documentation>Just for select in for-each row number order best</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+    <xs:complexType name="Simulation.attract__x3A__calculate.best.unique">
+        <xs:annotation>
+            <xs:documentation>Analyzed to create modelk</xs:documentation>
+        </xs:annotation>
+        <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
+    </xs:complexType>
+    <xs:element name="Simulation.attract__x3A__calculate.best.unique"
+        type="ptn:Simulation.attract__x3A__calculate.best.unique"/>
 </xs:schema>

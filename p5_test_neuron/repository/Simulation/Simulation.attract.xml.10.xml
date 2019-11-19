@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation_body xmlns:ptn="p5_test_neuron"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xmlns:math="http://exslt.org/math"
+                     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
-                     ptn:Simulation_body_tick="6"
-                     ptn:Simulation_body_time="6"
-                     ptn:Simulator_tick="1"
-                     ptn:Simulation.attract.xml="true">
-   <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+                     ptn:Simulation_body_tick="11"
+                     ptn:Simulation_body_time="11"
+                     ptn:Simulation_body_time__x3A__last="10"
+                     ptn:Simulator_tick="1">
+   <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
@@ -20,8 +22,18 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Simulated_potential>-56.784677950784</ptn:Simulated_potential>
+         <ptn:Outputs/>
+         <ptn:Simulated_potential>-58.05439556330407</ptn:Simulated_potential>
          <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
+         <!--#95 lower sorted grouped unique-->
+         <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
+                                                 ptn:Label="B"
+                                                 ptn:Distance="10"
+                                                 ptn:Simulated_potential__x3A__diff="-0.525567364830124"/>
+         <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
+                                                 ptn:Label="C"
+                                                 ptn:Distance="20"
+                                                 ptn:Simulated_potential__x3A__diff="-1.072805354032667"/>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
@@ -39,8 +51,14 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Simulated_potential>-55.903602380864</ptn:Simulated_potential>
+         <ptn:Outputs>
+            <ptn:Current_synapse>
+               <ptn:Output_Node>A</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Simulated_potential>-57.528828198473946</ptn:Simulated_potential>
          <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
+         <!--#95 lower sorted grouped unique-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
@@ -58,10 +76,20 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Simulated_potential>-70.885842380864</ptn:Simulated_potential>
+         <ptn:Outputs>
+            <ptn:Current_synapse>
+               <ptn:Output_Node>B</ptn:Output_Node>
+            </ptn:Current_synapse>
+            <ptn:Current_synapse>
+               <ptn:Output_Node>A</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Simulated_potential>-56.9815902092714</ptn:Simulated_potential>
+         <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
+         <!--#95 lower sorted grouped unique-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
-         <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+         <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes/>
