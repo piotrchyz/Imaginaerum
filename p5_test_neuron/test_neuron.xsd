@@ -48,6 +48,15 @@
             <xs:maxInclusive value="50"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="Simulated_potential">
+        <xs:annotation>
+            <xs:documentation>Current simulated potential mV. probably min -200mV max 200mV</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="-200"/>
+            <xs:maxInclusive value="200"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:simpleType name="Resting_potential">
         <xs:restriction base="ptn:Potentials"/>
     </xs:simpleType>
@@ -111,6 +120,12 @@
             <xs:maxInclusive value="30"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="Output_Node">
+        <xs:annotation>
+            <xs:documentation>Synapse Output Node</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:IDREF"/>
+    </xs:simpleType>
     <xs:simpleType name="Simulator_tick">
         <xs:annotation>
             <xs:documentation>Simulator tick-time [ms] 0.01 ms  to 1000 ms</xs:documentation>
@@ -153,14 +168,14 @@
             <xs:documentation>ms - in which some input should be executed</xs:documentation>
         </xs:annotation>
         <xs:restriction base="xs:decimal">
-            <xs:minInclusive value="0"/>
+            <xs:minExclusive value="0"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="Input_exec_receptor">
         <xs:annotation>
             <xs:documentation>Which receptor should be triggered at some exec time</xs:documentation>
         </xs:annotation>
-        <xs:restriction base="xs:IDREF"/>
+        <xs:restriction base="ptn:Output_Node"/>
     </xs:simpleType>
     <xs:simpleType name="Input_exec_Time_constant">
         <xs:annotation>
@@ -173,6 +188,19 @@
             <xs:documentation>How much current will input be loaded</xs:documentation>
         </xs:annotation>
         <xs:restriction base="ptn:Maximum_current"/>
+    </xs:simpleType>
+    <xs:simpleType name="Is_inhibitor">
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+    <xs:simpleType name="Is_inhibitor_false">
+        <xs:restriction base="ptn:Is_inhibitor">
+            <xs:pattern value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="Is_inhibitor_true">
+        <xs:restriction base="ptn:Is_inhibitor">
+            <xs:pattern value="1"/>
+        </xs:restriction>
     </xs:simpleType>
     <xs:complexType name="Node">
         <xs:sequence>
@@ -196,6 +224,10 @@
                 type="ptn:Adaptation_time_constant"/>
             <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                 minOccurs="0"/>
+            <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                type="ptn:Current_synapse"/>
+            <xs:element default="-80" name="Simulated_potential" type="ptn:Simulated_potential"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="Leaky_neuron">
@@ -224,6 +256,81 @@
                         name="Adaptation_time_constant" type="ptn:Adaptation_time_constant"/>
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         minOccurs="1"/>
+                    <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                        type="ptn:Current_synapse"/>
+                    <xs:element default="-80" name="Simulated_potential"
+                        type="ptn:Simulated_potential"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Leaky_neuron_standard">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Leaky_neuron">
+                <xs:sequence>
+                    <xs:element name="Label" type="ptn:Label"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                        minOccurs="1"/>
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                        minOccurs="1"/>
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                        minOccurs="1"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        minOccurs="1"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                        minOccurs="1"/>
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                        minOccurs="1"/>
+                    <xs:element default="10" maxOccurs="0" minOccurs="0"
+                        name="Adaptation_conductance" type="ptn:Adaptation_conductance"/>
+                    <xs:element default="500" maxOccurs="0" minOccurs="0"
+                        name="Adaptation_time_constant" type="ptn:Adaptation_time_constant"/>
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                        minOccurs="1"/>
+                    <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_false"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                        type="ptn:Current_synapse"/>
+                    <xs:element default="-80" name="Simulated_potential"
+                        type="ptn:Simulated_potential"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Leaky_neuron_inhibitor">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Leaky_neuron">
+                <xs:sequence>
+                    <xs:element name="Label" type="ptn:Label"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                        minOccurs="1"/>
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                        minOccurs="1"/>
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                        minOccurs="1"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        minOccurs="1"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                        minOccurs="1"/>
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                        minOccurs="1"/>
+                    <xs:element default="10" maxOccurs="0" minOccurs="0"
+                        name="Adaptation_conductance" type="ptn:Adaptation_conductance"/>
+                    <xs:element default="500" maxOccurs="0" minOccurs="0"
+                        name="Adaptation_time_constant" type="ptn:Adaptation_time_constant"/>
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                        minOccurs="1"/>
+                    <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_true"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                        type="ptn:Current_synapse"/>
+                    <xs:element default="-80" name="Simulated_potential"
+                        type="ptn:Simulated_potential"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -257,6 +364,87 @@
                         type="ptn:Adaptation_time_constant"/>
                     <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
                         maxOccurs="0" minOccurs="0"/>
+                    <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                        type="ptn:Current_synapse"/>
+                    <xs:element default="-80" name="Simulated_potential"
+                        type="ptn:Simulated_potential"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Adaptive_neuron_standard">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Adaptive_neuron">
+                <xs:sequence>
+                    <xs:element name="Label" type="ptn:Label"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
+                        minOccurs="0"/>
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="10" minOccurs="1" name="Adaptation_conductance"
+                        type="ptn:Adaptation_conductance"/>
+                    <xs:element default="500" minOccurs="1" name="Adaptation_time_constant"
+                        type="ptn:Adaptation_time_constant"/>
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_false"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                        type="ptn:Current_synapse"/>
+                    <xs:element default="-80" name="Simulated_potential"
+                        type="ptn:Simulated_potential"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Adaptive_neuron_inhibitor">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Adaptive_neuron">
+                <xs:sequence>
+                    <xs:element name="Label" type="ptn:Label"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
+                        minOccurs="0"/>
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element default="10" minOccurs="1" name="Adaptation_conductance"
+                        type="ptn:Adaptation_conductance"/>
+                    <xs:element default="500" minOccurs="1" name="Adaptation_time_constant"
+                        type="ptn:Adaptation_time_constant"/>
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_true"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                        type="ptn:Current_synapse"/>
+                    <xs:element default="-80" name="Simulated_potential"
+                        type="ptn:Simulated_potential"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -266,12 +454,23 @@
             <xs:documentation>First neuron for input</xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="ptn:Leaky_neuron">
+            <xs:extension base="ptn:Leaky_neuron_standard">
                 <xs:sequence>
                     <xs:element name="Receptor_regex_filter" type="ptn:Receptor_regex_filter"/>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Current_synapse">
+        <xs:annotation>
+            <xs:documentation>Synapsa od do</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element default="3" name="Maximum_current" type="ptn:Maximum_current"/>
+            <xs:element default="2" name="Time_constant" type="ptn:Time_constant"/>
+            <xs:element default="5" name="Delay" type="ptn:Delay"/>
+            <xs:element name="Output_Node" type="ptn:Output_Node"/>
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="Input">
         <xs:sequence>
@@ -319,6 +518,20 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="Nodes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Leaky_neuron_standard"
+                    type="ptn:Leaky_neuron_standard"/>
+                <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0"
+                    name="Leaky_neuron_inhibitor" type="ptn:Leaky_neuron_inhibitor"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Adaptive_neuron_standard"
+                    type="ptn:Adaptive_neuron_standard"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Adaptive_neuron_inhibitor"
+                    type="ptn:Adaptive_neuron_inhibitor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
     <xs:element name="Inputs">
         <xs:complexType>
             <xs:sequence>
@@ -332,6 +545,39 @@
                 <xs:element default="1" name="Simulator_tick" type="ptn:Simulator_tick"/>
                 <xs:element default="10" name="Simulation_ticks" type="ptn:Simulation_ticks"/>
             </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Simulation_body_tick">
+        <xs:annotation>
+            <xs:documentation>Which simulation instance number it is</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal"/>
+    </xs:simpleType>
+    <xs:simpleType name="Simulation_body_time">
+        <xs:annotation>
+            <xs:documentation>Current body time simulated (Simulator_tick * Simulation_body_tick)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal"/>
+    </xs:simpleType>
+    <xs:attribute default="1" name="Simulation_body_tick" type="ptn:Simulation_body_tick"/>
+    <xs:attribute name="Simulation_body_time" type="ptn:Simulation_body_time"/>
+    <xs:attribute name="Simulator_tick" type="ptn:Simulator_tick"/>
+    <xs:element name="Simulation_body">
+        <xs:annotation>
+            <xs:documentation>Current simulation body</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ptn:Receptors"/>
+                <xs:element ref="ptn:Nodes"/>
+            </xs:sequence>
+            <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
+            <xs:attribute ref="ptn:Simulation_body_time" use="required"/>
+            <xs:attribute ref="ptn:Simulator_tick" use="required">
+                <xs:annotation>
+                    <xs:documentation>Todo ? optimize in config</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
         </xs:complexType>
     </xs:element>
 </xs:schema>

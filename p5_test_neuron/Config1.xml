@@ -31,6 +31,8 @@
             <ptn:Reset_potential>-80.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
+            <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+            <ptn:Simulated_potential>-80.0</ptn:Simulated_potential>
             <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
         </ptn:Receptor>
         <ptn:Receptor>
@@ -45,6 +47,8 @@
             <ptn:Reset_potential>-80.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
+            <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+            <ptn:Simulated_potential>-80.0</ptn:Simulated_potential>
             <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
         </ptn:Receptor>
         <ptn:Receptor>
@@ -59,12 +63,15 @@
             <ptn:Reset_potential>-80.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
+            <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+            <ptn:Simulated_potential>-80.0</ptn:Simulated_potential>
             <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+            
         </ptn:Receptor>
     </ptn:Receptors>
     <ptn:Inputs>
         <ptn:Input>
-            <ptn:Input_exec_time>0</ptn:Input_exec_time>
+            <ptn:Input_exec_time>1</ptn:Input_exec_time>
             <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
             <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
             <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
@@ -83,7 +90,7 @@
         </ptn:Input>
     </ptn:Inputs>
     <ptn:Simulation>
-        <ptn:Simulator_tick>1.0</ptn:Simulator_tick>
+        <ptn:Simulator_tick>1</ptn:Simulator_tick>
         <ptn:Simulation_ticks>10</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>

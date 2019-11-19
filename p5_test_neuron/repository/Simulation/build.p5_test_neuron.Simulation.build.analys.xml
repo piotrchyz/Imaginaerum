@@ -24,6 +24,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -51,6 +53,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -78,6 +82,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -105,6 +111,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -132,6 +140,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -159,6 +169,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -186,6 +198,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -213,6 +227,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -240,6 +256,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -267,6 +285,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>
@@ -294,6 +314,8 @@
                 name="{p5_test_neuron}Config"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
                 name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
          <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
          <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
                 name="{p5_test_neuron}Simulation.dir"/>

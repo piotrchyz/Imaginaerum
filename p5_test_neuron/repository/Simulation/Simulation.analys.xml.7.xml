@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ptn:Config xmlns:ptn="p5_test_neuron"
-            xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ptn:Simulation_body xmlns:ptn="p5_test_neuron"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

@@ -18,6 +18,8 @@
     
     <xsl:param name="ptn:xsl" required="yes"/>
     
+    <xsl:param name="ptn:xsd" required="yes"/>
+    
     <xsl:include href="p5_test_neuron.Simulation.analys.xml.xsl"/>
     
     <xsl:template mode="ptn:Simulation.build.analys.xml" match="ptn:Config">
@@ -67,6 +69,10 @@
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
                     </param>
+                    <param  expression="{$ptn:xsd}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsd</xsl:attribute>
+                    </param>
+                    
                     <param  expression="{$ptn:Simulation_ticks}">
                         <xsl:attribute name="name">{p5_test_neuron}Simulation_ticks</xsl:attribute>
                     </param>
@@ -103,6 +109,9 @@
                     
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:xsd}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsd</xsl:attribute>
                     </param>
                     <param  expression="{$ptn:Simulation_ticks}">
                         <xsl:attribute name="name">{p5_test_neuron}Simulation_ticks</xsl:attribute>

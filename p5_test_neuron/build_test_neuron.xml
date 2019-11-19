@@ -7,7 +7,7 @@
     <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
     <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
     
-    
+    <property name="p5_test_neuron.xsd" location="${p5_test_neuron.basedir}/test_neuron.xsd"/>
     
     
     
@@ -55,6 +55,7 @@
             <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
             <param name="basedir" expression="${basedir}"/>
             <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
+            <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
             
             <classpath location="/opt/local/share/java/saxon9he.jar"/>
         </xslt>
