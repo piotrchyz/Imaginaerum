@@ -719,6 +719,8 @@ debug most feature</xs:documentation>
         </xs:annotation>
         <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
     </xs:complexType>
+    <xs:element name="Simulation.attract__x3A__calculate"
+        type="ptn:Simulation.attract__x3A__calculate"/>
     <xs:attribute name="Label" type="ptn:Output_Node"/>
     <xs:attribute name="Label__x3A__context" type="ptn:Output_Node">
         <xs:annotation>
@@ -739,8 +741,23 @@ debug most feature</xs:documentation>
         <xs:annotation>
             <xs:documentation>Analyzed to create modelk</xs:documentation>
         </xs:annotation>
-        <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                ref="ptn:Simulation.attract__x3A__calculate"/>
+        </xs:sequence>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__calculate.best.unique"
-        type="ptn:Simulation.attract__x3A__calculate.best.unique"/>
+        type="ptn:Simulation.attract__x3A__calculate.best.unique">
+        <xs:unique name="eliminate_duplicate_Label__x3A__context">
+            <xs:annotation>
+                <xs:documentation>Eliminacja attract dla juz wykorzystanego potencjalu do innego wezla</xs:documentation>
+            </xs:annotation>
+            <xs:selector xpath="ptn:Simulation.attract__x3A__calculate"/>
+            <xs:field xpath="@ptn:Label__x3A__context"/>
+        </xs:unique>
+        <xs:unique name="eliminate_duplicate_Label">
+            <xs:selector xpath="ptn:Simulation.attract__x3A__calculate"/>
+            <xs:field xpath="@ptn:Label"/>
+        </xs:unique>
+    </xs:element>
 </xs:schema>

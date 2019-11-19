@@ -29,7 +29,8 @@
          <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
                                                  ptn:Label="B"
                                                  ptn:Distance="10"
-                                                 ptn:Simulated_potential__x3A__diff="-0.6177600000000041"/>
+                                                 ptn:Simulated_potential__x3A__diff="-0.6177600000000041"
+                                                 debug.Output_Node="B-to-A"/>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
@@ -54,7 +55,8 @@
          <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="B"
                                                  ptn:Label="A"
                                                  ptn:Distance="10"
-                                                 ptn:Simulated_potential__x3A__diff="0.6177600000000041"/>
+                                                 ptn:Simulated_potential__x3A__diff="0.6177600000000041"
+                                                 debug.Output_Node="A-to-B"/>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->

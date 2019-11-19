@@ -44,10 +44,14 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs>
             <ptn:Current_synapse>
-               <ptn:Output_Node>A</ptn:Output_Node>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-B</ptn:Output_Node>
             </ptn:Current_synapse>
          </ptn:Outputs>
          <ptn:Simulated_potential>-56.479182237246725</ptn:Simulated_potential>
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -65,15 +69,40 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs>
             <ptn:Current_synapse>
-               <ptn:Output_Node>B</ptn:Output_Node>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>B-to-C</ptn:Output_Node>
             </ptn:Current_synapse>
             <ptn:Current_synapse>
-               <ptn:Output_Node>A</ptn:Output_Node>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-C</ptn:Output_Node>
             </ptn:Current_synapse>
          </ptn:Outputs>
          <ptn:Simulated_potential>-55.88588553324673</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
-   <ptn:Nodes/>
+   <ptn:Nodes>
+      <ptn:Leaky_neuron_standard>
+         <ptn:Label>A-to-B</ptn:Label>
+         <ptn:Coordinate_X>/2</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>+10</ptn:Coordinate_Y>
+         <ptn:Capacitance>0.8</ptn:Capacitance>
+      </ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_standard>
+         <ptn:Label>B-to-C</ptn:Label>
+         <ptn:Coordinate_X>/2</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>+10</ptn:Coordinate_Y>
+         <ptn:Capacitance>0.8</ptn:Capacitance>
+      </ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_standard>
+         <ptn:Label>A-to-C</ptn:Label>
+         <ptn:Coordinate_X>/2</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>+10</ptn:Coordinate_Y>
+         <ptn:Capacitance>0.8</ptn:Capacitance>
+      </ptn:Leaky_neuron_standard>
+   </ptn:Nodes>
 </ptn:Simulation_body>

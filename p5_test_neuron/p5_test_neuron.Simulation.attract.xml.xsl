@@ -28,7 +28,7 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Receptor|ptn:Nodes">
+    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Receptor|ptn:Nodes|ptn:Leaky_neuron_standard">
         <xsl:copy>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
@@ -111,6 +111,9 @@
         <xsl:param name="ptn:Coordinate_Y" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulated_potential" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Outputs" required="yes" tunnel="yes"/>
+        <xsl:variable name="ptn:Output_Node">
+            <xsl:call-template name="ptn:Output_Node"/>            
+        </xsl:variable>
         <xsl:choose>
             <xsl:when test="ptn:Label = $ptn:Label">
                 <xsl:comment>
@@ -121,12 +124,17 @@
                 <xsl:comment>121bypassed - existient Synapse to <xsl:value-of select="ptn:Label"/></xsl:comment>
                 <xsl:message>121bypassed - existient Synapse to <xsl:value-of select="ptn:Label"/></xsl:message>
             </xsl:when>
+            <xsl:when test="$ptn:Outputs//ptn:Current_synapse[ptn:Output_Node/text() = $ptn:Output_Node ]">
+                <xsl:comment>130bypassed - existient Synapse to <xsl:value-of select="$ptn:Output_Node"/></xsl:comment>
+                <xsl:message>130bypassed - existient Synapse to <xsl:value-of select="$ptn:Output_Node"/></xsl:message>
+            </xsl:when>
             <xsl:otherwise>
                 <ptn:Simulation.attract__x3A__calculate><!-- 0A create -->
                     <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
+                    <xsl:attribute name="debug.Output_Node" select="$ptn:Output_Node"/>
                 </ptn:Simulation.attract__x3A__calculate>
             </xsl:otherwise>
         </xsl:choose>

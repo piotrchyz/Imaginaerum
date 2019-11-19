@@ -13,7 +13,9 @@
                                               ptn:Label__x3A__context="B"
                                               ptn:Label="A"
                                               ptn:Distance="10"
-                                              ptn:Simulated_potential__x3A__diff="0.6177600000000041"/>
+                                              ptn:Simulated_potential__x3A__diff="0.6177600000000041"
+                                              debug.Output_Node="A-to-B"
+                                              debug128="BtoA"/>
    </ptn:Simulation.attract__x3A__calculate.best.unique>
    <ptn:Receptors>
       <ptn:Receptor>
@@ -49,7 +51,10 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs>
             <ptn:Current_synapse>
-               <ptn:Output_Node>A</ptn:Output_Node>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-B</ptn:Output_Node>
             </ptn:Current_synapse>
          </ptn:Outputs>
          <ptn:Simulated_potential>-55.341192</ptn:Simulated_potential>
@@ -74,5 +79,13 @@
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
-   <ptn:Nodes/>
+   <ptn:Nodes>
+      <ptn:Simulation.attract__x3A__calculate debug.222.Output_Node="A-to-B"/>
+      <ptn:Leaky_neuron_standard debug.todo="another context than default">
+         <ptn:Label>A-to-B</ptn:Label>
+         <ptn:Coordinate_X>/2</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>+10</ptn:Coordinate_Y>
+         <ptn:Capacitance>0.8</ptn:Capacitance>
+      </ptn:Leaky_neuron_standard>
+   </ptn:Nodes>
 </ptn:Simulation_body>

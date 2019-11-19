@@ -54,13 +54,19 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors|ptn:Receptor">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors|ptn:Receptor|ptn:Leaky_neuron_standard">
         <xsl:copy>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Current_synapse|ptn:Receptor_regex_filter|ptn:Output_Node|ptn:Outputs">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Current_synapse|ptn:Receptor_regex_filter">
+        <xsl:copy>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output_Node|ptn:Outputs|ptn:Maximum_current|ptn:Time_constant|ptn:Delay">
         <xsl:copy>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
