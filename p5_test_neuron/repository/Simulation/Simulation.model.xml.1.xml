@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation_body xmlns:ptn="p5_test_neuron"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:math="http://exslt.org/math"
                      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                      ptn:Simulation_body_tick="2"
                      ptn:Simulation_body_time="2"
                      ptn:Simulation_body_time__x3A__last="1"
                      ptn:Simulator_tick="1">
-   <ptn:Simulation.attract__x3A__calculate.best.unique/>
    <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -24,7 +22,7 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-55.6724</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-55.516400000000004</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag><!--#59 TODO handle this flag when created model stale flag that was used-->true</ptn:Attract__x3A__flag>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
@@ -59,7 +57,7 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-70.9604</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>

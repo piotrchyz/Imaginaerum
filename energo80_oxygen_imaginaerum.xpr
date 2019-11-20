@@ -2,9 +2,26 @@
 <project version="20.1">
     <meta>
         <filters directoryPatterns="" filePatterns="energo80_oxygen_imaginaerum.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
-        <options/>
+        <options>
+            <serialized version="20.1" xml:space="preserve">
+                <serializableOrderedMap>
+                    <entry>
+                        <String>enable.project.master.files.support</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                </serializableOrderedMap>
+            </serialized>
+        </options>
     </meta>
     <projectTree name="energo80_oxygen_imaginaerum.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analys.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.attract.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.xsl"/>
+            <file name="p5_test_neuron/sqrt.xsl"/>
+        </folder>
         <folder path="."/>
     </projectTree>
 </project>

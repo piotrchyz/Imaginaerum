@@ -4,7 +4,7 @@
     xmlns:ptn="p5_test_neuron"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:math="http://exslt.org/math"
-    exclude-result-prefixes="xs"
+    exclude-result-prefixes="xs math"
     version="2.0">
     
     <xsl:output indent="yes"/>
@@ -17,7 +17,11 @@
             <xsl:variable name="ptn:Simulation.attract__x3A__calculate.best.unique">
                 <xsl:call-template name="ptn:Simulation.attract__x3A__calculate.best.unique"/>
             </xsl:variable>
-            <xsl:copy-of select="$ptn:Simulation.attract__x3A__calculate.best.unique"/>
+            <xsl:for-each select="$ptn:Simulation.attract__x3A__calculate.best.unique">
+                <xsl:copy>
+                    <xsl:copy-of select="@*"/>
+                </xsl:copy>
+            </xsl:for-each>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulation.attract__x3A__calculate.best.unique" select="$ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes"/>
                 <xsl:with-param name="ptn:Defaults" select="doc($ptn:Config)//ptn:Defaults" tunnel="yes"/>
@@ -110,13 +114,14 @@
     
     <xsl:template name="ptn:Simulation.attract__x3A__calculate.best.unique">
         <xsl:variable name="ptn:Simulation.attract__x3A__calculate.best.unique">
-            <ptn:Simulation.attract__x3A__calculate.best.unique>
+            <ptn:Simulation.attract__x3A__calculate.best.unique ptn:debug="#133 just for devel analys, passed to childs">
                 <xsl:for-each-group select="descendant-or-self::ptn:Simulation.attract__x3A__calculate[number(@ptn:Simulated_potential__x3A__diff) &gt; 0 ]" group-by="@ptn:Label">
                     <xsl:sort select="@ptn:Distance" data-type="number" order="ascending"/>
                     <xsl:copy>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate.best.unique.position" select="position()"/>
                         <!--<xsl:attribute name="prec_silb" select="current()/preceding-sibling::ptn:Simulation.attract__x3A__calculate/@ptn:Label"/>--><!-- and not(current()/preceding-sibling::ptn:Simulation.attract__x3A__calculate/@ptn:Label__x3A__context = current()/@ptn:Label) -->
                         <xsl:copy-of select="@*"/>
+                        <xsl:copy-of select="*"/>
                     </xsl:copy>
                 </xsl:for-each-group>
             </ptn:Simulation.attract__x3A__calculate.best.unique>
@@ -127,21 +132,24 @@
                 
                 <xsl:choose>
                     <xsl:when test="$ptn:Simulation.attract__x3A__calculate.best.unique/ptn:Simulation.attract__x3A__calculate.best.unique/ptn:Simulation.attract__x3A__calculate[@ptn:Label__x3A__context = current()/@ptn:Label and number(@ptn:Simulation.attract__x3A__calculate.best.unique.position) &lt; number($ptn:Simulation.attract__x3A__calculate.best.unique.position)]">
-                        <xsl:comment>#67Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:comment>
-                        <xsl:message>#67Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:message>
+                        <!--<xsl:comment>#67Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:comment>-->
+                        <!--<xsl:message>#67Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:message>-->
+                        <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="67Mignored {@ptn:Label__x3A__context} to {@ptn:Label}"></ptn:Simulation.attract__x3A__calculate__x3A__ignored>
                     </xsl:when>
                     <xsl:when test="$ptn:Simulation.attract__x3A__calculate.best.unique/ptn:Simulation.attract__x3A__calculate.best.unique/ptn:Simulation.attract__x3A__calculate[@ptn:Label__x3A__context = current()/@ptn:Label__x3A__context and number(@ptn:Simulation.attract__x3A__calculate.best.unique.position) &lt; number($ptn:Simulation.attract__x3A__calculate.best.unique.position)]">
-                        <xsl:comment>#111Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:comment>
-                        <xsl:message>#111Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:message>
+                        <!--<xsl:comment>#111Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:comment>
+                        <xsl:message>#111Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:message>-->
+                        <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="111Mignored {@ptn:Label__x3A__context} to {@ptn:Label}"></ptn:Simulation.attract__x3A__calculate__x3A__ignored>
                     </xsl:when>
                     <xsl:when test="$ptn:Simulation.attract__x3A__calculate.best.unique/ptn:Simulation.attract__x3A__calculate.best.unique/ptn:Simulation.attract__x3A__calculate[@ptn:Label__x3A__context = current()/@ptn:Label__x3A__context and number(@ptn:Simulation.attract__x3A__calculate.best.unique.position) &lt; number($ptn:Simulation.attract__x3A__calculate.best.unique.position)]">
-                        <xsl:comment>#131Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:comment>
-                        <xsl:message>#131Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:message>
+                        <!--<xsl:comment>#131Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:comment>
+                        <xsl:message>#131Mignored <xsl:value-of select="@ptn:Label__x3A__context"/> to <xsl:value-of select="@ptn:Label"/></xsl:message>-->
+                        <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="131Mignored {@ptn:Label__x3A__context} to {@ptn:Label}"></ptn:Simulation.attract__x3A__calculate__x3A__ignored>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:copy>
                             <xsl:copy-of select="@*"/>
-                            <xsl:attribute name="debug128" select="concat(@ptn:Label__x3A__context,'to',@ptn:Label)"/>
+                            <xsl:attribute name="ptn:debug" select="concat(@ptn:Label__x3A__context,'to',@ptn:Label)"/>
                             <!--<xsl:attribute name="debug.Output_Node" select="$ptn:Output_Node"/>-->
                             <xsl:copy-of select="text()"/>
                             <xsl:copy-of select="*"/>
@@ -161,8 +169,8 @@
         <xsl:param name="ptn:Label"  tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Defaults" tunnel="yes" required="yes"/>
         <xsl:choose>
-            <xsl:when test="$ptn:Label = @ptn:Label__x3A__context">
-                <ptn:Current_synapse>
+            <xsl:when test="$ptn:Label = @ptn:Label__x3A__context or $ptn:Label = @ptn:Label">
+                <ptn:Current_synapse ptn:debug="#173 todo use derive synape from parents instead config">
                     <ptn:Maximum_current><xsl:value-of select="$ptn:Defaults/ptn:Maximum_current"/></ptn:Maximum_current>
                     <ptn:Time_constant><xsl:value-of select="$ptn:Defaults/ptn:Time_constant"/></ptn:Time_constant>
                     <ptn:Delay><xsl:value-of select="$ptn:Defaults/ptn:Delay"/></ptn:Delay>
@@ -174,7 +182,9 @@
     </xsl:template>
     
     
-  
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__ignored"/>
+        
+    
     
     
     
@@ -203,7 +213,7 @@
         <xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label"/>
     </xsl:template>
     
-    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__ignored"/>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="*">
         <xsl:message terminate="yes">#209M Unantended[<xsl:value-of select="name()"/>]</xsl:message>
@@ -220,20 +230,25 @@
                 <xsl:with-param name="ptn:Label" select="@ptn:Label__x3A__context" tunnel="yes"/>
             </xsl:call-template>            
         </xsl:variable>
-        <xsl:copy>
-            <xsl:attribute name="debug.222.Output_Node" select="$ptn:Output_Node"/>
+        <!--<xsl:copy>
+            <xsl:attribute name="ptn:debug" ><xsl:value-of select="@ptn:debug"/>; #230 just debug $ptn:Output_Node=<xsl:value-of select="$ptn:Output_Node"/></xsl:attribute>
             <xsl:copy-of select="text()"/>
-            <xsl:copy-of select="*"></xsl:copy-of>
-        </xsl:copy>
-        <ptn:Leaky_neuron_standard debug.todo="another context than default">
+        </xsl:copy>-->
+        <xsl:apply-templates mode="#current"/>
+        <!--<ptn:Leaky_neuron_standard ptn:debug="{@ptn:debug}; #233 todo another context than default">
             <ptn:Label><xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
             <ptn:Coordinate_X>/2</ptn:Coordinate_X>
             <ptn:Coordinate_Y>+10</ptn:Coordinate_Y>
             <ptn:Capacitance>0.8</ptn:Capacitance>
-        </ptn:Leaky_neuron_standard>
+        </ptn:Leaky_neuron_standard>-->
     </xsl:template>
     
-    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type][@ptn:Inputs]">
+        <xsl:element name="{@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type}" >
+            <xsl:copy-of select="@ptn:Inputs"/>
+            <xsl:copy-of select="*"/>
+        </xsl:element>
+    </xsl:template>
     
     
     

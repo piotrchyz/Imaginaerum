@@ -3,7 +3,8 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:ptn="p5_test_neuron"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    exclude-result-prefixes="xs"
+    xmlns:math="http://exslt.org/math"
+    exclude-result-prefixes="xs math"
     version="2.0">
     
     <xsl:output indent="yes"/>
@@ -88,12 +89,15 @@
         <xsl:param name="ptn:Simulated_potential.resting.vector__x3A__offset" select="1"/>
         <!--<xsl:attribute name="ptn:Simulated_potential.resting.vector.1_div_membr" select="1 div preceding-sibling::ptn:Resistance"/>
         <xsl:attribute name="ptn:Simulated_potential.resting.vector.rest_pot" select=". - preceding-sibling::ptn:Resting_potential"/>-->
-        <ptn:Simulated_potential.resting.vector>
-            <!--<xsl:attribute name="ptn:Simulated_potential" select="text() - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick"/>-->
-            <xsl:value-of select=" - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick * $ptn:Simulated_potential.resting.vector__x3A__offset"/>
-        </ptn:Simulated_potential.resting.vector>
+        
+                <ptn:Simulated_potential.resting.vector>
+                    <!--<xsl:attribute name="ptn:Simulated_potential" select="text() - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick"/>-->
+                    <xsl:value-of select=" - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick * $ptn:Simulated_potential.resting.vector__x3A__offset"/>
+                </ptn:Simulated_potential.resting.vector>
+        
         <!-- b3==current - m4===resting -->
     </xsl:template>
+    
     
     
     <xsl:template mode="ptn:Simulated_potential.resting.vector" match="*">
@@ -169,6 +173,8 @@
             </xsl:otherwise>
         </xsl:choose>-->
     </xsl:template>
+    
+    
     
     
     <xsl:template mode="ptn:Simulated_potential__x3A__vectors.sum" match="*">

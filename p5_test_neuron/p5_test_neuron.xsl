@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:ptn="p5_test_neuron"
     xmlns:math="http://exslt.org/math"
-    exclude-result-prefixes="xs"
+    exclude-result-prefixes="xs math"
     version="2.0">
     
     <xsl:output indent="yes"/>
@@ -15,6 +15,7 @@
     
     <xsl:param name="ptn:Simulation.dir" required="yes"/>
     <xsl:param name="ptn:basedir" required="yes"/>
+    <xsl:param name="ptn:Inputs" required="yes"/>
     <xsl:param name="basedir" required="yes"/>
     
     <xsl:param name="ptn:xsl" required="yes"/>
@@ -73,6 +74,9 @@
                     <param  expression="{$ptn:Config}">
                         <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
                     </param>
+                    <param  expression="{$ptn:Inputs}">
+                        <xsl:attribute name="name">{p5_test_neuron}Inputs</xsl:attribute>
+                    </param>
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
                     </param>
@@ -110,6 +114,9 @@
                     <param  expression="{$ptn:Config}">
                         <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
                     </param>
+                    <param  expression="{$ptn:Inputs}">
+                        <xsl:attribute name="name">{p5_test_neuron}Inputs</xsl:attribute>
+                    </param>
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
                     </param>
@@ -146,6 +153,9 @@
                     
                     <param  expression="{$ptn:Config}">
                         <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:Inputs}">
+                        <xsl:attribute name="name">{p5_test_neuron}Inputs</xsl:attribute>
                     </param>
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
@@ -188,7 +198,9 @@
                     <param  expression="{$ptn:Config}">
                         <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
                     </param>
-                    
+                    <param  expression="{$ptn:Inputs}">
+                        <xsl:attribute name="name">{p5_test_neuron}Inputs</xsl:attribute>
+                    </param>
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
                     </param>
@@ -225,7 +237,9 @@
                     <param  expression="{$ptn:Config}">
                         <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
                     </param>
-                    
+                    <param  expression="{$ptn:Inputs}">
+                        <xsl:attribute name="name">{p5_test_neuron}Inputs</xsl:attribute>
+                    </param>
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
                     </param>
@@ -262,7 +276,9 @@
                     <param  expression="{$ptn:Config}">
                         <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
                     </param>
-                    
+                    <param  expression="{$ptn:Inputs}">
+                        <xsl:attribute name="name">{p5_test_neuron}Inputs</xsl:attribute>
+                    </param>
                     <param  expression="{$ptn:xsl}">
                         <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
                     </param>

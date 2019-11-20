@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation_body xmlns:ptn="p5_test_neuron"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:math="http://exslt.org/math"
                      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                      ptn:Simulation_body_tick="3"
                      ptn:Simulation_body_time="3"
                      ptn:Simulation_body_time__x3A__last="2"
                      ptn:Simulator_tick="1">
-   <ptn:Simulation.attract__x3A__calculate.best.unique>
-      <ptn:Simulation.attract__x3A__calculate ptn:Simulation.attract__x3A__calculate.best.unique.position="1"
-                                              ptn:Label__x3A__context="B"
-                                              ptn:Label="A"
-                                              ptn:Distance="10"
-                                              ptn:Simulated_potential__x3A__diff="0.6177600000000041"
-                                              debug.Output_Node="A-to-B"
-                                              debug128="BtoA"/>
-   </ptn:Simulation.attract__x3A__calculate.best.unique>
    <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -32,8 +22,8 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-55.958952000000004</ptn:Simulated_potential>
-         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
+         <ptn:Simulated_potential>-55.80607200000001</ptn:Simulated_potential>
+         <ptn:Attract__x3A__flag><!--#59 TODO handle this flag when created model stale flag that was used-->true</ptn:Attract__x3A__flag>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -49,16 +39,8 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs>
-            <ptn:Current_synapse>
-               <ptn:Maximum_current>3.0</ptn:Maximum_current>
-               <ptn:Time_constant>2.0</ptn:Time_constant>
-               <ptn:Delay>5.0</ptn:Delay>
-               <ptn:Output_Node>A-to-B</ptn:Output_Node>
-            </ptn:Current_synapse>
-         </ptn:Outputs>
-         <ptn:Simulated_potential>-55.341192</ptn:Simulated_potential>
-         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
+         <ptn:Outputs/>
+         <ptn:Simulated_potential>-63.141192000000004</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -75,17 +57,9 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-70.941192</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
-   <ptn:Nodes>
-      <ptn:Simulation.attract__x3A__calculate debug.222.Output_Node="A-to-B"/>
-      <ptn:Leaky_neuron_standard debug.todo="another context than default">
-         <ptn:Label>A-to-B</ptn:Label>
-         <ptn:Coordinate_X>/2</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>+10</ptn:Coordinate_Y>
-         <ptn:Capacitance>0.8</ptn:Capacitance>
-      </ptn:Leaky_neuron_standard>
-   </ptn:Nodes>
+   <ptn:Nodes/>
 </ptn:Simulation_body>

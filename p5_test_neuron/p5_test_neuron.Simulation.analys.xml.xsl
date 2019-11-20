@@ -4,7 +4,7 @@
     xmlns:ptn="p5_test_neuron"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:math="http://exslt.org/math"
-    exclude-result-prefixes="xs"
+    exclude-result-prefixes="xs math"
     version="2.0">
     
     <xsl:output indent="yes"/>
@@ -19,13 +19,19 @@
             xsi:schemaLocation="p5_test_neuron file:{$ptn:xsd}"
             >
             <xsl:copy-of select="descendant-or-self::*/namespace::*"></xsl:copy-of>
+            <xsl:copy-of select="ancestor-or-self::*/namespace::*"></xsl:copy-of>
             <xsl:attribute name="ptn:Simulation_body_tick" select="1"/>
             <xsl:attribute name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick"/>
             <xsl:attribute name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick"/>
             <!--<xsl:apply-templates mode="#current" select="@*"/>-->
+            <xsl:variable name="ptn:Inputs">
+                <xsl:apply-templates mode="#current" select="ptn:Inputs/*">
+                    <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
+                </xsl:apply-templates>
+            </xsl:variable>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
-                <xsl:with-param name="ptn:Inputs" select="ptn:Inputs" tunnel="yes"/>
+                <xsl:with-param name="ptn:Inputs" select="$ptn:Inputs" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Attract_min" tunnel="yes" select="ptn:Defaults/ptn:Attract_min"/>
             </xsl:apply-templates>
@@ -47,14 +53,14 @@
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulator_tick" select="@ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time + @ptn:Simulator_tick" tunnel="yes"/>
-                <xsl:with-param name="ptn:Inputs" select="doc($ptn:Config)//ptn:Inputs" tunnel="yes"/>
+                <xsl:with-param name="ptn:Inputs" select="doc($ptn:Inputs)//ptn:Inputs" tunnel="yes"/>
                 <xsl:with-param name="ptn:Attract_min" select="doc($ptn:Config)//ptn:Defaults/ptn:Attract_min" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors|ptn:Receptor|ptn:Leaky_neuron_standard">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors|ptn:Receptor|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor">
         <xsl:copy>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
@@ -73,11 +79,56 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Inputs">
-        <xsl:comment>#51 ptn:Inputs transformed</xsl:comment>
+        <xsl:comment>#51 ptn:Inputs transformed to:<xsl:value-of select="$ptn:Inputs"/></xsl:comment>
+        <xsl:result-document href="{$ptn:Inputs}" >
+            <xsl:copy copy-namespaces="yes" >
+                <xsl:copy-of select="ancestor-or-self::*/namespace::*"></xsl:copy-of>
+                <xsl:apply-templates mode="#current"/>
+            </xsl:copy>
+        </xsl:result-document>
     </xsl:template>
     
     
-    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input[ptn:Input_exec_time][ptn:Input_exec_receptor][ptn:Input_exec_Time_constant][ptn:Input_exec_Maximum_current]">
+        <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
+        <xsl:choose>
+            <xsl:when test="number(ptn:Input_exec_Time_constant) &lt;= number($ptn:Simulator_tick)">
+                <xsl:copy-of select="."/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="ptn:Input" select="."/>
+                <xsl:for-each select="1 to xs:integer(ceiling(ceiling(ptn:Input_exec_Time_constant) div $ptn:Simulator_tick))"><!-- 1 to xs:integer(ceiling(ptn:Input_exec_Time_constant)) -->
+                    <xsl:choose>
+                        <xsl:when test="position() = last()">
+                            <ptn:Input ptn:debug="#97 optimized input {.} to {ceiling($ptn:Input//ptn:Input_exec_Time_constant)} for $ptn:Simulator_tick={$ptn:Simulator_tick}">
+                                <ptn:Input_exec_time><xsl:value-of select="$ptn:Input//ptn:Input_exec_time + ( . - 1) * $ptn:Simulator_tick "/></ptn:Input_exec_time>
+                                <xsl:copy-of select="$ptn:Input//ptn:Input_exec_receptor"/>
+                                <ptn:Input_exec_Time_constant><!--<xsl:value-of select="$ptn:Input//ptn:Input_exec_Time_constant - . + $ptn:Simulator_tick"/>-->
+                                    <xsl:choose>
+                                        <xsl:when test="$ptn:Input//ptn:Input_exec_Time_constant mod $ptn:Simulator_tick = 0">
+                                            <xsl:value-of select="$ptn:Simulator_tick"/>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:value-of select=" $ptn:Input//ptn:Input_exec_Time_constant mod $ptn:Simulator_tick"/>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </ptn:Input_exec_Time_constant>
+                                <xsl:copy-of select="$ptn:Input//ptn:Input_exec_Maximum_current"/>
+                            </ptn:Input>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <ptn:Input ptn:debug="#106 optimized input {.} to {ceiling($ptn:Input//ptn:Input_exec_Time_constant)} for $ptn:Simulator_tick={$ptn:Simulator_tick}">
+                                <ptn:Input_exec_time><xsl:value-of select="$ptn:Input//ptn:Input_exec_time + ( . - 1) * $ptn:Simulator_tick"/></ptn:Input_exec_time>
+                                <xsl:copy-of select="$ptn:Input//ptn:Input_exec_receptor"/>
+                                <ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Simulator_tick"/></ptn:Input_exec_Time_constant>
+                                <xsl:copy-of select="$ptn:Input//ptn:Input_exec_Maximum_current"/>
+                            </ptn:Input>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
     
     
@@ -99,6 +150,11 @@
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Defaults|ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum|ptn:Simulation.attract__x3A__calculate|ptn:Simulation.attract__x3A__calculate.best.unique">
         <xsl:message >#52 bypassed <xsl:value-of select="name()"/></xsl:message>
     </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node"/>
+        
+    
+    
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="*">
         <xsl:message terminate="yes">#15 todo <xsl:value-of select="name()"/></xsl:message>

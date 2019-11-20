@@ -5,6 +5,7 @@
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
     <property name="p5_test_neuron.repository" location="${basedir}/p5_test_neuron/repository"/>
     <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
+    <property name="p5_test_neuron.Inputs" location="${p5_test_neuron.basedir}/Inputs1.xml"/>
     <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
     
     <property name="p5_test_neuron.xsd" location="${p5_test_neuron.basedir}/test_neuron.xsd"/>
@@ -50,6 +51,7 @@
             </factory>
             
             <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>
+            <param name="{p5_test_neuron}Inputs" expression="${p5_test_neuron.Inputs}"/>
             <param name="{p5_test_neuron}Simulation_ticks" expression="${p5_test_neuron.Simulation_ticks}"/>
             <param name="{p5_test_neuron}Simulation.dir" expression="${p5_test_neuron.Simulation.dir}"/>
             <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>

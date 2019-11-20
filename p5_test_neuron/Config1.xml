@@ -68,7 +68,7 @@
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
             <ptn:Outputs/>
-            <ptn:Simulated_potential>-71.0</ptn:Simulated_potential>
+            <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
             <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
             
         </ptn:Receptor>
@@ -80,6 +80,7 @@
             <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
             <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
         </ptn:Input>
+        
         <ptn:Input>
             <ptn:Input_exec_time>3</ptn:Input_exec_time>
             <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
@@ -90,7 +91,7 @@
             <ptn:Input_exec_time>5</ptn:Input_exec_time>
             <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
             <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-            <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
+            <ptn:Input_exec_Maximum_current>1</ptn:Input_exec_Maximum_current>
         </ptn:Input>
     </ptn:Inputs>
     <ptn:Simulation>

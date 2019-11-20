@@ -239,7 +239,9 @@
                 name="Simulated_potential__x3A__vectors.sum"
                 type="ptn:Simulated_potential__x3A__vectors.sum"/>
         </xs:sequence>
+        <xs:attribute ref="ptn:Inputs"/>
     </xs:complexType>
+    <xs:attribute name="Inputs" type="xs:IDREFS"/>
     <xs:complexType name="Leaky_neuron">
         <xs:complexContent>
             <xs:restriction base="ptn:Node">
@@ -283,6 +285,7 @@
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
+                <xs:attribute ref="ptn:Inputs" use="optional"/>
             </xs:restriction>
         </xs:complexContent>
     </xs:complexType>
@@ -329,6 +332,7 @@
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
+                <xs:attribute ref="ptn:Inputs" use="required"/>
             </xs:restriction>
         </xs:complexContent>
     </xs:complexType>
@@ -502,7 +506,7 @@
             <xs:documentation>First neuron for input</xs:documentation>
         </xs:annotation>
         <xs:complexContent>
-            <xs:extension base="ptn:Leaky_neuron_standard">
+            <xs:extension base="ptn:Leaky_neuron">
                 <xs:sequence>
                     <xs:element name="Receptor_regex_filter" type="ptn:Receptor_regex_filter"/>
                 </xs:sequence>
@@ -578,8 +582,7 @@
     <xs:element name="Nodes">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" minOccurs="0" name="Leaky_neuron_standard"
-                    type="ptn:Leaky_neuron_standard"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Leaky_neuron_standard"/>
                 <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0"
                     name="Leaky_neuron_inhibitor" type="ptn:Leaky_neuron_inhibitor"/>
                 <xs:element maxOccurs="unbounded" minOccurs="0" name="Adaptive_neuron_standard"
@@ -589,6 +592,7 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="Leaky_neuron_standard" type="ptn:Leaky_neuron_standard"/>
     <xs:element name="Inputs">
         <xs:complexType>
             <xs:sequence>
@@ -707,19 +711,31 @@ debug most feature</xs:documentation>
         <xs:restriction base="ptn:voltage"/>
     </xs:simpleType>
     <xs:attributeGroup name="Simulation.attract__x3A__calculate">
+        <xs:annotation>
+            <xs:documentation>Propably should be more nodes mechanizms</xs:documentation>
+        </xs:annotation>
         <xs:attribute ref="ptn:Label__x3A__context"/>
         <xs:attribute ref="ptn:Simulated_potential__x3A__diff"/>
         <xs:attribute ref="ptn:Distance"/>
         <xs:attribute ref="ptn:Label"/>
         <xs:attribute ref="ptn:Simulation.attract__x3A__calculate.best.unique.position"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__more_charged_node" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__less_charged_node" use="required"/>
+        <xs:attribute ref="ptn:Output_Node" use="optional"/>
     </xs:attributeGroup>
     <xs:complexType name="Simulation.attract__x3A__calculate">
         <xs:annotation>
             <xs:documentation>Transformed from ptn:Attract__x3A__flag - to analyze generate new structure variant</xs:documentation>
         </xs:annotation>
+        <xs:sequence>
+            <xs:element ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node"/>
+        </xs:sequence>
         <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
+        <xs:attribute ref="ptn:debug"/>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__calculate"
+        type="ptn:Simulation.attract__x3A__calculate"/>
+    <xs:element name="Simulation.attract__x3A__calculate__x3A__ignored"
         type="ptn:Simulation.attract__x3A__calculate"/>
     <xs:attribute name="Label" type="ptn:Output_Node"/>
     <xs:attribute name="Label__x3A__context" type="ptn:Output_Node">
@@ -728,6 +744,21 @@ debug most feature</xs:documentation>
         </xs:annotation>
     </xs:attribute>
     <xs:attribute name="Simulated_potential__x3A__diff" type="ptn:Simulated_potential"/>
+    <xs:attribute name="Simulated_potential__x3A__more_charged_node" type="ptn:Output_Node">
+        <xs:annotation>
+            <xs:documentation>To decide further strategy of new model</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="Simulated_potential__x3A__less_charged_node" type="ptn:Output_Node">
+        <xs:annotation>
+            <xs:documentation>To decide further strategy of new model</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="Output_Node" type="ptn:Output_Node">
+        <xs:annotation>
+            <xs:documentation>In Simulated potential, propose new node name</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
     <xs:simpleType name="Distance">
         <xs:restriction base="xs:decimal"/>
     </xs:simpleType>
@@ -737,14 +768,17 @@ debug most feature</xs:documentation>
             <xs:documentation>Just for select in for-each row number order best</xs:documentation>
         </xs:annotation>
     </xs:attribute>
+    <xs:attribute inheritable="false" name="debug" type="xs:string"/>
     <xs:complexType name="Simulation.attract__x3A__calculate.best.unique">
         <xs:annotation>
             <xs:documentation>Analyzed to create modelk</xs:documentation>
         </xs:annotation>
-        <xs:sequence>
+        <xs:all>
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 ref="ptn:Simulation.attract__x3A__calculate"/>
-        </xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                ref="ptn:Simulation.attract__x3A__calculate__x3A__ignored"/>
+        </xs:all>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__calculate.best.unique"
         type="ptn:Simulation.attract__x3A__calculate.best.unique">
@@ -759,5 +793,26 @@ debug most feature</xs:documentation>
             <xs:selector xpath="ptn:Simulation.attract__x3A__calculate"/>
             <xs:field xpath="@ptn:Label"/>
         </xs:unique>
+    </xs:element>
+    <xs:complexType name="Simulation.attract__x3A__calculate__x3A__output_node">
+        <xs:complexContent>
+            <xs:extension base="ptn:Node">
+                <xs:attribute ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type"
+                    use="required"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:simpleType name="Simulation.attract__x3A__calculate__x3A__output_node.type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ptn:Leaky_neuron_standard"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Simulation.attract__x3A__calculate__x3A__output_node.type"
+        type="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type"/>
+    <xs:element name="Simulation.attract__x3A__calculate__x3A__output_node"
+        type="ptn:Simulation.attract__x3A__calculate__x3A__output_node">
+        <xs:annotation>
+            <xs:documentation>Calculations are optimal in attract mode, to just remodel in model scenario</xs:documentation>
+        </xs:annotation>
     </xs:element>
 </xs:schema>

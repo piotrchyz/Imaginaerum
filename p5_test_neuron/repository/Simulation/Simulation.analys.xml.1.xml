@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation_body xmlns:ptn="p5_test_neuron"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:math="http://exslt.org/math"
                      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                      ptn:Simulation_body_tick="2"
@@ -23,13 +22,14 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-55.6724</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-55.516400000000004</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-55.38">
-            <ptn:Simulated_potential.resting.vector>-0.29239999999999994</ptn:Simulated_potential.resting.vector>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-63.18000000000001">
+            <ptn:Simulated_potential.resting.vector>-0.13639999999999985</ptn:Simulated_potential.resting.vector>
+            <ptn:Simulated_potential.input.vector>7.800000000000001</ptn:Simulated_potential.input.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-55.6724</ptn:Simulated_potential__x3A__vectors.sum>
-         <!--#107 todo implement n/[ptn:Attract__x3A__flag]-->
+         <ptn:Simulated_potential__x3A__vectors.sum>-63.31640000000001</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-55.516400000000004</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -67,11 +67,11 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-70.9604</ptn:Simulated_potential>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70.98">
-            <ptn:Simulated_potential.resting.vector>0.01960000000000008</ptn:Simulated_potential.resting.vector>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
+            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-70.9604</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>

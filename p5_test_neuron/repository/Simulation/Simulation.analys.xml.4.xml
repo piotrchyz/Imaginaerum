@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation_body xmlns:ptn="p5_test_neuron"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:math="http://exslt.org/math"
                      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                      ptn:Simulation_body_tick="5"
@@ -22,13 +21,20 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Simulated_potential>-56.5149775008</ptn:Simulated_potential>
+         <ptn:Outputs>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-A</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Simulated_potential>-56.36815154880001</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-56.23977296">
-            <ptn:Simulated_potential.resting.vector>-0.27520454079999995</ptn:Simulated_potential.resting.vector>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-56.089950560000005">
+            <ptn:Simulated_potential.resting.vector>-0.2782009887999999</ptn:Simulated_potential.resting.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-56.5149775008</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-56.36815154880001</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -52,12 +58,12 @@
                <ptn:Output_Node>A-to-B</ptn:Output_Node>
             </ptn:Current_synapse>
          </ptn:Outputs>
-         <ptn:Simulated_potential>-55.921680796800004</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-55.7688007968</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-55.63436816">
-            <ptn:Simulated_potential.resting.vector>-0.28731263679999997</ptn:Simulated_potential.resting.vector>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-55.47836816">
+            <ptn:Simulated_potential.resting.vector>-0.2904326368</ptn:Simulated_potential.resting.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-55.921680796800004</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-55.7688007968</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -74,23 +80,63 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
-         <ptn:Simulated_potential>-55.30392079680001</ptn:Simulated_potential>
-         <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70.92236816">
-            <ptn:Simulated_potential.resting.vector>0.018447363200000098</ptn:Simulated_potential.resting.vector>
-            <ptn:Simulated_potential.input.vector>15.600000000000001</ptn:Simulated_potential.input.vector>
+         <ptn:Simulated_potential>-67.4</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
+            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
+            <ptn:Simulated_potential.input.vector>2.6</ptn:Simulated_potential.input.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-70.90392079680001</ptn:Simulated_potential__x3A__vectors.sum>
-         <ptn:Simulated_potential__x3A__vectors.sum>-55.30392079680001</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-67.4</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes>
       <ptn:Leaky_neuron_standard>
          <ptn:Label>A-to-B</ptn:Label>
-         <ptn:Coordinate_X>/2</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>+10</ptn:Coordinate_Y>
-         <ptn:Capacitance>0.8</ptn:Capacitance>
+         <ptn:Coordinate_X>5</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
+         <ptn:Capacitance>1</ptn:Capacitance>
+         <ptn:Resistance>100</ptn:Resistance>
+         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70</ptn:Resting_potential>
+         <ptn:Reset_potential>-70</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
+         <ptn:Refactory_period>2</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
+            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
+         <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_inhibitor>
+         <ptn:Label>-A-to-B</ptn:Label>
+         <ptn:Coordinate_X>5</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
+         <ptn:Capacitance>1</ptn:Capacitance>
+         <ptn:Resistance>100</ptn:Resistance>
+         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70</ptn:Resting_potential>
+         <ptn:Reset_potential>-70</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
+         <ptn:Refactory_period>2</ptn:Refactory_period>
+         <ptn:Is_inhibitor>1</ptn:Is_inhibitor>
+         <ptn:Outputs>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-B</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
+            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
+         <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
+      </ptn:Leaky_neuron_inhibitor>
    </ptn:Nodes>
 </ptn:Simulation_body>
