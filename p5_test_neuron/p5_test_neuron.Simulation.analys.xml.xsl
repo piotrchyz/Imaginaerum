@@ -55,6 +55,7 @@
                 <xsl:with-param name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time + @ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Inputs" select="doc($ptn:Inputs)//ptn:Inputs" tunnel="yes"/>
                 <xsl:with-param name="ptn:Attract_min" select="doc($ptn:Config)//ptn:Defaults/ptn:Attract_min" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_body" select="." tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
@@ -69,7 +70,7 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Current_synapse|ptn:Receptor_regex_filter|ptn:Input__x3A__nodes|ptn:Input__x3A__node">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Current_synapse|ptn:Receptor_regex_filter|ptn:Input__x3A__nodes|ptn:Input__x3A__node">
         <xsl:copy>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
@@ -92,7 +93,7 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input[ptn:Input_exec_time][ptn:Input_exec_receptor][ptn:Input_exec_Time_constant][ptn:Input_exec_Maximum_current]">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input[ptn:Input_exec_time][ptn:Input_exec_receptor][ptn:Input_exec_Time_constant][ptn:Input_exec_Maximum_current][not(parent::ptn:Current_synapse__x3A__emmit)]">
         <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
         <xsl:choose>
             <xsl:when test="number(ptn:Input_exec_Time_constant) &lt;= number($ptn:Simulator_tick)">
@@ -237,6 +238,33 @@
         <xsl:copy-of select="."/>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag__x3A__emmit|ptn:Current_synapse__x3A__emmit">
+        <xsl:comment >#241A todo <xsl:value-of select="name()"/></xsl:comment>
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit]">
+        <xsl:param name="ptn:Simulation_body_time" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
+        
+        <xsl:choose>
+            <xsl:when test="number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ">
+                <xsl:comment >#60A removed/n[<xsl:value-of select="name()"/>] for ptn:Input_exec_time[<xsl:value-of select="ptn:Input_exec_time"/>]  ptn:Input_exec_receptor[<xsl:value-of select="ptn:Input_exec_receptor"/>]</xsl:comment>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:copy>
+                    <xsl:attribute name="ptn:debug">#257  not removed ptn:Input[parent::ptn:Current_synapse__x3A__emmit] sth coud be exact for now</xsl:attribute>
+                    <xsl:copy-of select="@*"/>
+                    <xsl:copy-of select="*"/>
+                </xsl:copy>
+            </xsl:otherwise>
+        </xsl:choose>
+        
+    </xsl:template>
+    
     
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="*">
@@ -249,6 +277,8 @@
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
+    
+    
     
     
     

@@ -17,6 +17,7 @@
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Attract__x3A__flag.nodes" select="descendant-or-self::*[ptn:Attract__x3A__flag]" tunnel="yes"/>
                 <xsl:with-param name="ptn:Defaults" select="doc($ptn:Config)//ptn:Defaults" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
@@ -35,7 +36,7 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Simulated_potential|ptn:Receptor_regex_filter|ptn:Current_synapse|ptn:Outputs|ptn:Input__x3A__nodes">
+    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Simulated_potential|ptn:Receptor_regex_filter|ptn:Current_synapse|ptn:Outputs|ptn:Input__x3A__nodes">
         <xsl:copy-of select="."/>
     </xsl:template>
     
@@ -54,7 +55,7 @@
     
     
     
-    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Attract__x3A__flag[preceding-sibling::ptn:Label][preceding-sibling::ptn:Coordinate_X][preceding-sibling::ptn:Coordinate_Y][preceding-sibling::ptn:Simulated_potential][preceding-sibling::ptn:Outputs]">
+    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Attract__x3A__flag[preceding-sibling::ptn:Label][preceding-sibling::ptn:Coordinate_X][preceding-sibling::ptn:Coordinate_Z][preceding-sibling::ptn:Coordinate_Y][preceding-sibling::ptn:Simulated_potential][preceding-sibling::ptn:Outputs]">
         <xsl:param name="ptn:Attract__x3A__flag.nodes" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Defaults" tunnel="yes" required="yes"/>
         <xsl:choose>
@@ -64,6 +65,7 @@
                     <xsl:with-param name="ptn:Label" select="preceding-sibling::ptn:Label" tunnel="yes"/>
                     <xsl:with-param name="ptn:Coordinate_X" select="preceding-sibling::ptn:Coordinate_X" tunnel="yes"/>
                     <xsl:with-param name="ptn:Coordinate_Y" select="preceding-sibling::ptn:Coordinate_Y" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Z" select="preceding-sibling::ptn:Coordinate_Z" tunnel="yes"/>
                     <xsl:with-param name="ptn:Simulated_potential" tunnel="yes" select="preceding-sibling::ptn:Simulated_potential"/>
                     <xsl:with-param name="ptn:Outputs" select="preceding-sibling::ptn:Outputs" tunnel="yes"/>
                     <xsl:with-param name="ptn:Capacitance" select="preceding-sibling::ptn:Capacitance" tunnel="yes"/>
@@ -130,10 +132,11 @@
         <xsl:message terminate="yes">#92AT unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.attract__x3A__calculate" match="ptn:Receptor[ptn:Coordinate_X][ptn:Coordinate_Y][ptn:Simulated_potential][ptn:Outputs]">
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate" match="ptn:Receptor[ptn:Coordinate_X][ptn:Coordinate_Y][ptn:Coordinate_Z][ptn:Simulated_potential][ptn:Outputs]">
         <xsl:param name="ptn:Label" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Coordinate_X" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Coordinate_Y" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Coordinate_Z" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulated_potential" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Outputs" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Capacitance" required="yes" tunnel="yes"/>
@@ -150,7 +153,7 @@
                     <!--<xsl:with-param name="ptn:Time_constant" select="preceding-sibling::ptn:Time_constant" tunnel="yes"/>-->
         <xsl:param name="ptn:Is_inhibitor"  tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Input__x3A__nodes__x3A__prohibit" required="yes" tunnel="yes"/>
-        
+        <xsl:param name="ptn:Simulation_body_tick" required="yes" tunnel="yes"/>
         <xsl:variable name="ptn:Output_Node">
             <xsl:call-template name="ptn:Output_Node"/>            
         </xsl:variable>
@@ -174,17 +177,17 @@
                     <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
                 </ptn:Simulation.attract__x3A__calculate__x3A__ignored>
             </xsl:when>
-            <xsl:when test="$ptn:Outputs//ptn:Current_synapse[ptn:Output_Node = 'A' ]">
-                <!--<xsl:comment>121bypassed - existient Synapse to <xsl:value-of select="ptn:Label"/></xsl:comment>
-                <xsl:message>121bypassed - existient Synapse to <xsl:value-of select="ptn:Label"/></xsl:message>-->
-                <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="121bypassed existient Synapse to[{ptn:Label}]"><!-- 0A create -->
+            <!--<xsl:when test="$ptn:Outputs//ptn:Current_synapse[ptn:Output_Node = 'A' ]">
+                <!-\-<xsl:comment>121bypassed - existient Synapse to <xsl:value-of select="ptn:Label"/></xsl:comment>
+                <xsl:message>121bypassed - existient Synapse to <xsl:value-of select="ptn:Label"/></xsl:message>-\->
+                <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="121bypassed existient Synapse to[{ptn:Label}]"><!-\- 0A create -\->
                     <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
                     <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
                 </ptn:Simulation.attract__x3A__calculate__x3A__ignored>
-            </xsl:when>
+            </xsl:when>-->
             <xsl:when test="$ptn:Outputs//ptn:Current_synapse[ptn:Output_Node = $ptn:Output_Node ]">
                 <!--<xsl:comment>130bypassed - existient Synapse to <xsl:value-of select="$ptn:Output_Node"/></xsl:comment>
                 <xsl:message>130bypassed - existient Synapse to <xsl:value-of select="$ptn:Output_Node"/></xsl:message>-->
@@ -205,18 +208,19 @@
                     <xsl:attribute name="ptn:Simulated_potential__x3A__more_charged_node" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__less_charged_node" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
-                    <xsl:attribute name="ptn:debug">#190 std create</xsl:attribute>
+                    <xsl:attribute name="ptn:debug">#190 std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]]</xsl:attribute>
                     <ptn:Simulation.attract__x3A__calculate__x3A__output_node>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_standard'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="concat($ptn:Label,' ',ptn:Label)"/>-->
                         <ptn:Label><xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
-                        <ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X - $ptn:Coordinate_X) div 2"/></ptn:Coordinate_X>
+                        <ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X + $ptn:Coordinate_X) div 3"/></ptn:Coordinate_X>
                         <ptn:Coordinate_Y>
                             <xsl:choose>
                                 <xsl:when test="number(ptn:Coordinate_Y) &gt; $ptn:Coordinate_Y"><xsl:value-of select="ptn:Coordinate_Y + 10"/></xsl:when><!-- todo config -->
                                 <xsl:otherwise><xsl:value-of select="$ptn:Coordinate_Y + 10"/></xsl:otherwise>
                             </xsl:choose>
                         </ptn:Coordinate_Y>
+                        <ptn:Coordinate_Z><xsl:value-of select="$ptn:Simulation_body_tick"/></ptn:Coordinate_Z>
                         <ptn:Capacitance><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance)"/></ptn:Capacitance><!-- todo config strategy -->
                         <ptn:Resistance><xsl:value-of select="(ptn:Resistance + $ptn:Resistance) div 2"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage><xsl:value-of select="(ptn:Minimum_voltage + $ptn:Minimum_voltage) div 2"/></ptn:Minimum_voltage><!-- todo config strategy -->
@@ -239,13 +243,14 @@
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_inhibitor__x3A__AB'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="$ptn:Label"/>-->
                         <ptn:Label><xsl:value-of select="$ptn:Output_Node//@ptn:Output_Node__x3A__inhibitor"/></ptn:Label>
-                        <ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X - $ptn:Coordinate_X) div 2"/></ptn:Coordinate_X>
+                        <ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X + $ptn:Coordinate_X) div 4"/></ptn:Coordinate_X>
                         <ptn:Coordinate_Y>
                             <xsl:choose>
                                 <xsl:when test="number(ptn:Coordinate_Y) &gt; $ptn:Coordinate_Y"><xsl:value-of select="ptn:Coordinate_Y + 5"/></xsl:when><!-- todo config -->
                                 <xsl:otherwise><xsl:value-of select="$ptn:Coordinate_Y + 5"/></xsl:otherwise>
                             </xsl:choose>
                         </ptn:Coordinate_Y>
+                        <ptn:Coordinate_Z><xsl:value-of select="$ptn:Simulation_body_tick"/></ptn:Coordinate_Z>
                         <ptn:Capacitance><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance)"/></ptn:Capacitance><!-- todo config strategy -->
                         <ptn:Resistance><xsl:value-of select="(ptn:Resistance + $ptn:Resistance) div 2"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage><xsl:value-of select="(ptn:Minimum_voltage + $ptn:Minimum_voltage) div 2"/></ptn:Minimum_voltage><!-- todo config strategy -->
@@ -276,13 +281,14 @@
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_inhibitor__X3A__AA'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="ptn:Label"/>-->
                         <ptn:Label><xsl:value-of select="$ptn:Output_Node//@ptn:Output_Node__x3A__inhibitor__x3A__self"/></ptn:Label>
-                        <ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X - $ptn:Coordinate_X) div 3"/></ptn:Coordinate_X>
+                        <ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X + $ptn:Coordinate_X) div 5"/></ptn:Coordinate_X>
                         <ptn:Coordinate_Y>
                             <xsl:choose>
                                 <xsl:when test="number(ptn:Coordinate_Y) &gt; $ptn:Coordinate_Y"><xsl:value-of select="ptn:Coordinate_Y + 7"/></xsl:when><!-- todo config -->
                                 <xsl:otherwise><xsl:value-of select="$ptn:Coordinate_Y + 7"/></xsl:otherwise>
                             </xsl:choose>
                         </ptn:Coordinate_Y>
+                        <ptn:Coordinate_Z><xsl:value-of select="$ptn:Simulation_body_tick"/></ptn:Coordinate_Z>
                         <ptn:Capacitance><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance)"/></ptn:Capacitance><!-- todo config strategy -->
                         <ptn:Resistance><xsl:value-of select="(ptn:Resistance + $ptn:Resistance) div 2"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage><xsl:value-of select="(ptn:Minimum_voltage + $ptn:Minimum_voltage) div 2"/></ptn:Minimum_voltage><!-- todo config strategy -->

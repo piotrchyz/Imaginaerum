@@ -63,8 +63,14 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Simulated_potential|ptn:Is_inhibitor|ptn:Attract__x3A__flag">
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Simulated_potential|ptn:Is_inhibitor|ptn:Attract__x3A__flag|ptn:Output__x3A__flag">
         <xsl:attribute name="{name()}" select="."/>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag__x3A__emmit">
+        <!--<xsl:attribute name="{name()}" select="."/>-->
+        <xsl:attribute name="{name()}__x3A__count" select="count(ptn:Current_synapse__x3A__emmit)"/>
+        <xsl:attribute name="{name()}__x3A__time__x3A__min" select="min(descendant-or-self::ptn:Input_exec_time/text())"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Outputs">
@@ -88,7 +94,7 @@
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="*"/>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Coordinate_X|ptn:Coordinate_Y">
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z">
         <xsl:param name="ptn:Simulation_body_tick" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Label" required="yes" tunnel="yes"/>
         <xsl:choose>
@@ -118,13 +124,13 @@
     
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag"/>
+    <!--<xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag"/>-->
         
         
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input__x3A__nodes__x3A__prohibit"/>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag__x3A__emmit"/>
+    <!--<xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag__x3A__emmit"/>-->
         
         
     

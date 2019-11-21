@@ -177,7 +177,7 @@
     
     <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF">
         <!-- get elements DEF -->
-        <xsl:param name="ptn:Coordinate_Z" select="0"/>
+        <!--<xsl:param name="ptn:Coordinate_Z" select="0"/>-->
         <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.scale">1,1,1</xsl:param>
         <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.rotation">0,0,0,0</xsl:param>
         <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.bboxsize">-1,-1,-1</xsl:param>
@@ -204,7 +204,7 @@
                     <xsl:attribute name="DEF" select="@ptn:Label__x3A__analyze"/>
                     <xsl:attribute name="id" select="@ptn:Label__x3A__analyze"/>
                     <xsl:attribute name="translation">
-                        <xsl:value-of select="@ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="@ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z"/>
+                        <xsl:value-of select="@ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="@ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="@ptn:Coordinate_Z"/>
                     </xsl:attribute>
                     <xsl:attribute name="scale" select="$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.scale"/>
                     <xsl:attribute name="rotation" select="$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.rotation"/>
@@ -236,6 +236,7 @@
                     <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
                     <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
                     <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
                 </xsl:apply-templates>
             </xsl:for-each-group>
             
@@ -254,6 +255,7 @@
                     <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
                     <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
                     <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
                 </xsl:apply-templates>
             </xsl:for-each-group>
         </Group>
@@ -263,6 +265,7 @@
                 <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
                 <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
                 <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
+                <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:for-each-group>
        <!-- 
@@ -289,10 +292,11 @@
         <xsl:param name="ptn:Attract__x3A__flag" select="parent::*/@ptn:Attract__x3A__flag"/>
         <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulation.analyze_simulation.xml" tunnel="yes" required="yes"/>
         <!--<xsl:param name="current-group" tunnel="yes" required="yes"/>-->
         <xsl:variable name="current-group" select="current-group()"/>
-        <xsl:comment>#206S DEF.ROUTE match[<xsl:value-of select="name()"/>] AF[<xsl:value-of select="$ptn:Attract__x3A__flag"/>] @tick[<xsl:value-of select="$ptn:Simulation_body_tick"/>] $L[<xsl:value-of select="$ptn:Label__x3A__analyze"/>]  CGK[<xsl:value-of select="current-grouping-key()"/>] ON[<xsl:value-of select="$ptn:Output_Node__x3A__analyze"/>]  X[<xsl:value-of select="$ptn:Coordinate_X"/>]</xsl:comment>
+        <xsl:comment>#206S DEF.ROUTE match[<xsl:value-of select="name()"/>] AF[<xsl:value-of select="$ptn:Attract__x3A__flag"/>] @tick[<xsl:value-of select="$ptn:Simulation_body_tick"/>] $L[<xsl:value-of select="$ptn:Label__x3A__analyze"/>]  CGK[<xsl:value-of select="current-grouping-key()"/>] ON[<xsl:value-of select="$ptn:Output_Node__x3A__analyze"/>]  X[<xsl:value-of select="$ptn:Coordinate_X"/>] Z[<xsl:value-of select="$ptn:Coordinate_Z"/>]</xsl:comment>
         <!--<xsl:apply-templates mode="#current" select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:apply-templates>-->
         <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">#296 empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
         <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
@@ -303,20 +307,23 @@
                     <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
                         <xsl:choose>
                             <xsl:when test="$current-group[parent::*/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]][@ptn:Output_Node__x3A__analyze = $ptn:Output_Node__x3A__analyze]"><!-- test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]" -->
-                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> 0 </xsl:text>
+                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
                                 <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_Y"/><xsl:text> 0</xsl:text>
+                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z"/><xsl:text> </xsl:text>
                             </xsl:when>
                             <!-- attract show -->
                             <xsl:when test="$ptn:Attract__x3A__flag = true()"><!-- test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]" -->
                                 <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_Y"/><xsl:text> 0 </xsl:text>
+                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z"/><xsl:text> </xsl:text>
                                 <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_Y + 2"/><xsl:text> 0</xsl:text>
+                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z + 1"/><xsl:text> </xsl:text>
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> 0 </xsl:text>
-                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y + 2"/><xsl:text> 0 </xsl:text>
+                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
+                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z + 2"/><xsl:text> </xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:choose>
@@ -525,6 +532,7 @@
         <xsl:param name="ptn:Output_Node__x3A__analyze" select="@ptn:Output_Node__x3A__analyze"/>
         <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
         <xsl:comment>#480 n[<xsl:value-of select="name()"/>]  ON[<xsl:value-of select="$ptn:Output_Node__x3A__analyze"/>]</xsl:comment>
         <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
         <Shape>
@@ -532,11 +540,13 @@
                 <Coordinate DEF="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_LineSet"  ><!-- point='5 0 0 1 5 0' -->
                     <xsl:attribute name="point">
                         <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                        <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> 0 </xsl:text>
+                        <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                        <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
                         <!--<xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
                         <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_Y"/><xsl:text> 0</xsl:text>-->
                         <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                        <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_Y"/><xsl:text> 0</xsl:text>
+                        <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                        <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z"/><xsl:text> </xsl:text>
                     </xsl:attribute>
                     <xsl:text> </xsl:text></Coordinate>
             </LineSet>

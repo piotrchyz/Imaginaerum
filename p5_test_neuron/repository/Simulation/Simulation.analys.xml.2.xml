@@ -12,6 +12,7 @@
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
          <ptn:Capacitance>0.5</ptn:Capacitance>
          <ptn:Resistance>100.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
@@ -36,6 +37,7 @@
          <ptn:Label>B</ptn:Label>
          <ptn:Coordinate_X>10</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
          <ptn:Capacitance>0.5</ptn:Capacitance>
          <ptn:Resistance>100.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
@@ -60,6 +62,7 @@
          <ptn:Label>C</ptn:Label>
          <ptn:Coordinate_X>20</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
          <ptn:Capacitance>0.5</ptn:Capacitance>
          <ptn:Resistance>100.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>

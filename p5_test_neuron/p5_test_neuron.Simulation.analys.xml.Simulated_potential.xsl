@@ -19,12 +19,18 @@
     
     <xsl:template mode="ptn:Simulated_potential"  match="ptn:Simulated_potential[preceding-sibling::ptn:Firing_threshold][preceding-sibling::ptn:Capacitance][preceding-sibling::ptn:Resistance][preceding-sibling::ptn:Resting_potential][preceding-sibling::ptn:Reset_potential]">
         <xsl:param name="ptn:Attract_min" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulated_potential.input.vector__x3A__offset" select="1.3"/>
             <xsl:message terminate="no">#13-13 name()<xsl:value-of select="name()"/> TODO </xsl:message>
         <xsl:variable name="ptn:Simulated_potential__x3A__vectors">
             <ptn:Simulated_potential__x3A__vectors>
                 <xsl:attribute name="ptn:Simulated_potential__x3A__previous" select="text()"/>
                 <xsl:apply-templates mode="ptn:Simulated_potential.resting.vector" select="."/>
                 <xsl:apply-templates mode="ptn:Simulated_potential.input.vector" select="."/>
+                <xsl:apply-templates mode="ptn:Simulated_potential.emmit.vector" select=".">
+                    <xsl:with-param name="ptn:Label" select="preceding-sibling::ptn:Label" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Simulated_potential.input.vector__x3A__offset" select="$ptn:Simulated_potential.input.vector__x3A__offset" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Capacitance" select="preceding-sibling::ptn:Capacitance" tunnel="yes"/>
+                </xsl:apply-templates>
             </ptn:Simulated_potential__x3A__vectors>
         </xsl:variable>
         <xsl:variable name="ptn:Simulated_potential__x3A__vectors.sum">
@@ -32,6 +38,7 @@
                 <xsl:apply-templates mode="ptn:Simulated_potential__x3A__vectors.sum" select="$ptn:Simulated_potential__x3A__vectors">
                     <xsl:with-param name="ptn:Simulated_potential" select="text()" tunnel="yes"/>
                     <xsl:with-param name="ptn:Firing_threshold" select="preceding-sibling::ptn:Firing_threshold" tunnel="yes"/>
+                    
                 </xsl:apply-templates>
             </ptn:Simulated_potential__x3A__vectors.sum>
         </xsl:variable>
@@ -116,6 +123,7 @@
                 <xsl:with-param name="ptn:Label" select="preceding-sibling::ptn:Label" tunnel="yes"/>
                 <xsl:with-param name="ptn:Capacitance" select="preceding-sibling::ptn:Capacitance" tunnel="yes"/>
             </xsl:apply-templates>
+        
         <!--</ptn:Simulated_potential.input.vector>-->
     </xsl:template>
     
@@ -153,13 +161,50 @@
     </xsl:template>
     
     
+    
+    <!-- EMMIT --><!-- EMMIT --><!-- EMMIT --><!-- EMMIT -->
+    <xsl:template mode="ptn:Simulated_potential.emmit.vector" match="ptn:Simulated_potential[preceding-sibling::ptn:Capacitance][preceding-sibling::ptn:Resistance][preceding-sibling::ptn:Label]">
+        <xsl:param name="ptn:Simulation_body" tunnel="yes" required="yes"/>
+        <xsl:message terminate="no">#120AS testing/n[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:apply-templates mode="#current" select="$ptn:Simulation_body/descendant-or-self::ptn:Output__x3A__flag__x3A__emmit"/>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulated_potential.emmit.vector" match="ptn:Output__x3A__flag__x3A__emmit">
+        <xsl:apply-templates mode="#current"/>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulated_potential.emmit.vector" match="ptn:Current_synapse__x3A__emmit">
+        <xsl:param name="ptn:Label" required="yes" tunnel="yes" />
+        <xsl:param name="ptn:Simulation_body_time" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulated_potential.input.vector__x3A__offset" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Capacitance" required="yes" tunnel="yes"/>
+        <xsl:choose>
+            <xsl:when test="descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ]  ">
+                <ptn:Simulated_potential.emmit.vector ptn:debug="#160ASA todo/n[{name()}]" ptn:Label="{$ptn:Label}">
+                    <xsl:copy-of select="@ptn:Output_Node"/>
+                    <xsl:value-of select="sum(descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ] /(  ptn:Input_exec_Time_constant * ptn:Input_exec_Maximum_current * (1 div $ptn:Capacitance) * $ptn:Simulated_potential.input.vector__x3A__offset )  )"/>
+                </ptn:Simulated_potential.emmit.vector>
+            </xsl:when>
+        </xsl:choose>
+                
+    </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Simulated_potential.emmit.vector" match="*">
+        <xsl:message terminate="yes">#159AS unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
+    
+    <!-- EMMIT --><!-- EMMIT --><!-- EMMIT --><!-- EMMIT -->
+    
     <xsl:template mode="ptn:Simulated_potential__x3A__vectors.sum" match="ptn:Simulated_potential__x3A__vectors">
         <!--<ptn:Simulated_potential__x3A__vectors.sum>-->
         <xsl:apply-templates mode="#current"/>
         <!--</ptn:Simulated_potential__x3A__vectors.sum>-->
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulated_potential__x3A__vectors.sum" match="ptn:Simulated_potential.resting.vector|ptn:Simulated_potential.input.vector">
+    <xsl:template mode="ptn:Simulated_potential__x3A__vectors.sum" match="ptn:Simulated_potential.resting.vector|ptn:Simulated_potential.input.vector|ptn:Simulated_potential.emmit.vector">
         <xsl:param name="ptn:Firing_threshold" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulated_potential" required="yes" tunnel="yes"/>
        <!-- <xsl:choose>

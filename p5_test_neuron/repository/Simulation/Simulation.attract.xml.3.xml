@@ -12,6 +12,7 @@
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
          <ptn:Capacitance>0.5</ptn:Capacitance>
          <ptn:Resistance>100.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
@@ -33,11 +34,12 @@
                                                  ptn:Simulated_potential__x3A__more_charged_node="A"
                                                  ptn:Simulated_potential__x3A__less_charged_node="B"
                                                  ptn:Output_Node="B-to-A"
-                                                 ptn:debug="#190 std create">
+                                                 ptn:debug="#190 std create; [ptn:Outputs/#[0]]">
             <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
                <ptn:Label>B-to-A</ptn:Label>
-               <ptn:Coordinate_X>5</ptn:Coordinate_X>
+               <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
                <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
+               <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
                <ptn:Capacitance>1</ptn:Capacitance>
                <ptn:Resistance>100</ptn:Resistance>
                <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -58,8 +60,9 @@
             <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="#214 inhibitor "
                                                                       ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__x3A__AB">
                <ptn:Label>_B-to-A</ptn:Label>
-               <ptn:Coordinate_X>5</ptn:Coordinate_X>
+               <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
                <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
+               <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
                <ptn:Capacitance>1</ptn:Capacitance>
                <ptn:Resistance>100</ptn:Resistance>
                <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -88,8 +91,9 @@
             <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="#245 -AA inhibitor A--B"
                                                                       ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__X3A__AA">
                <ptn:Label>_B-to-B</ptn:Label>
-               <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
+               <ptn:Coordinate_X>2</ptn:Coordinate_X>
                <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
+               <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
                <ptn:Capacitance>1</ptn:Capacitance>
                <ptn:Resistance>100</ptn:Resistance>
                <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -124,6 +128,7 @@
          <ptn:Label>B</ptn:Label>
          <ptn:Coordinate_X>10</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
          <ptn:Capacitance>0.5</ptn:Capacitance>
          <ptn:Resistance>100.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
@@ -145,11 +150,12 @@
                                                  ptn:Simulated_potential__x3A__more_charged_node="B"
                                                  ptn:Simulated_potential__x3A__less_charged_node="A"
                                                  ptn:Output_Node="A-to-B"
-                                                 ptn:debug="#190 std create">
+                                                 ptn:debug="#190 std create; [ptn:Outputs/#[0]]">
             <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
                <ptn:Label>A-to-B</ptn:Label>
-               <ptn:Coordinate_X>5</ptn:Coordinate_X>
+               <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
                <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
+               <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
                <ptn:Capacitance>1</ptn:Capacitance>
                <ptn:Resistance>100</ptn:Resistance>
                <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -170,8 +176,9 @@
             <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="#214 inhibitor "
                                                                       ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__x3A__AB">
                <ptn:Label>_A-to-B</ptn:Label>
-               <ptn:Coordinate_X>5</ptn:Coordinate_X>
+               <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
                <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
+               <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
                <ptn:Capacitance>1</ptn:Capacitance>
                <ptn:Resistance>100</ptn:Resistance>
                <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -200,8 +207,9 @@
             <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="#245 -AA inhibitor B--A"
                                                                       ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__X3A__AA">
                <ptn:Label>_A-to-A</ptn:Label>
-               <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
+               <ptn:Coordinate_X>2</ptn:Coordinate_X>
                <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
+               <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
                <ptn:Capacitance>1</ptn:Capacitance>
                <ptn:Resistance>100</ptn:Resistance>
                <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -237,6 +245,7 @@
          <ptn:Label>C</ptn:Label>
          <ptn:Coordinate_X>20</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
          <ptn:Capacitance>0.5</ptn:Capacitance>
          <ptn:Resistance>100.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>

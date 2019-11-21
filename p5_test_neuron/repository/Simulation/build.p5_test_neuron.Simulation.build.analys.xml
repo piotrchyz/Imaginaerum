@@ -6,7 +6,7 @@
 <project xmlns:ptn="p5_test_neuron"
          basedir="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"
          name="Simulation.build.analys.xml"
-         default="Simulation.build.analys.xml.13">
+         default="Simulation.build.analys.xml.18">
    <target name="Simulation.build.analys.xml.0">
       <echo>Initial simulation</echo>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
@@ -1139,7 +1139,7 @@
       </xslt>
    </target>
    <target name="Simulation.build.analys.xml.13"
-          depends="Simulation.build.analys.xml.0">
+           depends="Simulation.build.analys.xml.12">
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.12.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.analys.xml.13.xml"
@@ -1574,7 +1574,7 @@
       </xslt>
    </target>
    <target name="Simulation.build.analys.xml.18"
-           depends="Simulation.build.analys.xml.17">
+           >
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.17.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.analys.xml.18.xml"

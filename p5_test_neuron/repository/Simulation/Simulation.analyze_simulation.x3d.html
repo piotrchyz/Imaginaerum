@@ -73,6 +73,27 @@
                <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="14"
                                                   ptn:Simulation_body_tick="14"
                                                   ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="15"
+                                                  ptn:Simulation_body_tick="15"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="16"
+                                                  ptn:Simulation_body_tick="16"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="17"
+                                                  ptn:Simulation_body_tick="17"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="18"
+                                                  ptn:Simulation_body_tick="18"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="19"
+                                                  ptn:Simulation_body_tick="19"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="20"
+                                                  ptn:Simulation_body_tick="20"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="21"
+                                                  ptn:Simulation_body_tick="21"
+                                                  ptn:Simulator_tick="1"/>
             </ptn:Simulator_tick__x3A__for-each-group>
             <Group DEF="ColorAnimation">
                <TimeSensor DEF="ColorAnimationTimer"
@@ -81,40 +102,40 @@
                            loop="true"/>
                <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
                <ColorInterpolator DEF="A_EmissiveColorInterpolator"
-                                  keyValue="0.37 0 0 , 0.44 0 1 , 0.44 0 1 , 0.44 0 1 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.42 0 0 , 0.42 0 0 , 0.42 0 0 , 0.44 0 0 , 0.30 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="0.37 0 0 , 0.44 0 1 , 0.44 0 1 , 0.44 0 1 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.42 0 0 , 0.42 0 0 , 0.42 0 0 , 0.44 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
                <ColorInterpolator DEF="B_EmissiveColorInterpolator"
-                                  keyValue="0.29 0 0 , 0.29 0 0 , 0.37 0 0 , 0.45 0 1 , 0.44 0 0 , 0.44 0 0 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.42 0 0 , 0.42 0 0 , 0.42 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="0.29 0 0 , 0.29 0 0 , 0.37 0 0 , 0.45 0 1 , 0.44 0 0 , 0.44 0 0 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.42 0 0 , 0.42 0 0 , 0.42 0 0 , 0.42 0 0 , 0.41 0 0 , 0.41 0 0 , 0.41 0 0 , 0.41 0 0 , 0.41 0 0 , 0.40 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
                <ColorInterpolator DEF="C_EmissiveColorInterpolator"
-                                  keyValue="0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.33 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.34 0 0 , 0.34 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.33 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.34 0 0 , 0.34 0 0 , 0.34 0 0 , 0.34 0 0 , 0.34 0 0 , 0.34 0 0 , 0.34 0 0 , 0.34 0 0 , 0.34 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[A-to-B]-->
                <ColorInterpolator DEF="A-to-B_EmissiveColorInterpolator"
-                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.34 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_A-to-B]-->
                <ColorInterpolator DEF="_A-to-B_EmissiveColorInterpolator"
-                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_A-to-A]-->
                <ColorInterpolator DEF="_A-to-A_EmissiveColorInterpolator"
-                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.34 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[B-to-A]-->
                <ColorInterpolator DEF="B-to-A_EmissiveColorInterpolator"
-                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.34 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_B-to-A]-->
                <ColorInterpolator DEF="_B-to-A_EmissiveColorInterpolator"
-                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.34 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
                <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_B-to-B]-->
                <ColorInterpolator DEF="_B-to-B_EmissiveColorInterpolator"
-                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 "
-                                  key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </ColorInterpolator>
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </ColorInterpolator>
             </Group>
             <transform render="true"
                        bboxcenter="0,0,0"
@@ -198,7 +219,7 @@
                        bboxsize="-1,-1,-1"
                        DEF="A-to-B"
                        id="A-to-B"
-                       translation="5 10 0"
+                       translation="3.3333333333333335 10 4"
                        scale="1,1,1"
                        rotation="0,0,0,0">
                <shape render="true"
@@ -223,7 +244,7 @@
                        bboxsize="-1,-1,-1"
                        DEF="_A-to-B"
                        id="_A-to-B"
-                       translation="5 5 0"
+                       translation="2.5 5 4"
                        scale="1,1,1"
                        rotation="0,0,0,0">
                <shape render="true"
@@ -248,7 +269,7 @@
                        bboxsize="-1,-1,-1"
                        DEF="_A-to-A"
                        id="_A-to-A"
-                       translation="3.3333333333333335 7 0"
+                       translation="2 7 4"
                        scale="1,1,1"
                        rotation="0,0,0,0">
                <shape render="true"
@@ -273,7 +294,7 @@
                        bboxsize="-1,-1,-1"
                        DEF="B-to-A"
                        id="B-to-A"
-                       translation="5 10 0"
+                       translation="3.3333333333333335 10 13"
                        scale="1,1,1"
                        rotation="0,0,0,0">
                <shape render="true"
@@ -298,7 +319,7 @@
                        bboxsize="-1,-1,-1"
                        DEF="_B-to-A"
                        id="_B-to-A"
-                       translation="5 5 0"
+                       translation="2.5 5 13"
                        scale="1,1,1"
                        rotation="0,0,0,0">
                <shape render="true"
@@ -323,7 +344,7 @@
                        bboxsize="-1,-1,-1"
                        DEF="_B-to-B"
                        id="_B-to-B"
-                       translation="3.3333333333333335 7 0"
+                       translation="2 7 13"
                        scale="1,1,1"
                        rotation="0,0,0,0">
                <shape render="true"
@@ -425,7 +446,8 @@
             <Group><!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-B]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="A_to_A-to-B_Current_synapse_LineSet" point="0 0 0 5 10 0"> </Coordinate>
+                     <Coordinate DEF="A_to_A-to-B_Current_synapse_LineSet"
+                                 point="0 0 0 3.3333333333333335 10 4 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="A_to_A-to-B_Current_synapse_emissiveColor"> </Material>
@@ -435,8 +457,7 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_A-to-A]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="A_to__A-to-A_Current_synapse_LineSet"
-                                 point="0 0 0 3.3333333333333335 7 0"> </Coordinate>
+                     <Coordinate DEF="A_to__A-to-A_Current_synapse_LineSet" point="0 0 0 2 7 4 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="A_to__A-to-A_Current_synapse_emissiveColor"> </Material>
@@ -446,7 +467,8 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-B]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="B_to_A-to-B_Current_synapse_LineSet" point="10 0 0 5 10 0"> </Coordinate>
+                     <Coordinate DEF="B_to_A-to-B_Current_synapse_LineSet"
+                                 point="10 0 0 3.3333333333333335 10 4 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="B_to_A-to-B_Current_synapse_emissiveColor"> </Material>
@@ -456,7 +478,7 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_A-to-B]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="B_to__A-to-B_Current_synapse_LineSet" point="10 0 0 5 5 0"> </Coordinate>
+                     <Coordinate DEF="B_to__A-to-B_Current_synapse_LineSet" point="10 0 0 2.5 5 4 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="B_to__A-to-B_Current_synapse_emissiveColor"> </Material>
@@ -466,7 +488,8 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-B]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="_A-to-B_to_A-to-B_Current_synapse_LineSet" point="5 5 0 5 10 0"> </Coordinate>
+                     <Coordinate DEF="_A-to-B_to_A-to-B_Current_synapse_LineSet"
+                                 point="2.5 5 4 3.3333333333333335 10 4 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0"
@@ -478,7 +501,7 @@
                <Shape>
                   <LineSet vertexCount="2">
                      <Coordinate DEF="_A-to-A_to_A-to-B_Current_synapse_LineSet"
-                                 point="3.3333333333333335 7 0 5 10 0"> </Coordinate>
+                                 point="2 7 4 3.3333333333333335 10 4 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0"
@@ -489,7 +512,8 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[B-to-A]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="A_to_B-to-A_Current_synapse_LineSet" point="0 0 0 5 10 0"> </Coordinate>
+                     <Coordinate DEF="A_to_B-to-A_Current_synapse_LineSet"
+                                 point="0 0 0 3.3333333333333335 10 13 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="A_to_B-to-A_Current_synapse_emissiveColor"> </Material>
@@ -499,7 +523,7 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_B-to-A]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="A_to__B-to-A_Current_synapse_LineSet" point="0 0 0 5 5 0"> </Coordinate>
+                     <Coordinate DEF="A_to__B-to-A_Current_synapse_LineSet" point="0 0 0 2.5 5 13 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="A_to__B-to-A_Current_synapse_emissiveColor"> </Material>
@@ -509,7 +533,8 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[B-to-A]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="B_to_B-to-A_Current_synapse_LineSet" point="10 0 0 5 10 0"> </Coordinate>
+                     <Coordinate DEF="B_to_B-to-A_Current_synapse_LineSet"
+                                 point="10 0 0 3.3333333333333335 10 13 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="B_to_B-to-A_Current_synapse_emissiveColor"> </Material>
@@ -519,8 +544,7 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_B-to-B]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="B_to__B-to-B_Current_synapse_LineSet"
-                                 point="10 0 0 3.3333333333333335 7 0"> </Coordinate>
+                     <Coordinate DEF="B_to__B-to-B_Current_synapse_LineSet" point="10 0 0 2 7 13 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0" DEF="B_to__B-to-B_Current_synapse_emissiveColor"> </Material>
@@ -530,7 +554,8 @@
                <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[B-to-A]-->
                <Shape>
                   <LineSet vertexCount="2">
-                     <Coordinate DEF="_B-to-A_to_B-to-A_Current_synapse_LineSet" point="5 5 0 5 10 0"> </Coordinate>
+                     <Coordinate DEF="_B-to-A_to_B-to-A_Current_synapse_LineSet"
+                                 point="2.5 5 13 3.3333333333333335 10 13 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0"
@@ -542,7 +567,7 @@
                <Shape>
                   <LineSet vertexCount="2">
                      <Coordinate DEF="_B-to-B_to_B-to-A_Current_synapse_LineSet"
-                                 point="3.3333333333333335 7 0 5 10 0"> </Coordinate>
+                                 point="2 7 13 3.3333333333333335 10 13 "> </Coordinate>
                   </LineSet>
                   <Appearance>
                      <Material emissiveColor="1 0 0"
@@ -556,78 +581,78 @@
                            loop="true"
                            cycleinterval="2"
                            time="10"> </TimeSensor>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[A]  CGK[A-A-to-B] ON[A-to-B]  X[0]-->
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[A]  CGK[A-A-to-B] ON[A-to-B]  X[0] Z[0]-->
                <CoordinateInterpolator DEF="A_to_A-to-B_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
-                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
-                                       keyValue="0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[A]  CGK[A-_A-to-A] ON[_A-to-A]  X[0]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="0 0 0 0 0 1 , 0 0 0 0 0 1 , 0 0 0 0 0 1 , 0 0 0 0 0 1 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 , 0 0 0 3.3333333333333335 10 4 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[A]  CGK[A-_A-to-A] ON[_A-to-A]  X[0] Z[0]-->
                <CoordinateInterpolator DEF="A_to__A-to-A_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
-                                       cgo="_A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A"
-                                       keyValue="0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-A-to-B] ON[A-to-B]  X[10]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A"
+                                       keyValue="0 0 0 0 0 1 , 0 0 0 0 0 1 , 0 0 0 0 0 1 , 0 0 0 0 0 1 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 , 0 0 0 2 7 4 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-A-to-B] ON[A-to-B]  X[10] Z[0]-->
                <CoordinateInterpolator DEF="B_to_A-to-B_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
-                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
-                                       keyValue="10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-_A-to-B] ON[_A-to-B]  X[10]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 , 10 0 0 3.3333333333333335 10 4 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-_A-to-B] ON[_A-to-B]  X[10] Z[0]-->
                <CoordinateInterpolator DEF="B_to__A-to-B_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
-                                       cgo="_A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B"
-                                       keyValue="10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_A-to-B]  CGK[_A-to-B-A-to-B] ON[A-to-B]  X[5]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B"
+                                       keyValue="10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 , 10 0 0 2.5 5 4 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_A-to-B]  CGK[_A-to-B-A-to-B] ON[A-to-B]  X[2.5] Z[4]-->
                <CoordinateInterpolator DEF="_A-to-B_to_A-to-B_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
-                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
-                                       keyValue="5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_A-to-A]  CGK[_A-to-A-A-to-B] ON[A-to-B]  X[3.3333333333333335]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="2.5 5 4 2.5 5 6 , 2.5 5 4 2.5 5 6 , 2.5 5 4 2.5 5 6 , 2.5 5 4 2.5 5 6 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 , 2.5 5 4 3.3333333333333335 10 4 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_A-to-A]  CGK[_A-to-A-A-to-B] ON[A-to-B]  X[2] Z[4]-->
                <CoordinateInterpolator DEF="_A-to-A_to_A-to-B_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
-                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
-                                       keyValue="3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[A]  CGK[A-B-to-A] ON[B-to-A]  X[0]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="2 7 4 2 7 6 , 2 7 4 2 7 6 , 2 7 4 2 7 6 , 2 7 4 2 7 6 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 , 2 7 4 3.3333333333333335 10 4 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[A]  CGK[A-B-to-A] ON[B-to-A]  X[0] Z[0]-->
                <CoordinateInterpolator DEF="A_to_B-to-A_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze"
-                                       cgo="B-to-A"
-                                       keyValue="0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[A]  CGK[A-_B-to-A] ON[_B-to-A]  X[0]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A"
+                                       keyValue="0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 3.3333333333333335 10 13 , 0 0 0 3.3333333333333335 10 13 , 0 0 0 3.3333333333333335 10 13 , 0 0 0 3.3333333333333335 10 13 , 0 0 0 3.3333333333333335 10 13 , 0 0 0 3.3333333333333335 10 13 , 0 0 0 3.3333333333333335 10 13 , 0 0 0 3.3333333333333335 10 13 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[A]  CGK[A-_B-to-A] ON[_B-to-A]  X[0] Z[0]-->
                <CoordinateInterpolator DEF="A_to__B-to-A_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze"
-                                       cgo="_B-to-A"
-                                       keyValue="0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 0 2 0 , 0 0 0 5 5 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[14] $L[B]  CGK[B-B-to-A] ON[B-to-A]  X[10]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_B-to-A _B-to-A _B-to-A _B-to-A _B-to-A _B-to-A _B-to-A _B-to-A"
+                                       keyValue="0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 0 0 2 , 0 0 0 2.5 5 13 , 0 0 0 2.5 5 13 , 0 0 0 2.5 5 13 , 0 0 0 2.5 5 13 , 0 0 0 2.5 5 13 , 0 0 0 2.5 5 13 , 0 0 0 2.5 5 13 , 0 0 0 2.5 5 13 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[14] $L[B]  CGK[B-B-to-A] ON[B-to-A]  X[10] Z[0]-->
                <CoordinateInterpolator DEF="B_to_B-to-A_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze"
-                                       cgo="B-to-A"
-                                       keyValue="10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[14] $L[B]  CGK[B-_B-to-B] ON[_B-to-B]  X[10]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A"
+                                       keyValue="10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 3.3333333333333335 10 13 , 10 0 0 3.3333333333333335 10 13 , 10 0 0 3.3333333333333335 10 13 , 10 0 0 3.3333333333333335 10 13 , 10 0 0 3.3333333333333335 10 13 , 10 0 0 3.3333333333333335 10 13 , 10 0 0 3.3333333333333335 10 13 , 10 0 0 3.3333333333333335 10 13 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[14] $L[B]  CGK[B-_B-to-B] ON[_B-to-B]  X[10] Z[0]-->
                <CoordinateInterpolator DEF="B_to__B-to-B_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze"
-                                       cgo="_B-to-B"
-                                       keyValue="10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 3.3333333333333335 7 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[_B-to-A]  CGK[_B-to-A-B-to-A] ON[B-to-A]  X[5]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_B-to-B _B-to-B _B-to-B _B-to-B _B-to-B _B-to-B _B-to-B _B-to-B"
+                                       keyValue="10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 10 0 1 , 10 0 0 2 7 13 , 10 0 0 2 7 13 , 10 0 0 2 7 13 , 10 0 0 2 7 13 , 10 0 0 2 7 13 , 10 0 0 2 7 13 , 10 0 0 2 7 13 , 10 0 0 2 7 13 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[_B-to-A]  CGK[_B-to-A-B-to-A] ON[B-to-A]  X[2.5] Z[13]-->
                <CoordinateInterpolator DEF="_B-to-A_to_B-to-A_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze"
-                                       cgo="B-to-A"
-                                       keyValue="5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
-               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[_B-to-B]  CGK[_B-to-B-B-to-A] ON[B-to-A]  X[3.3333333333333335]-->
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A"
+                                       keyValue="2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 2.5 5 15 , 2.5 5 13 3.3333333333333335 10 13 , 2.5 5 13 3.3333333333333335 10 13 , 2.5 5 13 3.3333333333333335 10 13 , 2.5 5 13 3.3333333333333335 10 13 , 2.5 5 13 3.3333333333333335 10 13 , 2.5 5 13 3.3333333333333335 10 13 , 2.5 5 13 3.3333333333333335 10 13 , 2.5 5 13 3.3333333333333335 10 13 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[14] $L[_B-to-B]  CGK[_B-to-B-B-to-A] ON[B-to-A]  X[2] Z[13]-->
                <CoordinateInterpolator DEF="_B-to-B_to_B-to-A_Current_synapse_CoordinateInterpolator"
-                                       current-group.n="ptn:Current_synapse__x3A__analyze"
-                                       cgo="B-to-A"
-                                       keyValue="3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 5 10 0"
-                                       key="0, 0.14, 0.21, 0.29, 0.36, 0.43, 0.50, 0.57, 0.64, 0.71, 0.79, 0.86, 0.93, 1"> </CoordinateInterpolator>
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A B-to-A"
+                                       keyValue="2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 2 7 15 , 2 7 13 3.3333333333333335 10 13 , 2 7 13 3.3333333333333335 10 13 , 2 7 13 3.3333333333333335 10 13 , 2 7 13 3.3333333333333335 10 13 , 2 7 13 3.3333333333333335 10 13 , 2 7 13 3.3333333333333335 10 13 , 2 7 13 3.3333333333333335 10 13 , 2 7 13 3.3333333333333335 10 13 "
+                                       key="0, 0.10, 0.14, 0.19, 0.24, 0.29, 0.33, 0.38, 0.43, 0.48, 0.52, 0.57, 0.62, 0.67, 0.71, 0.76, 0.81, 0.86, 0.90, 0.95, 1"> </CoordinateInterpolator>
             </Group>
             <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[A]-->
             <ROUTE fromNode="ColorAnimationTimer"
