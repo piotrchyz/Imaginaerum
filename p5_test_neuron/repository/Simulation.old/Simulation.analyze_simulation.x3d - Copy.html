@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:ptn="p5_test_neuron"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <title>X3Dom Example OnOutputChange Event</title>
+      <script type="text/javascript" src="https://x3dom.org/release/x3dom.js"> </script>
+      <link rel="stylesheet"
+            type="text/css"
+            href="https://www.x3dom.org/download/x3dom.css"/>
+   </head>
+   <body>
+      <p>
+                    Testing sequence capable neurons
+                </p>
+      <x3d width="800px"
+           height="600px"
+           xsi:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+         <scene render="true"
+                bboxcenter="0,0,0"
+                bboxsize="-1,-1,-1"
+                pickmode="idBuf"
+                dopickpass="true">
+            <Viewpoint id="top"
+                       description="camera"
+                       position="20 5 50"
+                       orientation="0 0 0 0"> </Viewpoint>
+            <Viewpoint id="rows"
+                       description="camera"
+                       position="-2.43383 1.07351 -5"
+                       orientation="0 -1 0 2.06609"> </Viewpoint>
+            <Group DEF="ColorAnimation">
+               <TimeSensor DEF="ColorAnimationTimer" loop="true" cycleinterval="2"  time="10"/>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+               
+               <!--<PositionInterpolator DEF='InterpolateąCrossSection' key='0 0.5  1' keyValue='0 0 0 1 5 0  2 2 0 1 5 0  0 0 0 1 10 0'/>-->
+               
+               <ColorInterpolator DEF="A_EmissiveColorInterpolator"
+                                  keyValue="0.37 0 0 , 0.44 0 1 , 0.44 0 1 , 0.44 0 1 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.42 0 0 , 0.42 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
+               <ColorInterpolator DEF="B_EmissiveColorInterpolator"
+                                  keyValue="0.29 0 0 , 0.29 0 0 , 0.37 0 0 , 0.45 0 1 , 0.44 0 0 , 0.44 0 0 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
+               <ColorInterpolator DEF="C_EmissiveColorInterpolator"
+                                  keyValue="0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.33 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[A-to-B]-->
+               <ColorInterpolator DEF="A-to-B_EmissiveColorInterpolator"
+                                  keyValue="0 0 0 , 0 0 0 , 0 0 0 , 0 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_A-to-B]-->
+               <ColorInterpolator DEF="_A-to-B_EmissiveColorInterpolator"
+                                  keyValue="0 0 0 , 0 0 0 , 0 0 0 , 0 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_A-to-A]-->
+               <ColorInterpolator DEF="_A-to-A_EmissiveColorInterpolator"
+                                  keyValue="0 0 0 , 0 0 0 , 0 0 0 , 0 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <ColorInterpolator DEF="InterpolateCrossSection_col"
+                  keyValue="1 0 0 , 0 0 1 , 0 1 0 , 0 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+            </Group>
+            
+            <!-- ROUTE information for InterpolateCrossSection node:  [from Clock.fraction_changed to set_fraction ] [from value_changed to AnimatedCrossSectionExtrusion.set_crossSection ] -->
+            
+            
+               
+            <!--<Shape>
+               <Polyline2D lineSegments="0 0 5 5 10 5"> </Polyline2D>
+               <Appearance DEF='MagentaAppearance'>
+                  <Material diffuseColor='1 0 0' emissiveColor='0 0 1' specularColor='0 .8 0'> </Material>
+               </Appearance>
+            </Shape>-->
+               
+               <!--<Shape>
+                  <Appearance>
+                     <PointProperties
+                        pointSizeScaleFactor='8'
+                        pointSizeMaxValue='8'/>
+                     <Material
+                        emissiveColor='1 0.5 0'/>
+                  </Appearance>
+                  <!-\-<Polypoint2D USE='_3'/>-\->
+                  
+               </Shape>-->
+            
+            
+            
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="A"
+                       id="A"
+                       translation="0 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="A_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="B"
+                       id="B"
+                       translation="10 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="B_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="C"
+                       id="C"
+                       translation="20 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="C_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="A-to-B"
+                       id="A-to-B"
+                       translation="5 10 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="A-to-B_Material" diffuseColor="0 1 0" emissiveColor="0 1 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="_A-to-B"
+                       id="_A-to-B"
+                       translation="5 5 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="_A-to-B_Material" diffuseColor="0 0 1" emissiveColor="0 0 1"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="_A-to-A"
+                       id="_A-to-A"
+                       translation="3.3333333333333335 7 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="_A-to-A_Material" diffuseColor="0 0 1" emissiveColor="0 0 1"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+            
+            
+           
+            
+        <!--    <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="A_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!-\-#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-\->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!-\-#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-\->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="C_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="C_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="C_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!-\-#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[A-to-B]-\->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A-to-B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A-to-B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="A-to-B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!-\-#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_A-to-B]-\->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_A-to-B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_A-to-B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="_A-to-B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!-\-#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_A-to-A]-\->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_A-to-A_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_A-to-A_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="_A-to-A_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+           --> <timesensor def="time"
+                        cycleinterval="1"
+                        loop="true"
+                        enabled="true"
+                        first="true"> </timesensor>
+            
+            
+              
+
+            <Group DEF="CoordAnimation"> 
+               <TimeSensor DEF='Clock' loop="true" cycleinterval="2"  time="10"> </TimeSensor>
+               
+               <CoordinateInterpolator DEF='InterpolateCrossSection' key='0, 1' keyValue='0 0 0 1 5 0 ,  0 0 1 1 10 0'> </CoordinateInterpolator> 
+            </Group>
+            
+            <Group>
+               <Shape>
+                  <LineSet vertexCount='2'>
+                     <Coordinate DEF="LineSet" point='5 0 0 1 5 0' />
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor='1 0 0' DEF="LineSet_col"/>
+                     <LineProperties linewidthScaleFactor='5'/>
+                  </Appearance>
+               </Shape>
+            </Group>
+            
+            <ROUTE fromNode="Clock"  fromField="fraction_changed" toNode="InterpolateCrossSection_col" toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="InterpolateCrossSection_col"  fromField="value_changed" toNode="LineSet_col" toField="set_emissiveColor"> </ROUTE>
+            
+            <ROUTE fromNode='time' fromField='fraction_changed' toNode='InterpolateCrossSection' toField='set_fraction'> </ROUTE>
+            <ROUTE fromNode='InterpolateCrossSection' fromField='value_changed' toNode='LineSet' toField='point'> </ROUTE> 
+            
+         </scene>
+      </x3d>
+      <button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
+      <button onclick="document.getElementById('top').setAttribute('set_bind','true');">top </button>
+   </body>
+</html>

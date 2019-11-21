@@ -1,0 +1,112 @@
+<html><head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> </meta>
+		<title>X3Dom Example OnOutputChange Event</title>
+		<script type="text/javascript" src="https://x3dom.org/release/x3dom.js"> </script>
+		<link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css"> </link>
+			
+			
+			
+			
+</head>
+	<body>
+		
+		<h1>Animate Objects with X3DOM!</h1>
+		
+		
+		<x3d  width="800px"
+			height="600px"
+			>
+			<Scene render="true"
+				bboxcenter="0,0,0"
+				bboxsize="-1,-1,-1"
+				pickmode="idBuf"
+				dopickpass="true">
+				
+				
+				<Viewpoint id="top"
+					description="camera"
+					position="20 5 50"
+					orientation="0 0 0 0"> </Viewpoint>
+				<Viewpoint id="rows"
+					description="camera"
+					position="-2.43383 1.07351 -5"
+					orientation="0 -1 0 2.06609"> </Viewpoint>
+				<Group>
+					<Shape>
+						<LineSet vertexCount='2'>
+							<Coordinate point='0 0 0 1 5 0'/>
+						</LineSet>
+						<Appearance>
+							<Material emissiveColor='1 0 0'/>
+							<LineProperties linewidthScaleFactor='5'/>
+						</Appearance>
+					</Shape>
+					<Shape>
+						<LineSet vertexCount='2'>
+							<Coordinate point='0 0 0 0 1 0'/>
+						</LineSet>
+						<Appearance>
+							<Material emissiveColor='0 1 0'/>
+							<LineProperties linewidthScaleFactor='2'/>
+						</Appearance>
+					</Shape>
+					<Shape>
+						<LineSet vertexCount='2'>
+							<Coordinate point='0 0 0 0 0 1'/>
+						</LineSet>
+						<Appearance>
+							<Material emissiveColor='0 0 1'/>
+							<LineProperties linewidthScaleFactor='2'/>
+						</Appearance>
+					</Shape>
+				</Group>
+				<!--<Shape>
+					<!-\- Instant Reality options: meshGenerationType="dynamic" or advancedStatic or simpleStatic -\->
+					<NurbsTrimmedSurface solid='false' uDimension='3' uKnot='0 0 0 1 1 1' vDimension='2' vKnot='0 0 2 2' vOrder='2' weight='1 0.946042343528 1 1 0.946042343528 1'>
+						<Coordinate containerField='controlPoint' point='1.5 3 3 4 4 4 7 7 7 9 9 9 4 4 4 5 5 5'/>
+						<Contour2D>
+							<NurbsCurve2D controlPoint='0 0 1 0 1 1.5' knot='0 0 0.5 1 1' order='2' weight='1 1 1'/>
+							<NurbsCurve2D controlPoint='1 1.5 3 4 4 2' knot='0 0 0 1 1 1' weight='1 0.71 1'/>
+							<NurbsCurve2D controlPoint='9 2 0 2 0 0' knot='0 0 0.5 1 1' order='2' weight='1 1 1'/>
+						</Contour2D>
+						<Contour2D>
+							<NurbsCurve2D controlPoint='1 1.5 1 5 5 5 7 7 7 9 9 9 2 2 2 3 3 3' knot='0 0 0 0.25 0.25 0.5 0.5 0.75 0.75 1 1 1' weight='1 0.707106781187 1 0.707106781187 1 0.707106781187 1 0.707106781187 1'/>
+						</Contour2D>
+					</NurbsTrimmedSurface>
+					<Appearance DEF='ksh_appearance_1'>
+						<Material diffuseColor='0 0 1'/>
+					</Appearance>
+				</Shape>-->
+				
+				<transform render="true"
+					bboxcenter="0,0,0"
+					center="0,0,0"
+					scaleorientation="0,0,0,0"
+					bboxsize="-1,-1,-1"
+					DEF="A"
+					id="A"
+					translation="0 0 0"
+					scale="1,1,1"
+					rotation="0,0,0,0">
+					<shape render="true"
+						bboxcenter="0,0,0"
+						bboxsize="-1,-1,-1"
+						ispickable="true">
+						<appearance sorttype="auto" alphaclipthreshold="0.1">
+							<material DEF="A_Material" emissiveColor="1 0 0"> </material>
+						</appearance>
+						<sphere solid="true"
+							ccw="true"
+							usegeocache="true"
+							lit="true"
+							radius="1"
+							subdivision="24,24"/>
+					</shape>
+				</transform>
+				<Background skyColor='1 0 1'/>
+			</Scene> 
+		<button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
+		<button onclick="document.getElementById('top').setAttribute('set_bind','true');">top </button>
+	</body>
+
+</html>

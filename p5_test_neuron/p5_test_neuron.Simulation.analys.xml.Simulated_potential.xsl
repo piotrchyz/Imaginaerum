@@ -10,6 +10,8 @@
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     
+    <xsl:include href="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl"/>
+    
     <xsl:template  name="ptn:Simulated_potential" >
         <xsl:apply-templates mode="ptn:Simulated_potential" select="."/>        
     </xsl:template>
@@ -44,6 +46,7 @@
                 <ptn:Output__x3A__flag>
                     <xsl:value-of select="true()"/>
                 </ptn:Output__x3A__flag>
+                <xsl:call-template name="ptn:Output__x3A__flag__x3A__emmit"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:copy>

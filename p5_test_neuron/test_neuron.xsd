@@ -5,6 +5,7 @@
     <xs:annotation>
         <xs:documentation>Test neuron model 2019-11 a.binder</xs:documentation>
     </xs:annotation>
+    <xs:include schemaLocation="Simulation.analyze_simulation.xml.xsd"/>
     <xs:simpleType name="Capacitance">
         <xs:annotation>
             <xs:documentation>Membrane Capacitance from 0.01 to 2nF</xs:documentation>
@@ -226,12 +227,15 @@
                 minOccurs="0"/>
             <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
             <xs:element ref="ptn:Outputs"/>
+            <xs:element ref="ptn:Input__x3A__nodes"/>
+            <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
             <xs:element default="-80" name="Simulated_potential" type="ptn:Simulated_potential"/>
             <xs:element minOccurs="0" name="Attract__x3A__flag" type="ptn:Attract__x3A__flag"/>
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 name="Simulation.attract__x3A__calculate"
                 type="ptn:Simulation.attract__x3A__calculate"/>
             <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+            <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
             <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
             <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                 type="ptn:Simulated_potential__x3A__vectors"/>
@@ -239,7 +243,8 @@
                 name="Simulated_potential__x3A__vectors.sum"
                 type="ptn:Simulated_potential__x3A__vectors.sum"/>
         </xs:sequence>
-        <xs:attribute ref="ptn:Inputs"/>
+        <xs:attribute ref="ptn:debug"/>
+        <xs:attribute ref="ptn:New"/>
     </xs:complexType>
     <xs:attribute name="Inputs" type="xs:IDREFS"/>
     <xs:complexType name="Leaky_neuron">
@@ -270,6 +275,8 @@
                         minOccurs="1"/>
                     <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
                     <xs:element ref="ptn:Outputs"/>
+                    <xs:element ref="ptn:Input__x3A__nodes"/>
+                    <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Attract__x3A__flag"
@@ -278,6 +285,7 @@
                         name="Simulation.attract__x3A__calculate"
                         type="ptn:Simulation.attract__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
@@ -285,7 +293,6 @@
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
-                <xs:attribute ref="ptn:Inputs" use="optional"/>
             </xs:restriction>
         </xs:complexContent>
     </xs:complexType>
@@ -317,6 +324,8 @@
                         minOccurs="1"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_false"/>
                     <xs:element ref="ptn:Outputs"/>
+                    <xs:element ref="ptn:Input__x3A__nodes"/>
+                    <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Attract__x3A__flag"
@@ -325,6 +334,7 @@
                         name="Simulation.attract__x3A__calculate"
                         type="ptn:Simulation.attract__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
@@ -332,7 +342,6 @@
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
-                <xs:attribute ref="ptn:Inputs" use="required"/>
             </xs:restriction>
         </xs:complexContent>
     </xs:complexType>
@@ -364,10 +373,17 @@
                         minOccurs="1"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_true"/>
                     <xs:element ref="ptn:Outputs"/>
+                    <xs:element ref="ptn:Input__x3A__nodes"/>
+                    <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
+                    <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0"
+                        name="Simulated_potential__x3A__vectors.sum"
+                        type="ptn:Simulated_potential__x3A__vectors.sum"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -403,9 +419,12 @@
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
                     <xs:element ref="ptn:Outputs"/>
+                    <xs:element ref="ptn:Input__x3A__nodes"/>
+                    <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
@@ -447,9 +466,12 @@
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_false"/>
                     <xs:element ref="ptn:Outputs"/>
+                    <xs:element ref="ptn:Input__x3A__nodes"/>
+                    <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
@@ -488,9 +510,12 @@
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_true"/>
                     <xs:element ref="ptn:Outputs"/>
+                    <xs:element ref="ptn:Input__x3A__nodes"/>
+                    <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
@@ -523,6 +548,7 @@
             <xs:element default="5" name="Delay" type="ptn:Delay"/>
             <xs:element name="Output_Node" type="ptn:Output_Node"/>
         </xs:sequence>
+        <xs:attribute inheritable="false" ref="ptn:debug"/>
     </xs:complexType>
     <xs:complexType name="Input">
         <xs:sequence>
@@ -531,12 +557,21 @@
             <xs:element name="Input_exec_Time_constant" type="ptn:Input_exec_Time_constant"/>
             <xs:element name="Input_exec_Maximum_current" type="ptn:Input_exec_Maximum_current"/>
         </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
     </xs:complexType>
     <xs:element name="Outputs">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
                     type="ptn:Current_synapse"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Input__x3A__nodes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="Input__x3A__node"
+                    type="ptn:Output_Node"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -582,9 +617,15 @@
     <xs:element name="Nodes">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Leaky_neuron_standard"/>
-                <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0"
-                    name="Leaky_neuron_inhibitor" type="ptn:Leaky_neuron_inhibitor"/>
+                <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                    <xs:element ref="ptn:Leaky_neuron_standard"/>
+                    <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0"
+                        name="Leaky_neuron_inhibitor" type="ptn:Leaky_neuron_inhibitor"/>
+                    <xs:element name="Leaky_neuron_inhibitor__x3A__AB"
+                        type="ptn:Leaky_neuron_inhibitor"/>
+                    <xs:element name="Leaky_neuron_inhibitor__X3A__AA"
+                        type="ptn:Leaky_neuron_inhibitor"/>
+                </xs:sequence>
                 <xs:element maxOccurs="unbounded" minOccurs="0" name="Adaptive_neuron_standard"
                     type="ptn:Adaptive_neuron_standard"/>
                 <xs:element maxOccurs="unbounded" minOccurs="0" name="Adaptive_neuron_inhibitor"
@@ -596,10 +637,11 @@
     <xs:element name="Inputs">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" name="Input" type="ptn:Input"/>
+                <xs:element maxOccurs="unbounded" ref="ptn:Input"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="Input" type="ptn:Input"/>
     <xs:element name="Simulation">
         <xs:complexType>
             <xs:sequence>
@@ -728,7 +770,8 @@ debug most feature</xs:documentation>
             <xs:documentation>Transformed from ptn:Attract__x3A__flag - to analyze generate new structure variant</xs:documentation>
         </xs:annotation>
         <xs:sequence>
-            <xs:element ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node"/>
+            <xs:element maxOccurs="3" ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
+            />
         </xs:sequence>
         <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
         <xs:attribute ref="ptn:debug"/>
@@ -774,6 +817,14 @@ debug most feature</xs:documentation>
             <xs:documentation>Analyzed to create modelk</xs:documentation>
         </xs:annotation>
         <xs:all>
+            <xs:element minOccurs="0"
+                name="Simulation.attract__x3A__calculate.best.unique__x3A__debug">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:any processContents="skip"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 ref="ptn:Simulation.attract__x3A__calculate"/>
             <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -805,6 +856,9 @@ debug most feature</xs:documentation>
     <xs:simpleType name="Simulation.attract__x3A__calculate__x3A__output_node.type">
         <xs:restriction base="xs:string">
             <xs:enumeration value="ptn:Leaky_neuron_standard"/>
+            <xs:enumeration value="ptn:Leaky_neuron_inhibitor"/>
+            <xs:enumeration value="ptn:Leaky_neuron_inhibitor__X3A__AA"/>
+            <xs:enumeration value="ptn:Leaky_neuron_inhibitor__x3A__AB"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:attribute name="Simulation.attract__x3A__calculate__x3A__output_node.type"
@@ -815,4 +869,42 @@ debug most feature</xs:documentation>
             <xs:documentation>Calculations are optimal in attract mode, to just remodel in model scenario</xs:documentation>
         </xs:annotation>
     </xs:element>
+    <xs:attribute name="New" type="xs:boolean">
+        <xs:annotation>
+            <xs:documentation>When new created - to optimize 3d</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+    <xs:element name="Output__x3A__flag__x3A__emmit">
+        <xs:annotation>
+            <xs:documentation>w analyz reagukje na flag, do zabrania w attract</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="ptn:Current_synapse__x3A__emmit"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="Current_synapse__x3A__emmit">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" ref="ptn:Input"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
+        <xs:attribute ref="ptn:Output_Node">
+            <xs:annotation>
+                <xs:documentation>Debugowo - do usuniecia raczej</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:element name="Current_synapse__x3A__emmit" type="ptn:Current_synapse__x3A__emmit"/>
+    <xs:complexType name="Input__x3A__nodes__x3A__prohibit">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__node__x3A__prohibit"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Input__x3A__nodes__x3A__prohibit" type="ptn:Input__x3A__nodes__x3A__prohibit">
+        <xs:annotation>
+            <xs:documentation>Attract protect to destroy base inhibitory sequence barriers</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="Input__x3A__node__x3A__prohibit" type="ptn:Output_Node"/>
 </xs:schema>

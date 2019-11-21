@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="p5_test_neuron" vc:minVersion="1.1" xmlns:ptn="p5_test_neuron"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+    <xs:include schemaLocation="test_neuron.xsd"/>
+    <xs:element name="Simulation.analyze_simulation.xml">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="ptn:Simulation_body__x3A__analyze"/>
+            </xs:sequence>
+            <xs:attribute name="file"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Simulation_body__x3A__analyze">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="ptn:Receptor__x3A__analyze"/>
+                <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                    <xs:element ref="ptn:Leaky_neuron_standard__x3A__analyze"/>
+                    <xs:element ref="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze"/>
+                    <xs:element ref="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze"/>
+                </xs:sequence>
+            </xs:sequence>
+            <xs:attribute ref="ptn:Label"/>
+            <xs:attribute ref="ptn:Simulation_body_time"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="analyze">
+        <xs:attribute ref="ptn:Label"/>
+        <xs:attribute ref="ptn:Attract__x3A__flag"/>
+        <xs:attribute ref="ptn:Simulated_potential"/>
+        <xs:attribute ref="ptn:Is_inhibitor"/>
+        <xs:attribute ref="ptn:Label__x3A__analyze"/>
+    </xs:complexType>
+    <xs:element name="Receptor__x3A__analyze" type="ptn:analyze"/>
+    <xs:element name="Leaky_neuron_standard__x3A__analyze" type="ptn:analyze"/>
+    <xs:element name="Leaky_neuron_inhibitor__x3A__AB__x3A__analyze" type="ptn:analyze"/>
+    <xs:element name="Leaky_neuron_inhibitor__X3A__AA__x3A__analyze" type="ptn:analyze"/>
+    <xs:attribute name="Attract__x3A__flag" type="ptn:Attract__x3A__flag"/>
+    <xs:attribute name="Simulated_potential" type="ptn:Simulated_potential"/>
+    <xs:attribute name="Is_inhibitor" type="ptn:Is_inhibitor"/>
+    <xs:attribute name="Label__x3A__analyze"/>
+</xs:schema>

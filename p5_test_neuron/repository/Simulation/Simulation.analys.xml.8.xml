@@ -26,9 +26,16 @@
                <ptn:Maximum_current>3.0</ptn:Maximum_current>
                <ptn:Time_constant>2.0</ptn:Time_constant>
                <ptn:Delay>5.0</ptn:Delay>
-               <ptn:Output_Node>A-to-A</ptn:Output_Node>
+               <ptn:Output_Node>A-to-B</ptn:Output_Node>
+            </ptn:Current_synapse>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>_A-to-A</ptn:Output_Node>
             </ptn:Current_synapse>
          </ptn:Outputs>
+         <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-57.426417026667814</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
          <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-57.16981329251818">
@@ -57,7 +64,14 @@
                <ptn:Delay>5.0</ptn:Delay>
                <ptn:Output_Node>A-to-B</ptn:Output_Node>
             </ptn:Current_synapse>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>_A-to-B</ptn:Output_Node>
+            </ptn:Current_synapse>
          </ptn:Outputs>
+         <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-56.873594976350944</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
          <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-56.60570915954178">
@@ -80,6 +94,7 @@
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
+         <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-65.15474358400002</ptn:Simulated_potential>
          <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-65.05586080000002">
             <ptn:Simulated_potential.resting.vector>-0.09888278399999961</ptn:Simulated_potential.resting.vector>
@@ -103,11 +118,82 @@
          <ptn:Refactory_period>2</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+            <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
+            <ptn:Input__x3A__node>_A-to-B</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
          <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
             <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_inhibitor__x3A__AB>
+         <ptn:Label>_A-to-B</ptn:Label>
+         <ptn:Coordinate_X>5</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
+         <ptn:Capacitance>1</ptn:Capacitance>
+         <ptn:Resistance>100</ptn:Resistance>
+         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70</ptn:Resting_potential>
+         <ptn:Reset_potential>-70</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
+         <ptn:Refactory_period>2</ptn:Refactory_period>
+         <ptn:Is_inhibitor>1</ptn:Is_inhibitor>
+         <ptn:Outputs>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-B</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Input__x3A__node__x3A__prohibit>A</ptn:Input__x3A__node__x3A__prohibit>
+         </ptn:Input__x3A__nodes__x3A__prohibit>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
+            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
+         <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
+      </ptn:Leaky_neuron_inhibitor__x3A__AB>
+      <ptn:Leaky_neuron_inhibitor__X3A__AA>
+         <ptn:Label>_A-to-A</ptn:Label>
+         <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
+         <ptn:Capacitance>1</ptn:Capacitance>
+         <ptn:Resistance>100</ptn:Resistance>
+         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70</ptn:Resting_potential>
+         <ptn:Reset_potential>-70</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
+         <ptn:Refactory_period>2</ptn:Refactory_period>
+         <ptn:Is_inhibitor>1</ptn:Is_inhibitor>
+         <ptn:Outputs>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-B</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Input__x3A__node__x3A__prohibit>B</ptn:Input__x3A__node__x3A__prohibit>
+         </ptn:Input__x3A__nodes__x3A__prohibit>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
+            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
+         </ptn:Simulated_potential__x3A__vectors>
+         <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
+      </ptn:Leaky_neuron_inhibitor__X3A__AA>
    </ptn:Nodes>
 </ptn:Simulation_body>

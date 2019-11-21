@@ -10,7 +10,7 @@
     <xsl:strip-space elements="*"/>
     
     
-    <xsl:param name="ptn:Config" required="yes"/>
+    <!--<xsl:param name="ptn:Config" required="yes"/>
     <xsl:param name="ptn:Simulation_ticks" required="yes"/>
     
     <xsl:param name="ptn:Simulation.dir" required="yes"/>
@@ -20,8 +20,9 @@
     
     <xsl:param name="ptn:xsl" required="yes"/>
     
-    <xsl:param name="ptn:xsd" required="yes"/>
+    <xsl:param name="ptn:xsd" required="yes"/>-->
     
+    <xsl:include href="p5_test_neuron.param.xsl"/>
     
     <xsl:include href="sqrt.xsl"/>
     <xsl:include href="p5_test_neuron.Simulation.analys.xml.xsl"/>
@@ -62,7 +63,7 @@
                     style="{$ptn:xsl}"
                     in="{$ptn:Config}"
                     out="{$ptn:Simulation.dir}/Simulation.analys.xml.0.xml" 
-                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                         <attribute name="http://saxon.sf.net/feature/initialMode">
@@ -102,7 +103,7 @@
                     style="{$ptn:xsl}"
                     in="{$ptn:Simulation.dir}/Simulation.analys.xml.0.xml"
                     out="{$ptn:Simulation.dir}/Simulation.attract.xml.0.xml" 
-                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                         <attribute name="http://saxon.sf.net/feature/initialMode">
@@ -142,7 +143,7 @@
                     style="{$ptn:xsl}"
                     in="{$ptn:Simulation.dir}/Simulation.attract.xml.0.xml"
                     out="{$ptn:Simulation.dir}/Simulation.model.xml.0.xml" 
-                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                         <attribute name="http://saxon.sf.net/feature/initialMode">
@@ -187,7 +188,7 @@
                     style="{$ptn:xsl}"
                     in="{$ptn:Simulation.dir}/Simulation.model.xml.{. - 1}.xml"
                     out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" 
-                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                         <attribute name="http://saxon.sf.net/feature/initialMode">
@@ -226,7 +227,7 @@
                     style="{$ptn:xsl}"
                     in="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml"
                     out="{$ptn:Simulation.dir}/Simulation.attract.xml.{.}.xml" 
-                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                         <attribute name="http://saxon.sf.net/feature/initialMode">
@@ -265,7 +266,7 @@
                     style="{$ptn:xsl}"
                     in="{$ptn:Simulation.dir}/Simulation.attract.xml.{.}.xml"
                     out="{$ptn:Simulation.dir}/Simulation.model.xml.{.}.xml" 
-                    force="true"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                         <attribute name="http://saxon.sf.net/feature/initialMode">

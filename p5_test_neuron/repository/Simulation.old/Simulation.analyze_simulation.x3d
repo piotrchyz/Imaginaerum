@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D
+  PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:ptn="p5_test_neuron"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+     version="3.0"
+     profile="Immersive"
+     xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+   <head>
+      <meta name="filename" content="Simulation.analyze_simulation.x3d"/>
+      <meta name="generator" content="Procesy5 arkadiusz binder xslt 2019-11"/>
+   </head>
+   <Scene>
+      <NavigationInfo headlight="false"
+                      visibilityLimit="0.0"
+                      type="&#34;EXAMINE&#34;, &#34;ANY&#34;"
+                      avatarSize="0.25, 1.75, 0.75"/>
+      <Background DEF="WO_World"
+                  groundColor="0.051 0.051 0.051"
+                  skyColor="0.051 0.051 0.051"/>
+      <Transform DEF="Lamp_TRANSFORM"
+                 translation="-11.000000 -1.000000 -8.000000"
+                 scale="1.000000 1.000000 1.000000"
+                 rotation="-0.930248 -0.309006 0.197874 2.788391">
+         <DirectionalLight DEF="LA_Lamp"
+                           ambientIntensity="0.0000"
+                           color="1.0000 1.0000 1.0000"
+                           intensity="0.2686"
+                           direction="-0.0000 -0.0000 -1.0000"/>
+      </Transform>
+      <Transform DEF="Camera_TRANSFORM"
+                 translation="-12.079477 6.849407 9.335769"
+                 scale="1.000000 1.000000 1.000000"
+                 rotation="-0.589434 -0.795928 -0.138079 0.839287">
+         <Viewpoint DEF="CA_Camera"
+                    centerOfRotation="0 0 0"
+                    position="0.00 -0.00 0.00"
+                    orientation="0.65 0.76 0.05 0.00"
+                    fieldOfView="1.651"/>
+      </Transform>
+      <ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>
+         <DEF DEF="A_TRANSFORM"
+              translation="0 0 0"
+              scale="1.000000 1.000000 1.000000"
+              rotation="-0.589434 -0.795928 -0.138079 0.839287">
+            <Transform DEF="A_ifs_TRANSFORM">
+               <Appearance>
+                  <Material DEF="MA_MaterialA"
+                            diffuseColor="0.800 0.016 0.542"
+                            specularColor="0.401 0.401 0.401"
+                            emissiveColor="0.000 0.000 0.000"
+                            ambientIntensity="0.333"
+                            shininess="0.098"
+                            transparency="0.0"/>
+               </Appearance>
+            </Transform>
+         </DEF>
+         <DEF DEF="B_TRANSFORM"
+              translation="10 0 0"
+              scale="1.000000 1.000000 1.000000"
+              rotation="-0.589434 -0.795928 -0.138079 0.839287">
+            <Transform DEF="B_ifs_TRANSFORM">
+               <Appearance>
+                  <Material DEF="MA_MaterialB"
+                            diffuseColor="0.800 0.016 0.542"
+                            specularColor="0.401 0.401 0.401"
+                            emissiveColor="0.000 0.000 0.000"
+                            ambientIntensity="0.333"
+                            shininess="0.098"
+                            transparency="0.0"/>
+               </Appearance>
+            </Transform>
+         </DEF>
+         <DEF DEF="C_TRANSFORM"
+              translation="20 0 0"
+              scale="1.000000 1.000000 1.000000"
+              rotation="-0.589434 -0.795928 -0.138079 0.839287">
+            <Transform DEF="C_ifs_TRANSFORM">
+               <Appearance>
+                  <Material DEF="MA_MaterialC"
+                            diffuseColor="0.800 0.016 0.542"
+                            specularColor="0.401 0.401 0.401"
+                            emissiveColor="0.000 0.000 0.000"
+                            ambientIntensity="0.333"
+                            shininess="0.098"
+                            transparency="0.0"/>
+               </Appearance>
+            </Transform>
+         </DEF>
+         <DEF DEF="A-to-B_TRANSFORM"
+              translation="5 10 0"
+              scale="1.000000 1.000000 1.000000"
+              rotation="-0.589434 -0.795928 -0.138079 0.839287">
+            <Transform DEF="A-to-B_ifs_TRANSFORM">
+               <Appearance>
+                  <Material DEF="MA_MaterialA-to-B"
+                            diffuseColor="0.800 0.016 0.542"
+                            specularColor="0.401 0.401 0.401"
+                            emissiveColor="0.000 0.000 0.000"
+                            ambientIntensity="0.333"
+                            shininess="0.098"
+                            transparency="0.0"/>
+               </Appearance>
+            </Transform>
+         </DEF>
+         <DEF DEF="_A-to-B_TRANSFORM"
+              translation="5 5 0"
+              scale="1.000000 1.000000 1.000000"
+              rotation="-0.589434 -0.795928 -0.138079 0.839287">
+            <Transform DEF="_A-to-B_ifs_TRANSFORM">
+               <Appearance>
+                  <Material DEF="MA_Material_A-to-B"
+                            diffuseColor="0.800 0.016 0.542"
+                            specularColor="0.401 0.401 0.401"
+                            emissiveColor="0.000 0.000 0.000"
+                            ambientIntensity="0.333"
+                            shininess="0.098"
+                            transparency="0.0"/>
+               </Appearance>
+            </Transform>
+         </DEF>
+         <DEF DEF="_A-to-A_TRANSFORM"
+              translation="3.3333333333333335 7 0"
+              scale="1.000000 1.000000 1.000000"
+              rotation="-0.589434 -0.795928 -0.138079 0.839287">
+            <Transform DEF="_A-to-A_ifs_TRANSFORM">
+               <Appearance>
+                  <Material DEF="MA_Material_A-to-A"
+                            diffuseColor="0.800 0.016 0.542"
+                            specularColor="0.401 0.401 0.401"
+                            emissiveColor="0.000 0.000 0.000"
+                            ambientIntensity="0.333"
+                            shininess="0.098"
+                            transparency="0.0"/>
+               </Appearance>
+            </Transform>
+         </DEF>
+      </ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>
+      <Transform DEF="A_TRANSFORM"
+                 translation="0 0 0"
+                 scale="1.000000 1.000000 1.000000"/>
+      <Transform DEF="B_TRANSFORM"
+                 translation="10 0 0"
+                 scale="1.000000 1.000000 1.000000"/>
+      <Transform DEF="C_TRANSFORM"
+                 translation="20 0 0"
+                 scale="1.000000 1.000000 1.000000"/>
+      <Transform DEF="A-to-B_TRANSFORM"
+                 translation="5 10 0"
+                 scale="1.000000 1.000000 1.000000"/>
+      <Transform DEF="_A-to-B_TRANSFORM"
+                 translation="5 5 0"
+                 scale="1.000000 1.000000 1.000000"/>
+      <Transform DEF="_A-to-A_TRANSFORM"
+                 translation="3.3333333333333335 7 0"
+                 scale="1.000000 1.000000 1.000000"/>
+   </Scene>
+</X3D>

@@ -38,4 +38,16 @@
       <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
       <ptn:Input_exec_Maximum_current>1</ptn:Input_exec_Maximum_current>
    </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>13</ptn:Input_exec_time>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>1</ptn:Input_exec_Maximum_current>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>14</ptn:Input_exec_time>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>1</ptn:Input_exec_Maximum_current>
+   </ptn:Input>
 </ptn:Inputs>

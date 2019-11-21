@@ -6,13 +6,17 @@
     <property name="p5_test_neuron.repository" location="${basedir}/p5_test_neuron/repository"/>
     <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
     <property name="p5_test_neuron.Inputs" location="${p5_test_neuron.basedir}/Inputs1.xml"/>
+    
     <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
+    
+    <property name="p5_test_neuron.Simulation.analyze_simulation.xml.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.Simulation.analyze_simulation.xml.xsl"/>
+    <property name="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.Simulation.analyze_simulation.x3d.xsl"/>
     
     <property name="p5_test_neuron.xsd" location="${p5_test_neuron.basedir}/test_neuron.xsd"/>
     
     
     
-    <target name="default" depends="generate_simulation_build">
+    <target name="default" depends="generate_simulation_build__x3A__exec,analyze_simulation_x3d">
         <echo> Running p5_test_neuron
             $p5_test_neuron.Config = ${p5_test_neuron.Config}
         </echo>
@@ -23,14 +27,25 @@
         <property name="p5_test_neuron.Simulation_ticks" value="10"/>
         <property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation"/>
         <property name="p5_test_neuron.Simulation.build.analys.xml" location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"/>
+        <property name="p5_test_neuron.Simulation.analyze_simulation.xml" location="${p5_test_neuron.Simulation.dir}/analyze_simulation.xml"/>
+        <property name="p5_test_neuron.Simulation.analyze_simulation.x3d" location="${p5_test_neuron.Simulation.dir}/Simulation.analyze_simulation.x3d.html"/>
         <echo>Eventually some params override
             $p5_test_neuron.Simulation_ticks} = ${p5_test_neuron.Simulation_ticks}
             $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
+            $p5_test_neuron.Simulation.analyze_simulation.xml = ${p5_test_neuron.Simulation.analyze_simulation.xml}
+            $p5_test_neuron.Simulation.analyze_simulation.x3d = ${p5_test_neuron.Simulation.analyze_simulation.x3d}
         </echo>
     </target>
     
     
-    <target name="generate_simulation_build" depends="param">
+    <target name="generate_simulation_build__x3A__if_exists_flag" depends="param">
+        <condition property="generate_simulation_build__x3A__if_exists_flag" value="exists ${p5_test_neuron.Simulation.build.analys.xml} or maybe ${p5_test_neuron.Simulation.analyze_simulation.xml}">
+            <available file="${p5_test_neuron.Simulation.analyze_simulation.xml}"/><!-- ${p5_test_neuron.Simulation.build.analys.xml} -->
+        </condition>
+        <echo>#40 $generate_simulation_build__x3A__if_exists_flag = ${generate_simulation_build__x3A__if_exists_flag}</echo>
+    </target>
+    
+    <target name="generate_simulation_build" depends="generate_simulation_build__x3A__if_exists_flag" unless="generate_simulation_build__x3A__if_exists_flag">
         <input addproperty="p5_test_neuron.Simulation.dir" message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
         <input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
         <input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>
@@ -48,6 +63,87 @@
                 <attribute name="http://saxon.sf.net/feature/initialMode"
                     value="{p5_test_neuron}Simulation.build.analys.xml"/>
                 <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+            </factory>
+            
+            <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>
+            <param name="{p5_test_neuron}Inputs" expression="${p5_test_neuron.Inputs}"/>
+            <param name="{p5_test_neuron}Simulation_ticks" expression="${p5_test_neuron.Simulation_ticks}"/>
+            <param name="{p5_test_neuron}Simulation.dir" expression="${p5_test_neuron.Simulation.dir}"/>
+            <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
+            <param name="basedir" expression="${basedir}"/>
+            <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
+            <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
+            
+            <classpath location="/opt/local/share/java/saxon9he.jar"/>
+        </xslt>
+        
+    
+    </target>
+
+    <target name="generate_simulation_build__x3A__exec" depends="generate_simulation_build">
+        <ant antfile="${p5_test_neuron.Simulation.build.analys.xml}"/>
+    </target>
+    
+    <target name="analyze_simulation_build" >
+        <input addproperty="p5_test_neuron.Simulation.dir" message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
+        <input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
+        <input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>
+        <input addproperty="p5_test_neuron.Simulation.build.analys.xml" message="p5_test_neuron.Simulation.build.analys.xml"/>
+        <input addproperty="p5_test_neuron.Simulation.analyze_simulation.xml" message="p5_test_neuron.Simulation.analyze_simulation.xml"/>
+        <echo>
+            #80 will generate p5_test_neuron.Simulation.analyze_simulation.xml = ${p5_test_neuron.Simulation.analyze_simulation.xml}
+        </echo>
+        <xslt in="${p5_test_neuron.Config}" 
+            out="${p5_test_neuron.Simulation.analyze_simulation.xml}"
+            style="${p5_test_neuron.Simulation.analyze_simulation.xml.xsl}"
+            force="true">
+            <factory name="net.sf.saxon.TransformerFactoryImpl">
+                <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                <attribute name="http://saxon.sf.net/feature/initialMode"
+                    value="{p5_test_neuron}Simulation.analyze_simulation.xml"/>
+                <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+                <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+                <!--<attribute name="http://saxon.sf.net/feature/sourceParserClass" value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>-->
+            </factory>
+            
+            <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>
+            <param name="{p5_test_neuron}Inputs" expression="${p5_test_neuron.Inputs}"/>
+            <param name="{p5_test_neuron}Simulation_ticks" expression="${p5_test_neuron.Simulation_ticks}"/>
+            <param name="{p5_test_neuron}Simulation.dir" expression="${p5_test_neuron.Simulation.dir}"/>
+            <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
+            <param name="basedir" expression="${basedir}"/>
+            <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
+            <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
+            
+            <classpath location="/opt/local/share/java/saxon9he.jar"/>
+        </xslt>
+        
+        
+        
+    </target>
+    
+    
+    <target name="analyze_simulation_x3d"  depends="analyze_simulation_build">
+        <input addproperty="p5_test_neuron.Simulation.dir" message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
+        <input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
+        <input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>
+        <input addproperty="p5_test_neuron.Simulation.build.analys.xml" message="p5_test_neuron.Simulation.build.analys.xml"/>
+        <input addproperty="p5_test_neuron.Simulation.analyze_simulation.xml" message="p5_test_neuron.Simulation.analyze_simulation.xml"/>
+        <input addproperty="p5_test_neuron.Simulation.analyze_simulation.x3d" message="p5_test_neuron.Simulation.analyze_simulation.x3d"/>
+        <echo>
+            #80 will generate p5_test_neuron.Simulation.analyze_simulation.x3d = ${p5_test_neuron.Simulation.analyze_simulation.x3d}
+        </echo>
+        <xslt in="${p5_test_neuron.Simulation.analyze_simulation.xml}" 
+            out="${p5_test_neuron.Simulation.analyze_simulation.x3d}"
+            style="${p5_test_neuron.Simulation.analyze_simulation.x3d.xsl}"
+            force="true">
+            <factory name="net.sf.saxon.TransformerFactoryImpl">
+                <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                <attribute name="http://saxon.sf.net/feature/initialMode"
+                    value="{p5_test_neuron}Simulation.analyze_simulation.x3d"/>
+                <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+                <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+                <!--<attribute name="http://saxon.sf.net/feature/sourceParserClass" value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>-->
             </factory>
             
             <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>

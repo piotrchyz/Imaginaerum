@@ -1,0 +1,215 @@
+<html><head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>X3Dom Example OnOutputChange Event</title>
+		<script type="text/javascript" src="https://x3dom.org/release/x3dom.js"> </script>
+		<link rel="stylesheet" type="text/css" href="https://www.x3dom.org/download/x3dom.css">
+			
+			
+			<!--<script>
+	/**
+	 * Uses the values of a PositionInterpolator to move another ball,
+	 * but instead of just routing the values, round the y component.
+	 * Thus the second ball moves like he is snapping to an invisible raster
+	 */
+	function snapBall(eventObject)
+	{
+		//Check if type and output of the eventObject are correct
+		//There may be multiple eventObjects but only one of them contains the value we need
+		if(eventObject.type != "outputchange" || eventObject.fieldName != "value_changed")
+			return;
+		
+		//Get the value...
+		var value = eventObject.value;
+		//...and create a copy with the manipulated coordinates
+		var newPos = new x3dom.fields.SFVec3f(2, Math.round(value.y), 0);
+	
+		//Set the newly created array as new position for the second ball
+		document.getElementById("ball2").setAttribute('translation', newPos.toString());
+		
+		//Show debug information (of course the data can be used to control non x3dom-objects, too)
+		document.getElementById("posInterp").innerHTML = Math.round(value.y*100)/100;
+		document.getElementById("posSnaped").innerHTML = newPos.y;
+	}
+	</script>-->
+			
+</head>
+	<body>
+		
+		<h1>Animate Objects with X3DOM!</h1>
+		<p>
+			Learn how to manipulate objects using values from the output of other objects.
+		</p>
+		
+		<div>
+			Y-Position of output field (routed to red ball): <span id="posInterp"></span><br>
+				Calculated Y-Position (set directly to blue ball): <span id="posSnaped"></span>
+		</div>
+		
+		<x3d width="500px" height="400px" style="width: 500px; height: 400px;">
+			<scene render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" pickmode="idBuf" dopickpass="true">
+				<!--<transform def="ball" translation="-2 0 0" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+					<shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+						<appearance sorttype="auto" alphaclipthreshold="0.1">
+							<material diffusecolor="1 0 0" ambientintensity="0.2" emissivecolor="0,0,0" shininess="0.2" specularcolor="0,0,0"></material>
+						</appearance>
+						<sphere solid="true" ccw="true" usegeocache="true" lit="true" radius="1" subdivision="24,24"></sphere>
+					</shape>
+				</transform>-->
+				<!--<Switch  id="switcher" children="ball2" render="true">--> 
+				<!--<transform def="ball2" translation="1 0 0" id="ball2" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0" >
+					<shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+						<!-\-<appearance sorttype="auto" alphaclipthreshold="0.1">
+							<!-\\-<material def="Neon17" diffusecolor="0 0 1" ambientintensity="0.2" emissivecolor="0,0,0" shininess="0.2" specularcolor="0,0,0"></material>-\\->
+							<Material DEF='Neon17'
+								ambientIntensity='0'
+								diffuseColor='0 0 0'
+								specularColor='0.622449 0.622449 0.622449'
+								emissiveColor='0.345967 0 1'
+								shininess='0.8'/>
+						</appearance>-\->
+						<Appearance>
+							<Material DEF='Neon17'
+								ambientIntensity='0'
+								diffuseColor='0 0 0'
+								specularColor='0.622449 0.622449 0.622449'
+								emissiveColor='0.345967 0 1'
+								shininess='0.8'/>
+						</Appearance>
+						<sphere solid="true" ccw="true" usegeocache="true" lit="true" radius="1" subdivision="24,24"></sphere>
+					</shape>
+				</transform>-->
+				<!--</Switch>-->
+				<!--<transform def="A" translation="10 0 0" id="A" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+					<shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+						<appearance sorttype="auto" alphaclipthreshold="0.1">
+							<material diffusecolor="0 1 1" ambientintensity="0.2" emissivecolor="0,0,0" shininess="0.2" specularcolor="0,0,0"></material>
+						</appearance>
+						<sphere solid="true" ccw="true" usegeocache="true" lit="true" radius="1" subdivision="24,24"></sphere>
+					</shape>
+				</transform>-->
+				
+				<!--<transform def="A5" id="A5" translation="3 0 0" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+					<!-\-<shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+						<appearance sorttype="auto" alphaclipthreshold="0.1">
+							<material diffusecolor="1 0 0" ambientintensity="0.2" emissivecolor="0,0,0" shininess="0.2" specularcolor="0,0,0">
+							</material></appearance>
+					</shape>-\->
+					<shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+						<appearance sorttype="auto" alphaclipthreshold="0.1">
+							<material diffusecolor="0 1 1" ambientintensity="0.2" emissivecolor="0,0,0" shininess="0.2" specularcolor="0,0,0"></material>
+						</appearance>
+						<sphere solid="true" ccw="true" usegeocache="true" lit="true" radius="1" subdivision="24,24"></sphere>
+					</shape>
+				</transform>-->
+				
+				<!--<transform render="true"
+					bboxcenter="0,0,0"
+					center="0,0,0"
+					scaleorientation="0,0,0,0"
+					bboxsize="-1,-1,-1"
+					DEF="A"
+					id="A"
+					translation="0 0 0"
+					scale="1,1,1"
+					rotation="0,0,0,0">
+					<shape render="true"
+						bboxcenter="0,0,0"
+						bboxsize="-1,-1,-1"
+						ispickable="true">
+						<appearance sorttype="auto" alphaclipthreshold="0.1">
+							<material diffuseColor="1 0 0"/>
+						</appearance>
+						
+						<sphere solid="true"
+							ccw="true"
+							usegeocache="true"
+							lit="true"
+							radius="1"
+							subdivision="24,24"/>
+					</shape>
+				</transform>-->
+				
+				<!--<timesensor def="time" cycleinterval="4" loop="true" enabled="true" first="true"></timesensor>
+				<positioninterpolator def="move" key="0 0.5 1" keyvalue="-2 -2.5 0  -2 2.5 0  -2 -2.5 0" interpolation="LINEAR"></positioninterpolator>
+				
+				<route fromnode="time" fromfield="fraction_changed" tonode="move" tofield="set_fraction"></route>
+				<route fromnode="move" fromfield="value_changed" tonode="ball" tofield="translation"></route>
+				
+				
+				
+				<positioninterpolator def="move2" key="0 0.5 1" keyvalue="2 -2.5 0  2 2.5 0  2 -2.5 0" interpolation="LINEAR"></positioninterpolator>
+				<!-\-<ScalarInterpolator def="render2" key="1,1,1" keyvalue="1,1,1  1,1,2  1,1,1  1,2,1" ></ScalarInterpolator>-\->
+				
+				
+				<route fromnode="time" fromfield="fraction_changed" tonode="move2" tofield="set_fraction"></route>
+				<!-\-<route fromnode="move2" fromfield="value_changed" tonode="ball2" tofield="translation"></route>-\->
+				<route fromnode="render2" fromfield="value_changed" tonode="ball2" tofield="scale"></route>
+				-->
+				
+				
+				<!--<Group DEF='COLOUR'>-->
+					<Group DEF='ColorAnimation'>
+						<TimeSensor DEF='ColorAnimationTimer'
+							loop='true'/>
+						<ColorInterpolator DEF='Neon17EmissiveColorInterpolator'
+							key='0, 0.2, 0.4, 0.6, 0.8, 1'
+							keyValue='1 0 0, 0.460235 0 1, 0 0.398733 1, 0.363921 1 0.0478005, 1 0.7155 0, 1 0 0'/>
+						<!--<ColorInterpolator DEF='Neon12EmissiveColorInterpolator'
+							key='0, 0.2, 0.4, 0.6, 0.8, 1'
+							keyValue='1 0.7155 0, 1 0 0, 0.460235 0 1, 0 0.398733 1, 0.363921 1 0.0478005, 1 0.7155 0'/>
+						<ColorInterpolator DEF='Neon8EmissiveColorInterpolator'
+							key='0, 0.2, 0.4, 0.6, 0.8, 1'
+							keyValue='0.363921 1 0.0478005, 1 0.7155 0, 1 0 0, 0.460235 0 1, 0 0.398733 1, 0.363921 1 0.0478005'/>
+						<ColorInterpolator DEF='Neon1EmissiveColorInterpolator'
+							key='0, 0.2, 0.4, 0.6, 0.8, 1'
+							keyValue='0 0.398733 1, 0.363921 1 0.0478005, 1 0.7155 0, 1 0 0, 0.460235 0 1, 0 0.398733 1'/>
+						<ColorInterpolator DEF='Neon25EmissiveColorInterpolator'
+							key='0, 0.2, 0.4, 0.6, 0.8, 1'
+							keyValue='0.460235 0 1, 0 0.398733 1, 0.363921 1 0.0478005, 1 0.7155 0, 1 0 0, 0.460235 0 1'/>-->
+					</Group>
+				<transform render="true"
+					bboxcenter="0,0,0"
+					center="0,0,0"
+					scaleorientation="0,0,0,0"
+					bboxsize="-1,-1,-1"
+					DEF="A"
+					id="A"
+					translation="0 0 0"
+					scale="1,1,1"
+					rotation="0,0,0,0">
+					<Shape DEF='C'>
+						<Appearance>
+							<Material DEF='Neon17'
+								ambientIntensity='0'
+								diffuseColor='0 0 0'
+								specularColor='0.622449 0.622449 0.622449'
+								emissiveColor='0.345967 0 1'
+								shininess='0.8'/>
+						</Appearance>
+						
+						<sphere solid="true" ccw="true" usegeocache="true" lit="true" radius="1" subdivision="24,24"></sphere>
+					
+				
+					</Shape>
+				</transform>
+					
+				<!--</Group>-->
+				
+				<ROUTE fromNode='ColorAnimationTimer' fromField='fraction_changed' toNode='Neon17EmissiveColorInterpolator' toField='set_fraction'> </ROUTE>
+				<ROUTE fromNode='Neon17EmissiveColorInterpolator' fromField='value_changed' toNode='Neon17' toField='set_emissiveColor'> </ROUTE>
+			
+				<!--
+				<positioninterpolator def="move3" key="0 0.5 2" keyvalue="-3 -2.5 0  -3 2.5 0  -3 -2.5 0" interpolation="LINEAR"></positioninterpolator>
+				<route fromnode="time" fromfield="fraction_changed" tonode="move3" tofield="set_fraction"></route>
+				<route fromnode="move3" fromfield="value_changed" tonode="A" tofield="translation"></route>
+				
+				-->
+				<!--<matrixtransform render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" matrix="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1"><inline render="false" bboxcenter="0,0,0" bboxsize="-1,-1,-1" url="" load="true" namespacename=""></inline></matrixtransform>--><matrixtransform render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" matrix="1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1"><inline render="false" bboxcenter="0,0,0" bboxsize="-1,-1,-1" url="" load="true" namespacename=""></inline></matrixtransform>
+			</scene>
+			<!--<canvas class="x3dom-canvas" id="x3dom-1574302079445-canvas" width="500" height="400" tabindex="0" style="width: 500px; height: 400px;"></canvas><div class="x3dom-log" style="display: none;"><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: Time for setup and init of GL element no. 0: 74 ms.</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: activate FogBindable null/defaultX3DFogNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: register FogBindable null/defaultX3DFogNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: create new Fog for X3DFogNode-stack</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: activate ViewpointBindable null/defaultX3DViewpointNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: register ViewpointBindable null/defaultX3DViewpointNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: create new Viewpoint for X3DViewpointNode-stack</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: activate BackgroundBindable null/defaultX3DBackgroundNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: register BackgroundBindable null/defaultX3DBackgroundNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: create new Background for X3DBackgroundNode-stack</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: System ready.</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: activate NavigationInfoBindable null/defaultX3DNavigationInfoNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: register NavigationInfoBindable null/defaultX3DNavigationInfoNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: NavType: undefined</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: Switch to examine mode.</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: create new NavigationInfo for X3DNavigationInfoNode-stack</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: activate EnvironmentBindable null/defaultX3DEnvironmentNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: register EnvironmentBindable null/defaultX3DEnvironmentNode</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: create new Environment for X3DEnvironmentNode-stack</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: addEventListener for X3D.onDOMNodeInserted</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: addEventListener for X3D.onDOMNodeRemoved</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: webgl context found
+				Vendor: WebKit ATI Technologies Inc., Renderer: WebKit WebGL AMD Radeon HD - FirePro D300 OpenGL Engine, Version: WebGL 1.0, ShadingLangV.: WebGL GLSL ES 1.0 (1.20), MSAA samples: 4
+				Extensions: EXT_blend_minmax, EXT_sRGB, EXT_frag_depth, OES_texture_float, OES_texture_float_linear, OES_texture_half_float, OES_texture_half_float_linear, OES_standard_derivatives, EXT_shader_texture_lod, EXT_texture_filter_anisotropic, OES_vertex_array_object, OES_element_index_uint, WEBGL_lose_context, WEBGL_compressed_texture_s3tc, WEBGL_depth_texture, WEBGL_draw_buffers, ANGLE_instanced_arrays, WEBGL_debug_renderer_info</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: Initializing X3DCanvas for [x3dom-1574302079445-canvas]</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: Creating canvas for (X)3D element...</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: Found 1 X3D and nodes...</p><p style="margin: 0px; color: rgb(0, 255, 0);">INFO: X3DOM version 1.8.1, Revison <a href="https://github.com/x3dom/x3dom/tree/0c742a1a981f8c0a9cbb7059f36c3a6c4cb9fec6">0c742a1a981f8c0a9cbb7059f36c3a6c4cb9fec6</a>, Date Fri Sep 27 18:22:15 2019 +0200</p></div><div id="x3dom-state-viewer" style="display: none;"><div class="x3dom-states-rendermode-hardware"></div><ul class="x3dom-states-list"><li class="x3dom-states-item"><div class="x3dom-states-item-title">FPS</div><div class="x3dom-states-item-value">59.82</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">ANIM</div><div class="x3dom-states-item-value">1.00</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">TRAVERSE</div><div class="x3dom-states-item-value">0.00</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">SORT</div><div class="x3dom-states-item-value">0.00</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">RENDER</div><div class="x3dom-states-item-value">1.00</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">DRAW</div><div class="x3dom-states-item-value">0.33</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">PICKING</div><div class="x3dom-states-item-value">1.00</div></li></ul><ul class="x3dom-states-list"><li class="x3dom-states-item"><div class="x3dom-states-item-title">#NODES:</div><div class="x3dom-states-item-value">10</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">#SHAPES:</div><div class="x3dom-states-item-value">3</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">#DRAWS:</div><div class="x3dom-states-item-value">3</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">#POINTS:</div><div class="x3dom-states-item-value">1,875</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">#TRIS:</div><div class="x3dom-states-item-value">3,456</div></li></ul><ul class="x3dom-states-list"><li class="x3dom-states-item"><div class="x3dom-states-item-title">#ACTIVE</div><div class="x3dom-states-item-value">0</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">#TOTAL</div><div class="x3dom-states-item-value">0</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">#LOADED</div><div class="x3dom-states-item-value">0</div></li><li class="x3dom-states-item"><div class="x3dom-states-item-title">#FAILED</div><div class="x3dom-states-item-value">0</div></li></ul></div><div class="x3dom-progress" style="display: flex; opacity: 0;"><div class="x3dom-progress-spinner"></div><div id="x3domProgessCount">0</div></div><div class="x3dom-vr"></div></x3d>
+		
+		-->
+		
+	</body></html>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:ptn="p5_test_neuron"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <title>X3Dom Example OnOutputChange Event</title>
+      <script type="text/javascript" src="https://x3dom.org/release/x3dom.js"> </script>
+      <link rel="stylesheet"
+            type="text/css"
+            href="https://www.x3dom.org/download/x3dom.css"/>
+   </head>
+   <body>
+      <p>
+                    Testing sequence capable neurons
+                </p>
+      <x3d width="800px"
+           height="600px"
+           xsi:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+         <scene render="true"
+                bboxcenter="0,0,0"
+                bboxsize="-1,-1,-1"
+                pickmode="idBuf"
+                dopickpass="true">
+            <Viewpoint id="top"
+                       description="camera"
+                       position="20 5 50"
+                       orientation="0 0 0 0"> </Viewpoint>
+            <Viewpoint id="rows"
+                       description="camera"
+                       position="-2.43383 1.07351 -5"
+                       orientation="0 -1 0 2.06609"> </Viewpoint>
+            <ptn:Simulator_tick__x3A__for-each-group name="ptn:Simulation.analyze_simulation.xml">
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="1"
+                                                  ptn:Simulation_body_tick="1"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="2"
+                                                  ptn:Simulation_body_tick="2"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="3"
+                                                  ptn:Simulation_body_tick="3"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="4"
+                                                  ptn:Simulation_body_tick="4"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="5"
+                                                  ptn:Simulation_body_tick="5"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="6"
+                                                  ptn:Simulation_body_tick="6"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="7"
+                                                  ptn:Simulation_body_tick="7"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="8"
+                                                  ptn:Simulation_body_tick="8"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="9"
+                                                  ptn:Simulation_body_tick="9"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="10"
+                                                  ptn:Simulation_body_tick="10"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="11"
+                                                  ptn:Simulation_body_tick="11"
+                                                  ptn:Simulator_tick="1"/>
+            </ptn:Simulator_tick__x3A__for-each-group>
+            <Group DEF="ColorAnimation">
+               <TimeSensor DEF="ColorAnimationTimer"
+                           cycleinterval="5"
+                           time="10"
+                           loop="true"/>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+               <ColorInterpolator DEF="A_EmissiveColorInterpolator"
+                                  keyValue="0.37 0 0 , 0.44 0 1 , 0.44 0 1 , 0.44 0 1 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.42 0 0 , 0.42 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
+               <ColorInterpolator DEF="B_EmissiveColorInterpolator"
+                                  keyValue="0.29 0 0 , 0.29 0 0 , 0.37 0 0 , 0.45 0 1 , 0.44 0 0 , 0.44 0 0 , 0.44 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 , 0.43 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
+               <ColorInterpolator DEF="C_EmissiveColorInterpolator"
+                                  keyValue="0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.33 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 , 0.35 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[A-to-B]-->
+               <ColorInterpolator DEF="A-to-B_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_A-to-B]-->
+               <ColorInterpolator DEF="_A-to-B_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_A-to-A]-->
+               <ColorInterpolator DEF="_A-to-A_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+            </Group>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="A"
+                       id="A"
+                       translation="0 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="A_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="B"
+                       id="B"
+                       translation="10 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="B_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="C"
+                       id="C"
+                       translation="20 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="C_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="A-to-B"
+                       id="A-to-B"
+                       translation="5 10 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="A-to-B_Material" diffuseColor="0 1 0" emissiveColor="0 1 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="_A-to-B"
+                       id="_A-to-B"
+                       translation="5 5 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="_A-to-B_Material" diffuseColor="0 0 1" emissiveColor="0 0 1"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="_A-to-A"
+                       id="_A-to-A"
+                       translation="3.3333333333333335 7 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="_A-to-A_Material" diffuseColor="0 0 1" emissiveColor="0 0 1"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="A_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="C_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="C_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="C_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[A-to-B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A-to-B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A-to-B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="A-to-B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_A-to-B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_A-to-B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_A-to-B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="_A-to-B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_A-to-A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_A-to-A_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_A-to-A_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="_A-to-A_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <Group><!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-B]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="A_to_A-to-B_Current_synapse_LineSet" point="0 0 0 5 10 0"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="A_to_A-to-B_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_A-to-A]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="A_to__A-to-A_Current_synapse_LineSet"
+                                 point="0 0 0 3.3333333333333335 7 0"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="A_to__A-to-A_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-B]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="B_to_A-to-B_Current_synapse_LineSet" point="10 0 0 5 10 0"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="B_to_A-to-B_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_A-to-B]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="B_to__A-to-B_Current_synapse_LineSet" point="10 0 0 5 5 0"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="B_to__A-to-B_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-B]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="_A-to-B_to_A-to-B_Current_synapse_LineSet" point="5 5 0 5 10 0"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"
+                               DEF="_A-to-B_to_A-to-B_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-B]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="_A-to-A_to_A-to-B_Current_synapse_LineSet"
+                                 point="3.3333333333333335 7 0 5 10 0"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"
+                               DEF="_A-to-A_to_A-to-B_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+            </Group>
+            <Group DEF="CoordAnimation">
+               <TimeSensor DEF="CoordAnimation_Clock"
+                           loop="true"
+                           cycleinterval="2"
+                           time="10"> </TimeSensor>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[A]  CGK[A-A-to-B] ON[A-to-B]  X[0]-->
+               <CoordinateInterpolator DEF="A_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0, 0 0 0 5 10 0"
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[A]  CGK[A-_A-to-A] ON[_A-to-A]  X[0]-->
+               <CoordinateInterpolator DEF="A_to__A-to-A_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A _A-to-A"
+                                       keyValue="0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 0 2 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0, 0 0 0 3.3333333333333335 7 0"
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-A-to-B] ON[A-to-B]  X[10]-->
+               <CoordinateInterpolator DEF="B_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0, 10 0 0 5 10 0"
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-_A-to-B] ON[_A-to-B]  X[10]-->
+               <CoordinateInterpolator DEF="B_to__A-to-B_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B _A-to-B"
+                                       keyValue="10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 10 2 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0, 10 0 0 5 5 0"
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_A-to-B]  CGK[_A-to-B-A-to-B] ON[A-to-B]  X[5]-->
+               <CoordinateInterpolator DEF="_A-to-B_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 7 0 , 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0, 5 5 0 5 10 0"
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_A-to-A]  CGK[_A-to-A-A-to-B] ON[A-to-B]  X[3.3333333333333335]-->
+               <CoordinateInterpolator DEF="_A-to-A_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B A-to-B"
+                                       keyValue="3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 3.3333333333333335 9 0 , 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0, 3.3333333333333335 7 0 5 10 0"
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+            </Group>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="A_to_A-to-B_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A_to__A-to-A_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A_to__A-to-A_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="A_to__A-to-A_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="B_to_A-to-B_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_to__A-to-B_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_to__A-to-B_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="B_to__A-to-B_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[_A-to-B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_A-to-B_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_A-to-B_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="_A-to-B_to_A-to-B_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[_A-to-A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_A-to-A_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_A-to-A_to_A-to-B_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="_A-to-A_to_A-to-B_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <timesensor def="time"
+                        cycleinterval="1"
+                        loop="true"
+                        enabled="true"
+                        first="true"> </timesensor>
+         </scene>
+      </x3d>
+      <button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
+      <button onclick="document.getElementById('top').setAttribute('set_bind','true');">top </button>
+   </body>
+</html>
