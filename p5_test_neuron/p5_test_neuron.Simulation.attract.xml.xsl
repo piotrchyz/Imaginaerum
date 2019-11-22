@@ -32,7 +32,7 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Receptor|ptn:Nodes|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor|ptn:Leaky_neuron_inhibitor__X3A__AA|ptn:Leaky_neuron_inhibitor__x3A__AB">
+    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Receptor|ptn:Nodes|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor|ptn:Leaky_neuron_inhibitor__X3A__AA|ptn:Leaky_neuron_inhibitor__x3A__AB|ptn:Leaky_neuron_inhibitor__X3A__AA">
         <xsl:copy>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
@@ -133,7 +133,11 @@
         <xsl:message terminate="yes">#92AT unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.attract__x3A__calculate" match="ptn:Receptor[ptn:Coordinate_X][ptn:Coordinate_Y][ptn:Coordinate_Z][ptn:Simulated_potential][ptn:Outputs]">
+    
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate" match="ptn:Receptor[ptn:Coordinate_X][ptn:Coordinate_Y][ptn:Coordinate_Z][ptn:Simulated_potential][ptn:Outputs]|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor__X3A__AA|ptn:Leaky_neuron_inhibitor__x3A__AB">
         <xsl:param name="ptn:Label" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Coordinate_X" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Coordinate_Y" tunnel="yes" required="yes"/>
@@ -193,6 +197,15 @@
                 <!--<xsl:comment>130bypassed - existient Synapse to <xsl:value-of select="$ptn:Output_Node"/></xsl:comment>
                 <xsl:message>130bypassed - existient Synapse to <xsl:value-of select="$ptn:Output_Node"/></xsl:message>-->
                 <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="130bypassed  existient Synapse to[$ptn:Output_Node][{$ptn:Output_Node}]"><!-- 0A create -->
+                    <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
+                    <xsl:attribute name="ptn:Label" select="ptn:Label"/>
+                    <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
+                    <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
+                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                </ptn:Simulation.attract__x3A__calculate__x3A__ignored>
+            </xsl:when>
+            <xsl:when test="$ptn:Is_inhibitor = 1">
+                <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="204bypassed  [$ptn:Is_inhibitor][{$ptn:Is_inhibitor}]"><!-- 0A create -->
                     <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>

@@ -81,7 +81,7 @@
         <xsl:message terminate="yes">#189 STRESS unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.Stress__x3A__calculate" match="ptn:Receptor[ptn:Coordinate_X][ptn:Coordinate_Y][ptn:Coordinate_Z][ptn:Simulated_potential]">
+    <xsl:template mode="ptn:Simulation.Stress__x3A__calculate" match="ptn:Receptor[ptn:Coordinate_X][ptn:Coordinate_Y][ptn:Coordinate_Z][ptn:Simulated_potential]|ptn:Leaky_neuron_standard">
         <xsl:param name="ptn:Label" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Coordinate_X" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Coordinate_Y" tunnel="yes" required="yes"/>
@@ -109,6 +109,24 @@
         
         
         <xsl:choose>
+            <xsl:when test="descendant-or-self::ptn:Input__x3A__node[text() = $ptn:Label]">
+                <ptn:Simulation.Stress__x3A__calculate__x3A__ignored ptn:debug="#1000  BYPASSED pexistient descendant-or-self::tn:Input__x3A__node[text() = $ptn:Label]=[{$ptn:Label}]"><!-- 0A create -->
+                    <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
+                    <xsl:attribute name="ptn:Label" select="ptn:Label"/>
+                    <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
+                    <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
+                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
+            </xsl:when>
+            <xsl:when test="descendant-or-self::ptn:Label[text() = $ptn:Output_Node]">
+                <ptn:Simulation.Stress__x3A__calculate__x3A__ignored ptn:debug="#132 BYPASSED pexistient $ptn:Output_Node[ptn:Label]=[{$ptn:Output_Node}]"><!-- 0A create -->
+                    <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
+                    <xsl:attribute name="ptn:Label" select="ptn:Label"/>
+                    <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
+                    <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
+                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
+            </xsl:when>
             <xsl:when test="$ptn:Input__x3A__nodes__x3A__prohibit//ptn:Input__x3A__node__x3A__prohibit[text() = $ptn:Label]">
                 <ptn:Simulation.Stress__x3A__calculate__x3A__ignored ptn:debug="#80Abypassed ptn:Input__x3A__node__x3A__prohibit label=[{ptn:Label}]"><!-- 0A create -->
                     <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
@@ -158,6 +176,9 @@
                         <ptn:Input__x3A__nodes>
                             <ptn:Input__x3A__node><xsl:value-of select="ptn:Label"/></ptn:Input__x3A__node>
                         </ptn:Input__x3A__nodes>
+                        <ptn:Input__x3A__nodes__x3A__prohibit>
+                            <ptn:Input__x3A__node__x3A__prohibit><xsl:value-of select="ptn:Label"/></ptn:Input__x3A__node__x3A__prohibit>
+                        </ptn:Input__x3A__nodes__x3A__prohibit>
                         <ptn:Simulated_potential><xsl:value-of select="ptn:Reset_potential"/></ptn:Simulated_potential><!-- todo config strategy -->
                         <!--<ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>-->
                     </ptn:Simulation.Stress__x3A__calculate__x3A__output_node>

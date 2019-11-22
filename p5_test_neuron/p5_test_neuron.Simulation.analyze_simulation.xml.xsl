@@ -121,7 +121,7 @@
     
     
     
-    <!--<xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag"/>-->
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Stress__x3A__flag"/>
         
         
     

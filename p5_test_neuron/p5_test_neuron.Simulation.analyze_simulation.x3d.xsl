@@ -60,6 +60,7 @@
                         <xsl:with-param name="ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" select="$ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" tunnel="yes"/>
                         <xsl:with-param name="ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" select="$ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" tunnel="yes"/>
                         <xsl:with-param name="ptn:Simulation.analyze_simulation.xml" select="." tunnel="yes"/>
+                        <xsl:with-param name="ptn:Simulation_body_tick__x3A__max" select="max(descendant-or-self::ptn:Simulation_body__x3A__analyze/number(@ptn:Simulation_body_tick))" tunnel="yes"/>
                     </xsl:call-template>
                 </x3d>
                 <button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
@@ -125,13 +126,13 @@
         <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.scale">1,1,1</xsl:param>
         <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.rotation">0,0,0,0</xsl:param>
         <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.bboxsize">-1,-1,-1</xsl:param>
-        
+        <xsl:param name="ptn:Simulation_body_tick__x3A__max" tunnel="yes" required="yes"/>
         <!--<ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>-->
         <!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF -->
         <Group DEF='ColorAnimation'>
             <TimeSensor DEF='ColorAnimationTimer'
-                cycleinterval="5"  time="10"
-                loop='true'/>
+                cycleinterval="{$ptn:Simulation_body_tick__x3A__max div 2}"  
+                loop='true'/><!-- time="10" -->
             <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
                 <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Group"  select=".">
                     <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
@@ -599,7 +600,7 @@
         
         <Viewpoint id="top"   description="camera"><!-- position="-0.07427 0.95329 -2.79608" --><!-- orientation="-0.01451 0.99989 0.00319 3.15833" -->
             <xsl:attribute name="position">
-                <xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_X) div 1"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) div 2"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) * 5"/>
+                <xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_X) div 10"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) div 2"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) * 5"/>
             </xsl:attribute>
             <xsl:attribute name="orientation">
                 <xsl:text>0 0 0 0</xsl:text>
@@ -624,7 +625,7 @@
     
     
     <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.timesensor">
-        <timesensor def="time" cycleinterval="{max(descendant-or-self::*/@ptn:Simulation_body_tick)}" loop="true" enabled="true" first="true"><xsl:text> </xsl:text></timesensor>
+        <timesensor def="time" cycleinterval="{max(descendant-or-self::*/number(@ptn:Simulation_body_tick))}" loop="true" enabled="true" first="true"><xsl:text> </xsl:text></timesensor>
     </xsl:template>
     
     

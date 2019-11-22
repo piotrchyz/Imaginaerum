@@ -11,6 +11,7 @@
     <xsl:strip-space elements="*"/>
     
     <xsl:include href="p5_test_neuron.Simulation.model.Stress.xml.xsl"/>
+    <xsl:include href="p5_test_neuron.Simulation.model.apply.xml.xsl"/>
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Simulation_body">
         <xsl:copy>
@@ -82,6 +83,7 @@
                 <xsl:with-param name="ptn:Simulation.attract__x3A__calculate.best.unique" select="$ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation.Stress__x3A__calculate.best.unique" select="descendant-or-self::ptn:Simulation.Stress__x3A__calculate" tunnel="yes"/>
                 <xsl:with-param name="ptn:Defaults" select="doc($ptn:Config)//ptn:Defaults" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick" tunnel="yes"/>
                 <!-- todo choose best only attracts  -->
             </xsl:apply-templates>
         </xsl:copy>
@@ -351,7 +353,7 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Output_Node" match="ptn:Receptor[ptn:Label]">
+    <xsl:template mode="ptn:Output_Node" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor__X3A__AA">
         <xsl:param name="ptn:Label" tunnel="yes" required="yes"/>
         <xsl:attribute name="ptn:Output_Node__x3A__inhibitor">_<xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label"/></xsl:attribute>
         <xsl:attribute name="ptn:Output_Node__x3A__inhibitor__x3A__self">_<xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="ptn:Label"/></xsl:attribute>
@@ -389,8 +391,9 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[following-sibling::ptn:Simulation.attract__x3A__calculate__x3A__output_node[@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type='ptn:Leaky_neuron_inhibitor__x3A__AB']][@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type][ptn:Input__x3A__nodes]">
+        <xsl:param name="ptn:Simulation_body_tick" tunnel="yes" required="yes"/>
         <xsl:element name="{@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type}" >
-            <xsl:attribute name="ptn:debug">#317M <xsl:value-of select="@ptn:Inputs"/><xsl:text> </xsl:text><xsl:value-of select="following-sibling::ptn:Simulation.attract__x3A__calculate__x3A__output_node[@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type='ptn:Leaky_neuron_inhibitor__x3A__AB']/ptn:Label"/></xsl:attribute>
+            <xsl:attribute name="ptn:debug">#317M  #324M @tick[<xsl:value-of select="$ptn:Simulation_body_tick"/>] <xsl:value-of select="@ptn:Inputs"/><xsl:text> </xsl:text><xsl:value-of select="following-sibling::ptn:Simulation.attract__x3A__calculate__x3A__output_node[@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type='ptn:Leaky_neuron_inhibitor__x3A__AB']/ptn:Label"/></xsl:attribute>
             <xsl:attribute name="ptn:New" select="true()"/>
             <!--<xsl:apply-templates></xsl:apply-templates>-->
             <xsl:copy-of select="*"/>
@@ -398,8 +401,9 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type][ptn:Input__x3A__nodes]">
+        <xsl:param name="ptn:Simulation_body_tick" tunnel="yes" required="yes"/>
         <xsl:element name="{@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type}" >
-            <xsl:attribute name="ptn:debug">#324M</xsl:attribute>
+            <xsl:attribute name="ptn:debug">#324M @tick[<xsl:value-of select="$ptn:Simulation_body_tick"/>]</xsl:attribute>
             <xsl:attribute name="ptn:New" select="true()"/>
             <xsl:copy-of select="*"/>
         </xsl:element>

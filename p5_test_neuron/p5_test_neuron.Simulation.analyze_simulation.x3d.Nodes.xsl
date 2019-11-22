@@ -32,6 +32,13 @@
                 <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
                     <xsl:choose>
                         <xsl:when test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
+                            <xsl:message>#35 DEB 
+                                @tick[<xsl:value-of select="@ptn:Simulation_body_tick"/>]
+                                @@ptn:Simulated_potential[label][<xsl:value-of select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Label__x3A__analyze "/>]
+                                @@ptn:Simulated_potential[<xsl:value-of select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential "/>]
+                               abs[V][<xsl:value-of select="abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)"/>]
+                                MX[V][<xsl:value-of select="$ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage"/>]
+                                </xsl:message>
                             <xsl:value-of select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/><xsl:text> 0</xsl:text><!-- <xsl:value-of select="($current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]//@ptn:Simulated_potential + 200) div 400"/> --><!-- <xsl:value-of select="$current-group/@ptn:Simulated_potential"/> -->
                             <xsl:choose>
                                 <xsl:when test="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/(@ptn:Attract__x3A__flag='true' and @ptn:Outputs__x3A__count = '0')"><xsl:text> 1 </xsl:text></xsl:when>
