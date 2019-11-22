@@ -10,12 +10,14 @@
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     
+    <xsl:include href="p5_test_neuron.Simulation.attract.Stress.xsl"/>
     
     <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Simulation_body">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Attract__x3A__flag.nodes" select="descendant-or-self::*[ptn:Attract__x3A__flag]" tunnel="yes"/>
+                <xsl:with-param name="ptn:Stress__x3A__flag.nodes" select="descendant-or-self::*[ptn:Stress__x3A__flag]" tunnel="yes"/>
                 <xsl:with-param name="ptn:Defaults" select="doc($ptn:Config)//ptn:Defaults" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick" tunnel="yes"/>
             </xsl:apply-templates>
@@ -48,10 +50,7 @@
         <xsl:copy-of select="."/>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Stress__x3A__flag">
-        <xsl:copy-of select="."/>
-        <xsl:message terminate="yes">#51A unsupported /n[<xsl:value-of select="name()"/>]</xsl:message>
-    </xsl:template>
+    
     
     
     
@@ -111,6 +110,7 @@
     
     <xsl:template name="ptn:Simulation.attract__x3A__calculate">
         <xsl:param name="ptn:Attract__x3A__flag.nodes" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Stress__x3A__flag" tunnel="yes" required="no"/>
         <!--<xsl:param name="ptn:Label" tunnel="yes" required="yes"/>-->
         <!--<ptn:Simulation.attract__x3A__calculate>
             
@@ -120,12 +120,13 @@
         </xsl:variable>
         <!--<xsl:copy-of select="$ptn:Simulation.attract__x3A__calculate"/>-->
         <!-- grouping node with nearest -->
-        <xsl:comment>#95 lower sorted grouped unique</xsl:comment>
+        <xsl:comment>#95 lower sorted grouped unique </xsl:comment>
         <xsl:for-each select="$ptn:Simulation.attract__x3A__calculate/ptn:Simulation.attract__x3A__calculate" >
             <xsl:sort select="@ptn:Distance" data-type="number" order="ascending"/>
             <xsl:copy-of select="."/>
         </xsl:for-each>
     </xsl:template>
+    
     
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate" match="*">

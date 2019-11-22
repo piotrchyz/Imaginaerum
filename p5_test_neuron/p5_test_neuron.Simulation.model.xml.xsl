@@ -10,6 +10,7 @@
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     
+    <xsl:include href="p5_test_neuron.Simulation.model.Stress.xml.xsl"/>
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Simulation_body">
         <xsl:copy>
@@ -17,6 +18,7 @@
             <xsl:variable name="ptn:Simulation.attract__x3A__calculate.best.unique">
                 <xsl:call-template name="ptn:Simulation.attract__x3A__calculate.best.unique"/>
             </xsl:variable>
+            
             <xsl:for-each select="$ptn:Simulation.attract__x3A__calculate.best.unique/*">
                 <xsl:copy>
                     <xsl:copy-of select="@*"/>
@@ -43,8 +45,42 @@
                 </xsl:copy>
             </xsl:for-each>
             <!--<xsl:copy-of select="$ptn:Simulation.attract__x3A__calculate.best.unique"/>-->
+            
+            <!--
+            <xsl:variable name="ptn:Simulation.Stress__x3A__calculate.best.unique">
+                <xsl:call-template name="ptn:Simulation.Stress__x3A__calculate.best.unique"/>
+            </xsl:variable>
+            
+            
+            <xsl:for-each select="$ptn:Simulation.Stress__x3A__calculate.best.unique/*">
+                <xsl:copy>
+                    <xsl:copy-of select="@*"/>
+                    <ptn:Simulation.Stress__x3A__calculate.best.unique__x3A__debug>
+                        <xsl:for-each select="*">
+                            <xsl:copy>
+                                <xsl:copy-of select="@*"/>
+                                <xsl:for-each select="ptn:Simulation.Stress__x3A__calculate__x3A__output_node">
+                                    <xsl:copy>
+                                        <xsl:copy-of select="@*"/>
+                                        <xsl:copy-of select="ptn:Label"/>
+                                        <xsl:for-each select="ptn:Outputs">
+                                            <xsl:copy>
+                                                <xsl:for-each select="ptn:Current_synapse">
+                                                    <xsl:copy-of select="ptn:Output_Node"/>
+                                                </xsl:for-each>
+                                            </xsl:copy>
+                                        </xsl:for-each>
+                                    </xsl:copy>
+                                </xsl:for-each>
+                            </xsl:copy>
+                        </xsl:for-each>
+                    </ptn:Simulation.Stress__x3A__calculate.best.unique__x3A__debug>
+                </xsl:copy>
+            </xsl:for-each>
+            -->
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulation.attract__x3A__calculate.best.unique" select="$ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation.Stress__x3A__calculate.best.unique" select="descendant-or-self::ptn:Simulation.Stress__x3A__calculate" tunnel="yes"/>
                 <xsl:with-param name="ptn:Defaults" select="doc($ptn:Config)//ptn:Defaults" tunnel="yes"/>
                 <!-- todo choose best only attracts  -->
             </xsl:apply-templates>
@@ -62,13 +98,25 @@
         <xsl:comment >#57M unintended/n[<xsl:value-of select="name()"/>]</xsl:comment>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Simulation.Stress__x3A__calculate__x3A__ignored">
+        <xsl:comment >#57MA unintended/n[<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.model.xml" match="*">
         <xsl:message terminate="yes">#29M unintended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
+    
+    
+    
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Input__x3A__nodes__x3A__prohibit">
         <xsl:copy-of select="."/>
     </xsl:template>
+    
+    
+    
+    
     
     
     
@@ -81,10 +129,12 @@
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Nodes">
         <xsl:param name="ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulation.Stress__x3A__calculate.best.unique" tunnel="yes" required="yes"/>
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
             <xsl:apply-templates mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" select="$ptn:Simulation.attract__x3A__calculate.best.unique"/>
+            <xsl:apply-templates mode="ptn:Simulation.Stress__x3A__calculate.best.unique__x3A__Nodes__x3A__install" select="$ptn:Simulation.Stress__x3A__calculate.best.unique"/>
         </xsl:copy>
     </xsl:template>
     
@@ -92,6 +142,7 @@
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard[ptn:Label]|ptn:Leaky_neuron_inhibitor[ptn:Label]|ptn:Leaky_neuron_inhibitor__x3A__AB[ptn:Label]|ptn:Leaky_neuron_inhibitor__X3A__AA[ptn:Label]">
         <xsl:param name="ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes" required="yes"/>
+        <!--<xsl:param name="ptn:Simulation.Stress__x3A__calculate.best.unique" tunnel="yes" required="yes"/>-->
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current">
@@ -120,11 +171,15 @@
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Outputs">
         <xsl:param name="ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes" required="yes"/>
+        
         <!--<xsl:param name="ptn:Label" tunnel="yes" required="yes"/>-->
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
             <xsl:apply-templates mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" select="$ptn:Simulation.attract__x3A__calculate.best.unique"/>
+            <xsl:apply-templates mode="ptn:Simulation.Stress__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" select="following-sibling::ptn:Simulation.Stress__x3A__calculate">
+                <xsl:with-param name="ptn:Label" select="preceding-sibling::ptn:Label" tunnel="yes"/>
+            </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
     
@@ -138,6 +193,8 @@
         </xsl:copy>
     </xsl:template>
     
+    
+    
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Simulation.attract__x3A__calculate">
         <xsl:param name="ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes" required="yes"/>
         <xsl:comment>#58M bypassed/n[<xsl:value-of select="name()"/>]</xsl:comment>
@@ -147,6 +204,8 @@
     <xsl:template mode="ptn:Simulation.model.xml" match="text()">
         <xsl:copy-of select="."/>
     </xsl:template>
+    
+    
     
     
     
@@ -198,8 +257,7 @@
         </ptn:Simulation.attract__x3A__calculate.best.unique>
     </xsl:template>
     
-    
-    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" match="ptn:Simulation.attract__x3A__calculate.best.unique">
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install " match="ptn:Simulation.attract__x3A__calculate.best.unique">
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
@@ -255,6 +313,7 @@
             <ptn:Output_Node><xsl:value-of select="ptn:Label"/></ptn:Output_Node>
         </ptn:Current_synapse>
     </xsl:template>
+    
     
     <!--<xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type='ptn:Leaky_neuron_inhibitor']">
         

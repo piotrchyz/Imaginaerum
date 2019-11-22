@@ -39,7 +39,7 @@
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-56.907972747467525</ptn:Simulated_potential>
          <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
+         <!--#95 lower sorted grouped unique -->
          <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
                                                  ptn:Label="B"
                                                  ptn:Distance="10"
@@ -168,7 +168,7 @@
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-56.33235628524672</ptn:Simulated_potential>
          <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
+         <!--#95 lower sorted grouped unique -->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
@@ -187,11 +187,20 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
+         <ptn:Outputs>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>C-to-C</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-64.95496000000001</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
+         <!--#102 todo transform emmit -->
+         <ptn:Output__x3A__flag__x3A__emmit/>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
@@ -284,5 +293,27 @@
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
       </ptn:Leaky_neuron_inhibitor__X3A__AA>
+      <ptn:Leaky_neuron_standard>
+         <ptn:Label>C-to-C</ptn:Label>
+         <ptn:Coordinate_X>20</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>6</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>C</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
+         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
+      </ptn:Leaky_neuron_standard>
    </ptn:Nodes>
 </ptn:Simulation_body>

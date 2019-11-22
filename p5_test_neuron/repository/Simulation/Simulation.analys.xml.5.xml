@@ -98,13 +98,16 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-64.85200000000002</ptn:Simulated_potential>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-67.4">
-            <ptn:Simulated_potential.resting.vector>-0.05199999999999989</ptn:Simulated_potential.resting.vector>
-            <ptn:Simulated_potential.input.vector>2.6</ptn:Simulated_potential.input.vector>
+         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
+         <ptn:Output__x3A__flag>true</ptn:Output__x3A__flag>
+         <ptn:Output__x3A__flag__x3A__emmit/>
+         <ptn:Stress__x3A__flag>true</ptn:Stress__x3A__flag>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-62.2">
+            <ptn:Simulated_potential.resting.vector>-0.15599999999999994</ptn:Simulated_potential.resting.vector>
+            <ptn:Simulated_potential.input.vector>7.800000000000001</ptn:Simulated_potential.input.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-67.45200000000001</ptn:Simulated_potential__x3A__vectors.sum>
-         <ptn:Simulated_potential__x3A__vectors.sum>-64.85200000000002</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-62.356</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-54.556</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>

@@ -208,6 +208,7 @@
             <xs:element name="Label" type="ptn:Label"/>
             <xs:element default="0" name="Coordinate_X" type="ptn:Coordinate"/>
             <xs:element default="0" name="Coordinate_Y" type="ptn:Coordinate"/>
+            <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
             <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance" minOccurs="0"/>
             <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="0"/>
             <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
@@ -237,6 +238,7 @@
             <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
             <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
             <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
+            <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
             <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                 type="ptn:Simulated_potential__x3A__vectors"/>
             <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -254,6 +256,7 @@
                     <xs:element name="Label" type="ptn:Label"/>
                     <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
                     <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
                     <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
                         minOccurs="1"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
@@ -287,6 +290,7 @@
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -303,6 +307,7 @@
                     <xs:element name="Label" type="ptn:Label"/>
                     <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
                     <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
                     <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
                         minOccurs="1"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
@@ -336,6 +341,7 @@
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -352,6 +358,7 @@
                     <xs:element name="Label" type="ptn:Label"/>
                     <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
                     <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
                     <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
                         minOccurs="1"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
@@ -379,6 +386,7 @@
                         type="ptn:Simulated_potential"/>
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -395,6 +403,7 @@
                     <xs:element name="Label" type="ptn:Label"/>
                     <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
                     <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
                     <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
@@ -426,6 +435,7 @@
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -442,6 +452,7 @@
                     <xs:element name="Label" type="ptn:Label"/>
                     <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
                     <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
                     <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
@@ -473,6 +484,7 @@
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
                 </xs:sequence>
@@ -486,6 +498,7 @@
                     <xs:element name="Label" type="ptn:Label"/>
                     <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
                     <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
                     <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
@@ -517,6 +530,7 @@
                     <xs:element minOccurs="0" name="Output__x3A__flag" type="ptn:Output__x3A__flag"/>
                     <xs:element minOccurs="0" ref="ptn:Output__x3A__flag__x3A__emmit"/>
                     <xs:element minOccurs="0" name="Stress__x3A__flag" type="ptn:Stress__x3A__flag"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -616,11 +630,11 @@
     </xs:element>
     <xs:element name="Nodes">
         <xs:complexType>
-            <xs:sequence>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="ptn:Leaky_neuron_standard" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0"
+                    name="Leaky_neuron_inhibitor" type="ptn:Leaky_neuron_inhibitor"/>
                 <xs:sequence maxOccurs="unbounded" minOccurs="0">
-                    <xs:element ref="ptn:Leaky_neuron_standard"/>
-                    <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0"
-                        name="Leaky_neuron_inhibitor" type="ptn:Leaky_neuron_inhibitor"/>
                     <xs:element name="Leaky_neuron_inhibitor__x3A__AB"
                         type="ptn:Leaky_neuron_inhibitor"/>
                     <xs:element name="Leaky_neuron_inhibitor__X3A__AA"
@@ -821,7 +835,7 @@ debug most feature</xs:documentation>
                 name="Simulation.attract__x3A__calculate.best.unique__x3A__debug">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:any processContents="skip"/>
+                        <xs:any processContents="skip" minOccurs="0"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
@@ -880,7 +894,8 @@ debug most feature</xs:documentation>
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="ptn:Current_synapse__x3A__emmit"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0"
+                    ref="ptn:Current_synapse__x3A__emmit"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -907,4 +922,29 @@ debug most feature</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:element name="Input__x3A__node__x3A__prohibit" type="ptn:Output_Node"/>
+    <xs:complexType name="Simulation.Stress__x3A__calculate">
+        <xs:sequence>
+            <xs:element ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
+        <xs:attribute ref="ptn:Label"/>
+        <xs:attribute ref="ptn:Label__x3A__context"/>
+        <xs:attribute ref="ptn:Output_Node"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__more_charged_node"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__diff"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__less_charged_node"/>
+        <xs:attribute ref="ptn:Distance"/>
+    </xs:complexType>
+    <xs:element name="Simulation.Stress__x3A__calculate"
+        type="ptn:Simulation.Stress__x3A__calculate"/>
+    <xs:complexType name="Simulation.Stress__x3A__calculate__x3A__output_node">
+        <xs:complexContent>
+            <xs:extension base="ptn:Node">
+                <xs:attribute ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type"
+                    use="required"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.Stress__x3A__calculate__x3A__output_node"
+        type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
 </xs:schema>

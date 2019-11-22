@@ -97,6 +97,7 @@
     <xsl:template mode="ptn:Simulated_potential.resting.vector" match="ptn:Simulated_potential[preceding-sibling::ptn:Capacitance][preceding-sibling::ptn:Resistance][preceding-sibling::ptn:Resting_potential]">
         <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulated_potential.resting.vector__x3A__offset" select="1"/>
+        <xsl:message>#100 sim deb <xsl:value-of select="preceding-sibling::ptn:Label"/></xsl:message>
         <!--<xsl:attribute name="ptn:Simulated_potential.resting.vector.1_div_membr" select="1 div preceding-sibling::ptn:Resistance"/>
         <xsl:attribute name="ptn:Simulated_potential.resting.vector.rest_pot" select=". - preceding-sibling::ptn:Resting_potential"/>-->
         

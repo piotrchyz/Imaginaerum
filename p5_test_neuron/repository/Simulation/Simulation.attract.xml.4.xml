@@ -39,7 +39,7 @@
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-56.36815154880001</ptn:Simulated_potential>
          <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
+         <!--#95 lower sorted grouped unique -->
          <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
                                                  ptn:Label="B"
                                                  ptn:Distance="10"
@@ -168,7 +168,7 @@
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-55.7688007968</ptn:Simulated_potential>
          <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
-         <!--#95 lower sorted grouped unique-->
+         <!--#95 lower sorted grouped unique -->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
@@ -189,7 +189,7 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-67.4</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-62.2</ptn:Simulated_potential>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->

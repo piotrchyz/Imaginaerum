@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="analyze_simulation_x3d">
+<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="default">
     
     
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
@@ -8,6 +8,7 @@
     <property name="p5_test_neuron.Inputs" location="${p5_test_neuron.basedir}/Inputs1.xml"/>
     
     <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
+    <property name="p5_test_neuron.snake.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron_snake.xsl"/>
     
     <property name="p5_test_neuron.Simulation.analyze_simulation.xml.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.Simulation.analyze_simulation.xml.xsl"/>
     <property name="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.Simulation.analyze_simulation.x3d.xsl"/>
@@ -29,6 +30,7 @@
         <property name="p5_test_neuron.Simulation.build.analys.xml" location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"/>
         <property name="p5_test_neuron.Simulation.analyze_simulation.xml" location="${p5_test_neuron.Simulation.dir}/analyze_simulation.xml"/>
         <property name="p5_test_neuron.Simulation.analyze_simulation.x3d" location="${p5_test_neuron.Simulation.dir}/Simulation.analyze_simulation.x3d.html"/>
+        <property name="p5_test_neuron.Simulation.snake.xml" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.snake.xml"/><!-- todo -->
         <echo>Eventually some params override
             $p5_test_neuron.Simulation_ticks} = ${p5_test_neuron.Simulation_ticks}
             $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
@@ -113,6 +115,7 @@
             <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
             <param name="basedir" expression="${basedir}"/>
             <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
+            <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
             <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
             
             <classpath location="/opt/local/share/java/saxon9he.jar"/>
