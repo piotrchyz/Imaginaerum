@@ -13,6 +13,9 @@
     
     <xsl:include href="p5_test_neuron.param.xsl"/>
     
+    <xsl:include href="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl"/>
+    <xsl:include href="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl"/>
+    <xsl:include href="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl"/>
     
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.x3d" match="ptn:Simulation.analyze_simulation.xml">
@@ -76,6 +79,7 @@
         <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF">
             <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF">
                 <xsl:with-param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" select="$ptn:Simulator_tick__x3A__for-each-group"/>
+                <xsl:with-param name="ptn:Simulation__x3A__TimeSensor" select="'ColorAnimationTimer'" tunnel="yes"/><!-- todo  -->
             </xsl:call-template>
         </xsl:param>
         
@@ -113,6 +117,137 @@
             -->
         </scene>
     </xsl:template>
+    
+    
+    <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF">
+        <!-- get elements DEF -->
+        <!--<xsl:param name="ptn:Coordinate_Z" select="0"/>-->
+        <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.scale">1,1,1</xsl:param>
+        <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.rotation">0,0,0,0</xsl:param>
+        <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.bboxsize">-1,-1,-1</xsl:param>
+        
+        <!--<ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>-->
+        <!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF -->
+        <Group DEF='ColorAnimation'>
+            <TimeSensor DEF='ColorAnimationTimer'
+                cycleinterval="5"  time="10"
+                loop='true'/>
+            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
+                <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Group"  select=".">
+                    <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
+                </xsl:apply-templates>
+            </xsl:for-each-group>
+        </Group>
+        
+        
+        <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
+            
+            <transform render="true" bboxcenter="0,0,0"
+                center="0,0,0"
+                scaleorientation="0,0,0,0"
+                bboxsize="{$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.bboxsize}">
+                <xsl:attribute name="DEF" select="@ptn:Label__x3A__analyze"/>
+                <xsl:attribute name="id" select="@ptn:Label__x3A__analyze"/>
+                <xsl:attribute name="translation">
+                    <xsl:value-of select="@ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="@ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="@ptn:Coordinate_Z"/>
+                </xsl:attribute>
+                <xsl:attribute name="scale" select="$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.scale"/>
+                <xsl:attribute name="rotation" select="$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.rotation"/>
+                <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform"  select=".">
+                    <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
+                </xsl:apply-templates>
+            </transform>                
+        </xsl:for-each-group>
+        <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
+            <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.ROUTE"  select=".">
+                <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:for-each-group>
+        
+        <!-- EOF ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- EOF ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- EOF ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF -->
+        
+        
+        <Group>
+            <!--<Shape>
+                <LineSet vertexCount='2'>
+                    <Coordinate DEF="Current_synapse_LineSet" point='5 0 0 1 5 0' />
+                </LineSet>
+                <Appearance>
+                    <Material emissiveColor='1 0 0' DEF="Current_synapse_emissiveColor"/>
+                    <LineProperties linewidthScaleFactor='5'/>
+                </Appearance>
+            </Shape>-->
+            
+            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]/ptn:Current_synapse__x3A__analyze" group-by="concat(parent::*/@ptn:Label__x3A__analyze,'-',@ptn:Output_Node__x3A__analyze)">
+                <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Shape"  select=".">
+                    <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
+                </xsl:apply-templates>
+            </xsl:for-each-group>
+        </Group>
+        <Group DEF="CoordAnimation"> 
+            <TimeSensor DEF='CoordAnimation_Clock' loop="true" cycleinterval="2"  time="10"><xsl:text> </xsl:text></TimeSensor>
+            
+            <!--<CoordinateInterpolator DEF='Current_synapse_CoordinateInterpolator' key='0, 1' keyValue='0 0 0 1 5 0 ,  0 0 1 1 10 0'><xsl:text> </xsl:text></CoordinateInterpolator>
+            <ColorInterpolator DEF="Current_synapse_ColorInterpolator"
+                keyValue="1 0 0 , 0 0 1 , 0 1 0 , 0 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"><xsl:text> </xsl:text></ColorInterpolator>-->
+            
+            
+            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]/ptn:Current_synapse__x3A__analyze" group-by="concat(parent::*/@ptn:Label__x3A__analyze,'-',@ptn:Output_Node__x3A__analyze)">
+                <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Group"  select=".">
+                    <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
+                </xsl:apply-templates>
+            </xsl:for-each-group>
+        </Group>
+        
+        <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]/ptn:Current_synapse__x3A__analyze" group-by="concat(parent::*/@ptn:Label__x3A__analyze,'-',@ptn:Output_Node__x3A__analyze)">
+            <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.ROUTE"  select=".">
+                <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
+                <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
+                <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
+                <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:for-each-group>
+        <!-- 
+        <ROUTE fromNode="ColorAnimationTimer"  fromField="fraction_changed" toNode="Current_synapse_ColorInterpolator" toField="set_fraction"><xsl:text> </xsl:text></ROUTE>
+        <ROUTE fromNode="Current_synapse_ColorInterpolator"  fromField="value_changed" toNode="Current_synapse_emissiveColor" toField="set_emissiveColor"><xsl:text> </xsl:text></ROUTE>
+        
+        <ROUTE fromNode='CoordAnimation_Clock' fromField='fraction_changed' toNode='Current_synapse_CoordinateInterpolator' toField='set_fraction'><xsl:text> </xsl:text></ROUTE>
+        <ROUTE fromNode='Current_synapse_CoordinateInterpolator' fromField='value_changed' toNode='Current_synapse_LineSet' toField='point'><xsl:text> </xsl:text></ROUTE> -->
+        <!--</ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>-->
+        
+        
+        <!-- BEGIN Current_synapse.Input --><!-- BEGIN Current_synapse.Input -->
+        <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Interpolator">
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__type" select="'CoordinateInterpolator'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" select="'Current_synapse.Input'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" select="'Coordinate'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" select="'point'" tunnel="yes"/>
+        </xsl:call-template>
+        <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Shape">
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__type" select="'CoordinateInterpolator'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" select="'Current_synapse.Input'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" select="'Coordinate'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" select="'point'" tunnel="yes"/>
+        </xsl:call-template>
+        <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Route">
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__type" select="'CoordinateInterpolator'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" select="'Current_synapse.Input'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" select="'Coordinate'" tunnel="yes"/>
+            <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" select="'point'" tunnel="yes"/>
+        </xsl:call-template>
+        
+        
+        <!-- END Current_synapse.Input --><!-- BEGIN Current_synapse.Input -->
+        
+    </xsl:template>
+    
     
     <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene.Lamp">
         <Transform DEF="Lamp_TRANSFORM"
@@ -175,214 +310,6 @@
     </xsl:template>
     
     
-    <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF">
-        <!-- get elements DEF -->
-        <!--<xsl:param name="ptn:Coordinate_Z" select="0"/>-->
-        <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.scale">1,1,1</xsl:param>
-        <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.rotation">0,0,0,0</xsl:param>
-        <xsl:param name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.bboxsize">-1,-1,-1</xsl:param>
-        
-        <!--<ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>-->
-        <Group DEF='ColorAnimation'>
-            <TimeSensor DEF='ColorAnimationTimer'
-                cycleinterval="5"  time="10"
-                loop='true'/>
-            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
-                <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Group"  select=".">
-                    <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
-                </xsl:apply-templates>
-            </xsl:for-each-group>
-        </Group>
-        
-        
-            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
-                
-                <transform render="true" bboxcenter="0,0,0"
-                    center="0,0,0"
-                    scaleorientation="0,0,0,0"
-                    bboxsize="{$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.bboxsize}">
-                    <xsl:attribute name="DEF" select="@ptn:Label__x3A__analyze"/>
-                    <xsl:attribute name="id" select="@ptn:Label__x3A__analyze"/>
-                    <xsl:attribute name="translation">
-                        <xsl:value-of select="@ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="@ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="@ptn:Coordinate_Z"/>
-                    </xsl:attribute>
-                    <xsl:attribute name="scale" select="$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.scale"/>
-                    <xsl:attribute name="rotation" select="$ptn:Simulation.analyze_simulation.x3d.Scene.Transform.rotation"/>
-                    <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform"  select=".">
-                        <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
-                    </xsl:apply-templates>
-                </transform>                
-            </xsl:for-each-group>
-        <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
-            <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.ROUTE"  select=".">
-                <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
-            </xsl:apply-templates>
-        </xsl:for-each-group>
-        
-        <Group>
-            <!--<Shape>
-                <LineSet vertexCount='2'>
-                    <Coordinate DEF="Current_synapse_LineSet" point='5 0 0 1 5 0' />
-                </LineSet>
-                <Appearance>
-                    <Material emissiveColor='1 0 0' DEF="Current_synapse_emissiveColor"/>
-                    <LineProperties linewidthScaleFactor='5'/>
-                </Appearance>
-            </Shape>-->
-            
-            
-            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]/ptn:Current_synapse__x3A__analyze" group-by="concat(parent::*/@ptn:Label__x3A__analyze,'-',@ptn:Output_Node__x3A__analyze)">
-                <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Shape"  select=".">
-                    <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
-                </xsl:apply-templates>
-            </xsl:for-each-group>
-            
-        </Group>
-        <Group DEF="CoordAnimation"> 
-            <TimeSensor DEF='CoordAnimation_Clock' loop="true" cycleinterval="2"  time="10"><xsl:text> </xsl:text></TimeSensor>
-            
-            <!--<CoordinateInterpolator DEF='Current_synapse_CoordinateInterpolator' key='0, 1' keyValue='0 0 0 1 5 0 ,  0 0 1 1 10 0'><xsl:text> </xsl:text></CoordinateInterpolator>
-            <ColorInterpolator DEF="Current_synapse_ColorInterpolator"
-                keyValue="1 0 0 , 0 0 1 , 0 1 0 , 0 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
-                key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"><xsl:text> </xsl:text></ColorInterpolator>-->
-            
-            
-            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]/ptn:Current_synapse__x3A__analyze" group-by="concat(parent::*/@ptn:Label__x3A__analyze,'-',@ptn:Output_Node__x3A__analyze)">
-                <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Group"  select=".">
-                    <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
-                </xsl:apply-templates>
-            </xsl:for-each-group>
-        </Group>
-        
-        <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]/ptn:Current_synapse__x3A__analyze" group-by="concat(parent::*/@ptn:Label__x3A__analyze,'-',@ptn:Output_Node__x3A__analyze)">
-            <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.ROUTE"  select=".">
-                <xsl:with-param name="ptn:Label__x3A__analyze" select="parent::*/@ptn:Label__x3A__analyze" tunnel="yes"/>
-                <xsl:with-param name="ptn:Coordinate_X" select="parent::*/@ptn:Coordinate_X" tunnel="yes"/>
-                <xsl:with-param name="ptn:Coordinate_Y" select="parent::*/@ptn:Coordinate_Y" tunnel="yes"/>
-                <xsl:with-param name="ptn:Coordinate_Z" select="parent::*/@ptn:Coordinate_Z" tunnel="yes"/>
-            </xsl:apply-templates>
-        </xsl:for-each-group>
-       <!-- 
-        <ROUTE fromNode="ColorAnimationTimer"  fromField="fraction_changed" toNode="Current_synapse_ColorInterpolator" toField="set_fraction"><xsl:text> </xsl:text></ROUTE>
-        <ROUTE fromNode="Current_synapse_ColorInterpolator"  fromField="value_changed" toNode="Current_synapse_emissiveColor" toField="set_emissiveColor"><xsl:text> </xsl:text></ROUTE>
-        
-        <ROUTE fromNode='CoordAnimation_Clock' fromField='fraction_changed' toNode='Current_synapse_CoordinateInterpolator' toField='set_fraction'><xsl:text> </xsl:text></ROUTE>
-        <ROUTE fromNode='Current_synapse_CoordinateInterpolator' fromField='value_changed' toNode='Current_synapse_LineSet' toField='point'><xsl:text> </xsl:text></ROUTE> -->
-        <!--</ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>-->
-    </xsl:template>
-    
-    
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Group" match="*">
-        <xsl:message terminate="yes">#257 ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Group /n [<xsl:value-of select="name()"/>]</xsl:message>
-    </xsl:template>
-    
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Group" match="ptn:Current_synapse__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulation_body_tick" select="parent::*/parent::*/@ptn:Simulation_body_tick"/>
-        <xsl:param name="ptn:Output_Node__x3A__analyze" select="@ptn:Output_Node__x3A__analyze"/>
-        <xsl:param name="ptn:Attract__x3A__flag" select="parent::*/@ptn:Attract__x3A__flag"/>
-        <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Simulation.analyze_simulation.xml" tunnel="yes" required="yes"/>
-        <!--<xsl:param name="current-group" tunnel="yes" required="yes"/>-->
-        <xsl:variable name="current-group" select="current-group()"/>
-        <xsl:comment>#206S DEF.ROUTE match[<xsl:value-of select="name()"/>] AF[<xsl:value-of select="$ptn:Attract__x3A__flag"/>] @tick[<xsl:value-of select="$ptn:Simulation_body_tick"/>] $L[<xsl:value-of select="$ptn:Label__x3A__analyze"/>]  CGK[<xsl:value-of select="current-grouping-key()"/>] ON[<xsl:value-of select="$ptn:Output_Node__x3A__analyze"/>]  X[<xsl:value-of select="$ptn:Coordinate_X"/>] Z[<xsl:value-of select="$ptn:Coordinate_Z"/>]</xsl:comment>
-        <!--<xsl:apply-templates mode="#current" select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:apply-templates>-->
-        <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">#296 empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
-        <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
-        
-            <CoordinateInterpolator DEF="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_CoordinateInterpolator" 
-                current-group.n="{$current-group/name()}" cgo="{$current-group/@ptn:Output_Node__x3A__analyze}"><!-- key="0, 0.2, 0.4, 0.6, 0.8, 1" -->
-                <xsl:attribute name="keyValue">
-                    <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
-                        <xsl:choose>
-                            <xsl:when test="$current-group[parent::*/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]][@ptn:Output_Node__x3A__analyze = $ptn:Output_Node__x3A__analyze]"><!-- test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]" -->
-                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z"/><xsl:text> </xsl:text>
-                            </xsl:when>
-                            <!-- attract show -->
-                            <xsl:when test="$ptn:Attract__x3A__flag = true()"><!-- test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]" -->
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Label__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z + 1"/><xsl:text> </xsl:text>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
-                                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z + 2"/><xsl:text> </xsl:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                        <xsl:choose>
-                            <xsl:when test="position() = last()"/>
-                            <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </xsl:attribute>
-                <xsl:attribute name="key">
-                    <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)">
-                        <xsl:choose>
-                            <xsl:when test="position() = last()">
-                                <xsl:value-of select="1"/>
-                            </xsl:when>
-                            <xsl:when test="position() = 1">
-                                <xsl:value-of select="0"/><xsl:text>, </xsl:text>
-                            </xsl:when>
-                            <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </xsl:attribute><xsl:text> </xsl:text>
-            </CoordinateInterpolator>
-        <!--<ColorInterpolator DEF="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_ColorInterpolator" ><!-\- key="0, 0.2, 0.4, 0.6, 0.8, 1" -\->
-            <xsl:attribute name="keyValue">
-                <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
-                    <xsl:choose>
-                        <xsl:when test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
-                            <xsl:value-of select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/><xsl:text> 0</xsl:text><!-\- <xsl:value-of select="($current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]//@ptn:Simulated_potential + 200) div 400"/> -\-><!-\- <xsl:value-of select="$current-group/@ptn:Simulated_potential"/> -\->
-                            <xsl:choose>
-                                <xsl:when test="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/(@ptn:Attract__x3A__flag='true' and @ptn:Outputs__x3A__count = '0')"><xsl:text> 1 </xsl:text></xsl:when>
-                                <xsl:otherwise> 0 </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>1 1 1 </xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:choose>
-                        <xsl:when test="position() = last()"/>
-                        <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
-            </xsl:attribute>
-            <xsl:attribute name="key">
-                <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)">
-                    <xsl:choose>
-                        <xsl:when test="position() = last()">
-                            <xsl:value-of select="1"/>
-                        </xsl:when>
-                        <xsl:when test="position() = 1">
-                            <xsl:value-of select="0"/><xsl:text>, </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
-            </xsl:attribute><xsl:text> </xsl:text>
-        </ColorInterpolator>-->
-        
-    </xsl:template>
     
     
     
@@ -398,107 +325,10 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Group" match="*">
-        <xsl:comment>#200 DEF.ROUTE match[<xsl:value-of select="name()"/>]</xsl:comment>
-    </xsl:template>
-    
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Group" match="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze|ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze|ptn:Receptor__x3A__analyze|ptn:Leaky_neuron_standard__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" tunnel="yes" required="yes"/>
-        <xsl:comment>#204 DEF.ROUTE match[<xsl:value-of select="name()"/>] @tick[<xsl:value-of select="parent::*/@ptn:Simulation_body_tic"/>] $n[<xsl:value-of select="$ptn:Label__x3A__analyze"/>]</xsl:comment>
-        <!--<xsl:apply-templates mode="#current" select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:apply-templates>-->
-        <xsl:variable name="current-group" select="current-group()"/>
-        <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
-        <ColorInterpolator DEF="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator" ><!-- key="0, 0.2, 0.4, 0.6, 0.8, 1" -->
-            <xsl:attribute name="keyValue">
-                <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
-                    <xsl:choose>
-                        <xsl:when test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
-                            <xsl:value-of select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/><xsl:text> 0</xsl:text><!-- <xsl:value-of select="($current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]//@ptn:Simulated_potential + 200) div 400"/> --><!-- <xsl:value-of select="$current-group/@ptn:Simulated_potential"/> -->
-                            <xsl:choose>
-                                <xsl:when test="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/(@ptn:Attract__x3A__flag='true' and @ptn:Outputs__x3A__count = '0')"><xsl:text> 1 </xsl:text></xsl:when>
-                                <xsl:otherwise> 0 </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:text>1 1 1 </xsl:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:choose>
-                        <xsl:when test="position() = last()"/>
-                        <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
-            </xsl:attribute>
-            <xsl:attribute name="key">
-                <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)">
-                    <xsl:choose>
-                        <xsl:when test="position() = last()">
-                            <xsl:value-of select="1"/>
-                        </xsl:when>
-                        <xsl:when test="position() = 1">
-                            <xsl:value-of select="0"/><xsl:text>, </xsl:text>
-                        </xsl:when>
-                        <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise>
-                    </xsl:choose>
-                </xsl:for-each>
-            </xsl:attribute><xsl:text> </xsl:text>
-        </ColorInterpolator>
-       <!-- <ROUTE fromNode="{$ptn:Label__x3A__analyze}_ColorInterpolator"
-            fromField="fraction_changed"
-            toNode="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator"
-            toField="set_fraction"><xsl:text> </xsl:text></ROUTE>
-        <ROUTE fromNode="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator"
-            fromField="value_changed"
-            toNode="{$ptn:Label__x3A__analyze}_Material"
-            toField="set_emissiveColor"><xsl:text> </xsl:text></ROUTE>-->
-    </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.ROUTE" match="*">
-        <xsl:message terminate="yes">#444 unantended[<xsl:value-of select="name()"/>]</xsl:message>
-    </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.ROUTE" match="ptn:Current_synapse__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Output_Node__x3A__analyze" select="@ptn:Output_Node__x3A__analyze"/>
-        <xsl:comment>#451 SYNPS DEF.ROUTE match[<xsl:value-of select="name()"/>] @tick[<xsl:value-of select="parent::*/@ptn:Simulation_body_tic"/>] $n[<xsl:value-of select="$ptn:Label__x3A__analyze"/>]</xsl:comment>
-        <!--<xsl:apply-templates mode="#current" select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:apply-templates>-->
-        <xsl:variable name="current-group" select="current-group()"/>
-        <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
-        <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">#489 empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
-        <ROUTE fromNode="ColorAnimationTimer"
-            fromField="fraction_changed"
-            toNode="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_CoordinateInterpolator"
-            toField="set_fraction"><xsl:text> </xsl:text></ROUTE><!-- CoordAnimation_Clock -->
-        <ROUTE fromNode="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_CoordinateInterpolator"
-            fromField="value_changed"
-            toNode="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_LineSet"
-            toField="point"><xsl:text> </xsl:text></ROUTE>
-    </xsl:template>
-    
-    
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.ROUTE" match="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze|ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze|ptn:Receptor__x3A__analyze|ptn:Leaky_neuron_standard__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" required="yes" tunnel="yes"/>
-        <xsl:comment>#204 DEF.ROUTE match[<xsl:value-of select="name()"/>] @tick[<xsl:value-of select="parent::*/@ptn:Simulation_body_tic"/>] $n[<xsl:value-of select="$ptn:Label__x3A__analyze"/>]</xsl:comment>
-        <!--<xsl:apply-templates mode="#current" select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:apply-templates>-->
-        <xsl:variable name="current-group" select="current-group()"/>
-        <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
-        <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">#478 empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
-        <ROUTE fromNode="ColorAnimationTimer"
-            fromField="fraction_changed"
-            toNode="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator"
-            toField="set_fraction"><xsl:text> </xsl:text></ROUTE>
-        <ROUTE fromNode="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator"
-            fromField="value_changed"
-            toNode="{$ptn:Label__x3A__analyze}_Material"
-            toField="set_emissiveColor"><xsl:text> </xsl:text></ROUTE>
-    </xsl:template>
     
     <xsl:attribute-set name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape">
         <xsl:attribute name="render" select="true()"/>
@@ -521,82 +351,222 @@
     </xsl:attribute-set>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Shape" match="*">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <xsl:message terminate="yes">#475 unantended n[<xsl:value-of select="name()"/>]</xsl:message>
-    </xsl:template>
-    
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Shape" match="ptn:Current_synapse__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Simulation.analyze_simulation.xml" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Output_Node__x3A__analyze" select="@ptn:Output_Node__x3A__analyze"/>
+    <xsl:template name="ptn:MFVec3f__x3A__sequence">
         <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
-        <xsl:comment>#480 n[<xsl:value-of select="name()"/>]  ON[<xsl:value-of select="$ptn:Output_Node__x3A__analyze"/>]</xsl:comment>
-        <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
-        <Shape>
-            <LineSet vertexCount='2'>
-                <Coordinate DEF="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_LineSet"  ><!-- point='5 0 0 1 5 0' -->
-                    <xsl:attribute name="point">
-                        <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                        <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
-                        <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
-                        <!--<xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                        <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_Y"/><xsl:text> 0</xsl:text>-->
-                        <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/><xsl:text> </xsl:text>
-                        <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/><xsl:text> </xsl:text>
-                        <xsl:value-of select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Output_Node__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z"/><xsl:text> </xsl:text>
-                    </xsl:attribute>
-                    <xsl:text> </xsl:text></Coordinate>
-            </LineSet>
-            <Appearance>
-                <Material emissiveColor='1 0 0' DEF="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_emissiveColor"><xsl:text> </xsl:text></Material>
-                <LineProperties linewidthScaleFactor='5'><xsl:text> </xsl:text></LineProperties>
-            </Appearance>
-        </Shape>
+        <xsl:param name="ptn:Coordinate_X__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Y__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:MFVec3f__x3A__sequence__x3A__last" required="yes"/>
+        <xsl:param name="ptn:MFVec3f__x3A__distance" required="no" select="-1"/>
+        <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"/>
+        <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote"/>
+        
+        <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
+        <xsl:choose>
+            <xsl:when test="$ptn:MFVec3f__x3A__distance = -1">
+                <xsl:value-of select="$ptn:Coordinate_X__x3A__remote"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Y__x3A__remote"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z__x3A__remote"/><xsl:text> </xsl:text>
+            </xsl:when>
+            <xsl:when test="$ptn:MFVec3f__x3A__distance = 0">
+                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:message terminate="yes">#364 $ptn:MFVec3f__x3A__distance[ELSE]</xsl:message>
+            </xsl:otherwise>
+        </xsl:choose>
+        
+        <xsl:choose>
+            <xsl:when test="$ptn:MFVec3f__x3A__sequence__x3A__last = true()"></xsl:when>
+            <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="ptn:Receptor__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <shape xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape">
-            <appearance xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape.appearance">
-                <material DEF="{$ptn:Label__x3A__analyze}_Material"
-                    emissiveColor="1 0 0"
-                    ><xsl:text> </xsl:text></material><!-- diffuseColor="1 0 0" -->
-            </appearance>
-            <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element"/>
-        </shape>
-    </xsl:template>
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="ptn:Leaky_neuron_standard__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <shape xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape">
-            <appearance xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape.appearance">
-                <material DEF="{$ptn:Label__x3A__analyze}_Material"
-                    diffuseColor="0 1 0" emissiveColor="0 1 0"><xsl:text> </xsl:text></material>
-            </appearance>
-            <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element"/>
-        </shape>
-    </xsl:template>
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze|ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze">
-        <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <shape xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape">
-            <appearance xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape.appearance">
-                <material DEF="{$ptn:Label__x3A__analyze}_Material"
-                    diffuseColor="0 0 1" emissiveColor="0 0 1"><xsl:text> </xsl:text></material>
-            </appearance>
-            <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element"/>
-        </shape>
+    <xsl:template name="ptn:MFVec3f__x3A__section__x3A__sequence">
+        <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_X__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Y__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:MFVec3f__x3A__sequence__x3A__last" required="yes"/>
+        <xsl:param name="ptn:MFVec3f__x3A__distance__x3A__percent" required="no" tunnel="yes"/><!-- 0...1 -->
+        <xsl:param name="ptn:MFVec3f__x3A__length" required="yes" tunnel="yes"/><!-- suma  ptn:Input_exec_Time_constant__x3A__analyze -->
+        <!-- todo dlugosc -->
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_all" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position" required="yes" tunnel="yes"/> 
+        <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"/>
+        <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote"/>
+        
+        <xsl:variable name="x" select="- $ptn:Coordinate_X + $ptn:Coordinate_X__x3A__remote"/>
+        <xsl:variable name="y" select="- $ptn:Coordinate_Y + $ptn:Coordinate_Y__x3A__remote"/>
+        <xsl:variable name="z" select="- $ptn:Coordinate_Z + $ptn:Coordinate_Z__x3A__remote"/>
+        <xsl:variable name="xt" select="$ptn:Coordinate_X - $x"/>
+        <xsl:variable name="yt" select="$ptn:Coordinate_Y - $y"/>
+        <xsl:variable name="zt" select="$ptn:Coordinate_Z - $z"/>
+        <xsl:variable name="percent" select="1 div $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active * $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position"/>
+        <xsl:text>xt:</xsl:text><xsl:value-of select="$xt"/><xsl:text>  </xsl:text>
+        <xsl:text>yt:</xsl:text><xsl:value-of select="$yt"/><xsl:text>  </xsl:text>
+        <xsl:text>zt:</xsl:text><xsl:value-of select="$zt"/><xsl:text>  </xsl:text>
+        <xsl:text>%:</xsl:text><xsl:value-of select="$percent"/><xsl:text>  </xsl:text>
+        <xsl:value-of select="$ptn:Coordinate_X - $xt * 1 div $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active * $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
+        
+        <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
+        
+        <!-- 1,3,2 (to)..... -5,0,4 (t1)-->
+        <!-- -6,-3,-2 -->
+        <!-- r t 1,3,2) + t -6 -3 -2 -->
+        <!-- tx = I -6t 
+        y= 3-3t
+        z = 2+2t
+        -->
+        
+        
+        <xsl:choose>
+            <xsl:when test="$ptn:MFVec3f__x3A__sequence__x3A__last = true()"></xsl:when>
+            <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     
-    <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element">
-        <sphere solid="true" ccw="true" usegeocache="true" lit="true" radius="1" subdivision="24,24"/>
+    <xsl:template name="ptn:MFColor__x3A__sequence">
+        <xsl:param name="ptn:MFColor__x3A__R" required="yes" />
+        <xsl:param name="ptn:MFColor__x3A__G" required="yes" />
+        <xsl:param name="ptn:MFColor__x3A__B" required="yes" />
+        <xsl:param name="ptn:MFColor__x3A__sequence__x3A__last" required="yes"/>
+        <xsl:value-of select="$ptn:MFColor__x3A__R"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:MFColor__x3A__G"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:MFColor__x3A__B"/><xsl:text> </xsl:text>
+        <xsl:choose>
+            <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__last = true()"></xsl:when>
+            <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="*">
-        <ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform name="{name()}"/>      
+    <xsl:template name="ptn:Simulation__x3A__ROUTE">
+        <xsl:param name="ptn:Simulation__x3A__TimeSensor" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Label__x3A__analyze" required="yes" tunnel="yes"/><!-- main tag -->
+        <xsl:param name="ptn:Output_Node__x3A__analyze" required="no" tunnel="yes"/><!-- remote tag -->
+        <xsl:param name="ptn:Input_exec_time__x3A__initial__x3A__analyze" required="no" tunnel="yes"/><!-- extra tag -->
+        <xsl:param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" required="yes" tunnel="yes"/><!-- Current_synapse_Input -->
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__type" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" required="yes" tunnel="yes"/>
+        <ROUTE fromNode="{$ptn:Simulation__x3A__TimeSensor}"
+            fromField="fraction_changed"
+            toField="set_fraction">
+            <xsl:attribute name="toNode">
+                <xsl:call-template name="ptn:Simulation__x3A__DEF_Interpolator"/>
+            </xsl:attribute>
+            <xsl:text> </xsl:text></ROUTE>
+        <ROUTE 
+            fromField="value_changed"
+            toField="{$ptn:Simulation__x3A__Interpolator__x3A__target_field}">
+            <xsl:attribute name="fromNode">
+                <xsl:call-template name="ptn:Simulation__x3A__DEF_Interpolator"/>
+            </xsl:attribute>
+            <xsl:attribute name="toNode">
+                <xsl:call-template name="ptn:Simulation__x3A__DEF_target"/>
+            </xsl:attribute>
+            <xsl:text> </xsl:text></ROUTE>
+    </xsl:template>
+    
+    <xsl:template name="ptn:Simulation__x3A__DEF_Interpolator">
+        <xsl:param name="ptn:Label__x3A__analyze" required="yes" tunnel="yes"/><!-- main tag -->
+        <xsl:param name="ptn:Output_Node__x3A__analyze" required="no" tunnel="yes"/><!-- remote tag -->
+        <xsl:param name="ptn:Input_exec_time__x3A__initial__x3A__analyze" required="no" tunnel="yes"/><!-- extra tag -->
+        <xsl:param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" required="yes" tunnel="yes"/><!-- Current_synapse_Input -->
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__type" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" required="yes" tunnel="yes"/>
+        <xsl:value-of select="$ptn:Label__x3A__analyze"/><xsl:text>_</xsl:text>
+        <xsl:choose>
+            <xsl:when test="$ptn:Output_Node__x3A__analyze"><xsl:value-of select="$ptn:Output_Node__x3A__analyze"/><xsl:text>_</xsl:text></xsl:when>
+        </xsl:choose>
+        <xsl:choose>
+            <xsl:when test="$ptn:Input_exec_time__x3A__initial__x3A__analyze"><xsl:value-of select="$ptn:Input_exec_time__x3A__initial__x3A__analyze"/><xsl:text>_</xsl:text></xsl:when>
+        </xsl:choose>
+        <xsl:value-of select="$ptn:Simulation__x3A__DEF__x3A__elements__x3A__group"/><xsl:text>_</xsl:text>
+        <xsl:value-of select="$ptn:Simulation__x3A__Interpolator__x3A__type"/><xsl:text>_</xsl:text>
+        <xsl:value-of select="$ptn:Simulation__x3A__Interpolator__x3A__target_field"/>
+    </xsl:template>
+    
+    <xsl:template name="ptn:Simulation__x3A__DEF_target">
+        <xsl:param name="ptn:Label__x3A__analyze" required="yes" tunnel="yes"/><!-- main tag -->
+        <xsl:param name="ptn:Output_Node__x3A__analyze" required="no" tunnel="yes"/><!-- remote tag -->
+        <xsl:param name="ptn:Input_exec_time__x3A__initial__x3A__analyze" required="no" tunnel="yes"/><!-- extra tag -->
+        <xsl:param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" required="yes" tunnel="yes"/><!-- Current_synapse_Input -->
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" required="yes" tunnel="yes"/>
+        <xsl:value-of select="$ptn:Label__x3A__analyze"/><xsl:text>_</xsl:text>
+        <xsl:choose>
+            <xsl:when test="$ptn:Output_Node__x3A__analyze"><xsl:value-of select="$ptn:Output_Node__x3A__analyze"/><xsl:text>_</xsl:text></xsl:when>
+        </xsl:choose>
+        <xsl:choose>
+            <xsl:when test="$ptn:Input_exec_time__x3A__initial__x3A__analyze"><xsl:value-of select="$ptn:Input_exec_time__x3A__initial__x3A__analyze"/><xsl:text>_</xsl:text></xsl:when>
+        </xsl:choose>
+        <xsl:value-of select="$ptn:Simulation__x3A__DEF__x3A__elements__x3A__group"/><xsl:text>_</xsl:text>
+        <xsl:value-of select="$ptn:Simulation__x3A__Interpolator__x3A__target"/><xsl:text>_</xsl:text>
+        <xsl:value-of select="$ptn:Simulation__x3A__Interpolator__x3A__target_field"/>
+    </xsl:template>
+    
+    
+    <xsl:template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local">
+        <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
+        <xsl:if test="string-length($ptn:Coordinate_X) = 0"><xsl:message terminate="yes">#63X ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+        <xsl:if test="string-length($ptn:Coordinate_Y) = 0"><xsl:message terminate="yes">#63Y ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+        <xsl:if test="string-length($ptn:Coordinate_Z) = 0"><xsl:message terminate="yes">#63Z ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote">
+        <xsl:param name="ptn:Coordinate_X__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Y__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z__x3A__remote" required="yes" tunnel="yes"/>
+        <xsl:if test="string-length($ptn:Coordinate_X__x3A__remote) = 0"><xsl:message terminate="yes">#63XX ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+        <xsl:if test="string-length($ptn:Coordinate_Y__x3A__remote) = 0"><xsl:message terminate="yes">#63YY ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+        <xsl:if test="string-length($ptn:Coordinate_Z__x3A__remote) = 0"><xsl:message terminate="yes">#63ZZ ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key">
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" required="yes"/>
+        <xsl:attribute name="key">
+            <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)">
+                <xsl:choose>
+                    <xsl:when test="position() = last()">
+                        <xsl:value-of select="1"/>
+                    </xsl:when>
+                    <xsl:when test="position() = 1">
+                        <xsl:value-of select="0"/><xsl:text>, </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </xsl:attribute>
+    </xsl:template>
+    
+    <xsl:template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_all">
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" required="yes"/>
+        <xsl:value-of select="count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)"/>
+    </xsl:template>
+    
+    <xsl:template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active">
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" required="yes"/>
+        <xsl:param name="current-group" required="yes" tunnel="yes"/>
+        <xsl:value-of select="count($current-group)"/>
     </xsl:template>
     
     

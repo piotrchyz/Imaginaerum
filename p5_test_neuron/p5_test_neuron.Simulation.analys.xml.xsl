@@ -34,6 +34,7 @@
                 <xsl:with-param name="ptn:Inputs" select="$ptn:Inputs" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Attract_min" tunnel="yes" select="ptn:Defaults/ptn:Attract_min"/>
+                <xsl:with-param name="ptn:Simulation_body" select="ptn:Receptors" tunnel="yes"/>
             </xsl:apply-templates>
             <ptn:Nodes>
                 
@@ -129,6 +130,12 @@
                         <xsl:when test="position() = last()">
                             <ptn:Input ptn:debug="#97 optimized input {.} to {ceiling($ptn:Input//ptn:Input_exec_Time_constant)} for $ptn:Simulator_tick={$ptn:Simulator_tick}">
                                 <ptn:Input_exec_time><xsl:value-of select="$ptn:Input//ptn:Input_exec_time + ( . - 1) * $ptn:Simulator_tick "/></ptn:Input_exec_time>
+                                <xsl:choose>
+                                    <xsl:when test="$ptn:Input//ptn:Input_exec_time__x3A__initial"/>
+                                    <xsl:otherwise>
+                                        <ptn:Input_exec_time__x3A__initial><xsl:value-of select="$ptn:Input//ptn:Input_exec_time"/></ptn:Input_exec_time__x3A__initial>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                                 <xsl:copy-of select="$ptn:Input//ptn:Input_exec_receptor"/>
                                 <ptn:Input_exec_Time_constant><!--<xsl:value-of select="$ptn:Input//ptn:Input_exec_Time_constant - . + $ptn:Simulator_tick"/>-->
                                     <xsl:choose>
@@ -141,11 +148,18 @@
                                     </xsl:choose>
                                 </ptn:Input_exec_Time_constant>
                                 <xsl:copy-of select="$ptn:Input//ptn:Input_exec_Maximum_current"/>
+                                
                             </ptn:Input>
                         </xsl:when>
                         <xsl:otherwise>
                             <ptn:Input ptn:debug="#106 optimized input {.} to {ceiling($ptn:Input//ptn:Input_exec_Time_constant)} for $ptn:Simulator_tick={$ptn:Simulator_tick}">
                                 <ptn:Input_exec_time><xsl:value-of select="$ptn:Input//ptn:Input_exec_time + ( . - 1) * $ptn:Simulator_tick"/></ptn:Input_exec_time>
+                                <xsl:choose>
+                                    <xsl:when test="$ptn:Input//ptn:Input_exec_time__x3A__initial"/>
+                                    <xsl:otherwise>
+                                        <ptn:Input_exec_time__x3A__initial><xsl:value-of select="$ptn:Input//ptn:Input_exec_time"/></ptn:Input_exec_time__x3A__initial>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                                 <xsl:copy-of select="$ptn:Input//ptn:Input_exec_receptor"/>
                                 <ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Simulator_tick"/></ptn:Input_exec_Time_constant>
                                 <xsl:copy-of select="$ptn:Input//ptn:Input_exec_Maximum_current"/>
@@ -172,6 +186,12 @@
                         <xsl:when test="position() = last()">
                             <ptn:Input ptn:debug="#97CC [FORCED][ptn:Input_time][to NOW[{$ptn:Input_time__x3A__attract}]] optimized input {.} to {ceiling($ptn:Current_synapse//ptn:Input_constant)} for $ptn:Simulator_tick={$ptn:Simulator_tick} [+[ptn:Delay[{$ptn:Current_synapse/ptn:Delay}]]]">
                                 <ptn:Input_exec_time><xsl:value-of select="($ptn:Input_time__x3A__attract + ( . - 1) * $ptn:Simulator_tick) + number($ptn:Current_synapse/ptn:Delay)"/></ptn:Input_exec_time>
+                                <xsl:choose>
+                                    <xsl:when test="$ptn:Current_synapse//ptn:Input_exec_time__x3A__initial"/>
+                                    <xsl:otherwise>
+                                        <ptn:Input_exec_time__x3A__initial><xsl:value-of select="$ptn:Input_time__x3A__attract"/></ptn:Input_exec_time__x3A__initial>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                                 <ptn:Input_exec_receptor><xsl:value-of select="$ptn:Current_synapse/ptn:Output_Node"/></ptn:Input_exec_receptor>
                                 <ptn:Input_exec_Time_constant><!--<xsl:value-of select="$ptn:Input//ptn:Input_exec_Time_constant - . + $ptn:Simulator_tick"/>-->
                                     <xsl:choose>
@@ -189,6 +209,12 @@
                         <xsl:otherwise>
                             <ptn:Input ptn:debug="#106CC optimized input {.} to {ceiling($ptn:Current_synapse//ptn:Time_constant)} for $ptn:Simulator_tick={$ptn:Simulator_tick}  [+[ptn:Delay[{$ptn:Current_synapse/ptn:Delay}]]]">
                                 <ptn:Input_exec_time><xsl:value-of select="($ptn:Input_time__x3A__attract + ( . - 1) * $ptn:Simulator_tick) + number($ptn:Current_synapse/ptn:Delay)"/></ptn:Input_exec_time>
+                                <xsl:choose>
+                                    <xsl:when test="$ptn:Current_synapse//ptn:Input_exec_time__x3A__initial"/>
+                                    <xsl:otherwise>
+                                        <ptn:Input_exec_time__x3A__initial><xsl:value-of select="$ptn:Input_time__x3A__attract"/></ptn:Input_exec_time__x3A__initial>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                                 <!--<xsl:copy-of select="$ptn:Current_synapse//ptn:Input_exec_receptor"/>-->
                                 <ptn:Input_exec_receptor><xsl:value-of select="$ptn:Current_synapse/ptn:Output_Node"/></ptn:Input_exec_receptor>
                                 <ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Simulator_tick"/></ptn:Input_exec_Time_constant>
@@ -238,12 +264,29 @@
         <xsl:copy-of select="."/>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag__x3A__emmit|ptn:Current_synapse__x3A__emmit">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag__x3A__emmit">
         <xsl:comment >#241A todo <xsl:value-of select="name()"/></xsl:comment>
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit">
+        <xsl:comment >#241B todo <xsl:value-of select="name()"/></xsl:comment>
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit[not(*)]">
+        <xsl:comment >#241B-R removed empty[<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit[not(*)]">
+        <xsl:comment >#241C removed empty child[<xsl:value-of select="name()"/>]</xsl:comment>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit]">

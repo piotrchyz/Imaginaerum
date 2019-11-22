@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="default">
+<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="analyze_simulation_x3d">
     
     
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
@@ -84,7 +84,7 @@
         <ant antfile="${p5_test_neuron.Simulation.build.analys.xml}"/>
     </target>
     
-    <target name="analyze_simulation_build" >
+    <target name="analyze_simulation_build"  depends="param">
         <input addproperty="p5_test_neuron.Simulation.dir" message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
         <input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
         <input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>

@@ -82,6 +82,7 @@
     <ptn:Inputs>
         <ptn:Input>
             <ptn:Input_exec_time>1</ptn:Input_exec_time>
+            <!--<ptn:Input_exec_time__x3A__initial>1</ptn:Input_exec_time__x3A__initial>-->
             <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
             <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
             <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
@@ -110,6 +111,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>20</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>30</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>

@@ -21,6 +21,7 @@
             <xsl:copy-of select="@xsi:schemaLocation"/>
             <xsl:for-each select="$files">
                 <xsl:sort select="ptn:Simulation_body/@ptn:Simulation_body_tick" data-type="number" order="ascending"/>
+                <xsl:message>#24AA [READING][<xsl:value-of select="document-uri(.)"/>]</xsl:message>
                 <!--<file url="{document-uri(.)}"></file>-->
                 <xsl:apply-templates mode="#current"/>
             </xsl:for-each>
@@ -67,11 +68,7 @@
         <xsl:attribute name="{name()}" select="."/>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag__x3A__emmit">
-        <!--<xsl:attribute name="{name()}" select="."/>-->
-        <xsl:attribute name="{name()}__x3A__count" select="count(ptn:Current_synapse__x3A__emmit)"/>
-        <xsl:attribute name="{name()}__x3A__time__x3A__min" select="min(descendant-or-self::ptn:Input_exec_time/text())"/>
-    </xsl:template>
+    
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Outputs">
         <xsl:attribute name="ptn:Outputs__x3A__count" select="count(ptn:Current_synapse)"/>
@@ -132,7 +129,48 @@
     
     <!--<xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag__x3A__emmit"/>-->
         
-        
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Output__x3A__flag__x3A__emmit">
+        <!--<xsl:attribute name="{name()}" select="."/>-->
+        <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
+            <xsl:attribute name="{name()}__x3A__count" select="count(ptn:Current_synapse__x3A__emmit)"/>
+            <xsl:attribute name="{name()}__x3A__time__x3A__min" select="min(descendant-or-self::ptn:Input_exec_time/text())"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Current_synapse__x3A__emmit">
+        <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
+            <xsl:attribute name="{name()}__x3A__count" select="count(ptn:Current_synapse__x3A__emmit)"/>
+            <xsl:attribute name="{name()}__x3A__time__x3A__min" select="min(descendant-or-self::ptn:Input_exec_time/text())"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:element>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input_exec_time[parent::ptn:Input[parent::ptn:Current_synapse__x3A__emmit]]">
+        <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>     
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input_exec_receptor[parent::ptn:Input[parent::ptn:Current_synapse__x3A__emmit]]">
+        <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>     
+    </xsl:template>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input_exec_Time_constant[parent::ptn:Input[parent::ptn:Current_synapse__x3A__emmit]]">
+        <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>     
+    </xsl:template>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input_exec_Maximum_current[parent::ptn:Input[parent::ptn:Current_synapse__x3A__emmit]]">
+        <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>     
+    </xsl:template>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input_exec_time__x3A__initial[parent::ptn:Input[parent::ptn:Current_synapse__x3A__emmit]]">
+        <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>     
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit]">
+        <!--<xsl:attribute name="{name()}" select="."/>-->
+        <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
+            <xsl:apply-templates mode="#current"/>
+        </xsl:element>
+    </xsl:template>
     
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="*">

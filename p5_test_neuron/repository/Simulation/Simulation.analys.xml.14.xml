@@ -55,65 +55,73 @@
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
          <!--#241A todo ptn:Output__x3A__flag__x3A__emmit-->
-         <ptn:Output__x3A__flag__x3A__emmit><!--#241A todo ptn:Current_synapse__x3A__emmit-->
+         <ptn:Output__x3A__flag__x3A__emmit><!--#241B todo ptn:Current_synapse__x3A__emmit-->
             <ptn:Current_synapse__x3A__emmit ptn:debug="#28E ptn:Input_exec_Time_constant[]"
                                              ptn:Output_Node="A-to-B">
                <ptn:Input ptn:debug="#106CC optimized input 1 to 2 for $ptn:Simulator_tick=1  [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>19</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>A-to-B</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
                </ptn:Input>
                <ptn:Input ptn:debug="#97CC [FORCED][ptn:Input_time][to NOW[14]] optimized input 2 to  for $ptn:Simulator_tick=1 [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>20</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>A-to-B</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
                </ptn:Input>
             </ptn:Current_synapse__x3A__emmit>
-            <!--#241A todo ptn:Current_synapse__x3A__emmit-->
+            <!--#241B todo ptn:Current_synapse__x3A__emmit-->
             <ptn:Current_synapse__x3A__emmit ptn:debug="#28E ptn:Input_exec_Time_constant[]"
                                              ptn:Output_Node="_A-to-A">
                <ptn:Input ptn:debug="#106CC optimized input 1 to 2 for $ptn:Simulator_tick=1  [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>19</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>_A-to-A</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
                </ptn:Input>
                <ptn:Input ptn:debug="#97CC [FORCED][ptn:Input_time][to NOW[14]] optimized input 2 to  for $ptn:Simulator_tick=1 [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>20</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>_A-to-A</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
                </ptn:Input>
             </ptn:Current_synapse__x3A__emmit>
-            <!--#241A todo ptn:Current_synapse__x3A__emmit-->
+            <!--#241B todo ptn:Current_synapse__x3A__emmit-->
             <ptn:Current_synapse__x3A__emmit ptn:debug="#28E ptn:Input_exec_Time_constant[]"
                                              ptn:Output_Node="B-to-A">
                <ptn:Input ptn:debug="#106CC optimized input 1 to 2 for $ptn:Simulator_tick=1  [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>19</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>B-to-A</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
                </ptn:Input>
                <ptn:Input ptn:debug="#97CC [FORCED][ptn:Input_time][to NOW[14]] optimized input 2 to  for $ptn:Simulator_tick=1 [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>20</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>B-to-A</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
                </ptn:Input>
             </ptn:Current_synapse__x3A__emmit>
-            <!--#241A todo ptn:Current_synapse__x3A__emmit-->
+            <!--#241B todo ptn:Current_synapse__x3A__emmit-->
             <ptn:Current_synapse__x3A__emmit ptn:debug="#28E ptn:Input_exec_Time_constant[]"
                                              ptn:Output_Node="_B-to-A">
                <ptn:Input ptn:debug="#106CC optimized input 1 to 2 for $ptn:Simulator_tick=1  [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>19</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>_B-to-A</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
                </ptn:Input>
                <ptn:Input ptn:debug="#97CC [FORCED][ptn:Input_time][to NOW[14]] optimized input 2 to  for $ptn:Simulator_tick=1 [+[ptn:Delay[5.0]]]">
                   <ptn:Input_exec_time>20</ptn:Input_exec_time>
+                  <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
                   <ptn:Input_exec_receptor>_B-to-A</ptn:Input_exec_receptor>
                   <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
                   <ptn:Input_exec_Maximum_current>3.0</ptn:Input_exec_Maximum_current>
