@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:Simulation.model.validate.xml xmlns:ptn="p5_test_neuron"
+                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                   ptn:Simulation_body_tick="6"
+                                   ptn:Simulation_body_time="6"
+                                   ptn:Simulation_body_time__x3A__last="5"
+                                   ptn:Simulator_tick="1">
+   <ptn:Simulation.model.validate.xml__x3A__stats>
+      <ptn:Node ptn:Label__x3A__stats="B-to-A"
+                ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
+                id="d13e4"
+                ptn:Node__x3A__position="1">
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
+                                ptn:Node__x3A__position="1"
+                                id="d13e34"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
+                                ptn:Node__x3A__position="2"
+                                id="d13e36"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="_B-to-A"
+                                ptn:Node__x3A__position="3"
+                                id="d13e38"/>
+      </ptn:Node>
+      <ptn:Node ptn:Label__x3A__stats="_B-to-A"
+                ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
+                id="d13e42"
+                ptn:Node__x3A__position="2">
+         <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="B-to-A"
+                                 ptn:Node__x3A__position="1"
+                                 id="d13e71"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
+                                ptn:Node__x3A__position="1"
+                                id="d13e81"/>
+      </ptn:Node>
+      <ptn:Node ptn:Label__x3A__stats="_B-to-B"
+                ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
+                id="d13e88"
+                ptn:Node__x3A__position="3">
+         <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="B-to-A"
+                                 ptn:Node__x3A__position="1"
+                                 id="d13e117"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
+                                ptn:Node__x3A__position="1"
+                                id="d13e127"/>
+      </ptn:Node>
+      <ptn:Node ptn:Label__x3A__stats="A-to-B"
+                ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
+                id="d13e135"
+                ptn:Node__x3A__position="4">
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
+                                ptn:Node__x3A__position="1"
+                                id="d13e165"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
+                                ptn:Node__x3A__position="2"
+                                id="d13e167"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="_A-to-B"
+                                ptn:Node__x3A__position="3"
+                                id="d13e169"/>
+      </ptn:Node>
+      <ptn:Node ptn:Label__x3A__stats="_A-to-B"
+                ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
+                id="d13e173"
+                ptn:Node__x3A__position="5">
+         <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="A-to-B"
+                                 ptn:Node__x3A__position="1"
+                                 id="d13e202"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
+                                ptn:Node__x3A__position="1"
+                                id="d13e212"/>
+      </ptn:Node>
+      <ptn:Node ptn:Label__x3A__stats="_A-to-A"
+                ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
+                id="d13e219"
+                ptn:Node__x3A__position="6">
+         <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="A-to-B"
+                                 ptn:Node__x3A__position="1"
+                                 id="d13e248"/>
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
+                                ptn:Node__x3A__position="1"
+                                id="d13e258"/>
+      </ptn:Node>
+      <ptn:Node ptn:Label__x3A__stats="C-to-C"
+                ptn:Node__x3A__type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"
+                id="d13e266"
+                ptn:Node__x3A__position="7">
+         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="C"
+                                ptn:Node__x3A__position="1"
+                                id="d13e296"/>
+      </ptn:Node>
+      <ptn:Node ptn:Label__x3A__stats="A"
+                ptn:Node__x3A__type="ptn:Receptor"
+                id="d13e304"
+                ptn:Node__x3A__position="8"/>
+      <ptn:Node ptn:Label__x3A__stats="B"
+                ptn:Node__x3A__type="ptn:Receptor"
+                id="d13e339"
+                ptn:Node__x3A__position="9"/>
+      <ptn:Node ptn:Label__x3A__stats="C"
+                ptn:Node__x3A__type="ptn:Receptor"
+                id="d13e374"
+                ptn:Node__x3A__position="10"/>
+   </ptn:Simulation.model.validate.xml__x3A__stats>
+   <ptn:Simulation.attract__x3A__aggregate__x3A__validated>
+      <ptn:Simulation.attract__x3A__calculate__x3A__validated ptn:Label__x3A__context="A"
+                                                              ptn:Label="B"
+                                                              ptn:Distance="10"
+                                                              ptn:Simulated_potential__x3A__diff="-0.5873637369600075"
+                                                              ptn:Simulated_potential__x3A__more_charged_node="A"
+                                                              ptn:Simulated_potential__x3A__less_charged_node="B"
+                                                              ptn:Output_Node="B-to-A"
+                                                              ptn:debug="#190 std create; [ptn:Outputs/#[0]]">
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="#87 done to validate"
+                                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
+            <ptn:Label xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">B-to-A</ptn:Label>
+            <ptn:Coordinate_X xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">3.3333333333333335</ptn:Coordinate_X>
+            <ptn:Coordinate_Y xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">10</ptn:Coordinate_Y>
+            <ptn:Coordinate_Z xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">6</ptn:Coordinate_Z>
+            <ptn:Capacitance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Capacitance>
+            <ptn:Resistance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">100</ptn:Resistance>
+            <ptn:Minimum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-90</ptn:Minimum_voltage>
+            <ptn:Maximum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">60</ptn:Maximum_voltage>
+            <ptn:Resting_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Resting_potential>
+            <ptn:Reset_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Reset_potential>
+            <ptn:Firing_threshold xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-55</ptn:Firing_threshold>
+            <ptn:Refactory_period xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Refactory_period>
+            <ptn:Is_inhibitor xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">0</ptn:Is_inhibitor>
+            <ptn:Outputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"/>
+            <ptn:Input__x3A__nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
+               <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+               <ptn:Input__x3A__node>_B-to-A</ptn:Input__x3A__node>
+            </ptn:Input__x3A__nodes>
+            <ptn:Simulated_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Simulated_potential>
+         </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="#214 inhibitor "
+                                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__x3A__AB">
+            <ptn:Label xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">_B-to-A</ptn:Label>
+            <ptn:Coordinate_X xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2.5</ptn:Coordinate_X>
+            <ptn:Coordinate_Y xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">5</ptn:Coordinate_Y>
+            <ptn:Coordinate_Z xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">6</ptn:Coordinate_Z>
+            <ptn:Capacitance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Capacitance>
+            <ptn:Resistance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">100</ptn:Resistance>
+            <ptn:Minimum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-90</ptn:Minimum_voltage>
+            <ptn:Maximum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">60</ptn:Maximum_voltage>
+            <ptn:Resting_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Resting_potential>
+            <ptn:Reset_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Reset_potential>
+            <ptn:Firing_threshold xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-55</ptn:Firing_threshold>
+            <ptn:Refactory_period xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Refactory_period>
+            <ptn:Is_inhibitor xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Is_inhibitor>
+            <ptn:Outputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Current_synapse ptn:debug="#235 todo use tempalte">
+                  <ptn:Maximum_current>3.0</ptn:Maximum_current>
+                  <ptn:Time_constant>2.0</ptn:Time_constant>
+                  <ptn:Delay>5.0</ptn:Delay>
+                  <ptn:Output_Node>B-to-A</ptn:Output_Node>
+               </ptn:Current_synapse>
+            </ptn:Outputs>
+            <ptn:Input__x3A__nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
+            </ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__nodes__x3A__prohibit xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node__x3A__prohibit>B</ptn:Input__x3A__node__x3A__prohibit>
+            </ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Simulated_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Simulated_potential>
+         </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="#245 -AA inhibitor A--B"
+                                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__X3A__AA">
+            <ptn:Label xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">_B-to-B</ptn:Label>
+            <ptn:Coordinate_X xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Coordinate_X>
+            <ptn:Coordinate_Y xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">7</ptn:Coordinate_Y>
+            <ptn:Coordinate_Z xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">6</ptn:Coordinate_Z>
+            <ptn:Capacitance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Capacitance>
+            <ptn:Resistance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">100</ptn:Resistance>
+            <ptn:Minimum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-90</ptn:Minimum_voltage>
+            <ptn:Maximum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">60</ptn:Maximum_voltage>
+            <ptn:Resting_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Resting_potential>
+            <ptn:Reset_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Reset_potential>
+            <ptn:Firing_threshold xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-55</ptn:Firing_threshold>
+            <ptn:Refactory_period xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Refactory_period>
+            <ptn:Is_inhibitor xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Is_inhibitor>
+            <ptn:Outputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Current_synapse ptn:debug="#266 todo use tempalte">
+                  <ptn:Maximum_current>3.0</ptn:Maximum_current>
+                  <ptn:Time_constant>2.0</ptn:Time_constant>
+                  <ptn:Delay>5.0</ptn:Delay>
+                  <ptn:Output_Node>B-to-A</ptn:Output_Node>
+               </ptn:Current_synapse>
+            </ptn:Outputs>
+            <ptn:Input__x3A__nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+            </ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__nodes__x3A__prohibit xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node__x3A__prohibit>A</ptn:Input__x3A__node__x3A__prohibit>
+            </ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Simulated_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Simulated_potential>
+         </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+      </ptn:Simulation.attract__x3A__calculate__x3A__validated>
+      <ptn:Simulation.attract__x3A__calculate__x3A__validated ptn:Label__x3A__context="B"
+                                                              ptn:Label="A"
+                                                              ptn:Distance="10"
+                                                              ptn:Simulated_potential__x3A__diff="0.5873637369600075"
+                                                              ptn:Simulated_potential__x3A__more_charged_node="B"
+                                                              ptn:Simulated_potential__x3A__less_charged_node="A"
+                                                              ptn:Output_Node="A-to-B"
+                                                              ptn:debug="#190 std create; [ptn:Outputs/#[0]]">
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="#87 done to validate"
+                                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
+            <ptn:Label xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">A-to-B</ptn:Label>
+            <ptn:Coordinate_X xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">3.3333333333333335</ptn:Coordinate_X>
+            <ptn:Coordinate_Y xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">10</ptn:Coordinate_Y>
+            <ptn:Coordinate_Z xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">6</ptn:Coordinate_Z>
+            <ptn:Capacitance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Capacitance>
+            <ptn:Resistance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">100</ptn:Resistance>
+            <ptn:Minimum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-90</ptn:Minimum_voltage>
+            <ptn:Maximum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">60</ptn:Maximum_voltage>
+            <ptn:Resting_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Resting_potential>
+            <ptn:Reset_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Reset_potential>
+            <ptn:Firing_threshold xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-55</ptn:Firing_threshold>
+            <ptn:Refactory_period xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Refactory_period>
+            <ptn:Is_inhibitor xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">0</ptn:Is_inhibitor>
+            <ptn:Outputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"/>
+            <ptn:Input__x3A__nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+               <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
+               <ptn:Input__x3A__node>_A-to-B</ptn:Input__x3A__node>
+            </ptn:Input__x3A__nodes>
+            <ptn:Simulated_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Simulated_potential>
+         </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="#214 inhibitor "
+                                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__x3A__AB">
+            <ptn:Label xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">_A-to-B</ptn:Label>
+            <ptn:Coordinate_X xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2.5</ptn:Coordinate_X>
+            <ptn:Coordinate_Y xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">5</ptn:Coordinate_Y>
+            <ptn:Coordinate_Z xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">6</ptn:Coordinate_Z>
+            <ptn:Capacitance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Capacitance>
+            <ptn:Resistance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">100</ptn:Resistance>
+            <ptn:Minimum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-90</ptn:Minimum_voltage>
+            <ptn:Maximum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">60</ptn:Maximum_voltage>
+            <ptn:Resting_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Resting_potential>
+            <ptn:Reset_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Reset_potential>
+            <ptn:Firing_threshold xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-55</ptn:Firing_threshold>
+            <ptn:Refactory_period xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Refactory_period>
+            <ptn:Is_inhibitor xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Is_inhibitor>
+            <ptn:Outputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Current_synapse ptn:debug="#235 todo use tempalte">
+                  <ptn:Maximum_current>3.0</ptn:Maximum_current>
+                  <ptn:Time_constant>2.0</ptn:Time_constant>
+                  <ptn:Delay>5.0</ptn:Delay>
+                  <ptn:Output_Node>A-to-B</ptn:Output_Node>
+               </ptn:Current_synapse>
+            </ptn:Outputs>
+            <ptn:Input__x3A__nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+            </ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__nodes__x3A__prohibit xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node__x3A__prohibit>A</ptn:Input__x3A__node__x3A__prohibit>
+            </ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Simulated_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Simulated_potential>
+         </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="#245 -AA inhibitor B--A"
+                                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__X3A__AA">
+            <ptn:Label xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">_A-to-A</ptn:Label>
+            <ptn:Coordinate_X xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Coordinate_X>
+            <ptn:Coordinate_Y xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">7</ptn:Coordinate_Y>
+            <ptn:Coordinate_Z xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">6</ptn:Coordinate_Z>
+            <ptn:Capacitance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Capacitance>
+            <ptn:Resistance xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">100</ptn:Resistance>
+            <ptn:Minimum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-90</ptn:Minimum_voltage>
+            <ptn:Maximum_voltage xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">60</ptn:Maximum_voltage>
+            <ptn:Resting_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Resting_potential>
+            <ptn:Reset_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Reset_potential>
+            <ptn:Firing_threshold xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-55</ptn:Firing_threshold>
+            <ptn:Refactory_period xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">2</ptn:Refactory_period>
+            <ptn:Is_inhibitor xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">1</ptn:Is_inhibitor>
+            <ptn:Outputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Current_synapse ptn:debug="#266 todo use tempalte">
+                  <ptn:Maximum_current>3.0</ptn:Maximum_current>
+                  <ptn:Time_constant>2.0</ptn:Time_constant>
+                  <ptn:Delay>5.0</ptn:Delay>
+                  <ptn:Output_Node>A-to-B</ptn:Output_Node>
+               </ptn:Current_synapse>
+            </ptn:Outputs>
+            <ptn:Input__x3A__nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
+            </ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__nodes__x3A__prohibit xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+               <ptn:Input__x3A__node__x3A__prohibit>B</ptn:Input__x3A__node__x3A__prohibit>
+            </ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Simulated_potential xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">-70</ptn:Simulated_potential>
+         </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+      </ptn:Simulation.attract__x3A__calculate__x3A__validated>
+      <ptn:Simulation.Stress__x3A__calculate__x3A__validated ptn:Label__x3A__context="C"
+                                                             ptn:Label="C"
+                                                             ptn:Distance="0.0009765625"
+                                                             ptn:Simulated_potential__x3A__diff="0"
+                                                             ptn:Simulated_potential__x3A__more_charged_node="C"
+                                                             ptn:Simulated_potential__x3A__less_charged_node="C"
+                                                             ptn:Output_Node="C-to-C"
+                                                             ptn:debug="#190XX@  create more clone, reconfigure self, mabe some inhibitors install std create; [ptn:Outputs/#[0]]  n[ptn:Receptor]">
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[C-to-C]"/>
+      </ptn:Simulation.Stress__x3A__calculate__x3A__validated>
+   </ptn:Simulation.attract__x3A__aggregate__x3A__validated>
+   <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+      <ptn:Receptor>
+         <ptn:Label>A</ptn:Label>
+         <ptn:Coordinate_X>0</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-56.64078851782401</ptn:Simulated_potential>
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
+         <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor>
+         <ptn:Label>B</ptn:Label>
+         <ptn:Coordinate_X>10</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-56.053424780864</ptn:Simulated_potential>
+         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
+         <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor>
+         <ptn:Label>C</ptn:Label>
+         <ptn:Coordinate_X>20</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
+         <!--#57M unintended/n[ptn:Output__x3A__flag]-->
+         <!--#59M unintended/n[ptn:Output__x3A__flag__x3A__emmit]-->
+         <ptn:Output__x3A__flag__x3A__emmit/>
+         <ptn:Stress__x3A__flag><!--#59X TODO handle this flag when created model stale flag that was used-->true</ptn:Stress__x3A__flag>
+         <!--#74M unintended/n[ptn:Simulation.Stress__x3A__calculate]-->
+         <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+   </ptn:Receptors>
+   <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"/>
+</ptn:Simulation.model.validate.xml>

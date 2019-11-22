@@ -23,6 +23,7 @@
             <xsl:attribute name="ptn:Simulation_body_tick" select="1"/>
             <xsl:attribute name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick"/>
             <xsl:attribute name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick"/>
+            <xsl:attribute name="ptn:Simulation_body_time__x3A__last" select="0"/>
             <!--<xsl:apply-templates mode="#current" select="@*"/>-->
             <xsl:variable name="ptn:Inputs">
                 <xsl:apply-templates mode="#current" select="ptn:Inputs/*">
@@ -42,9 +43,9 @@
         </ptn:Simulation_body>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation_body[@ptn:Simulator_tick][@ptn:Simulation_body_time]">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation.model.apply.xml[@ptn:Simulator_tick][@ptn:Simulation_body_time]">
         <xsl:message>#14 todo ptn:Config</xsl:message>
-        <xsl:copy>
+        <ptn:Simulation_body>
             <xsl:copy-of select="@xsi:schemaLocation"/>
             <xsl:attribute name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick + 1"/>
             <xsl:attribute name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time + @ptn:Simulator_tick"/>
@@ -58,7 +59,7 @@
                 <xsl:with-param name="ptn:Attract_min" select="doc($ptn:Config)//ptn:Defaults/ptn:Attract_min" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body" select="." tunnel="yes"/>
             </xsl:apply-templates>
-        </xsl:copy>
+        </ptn:Simulation_body>
     </xsl:template>
     
     
@@ -310,8 +311,12 @@
     
     
     
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation.attract__x3A__aggregate">
+        <xsl:comment>#334 unantended/n[<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.analys.xml" match="*">
-        <xsl:message terminate="yes">#15 todo <xsl:value-of select="name()"/></xsl:message>
+        <xsl:message terminate="yes">#15AAN unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
     

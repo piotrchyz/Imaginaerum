@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ptn:Simulation_body xmlns:ptn="p5_test_neuron"
-                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                     xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
-                     ptn:Simulation_body_tick="11"
-                     ptn:Simulation_body_time="11"
-                     ptn:Simulation_body_time__x3A__last="10"
-                     ptn:Simulator_tick="1">
-   <ptn:Receptors>
+<ptn:Simulation.model.apply.xml xmlns:ptn="p5_test_neuron"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                ptn:Simulation_body_tick="1"
+                                ptn:Simulation_body_time="1"
+                                ptn:Simulator_tick="1"
+                                ptn:Simulation_body_time__x3A__last="0"><!--#306 bypassed/n[ptn:Simulation.model.validate.xml__x3A__stats] to be context installed--><!--#30 bypassed/n[ptn:Simulation.attract__x3A__aggregate__x3A__validated] to be context installed-->
+   <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
@@ -24,12 +23,7 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-57.92433091241177</ptn:Simulated_potential>
-         <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-57.67788868613446">
-            <ptn:Simulated_potential.resting.vector>-0.24644222627731083</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-57.92433091241177</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential>-63.18000000000001</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -48,12 +42,7 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-57.39340061528745</ptn:Simulated_potential>
-         <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-57.13612307682393">
-            <ptn:Simulated_potential.resting.vector>-0.2572775384635214</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-57.39340061528745</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential>-70.98</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -73,14 +62,8 @@
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
-            <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
-         </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
-         <!--#241A todo ptn:Output__x3A__flag__x3A__emmit-->
-         <ptn:Output__x3A__flag__x3A__emmit/>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
-   <ptn:Nodes/>
-</ptn:Simulation_body>
+   <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"/>
+</ptn:Simulation.model.apply.xml>

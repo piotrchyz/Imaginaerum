@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:ptn="p5_test_neuron"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <title>X3Dom Example OnOutputChange Event</title>
+      <script type="text/javascript" src="https://x3dom.org/release/x3dom.js"> </script>
+      <link rel="stylesheet"
+            type="text/css"
+            href="https://www.x3dom.org/download/x3dom.css"/>
+   </head>
+   <body>
+      <p>
+                    Testing sequence capable neurons
+                </p>
+      <x3d width="800px"
+           height="600px"
+           xsi:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+         <scene render="true"
+                bboxcenter="0,0,0"
+                bboxsize="-1,-1,-1"
+                pickmode="idBuf"
+                dopickpass="true">
+            <Viewpoint id="top"
+                       description="camera"
+                       position="2 0 0"
+                       orientation="0 0 0 0"> </Viewpoint>
+            <Viewpoint id="rows"
+                       description="camera"
+                       position="-2.43383 1.07351 -5"
+                       orientation="0 -1 0 2.06609"> </Viewpoint>
+            <ptn:Simulator_tick__x3A__for-each-group name="ptn:Simulation.analyze_simulation.xml">
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="1"
+                                                  ptn:Simulation_body_tick="1"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="2"
+                                                  ptn:Simulation_body_tick="2"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="3"
+                                                  ptn:Simulation_body_tick="3"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="4"
+                                                  ptn:Simulation_body_tick="4"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="5"
+                                                  ptn:Simulation_body_tick="5"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="6"
+                                                  ptn:Simulation_body_tick="6"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="7"
+                                                  ptn:Simulation_body_tick="7"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="8"
+                                                  ptn:Simulation_body_tick="8"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="9"
+                                                  ptn:Simulation_body_tick="9"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="10"
+                                                  ptn:Simulation_body_tick="10"
+                                                  ptn:Simulator_tick="1"/>
+               <ptn:Simulation_body__x3A__analyze ptn:Simulation_body_time="11"
+                                                  ptn:Simulation_body_tick="11"
+                                                  ptn:Simulator_tick="1"/>
+            </ptn:Simulator_tick__x3A__for-each-group>
+            <Group DEF="ColorAnimation">
+               <TimeSensor DEF="ColorAnimationTimer" cycleinterval="5.5" loop="true"/>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+               <ColorInterpolator DEF="A_EmissiveColorInterpolator"
+                                  keyValue="0.37 0 0 , 0.44 0 1 , 0.44 0 1 , 0.44 0 1 , 0.44 0 1 , 0.43 0 1 , 0.43 0 1 , 0.43 0 1 , 0.43 0 1 , 0.42 0 1 , 0.42 0 1 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
+               <ColorInterpolator DEF="B_EmissiveColorInterpolator"
+                                  keyValue="0.29 0 0 , 0.29 0 0 , 0.37 0 0 , 0.45 0 1 , 0.44 0 1 , 0.44 0 1 , 0.44 0 1 , 0.43 0 1 , 0.43 0 1 , 0.43 0 1 , 0.43 0 1 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
+               <ColorInterpolator DEF="C_EmissiveColorInterpolator"
+                                  keyValue="0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.38 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+            </Group>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="A"
+                       id="A"
+                       translation="0 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="A_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="B"
+                       id="B"
+                       translation="10 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="B_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="C"
+                       id="C"
+                       translation="20 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="C_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="A_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="C_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="C_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="C_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <Group/>
+            <Group DEF="CoordAnimation">
+               <TimeSensor DEF="CoordAnimation_Clock"
+                           loop="true"
+                           cycleinterval="2"
+                           time="10"> </TimeSensor>
+            </Group>
+            <!--#18-107II Current_synapse.Input.Interpolator [CGK[]]   /n[ptn:Simulation.analyze_simulation.xml]-->
+            <Group><!--#18GG Current_synapse.Input.Shape [CGK[A]]--><!--#18GG Current_synapse.Input.Shape [CGK[B]]--><!--#18GG Current_synapse.Input.Shape [CGK[C]]--></Group>
+            <Group><!--#18GG Current_synapse.Input.Shape [CGK[A]]--><!--#18GG Current_synapse.Input.Shape [CGK[B]]--><!--#18GG Current_synapse.Input.Shape [CGK[C]]--></Group>
+            <!--#174 SIR -->
+            <!--#18GG Current_synapse.Input.Shape [CGK[A]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[B]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[C]]-->
+            <timesensor def="time"
+                        cycleinterval="NaN"
+                        loop="true"
+                        enabled="true"
+                        first="true"> </timesensor>
+         </scene>
+      </x3d>
+      <button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
+      <button onclick="document.getElementById('top').setAttribute('set_bind','true');">top </button>
+   </body>
+</html>

@@ -680,29 +680,47 @@
     <xs:attribute name="Simulation_body_time" type="ptn:Simulation_body_time"/>
     <xs:attribute name="Simulation_body_time__x3A__last" type="ptn:Simulation_body_time"/>
     <xs:attribute name="Simulator_tick" type="ptn:Simulator_tick"/>
-    <xs:element name="Simulation_body">
+    <xs:complexType name="Simulation_body__x3A__abstract">
+        <xs:sequence>
+            <xs:element minOccurs="0" ref="ptn:Simulation.model.validate.xml__x3A__stats"/>
+            <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate">
+                <xs:annotation>
+                    <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
+            <xs:element ref="ptn:Receptors"/>
+            <xs:element ref="ptn:Nodes"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
+        <xs:attribute ref="ptn:Simulation_body_time" use="required"/>
+        <xs:attribute ref="ptn:Simulation_body_time__x3A__last" use="required"/>
+        <xs:attribute ref="ptn:Simulator_tick" use="required">
+            <xs:annotation>
+                <xs:documentation>Todo ? optimize in config</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="Simulation_body">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Simulation_body__x3A__abstract">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate"
+                        maxOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element ref="ptn:Receptors"/>
+                    <xs:element ref="ptn:Nodes"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation_body" type="ptn:Simulation_body">
         <xs:annotation>
             <xs:documentation>Current simulation body</xs:documentation>
         </xs:annotation>
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__calculate.best.unique">
-                    <xs:annotation>
-                        <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element ref="ptn:Receptors"/>
-                <xs:element ref="ptn:Nodes"/>
-            </xs:sequence>
-            <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
-            <xs:attribute ref="ptn:Simulation_body_time" use="required"/>
-            <xs:attribute ref="ptn:Simulation_body_time__x3A__last" use="required"/>
-            <xs:attribute ref="ptn:Simulator_tick" use="required">
-                <xs:annotation>
-                    <xs:documentation>Todo ? optimize in config</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
-        </xs:complexType>
     </xs:element>
     <xs:simpleType name="Simulated_potential.resting.vector">
         <xs:annotation>
@@ -826,7 +844,7 @@ debug most feature</xs:documentation>
         </xs:annotation>
     </xs:attribute>
     <xs:attribute inheritable="false" name="debug" type="xs:string"/>
-    <xs:complexType name="Simulation.attract__x3A__calculate.best.unique">
+    <xs:complexType name="Simulation.attract__x3A__aggregate">
         <xs:annotation>
             <xs:documentation>Analyzed to create modelk</xs:documentation>
         </xs:annotation>
@@ -842,11 +860,13 @@ debug most feature</xs:documentation>
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 ref="ptn:Simulation.attract__x3A__calculate"/>
             <xs:element maxOccurs="unbounded" minOccurs="0"
+                ref="ptn:Simulation.Stress__x3A__calculate"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
                 ref="ptn:Simulation.attract__x3A__calculate__x3A__ignored"/>
         </xs:all>
     </xs:complexType>
-    <xs:element name="Simulation.attract__x3A__calculate.best.unique"
-        type="ptn:Simulation.attract__x3A__calculate.best.unique">
+    <xs:element name="Simulation.attract__x3A__aggregate"
+        type="ptn:Simulation.attract__x3A__aggregate">
         <xs:unique name="eliminate_duplicate_Label__x3A__context">
             <xs:annotation>
                 <xs:documentation>Eliminacja attract dla juz wykorzystanego potencjalu do innego wezla</xs:documentation>
@@ -947,4 +967,131 @@ debug most feature</xs:documentation>
     </xs:complexType>
     <xs:element name="Simulation.Stress__x3A__calculate__x3A__output_node"
         type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
+    <xs:complexType name="Simulation.attract.xml">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Simulation_body__x3A__abstract">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate"
+                        maxOccurs="0">
+                        <xs:annotation>
+                            <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element ref="ptn:Receptors"/>
+                    <xs:element ref="ptn:Nodes"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.attract.xml" type="ptn:Simulation.attract.xml"/>
+    <xs:complexType name="Simulation.model.xml">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Simulation_body__x3A__abstract">
+                <xs:sequence>
+                    <xs:element minOccurs="1" ref="ptn:Simulation.attract__x3A__aggregate">
+                        <xs:annotation>
+                            <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element ref="ptn:Receptors"/>
+                    <xs:element ref="ptn:Nodes"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.model.xml" type="ptn:Simulation.model.xml"/>
+    <xs:complexType name="Simulation.model.validate.xml">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Simulation_body__x3A__abstract">
+                <xs:sequence>
+                    <xs:element ref="ptn:Simulation.model.validate.xml__x3A__stats"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate">
+                        <xs:annotation>
+                            <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element ref="ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
+                    <xs:element ref="ptn:Receptors"/>
+                    <xs:element ref="ptn:Nodes"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.model.validate.xml" type="ptn:Simulation.model.validate.xml"/>
+    <xs:complexType name="Simulation.attract__x3A__calculate__x3A__validated">
+        <xs:complexContent>
+            <xs:extension base="ptn:Simulation.attract__x3A__calculate"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.attract__x3A__calculate__x3A__validated"
+        type="ptn:Simulation.attract__x3A__calculate__x3A__validated"/>
+    <xs:complexType name="Simulation.Stress__x3A__calculate__x3A__validated">
+        <xs:complexContent>
+            <xs:extension base="ptn:Simulation.Stress__x3A__calculate"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.Stress__x3A__calculate__x3A__validated"
+        type="ptn:Simulation.Stress__x3A__calculate__x3A__validated"/>
+    <xs:complexType name="Simulation.attract__x3A__aggregate__x3A__validated">
+        <xs:all>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                ref="ptn:Simulation.attract__x3A__calculate__x3A__validated"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                ref="ptn:Simulation.Stress__x3A__calculate__x3A__validated"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:element name="Simulation.attract__x3A__aggregate__x3A__validated"
+        type="ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
+    <xs:complexType name="Simulation.model.validate.xml__x3A__stats">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="Node" type="ptn:Node__x3A__stats"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Node__x3A__stats">
+        <xs:sequence minOccurs="0">
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Output__x3A__stats"
+                type="ptn:Output__x3A__stats"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Input__x3A__stats"
+                type="ptn:Input__x3A__stats"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Label__x3A__stats" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__type" use="required"/>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="Input__x3A__stats">
+        <xs:attribute ref="ptn:Input__x3A__node__x3A__stats" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="Output__x3A__stats">
+        <xs:attribute ref="ptn:Output_Node__x3A__stats" use="required"/>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
+    </xs:complexType>
+    <xs:element name="Simulation.model.validate.xml__x3A__stats"
+        type="ptn:Simulation.model.validate.xml__x3A__stats"/>
+    <xs:attribute name="Label__x3A__stats" type="ptn:Output_Node__x3A__temp"/>
+    <xs:simpleType name="Output_Node__x3A__temp">
+        <xs:annotation>
+            <xs:documentation>Dla potrzeb nie uzwyania ID, na etapie draftow.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="Node__x3A__type">
+        <xs:annotation>
+            <xs:documentation>Dla potrzeb stats i doscislania</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:attribute name="Node__x3A__type" type="ptn:Node__x3A__type"/>
+    <xs:attribute name="Input__x3A__node__x3A__stats" type="ptn:Output_Node__x3A__temp"/>
+    <xs:attribute name="Output_Node__x3A__stats" type="ptn:Output_Node__x3A__temp"/>
+    <xs:attribute name="Node__x3A__position"/>
+    <xs:complexType name="Simulation.model.apply.xml">
+        <xs:complexContent>
+            <xs:extension base="ptn:Simulation_body__x3A__abstract"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.model.apply.xml" type="ptn:Simulation.model.apply.xml"/>
 </xs:schema>

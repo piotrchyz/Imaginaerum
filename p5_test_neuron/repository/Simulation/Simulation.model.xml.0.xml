@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ptn:Simulation_body xmlns:ptn="p5_test_neuron"
-                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                     xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
-                     ptn:Simulation_body_tick="1"
-                     ptn:Simulation_body_time="1"
-                     ptn:Simulator_tick="1">
-   <ptn:Simulation.attract__x3A__calculate.best.unique>
-      <ptn:Simulation.attract__x3A__calculate.best.unique__x3A__debug/>
-   </ptn:Simulation.attract__x3A__calculate.best.unique>
-   <ptn:Receptors>
+<ptn:Simulation.model.xml xmlns:ptn="p5_test_neuron"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                          ptn:Simulation_body_tick="1"
+                          ptn:Simulation_body_time="1"
+                          ptn:Simulator_tick="1"
+                          ptn:Simulation_body_time__x3A__last="0">
+   <ptn:Simulation.attract__x3A__aggregate/>
+   <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
@@ -68,5 +66,5 @@
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
-   <ptn:Nodes/>
-</ptn:Simulation_body>
+   <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"/>
+</ptn:Simulation.model.xml>

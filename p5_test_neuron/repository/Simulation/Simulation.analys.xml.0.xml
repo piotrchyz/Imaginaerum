@@ -5,7 +5,8 @@
                      xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                      ptn:Simulation_body_tick="1"
                      ptn:Simulation_body_time="1"
-                     ptn:Simulator_tick="1">
+                     ptn:Simulator_tick="1"
+                     ptn:Simulation_body_time__x3A__last="0">
    <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
