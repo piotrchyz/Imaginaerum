@@ -129,6 +129,7 @@
         <xsl:param name="ptn:Simulation_body_tick__x3A__max" tunnel="yes" required="yes"/>
         <!--<ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF>-->
         <!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF --><!-- BEGIN ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF -->
+        <xsl:message>#132 [SCENE][GroupDEF='ColorAnimation'[]]</xsl:message>
         <Group DEF='ColorAnimation'>
             <TimeSensor DEF='ColorAnimationTimer'
                 cycleinterval="{$ptn:Simulation_body_tick__x3A__max div 2}"  
@@ -225,18 +226,21 @@
         
         
         <!-- BEGIN Current_synapse.Input --><!-- BEGIN Current_synapse.Input -->
+        <xsl:message>#229 [SCENE][ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Interpolator]</xsl:message>
         <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Interpolator">
             <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__type" select="'CoordinateInterpolator'" tunnel="yes"/>
             <xsl:with-param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" select="'Current_synapse.Input'" tunnel="yes"/>
             <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" select="'Coordinate'" tunnel="yes"/>
             <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" select="'point'" tunnel="yes"/>
         </xsl:call-template>
+        <xsl:message>#236 [SCENE][ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Shape]</xsl:message>
         <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Shape">
             <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__type" select="'CoordinateInterpolator'" tunnel="yes"/>
             <xsl:with-param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" select="'Current_synapse.Input'" tunnel="yes"/>
             <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" select="'Coordinate'" tunnel="yes"/>
             <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" select="'point'" tunnel="yes"/>
         </xsl:call-template>
+        <xsl:message>#244 [SCENE][ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Route]</xsl:message>
         <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Route">
             <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__type" select="'CoordinateInterpolator'" tunnel="yes"/>
             <xsl:with-param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" select="'Current_synapse.Input'" tunnel="yes"/>
@@ -565,10 +569,13 @@
     </xsl:template>
     
     <xsl:template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote">
+        <xsl:param name="ptn:Coordinate_X" required="no" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Y" required="no" tunnel="yes"/>
+        <xsl:param name="ptn:Coordinate_Z" required="no" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_X__x3A__remote" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Y__x3A__remote" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Z__x3A__remote" required="yes" tunnel="yes"/>
-        <xsl:if test="string-length($ptn:Coordinate_X__x3A__remote) = 0"><xsl:message terminate="yes">#63XX ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+        <xsl:if test="string-length($ptn:Coordinate_X__x3A__remote) = 0"><xsl:message terminate="yes">#63XX ERROR Current_synapse.Input.Shape with data  [<xsl:value-of select="$ptn:Coordinate_X"/>][<xsl:value-of select="$ptn:Coordinate_Y"/>][<xsl:value-of select="$ptn:Coordinate_Z"/>]TO-[<xsl:value-of select="$ptn:Coordinate_X__x3A__remote"/>][<xsl:value-of select="$ptn:Coordinate_Y__x3A__remote"/>][<xsl:value-of select="$ptn:Coordinate_Y__x3A__remote"/>]</xsl:message></xsl:if>
         <xsl:if test="string-length($ptn:Coordinate_Y__x3A__remote) = 0"><xsl:message terminate="yes">#63YY ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
         <xsl:if test="string-length($ptn:Coordinate_Z__x3A__remote) = 0"><xsl:message terminate="yes">#63ZZ ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
     </xsl:template>

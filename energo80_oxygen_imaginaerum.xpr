@@ -25,7 +25,13 @@
             <file name="p5_test_neuron/p5_test_neuron.Simulation.model.xml.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.xsl"/>
             <file name="p5_test_neuron/sqrt.xsl"/>
+            <file name="p5_test_neuron/test_neuron.Simulation.analys.xml.xsd"/>
             <file name="p5_test_neuron/test_neuron.Simulation.analyze_simulation.xml.xsd"/>
+            <file name="p5_test_neuron/test_neuron.Simulation.attract.xml.xsd"/>
+            <file name="p5_test_neuron/test_neuron.Simulation.model.apply.xml.xsd"/>
+            <file name="p5_test_neuron/test_neuron.Simulation.model.stats.xml.xsd"/>
+            <file name="p5_test_neuron/test_neuron.Simulation.model.validate.xml.xsd"/>
+            <file name="p5_test_neuron/test_neuron.Simulation.model.xml.xsd"/>
             <file name="p5_test_neuron/test_neuron.xsd"/>
         </folder>
         <folder path="."/>

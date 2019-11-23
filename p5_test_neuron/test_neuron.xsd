@@ -1131,4 +1131,7 @@ debug most feature</xs:documentation>
             <xs:documentation>W stats - flaguje czy jest node w Nodes</xs:documentation>
         </xs:annotation>
     </xs:attribute>
+    <xs:attribute name="Coordinate_X" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z" type="ptn:Coordinate"/>
 </xs:schema>

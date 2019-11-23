@@ -136,7 +136,8 @@
         <xsl:param name="ptn:Simulation.analyze_simulation.xml" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Input_exec_receptor__x3A__analyze" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Input_exec_time__x3A__initial__x3A__analyze" required="yes" tunnel="yes"/>
-        <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"></xsl:call-template>
+        <xsl:message>#134 [validate][ptn:Input_exec_receptor__x3A__analyze][<xsl:value-of select="$ptn:Input_exec_receptor__x3A__analyze"/>]</xsl:message>
+        <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"/>
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote">
             <xsl:with-param name="ptn:Coordinate_X__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/>
             <xsl:with-param name="ptn:Coordinate_Y__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/>

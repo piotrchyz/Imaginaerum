@@ -13,24 +13,37 @@
     </xs:element>
     <xs:element name="Simulation.analys.xml__x3A__analyze">
         <xs:complexType>
-            <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="ptn:Receptor__x3A__analyze"/>
-                <xs:sequence maxOccurs="unbounded" minOccurs="0">
-                    <xs:element ref="ptn:Leaky_neuron_standard__x3A__analyze"/>
-                    <xs:element ref="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze"/>
-                    <xs:element ref="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze"/>
-                </xs:sequence>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element maxOccurs="unbounded" ref="ptn:Receptor__x3A__analyze" minOccurs="0"/>
+                <xs:element ref="ptn:Leaky_neuron_standard__x3A__analyze" maxOccurs="unbounded"
+                    minOccurs="0"/>
+                <xs:element ref="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze"
+                    maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element ref="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze"
+                    maxOccurs="unbounded" minOccurs="0"/>
             </xs:sequence>
             <xs:attribute ref="ptn:Label"/>
+            <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
+            <xs:attribute ref="ptn:Simulator_tick" use="required"/>
             <xs:attribute ref="ptn:Simulation_body_time"/>
         </xs:complexType>
     </xs:element>
     <xs:complexType name="analyze">
+        <xs:all>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Current_synapse__x3A__analyze"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                ref="ptn:Output__x3A__flag__x3A__emmit__x3A__analyze"/>
+        </xs:all>
         <xs:attribute ref="ptn:Label"/>
         <xs:attribute ref="ptn:Attract__x3A__flag"/>
         <xs:attribute ref="ptn:Simulated_potential"/>
         <xs:attribute ref="ptn:Is_inhibitor"/>
         <xs:attribute ref="ptn:Label__x3A__analyze"/>
+        <xs:attribute ref="ptn:Coordinate_X" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Y" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Z" use="required"/>
+        <xs:attribute ref="ptn:Outputs__x3A__count" use="required"/>
+        <xs:attribute ref="ptn:Output__x3A__flag"/>
     </xs:complexType>
     <xs:element name="Receptor__x3A__analyze" type="ptn:analyze"/>
     <xs:element name="Leaky_neuron_standard__x3A__analyze" type="ptn:analyze"/>
@@ -40,4 +53,48 @@
     <xs:attribute name="Simulated_potential" type="ptn:Simulated_potential"/>
     <xs:attribute name="Is_inhibitor" type="ptn:Is_inhibitor"/>
     <xs:attribute name="Label__x3A__analyze"/>
+    <xs:attribute name="Outputs__x3A__count"/>
+    <xs:complexType name="Current_synapse__x3A__analyze">
+        <xs:attribute ref="ptn:Output_Node__x3A__analyze" use="required"/>
+    </xs:complexType>
+    <xs:element name="Current_synapse__x3A__analyze" type="ptn:Current_synapse__x3A__analyze"/>
+    <xs:attribute name="Output_Node__x3A__analyze" type="ptn:Output_Node"/>
+    <xs:attribute name="Output__x3A__flag"/>
+    <xs:complexType name="Output__x3A__flag__x3A__emmit__x3A__analyze">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                ref="ptn:Current_synapse__x3A__emmit__x3A__analyze"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Output__x3A__flag__x3A__emmit__x3A__count"/>
+        <xs:attribute ref="ptn:Output__x3A__flag__x3A__emmit__x3A__time__x3A__min"/>
+    </xs:complexType>
+    <xs:element name="Output__x3A__flag__x3A__emmit__x3A__analyze"
+        type="ptn:Output__x3A__flag__x3A__emmit__x3A__analyze"/>
+    <xs:attribute name="Output__x3A__flag__x3A__emmit__x3A__count"/>
+    <xs:attribute name="Output__x3A__flag__x3A__emmit__x3A__time__x3A__min"/>
+    <xs:element name="Current_synapse__x3A__emmit__x3A__analyze">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Input__x3A__analyze"/>
+            </xs:sequence>
+            <xs:attribute ref="ptn:Current_synapse__x3A__emmit__x3A__count"/>
+            <xs:attribute ref="ptn:Current_synapse__x3A__emmit__x3A__time__x3A__min"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Input__x3A__analyze">
+        <xs:complexType>
+            <xs:attribute ref="ptn:Input_exec_time__x3A__analyze"/>
+            <xs:attribute ref="ptn:Input_exec_time__x3A__initial__x3A__analyze"/>
+            <xs:attribute ref="ptn:Input_exec_receptor__x3A__analyze"/>
+            <xs:attribute ref="ptn:Input_exec_Time_constant__x3A__analyze"/>
+            <xs:attribute ref="ptn:Input_exec_Maximum_current__x3A__analyze"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="Input_exec_time__x3A__analyze"/>
+    <xs:attribute name="Input_exec_time__x3A__initial__x3A__analyze"/>
+    <xs:attribute name="Input_exec_receptor__x3A__analyze"/>
+    <xs:attribute name="Input_exec_Time_constant__x3A__analyze"/>
+    <xs:attribute name="Input_exec_Maximum_current__x3A__analyze"/>
+    <xs:attribute name="Current_synapse__x3A__emmit__x3A__count"/>
+    <xs:attribute name="Current_synapse__x3A__emmit__x3A__time__x3A__min"/>
 </xs:schema>

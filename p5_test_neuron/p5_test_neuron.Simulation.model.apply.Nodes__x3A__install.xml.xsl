@@ -71,8 +71,16 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.Stress__x3A__calculate__x3A__validated">
-        <xsl:comment>#70 todo? /m[<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__validated[@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type]">
+        <xsl:param name="ptn:Simulation_body_tick" tunnel="yes" required="yes"/>
+        <xsl:element name="{@ptn:Simulation.attract__x3A__calculate__x3A__output_node.type}" >
+            <xsl:attribute name="ptn:debug">#777 @tick[<xsl:value-of select="$ptn:Simulation_body_tick"/>]</xsl:attribute>
+            <xsl:attribute name="ptn:New" select="true()"/>
+            <xsl:copy-of select="*"/>
+        </xsl:element>
+    </xsl:template>
     
 </xsl:stylesheet>
