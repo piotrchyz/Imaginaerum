@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:Simulation.model.validate.xml xmlns:ptn="p5_test_neuron"
+                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                   ptn:Simulation_body_tick="3"
+                                   ptn:Simulation_body_time="3"
+                                   ptn:Simulation_body_time__x3A__last="2"
+                                   ptn:Simulator_tick="1">
+   <ptn:Simulation.model.validate.xml__x3A__stats>
+      <ptn:Node ptn:Label__x3A__stats="A"
+                ptn:Label__x3A__count="1"
+                ptn:Node__x3A__type="ptn:Receptor"
+                id="d15e4"
+                ptn:Node__x3A__position="1"
+                ptn:Nodes="false"/>
+      <ptn:Node ptn:Label__x3A__stats="B"
+                ptn:Label__x3A__count="1"
+                ptn:Node__x3A__type="ptn:Receptor"
+                id="d15e41"
+                ptn:Node__x3A__position="1"
+                ptn:Nodes="false"/>
+      <ptn:Node ptn:Label__x3A__stats="C"
+                ptn:Label__x3A__count="1"
+                ptn:Node__x3A__type="ptn:Receptor"
+                id="d15e75"
+                ptn:Node__x3A__position="1"
+                ptn:Nodes="false"/>
+   </ptn:Simulation.model.validate.xml__x3A__stats>
+   <ptn:Simulation.attract__x3A__aggregate__x3A__validated/>
+   <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+      <ptn:Receptor>
+         <ptn:Label>A</ptn:Label>
+         <ptn:Coordinate_X>0</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-55.80607200000001</ptn:Simulated_potential>
+         <ptn:Attract__x3A__flag><!--#59 TODO handle this flag when created model stale flag that was used-->true</ptn:Attract__x3A__flag>
+         <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor>
+         <ptn:Label>B</ptn:Label>
+         <ptn:Coordinate_X>10</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-63.141192000000004</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor>
+         <ptn:Label>C</ptn:Label>
+         <ptn:Coordinate_X>20</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+   </ptn:Receptors>
+   <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"/>
+</ptn:Simulation.model.validate.xml>

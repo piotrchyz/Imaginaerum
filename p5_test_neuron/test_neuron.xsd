@@ -5,7 +5,65 @@
     <xs:annotation>
         <xs:documentation>Test neuron model 2019-11 a.binder</xs:documentation>
     </xs:annotation>
-    <xs:include schemaLocation="Simulation.analyze_simulation.xml.xsd"/>
+    <xs:include schemaLocation="test_neuron.Simulation.analys.xml.xsd">
+        <xs:annotation>
+            <xs:documentation>
+                in Config1.xml or Simulation.model.apply.xml.0.xml
+                mode {p5_test_neuron}Simulation.analys.xml
+                out Simulation.analys.xml.0.xml
+            </xs:documentation>
+        </xs:annotation>
+    </xs:include>
+    <xs:include schemaLocation="test_neuron.Simulation.attract.xml.xsd">
+        <xs:annotation>
+            <xs:documentation>
+                in Simulation.analys.xml.0.xml
+                mode {p5_test_neuron}Simulation.attract.xml
+                out Simulation.attract.xml.0.xml
+            </xs:documentation>
+        </xs:annotation>
+    </xs:include>
+    <xs:include schemaLocation="test_neuron.Simulation.model.xml.xsd">
+        <xs:annotation>
+            <xs:documentation>
+                in Simulation.attract.xml.0.xml
+                mode {p5_test_neuron}Simulation.model.xml
+                out Simulation.model.xml.0.xml
+            </xs:documentation>
+        </xs:annotation>
+    </xs:include>
+    <xs:include schemaLocation="test_neuron.Simulation.model.stats.xml.xsd">
+        <xs:annotation>
+            <xs:documentation>
+                in Simulation.model.xml.0.xml
+                mode {p5_test_neuron}Simulation.model.stats.xml
+                out Simulation.model.stats.xml.0.xml
+            </xs:documentation>
+        </xs:annotation>
+    </xs:include>
+    <xs:include schemaLocation="test_neuron.Simulation.model.validate.xml.xsd">
+        <xs:annotation>
+            <xs:documentation>
+                in Simulation.model.stats.xml.0.xml
+                mode {p5_test_neuron}Simulation.model.validate.xml
+                out Simulation.model.validate.xml.0.xml
+            </xs:documentation>
+        </xs:annotation>
+    </xs:include>
+    <xs:include schemaLocation="test_neuron.Simulation.model.apply.xml.xsd">
+        <xs:annotation>
+            <xs:documentation>
+                in Simulation.model.validate.xml.0.xml
+                mode {p5_test_neuron}Simulation.model.apply.xml
+                out Simulation.model.apply.xml.0.xml
+            </xs:documentation>
+        </xs:annotation>
+    </xs:include>
+    <xs:include schemaLocation="test_neuron.Simulation.analyze_simulation.xml.xsd">
+        <xs:annotation>
+            <xs:documentation>Analiza dla stworzneia symulacji X3d</xs:documentation>
+        </xs:annotation>
+    </xs:include>
     <xs:simpleType name="Capacitance">
         <xs:annotation>
             <xs:documentation>Membrane Capacitance from 0.01 to 2nF</xs:documentation>
@@ -973,23 +1031,6 @@ debug most feature</xs:documentation>
     </xs:complexType>
     <xs:element name="Simulation.Stress__x3A__calculate__x3A__output_node"
         type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
-    <xs:complexType name="Simulation.attract.xml">
-        <xs:complexContent>
-            <xs:restriction base="ptn:Simulation_body__x3A__abstract">
-                <xs:sequence>
-                    <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate"
-                        maxOccurs="0">
-                        <xs:annotation>
-                            <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element ref="ptn:Receptors"/>
-                    <xs:element ref="ptn:Nodes"/>
-                </xs:sequence>
-            </xs:restriction>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:element name="Simulation.attract.xml" type="ptn:Simulation.attract.xml"/>
     <xs:complexType name="Simulation.model.xml">
         <xs:complexContent>
             <xs:restriction base="ptn:Simulation_body__x3A__abstract">
@@ -1006,24 +1047,6 @@ debug most feature</xs:documentation>
         </xs:complexContent>
     </xs:complexType>
     <xs:element name="Simulation.model.xml" type="ptn:Simulation.model.xml"/>
-    <xs:complexType name="Simulation.model.validate.xml">
-        <xs:complexContent>
-            <xs:restriction base="ptn:Simulation_body__x3A__abstract">
-                <xs:sequence>
-                    <xs:element ref="ptn:Simulation.model.validate.xml__x3A__stats"/>
-                    <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate">
-                        <xs:annotation>
-                            <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element ref="ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
-                    <xs:element ref="ptn:Receptors"/>
-                    <xs:element ref="ptn:Nodes"/>
-                </xs:sequence>
-            </xs:restriction>
-        </xs:complexContent>
-    </xs:complexType>
-    <xs:element name="Simulation.model.validate.xml" type="ptn:Simulation.model.validate.xml"/>
     <xs:complexType name="Simulation.attract__x3A__calculate__x3A__validated">
         <xs:complexContent>
             <xs:restriction base="ptn:Simulation.attract__x3A__calculate">
@@ -1095,6 +1118,8 @@ debug most feature</xs:documentation>
         <xs:attribute ref="ptn:Node__x3A__type" use="required"/>
         <xs:attribute name="id" type="xs:ID" use="required"/>
         <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
+        <xs:attribute ref="ptn:Label__x3A__count"/>
+        <xs:attribute ref="ptn:Nodes"/>
     </xs:complexType>
     <xs:complexType name="Input__x3A__stats">
         <xs:attribute ref="ptn:Input__x3A__node__x3A__stats" use="required"/>
@@ -1124,7 +1149,7 @@ debug most feature</xs:documentation>
     <xs:attribute name="Node__x3A__type" type="ptn:Node__x3A__type"/>
     <xs:attribute name="Input__x3A__node__x3A__stats" type="ptn:Output_Node__x3A__temp"/>
     <xs:attribute name="Output_Node__x3A__stats" type="ptn:Output_Node__x3A__temp"/>
-    <xs:attribute name="Node__x3A__position"/>
+    <xs:attribute name="Node__x3A__position" type="xs:string"/>
     <xs:complexType name="Simulation.model.apply.xml">
         <xs:complexContent>
             <xs:extension base="ptn:Simulation_body__x3A__abstract"/>
@@ -1132,4 +1157,16 @@ debug most feature</xs:documentation>
     </xs:complexType>
     <xs:element name="Simulation.model.apply.xml" type="ptn:Simulation.model.apply.xml"/>
     <xs:attribute name="Output_Node__x3A__attract" type="ptn:Output_Node__x3A__temp"/>
+    <xs:simpleType name="Label__x3A__count__1">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Label__x3A__count" type="ptn:Label__x3A__count__1"/>
+    <xs:attribute name="Nodes" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>W stats - flaguje czy jest node w Nodes</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
 </xs:schema>

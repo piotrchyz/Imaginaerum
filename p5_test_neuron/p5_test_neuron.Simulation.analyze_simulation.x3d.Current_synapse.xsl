@@ -78,7 +78,7 @@
         <CoordinateInterpolator DEF="{$ptn:Label__x3A__analyze}_to_{@ptn:Output_Node__x3A__analyze}_Current_synapse_CoordinateInterpolator" 
             current-group.n="{$current-group/name()}" cgo="{$current-group/@ptn:Output_Node__x3A__analyze}"><!-- key="0, 0.2, 0.4, 0.6, 0.8, 1" -->
             <xsl:attribute name="keyValue">
-                <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
+                <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze"><!-- ptn:Simulation_body__x3A__analyze -->
                     <xsl:choose>
                         <xsl:when test="$current-group[parent::*/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]][@ptn:Output_Node__x3A__analyze = $ptn:Output_Node__x3A__analyze]"><!-- test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]" -->
                             <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text><xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
@@ -107,7 +107,7 @@
                 </xsl:for-each>
             </xsl:attribute>
             <xsl:attribute name="key">
-                <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)">
+                <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze)"><!-- ptn:Simulation_body__x3A__analyze -->
                     <xsl:choose>
                         <xsl:when test="position() = last()">
                             <xsl:value-of select="1"/>
@@ -115,7 +115,7 @@
                         <xsl:when test="position() = 1">
                             <xsl:value-of select="0"/><xsl:text>, </xsl:text>
                         </xsl:when>
-                        <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise>
+                        <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise><!-- ptn:Simulation_body__x3A__analyze -->
                     </xsl:choose>
                 </xsl:for-each>
             </xsl:attribute><xsl:text> </xsl:text>

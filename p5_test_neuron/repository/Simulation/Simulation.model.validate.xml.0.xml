@@ -5,21 +5,7 @@
                                    ptn:Simulation_body_tick="1"
                                    ptn:Simulation_body_time="1"
                                    ptn:Simulator_tick="1"
-                                   ptn:Simulation_body_time__x3A__last="0">
-   <ptn:Simulation.model.validate.xml__x3A__stats>
-      <ptn:Node ptn:Label__x3A__stats="A"
-                ptn:Node__x3A__type="ptn:Receptor"
-                id="d15e4"
-                ptn:Node__x3A__position="1"/>
-      <ptn:Node ptn:Label__x3A__stats="B"
-                ptn:Node__x3A__type="ptn:Receptor"
-                id="d15e38"
-                ptn:Node__x3A__position="2"/>
-      <ptn:Node ptn:Label__x3A__stats="C"
-                ptn:Node__x3A__type="ptn:Receptor"
-                id="d15e72"
-                ptn:Node__x3A__position="3"/>
-   </ptn:Simulation.model.validate.xml__x3A__stats>
+                                   ptn:Simulation_body_time__x3A__last="0"><!--#33AA unantended/n[ptn:Simulation.model.validate.xml__x3A__stats]-->
    <ptn:Simulation.attract__x3A__aggregate__x3A__validated/>
    <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Receptor>

@@ -11,12 +11,17 @@
     <xsl:output indent="yes" method="xml" /><!-- doctype-public="ISO//Web3D//DTD X3D 3.0//EN" doctype-system="http://www.web3d.org/specifications/x3d-3.0.dtd" -->
     <xsl:strip-space elements="*"/>
     
+    <!-- ptn:Simulation.analys.xml__x3A__analyze FROM  ptn:Simulation_body__x3A__analyze -->
     
-    <xsl:template  mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Route ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Shape ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Interpolator" match="ptn:Simulation.analyze_simulation.xml">
+    <xsl:template  mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Route ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Shape ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Interpolator"
+        match="ptn:Simulation.analyze_simulation.xml">
         <xsl:param name="ptn:Simulation.analyze_simulation.xml" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulation__x3A__TimeSensor" tunnel="yes" required="yes"/>
-        
-            <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
+        <xsl:choose>
+            <xsl:when test="ptn:Simulation.analys.xml__x3A__analyze"/>
+            <xsl:otherwise><xsl:message terminate="yes">#20 [MISSING][ptn:Simulation.analys.xml__x3A__analyze]   [UNANTENDED][<xsl:value-of select="name()"/>]</xsl:message></xsl:otherwise>
+        </xsl:choose>
+        <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
                 <xsl:comment>#18GG Current_synapse.Input.Shape [CGK[<xsl:value-of select="current-grouping-key()"/>]]</xsl:comment>
                 <xsl:variable name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze"/>
                 <xsl:variable name="ptn:Coordinate_X"  select="current-group()[@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/>
@@ -187,7 +192,7 @@
                 <xsl:call-template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key"/>
             <xsl:variable name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys">
                 <ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys>
-                    <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
+                    <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze"><!--ptn:Simulation_body__x3A__analyze-->
                         <xsl:choose>
                             <xsl:when test="$current-group/ancestor-or-self::ptn:Simulation_body__x3A__analyze[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
                                 <ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position>
@@ -202,9 +207,9 @@
                 </ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys>    
             </xsl:variable>
                 <xsl:attribute name="keyValue">
-                    <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze">
+                    <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze"><!-- ptn:Simulation_body__x3A__analyze -->
                         <xsl:choose>
-                            <xsl:when test="$current-group/ancestor-or-self::ptn:Simulation_body__x3A__analyze[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
+                            <xsl:when test="$current-group/ancestor-or-self::ptn:Simulation.analys.xml__x3A__analyze[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]"><!-- ptn:Simulation_body__x3A__analyze -->
                                 <xsl:call-template name="ptn:MFVec3f__x3A__section__x3A__sequence">
                                     <xsl:with-param name="ptn:MFVec3f__x3A__sequence__x3A__last" select="position() = last()"/>
                                     <xsl:with-param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position" select="position()" tunnel="yes"/>

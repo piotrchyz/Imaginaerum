@@ -12,7 +12,7 @@
     
     <xsl:include href="p5_test_neuron.Simulation.attract.Stress.xsl"/>
     
-    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Simulation_body">
+    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Simulation.analys.xml">
         <ptn:Simulation.attract.xml>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current">

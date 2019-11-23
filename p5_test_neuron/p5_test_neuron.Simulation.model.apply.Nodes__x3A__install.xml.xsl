@@ -19,6 +19,10 @@
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__ignored"/>
     
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated">
+        <xsl:comment>#23 [not validated]/n[<xsl:value-of select="@*"/>]</xsl:comment>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="*">
         <xsl:message terminate="yes">#209M Unantended[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
@@ -66,6 +70,9 @@
         </xsl:element>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.Stress__x3A__calculate__x3A__validated">
+        <xsl:comment>#70 todo? /m[<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
     
     
 </xsl:stylesheet>

@@ -42,7 +42,7 @@
          <ptn:Simulation.attract__x3A__calculate ptn:Label__x3A__context="A"
                                                  ptn:Label="B"
                                                  ptn:Distance="10"
-                                                 ptn:Simulated_potential__x3A__diff="-0.5993507520000065"
+                                                 ptn:Simulated_potential__x3A__diff="-0.2966483519999983"
                                                  ptn:Simulated_potential__x3A__more_charged_node="A"
                                                  ptn:Simulated_potential__x3A__less_charged_node="B"
                                                  ptn:Output_Node__x3A__attract="B-to-A"
@@ -165,7 +165,7 @@
             </ptn:Current_synapse>
          </ptn:Outputs>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-55.7688007968</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-56.07150319680001</ptn:Simulated_potential>
          <!-- #44 TODO to implement/n ptn:Attract__x3A__flag-->
          <!--#95 lower sorted grouped unique -->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
@@ -188,9 +188,8 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-62.2</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors-->
-         <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <!-- #40 removed/n ptn:Simulated_potential__x3A__vectors.sum-->
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
@@ -200,7 +199,7 @@
          <ptn:Label>B-to-A</ptn:Label>
          <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
          <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -224,7 +223,7 @@
          <ptn:Label>_B-to-A</ptn:Label>
          <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
          <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -256,7 +255,7 @@
          <ptn:Label>_B-to-B</ptn:Label>
          <ptn:Coordinate_X>2</ptn:Coordinate_X>
          <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -288,7 +287,7 @@
          <ptn:Label>A-to-B</ptn:Label>
          <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
          <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -312,7 +311,7 @@
          <ptn:Label>_A-to-B</ptn:Label>
          <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
          <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -344,7 +343,7 @@
          <ptn:Label>_A-to-A</ptn:Label>
          <ptn:Coordinate_X>2</ptn:Coordinate_X>
          <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>

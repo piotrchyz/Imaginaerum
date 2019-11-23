@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ptn:Simulation_body xmlns:ptn="p5_test_neuron"
-                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                     xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
-                     ptn:Simulation_body_tick="5"
-                     ptn:Simulation_body_time="5"
-                     ptn:Simulation_body_time__x3A__last="4"
-                     ptn:Simulator_tick="1">
+<ptn:Simulation.analys.xml xmlns:ptn="p5_test_neuron"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+                           xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                           ptn:Simulation_body_tick="5"
+                           ptn:Simulation_body_time="5"
+                           ptn:Simulation_body_time__x3A__last="4"
+                           ptn:Simulator_tick="1">
    <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -74,12 +74,12 @@
             </ptn:Current_synapse>
          </ptn:Outputs>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-55.7688007968</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-56.07150319680001</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-55.47836816">
-            <ptn:Simulated_potential.resting.vector>-0.2904326368</ptn:Simulated_potential.resting.vector>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-55.78724816000001">
+            <ptn:Simulated_potential.resting.vector>-0.2842550367999998</ptn:Simulated_potential.resting.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-55.7688007968</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-56.07150319680001</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -98,22 +98,20 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-62.2</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70">
             <ptn:Simulated_potential.resting.vector>-0</ptn:Simulated_potential.resting.vector>
-            <ptn:Simulated_potential.input.vector>7.800000000000001</ptn:Simulated_potential.input.vector>
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
-         <ptn:Simulated_potential__x3A__vectors.sum>-62.2</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes>
-      <ptn:Leaky_neuron_standard ptn:debug="#317M  #324M @tick[4]  _B-to-A" ptn:New="true">
+      <ptn:Leaky_neuron_standard>
          <ptn:Label>B-to-A</ptn:Label>
          <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
          <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -135,11 +133,11 @@
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_standard>
-      <ptn:Leaky_neuron_inhibitor__x3A__AB ptn:debug="#324M @tick[4]" ptn:New="true">
+      <ptn:Leaky_neuron_inhibitor__x3A__AB>
          <ptn:Label>_B-to-A</ptn:Label>
          <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
          <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -169,11 +167,11 @@
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_inhibitor__x3A__AB>
-      <ptn:Leaky_neuron_inhibitor__X3A__AA ptn:debug="#324M @tick[4]" ptn:New="true">
+      <ptn:Leaky_neuron_inhibitor__X3A__AA>
          <ptn:Label>_B-to-B</ptn:Label>
          <ptn:Coordinate_X>2</ptn:Coordinate_X>
          <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -203,11 +201,11 @@
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_inhibitor__X3A__AA>
-      <ptn:Leaky_neuron_standard ptn:debug="#317M  #324M @tick[4]  _A-to-B" ptn:New="true">
+      <ptn:Leaky_neuron_standard>
          <ptn:Label>A-to-B</ptn:Label>
          <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
          <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -229,11 +227,11 @@
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_standard>
-      <ptn:Leaky_neuron_inhibitor__x3A__AB ptn:debug="#324M @tick[4]" ptn:New="true">
+      <ptn:Leaky_neuron_inhibitor__x3A__AB>
          <ptn:Label>_A-to-B</ptn:Label>
          <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
          <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -263,11 +261,11 @@
          </ptn:Simulated_potential__x3A__vectors>
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_inhibitor__x3A__AB>
-      <ptn:Leaky_neuron_inhibitor__X3A__AA ptn:debug="#324M @tick[4]" ptn:New="true">
+      <ptn:Leaky_neuron_inhibitor__X3A__AA>
          <ptn:Label>_A-to-A</ptn:Label>
          <ptn:Coordinate_X>2</ptn:Coordinate_X>
          <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
          <ptn:Capacitance>1</ptn:Capacitance>
          <ptn:Resistance>100</ptn:Resistance>
          <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
@@ -298,4 +296,4 @@
          <ptn:Simulated_potential__x3A__vectors.sum>-70</ptn:Simulated_potential__x3A__vectors.sum>
       </ptn:Leaky_neuron_inhibitor__X3A__AA>
    </ptn:Nodes>
-</ptn:Simulation_body>
+</ptn:Simulation.analys.xml>

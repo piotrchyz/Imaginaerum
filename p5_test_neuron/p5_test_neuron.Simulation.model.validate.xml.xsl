@@ -12,48 +12,35 @@
     
     <!-- {p5_test_neuron}Simulation.model.validate.xml -->
     
-    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Simulation.model.xml">
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Simulation.model.stats.xml">
         <xsl:message>#16VV [ptn:Simulation.model.validate.xml] - just validate</xsl:message>
         <ptn:Simulation.model.validate.xml>
             <xsl:copy-of select="namespace::*"/>
             <xsl:copy-of select="@*"/>
-            <xsl:variable name="ptn:Simulation.model.validate.xml__x3A__stats">
-                <xsl:call-template name="ptn:Simulation.model.validate.xml__x3A__stats"/>
-            </xsl:variable>
-            <xsl:copy-of select="$ptn:Simulation.model.validate.xml__x3A__stats"/>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
                 <xsl:with-param name="ptn:Nodes" select="ptn:Nodes" tunnel="yes"/>
-                <xsl:with-param name="ptn:Simulation.model.validate.xml__x3A__stats" select="$ptn:Simulation.model.validate.xml__x3A__stats" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation.model.validate.xml__x3A__stats" select="ptn:Simulation.model.validate.xml__x3A__stats" tunnel="yes"/>
             </xsl:apply-templates>
         </ptn:Simulation.model.validate.xml>
         
     </xsl:template>
     
     
-    <xsl:template name="ptn:Simulation.model.validate.xml__x3A__stats">
-        <ptn:Simulation.model.validate.xml__x3A__stats>
-            <xsl:for-each select="descendant-or-self::*[ptn:Label]">
-                <ptn:Node ptn:Label__x3A__stats="{ptn:Label}" ptn:Node__x3A__type="{name()}" id="{generate-id(.)}" ptn:Node__x3A__position="{position()}">
-                    <xsl:copy-of select="@ptn:Label__x3A__context"/>
-                    <xsl:copy-of select="@ptn:Simulated_potential__x3A__diff"/>
-                    <xsl:copy-of select="@ptn:Simulated_potential__x3A__more_charged_node"/>
-                    <xsl:copy-of select="@ptn:Simulated_potential__x3A__less_charged_node"/>
-                    <xsl:for-each select="descendant-or-self::ptn:Current_synapse">
-                        <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="{ptn:Output_Node}" ptn:Node__x3A__position="{position()}" id="{generate-id(.)}"/>
-                    </xsl:for-each>
-                    <xsl:for-each select="descendant-or-self::ptn:Input__x3A__node">
-                        <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="{.}" ptn:Node__x3A__position="{position()}" id="{generate-id(.)}"/>
-                    </xsl:for-each>
-                </ptn:Node>
-            </xsl:for-each>
-        </ptn:Simulation.model.validate.xml__x3A__stats>
-    </xsl:template>
+    
     
     
     <xsl:template mode="ptn:Simulation.model.validate.xml" match="*">
         <xsl:message terminate="yes">#33 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Simulation.model.validate.xml__x3A__stats">
+        <xsl:comment>#33AA unantended/n[<xsl:value-of select="name()"/>]</xsl:comment>
+        <!--<xsl:apply-templates mode="#current"/>-->
+    </xsl:template>
+    
+    
+    
     
     <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Simulation.attract__x3A__aggregate">
         <ptn:Simulation.attract__x3A__aggregate__x3A__validated>
@@ -93,15 +80,23 @@
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label]">
         <xsl:param name="ptn:Simulation.model.validate.xml__x3A__stats" tunnel="yes" required="yes"/>    
         <!-- czy juz nie ma go w secie -->
+        <xsl:comment>#100 will decide.[<xsl:value-of select="count($ptn:Simulation.model.validate.xml__x3A__stats//ptn:Nod[@ptn:Label__x3A__stats='_B-to-A'])"/>].</xsl:comment>
         <xsl:choose>
+            <!-- jak jest juz node to nie robimy -->
+            <xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label__x3A__stats = current()/ptn:Label][@ptn:Nodes='true']">
+                <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54BB ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]  [#141A]@ptn:Nodes=[true]" />
+            </xsl:when>
+            <!--<xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label__x3A__stats = current()/ptn:Label]">
+                <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54AA ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]  id={ $ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label__x3A__stats = current()/ptn:Label]/@id}  [c][{generate-id(.)}]" />
+            </xsl:when>-->
             <xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label = current()/ptn:Label]">
-                <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />
+                <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54BB ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />
             </xsl:when>
             <!--<xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label = current()/ptn:Label]">
                 <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />
             </xsl:when>-->
             <xsl:otherwise>
-                <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="#87 done to validate"> 
+                <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug=" "> <!-- #87 done to validate [ptn:Label__x3A__count?][{count($ptn:Simulation.model.validate.xml__x3A__stats//ptn:Nod[@ptn:Label__x3A__stats='_B-to-A'])}] -->
                     <xsl:copy-of select="@*"/>
                     <xsl:apply-templates mode="#current"/>
                 </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
@@ -113,8 +108,8 @@
         <xsl:param name="ptn:Simulation.model.validate.xml__x3A__stats" tunnel="yes" required="yes"/>    
         <!-- czy juz nie ma go w secie -->
         <xsl:choose>
-            <xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label__x3A__stats = current()/ptn:Label]">
-                <ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />
+            <xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label__x3A__stats = current()/ptn:Label][@ptn:Nodes='true']">
+                <ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}] [#141]@ptn:Nodes=[true]" />
             </xsl:when>
             <!--<xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label = current()/ptn:Label]">
                 <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />

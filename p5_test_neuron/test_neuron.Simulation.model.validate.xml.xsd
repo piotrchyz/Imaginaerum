@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="p5_test_neuron" vc:minVersion="1.1" xmlns:ptn="p5_test_neuron"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+    <xs:include schemaLocation="test_neuron.xsd"/>
+    <xs:complexType name="Simulation.model.validate.xml">
+        <xs:complexContent>
+            <xs:restriction base="ptn:Simulation_body__x3A__abstract">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.model.validate.xml__x3A__stats"/>
+                    <xs:element minOccurs="0" ref="ptn:Simulation.attract__x3A__aggregate">
+                        <xs:annotation>
+                            <xs:documentation>generated in model - just for debug - passed as tunnel parameter</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element ref="ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
+                    <xs:element ref="ptn:Receptors"/>
+                    <xs:element ref="ptn:Nodes"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.model.validate.xml" type="ptn:Simulation.model.validate.xml"/>
+</xs:schema>

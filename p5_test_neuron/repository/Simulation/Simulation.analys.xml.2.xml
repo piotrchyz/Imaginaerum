@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ptn:Simulation_body xmlns:ptn="p5_test_neuron"
-                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                     xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
-                     ptn:Simulation_body_tick="3"
-                     ptn:Simulation_body_time="3"
-                     ptn:Simulation_body_time__x3A__last="2"
-                     ptn:Simulator_tick="1">
+<ptn:Simulation.analys.xml xmlns:ptn="p5_test_neuron"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+                           xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                           ptn:Simulation_body_tick="3"
+                           ptn:Simulation_body_time="3"
+                           ptn:Simulation_body_time__x3A__last="2"
+                           ptn:Simulator_tick="1">
    <ptn:Receptors>
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -49,13 +49,14 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-63.141192000000004</ptn:Simulated_potential>
-         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-70.9604">
-            <ptn:Simulated_potential.resting.vector>0.01920800000000014</ptn:Simulated_potential.resting.vector>
+         <ptn:Simulated_potential>-55.49719200000001</ptn:Simulated_potential>
+         <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
+         <ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="-63.16040000000001">
+            <ptn:Simulated_potential.resting.vector>-0.1367919999999998</ptn:Simulated_potential.resting.vector>
             <ptn:Simulated_potential.input.vector>7.800000000000001</ptn:Simulated_potential.input.vector>
          </ptn:Simulated_potential__x3A__vectors>
-         <ptn:Simulated_potential__x3A__vectors.sum>-70.941192</ptn:Simulated_potential__x3A__vectors.sum>
-         <ptn:Simulated_potential__x3A__vectors.sum>-63.141192000000004</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-63.29719200000001</ptn:Simulated_potential__x3A__vectors.sum>
+         <ptn:Simulated_potential__x3A__vectors.sum>-55.49719200000001</ptn:Simulated_potential__x3A__vectors.sum>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
@@ -83,4 +84,4 @@
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes/>
-</ptn:Simulation_body>
+</ptn:Simulation.analys.xml>

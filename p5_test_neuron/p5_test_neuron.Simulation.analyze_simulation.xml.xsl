@@ -20,7 +20,14 @@
         <ptn:Simulation.analyze_simulation.xml file="{$file}">
             <xsl:copy-of select="@xsi:schemaLocation"/>
             <xsl:for-each select="$files">
-                <xsl:sort select="ptn:Simulation_body/@ptn:Simulation_body_tick" data-type="number" order="ascending"/>
+                <xsl:sort select="ptn:Simulation.analys.xml/@ptn:Simulation_body_tick" data-type="number" order="ascending"/>
+                <xsl:choose>
+                    <xsl:when test="ptn:Simulation.analys.xml"/>
+                    <xsl:otherwise>
+                        <xsl:message terminate="yes">#28 unexpected /n[<xsl:value-of select="name()"/>]</xsl:message>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <!-- ptn:Simulation_body -->
                 <xsl:message>#24AA [READING][<xsl:value-of select="document-uri(.)"/>]</xsl:message>
                 <!--<file url="{document-uri(.)}"></file>-->
                 <xsl:apply-templates mode="#current"/>
@@ -36,7 +43,7 @@
         <xsl:value-of select="concat($name,'__x3A__analyze')"/>
     </xsl:function>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Simulation_body">
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Simulation_body|ptn:Simulation.analys.xml">
         <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
             <xsl:copy-of select="@ptn:Simulation_body_time"/>
             <xsl:copy-of select="@ptn:Simulation_body_tick"/>
@@ -89,7 +96,14 @@
         
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="*"/>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="*">
+        <xsl:message terminate="yes">#99 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Z|ptn:Coordinate_Y|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage"/>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Maximum_current|ptn:Time_constant"/>    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Delay|ptn:Input__x3A__nodes|ptn:Simulated_potential|ptn:Attract__x3A__flag|ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum"/>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Receptor_regex_filter|ptn:Input__x3A__nodes__x3A__prohibit"/>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z">
         <xsl:param name="ptn:Simulation_body_tick" required="yes" tunnel="yes"/>

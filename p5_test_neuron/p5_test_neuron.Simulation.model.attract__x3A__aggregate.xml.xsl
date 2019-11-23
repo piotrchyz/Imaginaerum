@@ -63,11 +63,12 @@
     </xsl:template>
     
     
-    
-    
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="*">
         <xsl:message terminate="yes">#66 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
+    
+                        
+    
     
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Simulation.attract__x3A__calculate">
@@ -229,8 +230,21 @@
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Leaky_neuron_inhibitor__X3A__AA">
+        <xsl:message>#72 todo why not working other templ cont</xsl:message>
+        <xsl:apply-templates mode="#current">
+            <xsl:with-param name="ptn:Label" select="ptn:Label" tunnel="yes"/>
+        </xsl:apply-templates>
+    </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor__x3A__AB|ptn:Leaky_neuron_inhibitor__x3A__AA">
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Leaky_neuron_inhibitor__x3A__AB">
+        <xsl:message>#72B todo why not working other templ cont</xsl:message>
+        <xsl:apply-templates mode="#current">
+            <xsl:with-param name="ptn:Label" select="ptn:Label" tunnel="yes"/>
+        </xsl:apply-templates>
+    </xsl:template>
+                                                                                                                                     
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Leaky_neuron_standard">
         <xsl:apply-templates mode="#current">
             <xsl:with-param name="ptn:Label" select="ptn:Label" tunnel="yes"/>
         </xsl:apply-templates>

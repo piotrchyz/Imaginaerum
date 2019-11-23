@@ -97,6 +97,34 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.0.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.0.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.0.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.0.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -243,6 +271,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.1.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.1.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.1.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.1.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -391,6 +448,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.2.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.2.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.2.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.2.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -539,6 +625,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.3.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.3.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.3.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.3.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -687,6 +802,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.4.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.4.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.4.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.4.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -835,6 +979,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.5.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.5.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.5.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.5.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -983,6 +1156,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.6.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.6.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.6.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.6.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -1131,6 +1333,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.7.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.7.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.7.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.7.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -1279,6 +1510,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.8.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.8.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.8.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.8.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -1427,6 +1687,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.9.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.9.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.9.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.9.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -1575,6 +1864,35 @@
       </xslt>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.xml.10.xml"
+            out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.10.xml"
+            force="false">
+         <factory name="net.sf.saxon.TransformerFactoryImpl">
+            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+            <attribute name="http://saxon.sf.net/feature/initialMode"
+                       value="{p5_test_neuron}Simulation.model.stats.xml"/>
+            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                       value="true"/>
+            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+         </factory>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config1.xml"
+                name="{p5_test_neuron}Config"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Inputs1.xml"
+                name="{p5_test_neuron}Inputs"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                name="{p5_test_neuron}xsl"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                name="{p5_test_neuron}xsd"/>
+         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation"
+                name="{p5_test_neuron}Simulation.dir"/>
+         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                name="{p5_test_neuron}basedir"/>
+         <param name="basedir"
+                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+         <classpath location="/opt/local/share/java/saxon9he.jar"/>
+      </xslt>
+      <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.stats.xml.10.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation/Simulation.model.validate.xml.10.xml"
             force="false">
          <factory name="net.sf.saxon.TransformerFactoryImpl">

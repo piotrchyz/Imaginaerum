@@ -44,7 +44,7 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.9604</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-63.16040000000001</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>

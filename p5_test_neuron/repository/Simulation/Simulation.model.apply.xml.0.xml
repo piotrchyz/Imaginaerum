@@ -5,7 +5,7 @@
                                 ptn:Simulation_body_tick="1"
                                 ptn:Simulation_body_time="1"
                                 ptn:Simulator_tick="1"
-                                ptn:Simulation_body_time__x3A__last="0"><!--#306 bypassed/n[ptn:Simulation.model.validate.xml__x3A__stats] to be context installed--><!--#30 bypassed/n[ptn:Simulation.attract__x3A__aggregate__x3A__validated] to be context installed-->
+                                ptn:Simulation_body_time__x3A__last="0"><!--#30 bypassed/n[ptn:Simulation.attract__x3A__aggregate__x3A__validated] to be context installed-->
    <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>

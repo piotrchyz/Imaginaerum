@@ -60,7 +60,7 @@
                         <xsl:with-param name="ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" select="$ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" tunnel="yes"/>
                         <xsl:with-param name="ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" select="$ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" tunnel="yes"/>
                         <xsl:with-param name="ptn:Simulation.analyze_simulation.xml" select="." tunnel="yes"/>
-                        <xsl:with-param name="ptn:Simulation_body_tick__x3A__max" select="max(descendant-or-self::ptn:Simulation_body__x3A__analyze/number(@ptn:Simulation_body_tick))" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Simulation_body_tick__x3A__max" select="max(descendant-or-self::ptn:Simulation.analys.xml__x3A__analyze/number(@ptn:Simulation_body_tick))" tunnel="yes"/>
                     </xsl:call-template>
                 </x3d>
                 <button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
@@ -317,7 +317,15 @@
     
     <xsl:template name="ptn:Simulator_tick__x3A__for-each-group">
         <ptn:Simulator_tick__x3A__for-each-group name="{name()}">
-            <xsl:for-each-group select="ptn:Simulation_body__x3A__analyze" group-by="@ptn:Simulation_body_tick">
+            <xsl:choose>
+                <xsl:when test="ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_tick">
+                    <xsl:message>#322 ok[/@ptn:Simulation_body_tick[<xsl:value-of select="ptn:Simulation.analys.xml__x3A__analyze[1]/@ptn:Simulation_body_tick"/>]]</xsl:message>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:message terminate="yes">#325  [MISSING][ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_tick]</xsl:message>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze" group-by="@ptn:Simulation_body_tick">
                 <xsl:copy>
                     <xsl:copy-of select="@*"/>
                 </xsl:copy>
@@ -568,7 +576,7 @@
     <xsl:template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key">
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" required="yes"/>
         <xsl:attribute name="key">
-            <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)">
+            <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze)">
                 <xsl:choose>
                     <xsl:when test="position() = last()">
                         <xsl:value-of select="1"/>
@@ -576,7 +584,7 @@
                     <xsl:when test="position() = 1">
                         <xsl:value-of select="0"/><xsl:text>, </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise>
+                    <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:attribute>
@@ -584,7 +592,7 @@
     
     <xsl:template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_all">
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" required="yes"/>
-        <xsl:value-of select="count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation_body__x3A__analyze)"/>
+        <xsl:value-of select="count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze)"/>
     </xsl:template>
     
     <xsl:template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active">

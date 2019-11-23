@@ -15,14 +15,16 @@
     <!-- {p5_test_neuron}Simulation.model.apply.xml -->
     
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Simulation.model.validate.xml">
-        <xsl:message>#16AA [ptn:Simulation.model.apply.xml] - just install validated components</xsl:message>
+        <xsl:message>#16AA [ptn:Simulation.model.apply.xml] - just install validated components;  T[<xsl:value-of select="ptn:Simulation.attract__x3A__aggregate__x3A__validated/name()"/>]</xsl:message>
         <ptn:Simulation.model.apply.xml xsi:schemaLocation="p5_test_neuron file:{$ptn:xsd}">
             <xsl:copy-of select="@*"/>
             <!--<xsl:copy-of select="*"/>-->
+            
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulation.attract__x3A__aggregate__x3A__validated" select="ptn:Simulation.attract__x3A__aggregate__x3A__validated" tunnel="yes"/>
                 <xsl:with-param name="ptn:Defaults" select="doc($ptn:Config)//ptn:Defaults" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation.model.validate.xml__x3A__stats" select="ptn:Simulation.model.validate.xml__x3A__stats" tunnel="yes"/>
             </xsl:apply-templates>
         </ptn:Simulation.model.apply.xml>
         
@@ -80,7 +82,16 @@
         <xsl:copy-of select="."/>
     </xsl:template>
    
-    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Input__x3A__nodes|ptn:Simulated_potential|ptn:Attract__x3A__flag">
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Input__x3A__nodes|ptn:Input__x3A__node|ptn:Simulated_potential|ptn:Attract__x3A__flag">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+   
+   
+   
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Input__x3A__nodes__x3A__prohibit|ptn:Input__x3A__node__x3A__prohibit">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
@@ -102,6 +113,16 @@
     </xsl:template>
     
     
+    
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Leaky_neuron_standard[ptn:Label]|ptn:Leaky_neuron_inhibitor__x3A__AB[ptn:Label]|ptn:Leaky_neuron_inhibitor__X3A__AA[ptn:Label]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current">
+                <xsl:with-param name="ptn:Label" select="ptn:Label" tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Receptor[ptn:Label]">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
@@ -121,6 +142,21 @@
             <xsl:apply-templates mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" select="$ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
         </xsl:copy>
     </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Current_synapse">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Maximum_current|ptn:Time_constant|ptn:Delay|ptn:Output_Node">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
     
     <!--<xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install " match="ptn:Simulation.attract__x3A__calculate.best.unique">
         <xsl:apply-templates mode="#current"/>
