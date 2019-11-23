@@ -105,6 +105,11 @@
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Delay|ptn:Input__x3A__nodes|ptn:Simulated_potential|ptn:Attract__x3A__flag|ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum"/>
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Receptor_regex_filter|ptn:Input__x3A__nodes__x3A__prohibit"/>
     
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Output__x3A__flag">
+        <xsl:message>#109 [TODO][<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z">
         <xsl:param name="ptn:Simulation_body_tick" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Label" required="yes" tunnel="yes"/>

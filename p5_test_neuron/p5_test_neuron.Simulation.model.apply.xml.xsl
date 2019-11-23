@@ -105,6 +105,12 @@
         </xsl:copy>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Current_synapse__x3A__emmit">
+        <xsl:copy-of select="."/>
+    </xsl:template>
+    
+    
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Stress__x3A__flag">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
