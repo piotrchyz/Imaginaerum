@@ -573,14 +573,14 @@
         </xs:sequence>
         <xs:attribute ref="ptn:debug"/>
     </xs:complexType>
-    <xs:element name="Outputs">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
-                    type="ptn:Current_synapse"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+    <xs:complexType name="Outputs">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Current_synapse"
+                type="ptn:Current_synapse"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
+    </xs:complexType>
+    <xs:element name="Outputs" type="ptn:Outputs"> </xs:element>
     <xs:element name="Input__x3A__nodes">
         <xs:complexType>
             <xs:sequence>
@@ -795,7 +795,8 @@ debug most feature</xs:documentation>
         <xs:attribute ref="ptn:Simulation.attract__x3A__calculate.best.unique.position"/>
         <xs:attribute ref="ptn:Simulated_potential__x3A__more_charged_node" use="required"/>
         <xs:attribute ref="ptn:Simulated_potential__x3A__less_charged_node" use="required"/>
-        <xs:attribute ref="ptn:Output_Node" use="optional"/>
+        <xs:attribute ref="ptn:Output_Node" use="prohibited"/>
+        <xs:attribute ref="ptn:Output_Node__x3A__attract" use="required"/>
     </xs:attributeGroup>
     <xs:complexType name="Simulation.attract__x3A__calculate">
         <xs:annotation>
@@ -803,7 +804,9 @@ debug most feature</xs:documentation>
         </xs:annotation>
         <xs:sequence>
             <xs:element maxOccurs="3" ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
-            />
+                minOccurs="0"/>
+            <xs:element maxOccurs="3" minOccurs="0"
+                ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated"/>
         </xs:sequence>
         <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
         <xs:attribute ref="ptn:debug"/>
@@ -944,12 +947,15 @@ debug most feature</xs:documentation>
     <xs:element name="Input__x3A__node__x3A__prohibit" type="ptn:Output_Node"/>
     <xs:complexType name="Simulation.Stress__x3A__calculate">
         <xs:sequence>
-            <xs:element ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
+            <xs:element ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node" minOccurs="0"/>
+            <xs:element minOccurs="0"
+                ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated"/>
         </xs:sequence>
         <xs:attribute ref="ptn:debug"/>
         <xs:attribute ref="ptn:Label"/>
         <xs:attribute ref="ptn:Label__x3A__context"/>
-        <xs:attribute ref="ptn:Output_Node"/>
+        <xs:attribute ref="ptn:Output_Node" use="prohibited"/>
+        <xs:attribute ref="ptn:Output_Node__x3A__attract" use="required"/>
         <xs:attribute ref="ptn:Simulated_potential__x3A__more_charged_node"/>
         <xs:attribute ref="ptn:Simulated_potential__x3A__diff"/>
         <xs:attribute ref="ptn:Simulated_potential__x3A__less_charged_node"/>
@@ -1020,25 +1026,56 @@ debug most feature</xs:documentation>
     <xs:element name="Simulation.model.validate.xml" type="ptn:Simulation.model.validate.xml"/>
     <xs:complexType name="Simulation.attract__x3A__calculate__x3A__validated">
         <xs:complexContent>
-            <xs:extension base="ptn:Simulation.attract__x3A__calculate"/>
+            <xs:restriction base="ptn:Simulation.attract__x3A__calculate">
+                <xs:sequence>
+                    <xs:element maxOccurs="0"
+                        ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node" minOccurs="0"/>
+                    <xs:element maxOccurs="3" minOccurs="0"
+                        ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated"
+                    />
+                </xs:sequence>
+            </xs:restriction>
         </xs:complexContent>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__calculate__x3A__validated"
         type="ptn:Simulation.attract__x3A__calculate__x3A__validated"/>
     <xs:complexType name="Simulation.Stress__x3A__calculate__x3A__validated">
         <xs:complexContent>
-            <xs:extension base="ptn:Simulation.Stress__x3A__calculate"/>
+            <xs:restriction base="ptn:Simulation.Stress__x3A__calculate">
+                <xs:sequence>
+                    <xs:element ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"
+                        minOccurs="0"/>
+                    <xs:element minOccurs="0"
+                        ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated"
+                    />
+                </xs:sequence>
+            </xs:restriction>
         </xs:complexContent>
     </xs:complexType>
+    <xs:complexType name="Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated">
+        <xs:attribute ref="ptn:debug"/>
+    </xs:complexType>
+    <xs:element name="Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated"
+        type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated"/>
+    <xs:complexType name="Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated">
+        <xs:complexContent>
+            <xs:extension base="ptn:Node">
+                <xs:attribute ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type"
+                    use="required"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated"
+        type="ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated"/>
     <xs:element name="Simulation.Stress__x3A__calculate__x3A__validated"
         type="ptn:Simulation.Stress__x3A__calculate__x3A__validated"/>
     <xs:complexType name="Simulation.attract__x3A__aggregate__x3A__validated">
-        <xs:all>
+        <xs:sequence maxOccurs="unbounded">
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 ref="ptn:Simulation.attract__x3A__calculate__x3A__validated"/>
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 ref="ptn:Simulation.Stress__x3A__calculate__x3A__validated"/>
-        </xs:all>
+        </xs:sequence>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__aggregate__x3A__validated"
         type="ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
@@ -1094,4 +1131,5 @@ debug most feature</xs:documentation>
         </xs:complexContent>
     </xs:complexType>
     <xs:element name="Simulation.model.apply.xml" type="ptn:Simulation.model.apply.xml"/>
+    <xs:attribute name="Output_Node__x3A__attract" type="ptn:Output_Node__x3A__temp"/>
 </xs:schema>

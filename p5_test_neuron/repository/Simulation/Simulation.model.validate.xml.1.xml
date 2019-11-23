@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation.model.validate.xml xmlns:ptn="p5_test_neuron"
-                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                   ptn:Simulation_body_tick="2"
+                                   ptn:Simulation_body_time="2"
+                                   ptn:Simulation_body_time__x3A__last="1"
+                                   ptn:Simulator_tick="1">
    <ptn:Simulation.model.validate.xml__x3A__stats>
       <ptn:Node ptn:Label__x3A__stats="A"
                 ptn:Node__x3A__type="ptn:Receptor"
-                id="d13e4"
+                id="d15e4"
                 ptn:Node__x3A__position="1"/>
       <ptn:Node ptn:Label__x3A__stats="B"
                 ptn:Node__x3A__type="ptn:Receptor"
-                id="d13e41"
+                id="d15e41"
                 ptn:Node__x3A__position="2"/>
       <ptn:Node ptn:Label__x3A__stats="C"
                 ptn:Node__x3A__type="ptn:Receptor"
-                id="d13e75"
+                id="d15e75"
                 ptn:Node__x3A__position="3"/>
    </ptn:Simulation.model.validate.xml__x3A__stats>
    <ptn:Simulation.attract__x3A__aggregate__x3A__validated/>

@@ -9,15 +9,15 @@
    <ptn:Simulation.model.validate.xml__x3A__stats>
       <ptn:Node ptn:Label__x3A__stats="A"
                 ptn:Node__x3A__type="ptn:Receptor"
-                id="d13e4"
+                id="d15e4"
                 ptn:Node__x3A__position="1"/>
       <ptn:Node ptn:Label__x3A__stats="B"
                 ptn:Node__x3A__type="ptn:Receptor"
-                id="d13e41"
+                id="d15e41"
                 ptn:Node__x3A__position="2"/>
       <ptn:Node ptn:Label__x3A__stats="C"
                 ptn:Node__x3A__type="ptn:Receptor"
-                id="d13e75"
+                id="d15e75"
                 ptn:Node__x3A__position="3"/>
    </ptn:Simulation.model.validate.xml__x3A__stats>
    <ptn:Simulation.attract__x3A__aggregate__x3A__validated/>

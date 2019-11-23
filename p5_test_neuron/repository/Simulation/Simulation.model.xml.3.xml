@@ -14,7 +14,7 @@
                                               ptn:Simulated_potential__x3A__diff="-0.6115824000000032"
                                               ptn:Simulated_potential__x3A__more_charged_node="A"
                                               ptn:Simulated_potential__x3A__less_charged_node="B"
-                                              ptn:Output_Node="B-to-A"
+                                              ptn:Output_Node__x3A__attract="B-to-A"
                                               ptn:debug="#190 std create; [ptn:Outputs/#[0]]">
          <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
             <ptn:Label>B-to-A</ptn:Label>
@@ -108,7 +108,7 @@
                                               ptn:Simulated_potential__x3A__diff="0.6115824000000032"
                                               ptn:Simulated_potential__x3A__more_charged_node="B"
                                               ptn:Simulated_potential__x3A__less_charged_node="A"
-                                              ptn:Output_Node="A-to-B"
+                                              ptn:Output_Node__x3A__attract="A-to-B"
                                               ptn:debug="#190 std create; [ptn:Outputs/#[0]]">
          <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
             <ptn:Label>A-to-B</ptn:Label>

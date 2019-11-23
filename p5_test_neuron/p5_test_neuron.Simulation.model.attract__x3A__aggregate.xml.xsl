@@ -11,6 +11,8 @@
     <xsl:strip-space elements="*"/>
     
     
+    <!-- przekopiowanie attract na wierzch tylko -->
+    
     <xsl:template name="ptn:Simulation.attract__x3A__aggregate"><!--ptn:Simulation.attract__x3A__calculate.best.unique-->
         <ptn:Simulation.attract__x3A__aggregate>
         <!--<ptn:Simulation.attract__x3A__aggregate ptn:debug="#133 just for devel analys, passed to childs">
@@ -228,6 +230,11 @@
     </xsl:template>
     
     
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor__x3A__AB|ptn:Leaky_neuron_inhibitor__x3A__AA">
+        <xsl:apply-templates mode="#current">
+            <xsl:with-param name="ptn:Label" select="ptn:Label" tunnel="yes"/>
+        </xsl:apply-templates>
+    </xsl:template>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Coordinate_X"/>
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Coordinate_Y"/>
@@ -255,6 +262,7 @@
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Output__x3A__flag|ptn:Stress__x3A__flag|ptn:Output__x3A__flag__x3A__emmit"/>
     
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Input__x3A__nodes__x3A__prohibit"/>
     
     
 </xsl:stylesheet>

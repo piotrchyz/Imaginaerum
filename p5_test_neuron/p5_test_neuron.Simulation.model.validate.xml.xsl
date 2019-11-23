@@ -36,6 +36,9 @@
             <xsl:for-each select="descendant-or-self::*[ptn:Label]">
                 <ptn:Node ptn:Label__x3A__stats="{ptn:Label}" ptn:Node__x3A__type="{name()}" id="{generate-id(.)}" ptn:Node__x3A__position="{position()}">
                     <xsl:copy-of select="@ptn:Label__x3A__context"/>
+                    <xsl:copy-of select="@ptn:Simulated_potential__x3A__diff"/>
+                    <xsl:copy-of select="@ptn:Simulated_potential__x3A__more_charged_node"/>
+                    <xsl:copy-of select="@ptn:Simulated_potential__x3A__less_charged_node"/>
                     <xsl:for-each select="descendant-or-self::ptn:Current_synapse">
                         <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="{ptn:Output_Node}" ptn:Node__x3A__position="{position()}" id="{generate-id(.)}"/>
                     </xsl:for-each>
@@ -111,7 +114,7 @@
         <!-- czy juz nie ma go w secie -->
         <xsl:choose>
             <xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label__x3A__stats = current()/ptn:Label]">
-                <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />
+                <ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />
             </xsl:when>
             <!--<xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Node[@ptn:Label = current()/ptn:Label]">
                 <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated ptn:debug="#54 ptn:Node[@ptn:Label = current()/ptn:Label]=[{ptn:Label}]" />
@@ -127,19 +130,19 @@
     
     
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Label">
-        <xsl:copy-of select="."/>
+        <xsl:copy-of select="." copy-namespaces="no"/>
     </xsl:template>
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z">
-        <xsl:copy-of select="."/>
+        <xsl:copy-of select="." copy-namespaces="no"/>
     </xsl:template>
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage">
-        <xsl:copy-of select="."/>
+        <xsl:copy-of select="." copy-namespaces="no"/>
     </xsl:template>
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold">
-        <xsl:copy-of select="."/>
+        <xsl:copy-of select="." copy-namespaces="no"/>
     </xsl:template>
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Refactory_period|ptn:Is_inhibitor|ptn:Outputs">
-        <xsl:copy-of select="."/>
+        <xsl:copy-of select="." copy-namespaces="no"/>
     </xsl:template>
    
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Input__x3A__nodes">

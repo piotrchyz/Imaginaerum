@@ -115,7 +115,7 @@
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
-                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                    <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
                 </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
             </xsl:when>
             <xsl:when test="descendant-or-self::ptn:Label[text() = $ptn:Output_Node]">
@@ -124,7 +124,7 @@
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
-                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                    <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
                 </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
             </xsl:when>
             <xsl:when test="$ptn:Input__x3A__nodes__x3A__prohibit//ptn:Input__x3A__node__x3A__prohibit[text() = $ptn:Label]">
@@ -133,7 +133,7 @@
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
-                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                    <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
                 </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
             </xsl:when>
             <xsl:when test="ptn:Label = $ptn:Label">
@@ -143,7 +143,7 @@
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
-                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                    <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
                 </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
                 
                 <ptn:Simulation.Stress__x3A__calculate><!-- 0A create -->
@@ -153,7 +153,7 @@
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__more_charged_node" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__less_charged_node" select="ptn:Label"/>
-                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                    <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
                     <xsl:attribute name="ptn:debug">#190XX@  create more clone, reconfigure self, mabe some inhibitors install std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]]  n[<xsl:value-of select="name()"/>]</xsl:attribute>
                     <ptn:Simulation.Stress__x3A__calculate__x3A__output_node>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_standard'"/>
@@ -196,7 +196,7 @@
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__diff" select="number($ptn:Simulated_potential) - number(ptn:Simulated_potential)"/>
-                    <xsl:attribute name="ptn:Output_Node" select="$ptn:Output_Node"/>
+                    <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
                 </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
             </xsl:when>
             <xsl:otherwise>

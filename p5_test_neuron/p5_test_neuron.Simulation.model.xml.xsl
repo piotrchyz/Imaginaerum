@@ -20,7 +20,7 @@
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Simulation.attract.xml">
         <ptn:Simulation.model.xml>
             <xsl:copy-of select="@*"/>
-            <xsl:call-template name="ptn:Simulation.attract__x3A__aggregate"/>
+            <xsl:call-template name="ptn:Simulation.attract__x3A__aggregate"/><!-- przekopiowanie attract na wierzch tylko -->
           
             <xsl:apply-templates mode="#current">
                 <!--<xsl:with-param name="ptn:Simulation.attract__x3A__calculate.best.unique" select="$ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes"/>-->

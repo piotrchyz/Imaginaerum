@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation.model.apply.xml xmlns:ptn="p5_test_neuron"
                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"><!--#306 bypassed/n[ptn:Simulation.model.validate.xml__x3A__stats] to be context installed--><!--#30 bypassed/n[ptn:Simulation.attract__x3A__aggregate__x3A__validated] to be context installed-->
+                                xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                ptn:Simulation_body_tick="2"
+                                ptn:Simulation_body_time="2"
+                                ptn:Simulation_body_time__x3A__last="1"
+                                ptn:Simulator_tick="1"><!--#306 bypassed/n[ptn:Simulation.model.validate.xml__x3A__stats] to be context installed--><!--#30 bypassed/n[ptn:Simulation.attract__x3A__aggregate__x3A__validated] to be context installed-->
    <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
@@ -17,7 +21,7 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-55.516400000000004</ptn:Simulated_potential>
          <ptn:Attract__x3A__flag>true</ptn:Attract__x3A__flag>
@@ -37,7 +41,7 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-70.9604</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
@@ -56,11 +60,11 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
-   <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"/>
+   <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"><!--#16 MI[/n][ptn:Simulation.attract__x3A__aggregate__x3A__validated]--></ptn:Nodes>
 </ptn:Simulation.model.apply.xml>
