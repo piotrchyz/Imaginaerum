@@ -8,11 +8,12 @@
                                 ptn:Simulator_tick="1">
    <ptn:Simulation.model.validate.xml__x3A__stats>
       <ptn:Node ptn:Label__x3A__stats="B-to-A"
-                ptn:Label__x3A__count="2"
+                ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="0"
                 ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
                 id="d16e4"
                 ptn:Node__x3A__position="1"
-                ptn:Nodes="true">
+                ptn:Nodes="false">
          <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
                                 ptn:Node__x3A__position="1"
                                 id="d16e34"/>
@@ -23,28 +24,13 @@
                                 ptn:Node__x3A__position="3"
                                 id="d16e38"/>
       </ptn:Node>
-      <ptn:Node ptn:Label__x3A__stats="B-to-A"
-                ptn:Label__x3A__count="2"
-                ptn:Node__x3A__type="ptn:Leaky_neuron_standard"
-                id="d16e275"
-                ptn:Node__x3A__position="2"
-                ptn:Nodes="true">
-         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
-                                ptn:Node__x3A__position="1"
-                                id="d16e305"/>
-         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
-                                ptn:Node__x3A__position="2"
-                                id="d16e307"/>
-         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="_B-to-A"
-                                ptn:Node__x3A__position="3"
-                                id="d16e309"/>
-      </ptn:Node>
       <ptn:Node ptn:Label__x3A__stats="_B-to-A"
-                ptn:Label__x3A__count="2"
+                ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="0"
                 ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
                 id="d16e42"
                 ptn:Node__x3A__position="1"
-                ptn:Nodes="true">
+                ptn:Nodes="false">
          <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="B-to-A"
                                  ptn:Node__x3A__position="1"
                                  id="d16e71"/>
@@ -52,25 +38,13 @@
                                 ptn:Node__x3A__position="1"
                                 id="d16e81"/>
       </ptn:Node>
-      <ptn:Node ptn:Label__x3A__stats="_B-to-A"
-                ptn:Label__x3A__count="2"
-                ptn:Node__x3A__type="ptn:Leaky_neuron_inhibitor__x3A__AB"
-                id="d16e313"
-                ptn:Node__x3A__position="2"
-                ptn:Nodes="true">
-         <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="B-to-A"
-                                 ptn:Node__x3A__position="1"
-                                 id="d16e342"/>
-         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
-                                ptn:Node__x3A__position="1"
-                                id="d16e352"/>
-      </ptn:Node>
       <ptn:Node ptn:Label__x3A__stats="_B-to-B"
-                ptn:Label__x3A__count="2"
+                ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="0"
                 ptn:Node__x3A__type="ptn:Simulation.attract__x3A__calculate__x3A__output_node"
                 id="d16e88"
                 ptn:Node__x3A__position="1"
-                ptn:Nodes="true">
+                ptn:Nodes="false">
          <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="B-to-A"
                                  ptn:Node__x3A__position="1"
                                  id="d16e117"/>
@@ -78,21 +52,9 @@
                                 ptn:Node__x3A__position="1"
                                 id="d16e127"/>
       </ptn:Node>
-      <ptn:Node ptn:Label__x3A__stats="_B-to-B"
-                ptn:Label__x3A__count="2"
-                ptn:Node__x3A__type="ptn:Leaky_neuron_inhibitor__X3A__AA"
-                id="d16e359"
-                ptn:Node__x3A__position="2"
-                ptn:Nodes="true">
-         <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="B-to-A"
-                                 ptn:Node__x3A__position="1"
-                                 id="d16e388"/>
-         <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
-                                ptn:Node__x3A__position="1"
-                                id="d16e398"/>
-      </ptn:Node>
       <ptn:Node ptn:Label__x3A__stats="A"
                 ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="0"
                 ptn:Node__x3A__type="ptn:Receptor"
                 id="d16e135"
                 ptn:Node__x3A__position="1"
@@ -106,6 +68,7 @@
       </ptn:Node>
       <ptn:Node ptn:Label__x3A__stats="B"
                 ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="0"
                 ptn:Node__x3A__type="ptn:Receptor"
                 id="d16e188"
                 ptn:Node__x3A__position="1"
@@ -119,51 +82,55 @@
       </ptn:Node>
       <ptn:Node ptn:Label__x3A__stats="C"
                 ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="0"
                 ptn:Node__x3A__type="ptn:Receptor"
                 id="d16e240"
                 ptn:Node__x3A__position="1"
                 ptn:Nodes="false"/>
       <ptn:Node ptn:Label__x3A__stats="A-to-B"
                 ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="1"
                 ptn:Node__x3A__type="ptn:Leaky_neuron_standard"
-                id="d16e405"
+                id="d16e275"
                 ptn:Node__x3A__position="1"
                 ptn:Nodes="true">
          <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
                                 ptn:Node__x3A__position="1"
-                                id="d16e435"/>
+                                id="d16e305"/>
          <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
                                 ptn:Node__x3A__position="2"
-                                id="d16e437"/>
+                                id="d16e307"/>
          <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="_A-to-B"
                                 ptn:Node__x3A__position="3"
-                                id="d16e439"/>
+                                id="d16e309"/>
       </ptn:Node>
       <ptn:Node ptn:Label__x3A__stats="_A-to-B"
                 ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="1"
                 ptn:Node__x3A__type="ptn:Leaky_neuron_inhibitor__x3A__AB"
-                id="d16e443"
+                id="d16e313"
                 ptn:Node__x3A__position="1"
                 ptn:Nodes="true">
          <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="A-to-B"
                                  ptn:Node__x3A__position="1"
-                                 id="d16e472"/>
+                                 id="d16e342"/>
          <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="B"
                                 ptn:Node__x3A__position="1"
-                                id="d16e482"/>
+                                id="d16e352"/>
       </ptn:Node>
       <ptn:Node ptn:Label__x3A__stats="_A-to-A"
                 ptn:Label__x3A__count="1"
+                ptn:Label__x3A__count__x3A__Nodes="1"
                 ptn:Node__x3A__type="ptn:Leaky_neuron_inhibitor__X3A__AA"
-                id="d16e489"
+                id="d16e359"
                 ptn:Node__x3A__position="1"
                 ptn:Nodes="true">
          <ptn:Output__x3A__stats ptn:Output_Node__x3A__stats="A-to-B"
                                  ptn:Node__x3A__position="1"
-                                 id="d16e518"/>
+                                 id="d16e388"/>
          <ptn:Input__x3A__stats ptn:Input__x3A__node__x3A__stats="A"
                                 ptn:Node__x3A__position="1"
-                                id="d16e528"/>
+                                id="d16e398"/>
       </ptn:Node>
    </ptn:Simulation.model.validate.xml__x3A__stats>
    <ptn:Simulation.attract__x3A__aggregate>
@@ -176,7 +143,8 @@
                                               ptn:Simulated_potential__x3A__less_charged_node="B"
                                               ptn:Output_Node__x3A__attract="B-to-A"
                                               ptn:debug="#190 std create; [ptn:Outputs/#[2]]">
-         <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
+         <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard"
+                                                                   id="d16e4">
             <ptn:Label>B-to-A</ptn:Label>
             <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
             <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
@@ -199,7 +167,8 @@
             <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          </ptn:Simulation.attract__x3A__calculate__x3A__output_node>
          <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="#214 inhibitor "
-                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__x3A__AB">
+                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__x3A__AB"
+                                                                   id="d16e42">
             <ptn:Label>_B-to-A</ptn:Label>
             <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
             <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
@@ -230,7 +199,8 @@
             <ptn:Simulated_potential>-70</ptn:Simulated_potential>
          </ptn:Simulation.attract__x3A__calculate__x3A__output_node>
          <ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="#245 -AA inhibitor A--B"
-                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__X3A__AA">
+                                                                   ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_inhibitor__X3A__AA"
+                                                                   id="d16e88">
             <ptn:Label>_B-to-B</ptn:Label>
             <ptn:Coordinate_X>2</ptn:Coordinate_X>
             <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
@@ -263,7 +233,7 @@
       </ptn:Simulation.attract__x3A__calculate>
    </ptn:Simulation.attract__x3A__aggregate>
    <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
-      <ptn:Receptor>
+      <ptn:Receptor id="d16e135">
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
@@ -293,10 +263,9 @@
          </ptn:Outputs>
          <ptn:Input__x3A__nodes/>
          <ptn:Simulated_potential>-56.089950560000005</ptn:Simulated_potential>
-         <!--#58M bypassed/n[ptn:Simulation.attract__x3A__calculate]-->
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
-      <ptn:Receptor>
+      <ptn:Receptor id="d16e188">
          <ptn:Label>B</ptn:Label>
          <ptn:Coordinate_X>10</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
@@ -328,7 +297,7 @@
          <ptn:Simulated_potential>-55.78724816000001</ptn:Simulated_potential>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
-      <ptn:Receptor>
+      <ptn:Receptor id="d16e240">
          <ptn:Label>C</ptn:Label>
          <ptn:Coordinate_X>20</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
@@ -349,89 +318,7 @@
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
-      <ptn:Leaky_neuron_standard>
-         <ptn:Label>B-to-A</ptn:Label>
-         <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
-         <ptn:Capacitance>1</ptn:Capacitance>
-         <ptn:Resistance>100</ptn:Resistance>
-         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70</ptn:Resting_potential>
-         <ptn:Reset_potential>-70</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
-         <ptn:Refactory_period>2</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes>
-            <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
-            <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
-            <ptn:Input__x3A__node>_B-to-A</ptn:Input__x3A__node>
-         </ptn:Input__x3A__nodes>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-      </ptn:Leaky_neuron_standard>
-      <ptn:Leaky_neuron_inhibitor__x3A__AB>
-         <ptn:Label>_B-to-A</ptn:Label>
-         <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
-         <ptn:Capacitance>1</ptn:Capacitance>
-         <ptn:Resistance>100</ptn:Resistance>
-         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70</ptn:Resting_potential>
-         <ptn:Reset_potential>-70</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
-         <ptn:Refactory_period>2</ptn:Refactory_period>
-         <ptn:Is_inhibitor>1</ptn:Is_inhibitor>
-         <ptn:Outputs>
-            <ptn:Current_synapse>
-               <ptn:Maximum_current>3.0</ptn:Maximum_current>
-               <ptn:Time_constant>2.0</ptn:Time_constant>
-               <ptn:Delay>5.0</ptn:Delay>
-               <ptn:Output_Node>B-to-A</ptn:Output_Node>
-            </ptn:Current_synapse>
-         </ptn:Outputs>
-         <ptn:Input__x3A__nodes>
-            <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
-         </ptn:Input__x3A__nodes>
-         <ptn:Input__x3A__nodes__x3A__prohibit>
-            <ptn:Input__x3A__node__x3A__prohibit>B</ptn:Input__x3A__node__x3A__prohibit>
-         </ptn:Input__x3A__nodes__x3A__prohibit>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-      </ptn:Leaky_neuron_inhibitor__x3A__AB>
-      <ptn:Leaky_neuron_inhibitor__X3A__AA>
-         <ptn:Label>_B-to-B</ptn:Label>
-         <ptn:Coordinate_X>2</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
-         <ptn:Capacitance>1</ptn:Capacitance>
-         <ptn:Resistance>100</ptn:Resistance>
-         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70</ptn:Resting_potential>
-         <ptn:Reset_potential>-70</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
-         <ptn:Refactory_period>2</ptn:Refactory_period>
-         <ptn:Is_inhibitor>1</ptn:Is_inhibitor>
-         <ptn:Outputs>
-            <ptn:Current_synapse>
-               <ptn:Maximum_current>3.0</ptn:Maximum_current>
-               <ptn:Time_constant>2.0</ptn:Time_constant>
-               <ptn:Delay>5.0</ptn:Delay>
-               <ptn:Output_Node>B-to-A</ptn:Output_Node>
-            </ptn:Current_synapse>
-         </ptn:Outputs>
-         <ptn:Input__x3A__nodes>
-            <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
-         </ptn:Input__x3A__nodes>
-         <ptn:Input__x3A__nodes__x3A__prohibit>
-            <ptn:Input__x3A__node__x3A__prohibit>A</ptn:Input__x3A__node__x3A__prohibit>
-         </ptn:Input__x3A__nodes__x3A__prohibit>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-      </ptn:Leaky_neuron_inhibitor__X3A__AA>
-      <ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_standard id="d16e275">
          <ptn:Label>A-to-B</ptn:Label>
          <ptn:Coordinate_X>3.3333333333333335</ptn:Coordinate_X>
          <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
@@ -453,7 +340,7 @@
          </ptn:Input__x3A__nodes>
          <ptn:Simulated_potential>-70</ptn:Simulated_potential>
       </ptn:Leaky_neuron_standard>
-      <ptn:Leaky_neuron_inhibitor__x3A__AB>
+      <ptn:Leaky_neuron_inhibitor__x3A__AB id="d16e313">
          <ptn:Label>_A-to-B</ptn:Label>
          <ptn:Coordinate_X>2.5</ptn:Coordinate_X>
          <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
@@ -483,7 +370,7 @@
          </ptn:Input__x3A__nodes__x3A__prohibit>
          <ptn:Simulated_potential>-70</ptn:Simulated_potential>
       </ptn:Leaky_neuron_inhibitor__x3A__AB>
-      <ptn:Leaky_neuron_inhibitor__X3A__AA>
+      <ptn:Leaky_neuron_inhibitor__X3A__AA id="d16e359">
          <ptn:Label>_A-to-A</ptn:Label>
          <ptn:Coordinate_X>2</ptn:Coordinate_X>
          <ptn:Coordinate_Y>7</ptn:Coordinate_Y>

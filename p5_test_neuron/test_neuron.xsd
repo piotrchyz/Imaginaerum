@@ -305,6 +305,7 @@
         </xs:sequence>
         <xs:attribute ref="ptn:debug"/>
         <xs:attribute ref="ptn:New"/>
+        <xs:attribute name="id" type="xs:string"/>
     </xs:complexType>
     <xs:attribute name="Inputs" type="xs:IDREFS"/>
     <xs:complexType name="Leaky_neuron">
@@ -1102,38 +1103,6 @@ debug most feature</xs:documentation>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__aggregate__x3A__validated"
         type="ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
-    <xs:complexType name="Simulation.model.validate.xml__x3A__stats">
-        <xs:sequence>
-            <xs:element maxOccurs="unbounded" name="Node" type="ptn:Node__x3A__stats"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="Node__x3A__stats">
-        <xs:sequence minOccurs="0">
-            <xs:element maxOccurs="unbounded" minOccurs="0" name="Output__x3A__stats"
-                type="ptn:Output__x3A__stats"/>
-            <xs:element maxOccurs="unbounded" minOccurs="0" name="Input__x3A__stats"
-                type="ptn:Input__x3A__stats"/>
-        </xs:sequence>
-        <xs:attribute ref="ptn:Label__x3A__stats" use="required"/>
-        <xs:attribute ref="ptn:Node__x3A__type" use="required"/>
-        <xs:attribute name="id" type="xs:ID" use="required"/>
-        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
-        <xs:attribute ref="ptn:Label__x3A__count"/>
-        <xs:attribute ref="ptn:Nodes"/>
-    </xs:complexType>
-    <xs:complexType name="Input__x3A__stats">
-        <xs:attribute ref="ptn:Input__x3A__node__x3A__stats" use="required"/>
-        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
-        <xs:attribute name="id" type="xs:ID" use="required"/>
-    </xs:complexType>
-    <xs:complexType name="Output__x3A__stats">
-        <xs:attribute ref="ptn:Output_Node__x3A__stats" use="required"/>
-        <xs:attribute name="id" type="xs:ID" use="required"/>
-        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
-    </xs:complexType>
-    <xs:element name="Simulation.model.validate.xml__x3A__stats"
-        type="ptn:Simulation.model.validate.xml__x3A__stats"/>
-    <xs:attribute name="Label__x3A__stats" type="ptn:Output_Node__x3A__temp"/>
     <xs:simpleType name="Output_Node__x3A__temp">
         <xs:annotation>
             <xs:documentation>Dla potrzeb nie uzwyania ID, na etapie draftow.</xs:documentation>
@@ -1157,13 +1126,6 @@ debug most feature</xs:documentation>
     </xs:complexType>
     <xs:element name="Simulation.model.apply.xml" type="ptn:Simulation.model.apply.xml"/>
     <xs:attribute name="Output_Node__x3A__attract" type="ptn:Output_Node__x3A__temp"/>
-    <xs:simpleType name="Label__x3A__count__1">
-        <xs:restriction base="xs:int">
-            <xs:minInclusive value="1"/>
-            <xs:maxInclusive value="1"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:attribute name="Label__x3A__count" type="ptn:Label__x3A__count__1"/>
     <xs:attribute name="Nodes" type="xs:string">
         <xs:annotation>
             <xs:documentation>W stats - flaguje czy jest node w Nodes</xs:documentation>

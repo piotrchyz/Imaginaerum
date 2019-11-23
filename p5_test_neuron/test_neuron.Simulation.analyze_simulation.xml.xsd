@@ -6,12 +6,12 @@
     <xs:element name="Simulation.analyze_simulation.xml">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="ptn:Simulation_body__x3A__analyze"/>
+                <xs:element maxOccurs="unbounded" ref="ptn:Simulation.analys.xml__x3A__analyze"/>
             </xs:sequence>
             <xs:attribute name="file"/>
         </xs:complexType>
     </xs:element>
-    <xs:element name="Simulation_body__x3A__analyze">
+    <xs:element name="Simulation.analys.xml__x3A__analyze">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" ref="ptn:Receptor__x3A__analyze"/>

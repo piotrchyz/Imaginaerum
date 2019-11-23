@@ -26,6 +26,9 @@
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
+    
+    
+    <!---->
     <!--<xsl:template mode="ptn:Simulation.Stress__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install"
         match="ptn:Simulation.model.validate.xml__x3A__stats"/>-->
 
@@ -51,6 +54,23 @@
     
 
 
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install"
+        match="ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated">
+        <xsl:message terminate="no">#173M [WARNING][NOT_VALIDATED]/n[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install"
+        match="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__validated">
+        <xsl:comment>#644[m][<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:apply-templates mode="#current">
+            <xsl:with-param name="ptn:Label__x3A__attract" select="ptn:Label" tunnel="yes"/>
+        </xsl:apply-templates>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install"
+        match="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated">
+        <xsl:message terminate="no">#173M [WARNING][NOT_VALIDATED]/n[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
 
 
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install"
@@ -187,16 +207,6 @@
             [<xsl:value-of select="name()"/>]</xsl:message>
             <xsl:comment>224 APL [ERROR][/n[<xsl:value-of select="name()"/>]] [FROM][[ptn:Label]<xsl:value-of select="$ptn:Label"/>] </xsl:comment>
     </xsl:template>-->
-    
-    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install"
-        match="ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__not_validated">
-        <xsl:message terminate="no">#173M [WARNING][NOT_VALIDATED]/n[<xsl:value-of select="name()"/>]</xsl:message>
-    </xsl:template>
-    
-    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install"
-        match="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated">
-        <xsl:message terminate="no">#173M [WARNING][NOT_VALIDATED]/n[<xsl:value-of select="name()"/>]</xsl:message>
-    </xsl:template>
     
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 

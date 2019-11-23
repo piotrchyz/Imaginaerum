@@ -4,6 +4,7 @@
     xmlns:ptn="p5_test_neuron"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:math="http://exslt.org/math"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
     exclude-result-prefixes="xs math"
     version="2.0">
     
@@ -12,7 +13,7 @@
     
     <!-- {p5_test_neuron}Simulation.model.validate.xml -->
     
-    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Simulation.model.stats.xml">
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Simulation.model.stats.xml[ptn:Simulation.model.validate.xml__x3A__stats]">
         <xsl:message>#16VV [ptn:Simulation.model.validate.xml] - just validate</xsl:message>
         <ptn:Simulation.model.validate.xml>
             <xsl:copy-of select="namespace::*"/>
@@ -64,18 +65,36 @@
     
     
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.Stress__x3A__calculate">
-        <ptn:Simulation.Stress__x3A__calculate__x3A__validated>
+        <ptn:Simulation.Stress__x3A__calculate__x3A__validated ptn:debug="#67 TODO[VALIDATION]">
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </ptn:Simulation.Stress__x3A__calculate__x3A__validated>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate">
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate[number(@ptn:Simulated_potential__x3A__diff) &gt; 0 ]"><!-- [@ptn:Simulated_potential__x3A__less_charged_node = @ptn:Label__x3A__context] -->
                 <ptn:Simulation.attract__x3A__calculate__x3A__validated>
                     <xsl:copy-of select="@*"/>
                     <xsl:apply-templates mode="#current"/>
                 </ptn:Simulation.attract__x3A__calculate__x3A__validated>
     </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate">
+        <xsl:comment>#82 INVALIDATED[@ptn:Label__x3A__context][<xsl:value-of select="@ptn:Label__x3A__context"/>]</xsl:comment>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label][root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id][@ptn:Label__x3A__count__x3A__Nodes = '0']]" priority="9">
+        <xsl:message terminate="no">#83-0 [VALIDATED][XPATH][]validate relation for[<xsl:value-of select="ptn:Label"/>][@id[<xsl:value-of select="@id"/>]] #[<xsl:value-of select="root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id]/@ptn:Label__x3A__count__x3A__Nodes"/>] </xsl:message>
+        <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug=" "> <!-- #87 done to validate [ptn:Label__x3A__count?][{count($ptn:Simulation.model.validate.xml__x3A__stats//ptn:Nod[@ptn:Label__x3A__stats='_B-to-A'])}] -->
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label][root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id][not(@ptn:Label__x3A__count__x3A__Nodes = '0')]]" priority="9">
+        <xsl:message terminate="no">#83-1 matched xpath validate relation for[<xsl:value-of select="ptn:Label"/>][@id[<xsl:value-of select="@id"/>]] #[<xsl:value-of select="root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id]/@ptn:Label__x3A__count__x3A__Nodes"/>] </xsl:message>
+        <xsl:comment>#83-1 matched xpath validate relation for[<xsl:value-of select="ptn:Label"/>][@id[<xsl:value-of select="@id"/>]] #[<xsl:value-of select="root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id]/@ptn:Label__x3A__count__x3A__Nodes"/>] </xsl:comment>
+    </xsl:template>
+    
     
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label]">
         <xsl:param name="ptn:Simulation.model.validate.xml__x3A__stats" tunnel="yes" required="yes"/>    

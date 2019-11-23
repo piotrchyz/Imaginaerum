@@ -22,4 +22,48 @@
         </xs:complexContent>
     </xs:complexType>
     <xs:element name="Simulation.model.stats.xml" type="ptn:Simulation.model.stats.xml"/>
+    <xs:complexType name="Simulation.model.validate.xml__x3A__stats">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="Node" type="ptn:Node__x3A__stats"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Node__x3A__stats">
+        <xs:sequence minOccurs="0">
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Output__x3A__stats"
+                type="ptn:Output__x3A__stats"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Input__x3A__stats"
+                type="ptn:Input__x3A__stats"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Label__x3A__stats" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__type" use="required"/>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
+        <xs:attribute ref="ptn:Label__x3A__count"/>
+        <xs:attribute ref="ptn:Nodes" use="required"/>
+        <xs:attribute ref="ptn:Label__x3A__count__x3A__Nodes" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="Input__x3A__stats">
+        <xs:attribute ref="ptn:Input__x3A__node__x3A__stats" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="Output__x3A__stats">
+        <xs:attribute ref="ptn:Output_Node__x3A__stats" use="required"/>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+        <xs:attribute ref="ptn:Node__x3A__position" use="required"/>
+    </xs:complexType>
+    <xs:attribute name="Label__x3A__stats" type="ptn:Output_Node__x3A__temp"/>
+    <xs:element name="Simulation.model.validate.xml__x3A__stats"
+        type="ptn:Simulation.model.validate.xml__x3A__stats"/>
+    <xs:simpleType name="Label__x3A__count">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+    <xs:simpleType name="Label__x3A__count__1">
+        <xs:restriction base="ptn:Label__x3A__count">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Label__x3A__count" type="ptn:Label__x3A__count"/>
+    <xs:attribute name="Label__x3A__count__x3A__Nodes" type="ptn:Label__x3A__count__1"/>
 </xs:schema>
