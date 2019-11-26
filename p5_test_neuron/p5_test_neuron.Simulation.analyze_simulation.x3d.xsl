@@ -428,12 +428,12 @@
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"/>
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote"/>
         
-        <xsl:variable name="x" select="- $ptn:Coordinate_X + $ptn:Coordinate_X__x3A__remote"/>
+       <!-- <xsl:variable name="x" select="- $ptn:Coordinate_X + $ptn:Coordinate_X__x3A__remote"/>
         <xsl:variable name="y" select="- $ptn:Coordinate_Y + $ptn:Coordinate_Y__x3A__remote"/>
-        <xsl:variable name="z" select="- $ptn:Coordinate_Z + $ptn:Coordinate_Z__x3A__remote"/>
-        <xsl:variable name="xt" select="$ptn:Coordinate_X - $x"/>
+        <xsl:variable name="z" select="- $ptn:Coordinate_Z + $ptn:Coordinate_Z__x3A__remote"/>-->
+      <!--  <xsl:variable name="xt" select="$ptn:Coordinate_X - $x"/>
         <xsl:variable name="yt" select="$ptn:Coordinate_Y - $y"/>
-        <xsl:variable name="zt" select="$ptn:Coordinate_Z - $z"/>
+        <xsl:variable name="zt" select="$ptn:Coordinate_Z - $z"/>-->
         <xsl:variable name="percent" select="($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position - $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min ) div   $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_count"/>
         <xsl:variable name="percent_more" select="($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position - $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min + 0.5 ) div   $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_count"/>
         <!--<xsl:text>xt:</xsl:text><xsl:value-of select="$xt"/><xsl:text>  </xsl:text>
@@ -462,11 +462,11 @@
         
         
         <xsl:if test="$ptn:debug = true() and $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position = 1">
-            <xsl:attribute name="x" select="$x"/>
+           <!-- <xsl:attribute name="x" select="$x"/>
             <xsl:attribute name="y" select="$y"/>
             <xsl:attribute name="z" select="$z"/>
             <xsl:attribute name="xt" select="$xt"/>
-            <xsl:attribute name="yt" select="$yt"/>
+            <xsl:attribute name="yt" select="$yt"/>-->
             <xsl:attribute name="percent" select="$percent"/>
             <xsl:attribute name="percent_more" select="$percent_more"/>
             <xsl:attribute name="Xdiff" select="$Xdiff"/>
@@ -490,9 +490,12 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:if test="$ptn:debug = true()">
-                    <xsl:attribute name="xX" select="$ptn:Coordinate_X + $Xdiff * $StepPercent"/>
-                    <xsl:attribute name="xY" select="$ptn:Coordinate_Y + $Ydiff * $StepPercent"/>
-                    <xsl:attribute name="xZ" select="$ptn:Coordinate_Z + $Zdiff * $StepPercent"/>
+                    <xsl:attribute name="xX1" select="$ptn:Coordinate_X + $Xdiff * $StepPercentMore"/>
+                    <xsl:attribute name="xY1" select="$ptn:Coordinate_Y + $Ydiff * $StepPercentMore"/>
+                    <xsl:attribute name="xZ1" select="$ptn:Coordinate_Z + $Zdiff * $StepPercentMore"/>
+                    <xsl:attribute name="xX2" select="$ptn:Coordinate_X + $Xdiff * $StepPercent"/>
+                    <xsl:attribute name="xY2" select="$ptn:Coordinate_Y + $Ydiff * $StepPercent"/>
+                    <xsl:attribute name="xZ2" select="$ptn:Coordinate_Z + $Zdiff * $StepPercent"/>
                     <xsl:attribute name="step" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position"/>
                     <xsl:attribute name="StepMinDiff" select="$StepMinDiff"/>
                     <xsl:attribute name="StepPercent" select="$StepPercent"/>
@@ -504,13 +507,13 @@
                         <xsl:text>#510 ERR POS(</xsl:text><xsl:value-of select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position"/><xsl:text>) </xsl:text>
                     </xsl:when>
                 </xsl:choose>
-                <xsl:value-of select="$ptn:Coordinate_X - $xt * $percent"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Y - $yt * $percent"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Z - $zt * $percent"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_X + $Xdiff * $StepPercent"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Y + $Ydiff * $StepPercent"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z + $Zdiff * $StepPercent"/><xsl:text> </xsl:text>
                 
-                <xsl:value-of select="$ptn:Coordinate_X - $xt * $percent_more"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Y - $yt * $percent_more"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Z - $zt * $percent_more"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_X + $Xdiff * $StepPercentMore"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Y + $Ydiff * $StepPercentMore"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z + $Zdiff * $StepPercentMore"/><xsl:text> </xsl:text>
             </xsl:otherwise>
         </xsl:choose>
        
