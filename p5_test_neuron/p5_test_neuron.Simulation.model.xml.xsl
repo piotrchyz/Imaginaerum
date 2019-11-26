@@ -191,7 +191,7 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Output_Node" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor__X3A__AA">
+    <xsl:template mode="ptn:Output_Node" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor__X3A__AA|ptn:Leaky_neuron_inhibitor__x3A__AB">
         <xsl:param name="ptn:Label" tunnel="yes" required="yes"/>
         <xsl:attribute name="ptn:Output_Node__x3A__inhibitor">_<xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label"/></xsl:attribute>
         <xsl:attribute name="ptn:Output_Node__x3A__inhibitor__x3A__self">_<xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="ptn:Label"/></xsl:attribute>

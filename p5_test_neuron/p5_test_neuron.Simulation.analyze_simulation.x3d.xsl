@@ -191,8 +191,9 @@
             </xsl:for-each-group>
         </Group>
         <Group DEF="CoordAnimation"> 
-            <TimeSensor DEF='CoordAnimation_Clock' loop="true" cycleinterval="2"  time="10"><xsl:text> </xsl:text></TimeSensor>
-            
+            <xsl:comment>
+                <TimeSensor DEF='CoordAnimation_Clock' loop="true" cycleinterval="2"  time="10"><xsl:text> </xsl:text></TimeSensor>
+            </xsl:comment>
             <!--<CoordinateInterpolator DEF='Current_synapse_CoordinateInterpolator' key='0, 1' keyValue='0 0 0 1 5 0 ,  0 0 1 1 10 0'><xsl:text> </xsl:text></CoordinateInterpolator>
             <ColorInterpolator DEF="Current_synapse_ColorInterpolator"
                 keyValue="1 0 0 , 0 0 1 , 0 1 0 , 0 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 , 0.30 0 0 "
@@ -808,7 +809,7 @@
     
     
     <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.timesensor">
-        <timesensor def="time" cycleinterval="{max(descendant-or-self::*/number(@ptn:Simulation_body_tick))}" loop="true" enabled="true" first="true"><xsl:text> </xsl:text></timesensor>
+        <!--<timesensor def="time" cycleinterval="{max(descendant-or-self::*/number(@ptn:Simulation_body_tick))}" loop="true" enabled="true" first="true"><xsl:text> </xsl:text></timesensor>-->
     </xsl:template>
     
     

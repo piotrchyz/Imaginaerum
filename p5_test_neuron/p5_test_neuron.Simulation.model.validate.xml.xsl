@@ -82,12 +82,16 @@
         <xsl:comment>#82 INVALIDATED[@ptn:Label__x3A__context][<xsl:value-of select="@ptn:Label__x3A__context"/>]</xsl:comment>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label][root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id][@ptn:Label__x3A__count__x3A__Nodes = '0']]" priority="9">
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label][root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id][@ptn:Label__x3A__count__x3A__Nodes = '0'][@ptn:Node__x3A__position = '1']]" priority="9">
         <xsl:message terminate="no">#83-0 [VALIDATED][XPATH][]validate relation for[<xsl:value-of select="ptn:Label"/>][@id[<xsl:value-of select="@id"/>]] #[<xsl:value-of select="root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id]/@ptn:Label__x3A__count__x3A__Nodes"/>] </xsl:message>
         <ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug=" "> <!-- #87 done to validate [ptn:Label__x3A__count?][{count($ptn:Simulation.model.validate.xml__x3A__stats//ptn:Nod[@ptn:Label__x3A__stats='_B-to-A'])}] -->
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated>
+    </xsl:template>
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label][root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id][@ptn:Label__x3A__count__x3A__Nodes = '0'][number(@ptn:Label__x3A__count) &gt; 1][number(@ptn:Node__x3A__position) &gt; 1]]" priority="9">
+        <xsl:message terminate="no">#83-0-1 [NOT][VALIDATED][XPATH][@ptn:Node__x3A__position gt 1][]validate relation for[<xsl:value-of select="ptn:Label"/>][@id[<xsl:value-of select="@id"/>]] #[<xsl:value-of select="root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id]/@ptn:Label__x3A__count__x3A__Nodes"/>] </xsl:message>
+        <xsl:comment>#83-0-1 matched xpath validate relation for[<xsl:value-of select="ptn:Label"/>][@id[<xsl:value-of select="@id"/>]] #[<xsl:value-of select="root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id]/@ptn:Label__x3A__count__x3A__Nodes"/>] </xsl:comment>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Label][root()//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@id=current()/@id][not(@ptn:Label__x3A__count__x3A__Nodes = '0')]]" priority="9">
