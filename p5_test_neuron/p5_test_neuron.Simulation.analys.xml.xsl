@@ -286,9 +286,9 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit[not(*)]">
+    <!--<xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit[not(*)]">
         <xsl:comment >#241C removed empty child[<xsl:value-of select="name()"/>]</xsl:comment>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit]">
         <xsl:param name="ptn:Simulation_body_time" tunnel="yes" required="yes"/>

@@ -23,7 +23,7 @@
     <xsl:param name="ptn:xsd" required="yes"/>
     
     
-    <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" select="-100"/>
-    <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" select="100"/>
+    <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" select="-70"/>
+    <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" select="90"/>
     
 </xsl:stylesheet>

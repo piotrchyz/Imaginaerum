@@ -384,12 +384,12 @@
             <xsl:when test="$ptn:MFVec3f__x3A__distance = -1">
                 <xsl:value-of select="$ptn:Coordinate_X__x3A__remote"/><xsl:text> </xsl:text>
                 <xsl:value-of select="$ptn:Coordinate_Y__x3A__remote"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Z__x3A__remote"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z__x3A__remote"/><xsl:text></xsl:text>
             </xsl:when>
             <xsl:when test="$ptn:MFVec3f__x3A__distance = 0">
                 <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
                 <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text></xsl:text>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:message terminate="yes">#364 $ptn:MFVec3f__x3A__distance[ELSE]</xsl:message>
@@ -419,10 +419,10 @@
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__inactive" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:debug" select="false()"/>
         <xsl:variable name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min" select="min($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys//ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position)"/>
         <xsl:variable name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max" select="max($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys//ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position)"/>
         <xsl:variable name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_count" select="count($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys//ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position)"/>
-        
         
         
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"/>
@@ -440,17 +440,64 @@
         <xsl:text>yt:</xsl:text><xsl:value-of select="$yt"/><xsl:text>  </xsl:text>
         <xsl:text>zt:</xsl:text><xsl:value-of select="$zt"/><xsl:text>  </xsl:text>
         <xsl:text>%:</xsl:text><xsl:value-of select="$percent"/><xsl:text>  </xsl:text>-->
+        
+        
+        <xsl:variable name="Xdiff" select="-$ptn:Coordinate_X + $ptn:Coordinate_X__x3A__remote"/>
+        <xsl:variable name="Ydiff" select="-$ptn:Coordinate_Y + $ptn:Coordinate_Y__x3A__remote"/>
+        <xsl:variable name="Zdiff" select="-$ptn:Coordinate_Z + $ptn:Coordinate_Z__x3A__remote"/>
+        <xsl:variable name="StepDiff" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max - $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
+        <xsl:variable name="StepMinDiff" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position - $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
+        <xsl:variable name="StepPercent" select="$StepMinDiff div $StepDiff"/>
+        <xsl:variable name="StepPercentMore" >
+            <xsl:choose>
+                <xsl:when test="$StepPercent = 1">
+                    <xsl:value-of select="1"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$StepPercent + 1 div $StepDiff"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        
+        
+        <xsl:if test="$ptn:debug = true() and $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position = 1">
+            <xsl:attribute name="x" select="$x"/>
+            <xsl:attribute name="y" select="$y"/>
+            <xsl:attribute name="z" select="$z"/>
+            <xsl:attribute name="xt" select="$xt"/>
+            <xsl:attribute name="yt" select="$yt"/>
+            <xsl:attribute name="percent" select="$percent"/>
+            <xsl:attribute name="percent_more" select="$percent_more"/>
+            <xsl:attribute name="Xdiff" select="$Xdiff"/>
+            <xsl:attribute name="Ydiff" select="$Ydiff"/>
+            <xsl:attribute name="Zdiff" select="$Zdiff"/>
+            <xsl:attribute name="MIN" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
+            <xsl:attribute name="MAX" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max"/>
+            <xsl:attribute name="StepDiff" select="$StepDiff"/>
+        </xsl:if>
+        
+        
         <xsl:choose>
             <xsl:when test="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__inactive = true()">
-                <xsl:value-of select="$ptn:Coordinate_X__x3A__remote"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Y__x3A__remote"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Z__x3A__remote"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
                 
-                <xsl:value-of select="$ptn:Coordinate_X__x3A__remote"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Y__x3A__remote"/><xsl:text> </xsl:text>
-                <xsl:value-of select="$ptn:Coordinate_Z__x3A__remote"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Coordinate_Z"/><xsl:text> </xsl:text>
             </xsl:when>
             <xsl:otherwise>
+                <xsl:if test="$ptn:debug = true()">
+                    <xsl:attribute name="xX" select="$ptn:Coordinate_X + $Xdiff * $StepPercent"/>
+                    <xsl:attribute name="xY" select="$ptn:Coordinate_Y + $Ydiff * $StepPercent"/>
+                    <xsl:attribute name="xZ" select="$ptn:Coordinate_Z + $Zdiff * $StepPercent"/>
+                    <xsl:attribute name="step" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position"/>
+                    <xsl:attribute name="StepMinDiff" select="$StepMinDiff"/>
+                    <xsl:attribute name="StepPercent" select="$StepPercent"/>
+                    <xsl:attribute name="StepPercentMore" select="$StepPercentMore"/>
+                </xsl:if>
                 <xsl:choose>
                     <xsl:when test="string-length(xs:string($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min)) = 0">
                         <xsl:message terminate="yes">#502 [ERROR] incorrect data of $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys[MIN][<xsl:value-of select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>]  [count[<xsl:value-of select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_count"/>]]</xsl:message>
@@ -576,6 +623,33 @@
         <xsl:value-of select="$ptn:MFColor__x3A__R"/><xsl:text> </xsl:text>
         <xsl:value-of select="$ptn:MFColor__x3A__G"/><xsl:text> </xsl:text>
         <xsl:value-of select="$ptn:MFColor__x3A__B"/><xsl:text> </xsl:text>
+        <xsl:choose>
+            <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__last = true()"></xsl:when>
+            <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    
+    <xsl:template name="ptn:MFColor__x3A__sequence__x3A__dynamic">
+        <xsl:param name="ptn:MFColor__x3A__R" required="yes" />
+        <xsl:param name="ptn:MFColor__x3A__G" required="yes" />
+        <xsl:param name="ptn:MFColor__x3A__B" required="yes" />
+        <xsl:param name="ptn:MFColor__x3A__sequence__x3A__last" required="yes"/>
+        <xsl:param name="ptn:Simulated_potential__x3A__min" required="yes"/>
+        <xsl:param name="ptn:Simulated_potential__x3A__max" required="yes"/>
+        <xsl:param name="ptn:Simulated_potential__x3A__current" required="yes"/>
+        <xsl:choose>
+            <xsl:when test="string-length(xs:string($ptn:Simulated_potential__x3A__min)) = 0 ">
+                <xsl:message terminate="yes">#596 [ERROR][EMPTY][$ptn:Simulated_potential__x3A__min[<xsl:value-of select="$ptn:Simulated_potential__x3A__min"/>]]   [$ptn:Simulated_potential__x3A__current[<xsl:value-of select="$ptn:Simulated_potential__x3A__current"/>]]</xsl:message>
+            </xsl:when>
+        </xsl:choose>
+        <xsl:variable name="ptn:Simulated_potential__x3A__diff_val"     select="$ptn:Simulated_potential__x3A__current - $ptn:Simulated_potential__x3A__min"/>
+        <xsl:variable name="ptn:Simulated_potential__x3A__diff_min_max" select="$ptn:Simulated_potential__x3A__max - $ptn:Simulated_potential__x3A__min"/>
+        <xsl:variable name="ptn:Simulated_potential__x3A__percent" select="format-number(($ptn:Simulated_potential__x3A__diff_val div $ptn:Simulated_potential__x3A__diff_min_max),'0.00')"/>
+        
+        <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
+        <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
         <xsl:choose>
             <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__last = true()"></xsl:when>
             <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
