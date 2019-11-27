@@ -10,7 +10,7 @@
         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-        <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+        <ptn:Reset_potential>-75.0</ptn:Reset_potential>
         <ptn:Firing_threshold>-59.0</ptn:Firing_threshold>
         <ptn:Adaptation_conductance>10.0</ptn:Adaptation_conductance>
         <ptn:Adaptation_time_constant>500.0</ptn:Adaptation_time_constant>
@@ -18,7 +18,7 @@
         <ptn:Maximum_current>4.0</ptn:Maximum_current>
         <ptn:Time_constant>2.0</ptn:Time_constant>
         <ptn:Delay>5.0</ptn:Delay>
-        <ptn:Attract_min>-64.0</ptn:Attract_min>
+        <ptn:Attract_min>-60.0</ptn:Attract_min>
     </ptn:Defaults>
     <ptn:Receptors>
         <ptn:Receptor>
@@ -31,7 +31,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -50,7 +50,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -69,7 +69,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -88,7 +88,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -107,7 +107,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -126,7 +126,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -145,7 +145,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -164,7 +164,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -183,7 +183,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -202,7 +202,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -221,7 +221,7 @@
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
             <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
             <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-            <ptn:Reset_potential>-70.0</ptn:Reset_potential>
+            <ptn:Reset_potential>-75.0</ptn:Reset_potential>
             <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
             <ptn:Refactory_period>2.0</ptn:Refactory_period>
             <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
@@ -242,19 +242,38 @@
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="4" ptn:Input_exec_Maximum_current__x3A__end="4"/>
         </ptn:Input__x3A__generate>-->
         
-        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="15">
-            <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="1" ptn:Input_exec_time__x3A__end="20" ptn:Input_exec_time__x3A__pause="1"/>
+        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
+            <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="1" ptn:Input_exec_time__x3A__end="20" ptn:Input_exec_time__x3A__pause="2"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
         </ptn:Input__x3A__generate>
         
-        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="15">
+        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="30" ptn:Input_exec_time__x3A__end="40" ptn:Input_exec_time__x3A__pause="1"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="10" ptn:Input_exec_receptor__end="1"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
         </ptn:Input__x3A__generate>
+        
+        
+        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
+            <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="70" ptn:Input_exec_time__x3A__end="80" ptn:Input_exec_time__x3A__pause="1"/>
+            <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
+            <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
+            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
+        </ptn:Input__x3A__generate>
+        
+        
+        
+        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
+            <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="100" ptn:Input_exec_time__x3A__end="110" ptn:Input_exec_time__x3A__pause="1"/>
+            <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
+            <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
+            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
+        </ptn:Input__x3A__generate>
+        
+        
         <!--<ptn:Input>
             <ptn:Input_exec_time>1</ptn:Input_exec_time>
             <!-\-<ptn:Input_exec_time__x3A__initial>1</ptn:Input_exec_time__x3A__initial>-\->
@@ -371,6 +390,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>70</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>120</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>
