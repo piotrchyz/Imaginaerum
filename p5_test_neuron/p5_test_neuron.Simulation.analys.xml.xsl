@@ -11,7 +11,7 @@
     <xsl:strip-space elements="*"/>
     
     <xsl:include href="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"/>
-   
+    <xsl:include href="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl"/>
    
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Config[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]">
         <xsl:message>#13 todo ptn:Config</xsl:message>
@@ -66,44 +66,7 @@
     
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate">
-        <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
-        <xsl:param name="ptn:Receptors" required="yes" tunnel="yes"/>
-        <xsl:variable name="ptn:Input__x3A__generate__x3A__current" select="."/>
-        <!--<xsl:choose>
-            <xsl:when test="number(ptn:Input_exec_Time_constant) &lt;= number($ptn:Simulator_tick)">
-                <xsl:copy-of select="."/>
-            </xsl:when>
-            
-        </xsl:choose>-->
-        <!--<ptn:Input>
-            <ptn:Input_exec_time>1</ptn:Input_exec_time>
-            <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
-            <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-            <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
-        </ptn:Input>-->
-        <xsl:for-each select="ptn:Input_exec_time/@ptn:Input_exec_time__x3A__start to ptn:Input_exec_time/@ptn:Input_exec_time__x3A__end">
-            <xsl:comment>#78 [ptn:Input__x3A__generate] test 1</xsl:comment>
-            <xsl:message>#78 [ptn:Input__x3A__generate] test 1</xsl:message>
-            <xsl:variable name="current_pos" select="position()"/>
-                <xsl:choose>
-                    <xsl:when test="$ptn:Receptors//ptn:Receptor[position() = $current_pos ]">
-                        <ptn:Input>
-                            <ptn:Input_exec_time><xsl:value-of select=". * $ptn:Input__x3A__generate__x3A__current/ptn:Input_exec_time/@ptn:Input_exec_time__x3A__pause"/></ptn:Input_exec_time>
-                            <ptn:Input_exec_receptor><xsl:value-of select="$ptn:Receptors//ptn:Receptor[position() = $current_pos ]/ptn:Label"/></ptn:Input_exec_receptor>
-                            <ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Input__x3A__generate__x3A__current/ptn:Input_exec_Time_constant/@ptn:Input_exec_Time_constant__x3A__start"/></ptn:Input_exec_Time_constant>
-                            <ptn:Input_exec_Maximum_current><xsl:value-of select="$ptn:Input__x3A__generate__x3A__current/ptn:Input_exec_Maximum_current/@ptn:Input_exec_Maximum_current__x3A__start"/></ptn:Input_exec_Maximum_current>
-                        </ptn:Input>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:comment>#94 no such receptor error</xsl:comment>
-                    </xsl:otherwise>
-                </xsl:choose>
-            
-            
-        </xsl:for-each>
-        
-    </xsl:template>
+    
     
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors">

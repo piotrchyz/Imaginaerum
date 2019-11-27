@@ -72,8 +72,17 @@
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; $ptn:Attract_min and not($ptn:Outputs//ptn:Current_synapse)">
                 <ptn:Attract__x3A__flag><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
             </xsl:when>
-            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; $ptn:Attract_min and $ptn:Outputs//ptn:Current_synapse">
-                <xsl:comment>#76 bypassed attract due to output avilable</xsl:comment>
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min + 0.3) and $ptn:Outputs//ptn:Current_synapse[1]">
+                <ptn:Attract__x3A__flag ptn:debug="#77A [TUNE][+0.3][ptn:Current_synapse[1]]"><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
+            </xsl:when>
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min + 0.5) and $ptn:Outputs//ptn:Current_synapse[2]">
+                <ptn:Attract__x3A__flag ptn:debug="#77B [TUNE][+0.5][ptn:Current_synapse[2]]"><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
+            </xsl:when>
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min + 0.7) and $ptn:Outputs//ptn:Current_synapse[3]">
+                <ptn:Attract__x3A__flag ptn:debug="#77C [TUNE][+0.7][ptn:Current_synapse[3]]"><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
+            </xsl:when>
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min ) and $ptn:Outputs//ptn:Current_synapse">
+                <xsl:comment>#76D bypassed attract due to output avilable</xsl:comment>
             </xsl:when>
         </xsl:choose>
         <xsl:copy-of select="$ptn:Simulated_potential__x3A__vectors"/>

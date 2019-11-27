@@ -24,7 +24,9 @@
     </target>
     
     
-    <target name="param">
+    
+    <target name="param" >
+        
         <property name="p5_test_neuron.Simulation_ticks" value="10"/>
         <property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation"/>
         <property name="p5_test_neuron.Simulation.build.analys.xml" location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"/>
@@ -136,6 +138,8 @@
         <echo>
             #80 will generate p5_test_neuron.Simulation.analyze_simulation.x3d = ${p5_test_neuron.Simulation.analyze_simulation.x3d}
         </echo>
+        
+        
         <xslt in="${p5_test_neuron.Simulation.analyze_simulation.xml}" 
             out="${p5_test_neuron.Simulation.analyze_simulation.x3d}"
             style="${p5_test_neuron.Simulation.analyze_simulation.x3d.xsl}"
