@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://www.web3d.org/specifications/x3d-3.0.xsd" vc:minVersion="1.1"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" attributeFormDefault="unqualified"
+    xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
+    <xs:simpleType name="DEF">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:attribute name="DEF" type="x3d:DEF"/>
+    <xs:simpleType name="key__x3A__value">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+</xs:schema>

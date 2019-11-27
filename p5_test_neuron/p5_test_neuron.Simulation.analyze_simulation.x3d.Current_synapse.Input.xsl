@@ -330,7 +330,7 @@
             </xsl:call-template>
         </xsl:variable>
         <xsl:result-document href="{$ptn:Simulation.dir}/debug/Input/{$DEF}.xml">
-            <xsl:element name="{$ptn:Simulation__x3A__Interpolator__x3A__type}">
+            <xsl:element name="{$ptn:Simulation__x3A__Interpolator__x3A__type}__x3A__debug">
                 <xsl:attribute name="ptn:Coordinate_X" select="$ptn:Coordinate_X"/>
                 <xsl:attribute name="ptn:Coordinate_Y" select="$ptn:Coordinate_Y"/>
                 <xsl:attribute name="ptn:Coordinate_Z" select="$ptn:Coordinate_Z"/>

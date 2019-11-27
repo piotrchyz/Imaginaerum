@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="p5_test_neuron" vc:minVersion="1.1" xmlns:ptn="p5_test_neuron"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
+    <xs:include schemaLocation="test_neuron.xsd"/>
+    <xs:import schemaLocation="test_neuron.x3d.xsd"
+        namespace="http://www.web3d.org/specifications/x3d-3.0.xsd"/>
+    <xs:include schemaLocation="test_neuron.Simulation.model.stats.xml.xsd"/>
+    <xs:complexType name="ColorInterpolator__x3A__debug">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" ref="ptn:keyValue__x3A__MFColor__x3A__debug"/>
+            <xs:element maxOccurs="unbounded" ref="ptn:key__x3A__debug"/>
+        </xs:sequence>
+        <xs:attribute ref="x3d:DEF"/>
+    </xs:complexType>
+    <xs:element name="ColorInterpolator__x3A__debug" type="ptn:ColorInterpolator__x3A__debug"/>
+    <xs:complexType name="keyValue__x3A__MFColor__x3A__debug">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element maxOccurs="unbounded" ref="ptn:MFColor__x3A__sequence__x3A__debug"/>
+            <xs:element ref="ptn:keyValue__x3A__current_tick__x3A__debug"/>
+            <xs:element ref="ptn:current-group__x3A__debug"/>
+            <xs:element ref="ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:element name="keyValue__x3A__MFColor__x3A__debug"
+        type="ptn:keyValue__x3A__MFColor__x3A__debug"/>
+    <xs:complexType name="MFColor__x3A__sequence__x3A__debug">
+        <xs:attribute ref="ptn:MFColor__x3A__R"/>
+        <xs:attribute ref="ptn:MFColor__x3A__G"/>
+        <xs:attribute ref="ptn:MFColor__x3A__B"/>
+    </xs:complexType>
+    <xs:element name="MFColor__x3A__sequence__x3A__debug"
+        type="ptn:MFColor__x3A__sequence__x3A__debug"/>
+    <xs:attribute name="MFColor__x3A__R" type="ptn:MFColor"/>
+    <xs:attribute name="MFColor__x3A__G" type="ptn:MFColor"/>
+    <xs:attribute name="MFColor__x3A__B" type="ptn:MFColor"/>
+    <xs:simpleType final="" name="MFColor">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="keyValue__x3A__current_tick__x3A__debug">
+        <xs:sequence>
+            <xs:element name="Simulation.analys.xml__x3A__analyze"
+                type="ptn:Simulation.analys.xml__x3A__analyze__x3A__debug"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="keyValue__x3A__current_tick__x3A__debug"
+        type="ptn:keyValue__x3A__current_tick__x3A__debug"/>
+    <xs:complexType name="Simulation.analys.xml__x3A__analyze__x3A__debug">
+        <xs:attribute ref="ptn:Simulation_body_time" use="required"/>
+        <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
+        <xs:attribute ref="ptn:Simulator_tick" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="current-group__x3A__debug">
+        <xs:sequence>
+            <xs:element ref="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze__x3A__debug"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
+    </xs:complexType>
+    <xs:element name="current-group__x3A__debug" type="ptn:current-group__x3A__debug"/>
+    <xs:complexType name="MFColor__x3A__sequence__x3A__dynamic__x3A__debug">
+        <xs:attribute ref="ptn:MFColor__x3A__R" use="required"/>
+        <xs:attribute ref="ptn:MFColor__x3A__G" use="required"/>
+        <xs:attribute ref="ptn:MFColor__x3A__B" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__current" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__min" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__max" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__diff_val" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__diff_min_max" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__percent" use="required"/>
+    </xs:complexType>
+    <xs:element name="MFColor__x3A__sequence__x3A__dynamic__x3A__debug"
+        type="ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug"/>
+    <xs:attribute name="Label__x3A__analyze__x3A__debug" type="ptn:Output_Node__x3A__temp"/>
+    <xs:attribute name="Coordinate_X__x3A__debug" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__debug" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z__x3A__debug" type="ptn:Coordinate"/>
+    <xs:complexType name="Leaky_neuron_inhibitor__X3A__AA__x3A__analyze__x3A__debug">
+        <xs:attribute ref="ptn:Label__x3A__analyze__x3A__debug" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_X__x3A__debug" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Y__x3A__debug" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Z__x3A__debug" use="required"/>
+        <xs:attribute ref="ptn:Outputs__x3A__count__x3A__debug" use="required"/>
+        <xs:attribute ref="ptn:Simulated_potential__x3A__debug" use="required"/>
+        <xs:attribute ref="ptn:Is_inhibitor__x3A__debug" use="required"/>
+    </xs:complexType>
+    <xs:element name="Leaky_neuron_inhibitor__X3A__AA__x3A__analyze__x3A__debug"
+        type="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze__x3A__debug"/>
+    <xs:simpleType name="Outputs__x3A__count__x3A__debug">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+    <xs:attribute name="Outputs__x3A__count__x3A__debug" type="ptn:Outputs__x3A__count__x3A__debug"/>
+    <xs:attribute name="Simulated_potential__x3A__debug" type="ptn:Simulated_potential"/>
+    <xs:attribute name="Is_inhibitor__x3A__debug" type="ptn:Is_inhibitor_true"/>
+    <xs:simpleType name="key__value__x3A__debug">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="key__value__x3A__debug" type="ptn:key__value__x3A__debug"/>
+    <xs:simpleType name="position__x3A__last__x3A__debug">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value=","/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="position__x3A__separator__x3A__debug"
+        type="ptn:position__x3A__last__x3A__debug"/>
+    <xs:attribute name="position__x3A__last__x3A__debug" type="ptn:position__x3A__last__x3A__debug"/>
+    <xs:complexType name="key__x3A__debug">
+        <xs:attribute ref="ptn:key__value__x3A__debug" use="required"/>
+        <xs:attribute ref="ptn:position__x3A__separator__x3A__debug"/>
+        <xs:attribute ref="ptn:position__x3A__last__x3A__debug"/>
+    </xs:complexType>
+    <xs:element name="key__x3A__debug" type="ptn:key__x3A__debug"/>
+    <xs:attribute name="Simulated_potential__x3A__current" type="ptn:Simulated_potential"/>
+    <xs:attribute name="Simulated_potential__x3A__min" type="ptn:Simulated_potential"/>
+    <xs:attribute name="Simulated_potential__x3A__max" type="ptn:Simulated_potential"/>
+    <xs:attribute name="Simulated_potential__x3A__diff_val" type="ptn:Simulated_potential"/>
+    <xs:attribute name="Simulated_potential__x3A__diff_min_max" type="ptn:Simulated_potential"/>
+    <xs:simpleType name="Simulated_potential__x3A__percen">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Simulated_potential__x3A__percent"
+        type="ptn:Simulated_potential__x3A__percen"/>
+</xs:schema>

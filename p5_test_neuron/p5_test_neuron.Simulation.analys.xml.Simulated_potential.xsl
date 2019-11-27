@@ -20,6 +20,7 @@
     <xsl:template mode="ptn:Simulated_potential"  match="ptn:Simulated_potential[preceding-sibling::ptn:Firing_threshold][preceding-sibling::ptn:Capacitance][preceding-sibling::ptn:Resistance][preceding-sibling::ptn:Resting_potential][preceding-sibling::ptn:Reset_potential]">
         <xsl:param name="ptn:Attract_min" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulated_potential.input.vector__x3A__offset" select="1.3"/>
+        <xsl:param name="ptn:Outputs" required="yes" tunnel="yes"/>
             <xsl:message terminate="no">#13-13 name()<xsl:value-of select="name()"/> TODO </xsl:message>
         <xsl:variable name="ptn:Simulated_potential__x3A__vectors">
             <ptn:Simulated_potential__x3A__vectors>
@@ -68,8 +69,11 @@
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; preceding-sibling::ptn:Firing_threshold and preceding-sibling::ptn:Outputs/ptn:Current_synapse">
                 <!-- when fired no attract variant should be created  -->
             </xsl:when>
-            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; $ptn:Attract_min">
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; $ptn:Attract_min and not($ptn:Outputs//ptn:Current_synapse)">
                 <ptn:Attract__x3A__flag><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
+            </xsl:when>
+            <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; $ptn:Attract_min and $ptn:Outputs//ptn:Current_synapse">
+                <xsl:comment>#76 bypassed attract due to output avilable</xsl:comment>
             </xsl:when>
         </xsl:choose>
         <xsl:copy-of select="$ptn:Simulated_potential__x3A__vectors"/>

@@ -11,23 +11,23 @@
             <xs:attribute name="file"/>
         </xs:complexType>
     </xs:element>
-    <xs:element name="Simulation.analys.xml__x3A__analyze">
-        <xs:complexType>
-            <xs:sequence maxOccurs="unbounded">
-                <xs:element maxOccurs="unbounded" ref="ptn:Receptor__x3A__analyze" minOccurs="0"/>
-                <xs:element ref="ptn:Leaky_neuron_standard__x3A__analyze" maxOccurs="unbounded"
-                    minOccurs="0"/>
-                <xs:element ref="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze"
-                    maxOccurs="unbounded" minOccurs="0"/>
-                <xs:element ref="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze"
-                    maxOccurs="unbounded" minOccurs="0"/>
-            </xs:sequence>
-            <xs:attribute ref="ptn:Label"/>
-            <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
-            <xs:attribute ref="ptn:Simulator_tick" use="required"/>
-            <xs:attribute ref="ptn:Simulation_body_time"/>
-        </xs:complexType>
-    </xs:element>
+    <xs:complexType name="Simulation.analys.xml__x3A__analyze">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element maxOccurs="unbounded" ref="ptn:Receptor__x3A__analyze" minOccurs="0"/>
+            <xs:element ref="ptn:Leaky_neuron_standard__x3A__analyze" maxOccurs="unbounded"
+                minOccurs="0"/>
+            <xs:element ref="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze"
+                maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze"
+                maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Label"/>
+        <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
+        <xs:attribute ref="ptn:Simulator_tick" use="required"/>
+        <xs:attribute ref="ptn:Simulation_body_time"/>
+    </xs:complexType>
+    <xs:element name="Simulation.analys.xml__x3A__analyze"
+        type="ptn:Simulation.analys.xml__x3A__analyze"> </xs:element>
     <xs:complexType name="analyze">
         <xs:all>
             <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Current_synapse__x3A__analyze"/>

@@ -6,6 +6,7 @@
     xmlns:math="http://exslt.org/math"
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
     exclude-result-prefixes="xs math"
+    xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
     version="2.0">
     
     <xsl:output indent="yes" method="xml" /><!-- doctype-public="ISO//Web3D//DTD X3D 3.0//EN" doctype-system="http://www.web3d.org/specifications/x3d-3.0.dtd" -->
@@ -626,13 +627,25 @@
         <xsl:param name="ptn:MFColor__x3A__G" required="yes" />
         <xsl:param name="ptn:MFColor__x3A__B" required="yes" />
         <xsl:param name="ptn:MFColor__x3A__sequence__x3A__last" required="yes"/>
-        <xsl:value-of select="$ptn:MFColor__x3A__R"/><xsl:text> </xsl:text>
-        <xsl:value-of select="$ptn:MFColor__x3A__G"/><xsl:text> </xsl:text>
-        <xsl:value-of select="$ptn:MFColor__x3A__B"/><xsl:text> </xsl:text>
+        <xsl:param name="ptn:MFColor__x3A__sequence__x3A__debug" select="false()"/>
+        
         <xsl:choose>
-            <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__last = true()"></xsl:when>
-            <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+            <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__debug = true()">
+                <xsl:attribute name="ptn:MFColor__x3A__R" select="$ptn:MFColor__x3A__R"/>
+                <xsl:attribute name="ptn:MFColor__x3A__G" select="$ptn:MFColor__x3A__G"/>
+                <xsl:attribute name="ptn:MFColor__x3A__B" select="$ptn:MFColor__x3A__B"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$ptn:MFColor__x3A__R"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:MFColor__x3A__G"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:MFColor__x3A__B"/><xsl:text> </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__last = true()"></xsl:when>
+                    <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
         </xsl:choose>
+        
     </xsl:template>
     
     
@@ -644,6 +657,7 @@
         <xsl:param name="ptn:Simulated_potential__x3A__min" required="yes"/>
         <xsl:param name="ptn:Simulated_potential__x3A__max" required="yes"/>
         <xsl:param name="ptn:Simulated_potential__x3A__current" required="yes"/>
+        <xsl:param name="ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug" select="false()"/>
         <xsl:choose>
             <xsl:when test="string-length(xs:string($ptn:Simulated_potential__x3A__min)) = 0 ">
                 <xsl:message terminate="yes">#596 [ERROR][EMPTY][$ptn:Simulated_potential__x3A__min[<xsl:value-of select="$ptn:Simulated_potential__x3A__min"/>]]   [$ptn:Simulated_potential__x3A__current[<xsl:value-of select="$ptn:Simulated_potential__x3A__current"/>]]</xsl:message>
@@ -651,15 +665,40 @@
         </xsl:choose>
         <xsl:variable name="ptn:Simulated_potential__x3A__diff_val"     select="$ptn:Simulated_potential__x3A__current - $ptn:Simulated_potential__x3A__min"/>
         <xsl:variable name="ptn:Simulated_potential__x3A__diff_min_max" select="$ptn:Simulated_potential__x3A__max - $ptn:Simulated_potential__x3A__min"/>
-        <xsl:variable name="ptn:Simulated_potential__x3A__percent" select="format-number(($ptn:Simulated_potential__x3A__diff_val div $ptn:Simulated_potential__x3A__diff_min_max),'0.00')"/>
+        <xsl:variable name="ptn:Simulated_potential__x3A__percent" >
+            <xsl:choose>
+                <xsl:when test="$ptn:Simulated_potential__x3A__diff_val = 0">
+                    <xsl:value-of select="0.5"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="format-number(($ptn:Simulated_potential__x3A__diff_val div $ptn:Simulated_potential__x3A__diff_min_max),'0.00')"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
         
-        <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
-        <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
-        <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
         <xsl:choose>
-            <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__last = true()"></xsl:when>
-            <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+            <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug = true()">
+                <xsl:attribute name="ptn:MFColor__x3A__R" select="$ptn:Simulated_potential__x3A__percent"/>
+                <xsl:attribute name="ptn:MFColor__x3A__G" select="$ptn:Simulated_potential__x3A__percent"/>
+                <xsl:attribute name="ptn:MFColor__x3A__B" select="$ptn:Simulated_potential__x3A__percent"/>
+                <xsl:attribute name="ptn:Simulated_potential__x3A__current" select="$ptn:Simulated_potential__x3A__current"/>
+                <xsl:attribute name="ptn:Simulated_potential__x3A__min" select="$ptn:Simulated_potential__x3A__min"/>
+                <xsl:attribute name="ptn:Simulated_potential__x3A__max" select="$ptn:Simulated_potential__x3A__max"/>
+                <xsl:attribute name="ptn:Simulated_potential__x3A__diff_val" select="$ptn:Simulated_potential__x3A__diff_val"/>
+                <xsl:attribute name="ptn:Simulated_potential__x3A__diff_min_max" select="$ptn:Simulated_potential__x3A__diff_min_max"/>
+                <xsl:attribute name="ptn:Simulated_potential__x3A__percent" select="$ptn:Simulated_potential__x3A__percent"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
+                <xsl:value-of select="$ptn:Simulated_potential__x3A__percent"/><xsl:text> </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="$ptn:MFColor__x3A__sequence__x3A__last = true()"></xsl:when>
+                    <xsl:otherwise><xsl:text>, </xsl:text></xsl:otherwise>
+                </xsl:choose>
+            </xsl:otherwise>
         </xsl:choose>
+       
     </xsl:template>
     
     <xsl:template name="ptn:Simulation__x3A__ROUTE">

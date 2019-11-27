@@ -5,6 +5,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:math="http://exslt.org/math"
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
     exclude-result-prefixes="xs math"
     version="2.0">
     
@@ -30,20 +31,29 @@
         <xsl:variable name="current" select="current()"/>
         <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
         <xsl:result-document href="{$ptn:Simulation.dir}/debug/Nodes/{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator.xml">
-            <ColorInterpolator DEF="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator" ><!-- key="0, 0.2, 0.4, 0.6, 0.8, 1" -->
+            <ptn:ColorInterpolator__x3A__debug 
+                xsi:schemaLocation="p5_test_neuron file:{$ptn:xsd}"
+                x3d:DEF="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator" ><!-- key="0, 0.2, 0.4, 0.6, 0.8, 1" -->
                 
                     <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze"><!-- ptn:Simulation_body__x3A__analyze -->
                         
-                        <keyValue>
+                        <ptn:keyValue__x3A__MFColor__x3A__debug>
                         <xsl:choose>
                                
                                 <xsl:when test="$current-group/parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
-                                    <current>
+                                    <ptn:keyValue__x3A__current_tick__x3A__debug>
                                         <xsl:copy-of select="."/>
-                                    </current>
-                                    <current-group ptn:Simulation_body_tick="{@ptn:Simulation_body_tick}">
-                                        <xsl:copy-of select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]"/>
-                                    </current-group>
+                                    </ptn:keyValue__x3A__current_tick__x3A__debug>
+                                    <ptn:current-group__x3A__debug ptn:Simulation_body_tick="{@ptn:Simulation_body_tick}">
+                                        <xsl:for-each select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]">
+                                            <xsl:element name="{name()}__x3A__debug">
+                                                <xsl:for-each select="@*">
+                                                    <xsl:attribute name="{name()}__x3A__debug" select="."/>
+                                                </xsl:for-each>
+                                            </xsl:element>
+                                        </xsl:for-each>
+                                        
+                                    </ptn:current-group__x3A__debug>
                                     <xsl:message>#35 DEB  @tick[<xsl:value-of select="@ptn:Simulation_body_tick"/>]
                                         @@ptn:Simulated_potential[label][<xsl:value-of select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Label__x3A__analyze "/>]  @@ptn:Simulated_potential[<xsl:value-of select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential "/>]
                                         @@ptn:min[<xsl:value-of select="min($current-group[parent::*]/@ptn:Simulated_potential)"/>]  @@ptn:max[<xsl:value-of select="max($current-group[parent::*]/@ptn:Simulated_potential)"/>]  abs[V][<xsl:value-of select="abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)"/>] MX[V][<xsl:value-of select="$ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage"/>]
@@ -59,50 +69,59 @@
                                             <xsl:message terminate="yes">#53 [ERROR][MORE ROWS][@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]] [LABEL[<xsl:value-of select="$ptn:Label__x3A__analyze"/>]]  =#[<xsl:value-of select="count($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential)"/>]</xsl:message>
                                         </xsl:when>
                                     </xsl:choose>
-                                    <test1 v1="{format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')}">
+                                    <!--<test1 v1="{format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')}">
                                         
-                                    </test1>
-                                    <xsl:call-template name="ptn:MFColor__x3A__sequence__x3A__dynamic">
-                                        <xsl:with-param name="ptn:MFColor__x3A__R" select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/>
-                                        <xsl:with-param name="ptn:MFColor__x3A__G" select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/>
-                                        <xsl:with-param name="ptn:MFColor__x3A__B" select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/>
-                                        <xsl:with-param name="ptn:Simulated_potential__x3A__min" select="min($current-group[parent::*]/@ptn:Simulated_potential)"/>
-                                        <xsl:with-param name="ptn:Simulated_potential__x3A__max" select="max($current-group[parent::*]/@ptn:Simulated_potential)"/>
-                                        <xsl:with-param name="ptn:Simulated_potential__x3A__current" select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential"/>
-                                        <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__last" select="position() = last()"/>
-                                    </xsl:call-template>
+                                    </test1>-->
+                                    <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug>
+                                        <xsl:call-template name="ptn:MFColor__x3A__sequence__x3A__dynamic">
+                                            <xsl:with-param name="ptn:MFColor__x3A__R" select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__G" select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__B" select="format-number(abs(($current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential + abs($ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage)) div $ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage), '0.00')"/>
+                                            <xsl:with-param name="ptn:Simulated_potential__x3A__min" select="min($current-group[parent::*]/@ptn:Simulated_potential)"/>
+                                            <xsl:with-param name="ptn:Simulated_potential__x3A__max" select="max($current-group[parent::*]/@ptn:Simulated_potential)"/>
+                                            <xsl:with-param name="ptn:Simulated_potential__x3A__current" select="$current-group[parent::*[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]]/@ptn:Simulated_potential"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__last" select="position() = last()"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug" select="true()"/>
+                                        </xsl:call-template>
+                                    </ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug>
                                 </xsl:when>
                                 <xsl:otherwise>
                                     <!--<xsl:text>1 1 1 </xsl:text>-->
-                                    <xsl:call-template name="ptn:MFColor__x3A__sequence">
-                                        <xsl:with-param name="ptn:MFColor__x3A__R" select="1"/>
-                                        <xsl:with-param name="ptn:MFColor__x3A__G" select="1"/>
-                                        <xsl:with-param name="ptn:MFColor__x3A__B" select="1"/>
-                                        
-                                        <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__last" select="position() = last()"/>
-                                    </xsl:call-template>
+                                    <ptn:MFColor__x3A__sequence__x3A__debug>
+                                        <xsl:call-template name="ptn:MFColor__x3A__sequence">
+                                            <xsl:with-param name="ptn:MFColor__x3A__R" select="1"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__G" select="1"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__B" select="1"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__last" select="position() = last()"/>
+                                            <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__debug" select="true()"/>
+                                        </xsl:call-template>
+                                    </ptn:MFColor__x3A__sequence__x3A__debug>
                                 </xsl:otherwise>
                             </xsl:choose>
-                        </keyValue>
+                        </ptn:keyValue__x3A__MFColor__x3A__debug>
                         
                     </xsl:for-each>
                 
              
                     <xsl:for-each select="1 to count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze)"><!-- ptn:Simulation_body__x3A__analyze -->
-                            <key>
-                                <xsl:choose>
-                                    <xsl:when test="position() = last()">
-                                        <xsl:value-of select="1"/>
-                                    </xsl:when>
-                                    <xsl:when test="position() = 1">
-                                        <xsl:value-of select="0"/><xsl:text>, </xsl:text>
-                                    </xsl:when>
-                                    <xsl:otherwise><xsl:value-of select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze) * position(), '0.00')"/><xsl:text>, </xsl:text></xsl:otherwise><!-- ptn:Simulation_body__x3A__analyze -->
-                                </xsl:choose>
-                            </key>
+                        <ptn:key__x3A__debug>
+                                    <xsl:choose>
+                                        <xsl:when test="position() = last()">
+                                            <xsl:attribute name="ptn:key__value__x3A__debug" select="1"/>
+                                        </xsl:when>
+                                        <xsl:when test="position() = 1">
+                                            <xsl:attribute name="ptn:key__value__x3A__debug" select="0"/>
+                                            <xsl:attribute name="ptn:position__x3A__last__x3A__debug">,</xsl:attribute>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <xsl:attribute name="ptn:key__value__x3A__debug" select="format-number(1 div count($ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze) * position(), '0.00')"/>
+                                            <xsl:attribute name="ptn:position__x3A__separator__x3A__debug">,</xsl:attribute>
+                                        </xsl:otherwise><!-- ptn:Simulation_body__x3A__analyze -->
+                                    </xsl:choose>
+                                </ptn:key__x3A__debug>
                     </xsl:for-each>
                 <xsl:text> </xsl:text>
-            </ColorInterpolator>
+            </ptn:ColorInterpolator__x3A__debug>
         </xsl:result-document>
         <ColorInterpolator DEF="{$ptn:Label__x3A__analyze}_EmissiveColorInterpolator" ><!-- key="0, 0.2, 0.4, 0.6, 0.8, 1" -->
             <xsl:attribute name="keyValue">

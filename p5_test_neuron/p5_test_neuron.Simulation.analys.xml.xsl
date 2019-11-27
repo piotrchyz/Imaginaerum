@@ -63,7 +63,21 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors|ptn:Receptor|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor|ptn:Leaky_neuron_inhibitor__x3A__AB|ptn:Leaky_neuron_inhibitor__X3A__AA">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Nodes">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptor|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor|ptn:Leaky_neuron_inhibitor__x3A__AB|ptn:Leaky_neuron_inhibitor__X3A__AA">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current">
@@ -282,11 +296,20 @@
     
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit">
-        <xsl:comment >#241B todo <xsl:value-of select="name()"/></xsl:comment>
-        <xsl:copy>
-            <xsl:copy-of select="@*"/>
-            <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
+        <xsl:variable name="ptn:Input__x3A__test">
+            <xsl:copy>
+                <xsl:copy-of select="@*"/>
+                <xsl:apply-templates mode="#current"/>
+            </xsl:copy>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="$ptn:Input__x3A__test//ptn:Input">
+                <xsl:copy-of select="$ptn:Input__x3A__test"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment >#241B [consumed][removed] <xsl:value-of select="name()"/></xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit[not(*)]">
@@ -328,11 +351,7 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Nodes">
-        <xsl:copy>
-            <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
-    </xsl:template>
+    
     
     
     

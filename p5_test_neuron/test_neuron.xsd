@@ -64,6 +64,11 @@
             <xs:documentation>Analiza dla stworzneia symulacji X3d</xs:documentation>
         </xs:annotation>
     </xs:include>
+    <xs:include schemaLocation="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd">
+        <xs:annotation>
+            <xs:documentation>Debug elements</xs:documentation>
+        </xs:annotation>
+    </xs:include>
     <xs:simpleType name="Capacitance">
         <xs:annotation>
             <xs:documentation>Membrane Capacitance from 0.01 to 2nF</xs:documentation>
@@ -626,6 +631,8 @@
     <xs:complexType name="Input">
         <xs:sequence>
             <xs:element name="Input_exec_time" type="ptn:Input_exec_time"/>
+            <xs:element minOccurs="0" name="Input_exec_time__x3A__initial"
+                type="ptn:Input_exec_time"/>
             <xs:element name="Input_exec_receptor" type="ptn:Input_exec_receptor"/>
             <xs:element name="Input_exec_Time_constant" type="ptn:Input_exec_Time_constant"/>
             <xs:element name="Input_exec_Maximum_current" type="ptn:Input_exec_Maximum_current"/>
@@ -683,25 +690,37 @@
     <xs:element name="Receptors">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" name="Receptor" type="ptn:Receptor"/>
+                <xs:element maxOccurs="unbounded" ref="ptn:Receptor"/>
             </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Receptor">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="ptn:Receptor">
+                    <xs:assert
+                        test="ptn:Attract__x3A__flag and not(ptn:Outputs/ptn:Current_synapse) or not(ptn:Attract__x3A__flag)">
+                        <xs:annotation>
+                            <xs:documentation>No attract when outputs avialable</xs:documentation>
+                        </xs:annotation>
+                    </xs:assert>
+                </xs:extension>
+            </xs:complexContent>
         </xs:complexType>
     </xs:element>
     <xs:element name="Nodes">
         <xs:complexType>
             <xs:sequence maxOccurs="unbounded">
-                <xs:element ref="ptn:Leaky_neuron_standard" maxOccurs="unbounded" minOccurs="0"/>
-                <xs:element form="qualified" maxOccurs="unbounded" minOccurs="0"
-                    name="Leaky_neuron_inhibitor" type="ptn:Leaky_neuron_inhibitor"/>
-                <xs:sequence maxOccurs="unbounded" minOccurs="0">
-                    <xs:element name="Leaky_neuron_inhibitor__x3A__AB"
-                        type="ptn:Leaky_neuron_inhibitor"/>
-                    <xs:element name="Leaky_neuron_inhibitor__X3A__AA"
-                        type="ptn:Leaky_neuron_inhibitor"/>
-                </xs:sequence>
-                <xs:element maxOccurs="unbounded" minOccurs="0" name="Adaptive_neuron_standard"
+                <xs:element ref="ptn:Leaky_neuron_standard" minOccurs="0"/>
+                <xs:element form="qualified" minOccurs="0" name="Leaky_neuron_inhibitor"
+                    type="ptn:Leaky_neuron_inhibitor"/>
+                <xs:element name="Leaky_neuron_inhibitor__x3A__AB" type="ptn:Leaky_neuron_inhibitor"
+                    minOccurs="0"/>
+                <xs:element name="Leaky_neuron_inhibitor__X3A__AA" type="ptn:Leaky_neuron_inhibitor"
+                    minOccurs="0"/>
+                <xs:element minOccurs="0" name="Adaptive_neuron_standard"
                     type="ptn:Adaptive_neuron_standard"/>
-                <xs:element maxOccurs="unbounded" minOccurs="0" name="Adaptive_neuron_inhibitor"
+                <xs:element minOccurs="0" name="Adaptive_neuron_inhibitor"
                     type="ptn:Adaptive_neuron_inhibitor"/>
             </xs:sequence>
         </xs:complexType>
