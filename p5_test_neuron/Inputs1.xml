@@ -2,15 +2,15 @@
 <ptn:Inputs xmlns:ptn="p5_test_neuron"
             xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="1"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
               ptn:Input_exec_time__x3A__set="1"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
               ptn:Input_exec_receptor__x3A__set="1"
               ptn:Input_exec_receptor__x3A__set_R="1"
               ptn:Input_exec_time__x3A__pause="1"
@@ -18,159 +18,59 @@
       <ptn:Input_exec_time>1</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="2"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="1.475"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="2.2666666666666666"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="1.225"
-              ptn:Input_exec_receptor__x3A__set_R="1"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="1.6"
+              ptn:Input_exec_receptor__x3A__set_R="2"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>1</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_time>2</ptn:Input_exec_time>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="3"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="1.95"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="3.533333333333333"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="1.45"
-              ptn:Input_exec_receptor__x3A__set_R="1"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="2.2"
+              ptn:Input_exec_receptor__x3A__set_R="2"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>2</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_time>4</ptn:Input_exec_time>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="4"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="2.425"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="1.675"
-              ptn:Input_exec_receptor__x3A__set_R="2"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>2</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="5"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="2.9"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="1.9"
-              ptn:Input_exec_receptor__x3A__set_R="2"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>3</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="6"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="3.375"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="2.125"
-              ptn:Input_exec_receptor__x3A__set_R="2"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>3</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="7"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="3.8499999999999996"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="2.35"
-              ptn:Input_exec_receptor__x3A__set_R="2"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>4</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="8"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="4.324999999999999"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="2.575"
-              ptn:Input_exec_receptor__x3A__set_R="3"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>4</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="9"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
               ptn:Input_exec_time__x3A__set="4.8"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
               ptn:Input_exec_receptor__x3A__set="2.8"
               ptn:Input_exec_receptor__x3A__set_R="3"
               ptn:Input_exec_time__x3A__pause="1"
@@ -178,159 +78,59 @@
       <ptn:Input_exec_time>5</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="10"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="5.2749999999999995"
+   <ptn:Input last="15"
+              pos="5"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="6.066666666666666"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="3.025"
-              ptn:Input_exec_receptor__x3A__set_R="3"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>5</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="11"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="5.75"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="3.25"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="3.4"
               ptn:Input_exec_receptor__x3A__set_R="3"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>6</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="12"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="6.225"
+   <ptn:Input last="15"
+              pos="6"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="7.333333333333333"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="3.475"
-              ptn:Input_exec_receptor__x3A__set_R="3"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>6</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="13"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="6.699999999999999"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="3.7"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="4"
               ptn:Input_exec_receptor__x3A__set_R="4"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>7</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="14"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="7.175"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="3.9250000000000003"
-              ptn:Input_exec_receptor__x3A__set_R="4"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>7</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="15"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="7.6499999999999995"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="4.15"
-              ptn:Input_exec_receptor__x3A__set_R="4"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>8</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="16"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="8.125"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="4.375"
-              ptn:Input_exec_receptor__x3A__set_R="4"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>8</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="17"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
+   <ptn:Input last="15"
+              pos="7"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
               ptn:Input_exec_time__x3A__set="8.6"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
               ptn:Input_exec_receptor__x3A__set="4.6"
               ptn:Input_exec_receptor__x3A__set_R="5"
               ptn:Input_exec_time__x3A__pause="1"
@@ -338,319 +138,119 @@
       <ptn:Input_exec_time>9</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="18"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="9.075"
+   <ptn:Input last="15"
+              pos="8"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="9.866666666666667"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="4.825"
-              ptn:Input_exec_receptor__x3A__set_R="5"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>9</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="19"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="9.549999999999999"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="5.05"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="5.2"
               ptn:Input_exec_receptor__x3A__set_R="5"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>10</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="20"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="10.025"
+   <ptn:Input last="15"
+              pos="9"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="11.133333333333333"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="5.275"
-              ptn:Input_exec_receptor__x3A__set_R="5"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>10</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="21"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="10.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="5.5"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="5.8"
               ptn:Input_exec_receptor__x3A__set_R="6"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>11</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="22"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="10.975"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="5.7250000000000005"
-              ptn:Input_exec_receptor__x3A__set_R="6"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>11</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="23"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="11.45"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="5.95"
-              ptn:Input_exec_receptor__x3A__set_R="6"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>11</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="24"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="11.924999999999999"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="6.175"
-              ptn:Input_exec_receptor__x3A__set_R="6"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>12</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="25"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
+   <ptn:Input last="15"
+              pos="10"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
               ptn:Input_exec_time__x3A__set="12.399999999999999"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="6.4"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="6.3999999999999995"
               ptn:Input_exec_receptor__x3A__set_R="6"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>12</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="26"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="12.875"
+   <ptn:Input last="15"
+              pos="11"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="13.666666666666666"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="6.625"
-              ptn:Input_exec_receptor__x3A__set_R="7"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>13</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="27"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="13.35"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="6.8500000000000005"
-              ptn:Input_exec_receptor__x3A__set_R="7"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>13</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="28"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="13.825"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="7.075"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="7"
               ptn:Input_exec_receptor__x3A__set_R="7"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>14</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="29"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="14.299999999999999"
+   <ptn:Input last="15"
+              pos="12"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="14.933333333333334"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="7.3"
-              ptn:Input_exec_receptor__x3A__set_R="7"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>14</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="30"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="14.774999999999999"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="7.525"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="7.6"
               ptn:Input_exec_receptor__x3A__set_R="8"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>15</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="31"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="15.25"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="7.75"
-              ptn:Input_exec_receptor__x3A__set_R="8"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>15</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="32"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="15.725"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="7.9750000000000005"
-              ptn:Input_exec_receptor__x3A__set_R="8"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>16</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="33"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
+   <ptn:Input last="15"
+              pos="13"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
               ptn:Input_exec_time__x3A__set="16.2"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
               ptn:Input_exec_receptor__x3A__set="8.2"
               ptn:Input_exec_receptor__x3A__set_R="8"
               ptn:Input_exec_time__x3A__pause="1"
@@ -658,159 +258,59 @@
       <ptn:Input_exec_time>16</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="34"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="16.674999999999997"
+   <ptn:Input last="15"
+              pos="14"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="17.466666666666665"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="8.425"
-              ptn:Input_exec_receptor__x3A__set_R="8"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>17</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="35"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="17.15"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="8.65"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="8.8"
               ptn:Input_exec_receptor__x3A__set_R="9"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>17</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="36"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="17.625"
+   <ptn:Input last="15"
+              pos="15"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="1.2666666666666666"
+              ptn:Input_exec_time__x3A__set="18.733333333333334"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="8.875"
-              ptn:Input_exec_receptor__x3A__set_R="9"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>18</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="37"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="18.099999999999998"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="9.1"
-              ptn:Input_exec_receptor__x3A__set_R="9"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>18</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="38"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="18.575"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="9.325000000000001"
+              ptn:Input_exec_receptor__x3A__diff_step="0.6"
+              ptn:Input_exec_receptor__x3A__set="9.4"
               ptn:Input_exec_receptor__x3A__set_R="9"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>19</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="39"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="19.05"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="9.55"
-              ptn:Input_exec_receptor__x3A__set_R="10"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>19</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>J</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="40"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.475"
-              ptn:Input_exec_time__x3A__set="19.525"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="9"
-              ptn:Input_exec_receptor__x3A__diff_step="0.225"
-              ptn:Input_exec_receptor__x3A__set="9.775"
-              ptn:Input_exec_receptor__x3A__set_R="10"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>20</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>J</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="1"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
               ptn:Input_exec_time__x3A__set="30"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
               ptn:Input_exec_receptor__x3A__set="10"
               ptn:Input_exec_receptor__x3A__set_R="10"
               ptn:Input_exec_time__x3A__pause="1"
@@ -818,159 +318,59 @@
       <ptn:Input_exec_time>30</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>J</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="2"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="30.25"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="30.666666666666668"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="9.775"
-              ptn:Input_exec_receptor__x3A__set_R="10"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="9.4"
+              ptn:Input_exec_receptor__x3A__set_R="9"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>30</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>J</ptn:Input_exec_receptor>
+      <ptn:Input_exec_time>31</ptn:Input_exec_time>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="3"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="30.5"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="31.333333333333332"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="9.55"
-              ptn:Input_exec_receptor__x3A__set_R="10"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="8.8"
+              ptn:Input_exec_receptor__x3A__set_R="9"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>31</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>J</ptn:Input_exec_receptor>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
+   <ptn:Input last="15"
               pos="4"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="30.75"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="9.325"
-              ptn:Input_exec_receptor__x3A__set_R="9"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>31</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="5"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="31"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="9.1"
-              ptn:Input_exec_receptor__x3A__set_R="9"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>31</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="6"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="31.25"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="8.875"
-              ptn:Input_exec_receptor__x3A__set_R="9"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>31</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="7"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="31.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="8.65"
-              ptn:Input_exec_receptor__x3A__set_R="9"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>32</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="8"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="31.75"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="8.425"
-              ptn:Input_exec_receptor__x3A__set_R="8"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>32</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="9"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
               ptn:Input_exec_time__x3A__set="32"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
               ptn:Input_exec_receptor__x3A__set="8.2"
               ptn:Input_exec_receptor__x3A__set_R="8"
               ptn:Input_exec_time__x3A__pause="1"
@@ -978,159 +378,59 @@
       <ptn:Input_exec_time>32</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="10"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="32.25"
+   <ptn:Input last="15"
+              pos="5"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="32.666666666666664"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="7.975"
-              ptn:Input_exec_receptor__x3A__set_R="8"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>32</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="11"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="32.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="7.75"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="7.6"
               ptn:Input_exec_receptor__x3A__set_R="8"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>33</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="12"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="32.75"
+   <ptn:Input last="15"
+              pos="6"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="33.333333333333336"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="7.525"
-              ptn:Input_exec_receptor__x3A__set_R="8"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>33</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="13"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="33"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="7.3"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="7"
               ptn:Input_exec_receptor__x3A__set_R="7"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>33</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="14"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="33.25"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="7.074999999999999"
-              ptn:Input_exec_receptor__x3A__set_R="7"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>33</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="15"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="33.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="6.85"
-              ptn:Input_exec_receptor__x3A__set_R="7"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>34</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="16"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="33.75"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="6.625"
-              ptn:Input_exec_receptor__x3A__set_R="7"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>34</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="17"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
+   <ptn:Input last="15"
+              pos="7"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
               ptn:Input_exec_time__x3A__set="34"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
               ptn:Input_exec_receptor__x3A__set="6.4"
               ptn:Input_exec_receptor__x3A__set_R="6"
               ptn:Input_exec_time__x3A__pause="1"
@@ -1138,467 +438,167 @@
       <ptn:Input_exec_time>34</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="18"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="34.25"
+   <ptn:Input last="15"
+              pos="8"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="34.666666666666664"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="6.175"
-              ptn:Input_exec_receptor__x3A__set_R="6"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>34</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="19"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="34.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="5.95"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="5.8"
               ptn:Input_exec_receptor__x3A__set_R="6"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>35</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="20"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="34.75"
+   <ptn:Input last="15"
+              pos="9"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="35.333333333333336"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="5.725"
-              ptn:Input_exec_receptor__x3A__set_R="6"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>35</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="21"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="35"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="5.5"
-              ptn:Input_exec_receptor__x3A__set_R="6"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>35</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="22"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="35.25"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="5.2749999999999995"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="5.2"
               ptn:Input_exec_receptor__x3A__set_R="5"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>35</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="23"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="35.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="5.05"
-              ptn:Input_exec_receptor__x3A__set_R="5"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>36</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="24"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="35.75"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="4.825"
-              ptn:Input_exec_receptor__x3A__set_R="5"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>36</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="25"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
+   <ptn:Input last="15"
+              pos="10"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
               ptn:Input_exec_time__x3A__set="36"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="4.6"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="4.6000000000000005"
               ptn:Input_exec_receptor__x3A__set_R="5"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>36</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="26"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="36.25"
+   <ptn:Input last="15"
+              pos="11"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="36.666666666666664"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="4.375"
-              ptn:Input_exec_receptor__x3A__set_R="4"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>36</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="27"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="36.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="4.1499999999999995"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="4"
               ptn:Input_exec_receptor__x3A__set_R="4"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>37</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="28"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="36.75"
+   <ptn:Input last="15"
+              pos="12"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="37.333333333333336"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="3.925"
-              ptn:Input_exec_receptor__x3A__set_R="4"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>37</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="29"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="37"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="3.7"
-              ptn:Input_exec_receptor__x3A__set_R="4"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>37</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="30"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="37.25"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="3.4749999999999996"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="3.4000000000000004"
               ptn:Input_exec_receptor__x3A__set_R="3"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>37</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="31"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="37.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="3.25"
-              ptn:Input_exec_receptor__x3A__set_R="3"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>38</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="32"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="37.75"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="3.0249999999999995"
-              ptn:Input_exec_receptor__x3A__set_R="3"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>38</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="33"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
+   <ptn:Input last="15"
+              pos="13"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
               ptn:Input_exec_time__x3A__set="38"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="2.8"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="2.8000000000000007"
               ptn:Input_exec_receptor__x3A__set_R="3"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>38</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="34"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="38.25"
+   <ptn:Input last="15"
+              pos="14"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="38.666666666666664"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="2.575"
-              ptn:Input_exec_receptor__x3A__set_R="3"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>38</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="35"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="38.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="2.3499999999999996"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="2.2"
               ptn:Input_exec_receptor__x3A__set_R="2"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>39</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
    <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="36"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="38.75"
+   <ptn:Input last="15"
+              pos="15"
+              ptn:debug=" ptn:Input_exec_time__x3A__diff[15]  ptn:Input_exec_receptor__x3A__diff[-9]"
+              ptn:Input_exec_time__x3A__diff="15"
+              ptn:Input_exec_time__x3A__step="0.6666666666666666"
+              ptn:Input_exec_time__x3A__set="39.33333333333333"
               ptn:Input_exec_receptor__x3A__prop="11"
               ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="2.125"
+              ptn:Input_exec_receptor__x3A__diff_step="-0.6"
+              ptn:Input_exec_receptor__x3A__set="1.5999999999999996"
               ptn:Input_exec_receptor__x3A__set_R="2"
               ptn:Input_exec_time__x3A__pause="1"
               ptn:Input_exec_time__x3A__pause__x3A__mod="0">
       <ptn:Input_exec_time>39</ptn:Input_exec_time>
       <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
       <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="37"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="39"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="1.9000000000000004"
-              ptn:Input_exec_receptor__x3A__set_R="2"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>39</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="38"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="39.25"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="1.674999999999999"
-              ptn:Input_exec_receptor__x3A__set_R="2"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>39</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="39"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="39.5"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="1.4499999999999993"
-              ptn:Input_exec_receptor__x3A__set_R="1"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>40</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
-   </ptn:Input>
-   <!--#45 done-->
-   <!--#78 [ptn:Input__x3A__generate] test 1-->
-   <ptn:Input last="40"
-              pos="40"
-              ptn:debug=" ptn:Input_exec_time__x3A__diff[40]  ptn:Input_exec_receptor__x3A__diff[-9]"
-              ptn:Input_exec_time__x3A__diff="40"
-              ptn:Input_exec_time__x3A__step="0.25"
-              ptn:Input_exec_time__x3A__set="39.75"
-              ptn:Input_exec_receptor__x3A__prop="11"
-              ptn:Input_exec_receptor__x3A__diff="-9"
-              ptn:Input_exec_receptor__x3A__diff_step="-0.225"
-              ptn:Input_exec_receptor__x3A__set="1.2249999999999996"
-              ptn:Input_exec_receptor__x3A__set_R="1"
-              ptn:Input_exec_time__x3A__pause="1"
-              ptn:Input_exec_time__x3A__pause__x3A__mod="0">
-      <ptn:Input_exec_time>40</ptn:Input_exec_time>
-      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
-      <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
-      <ptn:Input_exec_Maximum_current>4</ptn:Input_exec_Maximum_current>
+      <ptn:Input_exec_Maximum_current>2</ptn:Input_exec_Maximum_current>
    </ptn:Input>
    <!--#45 done-->
 </ptn:Inputs>

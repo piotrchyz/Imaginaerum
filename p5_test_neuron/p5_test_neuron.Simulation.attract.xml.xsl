@@ -222,7 +222,7 @@
                     <xsl:attribute name="ptn:Simulated_potential__x3A__more_charged_node" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__less_charged_node" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
-                    <xsl:attribute name="ptn:debug">#190 std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]]</xsl:attribute>
+                    <xsl:attribute name="ptn:debug">#190 std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]] ++[(ptn:Capacitance + $ptn:Capacitance) * 1.2]</xsl:attribute>
                     <ptn:Simulation.attract__x3A__calculate__x3A__output_node>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_standard'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="concat($ptn:Label,' ',ptn:Label)"/>-->
@@ -235,7 +235,7 @@
                             </xsl:choose>
                         </ptn:Coordinate_Y>
                         <ptn:Coordinate_Z><xsl:value-of select="$ptn:Simulation_body_tick"/></ptn:Coordinate_Z>
-                        <ptn:Capacitance><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance)"/></ptn:Capacitance><!-- todo config strategy -->
+                        <ptn:Capacitance><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance) * 1.2"/></ptn:Capacitance><!-- todo config strategy -->
                         <ptn:Resistance><xsl:value-of select="(ptn:Resistance + $ptn:Resistance) div 2"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage><xsl:value-of select="(ptn:Minimum_voltage + $ptn:Minimum_voltage) div 2"/></ptn:Minimum_voltage><!-- todo config strategy -->
                         <ptn:Maximum_voltage><xsl:value-of select="(ptn:Maximum_voltage + $ptn:Maximum_voltage) div 2"/></ptn:Maximum_voltage><!-- todo config strategy -->

@@ -140,7 +140,7 @@
     
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Outputs">
         <xsl:param name="ptn:Simulation.attract__x3A__aggregate__x3A__validated" tunnel="yes" required="yes"/>
-        <xsl:message>#101 try to install Synapses #c/[$ptn:Simulation.attract__x3A__aggregate__x3A__validated[<xsl:value-of select="count($ptn:Simulation.attract__x3A__aggregate__x3A__validated//*)"/>]/n[<xsl:value-of select="$ptn:Simulation.attract__x3A__aggregate__x3A__validated/name()"/>]]</xsl:message>
+        <!--<xsl:message>#101 try to install Synapses #c/[$ptn:Simulation.attract__x3A__aggregate__x3A__validated[<xsl:value-of select="count($ptn:Simulation.attract__x3A__aggregate__x3A__validated//*)"/>]/n[<xsl:value-of select="$ptn:Simulation.attract__x3A__aggregate__x3A__validated/name()"/>]]</xsl:message>-->
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:attribute name="ptn:debug">#105  todo Install Synaps</xsl:attribute>

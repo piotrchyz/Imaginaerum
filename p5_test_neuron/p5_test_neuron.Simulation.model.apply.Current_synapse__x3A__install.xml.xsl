@@ -79,7 +79,7 @@
         <xsl:param name="ptn:Label"  tunnel="yes" required="yes"/>
         <!--<xsl:param name="ptn:Defaults" tunnel="yes" required="yes"/>-->
         <xsl:comment>#112[m][<xsl:value-of select="name()"/>]</xsl:comment>
-        <xsl:message>#112[m][<xsl:value-of select="name()"/>]</xsl:message>
+        <!--<xsl:message>#112[m][<xsl:value-of select="name()"/>]</xsl:message>-->
         <xsl:choose>
             <xsl:when test="$ptn:Simulation.model.validate.xml__x3A__stats//ptn:Simulation.model.validate.xml__x3A__stats/ptn:Node[@ptn:Label__x3A__stats = current()/ptn:Label][@ptn:Label__x3A__count = 2]">
                 <xsl:comment>#32B [DUPLICATED] </xsl:comment>
