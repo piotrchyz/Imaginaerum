@@ -616,6 +616,14 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    <xs:complexType name="Simulated_potential.emmit.vector">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Simulated_potential">
+                <xs:attribute ref="ptn:debug"/>
+                <xs:attribute ref="ptn:Label__x3A__context" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:complexType name="Current_synapse">
         <xs:annotation>
             <xs:documentation>Synapsa od do</xs:documentation>
@@ -636,6 +644,7 @@
             <xs:element name="Input_exec_receptor" type="ptn:Input_exec_receptor"/>
             <xs:element name="Input_exec_Time_constant" type="ptn:Input_exec_Time_constant"/>
             <xs:element name="Input_exec_Maximum_current" type="ptn:Input_exec_Maximum_current"/>
+            <xs:element minOccurs="0" name="Input__x3A__Is_inhibitor" type="ptn:Is_inhibitor"/>
         </xs:sequence>
         <xs:attribute ref="ptn:debug"/>
     </xs:complexType>
@@ -828,6 +837,8 @@
                 type="ptn:Simulated_potential.resting.vector"/>
             <xs:element minOccurs="0" name="Simulated_potential.input.vector"
                 type="ptn:Simulated_potential.input.vector"/>
+            <xs:element name="Simulated_potential.emmit.vector"
+                type="ptn:Simulated_potential.emmit.vector"/>
         </xs:sequence>
         <xs:attribute ref="ptn:Simulated_potential__x3A__previous" use="required"/>
     </xs:complexType>

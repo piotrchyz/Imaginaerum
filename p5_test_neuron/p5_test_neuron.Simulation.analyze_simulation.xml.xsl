@@ -182,6 +182,9 @@
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input_exec_time__x3A__initial[parent::ptn:Input[parent::ptn:Current_synapse__x3A__emmit]]">
         <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>     
     </xsl:template>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input__x3A__Is_inhibitor[parent::ptn:Input[parent::ptn:Current_synapse__x3A__emmit]]">
+        <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>     
+    </xsl:template>
     
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit]">

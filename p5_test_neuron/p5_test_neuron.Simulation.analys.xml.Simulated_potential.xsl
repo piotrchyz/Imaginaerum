@@ -184,17 +184,43 @@
         <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulated_potential.input.vector__x3A__offset" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Capacitance" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Is_inhibitor" required="yes" tunnel="yes"/>
         <xsl:choose>
+            <xsl:when test="descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][ptn:Input__x3A__Is_inhibitor[text()='1']][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ]  ">
+                <ptn:Simulated_potential.emmit.vector ptn:debug="#160ASINH todo/n[{name()}]  $ptn:Is_inhibitor=[{$ptn:Is_inhibitor}] ptn:Input__x3A__Is_inhibitor=[{ptn:Input__x3A__Is_inhibitor}]" ptn:Label__x3A__context="{$ptn:Label}">
+                    <xsl:copy-of select="@ptn:Output_Node"/>
+                    <xsl:value-of select="- sum(descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ] /(  ptn:Input_exec_Time_constant * ptn:Input_exec_Maximum_current * (1 div $ptn:Capacitance) * $ptn:Simulated_potential.input.vector__x3A__offset )  )"/>
+                </ptn:Simulated_potential.emmit.vector>
+            </xsl:when>
             <xsl:when test="descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ]  ">
-                <ptn:Simulated_potential.emmit.vector ptn:debug="#160ASA todo/n[{name()}]" ptn:Label="{$ptn:Label}">
+                <ptn:Simulated_potential.emmit.vector ptn:debug="#160ASA todo/n[{name()}]  $ptn:Is_inhibitor=[{$ptn:Is_inhibitor}] ptn:Input__x3A__Is_inhibitor=[{ptn:Input__x3A__Is_inhibitor}]" ptn:Label__x3A__context="{$ptn:Label}">
                     <xsl:copy-of select="@ptn:Output_Node"/>
                     <xsl:value-of select="sum(descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ] /(  ptn:Input_exec_Time_constant * ptn:Input_exec_Maximum_current * (1 div $ptn:Capacitance) * $ptn:Simulated_potential.input.vector__x3A__offset )  )"/>
                 </ptn:Simulated_potential.emmit.vector>
             </xsl:when>
+            
         </xsl:choose>
                 
     </xsl:template>
     
+    <!--<xsl:template mode="ptn:Simulated_potential.emmit.vector" match="ptn:Current_synapse__x3A__emmit[ptn:Input__x3A__Is_inhibitor[text() = '1']]">
+        <xsl:param name="ptn:Label" required="yes" tunnel="yes" />
+        <xsl:param name="ptn:Simulation_body_time" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulated_potential.input.vector__x3A__offset" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Capacitance" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Is_inhibitor" required="yes" tunnel="yes"/>
+        <xsl:message>160ASAI[INHIBITOR SUBSTRACT]</xsl:message>
+        <xsl:choose>
+            <xsl:when test="descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ]  ">
+                <ptn:Simulated_potential.emmit.vector ptn:debug="#160ASA-INHIBITOR SUBSTRACT todo/n[{name()}]" ptn:Label="{$ptn:Label} $ptn:Is_inhibitor=[{$ptn:Is_inhibitor}] ptn:Is_inhibitor=[{ptn:Is_inhibitor}]">
+                    <xsl:copy-of select="@ptn:Output_Node"/>
+                    <xsl:value-of select="- sum(descendant-or-self::ptn:Input[ptn:Input_exec_receptor[.=$ptn:Label]][number(ptn:Input_exec_time) &gt;= number($ptn:Simulation_body_time) and number(ptn:Input_exec_time) &lt; ( number($ptn:Simulation_body_time) + number($ptn:Simulator_tick) ) ] /(  ptn:Input_exec_Time_constant * ptn:Input_exec_Maximum_current * (1 div $ptn:Capacitance) * $ptn:Simulated_potential.input.vector__x3A__offset )  )"/>
+                </ptn:Simulated_potential.emmit.vector>
+            </xsl:when>
+        </xsl:choose>
+        
+    </xsl:template>-->
     
     
     <xsl:template mode="ptn:Simulated_potential.emmit.vector" match="*">

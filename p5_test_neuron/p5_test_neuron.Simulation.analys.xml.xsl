@@ -28,6 +28,7 @@
             <xsl:variable name="ptn:Inputs">
                 <xsl:apply-templates mode="#current" select="ptn:Inputs/*">
                     <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
                 </xsl:apply-templates>
             </xsl:variable>
             <xsl:apply-templates mode="#current">
@@ -36,6 +37,7 @@
                 <xsl:with-param name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Attract_min" tunnel="yes" select="ptn:Defaults/ptn:Attract_min"/>
                 <xsl:with-param name="ptn:Simulation_body" select="ptn:Receptors" tunnel="yes"/>
+                <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
             </xsl:apply-templates>
             <ptn:Nodes>
                 
@@ -63,6 +65,47 @@
     </xsl:template>
     
     
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate">
+        <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Receptors" required="yes" tunnel="yes"/>
+        <xsl:variable name="ptn:Input__x3A__generate__x3A__current" select="."/>
+        <!--<xsl:choose>
+            <xsl:when test="number(ptn:Input_exec_Time_constant) &lt;= number($ptn:Simulator_tick)">
+                <xsl:copy-of select="."/>
+            </xsl:when>
+            
+        </xsl:choose>-->
+        <!--<ptn:Input>
+            <ptn:Input_exec_time>1</ptn:Input_exec_time>
+            <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+            <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
+            <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
+        </ptn:Input>-->
+        <xsl:for-each select="ptn:Input_exec_time/@ptn:Input_exec_time__x3A__start to ptn:Input_exec_time/@ptn:Input_exec_time__x3A__end">
+            <xsl:comment>#78 [ptn:Input__x3A__generate] test 1</xsl:comment>
+            <xsl:message>#78 [ptn:Input__x3A__generate] test 1</xsl:message>
+            <xsl:variable name="current_pos" select="position()"/>
+                <xsl:choose>
+                    <xsl:when test="$ptn:Receptors//ptn:Receptor[position() = $current_pos ]">
+                        <ptn:Input>
+                            <ptn:Input_exec_time><xsl:value-of select=". * $ptn:Input__x3A__generate__x3A__current/ptn:Input_exec_time/@ptn:Input_exec_time__x3A__pause"/></ptn:Input_exec_time>
+                            <ptn:Input_exec_receptor><xsl:value-of select="$ptn:Receptors//ptn:Receptor[position() = $current_pos ]/ptn:Label"/></ptn:Input_exec_receptor>
+                            <ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Input__x3A__generate__x3A__current/ptn:Input_exec_Time_constant/@ptn:Input_exec_Time_constant__x3A__start"/></ptn:Input_exec_Time_constant>
+                            <ptn:Input_exec_Maximum_current><xsl:value-of select="$ptn:Input__x3A__generate__x3A__current/ptn:Input_exec_Maximum_current/@ptn:Input_exec_Maximum_current__x3A__start"/></ptn:Input_exec_Maximum_current>
+                        </ptn:Input>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:comment>#94 no such receptor error</xsl:comment>
+                    </xsl:otherwise>
+                </xsl:choose>
+            
+            
+        </xsl:for-each>
+        
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
@@ -82,6 +125,7 @@
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Outputs" select="ptn:Outputs" tunnel="yes"/>
+                <xsl:with-param name="ptn:Is_inhibitor" select="ptn:Is_inhibitor" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
@@ -134,6 +178,7 @@
     <xsl:template mode="ptn:Simulation.analys.xml__x3A__divide_input" match="ptn:Input_exec_Time_constant">
         <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Input" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Is_inhibitor" tunnel="yes" select="0"/>
         <xsl:choose>
             <xsl:when test="number(.) &lt;= number($ptn:Simulator_tick)">
                 <xsl:message terminate="yes">#154 error, should not be such case [ptn:Input_exec_Time_constant]=[$ptn:Simulator_tick]</xsl:message>
@@ -163,7 +208,7 @@
                                     </xsl:choose>
                                 </ptn:Input_exec_Time_constant>
                                 <xsl:copy-of select="$ptn:Input//ptn:Input_exec_Maximum_current"/>
-                                
+                                <ptn:Input__x3A__Is_inhibitor><xsl:value-of select="$ptn:Is_inhibitor"/></ptn:Input__x3A__Is_inhibitor>
                             </ptn:Input>
                         </xsl:when>
                         <xsl:otherwise>
@@ -178,6 +223,7 @@
                                 <xsl:copy-of select="$ptn:Input//ptn:Input_exec_receptor"/>
                                 <ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Simulator_tick"/></ptn:Input_exec_Time_constant>
                                 <xsl:copy-of select="$ptn:Input//ptn:Input_exec_Maximum_current"/>
+                                <ptn:Input__x3A__Is_inhibitor><xsl:value-of select="$ptn:Is_inhibitor"/></ptn:Input__x3A__Is_inhibitor>
                             </ptn:Input>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -190,6 +236,7 @@
         <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Current_synapse" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Input_time__x3A__attract" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Is_inhibitor" tunnel="yes" select="0"/>
         <xsl:choose>
             <xsl:when test="number(.) &lt;= number($ptn:Simulator_tick)">
                 <xsl:message terminate="yes">#154BC error, should not be such case [ptn:Input_exec_Time_constant]=[$ptn:Simulator_tick]</xsl:message>
@@ -219,6 +266,7 @@
                                     </xsl:choose>
                                 </ptn:Input_exec_Time_constant>
                                 <ptn:Input_exec_Maximum_current><xsl:value-of select="$ptn:Current_synapse//ptn:Maximum_current"/></ptn:Input_exec_Maximum_current>
+                                <ptn:Input__x3A__Is_inhibitor><xsl:value-of select="$ptn:Is_inhibitor"/></ptn:Input__x3A__Is_inhibitor>
                             </ptn:Input>
                         </xsl:when>
                         <xsl:otherwise>
@@ -234,6 +282,7 @@
                                 <ptn:Input_exec_receptor><xsl:value-of select="$ptn:Current_synapse/ptn:Output_Node"/></ptn:Input_exec_receptor>
                                 <ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Simulator_tick"/></ptn:Input_exec_Time_constant>
                                 <ptn:Input_exec_Maximum_current><xsl:value-of select="$ptn:Current_synapse//ptn:Maximum_current"/></ptn:Input_exec_Maximum_current>
+                                <ptn:Input__x3A__Is_inhibitor><xsl:value-of select="$ptn:Is_inhibitor"/></ptn:Input__x3A__Is_inhibitor>
                             </ptn:Input>
                         </xsl:otherwise>
                     </xsl:choose>
@@ -246,7 +295,7 @@
         <xsl:message terminate="yes">#184 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml__x3A__divide_input" match="ptn:Input_exec_time|ptn:Input_exec_receptor|ptn:Input_exec_Maximum_current"/>
+    <xsl:template mode="ptn:Simulation.analys.xml__x3A__divide_input" match="ptn:Input_exec_time|ptn:Input_exec_receptor|ptn:Input_exec_Maximum_current|ptn:Input__x3A__Is_inhibitor"/>
     
     <xsl:template mode="ptn:Simulation.analys.xml__x3A__divide_input" match="ptn:Delay|ptn:Maximum_current|ptn:Output_Node"/>
     
@@ -281,6 +330,7 @@
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag__x3A__emmit">
         <xsl:comment >#241A todo <xsl:value-of select="name()"/></xsl:comment>
+        <xsl:message >#241A [TODO] <xsl:value-of select="name()"/></xsl:message>
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
@@ -296,20 +346,21 @@
     
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit">
-        <xsl:variable name="ptn:Input__x3A__test">
+        <!--<xsl:variable name="ptn:Input__x3A__test">-->
             <xsl:copy>
                 <xsl:copy-of select="@*"/>
+                <xsl:comment >#241B [TODOconsumed][removed] <xsl:value-of select="name()"/></xsl:comment>
                 <xsl:apply-templates mode="#current"/>
             </xsl:copy>
-        </xsl:variable>
-        <xsl:choose>
+        <!--</xsl:variable>-->
+        <!--<xsl:choose>
             <xsl:when test="$ptn:Input__x3A__test//ptn:Input">
                 <xsl:copy-of select="$ptn:Input__x3A__test"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:comment >#241B [consumed][removed] <xsl:value-of select="name()"/></xsl:comment>
             </xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>-->
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit[not(*)]">
