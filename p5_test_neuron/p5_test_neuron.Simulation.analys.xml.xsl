@@ -273,6 +273,14 @@
         </xsl:copy>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag__x3A__emmit[not(*)]">
+        <xsl:comment >#241A bypassed empty <xsl:value-of select="name()"/>; [text?[<xsl:value-of select="text()"/>]]</xsl:comment>
+        
+    </xsl:template>
+    
+    
+    
+    
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Current_synapse__x3A__emmit">
         <xsl:comment >#241B todo <xsl:value-of select="name()"/></xsl:comment>
         <xsl:copy>

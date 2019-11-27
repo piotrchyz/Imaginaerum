@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="20.1">
+<project version="21.1">
     <meta>
         <filters directoryPatterns="" filePatterns="energo80_oxygen_imaginaerum.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="20.1" xml:space="preserve">
+            <serialized version="21.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -33,6 +33,10 @@
             <file name="p5_test_neuron/test_neuron.Simulation.model.validate.xml.xsd"/>
             <file name="p5_test_neuron/test_neuron.Simulation.model.xml.xsd"/>
             <file name="p5_test_neuron/test_neuron.xsd"/>
+        </folder>
+        <folder name="link">
+            <folder path="../../../../opt/local/pl.procesy5/p5build_SE/temp/WPS_Functions/default_db/CRM_PROCES_tree/"/>
+            <folder path="../../Documents/se/SE/schema/WPS_Functions/default_db/recurse_ant/out/"/>
         </folder>
         <folder path="."/>
     </projectTree>

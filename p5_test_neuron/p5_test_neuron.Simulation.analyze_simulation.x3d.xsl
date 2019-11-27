@@ -133,7 +133,9 @@
         <Group DEF='ColorAnimation'>
             <TimeSensor DEF='ColorAnimationTimer'
                 cycleinterval="{$ptn:Simulation_body_tick__x3A__max div 2}"  
-                loop='true'/><!-- time="10" -->
+                loop='true'>
+                <xsl:text> </xsl:text>
+            </TimeSensor><!-- time="10" -->
             <xsl:for-each-group select="descendant-or-self::*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
                 <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Group"  select=".">
                     <xsl:with-param name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze" tunnel="yes"/>
