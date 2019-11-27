@@ -20,6 +20,7 @@
                 <xsl:with-param name="ptn:Stress__x3A__flag.nodes" select="descendant-or-self::*[ptn:Stress__x3A__flag]" tunnel="yes"/>
                 <xsl:with-param name="ptn:Defaults" select="doc($ptn:Config)//ptn:Defaults" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_tick" select="@ptn:Simulation_body_tick" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation.analys.xml" select="." tunnel="yes"/>
             </xsl:apply-templates>
         </ptn:Simulation.attract.xml>
     </xsl:template>
@@ -159,10 +160,17 @@
         <xsl:param name="ptn:Is_inhibitor"  tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Input__x3A__nodes__x3A__prohibit" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulation_body_tick" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation.analys.xml" required="yes" tunnel="yes"/>
         <xsl:variable name="ptn:Output_Node">
             <xsl:call-template name="ptn:Output_Node"/>            
         </xsl:variable>
+        <xsl:variable name="ptn:Distance__x3A__minimal" select="min($ptn:Simulation.analys.xml/*[name()='ptn:Receptors' or name()='ptn:Nodes'  ]/*[ptn:Attract__x3A__flag][not(ptn:Label = $ptn:Label )]/math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) )"/>
+        <xsl:variable name="ptn:Distance__x3A__current" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
+        <xsl:message>#167[ptn:Distance__x3A__minimal][PRE_STATS][<xsl:value-of select="$ptn:Distance__x3A__minimal"/>]  [VS]  [ptn:Distance__x3A__current][<xsl:value-of select="$ptn:Distance__x3A__current"/>]</xsl:message>
         <xsl:choose>
+            <xsl:when test="$ptn:Distance__x3A__minimal &lt; $ptn:Distance__x3A__current">
+                <xsl:comment>#172 [ptn:Distance__x3A__minimal][PRE_STATS][BYPASSED][ptn:Label][<xsl:value-of select="$ptn:Label"/>] [$ptn:Distance__x3A__minimal][<xsl:value-of select="$ptn:Distance__x3A__minimal"/>]</xsl:comment>
+            </xsl:when>
             <xsl:when test="$ptn:Input__x3A__nodes__x3A__prohibit//ptn:Input__x3A__node__x3A__prohibit[text() = $ptn:Label]">
                 <ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="#80bypassed ptn:Input__x3A__node__x3A__prohibit label=[{ptn:Label}]"><!-- 0A create -->
                     <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>

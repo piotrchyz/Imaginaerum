@@ -17,7 +17,9 @@
         <ptn:Simulation.model.stats.xml>
             <xsl:copy-of select="namespace::*"/>
             <xsl:copy-of select="@*"/>
-            <xsl:call-template name="ptn:Simulation.model.validate.xml__x3A__stats"/>
+            <xsl:call-template name="ptn:Simulation.model.validate.xml__x3A__stats">
+                <xsl:with-param name="ptn:Simulation.attract__x3A__aggregate" select="ptn:Simulation.attract__x3A__aggregate" tunnel="yes"/>
+            </xsl:call-template>
             <!--<xsl:copy-of select="$ptn:Simulation.model.validate.xml__x3A__stats"/>-->
             <!--<xsl:copy-of select="*"/>-->
             <xsl:apply-templates mode="ptn:Simulation.model.stats.xml__x3A__generate-id"/>
@@ -28,6 +30,7 @@
     
     
     <xsl:template name="ptn:Simulation.model.validate.xml__x3A__stats">
+        <xsl:param name="ptn:Simulation.attract__x3A__aggregate" tunnel="yes" required="yes"/>
         <ptn:Simulation.model.validate.xml__x3A__stats>
             <xsl:for-each-group select="descendant-or-self::*[ptn:Label]" group-by="ptn:Label">
                 <xsl:for-each select="current-group()">
@@ -37,7 +40,7 @@
                         ptn:Node__x3A__type="{name()}" 
                         id="{generate-id(.)}" 
                         ptn:Node__x3A__position="{position()}"
-                        
+                        ptn:Label__x3A__count__x3A__Input__x3A__node="{count( $ptn:Simulation.attract__x3A__aggregate/descendant-or-self::ptn:Input__x3A__node[ . = current()/ptn:Label ] )}"
                         >
                         
                         
