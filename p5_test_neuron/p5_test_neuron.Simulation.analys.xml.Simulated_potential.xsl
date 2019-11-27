@@ -21,7 +21,7 @@
         <xsl:param name="ptn:Attract_min" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulated_potential.input.vector__x3A__offset" select="1.3"/>
         <xsl:param name="ptn:Outputs" required="yes" tunnel="yes"/>
-        <xsl:message terminate="no">#13-13 name()<xsl:value-of select="name()"/>- [ptn:Label][<xsl:value-of select="preceding-sibling::ptn:Label"/>] TODO </xsl:message>
+        <xsl:message terminate="no">#13-13 name()<xsl:value-of select="name()"/>- [ptn:Label][<xsl:value-of select="preceding-sibling::ptn:Label"/>]  [$ptn:Attract_min[<xsl:value-of select="$ptn:Attract_min"/>]] TODO </xsl:message>
         <xsl:variable name="ptn:Simulated_potential__x3A__vectors">
             <ptn:Simulated_potential__x3A__vectors>
                 <xsl:attribute name="ptn:Simulated_potential__x3A__previous" select="text()"/>
@@ -70,23 +70,24 @@
                 <!-- when fired no attract variant should be created  -->
             </xsl:when>
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; $ptn:Attract_min and not($ptn:Outputs//ptn:Current_synapse)">
-                <xsl:message>#77AA [ptn:Current_synapse[0]][SET][ptn:Attract__x3A__flag]</xsl:message>
+                <xsl:message>#77AA [ptn:Current_synapse[0]][SET][ptn:Attract__x3A__flag][V[<xsl:value-of select="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*)"/>]]  [ptn:Label[<xsl:value-of select="preceding-sibling::ptn:Label"/>]]</xsl:message>
                 <ptn:Attract__x3A__flag><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
             </xsl:when>
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min + 0.3) and $ptn:Outputs//ptn:Current_synapse[1]">
-                <xsl:message>#77A [TUNE][+0.3][ptn:Current_synapse[2]][SET][ptn:Attract__x3A__flag]</xsl:message>
+                <xsl:message>#77A [TUNE][+0.3][ptn:Current_synapse[2]][SET][ptn:Attract__x3A__flag][V[<xsl:value-of select="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*)"/>]]  [ptn:Label[<xsl:value-of select="preceding-sibling::ptn:Label"/>]]</xsl:message>
                 <ptn:Attract__x3A__flag ptn:debug="#77A [TUNE][+0.3][ptn:Current_synapse[1]]"><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
             </xsl:when>
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min + 0.5) and $ptn:Outputs//ptn:Current_synapse[2]">
-                <xsl:message>#77B [TUNE][+0.5][ptn:Current_synapse[2]][SET][ptn:Attract__x3A__flag]</xsl:message>
+                <xsl:message>#77B [TUNE][+0.5][ptn:Current_synapse[2]][SET][ptn:Attract__x3A__flag][V[<xsl:value-of select="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*)"/>]]  [ptn:Label[<xsl:value-of select="preceding-sibling::ptn:Label"/>]]</xsl:message>
                 <ptn:Attract__x3A__flag ptn:debug="#77B [TUNE][+0.5][ptn:Current_synapse[2]]"><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
             </xsl:when>
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min + 0.7) and $ptn:Outputs//ptn:Current_synapse[3]">
-                <xsl:message>#77C [TUNE][+0.7][ptn:Current_synapse[3]][SET][ptn:Attract__x3A__flag]</xsl:message>
+                <xsl:message>#77C [TUNE][+0.7][ptn:Current_synapse[3]][SET][ptn:Attract__x3A__flag][V[<xsl:value-of select="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*)"/>]]  [ptn:Label[<xsl:value-of select="preceding-sibling::ptn:Label"/>]]</xsl:message>
                 <ptn:Attract__x3A__flag ptn:debug="#77C [TUNE][+0.7][ptn:Current_synapse[3]]"><xsl:value-of select="true()"/></ptn:Attract__x3A__flag>
             </xsl:when>
             <xsl:when test="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*) &gt; ( $ptn:Attract_min ) and $ptn:Outputs//ptn:Current_synapse">
-                <xsl:comment>#76D bypassed attract due to output avilable</xsl:comment>
+                <xsl:message>##77BB  bypassed attract due to output avilable [LABEL[<xsl:value-of select="preceding-sibling::ptn:Label"/>]] [MAX[<xsl:value-of select="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*)"/>][GT][$ptn:Attract_min[<xsl:value-of select="$ptn:Attract_min"/>]][AND][$ptn:Outputs//ptn:Current_synapse[#[<xsl:value-of select="count($ptn:Outputs//ptn:Current_synapse)"/>]]]]</xsl:message>
+                <xsl:comment>##77BB  bypassed attract due to output avilable [LABEL[<xsl:value-of select="preceding-sibling::ptn:Label"/>]] [MAX[<xsl:value-of select="max($ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*)"/>][GT][$ptn:Attract_min[<xsl:value-of select="$ptn:Attract_min"/>]][AND][$ptn:Outputs//ptn:Current_synapse[#[<xsl:value-of select="count($ptn:Outputs//ptn:Current_synapse)"/>]]]]</xsl:comment>
             </xsl:when>
         </xsl:choose>
         <xsl:copy-of select="$ptn:Simulated_potential__x3A__vectors"/>

@@ -123,6 +123,7 @@
                 <xsl:copy-of select="."/>
             </xsl:when>
             <xsl:otherwise>
+                <xsl:message>#126[ptn:Simulation.analys.xml][ptn:Simulation.analys.xml__x3A__divide_input]</xsl:message>
                 <xsl:call-template name="ptn:Simulation.analys.xml__x3A__divide_input">
                     <xsl:with-param name="ptn:Input" select="." tunnel="yes"/>
                 </xsl:call-template>

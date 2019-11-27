@@ -246,14 +246,14 @@
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="1" ptn:Input_exec_time__x3A__end="20" ptn:Input_exec_time__x3A__pause="2"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
-            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
+            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
         </ptn:Input__x3A__generate>
         
         <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="30" ptn:Input_exec_time__x3A__end="40" ptn:Input_exec_time__x3A__pause="1"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="10" ptn:Input_exec_receptor__end="1"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
-            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
+            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
         </ptn:Input__x3A__generate>
         
         
@@ -261,7 +261,7 @@
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="70" ptn:Input_exec_time__x3A__end="80" ptn:Input_exec_time__x3A__pause="1"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
-            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
+            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
         </ptn:Input__x3A__generate>
         
         
@@ -270,7 +270,7 @@
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="100" ptn:Input_exec_time__x3A__end="110" ptn:Input_exec_time__x3A__pause="1"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
-            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2" ptn:Input_exec_Maximum_current__x3A__end="2"/>
+            <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
         </ptn:Input__x3A__generate>
         
         
@@ -390,6 +390,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>120</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>10</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>
