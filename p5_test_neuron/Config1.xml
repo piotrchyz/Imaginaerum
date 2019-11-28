@@ -301,6 +301,7 @@
         
         
         <ptn:Input__x3A__generate__x3A__pattern ptn:Input__x3A__generate__x3A__sequences="9">
+            <!-- Coordinate .... X Y Z --- X1 Y1 Z1 -->
             <Group DEF="AX_Input__x3A__generate__x3A__pattern_Group">
                 <Shape>
                     <LineSet vertexCount="2">
@@ -309,7 +310,7 @@
                     </LineSet>
                     <Appearance>
                         <Material emissiveColor="1 0 0" DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor"> </Material>
-                        <LineProperties linewidthScaleFactor="2"> </LineProperties>
+                        <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"> </LineProperties>
                     </Appearance>
                 </Shape>
                 <Shape>
@@ -319,7 +320,7 @@
                     </LineSet>
                     <Appearance>
                         <Material emissiveColor="1 0 0" DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"> </Material>
-                        <LineProperties linewidthScaleFactor="2"> </LineProperties>
+                        <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"> </LineProperties>
                     </Appearance>
                 </Shape>
                 <Shape>
@@ -329,12 +330,18 @@
                     </LineSet>
                     <Appearance>
                         <Material emissiveColor="1 0 0" DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"> </Material>
-                        <LineProperties linewidthScaleFactor="2"> </LineProperties>
+                        <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"> </LineProperties>
                     </Appearance>
                 </Shape>
             </Group>
             <CoordinateInterpolator DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
                 keyValue="65 90 40 85 110 40   65 90 35 85 110 35  65 90 33 85 110 33   65 90 32 85 110 32   65 90 32 85 110 32   65 90 31 85 110 31"
+                key="0, 0.2, 0.4, 0.6, 0.8, 1"> </CoordinateInterpolator>
+            <CoordinateInterpolator DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                keyValue="85 110 40 85 60 40   85 110 40 85 60 40   85 110 33 85 60 33   85 110 32 85 60 32   85 110 32 85 60 32   85 110 31 85 60 31"
+                key="0, 0.2, 0.4, 0.6, 0.8, 1"> </CoordinateInterpolator>
+            <CoordinateInterpolator DEF="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                keyValue="85 110 40 110 90 40    85 110 35 110 90 35    85 110 33 110 90 33    85 110 32 110 90 32    85 110 32 110 90 32    85 110 31 110 90 31"
                 key="0, 0.2, 0.4, 0.6, 0.8, 1"> </CoordinateInterpolator>
             <ROUTE fromNode="ColorAnimationTimer"
                 fromField="fraction_changed"
@@ -342,7 +349,25 @@
                 toField="set_fraction"> </ROUTE>
             <ROUTE fromNode="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
                 fromField="value_changed"
+                toNode="A2_Input__x3A__generate__x3A__pattern_LineSet"
+                toField="point"> </ROUTE>
+            
+            <ROUTE fromNode="ColorAnimationTimer"
+                fromField="fraction_changed"
+                toNode="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                fromField="value_changed"
                 toNode="A1_Input__x3A__generate__x3A__pattern_LineSet"
+                toField="point"> </ROUTE>
+            
+            <ROUTE fromNode="ColorAnimationTimer"
+                fromField="fraction_changed"
+                toNode="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                fromField="value_changed"
+                toNode="A3_Input__x3A__generate__x3A__pattern_LineSet"
                 toField="point"> </ROUTE>
         </ptn:Input__x3A__generate__x3A__pattern>
         

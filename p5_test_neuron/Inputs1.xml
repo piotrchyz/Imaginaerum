@@ -669,7 +669,7 @@
             <Appearance>
                <Material emissiveColor="1 0 0"
                          DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor"/>
-               <LineProperties linewidthScaleFactor="2"/>
+               <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"/>
             </Appearance>
          </Shape>
          <Shape>
@@ -681,7 +681,7 @@
             <Appearance>
                <Material emissiveColor="1 0 0"
                          DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"/>
-               <LineProperties linewidthScaleFactor="2"/>
+               <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"/>
             </Appearance>
          </Shape>
          <Shape>
@@ -693,7 +693,7 @@
             <Appearance>
                <Material emissiveColor="1 0 0"
                          DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"/>
-               <LineProperties linewidthScaleFactor="2"/>
+               <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"/>
             </Appearance>
          </Shape>
       </Group>
