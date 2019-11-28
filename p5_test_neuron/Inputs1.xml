@@ -659,76 +659,130 @@
       <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
    </ptn:Input>
    <ptn:Input__x3A__generate__x3A__pattern ptn:Input__x3A__generate__x3A__sequences="9"><!-- Coordinate . X Y Z - - X1 Y1 Z1 -->
-      <Group DEF="AX_Input__x3A__generate__x3A__pattern_Group">
-         <Shape>
-            <LineSet vertexCount="2">
-               <Coordinate DEF="A1_Input__x3A__generate__x3A__pattern_LineSet"
-                           point="65 90 40 85 110 40"/>
-               <!-- A1-A2 -->
-            </LineSet>
-            <Appearance>
-               <Material emissiveColor="1 0 0"
-                         DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor"/>
-               <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"/>
-            </Appearance>
-         </Shape>
-         <Shape>
-            <LineSet vertexCount="2">
-               <Coordinate DEF="A2_Input__x3A__generate__x3A__pattern_LineSet"
-                           point="85 110 40 85 60 40"/>
-               <!-- A2-A4 -->
-            </LineSet>
-            <Appearance>
-               <Material emissiveColor="1 0 0"
-                         DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"/>
-               <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"/>
-            </Appearance>
-         </Shape>
-         <Shape>
-            <LineSet vertexCount="2">
-               <Coordinate DEF="A3_Input__x3A__generate__x3A__pattern_LineSet"
-                           point="85 110 40 110 90 40"/>
-               <!-- A2-A3 -->
-            </LineSet>
-            <Appearance>
-               <Material emissiveColor="1 0 0"
-                         DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"/>
-               <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"/>
-            </Appearance>
-         </Shape>
-      </Group>
-      <CoordinateInterpolator DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-                              keyValue="65 90 40 85 110 40   65 90 35 85 110 35  65 90 33 85 110 33   65 90 32 85 110 32   65 90 32 85 110 32   65 90 31 85 110 31"
-                              key="0, 0.2, 0.4, 0.6, 0.8, 1"/>
-      <CoordinateInterpolator DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-                              keyValue="85 110 40 85 60 40   85 110 40 85 60 40   85 110 33 85 60 33   85 110 32 85 60 32   85 110 32 85 60 32   85 110 31 85 60 31"
-                              key="0, 0.2, 0.4, 0.6, 0.8, 1"/>
-      <CoordinateInterpolator DEF="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-                              keyValue="85 110 40 110 90 40    85 110 35 110 90 35    85 110 33 110 90 33    85 110 32 110 90 32    85 110 32 110 90 32    85 110 31 110 90 31"
-                              key="0, 0.2, 0.4, 0.6, 0.8, 1"/>
-      <ROUTE fromNode="ColorAnimationTimer"
-             fromField="fraction_changed"
-             toNode="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-             toField="set_fraction"/>
-      <ROUTE fromNode="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-             fromField="value_changed"
-             toNode="A2_Input__x3A__generate__x3A__pattern_LineSet"
-             toField="point"/>
-      <ROUTE fromNode="ColorAnimationTimer"
-             fromField="fraction_changed"
-             toNode="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-             toField="set_fraction"/>
-      <ROUTE fromNode="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-             fromField="value_changed"
-             toNode="A1_Input__x3A__generate__x3A__pattern_LineSet"
-             toField="point"/>
-      <ROUTE fromNode="ColorAnimationTimer"
-             fromField="fraction_changed"
-             toNode="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-             toField="set_fraction"/>
-      <ROUTE fromNode="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-             fromField="value_changed"
-             toNode="A3_Input__x3A__generate__x3A__pattern_LineSet"
-             toField="point"/>
+      <ptn:Group__x3A__generate__x3A__pattern_Group ptn:Simulation__x3A__DEF__x3A__elements__x3A__group="Input_Attract"><!-- DEF="AX_Input__x3A__generate__x3A__pattern_Group" -->
+         <ptn:Input__x3A__generate__x3A__Shape>
+            <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="todo">
+               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector ptn:debug="todo simple odcinek">
+                  <ptn:keyValue__generate__basepoint_1 ptn:debug="todo"
+                                                       ptn:Coordinate_X="65"
+                                                       ptn:Coordinate_Y="110"
+                                                       ptn:Coordinate_Z="30"/>
+                  <ptn:keyValue__generate__basepoint_2 ptn:debug="todo"
+                                                       ptn:Coordinate_X="85"
+                                                       ptn:Coordinate_Y="110"
+                                                       ptn:Coordinate_Z="30"/>
+                  <ptn:keyValue__generate__basepoint__vector ptn:debug="todo"
+                                                             ptn:Coordinate_X="1"
+                                                             ptn:Coordinate_Y="2"
+                                                             ptn:Coordinate_Z="3"/>
+                  <ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>
+               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
+               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector ptn:debug="todo simple odcinek 2">
+                  <ptn:keyValue__generate__basepoint_1 ptn:debug="todo"
+                                                       ptn:Coordinate_X="85"
+                                                       ptn:Coordinate_Y="110"
+                                                       ptn:Coordinate_Z="30"/>
+                  <ptn:keyValue__generate__basepoint_2 ptn:debug="todo"
+                                                       ptn:Coordinate_X="85"
+                                                       ptn:Coordinate_Y="60"
+                                                       ptn:Coordinate_Z="30"/>
+                  <ptn:keyValue__generate__basepoint__vector ptn:debug="todo"
+                                                             ptn:Coordinate_X="1"
+                                                             ptn:Coordinate_Y="2"
+                                                             ptn:Coordinate_Z="3"/>
+                  <ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>
+               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:debug="modyfikacja 1 todo struct"
+                                                                                           ptn:MFVec3f__x3A__distance__x3A__percent="1"
+                                                                                           ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max=""
+                                                                                           ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min="">
+                  <ptn:keyValue__generate__basepoint_1 ptn:debug="tylko ruchy w kierunkach, przetlumaczane"
+                                                       ptn:Coordinate_X="1"
+                                                       ptn:Coordinate_Y="2"
+                                                       ptn:Coordinate_Z="3"/>
+                  <ptn:keyValue__generate__basepoint_2 ptn:debug="tylko ruchy w kierunkach, przetlumaczane"
+                                                       ptn:Coordinate_X="1"
+                                                       ptn:Coordinate_Y="2"
+                                                       ptn:Coordinate_Z="3"/>
+                  <ptn:keyValue__generate__basepoint__vector ptn:debug="todo"
+                                                             ptn:Coordinate_X="1"
+                                                             ptn:Coordinate_Y="2"
+                                                             ptn:Coordinate_Z="3"/>
+                  <ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>
+               </ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector>
+               <ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector ptn:debug="modyfikacja 1 - jak tlumaczyc obiekt do receptorow">
+                  <ptn:Input_exec_timex__x3A__generate__x3A__pattern ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min="1"
+                                                                     ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max="5"/>
+                  <ptn:Input_exec_receptor__x3A__generate__x3A__pattern/>
+                  <ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern>2</ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern>
+                  <ptn:Input_exec_Maximum_current__x3A__generate__x3A__pattern>3</ptn:Input_exec_Maximum_current__x3A__generate__x3A__pattern>
+               </ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector>
+               <!--<LineSet vertexCount="2">
+                            <Coordinate DEF="A1_Input__x3A__generate__x3A__pattern_LineSet"
+                                point="65 90 40 85 110 40"> </Coordinate><!-\- A1-A2 -\->
+                        </LineSet>-->
+               <ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance>
+                  <ptn:Input__x3A__generate__x3A__pattern__x3A__Material emissiveColor="1 0 0"
+                                                                         DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor"/>
+                  <ptn:Input__x3A__generate__x3A__pattern__x3A__LineProperties applied="true" linewidthScaleFactor="12" linetype="1"/>
+               </ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance>
+            </ptn:Input__x3A__generate__x3A__pattern_Group>
+            <!--  <Shape>
+                    <LineSet vertexCount="2">
+                        <Coordinate DEF="A2_Input__x3A__generate__x3A__pattern_LineSet"
+                            point="85 110 40 85 60 40"> </Coordinate><!-\- A2-A4 -\->
+                    </LineSet>
+                    <Appearance>
+                        <Material emissiveColor="1 0 0" DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"> </Material>
+                        <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"> </LineProperties>
+                    </Appearance>
+                </Shape>
+                <Shape>
+                    <LineSet vertexCount="2">
+                        <Coordinate DEF="A3_Input__x3A__generate__x3A__pattern_LineSet"
+                            point="85 110 40 110 90 40"> </Coordinate><!-\- A2-A3 -\->
+                    </LineSet>
+                    <Appearance>
+                        <Material emissiveColor="1 0 0" DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"> </Material>
+                        <LineProperties applied="true" linewidthScaleFactor="12" linetype="1"> </LineProperties>
+                    </Appearance>
+                </Shape>-->
+         </ptn:Input__x3A__generate__x3A__Shape>
+      </ptn:Group__x3A__generate__x3A__pattern_Group>
+      <!-- <CoordinateInterpolator DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                keyValue="65 90 40 85 110 40   85 110 35 105 130 40"
+                key="0, 1"> </CoordinateInterpolator>
+            <CoordinateInterpolator DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                keyValue="85 110 40 85 60 40   105 130 40 105 80 40"
+                key="0,  1"> </CoordinateInterpolator>
+            <CoordinateInterpolator DEF="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                keyValue="85 110 40 110 90 40    105 130 40 130 110 40"
+                key="0,  1"> </CoordinateInterpolator>
+            <ROUTE fromNode="ColorAnimationTimer"
+                fromField="fraction_changed"
+                toNode="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                fromField="value_changed"
+                toNode="A2_Input__x3A__generate__x3A__pattern_LineSet"
+                toField="point"> </ROUTE>
+            
+            <ROUTE fromNode="ColorAnimationTimer"
+                fromField="fraction_changed"
+                toNode="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A2_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                fromField="value_changed"
+                toNode="A1_Input__x3A__generate__x3A__pattern_LineSet"
+                toField="point"> </ROUTE>
+            
+            <ROUTE fromNode="ColorAnimationTimer"
+                fromField="fraction_changed"
+                toNode="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A3_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
+                fromField="value_changed"
+                toNode="A3_Input__x3A__generate__x3A__pattern_LineSet"
+                toField="point"> </ROUTE>-->
    </ptn:Input__x3A__generate__x3A__pattern>
 </ptn:Inputs>

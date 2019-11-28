@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="p5_test_neuron" vc:minVersion="1.1" xmlns:ptn="p5_test_neuron"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
+    <xs:include schemaLocation="test_neuron.xsd"/>
+    <xs:import schemaLocation="test_neuron.x3d.xsd"
+        namespace="http://www.web3d.org/specifications/x3d-3.0.xsd"/>
+    <xs:include schemaLocation="test_neuron.Simulation.model.stats.xml.xsd"/>
+    <xs:element name="Input__x3A__generate__x3A__pattern"
+        type="ptn:Input__x3A__generate__x3A__pattern"/>
+    <xs:complexType name="Input__x3A__generate__x3A__pattern">
+        <xs:sequence>
+            <xs:element ref="ptn:Group__x3A__generate__x3A__pattern_Group"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Input__x3A__generate__x3A__sequences"/>
+    </xs:complexType>
+    <xs:complexType name="Input__x3A__generate">
+        <xs:sequence>
+            <xs:element name="Input_exec_time">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Input_exec_time__x3A__start"/>
+                    <xs:attribute ref="ptn:Input_exec_time__x3A__end"/>
+                    <xs:attribute ref="ptn:Input_exec_time__x3A__pause"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Input_exec_receptor">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Input_exec_receptor__start"/>
+                    <xs:attribute ref="ptn:Input_exec_receptor__end"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Input_exec_Time_constant">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Input_exec_Time_constant__x3A__start"/>
+                    <xs:attribute ref="ptn:Input_exec_Time_constant__x3A__end"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Input_exec_Maximum_current">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Input_exec_Maximum_current__x3A__start"/>
+                    <xs:attribute ref="ptn:Input_exec_Maximum_current__x3A__end"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Input__x3A__generate__x3A__sequences"/>
+    </xs:complexType>
+    <xs:attribute name="Input_exec_time__x3A__pause"
+        type="ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause"/>
+    <xs:attribute name="Input_exec_time__x3A__start" type="ptn:Input_exec_time"/>
+    <xs:attribute name="Input_exec_time__x3A__end" type="ptn:Input_exec_time"/>
+    <xs:simpleType name="Input_exec_receptor__position">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Input_exec_receptor__start" type="ptn:Input_exec_receptor__position"/>
+    <xs:attribute name="Input_exec_receptor__end" type="ptn:Input_exec_receptor__position"/>
+    <xs:attribute name="Input_exec_Time_constant__x3A__start" type="ptn:Input_exec_Time_constant"/>
+    <xs:attribute name="Input_exec_Time_constant__x3A__end" type="ptn:Input_exec_Time_constant"/>
+    <xs:attribute name="Input_exec_Maximum_current__x3A__start"
+        type="ptn:Input_exec_Maximum_current"/>
+    <xs:attribute name="Input_exec_Maximum_current__x3A__end" type="ptn:Input_exec_Maximum_current"/>
+    <xs:element name="Input__x3A__generate" type="ptn:Input__x3A__generate"/>
+    <xs:attribute name="Input__x3A__generate__x3A__sequences" type="xs:int"/>
+    <xs:complexType name="Group__x3A__generate__x3A__pattern_Group">
+        <xs:sequence>
+            <xs:element ref="ptn:Input__x3A__generate__x3A__Shape"/>
+        </xs:sequence>
+        <xs:attribute name="DEF" use="prohibited">
+            <xs:annotation>
+                <xs:documentation>todo</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute ref="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" use="required"/>
+    </xs:complexType>
+    <xs:element name="Input__x3A__generate__x3A__pattern__x3A__Material">
+        <xs:complexType>
+            <xs:attribute name="emissiveColor"/>
+            <xs:attribute name="DEF"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Input__x3A__generate__x3A__pattern__x3A__LineProperties">
+        <xs:complexType>
+            <xs:attribute name="applied"/>
+            <xs:attribute name="linewidthScaleFactor"/>
+            <xs:attribute name="linetype"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Group__x3A__generate__x3A__pattern_Group"
+        type="ptn:Group__x3A__generate__x3A__pattern_Group"/>
+    <xs:simpleType name="Simulation__x3A__Interpolator__x3A__type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CoordinateInterpolator"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Simulation__x3A__Interpolator__x3A__type"
+        type="ptn:Simulation__x3A__Interpolator__x3A__type"/>
+    <xs:simpleType name="Simulation__x3A__DEF__x3A__elements__x3A__group">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Current_synapse.Input"/>
+            <xs:enumeration value="Input_Attract"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Simulation__x3A__DEF__x3A__elements__x3A__group"
+        type="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group"/>
+    <xs:simpleType name="Simulation__x3A__Interpolator__x3A__target">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Coordinate"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Simulation__x3A__Interpolator__x3A__target"
+        type="ptn:Simulation__x3A__Interpolator__x3A__target"/>
+    <xs:simpleType name="Simulation__x3A__Interpolator__x3A__target_field">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="point"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Simulation__x3A__Interpolator__x3A__target_field"
+        type="ptn:Simulation__x3A__Interpolator__x3A__target_field"/>
+    <xs:complexType name="Input__x3A__generate__x3A__pattern_Group">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded"
+                ref="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+                <xs:annotation>
+                    <xs:documentation>kilka odcinkow</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element
+                ref="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"/>
+            <xs:element
+                ref="ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector"/>
+            <xs:element ref="ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
+    </xs:complexType>
+    <xs:complexType name="Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector">
+        <xs:annotation>
+            <xs:documentation>todo struct</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element ref="ptn:keyValue__generate__basepoint_1"/>
+            <xs:element ref="ptn:keyValue__generate__basepoint_2"/>
+            <xs:element ref="ptn:keyValue__generate__basepoint__vector"/>
+            <xs:element ref="ptn:keyValue__generate__basepoint__length"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max"/>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
+        <xs:attribute ref="ptn:MFVec3f__x3A__distance__x3A__percent"/>
+        <xs:attribute ref="ptn:debug"/>
+    </xs:complexType>
+    <xs:element name="Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
+        type="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"/>
+    <xs:element name="Input__x3A__generate__x3A__pattern_Group"
+        type="ptn:Input__x3A__generate__x3A__pattern_Group"/>
+    <xs:complexType name="Input__x3A__generate__x3A__Shape">
+        <xs:sequence>
+            <xs:element ref="ptn:Input__x3A__generate__x3A__pattern_Group"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Input__x3A__generate__x3A__Shape" type="ptn:Input__x3A__generate__x3A__Shape"/>
+    <xs:complexType name="Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+        <xs:sequence>
+            <xs:element ref="ptn:keyValue__generate__basepoint_1"/>
+            <xs:element ref="ptn:keyValue__generate__basepoint_2"/>
+            <xs:element ref="ptn:keyValue__generate__basepoint__vector"/>
+            <xs:element ref="ptn:keyValue__generate__basepoint__length"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
+    </xs:complexType>
+    <xs:element name="Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"
+        type="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"/>
+    <xs:complexType name="keyValue__generate__basepoint">
+        <xs:attribute ref="ptn:debug"/>
+        <xs:attribute ref="ptn:Coordinate_X" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Y" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Z" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="keyValue__generate__basepoint_1">
+        <xs:complexContent>
+            <xs:extension base="ptn:keyValue__generate__basepoint"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="keyValue__generate__basepoint_1" type="ptn:keyValue__generate__basepoint_1"/>
+    <xs:complexType name="keyValue__generate__basepoint_2">
+        <xs:complexContent>
+            <xs:extension base="ptn:keyValue__generate__basepoint"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="keyValue__generate__basepoint_2" type="ptn:keyValue__generate__basepoint_2"/>
+    <xs:complexType name="keyValue__generate__basepoint__vector">
+        <xs:attribute ref="ptn:debug"/>
+        <xs:attribute ref="ptn:Coordinate_X" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Y" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Z" use="required"/>
+        <xs:attribute ref="ptn:MFVec3f__x3A__distance__x3A__percent"/>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max"
+        />
+    </xs:complexType>
+    <xs:attribute name="Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
+    <xs:attribute name="Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max"/>
+    <xs:element name="keyValue__generate__basepoint__vector"
+        type="ptn:keyValue__generate__basepoint__vector"/>
+    <xs:complexType name="keyValue__generate__basepoint__length">
+        <xs:attribute ref="ptn:debug"/>
+        <xs:attribute ref="ptn:MFVec3f__x3A__length" use="required"/>
+    </xs:complexType>
+    <xs:element name="keyValue__generate__basepoint__length"
+        type="ptn:keyValue__generate__basepoint__length"/>
+    <xs:simpleType name="MFVec3f__x3A__length">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:attribute name="MFVec3f__x3A__length" type="ptn:MFVec3f__x3A__length"/>
+    <xs:attribute name="MFVec3f__x3A__length__x3A__min" type="ptn:MFVec3f__x3A__length">
+        <xs:annotation>
+            <xs:documentation>warunek min</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="MFVec3f__x3A__length__x3A__max" type="ptn:MFVec3f__x3A__length">
+        <xs:annotation>
+            <xs:documentation>warunek max</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
+    <xs:simpleType name="MFVec3f__x3A__distance__x3A__percent">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="MFVec3f__x3A__distance__x3A__percent"
+        type="ptn:MFVec3f__x3A__distance__x3A__percent"/>
+    <xs:complexType
+        name="Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector">
+        <xs:annotation>
+            <xs:documentation>promieniowanie imput do receptors</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="Input_exec_timex__x3A__generate__x3A__pattern"
+                type="ptn:Input_exec_timex__x3A__generate__x3A__pattern"/>
+            <xs:element name="Input_exec_receptor__x3A__generate__x3A__pattern"
+                type="ptn:Input_exec_receptor__x3A__generate__x3A__pattern"/>
+            <xs:element name="Input_exec_Time_constant__x3A__generate__x3A__pattern"
+                type="ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern"/>
+            <xs:element name="Input_exec_Maximum_current__x3A__generate__x3A__pattern"
+                type="ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
+        <xs:attribute ref="ptn:MFVec3f__x3A__length__x3A__min"/>
+        <xs:attribute ref="ptn:MFVec3f__x3A__length__x3A__max"/>
+    </xs:complexType>
+    <xs:element
+        name="Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector"
+        type="ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector"/>
+    <xs:complexType name="Input_exec_timex__x3A__generate__x3A__pattern">
+        <xs:annotation>
+            <xs:documentation>w tym zakresie czasu bedzie attract todo</xs:documentation>
+        </xs:annotation>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max"/>
+        <xs:attribute ref="ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause"/>
+    </xs:complexType>
+    <xs:complexType name="Input_exec_receptor__x3A__generate__x3A__pattern">
+        <xs:attribute ref="ptn:Input_exec_receptor__x3A__generate__x3A__pattern__x3A__strategy"/>
+    </xs:complexType>
+    <xs:complexType name="Input_exec_Time_constant__x3A__generate__x3A__pattern">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Input_exec_Time_constant"/>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="Input_exec_Maximum_current__x3A__generate__x3A__pattern">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Input_exec_Maximum_current"/>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="Input_exec_receptor__x3A__generate__x3A__pattern__x3A__strategy">
+        <xs:annotation>
+            <xs:documentation>nearest - or others</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="nearest"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:attribute name="Input_exec_receptor__x3A__generate__x3A__pattern__x3A__strategy"
+        type="ptn:Input_exec_receptor__x3A__generate__x3A__pattern__x3A__strategy"/>
+    <xs:simpleType name="Input_exec_time__x3A__generate__x3A__pattern___x3A___pause">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+    <xs:attribute name="Input_exec_time__x3A__generate__x3A__pattern___x3A___pause"
+        type="ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause"/>
+    <xs:complexType name="Receptor__x3A__generate">
+        <xs:sequence>
+            <xs:element name="Label">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Label__x3A__generate__x3A__prefix"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Coordinate_X">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Coordinate_X__x3A__generate__min" use="required"/>
+                    <xs:attribute ref="ptn:Coordinate_X__x3A__generate__max" use="required"/>
+                    <xs:attribute ref="ptn:Coordinate_X__x3A__generate__separator" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Coordinate_Y">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Coordinate_Y__x3A__generate__min" use="required"/>
+                    <xs:attribute ref="ptn:Coordinate_Y__x3A__generate__max" use="required"/>
+                    <xs:attribute ref="ptn:Coordinate_Y__x3A__generate__separator" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Coordinate_Z">
+                <xs:complexType>
+                    <xs:attribute ref="ptn:Coordinate_Z__x3A__generate__min" use="required"/>
+                    <xs:attribute ref="ptn:Coordinate_Z__x3A__generate__max" use="required"/>
+                    <xs:attribute ref="ptn:Coordinate_Z__x3A__generate__separator" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element default="0.5" minOccurs="1" name="Capacitance" type="ptn:Capacitance"/>
+            <xs:element default="100" minOccurs="1" name="Resistance" type="ptn:Resistance"/>
+            <xs:element default="-90" minOccurs="1" name="Minimum_voltage"
+                type="ptn:Minimum_voltage"/>
+            <xs:element default="60" minOccurs="1" name="Maximum_voltage" type="ptn:Maximum_voltage"/>
+            <xs:element default="-70" minOccurs="1" name="Resting_potential"
+                type="ptn:Resting_potential"/>
+            <xs:element default="-80" minOccurs="1" name="Reset_potential"
+                type="ptn:Reset_potential"/>
+            <xs:element default="-55" minOccurs="1" name="Firing_threshold"
+                type="ptn:Firing_threshold"/>
+            <xs:element default="10" maxOccurs="0" minOccurs="0" name="Adaptation_conductance"
+                type="ptn:Adaptation_conductance"/>
+            <xs:element default="500" maxOccurs="0" minOccurs="0" name="Adaptation_time_constant"
+                type="ptn:Adaptation_time_constant"/>
+            <xs:element default="2" minOccurs="1" name="Refactory_period"
+                type="ptn:Refactory_period"/>
+            <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
+            <xs:element name="Outputs"/>
+            <xs:element name="Input__x3A__nodes"/>
+            <xs:element name="Simulated_potential" type="ptn:Simulated_potential"/>
+            <xs:element name="Receptor_regex_filter" type="ptn:Receptor_regex_filter"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Receptor__x3A__generate" type="ptn:Receptor__x3A__generate"/>
+    <xs:attribute name="Coordinate_X__x3A__generate__min" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_X__x3A__generate__max" type="ptn:Coordinate"/>
+    <xs:attribute name="Label__x3A__generate__x3A__prefix" type="xs:string"/>
+    <xs:attribute name="Coordinate_Y__x3A__generate__min" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__generate__max" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z__x3A__generate__min" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z__x3A__generate__max" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_X__x3A__generate__separator" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__generate__separator" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z__x3A__generate__separator" type="ptn:Coordinate"/>
+    <xs:element name="Input__x3A__generate__x3A__pattern__x3A__Appearance">
+        <xs:annotation>
+            <xs:documentation>todo struct</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ptn:Input__x3A__generate__x3A__pattern__x3A__Material">
+                    <xs:annotation>
+                        <xs:documentation>todo</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element ref="ptn:Input__x3A__generate__x3A__pattern__x3A__LineProperties"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
