@@ -305,7 +305,7 @@
                 <Shape>
                     <LineSet vertexCount="2">
                         <Coordinate DEF="A1_Input__x3A__generate__x3A__pattern_LineSet"
-                            point="2 9 15 8 13 15"> </Coordinate><!-- A1-A2 -->
+                            point="20 45 30 40 65 30"> </Coordinate><!-- A1-A2 -->
                     </LineSet>
                     <Appearance>
                         <Material emissiveColor="1 0 0" DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor"> </Material>
@@ -314,7 +314,7 @@
                 </Shape>
             </Group>
             <CoordinateInterpolator DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-                keyValue="2 9 15 8 13 15  2 9 15 8 13 15  2 9 15 8 13 15  2 9 15 8 13 15  2 9 15 8 13 15  2 9 15 8 13 15"
+                keyValue="20 45 30 40 65 30  20 45 25 40 65 25  20 45 25 40 65 25  20 45 20 40 65 25  20 45 20 40 65 20  20 45 20 40 65 20"
                 key="0, 0.2, 0.4, 0.6, 0.8, 1"> </CoordinateInterpolator>
             <ROUTE fromNode="ColorAnimationTimer"
                 fromField="fraction_changed"
