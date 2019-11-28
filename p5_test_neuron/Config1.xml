@@ -301,7 +301,7 @@
         
         
         <ptn:Input__x3A__generate__x3A__pattern ptn:Input__x3A__generate__x3A__sequences="9">
-            <!-- Coordinate .... X Y Z --- X1 Y1 Z1 -->
+            <!-- Coordinate . X Y Z - - X1 Y1 Z1 -->
             <Group DEF="AX_Input__x3A__generate__x3A__pattern_Group">
                 <Shape>
                     <LineSet vertexCount="2">
