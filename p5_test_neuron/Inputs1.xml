@@ -663,7 +663,7 @@
          <Shape>
             <LineSet vertexCount="2">
                <Coordinate DEF="A1_Input__x3A__generate__x3A__pattern_LineSet"
-                           point="20 45 30 40 65 30"/>
+                           point="65 90 40 85 110 40"/>
                <!-- A1-A2 -->
             </LineSet>
             <Appearance>
@@ -672,9 +672,33 @@
                <LineProperties linewidthScaleFactor="2"/>
             </Appearance>
          </Shape>
+         <Shape>
+            <LineSet vertexCount="2">
+               <Coordinate DEF="A2_Input__x3A__generate__x3A__pattern_LineSet"
+                           point="85 110 40 85 60 40"/>
+               <!-- A2-A4 -->
+            </LineSet>
+            <Appearance>
+               <Material emissiveColor="1 0 0"
+                         DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"/>
+               <LineProperties linewidthScaleFactor="2"/>
+            </Appearance>
+         </Shape>
+         <Shape>
+            <LineSet vertexCount="2">
+               <Coordinate DEF="A3_Input__x3A__generate__x3A__pattern_LineSet"
+                           point="85 110 40 110 90 40"/>
+               <!-- A2-A3 -->
+            </LineSet>
+            <Appearance>
+               <Material emissiveColor="1 0 0"
+                         DEF="A2_Input__x3A__generate__x3A__pattern_emissiveColor"/>
+               <LineProperties linewidthScaleFactor="2"/>
+            </Appearance>
+         </Shape>
       </Group>
       <CoordinateInterpolator DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor_CoordinateInterpolator"
-                              keyValue="20 45 30 40 65 30  20 45 25 40 65 25  20 45 25 40 65 25  20 45 20 40 65 25  20 45 20 40 65 20  20 45 20 40 65 20"
+                              keyValue="65 90 40 85 110 40   65 90 35 85 110 35  65 90 33 85 110 33   65 90 32 85 110 32   65 90 32 85 110 32   65 90 31 85 110 31"
                               key="0, 0.2, 0.4, 0.6, 0.8, 1"/>
       <ROUTE fromNode="ColorAnimationTimer"
              fromField="fraction_changed"

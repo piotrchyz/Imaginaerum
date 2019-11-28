@@ -74,15 +74,28 @@
     
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="*">
+        <xsl:message terminate="yes">#77 [ptn:Input__x3A__generate__x3A__pattern__X3A__scene]  unantended[n][<xsl:value-of select="name()"/>)</xsl:message>
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Simulation.analys.xml__x3A__analyze"/>
+        
+    
+    
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern">
         <xsl:message>#81 DD [TODO][ptn:Input__x3A__generate__x3A__pattern] [/n][<xsl:value-of select="name()"/></xsl:message>
         <xsl:comment>#81 DD [TODO][ptn:Input__x3A__generate__x3A__pattern] [/n][<xsl:value-of select="name()"/></xsl:comment>
-        <xsl:copy-of select="*"/>
+        <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="Group|Shape|LineSet|Coordinate|Appearance|Material|LineProperties|CoordinateInterpolator|ROUTE">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+            <xsl:text> </xsl:text>
+        </xsl:copy>        
+    </xsl:template>
     
     
     <xsl:template name="ptn:Simulation.analyze_simulation.x3d.Scene">
@@ -835,13 +848,14 @@
         <!--<Viewpoint id="top" position="0 0 100" orientation="0 0 0 0" description="camera"></Viewpoint>
         <Viewpoint id="rows" position="-2.43383 1.07351 -5" orientation="0 -1 0 2.06609" description="camera"></Viewpoint>-->
         
-        <Viewpoint centerOfRotation="0 0 0" id="top"  fieldOfView='0.05' description="camera"><!-- position="-0.07427 0.95329 -2.79608" --><!-- orientation="-0.01451 0.99989 0.00319 3.15833" -->
+        <Viewpoint
+            centerOfRotation="0 20 0" id="top"  fieldOfView='0.05' description="camera"><!-- position="-0.07427 0.95329 -2.79608" --><!-- orientation="-0.01451 0.99989 0.00319 3.15833" -->
             <xsl:attribute name="position">
-                <xsl:text>15 1 1700</xsl:text>
+                <xsl:text>55 55 2700</xsl:text>
                 <!--<xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_X) div 10"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) div 2"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) * 5"/>-->
             </xsl:attribute>
             <xsl:attribute name="orientation">
-                <xsl:text>0 0 -100 0.1222</xsl:text>
+                <xsl:text>10 20 -1000 0.1222</xsl:text>
             </xsl:attribute>
             <xsl:text> </xsl:text>
             <!-- centerOfRotation='0,0,0' fieldOfView='0.785398'  zFar='-1' zFar='-1' zNear='-1' zNear='-1'  -->
