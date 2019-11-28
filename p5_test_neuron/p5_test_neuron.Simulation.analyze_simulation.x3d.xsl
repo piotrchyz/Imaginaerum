@@ -823,12 +823,13 @@
         <!--<Viewpoint id="top" position="0 0 100" orientation="0 0 0 0" description="camera"></Viewpoint>
         <Viewpoint id="rows" position="-2.43383 1.07351 -5" orientation="0 -1 0 2.06609" description="camera"></Viewpoint>-->
         
-        <Viewpoint id="top"   description="camera"><!-- position="-0.07427 0.95329 -2.79608" --><!-- orientation="-0.01451 0.99989 0.00319 3.15833" -->
+        <Viewpoint centerOfRotation="0 0 0" id="top"  fieldOfView='0.05' description="camera"><!-- position="-0.07427 0.95329 -2.79608" --><!-- orientation="-0.01451 0.99989 0.00319 3.15833" -->
             <xsl:attribute name="position">
-                <xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_X) div 10"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) div 2"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) * 5"/>
+                <xsl:text>15 1 1700</xsl:text>
+                <!--<xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_X) div 10"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) div 2"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) * 5"/>-->
             </xsl:attribute>
             <xsl:attribute name="orientation">
-                <xsl:text>0 0 0 0</xsl:text>
+                <xsl:text>0 0 -100 0.1222</xsl:text>
             </xsl:attribute>
             <xsl:text> </xsl:text>
             <!-- centerOfRotation='0,0,0' fieldOfView='0.785398'  zFar='-1' zFar='-1' zNear='-1' zNear='-1'  -->

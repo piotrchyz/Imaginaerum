@@ -96,6 +96,10 @@
     </xsl:template>
     
     
+    <xsl:template mode="ptn:Simulated_potential"  match="ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:message>#186A TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:copy-of select="."/>
+    </xsl:template>
     
     <xsl:template mode="ptn:Simulated_potential"  match="*">
         <xsl:message terminate="yes">27 incorrect format <xsl:value-of select="name()"/></xsl:message>
@@ -177,6 +181,11 @@
     
     <xsl:template mode="ptn:Simulated_potential.input.vector" match="*">
         <xsl:message terminate="yes">#56-56 unantended n/[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulated_potential.input.vector"  match="ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:message>#186 TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:comment>#186 TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:comment>
     </xsl:template>
     
     
@@ -269,6 +278,10 @@
     
     
     
+    <xsl:template mode="ptn:Simulated_potential__x3A__vectors.sum" match="ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:message terminate="no">#110X [ptn:Input__x3A__generate__x3A__pattern] unantended n/[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:comment >#110X [ptn:Input__x3A__generate__x3A__pattern] unantended n/[<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
     
     <xsl:template mode="ptn:Simulated_potential__x3A__vectors.sum" match="*">
         <xsl:message terminate="yes">#110 unantended n/[<xsl:value-of select="name()"/>]</xsl:message>

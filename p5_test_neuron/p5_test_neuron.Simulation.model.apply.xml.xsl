@@ -12,6 +12,9 @@
     
     <xsl:include href="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl"/>
     <xsl:include href="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl"/>
+    <xsl:include href="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl"/>
+    
+    
     <!-- {p5_test_neuron}Simulation.model.apply.xml -->
     
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Simulation.model.validate.xml">
@@ -82,11 +85,23 @@
         <xsl:copy-of select="."/>
     </xsl:template>
    
-    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Input__x3A__nodes|ptn:Input__x3A__node|ptn:Simulated_potential|ptn:Attract__x3A__flag">
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Input__x3A__nodes|ptn:Input__x3A__node|ptn:Attract__x3A__flag">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
+    </xsl:template>
+   
+   
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Simulated_potential">
+        <!--<xsl:copy>
+            <xsl:copy-of select="@*"/>-->
+            <!--<xsl:attribute name="ptn:debug">#96[TODO][RESET][POTENTIAL][WHEN_INSTALLED]</xsl:attribute>-->
+            <xsl:call-template name="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential">
+                <xsl:with-param name="ptn:Simulated_potential__x3A__current" select="." tunnel="yes"/>
+            </xsl:call-template>
+        <!--</xsl:copy>-->
+        
     </xsl:template>
    
    
@@ -148,6 +163,8 @@
             <xsl:apply-templates mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" select="$ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
         </xsl:copy>
     </xsl:template>
+    
+    
     
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Current_synapse">
         <xsl:copy>

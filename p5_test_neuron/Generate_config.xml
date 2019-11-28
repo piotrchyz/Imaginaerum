@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<ptn:Receptors__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
+    <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="100" ptn:Input_exec_time__x3A__end="110" ptn:Input_exec_time__x3A__pause="1"/>
+    <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
+    <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
+    <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
+</ptn:Receptors__x3A__generate>
+<ptn:Receptor__x3A__generate>
+    <ptn:Label ptn:Label__x3A__generate__x3A__prefix="RG_"/>
+    <ptn:Coordinate_X ptn:Coordinate_X__x3A__generate__min="10" ptn:Coordinate_X__x3A__generate__max="60" ptn:Coordinate_X__x3A__generate__count="50"/>
+    <ptn:Coordinate_Y ptn:Coordinate_Y__x3A__generate__min="10" ptn:Coordinate_Y__x3A__generate__max="60" ptn:Coordinate_Y__x3A__generate__count="50"/>
+    <ptn:Coordinate_Z ptn:Coordinate_Z__x3A__generate__min="10" ptn:Coordinate_Z__x3A__generate__max="60" ptn:Coordinate_Z__x3A__generate__count="50"/>
+    <ptn:Capacitance>0.5</ptn:Capacitance>
+    <ptn:Resistance>100.0</ptn:Resistance>
+    <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+    <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+    <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+    <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+    <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+    <ptn:Refactory_period>2.0</ptn:Refactory_period>
+    <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+    <ptn:Outputs/>
+    <ptn:Input__x3A__nodes/>
+    <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
+    <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
+</ptn:Receptor__x3A__generate>
