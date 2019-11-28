@@ -47,11 +47,11 @@
     
     
     <xsl:template mode="ptn:Simulation.build.analys.xml" match="*">
-        <xsl:message terminate="yes">#15 error - expected ptn:Config or another error schema</xsl:message>
+        <xsl:message terminate="yes">#15 error - expected ptn:Config or another error schema [unantented/n][<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.build.analys.xml" match="ptn:Defaults|ptn:Receptors|ptn:Inputs">
+    <xsl:template mode="ptn:Simulation.build.analys.xml" match="ptn:Defaults|ptn:Receptors|ptn:Inputs|ptn:Receptor__x3A__generate">
         <xsl:comment>#34 bypassed <xsl:value-of select="name()"/></xsl:comment>
     </xsl:template>
     

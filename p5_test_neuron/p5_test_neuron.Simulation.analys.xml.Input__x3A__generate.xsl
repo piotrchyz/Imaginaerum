@@ -107,15 +107,18 @@
         <xsl:comment>#85AGG [ptn:Receptor__x3A__generate] [<xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Coordinate_X/@ptn:Coordinate_X__x3A__generate__max "/>][to][<xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Coordinate_X/@ptn:Coordinate_X__x3A__generate__max"/>]</xsl:comment>
         <xsl:for-each select="$ptn:Receptor__x3A__generate/ptn:Coordinate_X/@ptn:Coordinate_X__x3A__generate__min to $ptn:Receptor__x3A__generate/ptn:Coordinate_X/@ptn:Coordinate_X__x3A__generate__max">
             <xsl:variable name="ptn:Coordinate_X__x3A__generated" select="."/>
+            <xsl:variable name="ptn:Coordinate_X__x3A__generated__separator" select=". * $ptn:Receptor__x3A__generate/ptn:Coordinate_X/@ptn:Coordinate_X__x3A__generate__separator"/>
+            
             <!--<xsl:comment>#90 ptn:Coordinate_X__x3A__generated[<xsl:value-of select="$ptn:Coordinate_X__x3A__generated"/>] </xsl:comment>-->
             <xsl:for-each select="$ptn:Receptor__x3A__generate/ptn:Coordinate_Y/@ptn:Coordinate_Y__x3A__generate__min to $ptn:Receptor__x3A__generate/ptn:Coordinate_Y/@ptn:Coordinate_Y__x3A__generate__max">
                 <xsl:variable name="ptn:Coordinate_Y__x3A__generated" select="."/>
+                <xsl:variable name="ptn:Coordinate_Y__x3A__generated__separator" select=". * $ptn:Receptor__x3A__generate/ptn:Coordinate_Y/@ptn:Coordinate_Y__x3A__generate__separator"/>
                 <!--<xsl:comment>#90 ptn:Coordinate_X__x3A__generated[<xsl:value-of select="$ptn:Coordinate_X__x3A__generated"/>] </xsl:comment>-->
                 <xsl:message>#90 ptn:Coordinate_X__x3A__generated[<xsl:value-of select="$ptn:Coordinate_X__x3A__generated"/>][<xsl:value-of select="$ptn:Coordinate_Y__x3A__generated"/>] </xsl:message>
                 <ptn:Receptor>
                     <ptn:Label><xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Label/@ptn:Label__x3A__generate__x3A__prefix"/><xsl:text>_X</xsl:text><xsl:value-of select="$ptn:Coordinate_X__x3A__generated"/>_Y<xsl:value-of select="$ptn:Coordinate_Y__x3A__generated"/>_Z<xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Coordinate_Z/@ptn:Coordinate_Z__x3A__generate__min"/></ptn:Label>
-                    <ptn:Coordinate_X ><xsl:value-of select="$ptn:Coordinate_X__x3A__generated"/></ptn:Coordinate_X>
-                    <ptn:Coordinate_Y ><xsl:value-of select="$ptn:Coordinate_Y__x3A__generated"/></ptn:Coordinate_Y>
+                    <ptn:Coordinate_X ><xsl:value-of select="$ptn:Coordinate_X__x3A__generated__separator"/></ptn:Coordinate_X>
+                    <ptn:Coordinate_Y ><xsl:value-of select="$ptn:Coordinate_Y__x3A__generated__separator"/></ptn:Coordinate_Y>
                     <ptn:Coordinate_Z ><xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Coordinate_Z/@ptn:Coordinate_Z__x3A__generate__min"/></ptn:Coordinate_Z>
                     <ptn:Capacitance><xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Capacitance"/></ptn:Capacitance>
                     <ptn:Resistance><xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Resistance"/></ptn:Resistance>

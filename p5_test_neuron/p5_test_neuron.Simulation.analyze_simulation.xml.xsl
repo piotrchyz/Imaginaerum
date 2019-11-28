@@ -14,11 +14,14 @@
     <xsl:include href="p5_test_neuron.param.xsl"/>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Config">
+        
+        <xsl:variable name="ptn:Inputs" select="doc($ptn:Inputs)//ptn:Inputs"/>
         <xsl:variable name="file" select="concat('file:///',$ptn:Simulation.dir,'?select=Simulation.analys.xml.*.xml;recurse=no')"/>
         <!--<xsl:variable name="files" select="collection('file:///Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation?select=Simulation.analys.xml.*.xml;recurse=no')"/>-->
         <xsl:variable name="files" select="collection($file)"/>
         <ptn:Simulation.analyze_simulation.xml file="{$file}">
             <xsl:copy-of select="@xsi:schemaLocation"/>
+            <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.xml__x3A__Inputs" select="$ptn:Inputs"/>
             <xsl:for-each select="$files">
                 <xsl:sort select="ptn:Simulation.analys.xml/@ptn:Simulation_body_tick" data-type="number" order="ascending"/>
                 <xsl:choose>
@@ -37,6 +40,18 @@
     </xsl:template>
     
     
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml__x3A__Inputs" match="text()|comment()"/>
+        
+    
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml__x3A__Inputs" match="*">
+        <xsl:apply-templates mode="#current"/>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml__x3A__Inputs" match="ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:message>#52 [TODO][ptn:Simulation.analyze_simulation.xml__x3A__Inputs] /b[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:copy-of select="."/>
+    </xsl:template>
     
     <xsl:function name="ptn:Simulation.analyze_simulation.xml__x3A__element.name">
         <xsl:param name="name"/>

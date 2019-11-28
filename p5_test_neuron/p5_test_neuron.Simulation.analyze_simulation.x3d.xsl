@@ -63,6 +63,7 @@
                         <xsl:with-param name="ptn:Simulation.analyze_simulation.xml" select="." tunnel="yes"/>
                         <xsl:with-param name="ptn:Simulation_body_tick__x3A__max" select="max(descendant-or-self::ptn:Simulation.analys.xml__x3A__analyze/number(@ptn:Simulation_body_tick))" tunnel="yes"/>
                     </xsl:call-template>
+                    
                 </x3d>
                 <button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
                 <button onclick="document.getElementById('top').setAttribute('set_bind','true');">top </button>
@@ -71,6 +72,16 @@
     </xsl:template>
     
     
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="*">
+        <xsl:apply-templates mode="#current"/>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:message>#81 DD [TODO][ptn:Input__x3A__generate__x3A__pattern] [/n][<xsl:value-of select="name()"/></xsl:message>
+        <xsl:comment>#81 DD [TODO][ptn:Input__x3A__generate__x3A__pattern] [/n][<xsl:value-of select="name()"/></xsl:comment>
+        <xsl:copy-of select="*"/>
+    </xsl:template>
     
     
     
@@ -117,6 +128,7 @@
           <!--  <ROUTE fromNode='time' fromField='fraction_changed' toNode='Neon17EmissiveColorInterpolator' toField='set_fraction'><xsl:text> </xsl:text></ROUTE>
             <ROUTE fromNode='Neon17EmissiveColorInterpolator' fromField='value_changed' toNode='A_Material' toField='set_emissiveColor'><xsl:text> </xsl:text></ROUTE>
             -->
+            <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" />
         </scene>
     </xsl:template>
     
