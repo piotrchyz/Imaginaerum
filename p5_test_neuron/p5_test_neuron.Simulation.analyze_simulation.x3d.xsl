@@ -12,7 +12,7 @@
     <xsl:output indent="yes" method="xml" /><!-- doctype-public="ISO//Web3D//DTD X3D 3.0//EN" doctype-system="http://www.web3d.org/specifications/x3d-3.0.dtd" -->
     <xsl:strip-space elements="*"/>
     
-    <xsl:include href="p5_test_neuron.param.xsl"/>
+    <!--<xsl:include href="p5_test_neuron.param.xsl"/>-->
     
     <xsl:include href="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl"/>
     <xsl:include href="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl"/>

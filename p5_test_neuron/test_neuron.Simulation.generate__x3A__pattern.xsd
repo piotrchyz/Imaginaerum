@@ -256,9 +256,12 @@
         <xs:annotation>
             <xs:documentation>w tym zakresie czasu bedzie attract todo</xs:documentation>
         </xs:annotation>
-        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"/>
-        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max"/>
-        <xs:attribute ref="ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause"/>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min"
+            use="required"/>
+        <xs:attribute ref="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max"
+            use="required"/>
+        <xs:attribute ref="ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause"
+            use="required"/>
     </xs:complexType>
     <xs:complexType name="Input_exec_receptor__x3A__generate__x3A__pattern">
         <xs:attribute ref="ptn:Input_exec_receptor__x3A__generate__x3A__pattern__x3A__strategy"/>

@@ -11,9 +11,11 @@
     <xsl:strip-space elements="*"/>
     
     <xsl:include href="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"/>
-    <xsl:include href="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl"/>
+    
+   <xsl:include href="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl"/>
    
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Config[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]">
+   
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern.xml[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]"><!-- ptn:Config -->
         <xsl:message>#13 todo ptn:Config</xsl:message>
         <ptn:Simulation.analys.xml
             xsi:schemaLocation="p5_test_neuron file:{$ptn:xsd}"
@@ -24,38 +26,46 @@
             <xsl:attribute name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick"/>
             <xsl:attribute name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick"/>
             <xsl:attribute name="ptn:Simulation_body_time__x3A__last" select="0"/>
+            <xsl:attribute name="ptn:Simulation_ticks" select="ptn:Simulation/ptn:Simulation_ticks"/>
             <!--<xsl:apply-templates mode="#current" select="@*"/>-->
-            <xsl:variable name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate">
+            <!--<xsl:variable name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate">
                 <xsl:call-template name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate"/>
-            </xsl:variable>
-            <xsl:variable name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate__x3A__merged">
+            </xsl:variable>-->
+            <!--<xsl:variable name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate__x3A__merged">
                 <xsl:copy-of select="ptn:Receptors"/>
                 <xsl:copy-of select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate"/>
-            </xsl:variable>
+            </xsl:variable>-->
             <!--<xsl:copy-of select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate"></xsl:copy-of>-->
             <!--<xsl:variable name="ptn:Receptors">
                 <xsl:copy-of select="ptn:Receptors"/>
                 <xsl:copy-of select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate"></xsl:copy-of>
             </xsl:variable>-->
-            <xsl:variable name="ptn:Inputs">
+            <!--<xsl:variable name="ptn:Inputs">
                 <xsl:apply-templates mode="#current" select="ptn:Inputs/*">
                     <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Receptors" select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate__x3A__merged" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
                 </xsl:apply-templates>
-            </xsl:variable>
+            </xsl:variable>-->
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
-                <xsl:with-param name="ptn:Inputs" select="$ptn:Inputs" tunnel="yes"/>
+                <xsl:with-param name="ptn:Inputs" select="ptn:Inputs" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_body_time" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Attract_min" tunnel="yes" select="ptn:Defaults/ptn:Attract_min"/>
-                <xsl:with-param name="ptn:Simulation_body" select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate__x3A__merged" tunnel="yes"/>
-                <xsl:with-param name="ptn:Receptors" select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate__x3A__merged" tunnel="yes"/>
-                <xsl:with-param name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_body" select="." tunnel="yes"/>
+                <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
+                <!--<xsl:with-param name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" tunnel="yes"/>-->
             </xsl:apply-templates>
             <ptn:Nodes>
                 
             </ptn:Nodes>
         </ptn:Simulation.analys.xml>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:message>#666 [TODO]  unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:comment>#666 [TODO]  unantended/n[<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:copy-of select="."></xsl:copy-of>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation.model.apply.xml[@ptn:Simulator_tick][@ptn:Simulation_body_time]">
@@ -83,11 +93,11 @@
     
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptors">
-        <xsl:param name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" tunnel="yes"/>
+        <!--<xsl:param name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" tunnel="yes"/>-->
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
-            <xsl:copy-of select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate"/>
+            <!--<xsl:copy-of select="$ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate"/>-->
         </xsl:copy>
     </xsl:template>
     
@@ -381,9 +391,14 @@
     </xsl:template>
     
     
+    <!--<xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:message terminate="yes">#19 [TODO] unantended /n[<xsl:value-of select="name()"/>]</xsl:message>
+        <!-\-<xsl:copy-of select="."></xsl:copy-of>-\->
+    </xsl:template>-->
     
-    
-    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Receptor__x3A__generate">
+        <xsl:message terminate="yes">#19X [TODO] unantended /n[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
     
     
     

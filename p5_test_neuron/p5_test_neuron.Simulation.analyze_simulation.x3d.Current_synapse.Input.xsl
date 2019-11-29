@@ -139,9 +139,9 @@
         <xsl:message>#134 [validate][ptn:Input_exec_receptor__x3A__analyze][<xsl:value-of select="$ptn:Input_exec_receptor__x3A__analyze"/>]</xsl:message>
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"/>
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote">
-            <xsl:with-param name="ptn:Coordinate_X__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X"/>
-            <xsl:with-param name="ptn:Coordinate_Y__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y"/>
-            <xsl:with-param name="ptn:Coordinate_Z__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z"/>
+            <xsl:with-param name="ptn:Coordinate_X__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_X][@ptn:Coordinate_X][1]/@ptn:Coordinate_X" tunnel="yes"/>
+            <xsl:with-param name="ptn:Coordinate_Y__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_Y][@ptn:Coordinate_Y][1]/@ptn:Coordinate_Y" tunnel="yes"/>
+            <xsl:with-param name="ptn:Coordinate_Z__x3A__remote" select="$ptn:Simulation.analyze_simulation.xml/descendant-or-self::*[@ptn:Label__x3A__analyze = $ptn:Input_exec_receptor__x3A__analyze][@ptn:Coordinate_Z][@ptn:Coordinate_Z][1]/@ptn:Coordinate_Z" tunnel="yes"/>
         </xsl:call-template>
     </xsl:template>
     
@@ -152,6 +152,24 @@
         </Group>
     </xsl:template>
     
+    <xsl:template name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys">
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" required="yes"/>
+        <xsl:param name="current-group" tunnel="yes" required="yes"/>
+        
+        <ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys>
+            <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze"><!--ptn:Simulation_body__x3A__analyze-->
+                <xsl:choose>        
+                    <xsl:when test="$current-group/ancestor-or-self::ptn:Simulation.analys.xml__x3A__analyze[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
+                        <ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position>
+                            <xsl:value-of select="position()"/>
+                        </ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position>
+                    </xsl:when>
+                    <xsl:otherwise>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
+        </ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys>
+    </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Current_synapse.Input.Interpolator" match="ptn:Input__x3A__analyze">
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" required="yes" tunnel="yes"/>
@@ -181,8 +199,8 @@
         <xsl:element name="{$ptn:Simulation__x3A__Interpolator__x3A__type}">
             <xsl:attribute name="DEF">
                 <xsl:call-template name="ptn:Simulation__x3A__DEF_Interpolator">
-                    <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target">Coordinate</xsl:with-param>
-                    <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field">point</xsl:with-param>
+                    <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" tunnel="yes">Coordinate</xsl:with-param>
+                    <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" tunnel="yes">point</xsl:with-param>
                 </xsl:call-template>
             </xsl:attribute>
             <xsl:attribute name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active"/>
@@ -325,8 +343,8 @@
         </xsl:element>
         <xsl:variable name="DEF">
             <xsl:call-template name="ptn:Simulation__x3A__DEF_Interpolator">
-                <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target">Coordinate</xsl:with-param>
-                <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field">point</xsl:with-param>
+                <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" tunnel="yes">Coordinate</xsl:with-param>
+                <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" tunnel="yes">point</xsl:with-param>
             </xsl:call-template>
         </xsl:variable>
         <xsl:result-document href="{$ptn:Simulation.dir}/debug/Input/{$DEF}.xml">
@@ -339,8 +357,8 @@
                 <xsl:attribute name="ptn:Coordinate_Z__x3A__remote" select="$ptn:Coordinate_Z__x3A__remote"/>
                 <xsl:attribute name="DEF">
                     <xsl:call-template name="ptn:Simulation__x3A__DEF_Interpolator">
-                        <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target">Coordinate</xsl:with-param>
-                        <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field">point</xsl:with-param>
+                        <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target" tunnel="yes">Coordinate</xsl:with-param>
+                        <xsl:with-param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" tunnel="yes">point</xsl:with-param>
                     </xsl:call-template>
                 </xsl:attribute>
                 <xsl:attribute name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active"/>
@@ -422,7 +440,7 @@
             <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
             <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">#478 empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
             <xsl:call-template name="ptn:Simulation__x3A__ROUTE">
-                <xsl:with-param name="ptn:Simulation__x3A__TimeSensor"/>
+                <xsl:with-param name="ptn:Simulation__x3A__TimeSensor" tunnel="yes"/>
             </xsl:call-template>
             
         

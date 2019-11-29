@@ -23,8 +23,12 @@
         <xsl:param name="ptn:Coordinate_Z__x3A__remote" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:MFVec3f__x3A__sequence__x3A__last" required="yes"/>
         <xsl:param name="ptn:MFVec3f__x3A__distance" required="no" select="-1"/>
+        
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__local"/>
         <xsl:call-template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote"/>
+        
+        
+        
         
         <xsl:value-of select="$ptn:Coordinate_X"/><xsl:text> </xsl:text>
         <xsl:value-of select="$ptn:Coordinate_Y"/><xsl:text> </xsl:text>

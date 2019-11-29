@@ -99,8 +99,8 @@
         </echo>
         <xslt in="${p5_test_neuron.Config}" 
             out="${p5_test_neuron.Simulation.analyze_simulation.xml}"
-            style="${p5_test_neuron.Simulation.analyze_simulation.xml.xsl}"
-            force="true">
+            style="${p5_test_neuron.xsl}"
+            force="true"><!-- ${p5_test_neuron.Simulation.analyze_simulation.xml.xsl} -->
             <factory name="net.sf.saxon.TransformerFactoryImpl">
                 <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                 <attribute name="http://saxon.sf.net/feature/initialMode"
@@ -142,8 +142,8 @@
         
         <xslt in="${p5_test_neuron.Simulation.analyze_simulation.xml}" 
             out="${p5_test_neuron.Simulation.analyze_simulation.x3d}"
-            style="${p5_test_neuron.Simulation.analyze_simulation.x3d.xsl}"
-            force="true">
+            style="${p5_test_neuron.xsl}"
+            force="true"><!-- ${p5_test_neuron.Simulation.analyze_simulation.x3d.xsl} -->
             <factory name="net.sf.saxon.TransformerFactoryImpl">
                 <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                 <attribute name="http://saxon.sf.net/feature/initialMode"

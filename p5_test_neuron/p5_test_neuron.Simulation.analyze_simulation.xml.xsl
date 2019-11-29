@@ -11,7 +11,7 @@
     <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     
-    <xsl:include href="p5_test_neuron.param.xsl"/>
+    <!--<xsl:include href="p5_test_neuron.param.xsl"/>-->
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Config">
         
