@@ -186,6 +186,7 @@
     <xsl:template mode="ptn:Simulated_potential.input.vector"  match="ptn:Input__x3A__generate__x3A__pattern">
         <xsl:message>#186 TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:message>
         <xsl:comment>#186 TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:copy-of select="."/>
     </xsl:template>
     
     

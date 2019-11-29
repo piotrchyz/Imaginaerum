@@ -120,6 +120,7 @@
         <xsl:call-template name="ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray"/>
         <xsl:copy>
             <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#123 here todo  1 to $ptn:Simulation_ticks </xsl:attribute>
             <!--<xsl:apply-templates mode="#current">
                 <!-\-<xsl:with-param name="ptn:Simulator_tick__x3A__for-each-group" select="$ptn:Simulator_tick__x3A__for-each-group" tunnel="yes"/>-\->
             </xsl:apply-templates>-->
@@ -294,7 +295,6 @@
                 <xsl:variable name="ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context" select="@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray"/>
                 
                 <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
-                    <Shape> 
                         <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0" ptn:Label__x3A__fieldOfView__x3A__ray="{ptn:Label}"
                             ptn:Coordinate_X__x3A__fieldOfView="{$ptn:Coordinate_X__x3A__fieldOfView}"
                             ptn:Coordinate_Y__x3A__fieldOfView="{$ptn:Coordinate_Y__x3A__fieldOfView}"
@@ -307,10 +307,7 @@
                             ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="{$ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less}"
                             ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="{$ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more}"
                             >
-                            
                         </IndexedFaceSet>
-                    </Shape>
-                    
                 </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>        
             </xsl:for-each>
         
@@ -328,7 +325,9 @@
                 <!--<xsl:call-template name="ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray"/>-->
                     
                 <xsl:for-each select="$ptn:Input__x3A__generate__x3A__pattern_Group/descendant-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
-                    <Shape ptn:debug="{@ptn:debug}">
+                    <xsl:copy>
+                        <xsl:copy-of select="@DEF"/>
+                        <xsl:copy-of select="@ptn:debug"/>
                         <LineSet ptn:Coordinate_X="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X}" ptn:Coordinate_Y="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Y}" ptn:Coordinate_Z="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Z}"
                             ptn:Coordinate_X__x3A__remote="{ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_X}" ptn:Coordinate_Y__x3A__remote="{ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Y}" ptn:Coordinate_Z__x3A__remote="{ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Z}"
                             >
@@ -341,7 +340,7 @@
                             <xsl:attribute name="xt" select="$xt"/>
                             <xsl:attribute name="yt" select="$yt"/>
                             <xsl:attribute name="zt" select="$zt"/>
-                            <Coordinate>
+                            <Coordinate ptn:debug="#342 todo">
                                     <xsl:attribute name="point">
                                         <xsl:call-template name="ptn:MFVec3f__x3A__sequence">
                                             <xsl:with-param name="ptn:Coordinate_X"  select="ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X" tunnel="yes"/>
@@ -357,7 +356,7 @@
                             </Coordinate>
                             <xsl:text> </xsl:text>
                         </LineSet>
-                    </Shape>
+                    </xsl:copy>
                 </xsl:for-each>
             </xsl:when>
         </xsl:choose>
@@ -379,34 +378,103 @@
     
     <!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  -->
     
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="Shape|IndexedFaceSet[Coordinate]|LineSet[Coordinate]">
-        <xsl:comment>#373A TODO PATTERN</xsl:comment>
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="Shape[parent::Shape]">
+        <xsl:comment>#373AA TODO Shape[parent::Shape] PATTERN</xsl:comment>
+            <xsl:apply-templates mode="#current"/>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="Shape[not(parent::Shape)]">
+        <xsl:comment>#373AB TODO PATTERN</xsl:comment>
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
     
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="LineSet[Coordinate]">
+        <xsl:comment>#373AAB TODO Shape[parent::Shape] PATTERN</xsl:comment>
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+            <xsl:text> </xsl:text>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    
+    
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="IndexedFaceSet">
         <xsl:comment>#373D TODO PATTERN[ERROR] [n][<xsl:value-of select="name()"/>]</xsl:comment>
-        <xsl:element name="{name()}__x3A__error">
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="IndexedFaceSet[Coordinate]">
+        <xsl:comment>#373AABB TODO Shape[parent::Shape] PATTERN</xsl:comment>
+        <xsl:copy>
             <xsl:copy-of select="@*"/>
-        </xsl:element>
+            <xsl:apply-templates mode="#current"/>
+            <xsl:text> </xsl:text>
+        </xsl:copy>
         
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="IndexedFaceSet[not(Coordinate)][@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less[not(.='')]][@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less[not(.='')]][@ptn:Coordinate_X__x3A__fieldOfView][@ptn:Coordinate_Y__x3A__fieldOfView][@ptn:Coordinate_Z__x3A__fieldOfView][@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context][@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context][@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context]">
-        <xsl:comment>#373A TODO PATTERN [n][<xsl:value-of select="name()"/>]</xsl:comment>
-        <Shape ptn:debug="#373A TODO PATTERN [n][{name()}]">
+        <xsl:comment>#373ACC TODO PATTERN [n][<xsl:value-of select="name()"/>]</xsl:comment>
+        <Shape>
             <xsl:copy>
                 <xsl:copy-of select="@*"/>
-                <Coordinate point=" {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}   {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less}"><xsl:text> </xsl:text></Coordinate>
+                <Coordinate point=" {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context} 
+                    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context} 
+                    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
+                    {@ptn:Coordinate_X__x3A__fieldOfView} {@ptn:Coordinate_Y__x3A__fieldOfView} {@ptn:Coordinate_Z__x3A__fieldOfView}"><xsl:text> </xsl:text></Coordinate>
+                <xsl:text> </xsl:text>
             </xsl:copy>
             <xsl:choose>
                 <xsl:when test="Appearance"/>
                 <xsl:otherwise>
                     <Appearance>
-                        <Material diffuseColor='0.27 0.51 0.71' transparency='.5'/>
+                        <Material  transparency='.5'>
+                            <xsl:attribute name="diffuseColor">
+                                <xsl:call-template name="ptn:MFColor__x3A__sequence">
+                                    <xsl:with-param name="ptn:MFColor__x3A__R">0.9</xsl:with-param>
+                                    <xsl:with-param name="ptn:MFColor__x3A__G">0.9</xsl:with-param>
+                                    <xsl:with-param name="ptn:MFColor__x3A__B">0.3</xsl:with-param>
+                                    <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__last" select="true()"/>
+                                </xsl:call-template>
+                            </xsl:attribute>
+                            <xsl:text> </xsl:text>
+                        </Material>
+                    </Appearance> 
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:text> </xsl:text>
+        </Shape>
+        <Shape>
+            <xsl:copy>
+                <xsl:copy-of select="@*"/>
+                <Coordinate point=" {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context} 
+                    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context} 
+                    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
+                    {@ptn:Coordinate_X__x3A__fieldOfView} {@ptn:Coordinate_Y__x3A__fieldOfView} {@ptn:Coordinate_Z__x3A__fieldOfView}"><xsl:text> </xsl:text></Coordinate>
+                <xsl:text> </xsl:text>
+            </xsl:copy>
+            <xsl:choose>
+                <xsl:when test="Appearance"/>
+                <xsl:otherwise>
+                    <Appearance>
+                        <Material  transparency='.5'>
+                            <xsl:attribute name="diffuseColor">
+                                <xsl:call-template name="ptn:MFColor__x3A__sequence">
+                                    <xsl:with-param name="ptn:MFColor__x3A__R">0.9</xsl:with-param>
+                                    <xsl:with-param name="ptn:MFColor__x3A__G">0.9</xsl:with-param>
+                                    <xsl:with-param name="ptn:MFColor__x3A__B">0.3</xsl:with-param>
+                                    <xsl:with-param name="ptn:MFColor__x3A__sequence__x3A__last" select="true()"/>
+                                </xsl:call-template>
+                            </xsl:attribute>
+                            <xsl:text> </xsl:text>
+                        </Material>
                     </Appearance> 
                 </xsl:otherwise>
             </xsl:choose>
@@ -417,15 +485,28 @@
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="IndexedFaceSet[parent::Shape][not(Coordinate)][@ptn:Coordinate_X][@ptn:Coordinate_Y][@ptn:Coordinate_Z][@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less[not(.='')]][@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less[not(.='')]][@ptn:Coordinate_X__x3A__fieldOfView][@ptn:Coordinate_Y__x3A__fieldOfView][@ptn:Coordinate_Z__x3A__fieldOfView][@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context][@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context][@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context]">
         <xsl:comment>#373A TODO PATTERN [n][<xsl:value-of select="name()"/>]</xsl:comment>
-            <xsl:copy>
-                <xsl:copy-of select="@*"/>
-                <Coordinate point="{@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}  
-                    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
-                    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
-                    {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
-                    {@ptn:Coordinate_X} {@ptn:Coordinate_Y} {@ptn:Coordinate_Z}"  ><xsl:text> </xsl:text></Coordinate>
-            </xsl:copy>
+            <Shape>
+                <xsl:copy>
+                    <xsl:copy-of select="@*"/>
+                    <Coordinate point="{@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}  
+                        {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
+                        {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
+                        {@ptn:Coordinate_X} {@ptn:Coordinate_Y} {@ptn:Coordinate_Z}"  ><xsl:text> </xsl:text></Coordinate><!-- {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context} -->
+                    <xsl:text> </xsl:text>
+                </xsl:copy>
             <xsl:text> </xsl:text>
+            </Shape>
+            <Shape>
+                <xsl:copy>
+                    <xsl:copy-of select="@*"/>
+                    <Coordinate point="{@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}  
+                        {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
+                        {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context}
+                        {@ptn:Coordinate_X} {@ptn:Coordinate_Y} {@ptn:Coordinate_Z}"  ><xsl:text> </xsl:text></Coordinate><!-- {@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less} {@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context} {@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context} -->
+                    <xsl:text> </xsl:text>
+                </xsl:copy>
+                <xsl:text> </xsl:text>
+            </Shape>
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="LineSet[not(Coordinate)][@ptn:Coordinate_X][@ptn:Coordinate_Y][@ptn:Coordinate_Z][@ptn:Coordinate_X__x3A__remote][@ptn:Coordinate_Y__x3A__remote][@ptn:Coordinate_Z__x3A__remote]">
@@ -498,8 +579,20 @@
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern_Group[ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector]">
         <xsl:param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" tunnel="yes" required="yes"/>
         
-        <xsl:comment>#544 [generate ][TOOODO] [n][<xsl:value-of select="name()"/>]</xsl:comment>
-        <LineSet  ><!-- vertexCount="{count(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector) + 1}" -->
+        <xsl:comment>#544 [generate ][TOOODO] [n][<xsl:value-of select="name()"/>]  [ptn:debug=[<xsl:copy-of select="@ptn:debug"></xsl:copy-of>]]  [DEB]#C[@DEF[<xsl:value-of select="count(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[@DEF])"/>]]
+            [./n[<xsl:value-of select="*/name()"/>]]
+        </xsl:comment>
+        
+        <DEBUGG>
+            <xsl:copy-of select="."></xsl:copy-of>
+        </DEBUGG>
+        
+        <xsl:for-each-group select="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" group-by="@DEF">
+            <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator" select="."/>
+        </xsl:for-each-group>
+        
+        
+        <!--<LineSet  ><!-\- vertexCount="{count(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector) + 1}" -\->
             <Coordinate DEF="A__{$ptn:Simulation__x3A__DEF__x3A__elements__x3A__group}_LineSet">
                 <xsl:attribute name="point">
                     <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__Lineset"/>
@@ -507,7 +600,7 @@
                 <xsl:text> </xsl:text>
             </Coordinate>
             <xsl:text> </xsl:text>
-        </LineSet>
+        </LineSet>-->
         <!--<Transform 
             translation="{ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[1]/ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X} {ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[1]/ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Y} {ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[1]/ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Z}"
             rotation="{ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[1]/ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_X} {ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[1]/ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Y} {ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[1]/ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Z} 0">
@@ -516,11 +609,30 @@
                 <Appearance USE="DARK_GRAY"></Appearance>
             </Shape>
         </Transform>-->
-        <xsl:apply-templates mode="#current"/>
+        
             <xsl:text> </xsl:text>                
     </xsl:template>
     
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"/>
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator" match="*">
+        <xsl:comment>#999 unantended [Colorinterporat]  [n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[@DEF]">
+        <xsl:param name="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator__DEF" select="@DEF"/>
+        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" required="yes" tunnel="yes"/>
+        <xsl:comment>#999A  [Colorinterporat] [current-group] [n][<xsl:value-of select="name()"/>]</xsl:comment>
+        <CoordinateInterpolator DEF="{$ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator__DEF}_scene__x3A__LineSet_CoordinateInterpolator">
+            <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group/descendant-or-self::ptn:Simulation.analys.xml__x3A__analyze"></xsl:for-each>
+        </CoordinateInterpolator>
+    </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+        <xsl:comment>#604 [SCENE][BYPASSED??] [n][<xsl:value-of select="name()"/>]</xsl:comment>
+        <!--<xsl:apply-templates mode="#current"/>-->
+    </xsl:template>
     
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__Lineset" match="*"/>
@@ -575,11 +687,19 @@
         </LineProperties>
     </xsl:template>
     
-    
-    
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector|ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector">
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector">
         <xsl:comment>#85 [pattern generate]  unantended[n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector[@ptn:Coordinate_X__x3A__vector][@ptn:Coordinate_Y__x3A__vector][@ptn:Coordinate_Z__x3A__vector][@ptn:MFVec3f__x3A__distance__x3A__percent]">
+        <xsl:comment>#85 [pattern generate]  unantended[n][<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:apply-templates mode="#current">
+            <xsl:with-param name="ptn:Coordinate_X__x3A__vector" select="@ptn:Coordinate_X__x3A__vector" tunnel="yes"/>
+            <xsl:with-param name="ptn:Coordinate_Y__x3A__vector" select="@ptn:Coordinate_Y__x3A__vector" tunnel="yes"/>
+            <xsl:with-param name="ptn:Coordinate_Z__x3A__vector" select="@ptn:Coordinate_Z__x3A__vector" tunnel="yes"/>
+        </xsl:apply-templates>
    </xsl:template>
+    
     
     <!--<xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="Group|Shape|LineSet|Coordinate|Appearance|Material|LineProperties|CoordinateInterpolator|ROUTE">
         <xsl:copy>
