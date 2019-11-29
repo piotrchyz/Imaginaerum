@@ -445,7 +445,7 @@
                 <xsl:when test="Appearance"/>
                 <xsl:otherwise>
                     <Appearance>
-                        <Material  transparency='.5'>
+                        <Material  transparency='.9'>
                             <xsl:attribute name="diffuseColor">
                                 <xsl:call-template name="ptn:MFColor__x3A__sequence">
                                     <xsl:with-param name="ptn:MFColor__x3A__R">0.9</xsl:with-param>
