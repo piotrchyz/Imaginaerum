@@ -118,7 +118,9 @@
           <!--  <ROUTE fromNode='time' fromField='fraction_changed' toNode='Neon17EmissiveColorInterpolator' toField='set_fraction'><xsl:text> </xsl:text></ROUTE>
             <ROUTE fromNode='Neon17EmissiveColorInterpolator' fromField='value_changed' toNode='A_Material' toField='set_emissiveColor'><xsl:text> </xsl:text></ROUTE>
             -->
-            <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" />
+            <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" >
+                <xsl:with-param name="ptn:Simulator_tick__x3A__for-each-group" tunnel="yes" select="$ptn:Simulator_tick__x3A__for-each-group"/>
+            </xsl:apply-templates>
         </scene>
     </xsl:template>
     
@@ -407,7 +409,7 @@
         <xsl:param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" required="yes" tunnel="yes"/><!-- Current_synapse_Input -->
         <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__type" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" required="yes" tunnel="yes"/><!-- set_emissiveColor  toField="set_fraction"  toField="point" -->
         <xsl:value-of select="$ptn:Label__x3A__analyze"/><xsl:text>_</xsl:text>
         <xsl:choose>
             <xsl:when test="$ptn:Output_Node__x3A__analyze"><xsl:value-of select="$ptn:Output_Node__x3A__analyze"/><xsl:text>_</xsl:text></xsl:when>

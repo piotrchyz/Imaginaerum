@@ -12,7 +12,7 @@
     <xsl:output indent="yes" method="xml" /><!-- doctype-public="ISO//Web3D//DTD X3D 3.0//EN" doctype-system="http://www.web3d.org/specifications/x3d-3.0.dtd" -->
     <xsl:strip-space elements="*"/>
     
-    
+    <xsl:include href="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl"/>
     
     <!-- for base analys  -->
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern" match="ptn:Input__x3A__generate.xml">
@@ -135,6 +135,7 @@
                     
                     <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector" select="$ptn:Input__x3A__generate__x3A__pattern_Group">
                         <xsl:with-param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Simulator_tick__x3A__context" select="." tunnel="yes"/>
                     </xsl:apply-templates>
                         
                     
@@ -317,19 +318,27 @@
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Receptors" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_Group" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulator_tick__x3A__context" tunnel="yes" required="yes"/>
         <xsl:choose>
             <xsl:when test="preceding-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/number(@ptn:MFVec3f__x3A__distance__x3A__percent) &gt; number($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step)"/>
             <xsl:when test="number(@ptn:MFVec3f__x3A__distance__x3A__percent) &gt; number($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step)">
                 <xsl:copy-of select="."/>
                 
                 <!--<xsl:call-template name="ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray"/>-->
-                    
+                <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__context" select="."/>
                 <xsl:for-each select="$ptn:Input__x3A__generate__x3A__pattern_Group/descendant-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
                     <xsl:copy>
                         <xsl:copy-of select="@DEF"/>
-                        <xsl:copy-of select="@ptn:debug"/>
-                        <LineSet ptn:Coordinate_X="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X}" ptn:Coordinate_Y="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Y}" ptn:Coordinate_Z="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Z}"
+                        
+                        <xsl:attribute name="ptn:debug"><xsl:copy-of select="@ptn:debug"/> ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector</xsl:attribute>
+                        <xsl:attribute name="ptn:Simulator_tick__x3A__context" select="$ptn:Simulator_tick__x3A__context"/>
+                        <xsl:attribute name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position" select="count($ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__context/*/preceding-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__context)"/>
+                        <xsl:attribute name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step" select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step"/>
+                        <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X}" ptn:Coordinate_Y="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Y}" ptn:Coordinate_Z="{ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Z}"
                             ptn:Coordinate_X__x3A__remote="{ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_X}" ptn:Coordinate_Y__x3A__remote="{ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Y}" ptn:Coordinate_Z__x3A__remote="{ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Z}"
+                            ptn:Coordinate_X__x3A__vector="{$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__context/@ptn:Coordinate_X__x3A__vector}"
+                            ptn:Coordinate_Y__x3A__vector="{$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__context/@ptn:Coordinate_Y__x3A__vector}"
+                            ptn:Coordinate_Z__x3A__vector="{$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__context/@ptn:Coordinate_Z__x3A__vector}"
                             >
                             <xsl:variable name="x" select="- ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X + ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_X"/>
                             <xsl:variable name="y" select="- ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Y + ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Y"/>
@@ -340,6 +349,7 @@
                             <xsl:attribute name="xt" select="$xt"/>
                             <xsl:attribute name="yt" select="$yt"/>
                             <xsl:attribute name="zt" select="$zt"/>
+                            
                             <Coordinate ptn:debug="#342 todo">
                                     <xsl:attribute name="point">
                                         <xsl:call-template name="ptn:MFVec3f__x3A__sequence">
@@ -355,7 +365,7 @@
                                 <xsl:text> </xsl:text>
                             </Coordinate>
                             <xsl:text> </xsl:text>
-                        </LineSet>
+                        </ptn:keyValue__generate__basepoint__x3A__calculations>
                     </xsl:copy>
                 </xsl:for-each>
             </xsl:when>
@@ -579,18 +589,19 @@
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern_Group[ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector]">
         <xsl:param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" tunnel="yes" required="yes"/>
         
-        <xsl:comment>#544 [generate ][TOOODO] [n][<xsl:value-of select="name()"/>]  [ptn:debug=[<xsl:copy-of select="@ptn:debug"></xsl:copy-of>]]  [DEB]#C[@DEF[<xsl:value-of select="count(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[@DEF])"/>]]
-            [./n[<xsl:value-of select="*/name()"/>]]
-        </xsl:comment>
-        
-        <DEBUGG>
-            <xsl:copy-of select="."></xsl:copy-of>
-        </DEBUGG>
+        <xsl:comment>#544 [generate ][TOOODO] [n][<xsl:value-of select="name()"/>]  [ptn:debug=[<xsl:copy-of select="@ptn:debug"></xsl:copy-of>]]  [DEB]#C[@DEF[<xsl:value-of select="count(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[@DEF])"/>]]</xsl:comment>
         
         <xsl:for-each-group select="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" group-by="@DEF">
             <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator" select="."/>
         </xsl:for-each-group>
         
+        <xsl:for-each-group select="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" group-by="@DEF">
+            <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__Shape" select="."/>
+        </xsl:for-each-group>
+        
+        <xsl:for-each-group select="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" group-by="@DEF">
+            <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__ROUTE" select="."/>
+        </xsl:for-each-group>
         
         <!--<LineSet  ><!-\- vertexCount="{count(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector) + 1}" -\->
             <Coordinate DEF="A__{$ptn:Simulation__x3A__DEF__x3A__elements__x3A__group}_LineSet">
@@ -615,39 +626,12 @@
     
     
     
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator" match="*">
-        <xsl:comment>#999 unantended [Colorinterporat]  [n][<xsl:value-of select="name()"/>]</xsl:comment>
-    </xsl:template>
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[@DEF]">
-        <xsl:param name="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator__DEF" select="@DEF"/>
-        <xsl:param name="ptn:Simulator_tick__x3A__for-each-group" required="yes" tunnel="yes"/>
-        <xsl:comment>#999A  [Colorinterporat] [current-group] [n][<xsl:value-of select="name()"/>]</xsl:comment>
-        <CoordinateInterpolator DEF="{$ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator__DEF}_scene__x3A__LineSet_CoordinateInterpolator">
-            <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group/descendant-or-self::ptn:Simulation.analys.xml__x3A__analyze"></xsl:for-each>
-        </CoordinateInterpolator>
-    </xsl:template>
-    
-    
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
         <xsl:comment>#604 [SCENE][BYPASSED??] [n][<xsl:value-of select="name()"/>]</xsl:comment>
         <!--<xsl:apply-templates mode="#current"/>-->
     </xsl:template>
     
-    
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__Lineset" match="*"/>
-    
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene__Lineset" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[ptn:keyValue__generate__basepoint_1[@ptn:Coordinate_X][@ptn:Coordinate_Y][@ptn:Coordinate_Z]][ptn:keyValue__generate__basepoint_1[@ptn:Coordinate_X][@ptn:Coordinate_Y][@ptn:Coordinate_Z]]">
-                    <xsl:call-template name="ptn:MFVec3f__x3A__sequence">
-                        <xsl:with-param name="ptn:Coordinate_X" select="ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X" tunnel="yes"/>
-                        <xsl:with-param name="ptn:Coordinate_Y" select="ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Y" tunnel="yes"/>
-                        <xsl:with-param name="ptn:Coordinate_Z" select="ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Z" tunnel="yes"/>
-                        <xsl:with-param name="ptn:Coordinate_X__x3A__remote" select="ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_X" tunnel="yes"/>
-                        <xsl:with-param name="ptn:Coordinate_Y__x3A__remote" select="ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Y" tunnel="yes"/>
-                        <xsl:with-param name="ptn:Coordinate_Z__x3A__remote" select="ptn:keyValue__generate__basepoint_2/@ptn:Coordinate_Z" tunnel="yes"/>
-                        <xsl:with-param name="ptn:MFVec3f__x3A__sequence__x3A__last" select="count(following-sibling::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector) = 0"/>
-                    </xsl:call-template>
-    </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__X3A__scene" match="ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance">
         <xsl:param name="ptn:Simulation__x3A__DEF__x3A__elements__x3A__group" tunnel="yes" required="yes"/>
