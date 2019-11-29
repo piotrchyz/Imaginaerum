@@ -665,10 +665,8 @@
          <ptn:Input__x3A__generate__x3A__Shape>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y10_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -683,10 +681,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y11_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -701,10 +697,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y12_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -719,10 +713,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y13_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -737,10 +729,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y14_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -755,10 +745,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y15_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -773,10 +761,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y16_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -791,10 +777,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y17_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -809,10 +793,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y18_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -827,10 +809,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y19_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -845,10 +825,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y20_Z10"
-                                  ptn:Coordinate_X="50"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X10_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="50"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -863,10 +841,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y10_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -881,10 +857,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y11_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -899,10 +873,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y12_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -917,10 +889,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y13_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -935,10 +905,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y14_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -953,10 +921,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y15_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -971,10 +937,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y16_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -989,10 +953,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y17_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1007,10 +969,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y18_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1025,10 +985,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y19_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1043,10 +1001,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y20_Z10"
-                                  ptn:Coordinate_X="55"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="55"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1061,10 +1017,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y10_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1079,10 +1033,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y11_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1097,10 +1049,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y12_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1115,10 +1065,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y13_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1133,10 +1081,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y14_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1151,10 +1097,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y15_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1169,10 +1113,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y16_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1187,10 +1129,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y17_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1205,10 +1145,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y18_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1223,10 +1161,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y19_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1241,10 +1177,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y20_Z10"
-                                  ptn:Coordinate_X="60"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="60"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1259,10 +1193,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y10_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1277,10 +1209,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y11_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1295,10 +1225,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y12_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1313,10 +1241,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y13_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1331,10 +1257,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y14_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1349,10 +1273,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y15_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1367,10 +1289,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y16_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1385,10 +1305,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y17_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1403,10 +1321,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y18_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1421,10 +1337,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y19_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1439,10 +1353,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y20_Z10"
-                                  ptn:Coordinate_X="65"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="65"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1457,10 +1369,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y10_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1475,10 +1385,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y11_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1493,10 +1401,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y12_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1511,10 +1417,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y13_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1529,10 +1433,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y14_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1547,10 +1449,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y15_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1565,10 +1465,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y16_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1583,10 +1481,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y17_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1601,10 +1497,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y18_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1619,10 +1513,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y19_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1637,10 +1529,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y20_Z10"
-                                  ptn:Coordinate_X="70"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X14_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="70"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1655,10 +1545,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y10_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1673,10 +1561,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y11_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1691,10 +1577,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y12_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1709,10 +1593,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y13_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1727,10 +1609,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y14_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1745,10 +1625,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y15_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1763,10 +1641,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y16_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1781,10 +1657,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y17_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1799,10 +1673,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y18_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1817,10 +1689,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y19_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1835,10 +1705,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y20_Z10"
-                                  ptn:Coordinate_X="75"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X15_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="75"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1853,10 +1721,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y10_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1871,10 +1737,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y11_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1889,10 +1753,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y12_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1907,10 +1769,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y13_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1925,10 +1785,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y14_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1943,10 +1801,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y15_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1961,10 +1817,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y16_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1979,10 +1833,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y17_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -1997,10 +1849,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y18_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2015,10 +1865,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y19_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2033,10 +1881,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y20_Z10"
-                                  ptn:Coordinate_X="80"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X16_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="80"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2051,10 +1897,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y10_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2069,10 +1913,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y11_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2087,10 +1929,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y12_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2105,10 +1945,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y13_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2123,10 +1961,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y14_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2141,10 +1977,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y15_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2159,10 +1993,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y16_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2177,10 +2009,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y17_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2195,10 +2025,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y18_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2213,10 +2041,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y19_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2231,10 +2057,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y20_Z10"
-                                  ptn:Coordinate_X="85"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X17_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="85"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2249,10 +2073,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y10_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2267,10 +2089,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y11_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2285,10 +2105,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y12_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2303,10 +2121,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y13_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2321,10 +2137,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y14_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2339,10 +2153,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y15_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2357,10 +2169,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y16_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2375,10 +2185,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y17_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2393,10 +2201,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y18_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2411,10 +2217,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y19_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2429,10 +2233,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y20_Z10"
-                                  ptn:Coordinate_X="90"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X18_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="90"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2447,10 +2249,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y10_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2465,10 +2265,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y11_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2483,10 +2281,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y12_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2501,10 +2297,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y13_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2519,10 +2313,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y14_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2537,10 +2329,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y15_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2555,10 +2345,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y16_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2573,10 +2361,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y17_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2591,10 +2377,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y18_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2609,10 +2393,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y19_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2627,10 +2409,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y20_Z10"
-                                  ptn:Coordinate_X="95"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X19_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="95"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2645,10 +2425,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y10_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="50"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y10_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="50"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2663,10 +2441,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y11_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="55"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y11_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="55"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2681,10 +2457,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y12_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="60"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y12_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="60"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2699,10 +2473,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y13_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="65"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y13_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="65"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2717,10 +2489,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y14_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="70"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y14_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="70"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2735,10 +2505,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y15_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="75"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y15_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="75"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2753,10 +2521,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y16_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="80"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y16_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="80"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2771,10 +2537,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y17_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="85"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y17_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="85"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2789,10 +2553,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y18_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="90"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y18_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="90"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2807,10 +2569,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y19_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="95"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y19_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="95"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
@@ -2825,10 +2585,8 @@
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <Shape>
-                  <IndexedFaceSet ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y20_Z10"
-                                  ptn:Coordinate_X="100"
-                                  ptn:Coordinate_Y="100"
-                                  ptn:Coordinate_Z="10"
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X20_Y20_Z10"
                                   ptn:Coordinate_X__x3A__fieldOfView="100"
                                   ptn:Coordinate_Y__x3A__fieldOfView="100"
                                   ptn:Coordinate_Z__x3A__fieldOfView="10"
