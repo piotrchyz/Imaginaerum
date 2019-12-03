@@ -511,7 +511,7 @@
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="#123 here todo  1 to $ptn:Simulation_ticks ">
-               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40"
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="80"
                                                                                            ptn:Coordinate_Y__x3A__vector="40"
                                                                                            ptn:Coordinate_Z__x3A__vector="-5"
                                                                                            ptn:MFVec3f__x3A__distance__x3A__percent="0.5"/>
@@ -526,7 +526,7 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="80"
                                                                         ptn:Coordinate_Y__x3A__vector="40"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-55"
@@ -546,7 +546,7 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="-40"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="80"
                                                                         ptn:Coordinate_Y__x3A__vector="40"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-15"
@@ -566,7 +566,7 @@
                                                                         ptn:Coordinate_X__x3A__remote="10"
                                                                         ptn:Coordinate_Y__x3A__remote="-10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="80"
                                                                         ptn:Coordinate_Y__x3A__vector="40"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-40"
