@@ -17,10 +17,14 @@
     
     
     
-    <target name="default" depends="clean,generate_simulation_build__x3A__exec,analyze_simulation_x3d">
+    <target name="default" depends="clean,generate_simulation_build__x3A__exec,analyze_simulation_x3d,open">
         <echo> Running p5_test_neuron
             $p5_test_neuron.Config = ${p5_test_neuron.Config}
         </echo>
+    </target>
+    
+    <target  name="open" depends="param">
+        <exec command="open ${p5_test_neuron.Simulation.analyze_simulation.x3d}"></exec>
     </target>
     
     <target name="clean" depends="param">
