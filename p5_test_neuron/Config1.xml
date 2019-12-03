@@ -232,11 +232,11 @@
             <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
         </ptn:Receptor>-->
         
-        <ptn:Receptor__x3A__generate ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.9" ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-50">
+        <ptn:Receptor__x3A__generate ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.5" ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-50">
             <ptn:Label ptn:Label__x3A__generate__x3A__prefix="RG_"/>
-            <ptn:Coordinate_X ptn:Coordinate_X__x3A__generate__min="10" ptn:Coordinate_X__x3A__generate__max="20"  ptn:Coordinate_X__x3A__generate__separator="5"/><!-- ptn:Coordinate_X__x3A__generate__count="50" -->
-            <ptn:Coordinate_Y ptn:Coordinate_Y__x3A__generate__min="10" ptn:Coordinate_Y__x3A__generate__max="20"  ptn:Coordinate_Y__x3A__generate__separator="5"/><!-- ptn:Coordinate_Y__x3A__generate__count="50" -->
-            <ptn:Coordinate_Z ptn:Coordinate_Z__x3A__generate__min="10" ptn:Coordinate_Z__x3A__generate__max="60"  ptn:Coordinate_Z__x3A__generate__separator="5"/><!-- ptn:Coordinate_Z__x3A__generate__count="50" -->
+            <ptn:Coordinate_X ptn:Coordinate_X__x3A__generate__min="10" ptn:Coordinate_X__x3A__generate__max="15"  ptn:Coordinate_X__x3A__generate__separator="5"/><!-- ptn:Coordinate_X__x3A__generate__count="50" -->
+            <ptn:Coordinate_Y ptn:Coordinate_Y__x3A__generate__min="10" ptn:Coordinate_Y__x3A__generate__max="15"  ptn:Coordinate_Y__x3A__generate__separator="5"/><!-- ptn:Coordinate_Y__x3A__generate__count="50" -->
+            <ptn:Coordinate_Z ptn:Coordinate_Z__x3A__generate__min="10" ptn:Coordinate_Z__x3A__generate__max="10"  ptn:Coordinate_Z__x3A__generate__separator="5"/><!-- ptn:Coordinate_Z__x3A__generate__count="50" -->
             <ptn:Capacitance>0.5</ptn:Capacitance>
             <ptn:Resistance>100.0</ptn:Resistance>
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
@@ -260,7 +260,7 @@
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="4" ptn:Input_exec_Maximum_current__x3A__end="4"/>
         </ptn:Input__x3A__generate>-->
-        
+       <!-- 
         <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="5">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="1" ptn:Input_exec_time__x3A__end="20" ptn:Input_exec_time__x3A__pause="2"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="100" ptn:Input_exec_receptor__end="105"/>
@@ -298,7 +298,7 @@
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
-        </ptn:Input__x3A__generate>
+        </ptn:Input__x3A__generate>-->
         
         
         <ptn:Input__x3A__generate__x3A__pattern ptn:Input__x3A__generate__x3A__sequences="9">
@@ -525,6 +525,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>20</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>2</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>
