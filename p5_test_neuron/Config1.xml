@@ -326,7 +326,7 @@
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.5"/>
+                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="80" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.5"/>
                         <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>-->
                         <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="30" ptn:Coordinate_Y__x3A__vector="30" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.6"/>-->
                         <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
