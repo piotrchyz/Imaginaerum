@@ -12,13 +12,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="50"
                                ptn:Coordinate_Y__x3A__fieldOfView="50"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="56.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="47.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="56.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="47.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -26,13 +26,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="50"
                                ptn:Coordinate_Y__x3A__fieldOfView="55"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="62.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="57.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -40,13 +40,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="50"
                                ptn:Coordinate_Y__x3A__fieldOfView="60"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -54,13 +54,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="50"
                                ptn:Coordinate_Y__x3A__fieldOfView="65"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="73.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="77.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -68,13 +68,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="50"
                                ptn:Coordinate_Y__x3A__fieldOfView="70"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="78.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="87.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -82,12 +82,12 @@
                                ptn:Coordinate_X__x3A__fieldOfView="50"
                                ptn:Coordinate_Y__x3A__fieldOfView="75"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
@@ -96,13 +96,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="55"
                                ptn:Coordinate_Y__x3A__fieldOfView="50"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="62.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="57.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="56.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="47.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -110,13 +110,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="55"
                                ptn:Coordinate_Y__x3A__fieldOfView="55"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="62.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="57.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -124,13 +124,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="55"
                                ptn:Coordinate_Y__x3A__fieldOfView="60"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -138,13 +138,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="55"
                                ptn:Coordinate_Y__x3A__fieldOfView="65"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="73.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="77.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -152,13 +152,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="55"
                                ptn:Coordinate_Y__x3A__fieldOfView="70"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="78.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="87.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -166,12 +166,12 @@
                                ptn:Coordinate_X__x3A__fieldOfView="55"
                                ptn:Coordinate_Y__x3A__fieldOfView="75"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
@@ -180,13 +180,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="60"
                                ptn:Coordinate_Y__x3A__fieldOfView="50"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="56.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="47.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -194,13 +194,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="60"
                                ptn:Coordinate_Y__x3A__fieldOfView="55"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="62.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="57.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -208,13 +208,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="60"
                                ptn:Coordinate_Y__x3A__fieldOfView="60"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -222,13 +222,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="60"
                                ptn:Coordinate_Y__x3A__fieldOfView="65"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="73.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="77.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -236,13 +236,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="60"
                                ptn:Coordinate_Y__x3A__fieldOfView="70"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="78.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="87.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -250,12 +250,12 @@
                                ptn:Coordinate_X__x3A__fieldOfView="60"
                                ptn:Coordinate_Y__x3A__fieldOfView="75"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
@@ -264,13 +264,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="65"
                                ptn:Coordinate_Y__x3A__fieldOfView="50"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="73.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="56.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="47.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -278,13 +278,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="65"
                                ptn:Coordinate_Y__x3A__fieldOfView="55"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="62.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="57.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -292,13 +292,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="65"
                                ptn:Coordinate_Y__x3A__fieldOfView="60"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -306,13 +306,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="65"
                                ptn:Coordinate_Y__x3A__fieldOfView="65"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="73.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="77.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -320,13 +320,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="65"
                                ptn:Coordinate_Y__x3A__fieldOfView="70"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="78.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="87.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -334,12 +334,12 @@
                                ptn:Coordinate_X__x3A__fieldOfView="65"
                                ptn:Coordinate_Y__x3A__fieldOfView="75"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
@@ -348,13 +348,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="70"
                                ptn:Coordinate_Y__x3A__fieldOfView="50"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="78.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="87.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="56.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="47.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -362,13 +362,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="70"
                                ptn:Coordinate_Y__x3A__fieldOfView="55"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="62.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="57.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -376,13 +376,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="70"
                                ptn:Coordinate_Y__x3A__fieldOfView="60"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -390,13 +390,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="70"
                                ptn:Coordinate_Y__x3A__fieldOfView="65"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="73.25"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="77.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -404,13 +404,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="70"
                                ptn:Coordinate_Y__x3A__fieldOfView="70"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="78.75"/>
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="87.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -418,12 +418,12 @@
                                ptn:Coordinate_X__x3A__fieldOfView="70"
                                ptn:Coordinate_Y__x3A__fieldOfView="75"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
@@ -432,13 +432,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="75"
                                ptn:Coordinate_Y__x3A__fieldOfView="50"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="37.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="56.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="47.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -446,13 +446,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="75"
                                ptn:Coordinate_Y__x3A__fieldOfView="55"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="56.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="47.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="62.25"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="37.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="57.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -460,13 +460,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="75"
                                ptn:Coordinate_Y__x3A__fieldOfView="60"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="62.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="57.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="47.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="67.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -474,13 +474,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="75"
                                ptn:Coordinate_Y__x3A__fieldOfView="65"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="67.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="73.25"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="57.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="77.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -488,13 +488,13 @@
                                ptn:Coordinate_X__x3A__fieldOfView="75"
                                ptn:Coordinate_Y__x3A__fieldOfView="70"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="73.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="77.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="78.75"/>
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="67.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="87.5"/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
                <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
@@ -502,12 +502,12 @@
                                ptn:Coordinate_X__x3A__fieldOfView="75"
                                ptn:Coordinate_Y__x3A__fieldOfView="75"
                                ptn:Coordinate_Z__x3A__fieldOfView="10"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="78.75"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="87.5"
                                ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-50"
-                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
-                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="51.25"
+                               ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="#123 here todo  1 to $ptn:Simulation_ticks ">

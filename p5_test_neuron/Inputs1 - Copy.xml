@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:Inputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+            xmlns:ptn="p5_test_neuron"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys>
+      <xsl:for-each select="$ptn:Simulator_tick__x3A__for-each-group//ptn:Simulation.analys.xml__x3A__analyze"><!--ptn:Simulation_body__x3A__analyze-->
+         <xsl:choose>
+<xsl:when test="$current-group/ancestor-or-self::ptn:Simulation.analys.xml__x3A__analyze[@ptn:Simulation_body_tick = current()/@ptn:Simulation_body_tick]">
+               <ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position>
+                  <xsl:value-of select="position()"/>
+               </ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__current_position>
+            </xsl:when>
+            <xsl:otherwise>
+            </xsl:otherwise>
+         </xsl:choose>
+      </xsl:for-each>
+   </ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>1</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>1</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y11_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>2</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>1</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y11_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>9</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>9</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y12_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>10</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>9</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y12_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>16</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>16</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y13_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>17</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>16</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y13_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>24</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>24</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y14_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>25</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>24</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y14_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>31</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>31</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y15_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>32</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>31</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>RG__X18_Y15_Z10</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>1</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>1</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>2</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>1</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>5</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>5</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>6</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>5</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>9</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>9</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>10</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>9</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>14</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>15</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>14</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>18</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>18</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>19</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>18</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>22</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>22</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>23</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>22</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>26</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>26</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>27</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>26</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>31</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>31</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>32</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>31</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>35</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>35</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>36</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>35</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>30</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>30</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>J</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>31</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>30</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>J</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>31</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>31</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>32</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>31</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>32</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>32</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>33</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>32</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>33</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>33</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>34</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>33</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>34</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>34</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>35</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>34</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>36</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>36</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>37</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>36</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>37</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>37</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>38</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>37</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>38</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>38</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>39</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>38</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>39</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>39</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>40</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>39</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>70</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>70</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>71</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>70</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>71</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>71</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>72</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>71</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>72</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>72</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>73</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>72</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>73</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>73</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>74</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>73</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>74</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>74</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>75</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>74</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>76</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>76</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>77</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>76</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>77</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>77</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>78</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>77</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>78</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>78</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>79</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>78</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>79</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>79</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>80</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>79</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>I</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>100</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>100</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>101</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>100</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>101</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>101</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>102</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>101</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>102</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>102</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>103</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>102</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>103</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>103</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>104</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>103</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>D</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>104</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>104</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>105</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>104</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>E</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>106</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>106</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>107</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>106</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>F</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>107</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>107</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>108</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>107</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>G</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#106 optimized input 1 to 2 for $ptn:Simulator_tick=1">
+      <ptn:Input_exec_time>108</ptn:Input_exec_time>
+      <ptn:Input_exec_time__x3A__initial>108</ptn:Input_exec_time__x3A__initial>
+      <ptn:Input_exec_receptor>H</ptn:Input_exec_receptor>
+      <ptn:Input_exec_Time_constant>1</ptn:Input_exec_Time_constant>
+      <ptn:Input_exec_Maximum_current>2.5</ptn:Input_exec_Maximum_current>
+      <ptn:Input__x3A__Is_inhibitor>0</ptn:Input__x3A__Is_inhibitor>
+   </ptn:Input>
+   <ptn:Input ptn:debug="#97 optimized input 2 to 2 for 

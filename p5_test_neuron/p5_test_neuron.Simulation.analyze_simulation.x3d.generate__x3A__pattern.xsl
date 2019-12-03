@@ -268,29 +268,37 @@
                 <xsl:variable name="ptn:Coordinate_Y__x3A__fieldOfView" select="ptn:Coordinate_Y"/>
                 <xsl:variable name="ptn:Coordinate_Z__x3A__fieldOfView" select="ptn:Coordinate_Z"/>
                 <xsl:variable name="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less">
-                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray) &lt; current()/number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray)][1]">
+                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray) &lt; current()/number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray)]">
                         <xsl:sort select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray" data-type="number" order="descending"/>
-                        <xsl:value-of select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"/>
+                        <xsl:if test="position() = 1">
+                            <xsl:value-of select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"/>    
+                        </xsl:if>
                     </xsl:for-each>
                 </xsl:variable>
                 <xsl:variable name="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more">
-                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray) &gt; current()/number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray)][1]">
+                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray) &gt; current()/number(@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray)]">
                         <xsl:sort select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray" data-type="number" order="ascending"/>
-                        <xsl:value-of select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"></xsl:value-of>
+                        <xsl:if test="position() = 1">
+                            <xsl:value-of select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"/>    
+                        </xsl:if>
                     </xsl:for-each>
                 </xsl:variable>
                 <xsl:variable name="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context" select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"/>   
                 <xsl:variable name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less">
-                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray) &lt; current()/number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray)][1]">
+                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray) &lt; current()/number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray)]">
                         <xsl:sort select="@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray" data-type="number" order="descending"/>
-                        <xsl:value-of select="@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"></xsl:value-of>
+                        <xsl:if test="position() = 1">
+                            <xsl:value-of select="@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"/>    
+                        </xsl:if>
                     </xsl:for-each>
                 </xsl:variable>
                 <xsl:variable name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context" select="@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"/>
                 <xsl:variable name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more">
-                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray) &gt; current()/number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray)][1]">
+                    <xsl:for-each select="$ptn:Receptors/descendant-or-self::ptn:Receptor[number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray) &gt; current()/number(@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray)]">
                         <xsl:sort select="@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray" data-type="number" order="ascending"/>
-                        <xsl:value-of select="@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"></xsl:value-of>
+                        <xsl:if test="position() = 1">
+                            <xsl:value-of select="@ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"/>    
+                        </xsl:if>
                     </xsl:for-each>
                 </xsl:variable>
                 <xsl:variable name="ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context" select="@ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray"/>
