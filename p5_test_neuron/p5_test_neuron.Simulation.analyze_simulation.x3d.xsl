@@ -477,7 +477,10 @@
         <Viewpoint id="rows" position="-2.43383 1.07351 -5" orientation="0 -1 0 2.06609" description="camera"></Viewpoint>-->
         
         <Viewpoint
-            centerOfRotation="0 20 0" id="top"  fieldOfView='0.05' description="camera"><!-- position="-0.07427 0.95329 -2.79608" --><!-- orientation="-0.01451 0.99989 0.00319 3.15833" -->
+             id="top"  fieldOfView='0.05' description="camera"><!-- position="-0.07427 0.95329 -2.79608" --><!-- orientation="-0.01451 0.99989 0.00319 3.15833" -->
+            <xsl:attribute name="centerOfRotation"><!-- centerOfRotation="0 20 0" -->
+                <xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_X) div 2"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) div 2"/><xsl:text> </xsl:text><xsl:value-of select="0"/>
+            </xsl:attribute>
             <xsl:attribute name="position">
                 <xsl:text>55 55 2700</xsl:text>
                 <!--<xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_X) div 10"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) div 2"/><xsl:text> </xsl:text><xsl:value-of select="max(descendant-or-self::*/@ptn:Coordinate_Y) * 5"/>-->

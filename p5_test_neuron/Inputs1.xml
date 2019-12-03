@@ -511,7 +511,7 @@
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
             <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="#123 here todo  1 to $ptn:Simulation_ticks ">
-               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="80"
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="120"
                                                                                            ptn:Coordinate_Y__x3A__vector="40"
                                                                                            ptn:Coordinate_Z__x3A__vector="-5"
                                                                                            ptn:MFVec3f__x3A__distance__x3A__percent="0.5"/>
@@ -526,7 +526,7 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="80"
+                                                                        ptn:Coordinate_X__x3A__vector="120"
                                                                         ptn:Coordinate_Y__x3A__vector="40"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-55"
@@ -546,7 +546,7 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="-40"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="80"
+                                                                        ptn:Coordinate_X__x3A__vector="120"
                                                                         ptn:Coordinate_Y__x3A__vector="40"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-15"
@@ -566,7 +566,7 @@
                                                                         ptn:Coordinate_X__x3A__remote="10"
                                                                         ptn:Coordinate_Y__x3A__remote="-10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="80"
+                                                                        ptn:Coordinate_X__x3A__vector="120"
                                                                         ptn:Coordinate_Y__x3A__vector="40"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-40"
@@ -575,8 +575,8 @@
                      <Coordinate ptn:debug="#342 todo" point="-15 10 -30 10 -10 -30"/>
                   </ptn:keyValue__generate__basepoint__x3A__calculations>
                </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-40"
-                                                                                           ptn:Coordinate_Y__x3A__vector="40"
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-70"
+                                                                                           ptn:Coordinate_Y__x3A__vector="60"
                                                                                            ptn:Coordinate_Z__x3A__vector="-5"
                                                                                            ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
                <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A2"
@@ -590,8 +590,8 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-40"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="-70"
+                                                                        ptn:Coordinate_Y__x3A__vector="60"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-55"
                                                                         yt="-40"
@@ -610,8 +610,8 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="-40"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-40"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="-70"
+                                                                        ptn:Coordinate_Y__x3A__vector="60"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-15"
                                                                         yt="60"
@@ -630,8 +630,8 @@
                                                                         ptn:Coordinate_X__x3A__remote="10"
                                                                         ptn:Coordinate_Y__x3A__remote="-10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-40"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="-70"
+                                                                        ptn:Coordinate_Y__x3A__vector="60"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-40"
                                                                         yt="30"
@@ -639,8 +639,8 @@
                      <Coordinate ptn:debug="#342 todo" point="-15 10 -30 10 -10 -30"/>
                   </ptn:keyValue__generate__basepoint__x3A__calculations>
                </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-40"
-                                                                                           ptn:Coordinate_Y__x3A__vector="40"
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-70"
+                                                                                           ptn:Coordinate_Y__x3A__vector="60"
                                                                                            ptn:Coordinate_Z__x3A__vector="-5"
                                                                                            ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
                <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A2"
@@ -654,8 +654,8 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-40"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="-70"
+                                                                        ptn:Coordinate_Y__x3A__vector="60"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-55"
                                                                         yt="-40"
@@ -674,8 +674,8 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="-40"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-40"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="-70"
+                                                                        ptn:Coordinate_Y__x3A__vector="60"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-15"
                                                                         yt="60"
@@ -694,8 +694,8 @@
                                                                         ptn:Coordinate_X__x3A__remote="10"
                                                                         ptn:Coordinate_Y__x3A__remote="-10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-40"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
+                                                                        ptn:Coordinate_X__x3A__vector="-70"
+                                                                        ptn:Coordinate_Y__x3A__vector="60"
                                                                         ptn:Coordinate_Z__x3A__vector="-5"
                                                                         xt="-40"
                                                                         yt="30"
