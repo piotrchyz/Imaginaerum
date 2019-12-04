@@ -119,15 +119,13 @@
     <xsl:template mode="ptn:Simulated_potential.resting.vector" match="ptn:Simulated_potential[preceding-sibling::ptn:Capacitance][preceding-sibling::ptn:Resistance][preceding-sibling::ptn:Resting_potential]">
         <xsl:param name="ptn:Simulator_tick" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulated_potential.resting.vector__x3A__offset" select="1"/>
-        <xsl:message>#100 sim deb <xsl:value-of select="preceding-sibling::ptn:Label"/></xsl:message>
+        <xsl:message>#100RV sim deb <xsl:value-of select="preceding-sibling::ptn:Label"/></xsl:message>
         <!--<xsl:attribute name="ptn:Simulated_potential.resting.vector.1_div_membr" select="1 div preceding-sibling::ptn:Resistance"/>
         <xsl:attribute name="ptn:Simulated_potential.resting.vector.rest_pot" select=". - preceding-sibling::ptn:Resting_potential"/>-->
-        
                 <ptn:Simulated_potential.resting.vector>
                     <!--<xsl:attribute name="ptn:Simulated_potential" select="text() - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick"/>-->
                     <xsl:value-of select=" - (( 1 div preceding-sibling::ptn:Resistance ) * ( . - preceding-sibling::ptn:Resting_potential ) div preceding-sibling::ptn:Capacitance ) * $ptn:Simulator_tick * $ptn:Simulated_potential.resting.vector__x3A__offset"/>
                 </ptn:Simulated_potential.resting.vector>
-        
         <!-- b3==current - m4===resting -->
     </xsl:template>
     
@@ -192,8 +190,8 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulated_potential.input.vector"  match="ptn:Input__x3A__generate__x3A__pattern">
-        <xsl:message>#186 TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:message>
-        <xsl:comment>#186 TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:message>#186B TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:comment>#186B TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:comment>
         <xsl:copy-of select="."/>
     </xsl:template>
     
