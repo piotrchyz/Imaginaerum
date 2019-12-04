@@ -24,6 +24,7 @@
                 <xsl:with-param name="ptn:Simulation_body_time" select="@ptn:Simulation_body_time" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulator_tick" select="@ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_ticks" select="@ptn:Simulation_ticks" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_ticks__x3A__real" select="number(@ptn:Simulation_ticks) + 1" tunnel="yes"/>
                 <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
             </xsl:apply-templates>
         </ptn:Input__x3A__generate__x3A__pattern.xml>
@@ -111,7 +112,8 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern" match="ptn:Input__x3A__generate__x3A__pattern_Group">
-        <xsl:param name="ptn:Simulation_ticks" required="yes" tunnel="yes"/>
+        <!--<xsl:param name="ptn:Simulation_ticks" required="yes" tunnel="yes"/>-->
+        <xsl:param name="ptn:Simulation_ticks__x3A__real" required="yes" tunnel="yes"/>
         <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_Group" select="."/>
             
         
@@ -121,13 +123,13 @@
         <xsl:call-template name="ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray"/>
         <xsl:copy>
             <xsl:copy-of select="@*"/>
-            <xsl:attribute name="ptn:debug">#123 here todo  1 to $ptn:Simulation_ticks[<xsl:value-of select="$ptn:Simulation_ticks"/>] </xsl:attribute>
+            <xsl:attribute name="ptn:debug">#123 here todo  1 to $ptn:Simulation_ticks__x3A__real[<xsl:value-of select="$ptn:Simulation_ticks__x3A__real"/>] </xsl:attribute>
             <!--<xsl:apply-templates mode="#current">
                 <!-\-<xsl:with-param name="ptn:Simulator_tick__x3A__for-each-group" select="$ptn:Simulator_tick__x3A__for-each-group" tunnel="yes"/>-\->
             </xsl:apply-templates>-->
             
             
-                <xsl:for-each select=" 1 to $ptn:Simulation_ticks">
+                <xsl:for-each select=" 1 to xs:integer($ptn:Simulation_ticks__x3A__real)">
                     
                     <xsl:variable name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_all" select="last()"/>
                     <xsl:variable name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_active" select="last()"/>
@@ -331,10 +333,10 @@
         <xsl:param name="ptn:Simulator_tick__x3A__context" tunnel="yes" required="yes"/>
         <!--<xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector" select="."/>-->
         <xsl:choose>
-            <xsl:when test="preceding-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/number(@ptn:MFVec3f__x3A__distance__x3A__percent) &gt; number($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step)">
+            <xsl:when test="preceding-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/number(@ptn:MFVec3f__x3A__distance__x3A__percent) &gt;= number($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step)">
                 <!--<xsl:comment>#333A number(@ptn:MFVec3f__x3A__distance__x3A__percent)[<xsl:value-of select="number(@ptn:MFVec3f__x3A__distance__x3A__percent)"/>]  gt? $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step[<xsl:value-of select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step"/>]</xsl:comment>-->
             </xsl:when>
-            <xsl:when test="number(@ptn:MFVec3f__x3A__distance__x3A__percent) &gt; number($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step)">
+            <xsl:when test="number(@ptn:MFVec3f__x3A__distance__x3A__percent) &gt;= number($ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step)">
                 <xsl:comment>
                     #333B number(@ptn:MFVec3f__x3A__distance__x3A__percent)[<xsl:value-of select="number(@ptn:MFVec3f__x3A__distance__x3A__percent)"/>]  $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step[<xsl:value-of select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step"/>] gt? $ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step[<xsl:value-of select="$ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step"/>]
                     #C[$ptn:Input__x3A__generate__x3A__pattern_Group[<xsl:value-of select="count($ptn:Input__x3A__generate__x3A__pattern_Group)"/>]]

@@ -260,13 +260,13 @@
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="4" ptn:Input_exec_Maximum_current__x3A__end="4"/>
         </ptn:Input__x3A__generate>-->
-       <!-- 
-        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="5">
+        
+        <!--<ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="5">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="1" ptn:Input_exec_time__x3A__end="20" ptn:Input_exec_time__x3A__pause="2"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="100" ptn:Input_exec_receptor__end="105"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
-        </ptn:Input__x3A__generate>
+        </ptn:Input__x3A__generate>-->
         
         <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="1" ptn:Input_exec_time__x3A__end="20" ptn:Input_exec_time__x3A__pause="2"/>
@@ -275,25 +275,25 @@
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
         </ptn:Input__x3A__generate>
         
-        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
+        <!--<ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="7">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="30" ptn:Input_exec_time__x3A__end="40" ptn:Input_exec_time__x3A__pause="1"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="10" ptn:Input_exec_receptor__end="1"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
-        </ptn:Input__x3A__generate>
+        </ptn:Input__x3A__generate>-->
         
         
         
-        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
+        <!--<ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="8">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="70" ptn:Input_exec_time__x3A__end="80" ptn:Input_exec_time__x3A__pause="1"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
             <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="2.5" ptn:Input_exec_Maximum_current__x3A__end="2.5"/>
-        </ptn:Input__x3A__generate>
+        </ptn:Input__x3A__generate>-->
         
         
         
-        <ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
+        <!--<ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="9">
             <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="100" ptn:Input_exec_time__x3A__end="110" ptn:Input_exec_time__x3A__pause="1"/>
             <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="10"/>
             <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2" ptn:Input_exec_Time_constant__x3A__end="2"/>
@@ -326,11 +326,15 @@
                             <!-\-<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-\->
                             <!-\-<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-\->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>-->
-                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="120" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.5"/>
-                        <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>-->
+                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="120" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5"
+                            ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>
+                        <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5"
+                            ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>-->
                         <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="30" ptn:Coordinate_Y__x3A__vector="30" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.6"/>-->
-                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-100" ptn:Coordinate_Y__x3A__vector="100" ptn:Coordinate_Z__x3A__vector="0" ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
-                        <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="10" ptn:Coordinate_Y__x3A__vector="10" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="1"/>-->
+                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-100" ptn:Coordinate_Y__x3A__vector="100" ptn:Coordinate_Z__x3A__vector="-6" 
+                            ptn:MFVec3f__x3A__distance__x3A__percent="0.6"/>
+                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="10" ptn:Coordinate_Y__x3A__vector="10" ptn:Coordinate_Z__x3A__vector="-7" 
+                            ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
                         <ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector ptn:debug="modyfikacja 1 - jak tlumaczyc obiekt do receptorow" >
                             <ptn:Input_exec_timex__x3A__generate__x3A__pattern ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause="4"  ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min="1" ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max="5" />
                                  <ptn:Input_exec_receptor__x3A__generate__x3A__pattern/>
@@ -523,6 +527,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>4</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>10</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>

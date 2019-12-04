@@ -179,6 +179,14 @@
         </xsl:choose>
     </xsl:template>
     
+    
+    
+    
+    <xsl:template mode="ptn:Simulated_potential.input.vector" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray">
+        <xsl:comment>#56-44 TODO n/[<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:message terminate="no">#56-44 TODO n/[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulated_potential.input.vector" match="*">
         <xsl:message terminate="yes">#56-56 unantended n/[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>

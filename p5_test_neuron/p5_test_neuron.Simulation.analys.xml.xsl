@@ -15,7 +15,7 @@
    <xsl:include href="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl"/>
    
    
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply.xml[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]"><!-- ptn:Config -->
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match.xml[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]"><!-- ptn:Config -->
         <xsl:message>#13 todo ptn:Config</xsl:message>
         <ptn:Simulation.analys.xml
             xsi:schemaLocation="p5_test_neuron file:{$ptn:xsd}"
@@ -62,11 +62,52 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern">
-        <xsl:message>#666 [TODO]  unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern|ptn:Group__x3A__generate__x3A__pattern_Group|ptn:Input__x3A__generate__x3A__Shape">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray|IndexedFaceSet">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern_Group|ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector|ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:keyValue__generate__basepoint__x3A__calculations|Coordinate">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector">
+        <xsl:comment>#85 [byppased][n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    
+    
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Group__x3A__generate__x3A__pattern_Groupxxx">
+        <xsl:message terminate="yes">#666 [TODO]  unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
         <xsl:comment>#666 [TODO]  unantended/n[<xsl:value-of select="name()"/>]</xsl:comment>
         <xsl:copy-of select="."></xsl:copy-of>
     </xsl:template>
+    
+    
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulation.model.apply.xml[@ptn:Simulator_tick][@ptn:Simulation_body_time]">
         <xsl:message>#14 todo ptn:Config</xsl:message>
@@ -136,8 +177,20 @@
             <xsl:copy copy-namespaces="yes" >
                 <xsl:copy-of select="ancestor-or-self::*/namespace::*"></xsl:copy-of>
                 <xsl:apply-templates mode="#current"/>
+                <xsl:apply-templates mode="ptn:Simulation.analys.xml__x3A__Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" select="descendant-or-self::ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray"/>
             </xsl:copy>
         </xsl:result-document>
+    </xsl:template>
+    
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml__x3A__Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray">
+                    <xsl:copy-of select="."/>
+        </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml__x3A__Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" match="*">
+        <xsl:message terminate="yes">#187 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
     
@@ -154,8 +207,6 @@
                 </xsl:call-template>
             </xsl:otherwise>
         </xsl:choose>
-        
-        
     </xsl:template>
     
     
@@ -406,6 +457,9 @@
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag|ptn:Stress__x3A__flag|ptn:Attract__x3A__flag">
         <xsl:comment>#107 todo implement n/[<xsl:value-of select="name()"/>]</xsl:comment>
     </xsl:template>
+    
+    
+    
     
     
     

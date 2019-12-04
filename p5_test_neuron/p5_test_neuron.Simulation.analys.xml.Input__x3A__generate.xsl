@@ -24,6 +24,7 @@
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
                 <xsl:with-param name="ptn:Simulation_ticks" select="ptn:Simulation/ptn:Simulation_ticks" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_ticks__x3A__real" select="ptn:Simulation/ptn:Simulation_ticks + 1" tunnel="yes"/>
                 <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
             </xsl:apply-templates>
         </ptn:Input__x3A__generate.xml>
@@ -50,11 +51,12 @@
     <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector">
         <xsl:param name="ptn:Simulator_tick" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulation_ticks" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation_ticks__x3A__real" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_Group" tunnel="yes" required="yes"/>
         <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector" select="."/>
         <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.prev" select="preceding-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector[1]"/>
         <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.next" select="following-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector[1]"/>
-        <xsl:variable name="ptn:Simulator_tick__count__step" select="1 div $ptn:Simulation_ticks"/>
+        <xsl:variable name="ptn:Simulator_tick__count__step" select="1 div $ptn:Simulation_ticks__x3A__real"/>
         <xsl:variable name="ptn:Simulator_tick__count__step_delta" >
             <xsl:choose>
                 <xsl:when test="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.prev/@ptn:MFVec3f__x3A__distance__x3A__percent">
