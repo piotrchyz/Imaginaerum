@@ -188,7 +188,7 @@
     <xsl:template mode="ptn:Simulation.analys.xml__x3A__Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray[@ptn:Simulation_tick__x3A__context][@ptn:Label__x3A__fieldOfView__x3A__ray]">
         <xsl:param name="ptn:Receptors" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Input_exec_Time_constant__x3A__default" select="1"/>
-        <xsl:param name="ptn:Input_exec_Maximum_current__x3A__default" select="2"/>
+        <xsl:param name="ptn:Input_exec_Maximum_current__x3A__default" select="2.1111"/>
         <ptn:Input ptn:debug="#190 append ray [TODO[$ptn:Input_exec_Time_constant__x3A__default][$ptn:Input_exec_Maximum_current__x3A__default]]">
             <ptn:Input_exec_time><xsl:value-of select="@ptn:Simulation_tick__x3A__context"/></ptn:Input_exec_time>
             <ptn:Input_exec_receptor><xsl:value-of select="@ptn:Label__x3A__fieldOfView__x3A__ray"/></ptn:Input_exec_receptor>
