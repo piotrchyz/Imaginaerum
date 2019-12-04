@@ -3,7 +3,8 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"><!--#666 [TODO]  unantended/n[ptn:Input__x3A__generate__x3A__pattern]-->
-   <ptn:Input__x3A__generate__x3A__pattern ptn:Input__x3A__generate__x3A__sequences="9">
+   <ptn:Input__x3A__generate__x3A__pattern ptn:debug="#78 applying mode ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate"
+                                           ptn:Input__x3A__generate__x3A__sequences="9">
       <ptn:Group__x3A__generate__x3A__pattern_Group ptn:Simulation__x3A__DEF__x3A__elements__x3A__group="Input_Attract">
          <ptn:Input__x3A__generate__x3A__Shape>
             <ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
@@ -510,13 +511,14 @@
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="77.5"
                                ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more=""/>
             </ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray>
-            <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="#123 here todo  1 to $ptn:Simulation_ticks ">
-               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="120"
-                                                                                           ptn:Coordinate_Y__x3A__vector="40"
-                                                                                           ptn:Coordinate_Z__x3A__vector="-5"
+            <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="#123 here todo  1 to $ptn:Simulation_ticks[4] ">
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Simulator_tick__count__step_delta_count="2"
+                                                                                           ptn:Coordinate_X__x3A__vector="60"
+                                                                                           ptn:Coordinate_Y__x3A__vector="20"
+                                                                                           ptn:Coordinate_Z__x3A__vector="-2.5"
                                                                                            ptn:MFVec3f__x3A__distance__x3A__percent="0.5"/>
                <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A2"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
+                                                                            ptn:debug=" ; [@perc[0.5]] #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
                                                                             ptn:Simulator_tick__x3A__context="1"
                                                                             ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
                                                                             ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.25">
@@ -526,125 +528,49 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="120"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
+                                                                        ptn:Coordinate_X__x3A__vector="60"
+                                                                        ptn:Coordinate_Y__x3A__vector="20"
+                                                                        ptn:Coordinate_Z__x3A__vector="-2.5"
+                                                                        ptn:MFVec3f__x3A__distance__x3A__percent="0.5"
                                                                         xt="-55"
                                                                         yt="-40"
                                                                         zt="-30">
                      <Coordinate ptn:debug="#342 todo" point="-35 -15 -30 -15 10 -30"/>
                   </ptn:keyValue__generate__basepoint__x3A__calculations>
                </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
-                                                                            ptn:Simulator_tick__x3A__context="1"
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Simulator_tick__count__step_delta_count="2"
+                                                                                           ptn:Coordinate_X__x3A__vector="-50"
+                                                                                           ptn:Coordinate_Y__x3A__vector="50"
+                                                                                           ptn:Coordinate_Z__x3A__vector="0"
+                                                                                           ptn:MFVec3f__x3A__distance__x3A__percent="0.75"/>
+               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A2"
+                                                                            ptn:debug=" ; [@perc[0.75]] #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
+                                                                            ptn:Simulator_tick__x3A__context="2"
                                                                             ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
-                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.25">
-                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-15"
-                                                                        ptn:Coordinate_Y="10"
+                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.5">
+                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-35"
+                                                                        ptn:Coordinate_Y="-15"
                                                                         ptn:Coordinate_Z="-30"
                                                                         ptn:Coordinate_X__x3A__remote="-15"
-                                                                        ptn:Coordinate_Y__x3A__remote="-40"
+                                                                        ptn:Coordinate_Y__x3A__remote="10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="120"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
-                                                                        xt="-15"
-                                                                        yt="60"
+                                                                        ptn:Coordinate_X__x3A__vector="-50"
+                                                                        ptn:Coordinate_Y__x3A__vector="50"
+                                                                        ptn:Coordinate_Z__x3A__vector="0"
+                                                                        ptn:MFVec3f__x3A__distance__x3A__percent="0.75"
+                                                                        xt="-55"
+                                                                        yt="-40"
                                                                         zt="-30">
-                     <Coordinate ptn:debug="#342 todo" point="-15 10 -30 -15 -40 -30"/>
+                     <Coordinate ptn:debug="#342 todo" point="-35 -15 -30 -15 10 -30"/>
                   </ptn:keyValue__generate__basepoint__x3A__calculations>
                </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A3"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
-                                                                            ptn:Simulator_tick__x3A__context="1"
-                                                                            ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
-                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.25">
-                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-15"
-                                                                        ptn:Coordinate_Y="10"
-                                                                        ptn:Coordinate_Z="-30"
-                                                                        ptn:Coordinate_X__x3A__remote="10"
-                                                                        ptn:Coordinate_Y__x3A__remote="-10"
-                                                                        ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="120"
-                                                                        ptn:Coordinate_Y__x3A__vector="40"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
-                                                                        xt="-40"
-                                                                        yt="30"
-                                                                        zt="-30">
-                     <Coordinate ptn:debug="#342 todo" point="-15 10 -30 10 -10 -30"/>
-                  </ptn:keyValue__generate__basepoint__x3A__calculations>
-               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-70"
-                                                                                           ptn:Coordinate_Y__x3A__vector="60"
-                                                                                           ptn:Coordinate_Z__x3A__vector="-5"
+               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Simulator_tick__count__step_delta_count="2"
+                                                                                           ptn:Coordinate_X__x3A__vector="-50"
+                                                                                           ptn:Coordinate_Y__x3A__vector="50"
+                                                                                           ptn:Coordinate_Z__x3A__vector="0"
                                                                                            ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
                <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A2"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
-                                                                            ptn:Simulator_tick__x3A__context="2"
-                                                                            ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
-                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.5">
-                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-35"
-                                                                        ptn:Coordinate_Y="-15"
-                                                                        ptn:Coordinate_Z="-30"
-                                                                        ptn:Coordinate_X__x3A__remote="-15"
-                                                                        ptn:Coordinate_Y__x3A__remote="10"
-                                                                        ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-70"
-                                                                        ptn:Coordinate_Y__x3A__vector="60"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
-                                                                        xt="-55"
-                                                                        yt="-40"
-                                                                        zt="-30">
-                     <Coordinate ptn:debug="#342 todo" point="-35 -15 -30 -15 10 -30"/>
-                  </ptn:keyValue__generate__basepoint__x3A__calculations>
-               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
-                                                                            ptn:Simulator_tick__x3A__context="2"
-                                                                            ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
-                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.5">
-                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-15"
-                                                                        ptn:Coordinate_Y="10"
-                                                                        ptn:Coordinate_Z="-30"
-                                                                        ptn:Coordinate_X__x3A__remote="-15"
-                                                                        ptn:Coordinate_Y__x3A__remote="-40"
-                                                                        ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-70"
-                                                                        ptn:Coordinate_Y__x3A__vector="60"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
-                                                                        xt="-15"
-                                                                        yt="60"
-                                                                        zt="-30">
-                     <Coordinate ptn:debug="#342 todo" point="-15 10 -30 -15 -40 -30"/>
-                  </ptn:keyValue__generate__basepoint__x3A__calculations>
-               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A3"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
-                                                                            ptn:Simulator_tick__x3A__context="2"
-                                                                            ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
-                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.5">
-                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-15"
-                                                                        ptn:Coordinate_Y="10"
-                                                                        ptn:Coordinate_Z="-30"
-                                                                        ptn:Coordinate_X__x3A__remote="10"
-                                                                        ptn:Coordinate_Y__x3A__remote="-10"
-                                                                        ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-70"
-                                                                        ptn:Coordinate_Y__x3A__vector="60"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
-                                                                        xt="-40"
-                                                                        yt="30"
-                                                                        zt="-30">
-                     <Coordinate ptn:debug="#342 todo" point="-15 10 -30 10 -10 -30"/>
-                  </ptn:keyValue__generate__basepoint__x3A__calculations>
-               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-70"
-                                                                                           ptn:Coordinate_Y__x3A__vector="60"
-                                                                                           ptn:Coordinate_Z__x3A__vector="-5"
-                                                                                           ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
-               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A2"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
+                                                                            ptn:debug=" ; [@perc[1]] #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
                                                                             ptn:Simulator_tick__x3A__context="3"
                                                                             ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
                                                                             ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.75">
@@ -654,53 +580,14 @@
                                                                         ptn:Coordinate_X__x3A__remote="-15"
                                                                         ptn:Coordinate_Y__x3A__remote="10"
                                                                         ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-70"
-                                                                        ptn:Coordinate_Y__x3A__vector="60"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
+                                                                        ptn:Coordinate_X__x3A__vector="-50"
+                                                                        ptn:Coordinate_Y__x3A__vector="50"
+                                                                        ptn:Coordinate_Z__x3A__vector="0"
+                                                                        ptn:MFVec3f__x3A__distance__x3A__percent="1"
                                                                         xt="-55"
                                                                         yt="-40"
                                                                         zt="-30">
                      <Coordinate ptn:debug="#342 todo" point="-35 -15 -30 -15 10 -30"/>
-                  </ptn:keyValue__generate__basepoint__x3A__calculations>
-               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
-                                                                            ptn:Simulator_tick__x3A__context="3"
-                                                                            ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
-                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.75">
-                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-15"
-                                                                        ptn:Coordinate_Y="10"
-                                                                        ptn:Coordinate_Z="-30"
-                                                                        ptn:Coordinate_X__x3A__remote="-15"
-                                                                        ptn:Coordinate_Y__x3A__remote="-40"
-                                                                        ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-70"
-                                                                        ptn:Coordinate_Y__x3A__vector="60"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
-                                                                        xt="-15"
-                                                                        yt="60"
-                                                                        zt="-30">
-                     <Coordinate ptn:debug="#342 todo" point="-15 10 -30 -15 -40 -30"/>
-                  </ptn:keyValue__generate__basepoint__x3A__calculations>
-               </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-               <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A3"
-                                                                            ptn:debug=" ; #344 context for ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"
-                                                                            ptn:Simulator_tick__x3A__context="3"
-                                                                            ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__position="0"
-                                                                            ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step="0.75">
-                  <ptn:keyValue__generate__basepoint__x3A__calculations ptn:Coordinate_X="-15"
-                                                                        ptn:Coordinate_Y="10"
-                                                                        ptn:Coordinate_Z="-30"
-                                                                        ptn:Coordinate_X__x3A__remote="10"
-                                                                        ptn:Coordinate_Y__x3A__remote="-10"
-                                                                        ptn:Coordinate_Z__x3A__remote="-30"
-                                                                        ptn:Coordinate_X__x3A__vector="-70"
-                                                                        ptn:Coordinate_Y__x3A__vector="60"
-                                                                        ptn:Coordinate_Z__x3A__vector="-5"
-                                                                        xt="-40"
-                                                                        yt="30"
-                                                                        zt="-30">
-                     <Coordinate ptn:debug="#342 todo" point="-15 10 -30 10 -10 -30"/>
                   </ptn:keyValue__generate__basepoint__x3A__calculations>
                </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
             </ptn:Input__x3A__generate__x3A__pattern_Group>

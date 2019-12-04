@@ -43,7 +43,7 @@
         
         
         
-        <CoordinateInterpolator ptn:debug="{$ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator__DEF}_scene__x3A__LineSet_CoordinateInterpolator">
+        <CoordinateInterpolator ptn:debug="#46 {$ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator__DEF}_scene__x3A__LineSet_CoordinateInterpolator">
             <xsl:attribute name="DEF">
                 <xsl:call-template name="ptn:Simulation__x3A__DEF_Interpolator">
                     <xsl:with-param name="ptn:Label__x3A__analyze" select="$ptn:Input__x3A__generate__x3A__pattern__X3A__scene__x3A__LineSet__CoordinateInterpolator__DEF" tunnel="yes"/>

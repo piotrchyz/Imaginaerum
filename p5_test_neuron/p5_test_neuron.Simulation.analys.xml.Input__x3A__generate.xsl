@@ -23,6 +23,7 @@
             <xsl:attribute name="ptn:Simulation_body_time__x3A__last" select="0"/>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_ticks" select="ptn:Simulation/ptn:Simulation_ticks" tunnel="yes"/>
                 <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
             </xsl:apply-templates>
         </ptn:Input__x3A__generate.xml>
@@ -34,6 +35,57 @@
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate__x3A__pattern_Group">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#42 + balancing Vectors  ; <xsl:value-of select="@ptn:debug"/></xsl:attribute>
+            <xsl:apply-templates mode="#current">
+                <xsl:with-param name="ptn:Input__x3A__generate__x3A__pattern_Group" select="." tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector">
+        <xsl:param name="ptn:Simulator_tick" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulation_ticks" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_Group" tunnel="yes" required="yes"/>
+        <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector" select="."/>
+        <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.prev" select="preceding-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector[1]"/>
+        <xsl:variable name="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.next" select="following-sibling::ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector[1]"/>
+        <xsl:variable name="ptn:Simulator_tick__count__step" select="1 div $ptn:Simulation_ticks"/>
+        <xsl:variable name="ptn:Simulator_tick__count__step_delta" >
+            <xsl:choose>
+                <xsl:when test="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.prev/@ptn:MFVec3f__x3A__distance__x3A__percent">
+                    <xsl:value-of select="@ptn:MFVec3f__x3A__distance__x3A__percent - $ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.prev/@ptn:MFVec3f__x3A__distance__x3A__percent"/>
+                </xsl:when>
+                <xsl:otherwise><xsl:value-of select="@ptn:MFVec3f__x3A__distance__x3A__percent"/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="ptn:Simulator_tick__count__step_delta_next" select="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.next/@ptn:MFVec3f__x3A__distance__x3A__percent -@ptn:MFVec3f__x3A__distance__x3A__percent "/>
+        
+        <xsl:choose>
+            <xsl:when test="$ptn:Simulator_tick__count__step_delta div $ptn:Simulator_tick__count__step &gt;= 2">
+                <xsl:for-each select="1 to xs:integer(round($ptn:Simulator_tick__count__step_delta div $ptn:Simulator_tick__count__step))">
+                    <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector   ptn:Simulator_tick__count__step_delta_count="{last()}"   ><!-- ptn:Simulator_tick__count__step_delta="{$ptn:Simulator_tick__count__step_delta}" --><!-- ORYG="{$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/@ptn:MFVec3f__x3A__distance__x3A__percent}" --><!-- Simulator_tick__count__step_delta.pos="{.}" --><!-- ptn:Simulator_tick__count__step_delta_next="{$ptn:Simulator_tick__count__step_delta_next}" -->
+                        <xsl:copy-of select="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/@*"/>
+                        <xsl:attribute name="ptn:MFVec3f__x3A__distance__x3A__percent" select="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/@ptn:MFVec3f__x3A__distance__x3A__percent - $ptn:Simulator_tick__count__step_delta +  $ptn:Simulator_tick__count__step * xs:double(.)"/>
+                        <xsl:attribute name="ptn:Coordinate_X__x3A__vector" select="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/@ptn:Coordinate_X__x3A__vector div xs:double(last())"/>
+                        <xsl:attribute name="ptn:Coordinate_Y__x3A__vector" select="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/@ptn:Coordinate_Y__x3A__vector div xs:double(last())"/>
+                        <xsl:attribute name="ptn:Coordinate_Z__x3A__vector" select="$ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector/@ptn:Coordinate_Z__x3A__vector div xs:double(last())"/>
+                    </ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector>
+                </xsl:for-each>
+            </xsl:when>
+            <xsl:otherwise>
+                <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector >
+                    <xsl:copy-of select="@*"/>
+                </ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector>
+            </xsl:otherwise>
+        </xsl:choose>
+        
+    </xsl:template>
+    
     
     
     <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate">

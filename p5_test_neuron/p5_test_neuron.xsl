@@ -69,9 +69,9 @@
                 <!-- Receptor__x3A__generate -->
                 
                 <xslt  
+                    out="{$ptn:Simulation.dir}/Receptor__x3A__generate.0.xml"
                     style="{$ptn:xsl}"
-                    in="{$ptn:Config}"
-                    out="{$ptn:Simulation.dir}/Receptor__x3A__generate.0.xml" 
+                    in="{$ptn:Config}" 
                     force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
@@ -112,9 +112,9 @@
                 <!-- ptn:Input__x3A__generate -->
                 
                 <xslt  
+                    out="{$ptn:Simulation.dir}/Input__x3A__generate.0.xml"
                     style="{$ptn:xsl}"
-                    in="{$ptn:Simulation.dir}/Receptor__x3A__generate.0.xml"
-                    out="{$ptn:Simulation.dir}/Input__x3A__generate.0.xml" 
+                    in="{$ptn:Simulation.dir}/Receptor__x3A__generate.0.xml" 
                     force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
@@ -156,9 +156,9 @@
                 
                 
                 <xslt  
+                    out="{$ptn:Simulation.dir}/Input__x3A__generate__x3A__pattern.0.xml"
                     style="{$ptn:xsl}"
-                    in="{$ptn:Simulation.dir}/Input__x3A__generate.0.xml"
-                    out="{$ptn:Simulation.dir}/Input__x3A__generate__x3A__pattern.0.xml" 
+                    in="{$ptn:Simulation.dir}/Input__x3A__generate.0.xml" 
                     force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
@@ -198,8 +198,50 @@
                 
                 
                 <xslt  
+                    out="{$ptn:Simulation.dir}/Input__x3A__generate__x3A__pattern__x3A__apply.0.xml"
                     style="{$ptn:xsl}"
                     in="{$ptn:Simulation.dir}/Input__x3A__generate__x3A__pattern.0.xml"
+                    force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
+                    <factory name="net.sf.saxon.TransformerFactoryImpl">
+                        <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                        <attribute name="http://saxon.sf.net/feature/initialMode">
+                            <xsl:attribute name="value">{p5_test_neuron}Input__x3A__generate__x3A__pattern__x3A__apply</xsl:attribute>
+                        </attribute>
+                        <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+                        <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+                    </factory>
+                    
+                    <param  expression="{$ptn:Config}">
+                        <xsl:attribute name="name">{p5_test_neuron}Config</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:Inputs}">
+                        <xsl:attribute name="name">{p5_test_neuron}Inputs</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:xsl}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsl</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:xsd}">
+                        <xsl:attribute name="name">{p5_test_neuron}xsd</xsl:attribute>
+                    </param>
+                    
+                    <param  expression="{$ptn:Simulation_ticks}">
+                        <xsl:attribute name="name">{p5_test_neuron}Simulation_ticks</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:Simulation.dir}">
+                        <xsl:attribute name="name">{p5_test_neuron}Simulation.dir</xsl:attribute>
+                    </param>
+                    <param  expression="{$ptn:basedir}">
+                        <xsl:attribute name="name">{p5_test_neuron}basedir</xsl:attribute>
+                    </param>
+                    <param name="basedir" expression="{$basedir}"/>
+                    
+                    <classpath location="/opt/local/share/java/saxon9he.jar"/>
+                </xslt>
+                
+                
+                <xslt  
+                    style="{$ptn:xsl}"
+                    in="{$ptn:Simulation.dir}/Input__x3A__generate__x3A__pattern__x3A__apply.0.xml"
                     out="{$ptn:Simulation.dir}/Simulation.analys.xml.0.xml" 
                     force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
@@ -320,9 +362,9 @@
                 </xslt>
                 
                 <xslt  
+                    out="{$ptn:Simulation.dir}/Simulation.model.stats.xml.0.xml"
                     style="{$ptn:xsl}"
-                    in="{$ptn:Simulation.dir}/Simulation.model.xml.0.xml"
-                    out="{$ptn:Simulation.dir}/Simulation.model.stats.xml.0.xml" 
+                    in="{$ptn:Simulation.dir}/Simulation.model.xml.0.xml" 
                     force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
@@ -360,9 +402,9 @@
                 </xslt>
                 
                 <xslt  
+                    out="{$ptn:Simulation.dir}/Simulation.model.validate.xml.0.xml"
                     style="{$ptn:xsl}"
-                    in="{$ptn:Simulation.dir}/Simulation.model.stats.xml.0.xml"
-                    out="{$ptn:Simulation.dir}/Simulation.model.validate.xml.0.xml" 
+                    in="{$ptn:Simulation.dir}/Simulation.model.stats.xml.0.xml" 
                     force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
@@ -400,9 +442,9 @@
                 </xslt>
                 
                 <xslt  
+                    out="{$ptn:Simulation.dir}/Simulation.model.apply.xml.0.xml"
                     style="{$ptn:xsl}"
-                    in="{$ptn:Simulation.dir}/Simulation.model.validate.xml.0.xml"
-                    out="{$ptn:Simulation.dir}/Simulation.model.apply.xml.0.xml" 
+                    in="{$ptn:Simulation.dir}/Simulation.model.validate.xml.0.xml" 
                     force="false"><!-- in="{$ptn:Simulation.dir}/Simulation.analys.xml.{. - 1}.xml" --><!-- out="{$ptn:Simulation.dir}/Simulation.analys.xml.{.}.xml" -->
                     <factory name="net.sf.saxon.TransformerFactoryImpl">
                         <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>

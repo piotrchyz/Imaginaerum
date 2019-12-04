@@ -24,4 +24,5 @@
         </xs:complexContent>
     </xs:complexType>
     <xs:element name="Simulation.analys.xml" type="ptn:Simulation.analys.xml"/>
+    <xs:attribute name="Simulation_ticks" type="ptn:Simulation_ticks"/>
 </xs:schema>

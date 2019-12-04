@@ -17,6 +17,7 @@
     <xsl:template match="ptn:Config" mode="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate">
         <ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate.xml>
             <xsl:copy-of select="@*"/>
+            <xsl:attribute name="xsi:schemaLocation">p5_test_neuron file:<xsl:value-of select="$ptn:xsd"/></xsl:attribute>
             <xsl:apply-templates mode="#current"/>
         </ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate.xml>
     </xsl:template>

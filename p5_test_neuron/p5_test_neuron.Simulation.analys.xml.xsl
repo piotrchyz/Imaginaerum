@@ -15,7 +15,7 @@
    <xsl:include href="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl"/>
    
    
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern.xml[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]"><!-- ptn:Config -->
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply.xml[ptn:Simulation[ptn:Simulator_tick]][ptn:Inputs][ptn:Defaults[ptn:Attract_min]]"><!-- ptn:Config -->
         <xsl:message>#13 todo ptn:Config</xsl:message>
         <ptn:Simulation.analys.xml
             xsi:schemaLocation="p5_test_neuron file:{$ptn:xsd}"
