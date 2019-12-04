@@ -257,6 +257,7 @@
         <xsl:param name="triY2"/>
         <xsl:param name="triX3"/>
         <xsl:param name="triY3"/>
+        <xsl:message>#232 ptn:ray_triangle_intersection_test=[$vecX1[<xsl:value-of select="$vecX1"/>]]</xsl:message>
         <ptn:ray_triangle_intersection_test>
         <!--side_1_test = line_intersection_test(vecX1, vecY1, vecX2, vecY2, triX1, triY1, triX2, triY2)-->
         <xsl:variable name="side_1_test" select="ptn:ray_line_intersection_test($vecX1, $vecY1, $vecX2, $vecY2, $triX1, $triY1, $triX2, $triY2)"/>
@@ -325,7 +326,7 @@
         <xsl:param name="ptn:Coordinate_Z__x3A__remote__generated"  tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulation_tick__x3A__context"  tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Simulation_tick__x3A__context__step" tunnel="yes" required="yes"/>
-        
+        <xsl:message>#238 [DEBUG][@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less[<xsl:value-of select="@ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less"/>]]</xsl:message>
         <xsl:choose>
             <xsl:when test="$ptn:Coordinate_Z__generated = $ptn:Coordinate_Z__x3A__remote__generated"></xsl:when>
             <xsl:otherwise>
