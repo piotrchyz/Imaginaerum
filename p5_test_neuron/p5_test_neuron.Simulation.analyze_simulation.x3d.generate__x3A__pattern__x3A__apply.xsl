@@ -216,7 +216,7 @@
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector" match="@ptn:Coordinate_X">
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" required="yes" tunnel="yes"/>
         <xsl:attribute name="{name()}__generated" select=". + sum($ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_X__x3A__vector)"/>
-        <!--<xsl:attribute name="{name()}__generated" select=". + sum(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_X__x3A__vector)"/>-->
+        <xsl:attribute name="{name()}__generated.debug_test_240" select=". + sum(parent::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_X__x3A__vector)"/>
         <!--<xsl:attribute name="{name()}__generated_debug">
             <xsl:for-each select="$ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_X__x3A__vector"><xsl:value-of select="."/><xsl:text>, </xsl:text></xsl:for-each>
         </xsl:attribute>-->
@@ -225,31 +225,31 @@
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector" match="@ptn:Coordinate_Y">
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" required="yes" tunnel="yes"/>
         <xsl:attribute name="{name()}__generated" select=". + sum($ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Y__x3A__vector)"/>
-        <!--<xsl:attribute name="{name()}__generated" select=". + sum(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Y__x3A__vector)"/>-->
+        <xsl:attribute name="{name()}__generated.debug_test_240" select=". + sum(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Y__x3A__vector)"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector" match="@ptn:Coordinate_Z">
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" required="yes" tunnel="yes"/>
         <xsl:attribute name="{name()}__generated" select=". + sum($ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Z__x3A__vector)"/>
-        <!--<xsl:attribute name="{name()}__generated" select=". + sum(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Z__x3A__vector)"/>-->
+        <xsl:attribute name="{name()}__generated.debug_test_240" select=". + sum(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Z__x3A__vector)"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector" match="@ptn:Coordinate_X__x3A__remote">
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" required="yes" tunnel="yes"/>
         <xsl:attribute name="{name()}__generated" select=". + sum($ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_X__x3A__vector)"/>
-        <!--<xsl:attribute name="{name()}__generated" select=". + sum(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_X__x3A__vector)"/>-->
+        <xsl:attribute name="{name()}__generated.debug_test_240" select=". + sum(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_X__x3A__vector)"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector" match="@ptn:Coordinate_Y__x3A__remote">
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" required="yes" tunnel="yes"/>
         <xsl:attribute name="{name()}__generated" select=". + sum($ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Y__x3A__vector)"/>
-        <!--<xsl:attribute name="{name()}__generated" select=". + sum(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Y__x3A__vector)"/>-->
+        <xsl:attribute name="{name()}__generated.debug_test_240" select=". + sum(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Y__x3A__vector)"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector" match="@ptn:Coordinate_Z__x3A__remote">
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector" required="yes" tunnel="yes"/>
         <xsl:attribute name="{name()}__generated" select=". + sum($ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Z__x3A__vector)"/>
-        <!--<xsl:attribute name="{name()}__generated" select=". + sum(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Z__x3A__vector)"/>-->
+        <xsl:attribute name="{name()}__generated.debug_test_240" select=". + sum(ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector//@ptn:Coordinate_Z__x3A__vector)"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector" match="@*"/>
