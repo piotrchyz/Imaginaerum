@@ -189,7 +189,7 @@
         <xsl:param name="ptn:Receptors" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Input_exec_Time_constant__x3A__default" select="1"/>
         <xsl:param name="ptn:Input_exec_Maximum_current__x3A__default" select="3.1111"/>
-        <ptn:Input ptn:debug="#190 append ray [TODO[$ptn:Input_exec_Time_constant__x3A__default][$ptn:Input_exec_Maximum_current__x3A__default]]">
+        <ptn:Input ptn:debug="#190 append ray [TODO[$ptn:Input_exec_Time_constant__x3A__default][$ptn:Input_exec_Maximum_current__x3A__default]] [@@ptn:Label__x3A__fieldOfView__x3A__ray[{@ptn:Label__x3A__fieldOfView__x3A__ray}]]">
             <ptn:Input_exec_time><xsl:value-of select="@ptn:Simulation_tick__x3A__context"/></ptn:Input_exec_time>
             <ptn:Input_exec_receptor><xsl:value-of select="@ptn:Label__x3A__fieldOfView__x3A__ray"/></ptn:Input_exec_receptor>
             <!--<ptn:Input_exec_Time_constant><xsl:value-of select="$ptn:Receptors//ptn:Receptor[@ptn:Label = current()/@ptn:Label__x3A__fieldOfView__x3A__ray]/"/></ptn:Input_exec_Time_constant>-->
