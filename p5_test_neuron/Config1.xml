@@ -234,8 +234,8 @@
         
         <ptn:Receptor__x3A__generate ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.5" ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-50">
             <ptn:Label ptn:Label__x3A__generate__x3A__prefix="RG_"/>
-            <ptn:Coordinate_X ptn:Coordinate_X__x3A__generate__min="10" ptn:Coordinate_X__x3A__generate__max="15"  ptn:Coordinate_X__x3A__generate__separator="5"/><!-- ptn:Coordinate_X__x3A__generate__count="50" -->
-            <ptn:Coordinate_Y ptn:Coordinate_Y__x3A__generate__min="10" ptn:Coordinate_Y__x3A__generate__max="15"  ptn:Coordinate_Y__x3A__generate__separator="5"/><!-- ptn:Coordinate_Y__x3A__generate__count="50" -->
+            <ptn:Coordinate_X ptn:Coordinate_X__x3A__generate__min="10" ptn:Coordinate_X__x3A__generate__max="20"  ptn:Coordinate_X__x3A__generate__separator="5"/><!-- ptn:Coordinate_X__x3A__generate__count="50" -->
+            <ptn:Coordinate_Y ptn:Coordinate_Y__x3A__generate__min="10" ptn:Coordinate_Y__x3A__generate__max="20"  ptn:Coordinate_Y__x3A__generate__separator="5"/><!-- ptn:Coordinate_Y__x3A__generate__count="50" -->
             <ptn:Coordinate_Z ptn:Coordinate_Z__x3A__generate__min="10" ptn:Coordinate_Z__x3A__generate__max="10"  ptn:Coordinate_Z__x3A__generate__separator="5"/><!-- ptn:Coordinate_Z__x3A__generate__count="50" -->
             <ptn:Capacitance>0.5</ptn:Capacitance>
             <ptn:Resistance>100.0</ptn:Resistance>
@@ -314,18 +314,18 @@
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-                        <!--<ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4" ><!-\- A2-A4 -\->
+                        <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4" ><!-- A2-A4 -->
                             <ptn:keyValue__generate__basepoint_1 ptn:debug="todo301" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-30"/>
                             <ptn:keyValue__generate__basepoint_2 ptn:debug="todo304" ptn:Coordinate_X="-15" ptn:Coordinate_Y="-40" ptn:Coordinate_Z="-30"/>
-                            <!-\-<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-\->
-                            <!-\-<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-\->
-                        </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>-->
-                        <!--<ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A3" ><!-\- A1-A3 -\->
+                            <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
+                            <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
+                        </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
+                        <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A3" ><!-- A1-A3 -->
                             <ptn:keyValue__generate__basepoint_1 ptn:debug="todo302" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-30"/>
                             <ptn:keyValue__generate__basepoint_2 ptn:debug="todo303" ptn:Coordinate_X="10" ptn:Coordinate_Y="-10" ptn:Coordinate_Z="-30"/>
-                            <!-\-<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-\->
-                            <!-\-<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-\->
-                        </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>-->
+                            <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
+                            <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
+                        </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
                         <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="90" ptn:Coordinate_Y__x3A__vector="60" ptn:Coordinate_Z__x3A__vector="-5"
                             ptn:MFVec3f__x3A__distance__x3A__percent="0.5"/>
                         <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5"
@@ -527,6 +527,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>20</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>30</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>
