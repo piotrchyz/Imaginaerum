@@ -147,10 +147,13 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match" match="ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector[@ptn:Simulator_tick__x3A__context]">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
-            <xsl:apply-templates mode="#current"/>
+            <xsl:attribute name="ptn:debug">#153 @DEF?[<xsl:value-of select="@DEF"/>] [@ptn:Simulator_tick__x3A__context[<xsl:value-of select="@ptn:Simulator_tick__x3A__context"/>]];<xsl:value-of select="@ptn:debug"/></xsl:attribute>
+            <xsl:apply-templates mode="#current">
+                <xsl:with-param name="ptn:Simulator_tick__x3A__context" select="@ptn:Simulator_tick__x3A__context" tunnel="yes"/>
+            </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
     
@@ -166,21 +169,32 @@
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector[@ptn:Coordinate_X__generated][@ptn:Coordinate_Y__generated][@ptn:Coordinate_Z__generated][@ptn:Coordinate_X__x3A__remote__generated][@ptn:Coordinate_Y__x3A__remote__generated][@ptn:Coordinate_Z__x3A__remote__generated][@ptn:Simulation_tick__x3A__context]">
         <xsl:param name="ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray" required="yes" tunnel="yes"/>
-            <ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector ptn:debug="#133 to calculate match triangles">
-                <xsl:copy-of select="@*"/>
-                <xsl:apply-templates mode="#current"/>
-                <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" select="$ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray">
-                    <xsl:with-param name="ptn:Coordinate_X__generated" select="@ptn:Coordinate_X__generated" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Y__generated" select="@ptn:Coordinate_Y__generated" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Z__generated" select="@ptn:Coordinate_Z__generated" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_X__x3A__remote__generated" select="@ptn:Coordinate_X__x3A__remote__generated" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Y__x3A__remote__generated" select="@ptn:Coordinate_Y__x3A__remote__generated" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Coordinate_Z__x3A__remote__generated" select="@ptn:Coordinate_Z__x3A__remote__generated" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Simulation_tick__x3A__context" select="@ptn:Simulation_tick__x3A__context" tunnel="yes"/>
-                    <xsl:with-param name="ptn:Simulation_tick__x3A__context__step" select="@ptn:Simulation_tick__x3A__context__step" tunnel="yes"/>
-                    
-                </xsl:apply-templates>
-            </ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector>
+        <xsl:param name="ptn:Simulator_tick__x3A__context" tunnel="yes" required="yes"/>
+        
+        <xsl:choose>
+            <xsl:when test="$ptn:Simulator_tick__x3A__context = @ptn:Simulation_tick__x3A__context">
+                <ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector ptn:debug="">
+                    <xsl:copy-of select="@*"/>
+                    <xsl:attribute name="ptn:debug">#133A to calculate match triangles  [$ptn:Simulator_tick__x3A__context[<xsl:value-of select="$ptn:Simulator_tick__x3A__context"/>]] [@ptn:Simulation_tick__x3A__context[<xsl:value-of select="@ptn:Simulation_tick__x3A__context"/>]];<xsl:value-of select="@ptn:debug"/></xsl:attribute>
+                    <xsl:apply-templates mode="#current"/>
+                    <xsl:apply-templates mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" select="$ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray">
+                        <xsl:with-param name="ptn:Coordinate_X__generated" select="@ptn:Coordinate_X__generated" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Coordinate_Y__generated" select="@ptn:Coordinate_Y__generated" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Coordinate_Z__generated" select="@ptn:Coordinate_Z__generated" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Coordinate_X__x3A__remote__generated" select="@ptn:Coordinate_X__x3A__remote__generated" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Coordinate_Y__x3A__remote__generated" select="@ptn:Coordinate_Y__x3A__remote__generated" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Coordinate_Z__x3A__remote__generated" select="@ptn:Coordinate_Z__x3A__remote__generated" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Simulation_tick__x3A__context" select="@ptn:Simulation_tick__x3A__context" tunnel="yes"/>
+                        <xsl:with-param name="ptn:Simulation_tick__x3A__context__step" select="@ptn:Simulation_tick__x3A__context__step" tunnel="yes"/>
+                        
+                    </xsl:apply-templates>
+                </ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate_LineSet__x3A__vector>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:comment>#133B [TODO][BYPASSED][MISMATCH_TIME] to calculate match triangles  [$ptn:Simulator_tick__x3A__context[<xsl:value-of select="$ptn:Simulator_tick__x3A__context"/>]] [@ptn:Simulation_tick__x3A__context[<xsl:value-of select="@ptn:Simulation_tick__x3A__context"/>]];<xsl:value-of select="@ptn:debug"/></xsl:comment>
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" match="*">
@@ -257,7 +271,7 @@
         <xsl:param name="triY2"/>
         <xsl:param name="triX3"/>
         <xsl:param name="triY3"/>
-        <xsl:message>#232 ptn:ray_triangle_intersection_test=[$vecX1[<xsl:value-of select="$vecX1"/>]]</xsl:message>
+        <!--<xsl:message>#232 ptn:ray_triangle_intersection_test=[$vecX1[<xsl:value-of select="$vecX1"/>]]</xsl:message>-->
         <ptn:ray_triangle_intersection_test>
         <!--side_1_test = line_intersection_test(vecX1, vecY1, vecX2, vecY2, triX1, triY1, triX2, triY2)-->
         <xsl:variable name="side_1_test" select="ptn:ray_line_intersection_test($vecX1, $vecY1, $vecX2, $vecY2, $triX1, $triY1, $triX2, $triY2)"/>
@@ -268,7 +282,7 @@
         
         
         <!--result = side_1_test + side_2_test + side_3_test-->
-        <xsl:message>#232 ptn:ray_triangle_intersection_test=[$side_1_test[<xsl:value-of select="$side_1_test"/>]][$side_2_test[<xsl:value-of select="$side_2_test"/>]][$side_3_test[<xsl:value-of select="$side_3_test"/>]]</xsl:message>
+        <!--<xsl:message>#232 ptn:ray_triangle_intersection_test=[$side_1_test[<xsl:value-of select="$side_1_test"/>]][$side_2_test[<xsl:value-of select="$side_2_test"/>]][$side_3_test[<xsl:value-of select="$side_3_test"/>]]</xsl:message>-->
         
         <xsl:variable name="result" select="$side_1_test + $side_2_test + $side_3_test"/>
         <xsl:message>#234 $result=[<xsl:value-of select="$result"/>]</xsl:message>

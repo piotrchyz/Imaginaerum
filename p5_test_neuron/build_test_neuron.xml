@@ -5,7 +5,7 @@
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
     <property name="p5_test_neuron.repository" location="${basedir}/p5_test_neuron/repository"/>
     <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
-    <property name="p5_test_neuron.Inputs" location="${p5_test_neuron.basedir}/Inputs1.xml"/>
+    
     
     <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
     <property name="p5_test_neuron.snake.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron_snake.xsl"/>
@@ -39,6 +39,9 @@
         <property name="p5_test_neuron.Simulation.analyze_simulation.xml" location="${p5_test_neuron.Simulation.dir}/analyze_simulation.xml"/>
         <property name="p5_test_neuron.Simulation.analyze_simulation.x3d" location="${p5_test_neuron.Simulation.dir}/Simulation.analyze_simulation.x3d.html"/>
         <property name="p5_test_neuron.Simulation.snake.xml" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.snake.xml"/><!-- todo -->
+        
+        <property name="p5_test_neuron.Inputs" location="${p5_test_neuron.Simulation.dir}/Inputs1.xml"/>
+        
         <echo>Eventually some params override
             $p5_test_neuron.Simulation_ticks} = ${p5_test_neuron.Simulation_ticks}
             $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
