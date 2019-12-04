@@ -190,9 +190,9 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulated_potential.input.vector"  match="ptn:Input__x3A__generate__x3A__pattern">
-        <xsl:message>#186B TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:message>
-        <xsl:comment>#186B TODO PATTERN/n[<xsl:value-of select="name()"/>]</xsl:comment>
-        <xsl:copy-of select="."/>
+        <xsl:message>#186B TODO PATTERN/n[<xsl:value-of select="name()"/>]  [descendand::IndexedFaceSet][@ptn:Label__x3A__fieldOfView__x3A__ray[<xsl:value-of select="descendant-or-self::IndexedFaceSet/@ptn:Label__x3A__fieldOfView__x3A__ray"/>]]</xsl:message>
+        <xsl:comment>#186B TODO PATTERN/n[<xsl:value-of select="name()"/>]  [descendand::IndexedFaceSet][@ptn:Label__x3A__fieldOfView__x3A__ray[<xsl:value-of select="descendant-or-self::IndexedFaceSet/@ptn:Label__x3A__fieldOfView__x3A__ray"/>]]</xsl:comment>
+        <!--<xsl:copy-of select="."/>-->
     </xsl:template>
     
     
