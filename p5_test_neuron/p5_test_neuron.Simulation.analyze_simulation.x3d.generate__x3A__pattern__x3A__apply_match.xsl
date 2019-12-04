@@ -70,6 +70,23 @@
         </xsl:copy>
     </xsl:template>
     
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match" match="ptn:Input">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match" match="ptn:Input_exec_time|ptn:Input_exec_receptor|ptn:Input_exec_Time_constant|ptn:Input_exec_Maximum_current">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match" match="ptn:Simulator_tick|ptn:Simulation_ticks">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
