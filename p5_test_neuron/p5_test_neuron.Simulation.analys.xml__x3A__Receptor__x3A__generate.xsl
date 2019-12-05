@@ -57,22 +57,11 @@
         <xsl:attribute name="ptn:Coordinate_Y__x3A__min" select="$ptn:Coordinate_Y__x3A__min"/>
         <xsl:attribute name="ptn:Coordinate_Y__x3A__max" select="$ptn:Coordinate_Y__x3A__max"/>
         
-        <xsl:attribute name="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"  select="$ptn:Coordinate_X__x3A__generated__separator +  (( $ptn:Coordinate_X__x3A__max - $ptn:Coordinate_X__x3A__min ) div 2 ) - $ptn:Coordinate_X__x3A__min"/>
-        <xsl:attribute name="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff"  select=" (( $ptn:Coordinate_X__x3A__max - $ptn:Coordinate_X__x3A__min ) div 2 ) - $ptn:Coordinate_X__x3A__min"/>
+        <xsl:attribute name="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"  select="$ptn:Coordinate_X__x3A__generated__separator - $ptn:Coordinate_X__x3A__min  -  (( $ptn:Coordinate_X__x3A__max - $ptn:Coordinate_X__x3A__min ) div 2 ) + $ptn:Coordinate_X__x3A__generated__separator"/>
+        <xsl:attribute name="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff"  select="$ptn:Coordinate_X__x3A__generated__separator - $ptn:Coordinate_X__x3A__min  -  (( $ptn:Coordinate_X__x3A__max - $ptn:Coordinate_X__x3A__min ) div 2 ) "/>
        
-        <xsl:variable name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff" select="($ptn:Coordinate_Y__x3A__max - $ptn:Coordinate_Y__x3A__min ) div 2"/>
-        
-        <xsl:variable name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff2" select="$ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff * 3"/>
-        
-        <xsl:variable name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff3" select="$ptn:Coordinate_Y__x3A__generated__separator - $ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff2 - ( $ptn:Coordinate_Y__x3A__min div 2 )"/>
-        <xsl:if test="$ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio_ray__X3A__debug = true()">
-            <xsl:attribute name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff"  select="$ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff"/>
-            <xsl:attribute name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff2"  select="$ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff2"/>
-            <xsl:attribute name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff3" select="$ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff3"/>
-        </xsl:if>
-        
-        <xsl:attribute name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"  select="$ptn:Coordinate_Y__x3A__generated__separator + $ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff3"/>
-        
+        <xsl:attribute name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"  select="$ptn:Coordinate_Y__x3A__generated__separator - $ptn:Coordinate_Y__x3A__min  -  (( $ptn:Coordinate_Y__x3A__max - $ptn:Coordinate_Y__x3A__min ) div 2 ) + $ptn:Coordinate_Y__x3A__generated__separator "/>
+        <xsl:attribute name="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff"  select="$ptn:Coordinate_Y__x3A__generated__separator - $ptn:Coordinate_Y__x3A__min  -  (( $ptn:Coordinate_Y__x3A__max - $ptn:Coordinate_Y__x3A__min ) div 2 )  "/>
         
         
         
