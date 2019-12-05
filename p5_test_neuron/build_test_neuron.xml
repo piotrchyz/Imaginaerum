@@ -4,6 +4,13 @@
     
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
     <property name="p5_test_neuron.repository" location="${basedir}/p5_test_neuron/repository"/>
+    
+    
+    <condition property="p5_test_neuron.Config" value="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml">
+        <available file="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml"/>
+    </condition>
+    
+    <echo>#13 [IF]$p5_test_neuron.Config[${p5_test_neuron.Config}]</echo>
     <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
     
     
@@ -28,7 +35,7 @@
     </target>
     
     <target name="clean" depends="param">
-        <delete dir="${p5_test_neuron.Simulation.dir}" verbose="true"/>
+        <delete  file="${p5_test_neuron.Simulation.dir}/*"   excludes="Inputs1.xml,Inputs1.xml.Defaults.xml" verbose="true"/>
     </target>
     
     <target name="param" >

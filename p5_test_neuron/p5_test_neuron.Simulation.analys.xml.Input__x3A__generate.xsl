@@ -11,9 +11,31 @@
     <xsl:strip-space elements="*"/>
     
     
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Simulation.analys.xml[ptn:Receptors]">
+        <ptn:Input__x3A__generate.xml>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#17 [TODO[MIGRATE[CONTINUE]]]</xsl:attribute>
+            <xsl:attribute name="ptn:Simulation_body_tick" select="1"/>
+            <xsl:attribute name="ptn:Simulation_body_time" select="1"/>
+            <xsl:attribute name="ptn:Simulator_tick" select="1"/>
+            <xsl:attribute name="ptn:Simulation_ticks" select="$ptn:Simulation_ticks"/>
+            <xsl:attribute name="ptn:Simulation_body_time__x3A__last" select="0"/>
+            <xsl:copy-of select="doc(concat($ptn:Inputs,'.Defaults.xml'))"/>
+            <xsl:copy-of select="doc($ptn:Inputs)"/>
+            <xsl:apply-templates mode="#current">
+                <xsl:with-param name="ptn:Simulator_tick" select="1" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_ticks" select="$ptn:Simulation_ticks" tunnel="yes"/>
+                <xsl:with-param name="ptn:Simulation_ticks__x3A__real" select="$ptn:Simulation_ticks+ 1" tunnel="yes"/>
+                <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
+            </xsl:apply-templates>
+            <ptn:Simulation>
+                <ptn:Simulator_tick><xsl:value-of select="1"/></ptn:Simulator_tick>
+                <ptn:Simulation_ticks><xsl:value-of select="$ptn:Simulation_ticks"/></ptn:Simulation_ticks>
+            </ptn:Simulation>
+        </ptn:Input__x3A__generate.xml>
+    </xsl:template>
     
-    
-    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate.xml">
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate.xml[ptn:Simulation[ptn:Simulator_tick]]">
         <ptn:Input__x3A__generate.xml>
             <xsl:copy-of select="@*"/>
             <xsl:attribute name="ptn:Simulation_body_tick" select="1"/>
@@ -28,6 +50,18 @@
                 <xsl:with-param name="ptn:Receptors" select="ptn:Receptors" tunnel="yes"/>
             </xsl:apply-templates>
         </ptn:Input__x3A__generate.xml>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential.resting.vector|ptn:Simulated_potential__x3A__vectors.sum">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Current_synapse|ptn:Nodes">
+        <xsl:message>#41 TODO MIGRATE [n][<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:copy-of select="."/>
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate" match="*">

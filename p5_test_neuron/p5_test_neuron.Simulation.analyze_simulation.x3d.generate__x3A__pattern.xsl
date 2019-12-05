@@ -34,6 +34,11 @@
         <xsl:message terminate="yes">## 32A [unantended/n][<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern" match="ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum|ptn:Current_synapse|ptn:Nodes|ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray">
+        <xsl:message terminate="no">## 32AB [TODO[MIGRATE]] [unantended/n][<xsl:value-of select="name()"/>]</xsl:message>
+        <!--<xsl:copy-of select="."/>-->
+    </xsl:template>
+    
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern" match="ptn:Defaults|ptn:Receptors|ptn:Receptor|ptn:Simulation|ptn:Simulator_tick|ptn:Simulation_ticks">
         <xsl:copy>
@@ -376,9 +381,9 @@
                             <xsl:variable name="xt" select="ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_X - $x"/>
                             <xsl:variable name="yt" select="ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Y - $y"/>
                             <xsl:variable name="zt" select="ptn:keyValue__generate__basepoint_1/@ptn:Coordinate_Z - $z"/>
-                            <xsl:attribute name="xt" select="$xt"/>
+                           <!-- <xsl:attribute name="xt" select="$xt"/>
                             <xsl:attribute name="yt" select="$yt"/>
-                            <xsl:attribute name="zt" select="$zt"/>
+                            <xsl:attribute name="zt" select="$zt"/>-->
                             
                             <Coordinate ptn:debug="#342 todo">
                                     <xsl:attribute name="point">

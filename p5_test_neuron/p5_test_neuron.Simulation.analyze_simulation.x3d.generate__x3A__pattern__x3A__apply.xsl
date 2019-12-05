@@ -105,6 +105,14 @@
         </xsl:copy>
     </xsl:template>
     
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply" match="ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum|ptn:Current_synapse|ptn:Nodes">
+        <xsl:message terminate="no">#28G [TODO MIGRATE] [ptn:Input__x3A__generate__x3A__pattern__x3A__apply]  unantended/n[<xsl:value-of select="name()"/>]  </xsl:message>
+        <xsl:copy-of select="."/>
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply" match="*">
         <xsl:message terminate="yes">#28 [ptn:Input__x3A__generate__x3A__pattern__x3A__apply]  unantended/n[<xsl:value-of select="name()"/>]  </xsl:message>
     </xsl:template>

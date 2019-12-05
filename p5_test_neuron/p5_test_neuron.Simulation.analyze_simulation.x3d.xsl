@@ -56,7 +56,7 @@
                 <p>
                     Testing sequence capable neurons
                 </p>
-                <x3d width="800px" height="600px" 
+                <x3d width="1600px" height="800px" 
                     xsi:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd"
                     >
                     <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene">

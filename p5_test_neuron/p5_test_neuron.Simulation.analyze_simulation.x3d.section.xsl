@@ -356,9 +356,9 @@
         <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
-        <xsl:if test="string-length(xs:string($ptn:Coordinate_X)) = 0"><xsl:message terminate="yes">#63X ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
-        <xsl:if test="string-length(xs:string($ptn:Coordinate_Y)) = 0"><xsl:message terminate="yes">#63Y ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
-        <xsl:if test="string-length(xs:string($ptn:Coordinate_Z)) = 0"><xsl:message terminate="yes">#63Z ERROR Current_synapse.Input.Shape with data</xsl:message></xsl:if>
+        <xsl:if test="string-length(xs:string($ptn:Coordinate_X)) = 0"><xsl:message terminate="yes">#63X ERROR Current_synapse.Input.Shape with data[<xsl:value-of select="name()"/>]</xsl:message></xsl:if>
+        <xsl:if test="string-length(xs:string($ptn:Coordinate_Y)) = 0"><xsl:message terminate="yes">#63Y ERROR Current_synapse.Input.Shape with data[<xsl:value-of select="name()"/>]</xsl:message></xsl:if>
+        <xsl:if test="string-length(xs:string($ptn:Coordinate_Z)) = 0"><xsl:message terminate="yes">#63Z ERROR Current_synapse.Input.Shape with data[<xsl:value-of select="name()"/>]</xsl:message></xsl:if>
     </xsl:template>
     
     <xsl:template name="ptn:MFVec3f__x3A__sequence__x3A__validate__x3A__remote">

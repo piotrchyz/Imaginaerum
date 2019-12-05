@@ -44,10 +44,24 @@
         <!--<ptn:Simulation.build.analys.xml>-->
             <xsl:apply-templates mode="#current"/>
                 
-            
         <!--</ptn:Simulation.build.analys.xml>-->
-        
     </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.build.analys.xml" match="ptn:Simulation.analys.xml[@ptn:Simulation_body_time__x3A__last]">
+        <xsl:message>#16 will [TRY][CONTINUE]
+            $ptn:Simulation_ticks[<xsl:value-of select="$ptn:Simulation_ticks"/>] 
+            $ptn:Simulation.dir[<xsl:value-of select="$ptn:Simulation.dir"/>]
+        </xsl:message>
+        
+        <!--<ptn:Simulation.build.analys.xml>-->
+        <xsl:call-template name="ptn:Simulation.build.analys.xml">
+            <xsl:with-param name="ptn:Simulation_ticks" select="@ptn:Simulation_body_time__x3A__last" tunnel="yes"/>
+        </xsl:call-template>
+        
+        <!--</ptn:Simulation.build.analys.xml>-->
+    </xsl:template>
+    
     
     
     <xsl:template mode="ptn:Simulation.build.analys.xml" match="*">
@@ -59,9 +73,10 @@
         <xsl:comment>#34 bypassed <xsl:value-of select="name()"/></xsl:comment>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.build.analys.xml" match="ptn:Simulation[ptn:Simulation_ticks][ptn:Simulator_tick]">
+    <xsl:template name="ptn:Simulation.build.analys.xml" mode="ptn:Simulation.build.analys.xml" match="ptn:Simulation[ptn:Simulation_ticks][ptn:Simulator_tick]">
+        <xsl:param name="ptn:Simulation_ticks" select="ptn:Simulation_ticks" tunnel="yes"/>
         <xsl:comment>#35 analyzing <xsl:value-of select="name()"/></xsl:comment>
-        <project basedir="{$basedir}" name="Simulation.build.analys.xml" default="Simulation.build.analys.xml.{ptn:Simulation_ticks}">
+        <project basedir="{$basedir}" name="Simulation.build.analys.xml" default="Simulation.build.analys.xml.{$ptn:Simulation_ticks}">
             
             <target name="Simulation.build.analys.xml.0">
                 <echo>Initial simulation</echo>
@@ -518,7 +533,7 @@
                 
             </target>
             
-        <xsl:for-each select="1 to ptn:Simulation_ticks">
+            <xsl:for-each select="1 to $ptn:Simulation_ticks">
             <target name="Simulation.build.analys.xml.{.}">
               <xsl:attribute name="depends">Simulation.build.analys.xml.<xsl:value-of select=". - 1"/></xsl:attribute>
                 <xslt  

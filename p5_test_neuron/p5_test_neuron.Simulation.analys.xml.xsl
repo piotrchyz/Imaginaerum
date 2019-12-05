@@ -183,7 +183,11 @@
     </xsl:template>
     
     
-    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Defaults">
+        <xsl:result-document href="{$ptn:Inputs}.Defaults.xml" >
+            <xsl:copy-of select="."/>
+        </xsl:result-document>
+    </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml__x3A__Input__x3A__generate__x3A__pattern__x3A__apply_match_ray" match="ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match_ray[@ptn:Simulation_tick__x3A__context][@ptn:Label__x3A__fieldOfView__x3A__ray]">
         <xsl:param name="ptn:Receptors" required="yes" tunnel="yes"/>
@@ -368,7 +372,7 @@
         <xsl:copy-of select="."/>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Defaults|ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum|ptn:Simulation.attract__x3A__calculate|ptn:Simulation.attract__x3A__calculate.best.unique">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum|ptn:Simulation.attract__x3A__calculate|ptn:Simulation.attract__x3A__calculate.best.unique">
         <xsl:message >#52 bypassed <xsl:value-of select="name()"/></xsl:message>
     </xsl:template>
     
