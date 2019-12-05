@@ -527,6 +527,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>20</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>200</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>
