@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="p5_test_neuron" vc:minVersion="1.1" xmlns:ptn="p5_test_neuron"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+    <xs:annotation>
+        <xs:documentation>Test neuron model 2019-11 a.binder</xs:documentation>
+    </xs:annotation>
+    <xs:include schemaLocation="test_neuron.xsd"/>
+    <xs:attribute name="Coordinate_X__x3A__generated" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_X__x3A__generated__separator" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__generated__separator" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__generated" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_X__x3A__min" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_X__x3A__max" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__min" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__max" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_X__x3A__fieldOfView__x3A__ray" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__fieldOfView__x3A__ray" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z__x3A__fieldOfView__x3A__ray" type="ptn:Coordinate"/>
+</xs:schema>

@@ -74,6 +74,11 @@
             <xs:documentation>to generate patterns</xs:documentation>
         </xs:annotation>
     </xs:include>
+    <xs:include schemaLocation="test_neuron.generated.xsd">
+        <xs:annotation>
+            <xs:documentation>generated prefix elements</xs:documentation>
+        </xs:annotation>
+    </xs:include>
     <xs:simpleType name="Capacitance">
         <xs:annotation>
             <xs:documentation>Membrane Capacitance from 0.01 to 2nF</xs:documentation>
@@ -222,9 +227,7 @@
         <xs:annotation>
             <xs:documentation>Coordinate of node X Y or Z or more?</xs:documentation>
         </xs:annotation>
-        <xs:restriction base="xs:decimal">
-            <xs:minInclusive value="0"/>
-        </xs:restriction>
+        <xs:restriction base="xs:decimal"> </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="Receptor_regex_filter">
         <xs:annotation>
@@ -628,6 +631,18 @@
                 <xs:sequence>
                     <xs:element name="Receptor_regex_filter" type="ptn:Receptor_regex_filter"/>
                 </xs:sequence>
+                <xs:attribute ref="ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio"/>
+                <xs:attribute ref="ptn:Coordinate_X__x3A__generated"/>
+                <xs:attribute ref="ptn:Coordinate_Y__x3A__generated"/>
+                <xs:attribute ref="ptn:Coordinate_X__x3A__min"/>
+                <xs:attribute ref="ptn:Coordinate_X__x3A__max"/>
+                <xs:attribute ref="ptn:Coordinate_Y__x3A__min"/>
+                <xs:attribute ref="ptn:Coordinate_Y__x3A__max"/>
+                <xs:attribute ref="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray"/>
+                <xs:attribute ref="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray"/>
+                <xs:attribute ref="ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray"/>
+                <xs:attribute ref="ptn:Coordinate_X__x3A__generated__separator"/>
+                <xs:attribute ref="ptn:Coordinate_Y__x3A__generated__separator"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -719,6 +734,14 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:attribute name="Receptor__x3A__generate__fieldOfView__x3A__ratio"
+        type="ptn:fieldOfView__x3A__ratio"/>
+    <xs:simpleType name="fieldOfView__x3A__ratio">
+        <xs:restriction base="xs:double">
+            <xs:minExclusive value="0"/>
+            <xs:maxExclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:element name="Receptor">
         <xs:complexType>
             <xs:complexContent>

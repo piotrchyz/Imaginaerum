@@ -378,4 +378,17 @@
     </xs:complexType>
     <xs:element name="Input__x3A__generate__x3A__pattern__x3A__apply.xml"
         type="ptn:Input__x3A__generate__x3A__pattern__x3A__apply.xml"/>
+    <xs:complexType name="Input__x3A__generate__x3A__pattern.xml">
+        <xs:sequence>
+            <xs:element ref="ptn:Defaults"/>
+            <xs:element ref="ptn:Receptors"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
+        <xs:attribute ref="ptn:Simulation_body_time" use="required"/>
+        <xs:attribute ref="ptn:Simulator_tick" use="required"/>
+        <xs:attribute ref="ptn:Simulation_ticks" use="required"/>
+        <xs:attribute ref="ptn:Simulation_body_time__x3A__last" use="required"/>
+    </xs:complexType>
+    <xs:element name="Input__x3A__generate__x3A__pattern.xml"
+        type="ptn:Input__x3A__generate__x3A__pattern.xml"/>
 </xs:schema>
