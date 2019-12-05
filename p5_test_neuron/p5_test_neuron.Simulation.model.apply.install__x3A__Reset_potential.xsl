@@ -47,7 +47,11 @@
     
                                                                                                    
     <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Simulation.attract__x3A__aggregate__x3A__validated">
-        <xsl:apply-templates mode="#current"/>
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>    
+        </xsl:copy>
+        
     </xsl:template>
     
                                                                                                    

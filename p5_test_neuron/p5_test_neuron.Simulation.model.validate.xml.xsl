@@ -60,7 +60,12 @@
     
     <!-- ptn:Simulation.Stress__x3A__calculate -->
     
-    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
     
     
     
