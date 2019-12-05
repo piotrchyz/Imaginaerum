@@ -30,6 +30,9 @@
     </xsl:template>
     
     
+    
+    
+    
     <xsl:template name="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" >
         <!--<xsl:param name="ptn:Receptors" tunnel="yes" required="yes"/>-->
         <xsl:apply-templates mode="ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate" select="descendant-or-self::ptn:Receptor__x3A__generate"/>
@@ -126,6 +129,7 @@
                     <ptn:Input__x3A__nodes/>
                     <ptn:Simulated_potential><xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Simulated_potential"/></ptn:Simulated_potential>
                     <ptn:Receptor_regex_filter><xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Label/@ptn:Label__x3A__generate__x3A__prefix"/><xsl:text>_X</xsl:text><xsl:value-of select="$ptn:Coordinate_X__x3A__generated"/>_Y<xsl:value-of select="$ptn:Coordinate_Y__x3A__generated"/>_Z<xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Coordinate_Z/@ptn:Coordinate_Z__x3A__generate__min"/></ptn:Receptor_regex_filter>
+                    <xsl:copy-of select="$ptn:Receptor__x3A__generate/ptn:Input__x3A__attract__x3A__vectors"/>
                 </ptn:Receptor>
                 
                 

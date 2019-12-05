@@ -42,6 +42,14 @@
         </xsl:copy>
     </xsl:template>
     
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern" match="ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential">
         <xsl:copy>

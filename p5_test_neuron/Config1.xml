@@ -232,11 +232,11 @@
             <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
         </ptn:Receptor>-->
         
-        <ptn:Receptor__x3A__generate ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.5" ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-50">
+        <ptn:Receptor__x3A__generate ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3" ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
             <ptn:Label ptn:Label__x3A__generate__x3A__prefix="RG_"/>
-            <ptn:Coordinate_X ptn:Coordinate_X__x3A__generate__min="10" ptn:Coordinate_X__x3A__generate__max="25"  ptn:Coordinate_X__x3A__generate__separator="10"/><!-- ptn:Coordinate_X__x3A__generate__count="50" -->
-            <ptn:Coordinate_Y ptn:Coordinate_Y__x3A__generate__min="10" ptn:Coordinate_Y__x3A__generate__max="25"  ptn:Coordinate_Y__x3A__generate__separator="10"/><!-- ptn:Coordinate_Y__x3A__generate__count="50" -->
-            <ptn:Coordinate_Z ptn:Coordinate_Z__x3A__generate__min="10" ptn:Coordinate_Z__x3A__generate__max="10"  ptn:Coordinate_Z__x3A__generate__separator="10"/><!-- ptn:Coordinate_Z__x3A__generate__count="50" -->
+            <ptn:Coordinate_X ptn:Coordinate_X__x3A__generate__min="10" ptn:Coordinate_X__x3A__generate__max="30"  ptn:Coordinate_X__x3A__generate__separator="8"/><!-- ptn:Coordinate_X__x3A__generate__count="50" -->
+            <ptn:Coordinate_Y ptn:Coordinate_Y__x3A__generate__min="10" ptn:Coordinate_Y__x3A__generate__max="30"  ptn:Coordinate_Y__x3A__generate__separator="8"/><!-- ptn:Coordinate_Y__x3A__generate__count="50" -->
+            <ptn:Coordinate_Z ptn:Coordinate_Z__x3A__generate__min="10" ptn:Coordinate_Z__x3A__generate__max="10"  ptn:Coordinate_Z__x3A__generate__separator="8"/><!-- ptn:Coordinate_Z__x3A__generate__count="50" -->
             <ptn:Capacitance>0.5</ptn:Capacitance>
             <ptn:Resistance>100.0</ptn:Resistance>
             <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
@@ -250,6 +250,11 @@
             <ptn:Input__x3A__nodes/>
             <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
             <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
+            <ptn:Input__x3A__attract__x3A__vectors>
+                <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
+                <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+                <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
+            </ptn:Input__x3A__attract__x3A__vectors>
         </ptn:Receptor__x3A__generate>
         
     </ptn:Receptors>
@@ -309,33 +314,33 @@
                 <ptn:Input__x3A__generate__x3A__Shape>
                     <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="todo300">
                         <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector  DEF="A1-A2" >
-                            <ptn:keyValue__generate__basepoint_1  ptn:Coordinate_X="-35" ptn:Coordinate_Y="-15" ptn:Coordinate_Z="-30"/><!-- A1-A2 -->
-                            <ptn:keyValue__generate__basepoint_2  ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-30"/>
+                            <ptn:keyValue__generate__basepoint_1  ptn:Coordinate_X="-35" ptn:Coordinate_Y="-15" ptn:Coordinate_Z="-300"/><!-- A1-A2 -->
+                            <ptn:keyValue__generate__basepoint_2  ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-300"/>
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
                         <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4" ><!-- A2-A4 -->
-                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo301" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-30"/>
-                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo304" ptn:Coordinate_X="-15" ptn:Coordinate_Y="-40" ptn:Coordinate_Z="-30"/>
+                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo301" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-300"/>
+                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo304" ptn:Coordinate_X="-15" ptn:Coordinate_Y="-40" ptn:Coordinate_Z="-300"/>
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
                         <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A3" ><!-- A1-A3 -->
-                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo302" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-30"/>
-                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo303" ptn:Coordinate_X="10" ptn:Coordinate_Y="-10" ptn:Coordinate_Z="-30"/>
+                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo302" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-300"/>
+                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo303" ptn:Coordinate_X="10" ptn:Coordinate_Y="-10" ptn:Coordinate_Z="-300"/>
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="90" ptn:Coordinate_Y__x3A__vector="60" ptn:Coordinate_Z__x3A__vector="-5"
-                            ptn:MFVec3f__x3A__distance__x3A__percent="0.3"/>
+                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="100" ptn:Coordinate_Y__x3A__vector="180" ptn:Coordinate_Z__x3A__vector="150"
+                            ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>
                         <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5"
                             ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>-->
                         <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="30" ptn:Coordinate_Y__x3A__vector="30" ptn:Coordinate_Z__x3A__vector="-5" ptn:MFVec3f__x3A__distance__x3A__percent="0.6"/>-->
-                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-90" ptn:Coordinate_Y__x3A__vector="-60" ptn:Coordinate_Z__x3A__vector="-6" 
-                            ptn:MFVec3f__x3A__distance__x3A__percent="0.6"/>
-                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="90" ptn:Coordinate_Y__x3A__vector="69" ptn:Coordinate_Z__x3A__vector="-7" 
-                            ptn:MFVec3f__x3A__distance__x3A__percent="1"/>
-                        <ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector ptn:debug="modyfikacja 1 - jak tlumaczyc obiekt do receptorow" >
+                        <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="-90" ptn:Coordinate_Y__x3A__vector="-60" ptn:Coordinate_Z__x3A__vector="-6" 
+                            ptn:MFVec3f__x3A__distance__x3A__percent="0.6"/>-->
+                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="0" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="130" 
+                            ptn:MFVec3f__x3A__distance__x3A__percent="0.8"/>
+                        <ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector ptn:debug="#242 modyfikacja 1 - jak tlumaczyc obiekt do receptorow" >
                             <ptn:Input_exec_timex__x3A__generate__x3A__pattern ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause="4"  ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min="1" ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max="5" />
                                  <ptn:Input_exec_receptor__x3A__generate__x3A__pattern/>
                                  <ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern>2</ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern>
@@ -527,6 +532,6 @@
     </ptn:Inputs>
     <ptn:Simulation>
         <ptn:Simulator_tick>1</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>2</ptn:Simulation_ticks>
+        <ptn:Simulation_ticks>5</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>
