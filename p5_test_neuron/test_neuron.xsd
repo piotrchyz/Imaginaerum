@@ -851,13 +851,13 @@
     <xs:attribute name="Simulated_potential__x3A__previous"
         type="ptn:Simulated_potential__x3A__previous"/>
     <xs:complexType name="Simulated_potential__x3A__vectors">
-        <xs:sequence>
+        <xs:sequence maxOccurs="unbounded" minOccurs="0">
             <xs:element name="Simulated_potential.resting.vector"
-                type="ptn:Simulated_potential.resting.vector"/>
+                type="ptn:Simulated_potential.resting.vector" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element minOccurs="0" name="Simulated_potential.input.vector"
-                type="ptn:Simulated_potential.input.vector"/>
+                type="ptn:Simulated_potential.input.vector" maxOccurs="unbounded"/>
             <xs:element name="Simulated_potential.emmit.vector"
-                type="ptn:Simulated_potential.emmit.vector"/>
+                type="ptn:Simulated_potential.emmit.vector" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
         <xs:attribute ref="ptn:Simulated_potential__x3A__previous" use="required"/>
     </xs:complexType>
