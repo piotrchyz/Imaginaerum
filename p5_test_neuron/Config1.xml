@@ -314,24 +314,24 @@
                 <ptn:Input__x3A__generate__x3A__Shape>
                     <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="todo300">
                         <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector  DEF="A1-A2" >
-                            <ptn:keyValue__generate__basepoint_1  ptn:Coordinate_X="-35" ptn:Coordinate_Y="-15" ptn:Coordinate_Z="-300"/><!-- A1-A2 -->
-                            <ptn:keyValue__generate__basepoint_2  ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-300"/>
+                            <ptn:keyValue__generate__basepoint_1  ptn:Coordinate_X="0" ptn:Coordinate_Y="15" ptn:Coordinate_Z="-300"/><!-- A1-A2 -->
+                            <ptn:keyValue__generate__basepoint_2  ptn:Coordinate_X="15" ptn:Coordinate_Y="45" ptn:Coordinate_Z="-300"/>
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
                         <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4" ><!-- A2-A4 -->
-                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo301" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-300"/>
-                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo304" ptn:Coordinate_X="-15" ptn:Coordinate_Y="-40" ptn:Coordinate_Z="-300"/>
+                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo301" ptn:Coordinate_X="15" ptn:Coordinate_Y="45" ptn:Coordinate_Z="-300"/>
+                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo304" ptn:Coordinate_X="15" ptn:Coordinate_Y="-5" ptn:Coordinate_Z="-300"/>
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
                         <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A3" ><!-- A1-A3 -->
-                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo302" ptn:Coordinate_X="-15" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-300"/>
-                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo303" ptn:Coordinate_X="10" ptn:Coordinate_Y="-10" ptn:Coordinate_Z="-300"/>
+                            <ptn:keyValue__generate__basepoint_1 ptn:debug="todo302" ptn:Coordinate_X="15" ptn:Coordinate_Y="45" ptn:Coordinate_Z="-300"/>
+                            <ptn:keyValue__generate__basepoint_2 ptn:debug="todo303" ptn:Coordinate_X="45" ptn:Coordinate_Y="25" ptn:Coordinate_Z="-300"/>
                             <!--<ptn:keyValue__generate__basepoint__vector ptn:debug="todo" ptn:Coordinate_X="1" ptn:Coordinate_Y="2" ptn:Coordinate_Z="3"/>-->
                             <!--<ptn:keyValue__generate__basepoint__length ptn:debug="todo" ptn:MFVec3f__x3A__length="10"/>-->
                         </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="100" ptn:Coordinate_Y__x3A__vector="180" ptn:Coordinate_Z__x3A__vector="150"
+                        <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="50" ptn:Coordinate_Y__x3A__vector="50" ptn:Coordinate_Z__x3A__vector="150"
                             ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>
                         <!--<ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="40" ptn:Coordinate_Y__x3A__vector="40" ptn:Coordinate_Z__x3A__vector="-5"
                             ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>-->

@@ -27,6 +27,12 @@
         <xsl:message terminate="yes">#209M Unantended[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Input__x3A__attract__x3A__vectors">
+        <xsl:comment>#47A bypassed n[<xsl:value-of select="name()"/>]</xsl:comment>        
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Nodes__x3A__install" match="ptn:Simulation.attract__x3A__calculate.best.unique">
         <xsl:apply-templates mode="#current"/>
     </xsl:template>

@@ -115,6 +115,12 @@
         <xsl:message terminate="yes">#99 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Input__x3A__attract__x3A__vectors"/>
+                
+    
+    
+    
+    
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Z|ptn:Coordinate_Y|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage"/>
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Maximum_current|ptn:Time_constant"/>    
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Delay|ptn:Input__x3A__nodes|ptn:Simulated_potential|ptn:Attract__x3A__flag|ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum"/>
@@ -208,6 +214,11 @@
             <xsl:apply-templates mode="#current"/>
         </xsl:element>
     </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector"/>
+        
+    
     
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="*">
