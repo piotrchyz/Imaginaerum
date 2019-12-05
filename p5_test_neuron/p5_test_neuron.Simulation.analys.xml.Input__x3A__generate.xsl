@@ -31,6 +31,9 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Input__x3A__generate" match="*">
+        <xsl:message terminate="yes">#34 unantended n[<xsl:value-of select="name()"/>]  [*/n[<xsl:for-each select="*">
+            <xsl:value-of select="name()"/>]
+        </xsl:for-each>]</xsl:message>
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
@@ -38,12 +41,128 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate__x3A__pattern_Group">
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Defaults">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Receptors">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Receptor">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z|ptn:Is_inhibitor|ptn:Outputs|ptn:Input__x3A__nodes">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Simulated_potential|ptn:Receptor_regex_filter">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Reset_potential|ptn:Firing_threshold|ptn:Adaptation_conductance|ptn:Adaptation_time_constant">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Refactory_period|ptn:Maximum_current|ptn:Time_constant|ptn:Delay|ptn:Attract_min">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Inputs|ptn:Input__x3A__generate__x3A__pattern">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Group__x3A__generate__x3A__pattern_Group">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate__x3A__Shape|ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:keyValue__generate__basepoint_1|ptn:keyValue__generate__basepoint_2|ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input_exec_Maximum_current__x3A__generate__x3A__pattern|ptn:Input_exec_timex__x3A__generate__x3A__pattern|ptn:Input_exec_receptor__x3A__generate__x3A__pattern|ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance|ptn:Input__x3A__generate__x3A__pattern__x3A__Material|ptn:Input__x3A__generate__x3A__pattern__x3A__LineProperties">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Simulation|ptn:Simulator_tick|ptn:Simulation_ticks">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    
+    
+                                                         
+    <xsl:template mode="ptn:Input__x3A__generate" match="ptn:Input__x3A__generate__x3A__pattern_Group[ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector]">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:attribute name="ptn:debug">#42 + balancing Vectors  ; <xsl:value-of select="@ptn:debug"/></xsl:attribute>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Input__x3A__generate__x3A__pattern_Group" select="." tunnel="yes"/>
+                <xsl:with-param name="ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector" select="ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
@@ -118,7 +237,7 @@
                                 <xsl:comment>#64A [NOT FOUND RECEPTOR][#[<xsl:value-of select="$ptn:Input_exec_receptor__x3A__set_R"/>]]</xsl:comment>
                             </xsl:when>
                             <xsl:when test="$ptn:Input_exec_time__x3A__pause__x3A__mod &lt; $ptn:Input_exec_time__x3A__step">
-                                <ptn:Input last="{last()}" pos="{position()}" ptn:debug=" ptn:Input_exec_time__x3A__diff[{$ptn:Input_exec_time__x3A__diff}]  ptn:Input_exec_receptor__x3A__diff[{$ptn:Input_exec_receptor__x3A__diff}]"
+                                <ptn:Input last="{last()}" pos="{position()}" ptn:debug="121 ptn:Input_exec_time__x3A__diff[{$ptn:Input_exec_time__x3A__diff}]  ptn:Input_exec_receptor__x3A__diff[{$ptn:Input_exec_receptor__x3A__diff}]"
                                     ptn:Input_exec_time__x3A__diff="{$ptn:Input_exec_time__x3A__diff}"
                                     ptn:Input_exec_time__x3A__step="{$ptn:Input_exec_time__x3A__step}"
                                     ptn:Input_exec_time__x3A__set="{$ptn:Input_exec_time__x3A__set}"
