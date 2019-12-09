@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>emocje</title>
+    <topicref href="../emocje/emocje.dita"/>
+    <topicref href="../emocje/podzial.dita">
+        <topicref href="../emocje/intensywnosc.dita"/>
+        <topicref href="../emocje/rodzaj.dita">
+            <topicref href="../emocje/pierwotne.dita"/>
+            <topicref href="../emocje/wt_rne.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="../emocje/podstawowe_emocje.dita">
+        <topicref href="../emocje/gniew.dita"/>
+        <topicref href="../emocje/smutek.dita"/>
+        <topicref href="../emocje/radosc.dita"/>
+        <topicref href="../emocje/wstret.dita"/>
+        <topicref href="../emocje/wstyd.dita"/>
+        <topicref href="../emocje/wina.dita"/>
+        <topicref href="../emocje/strach_0.dita"/>
+    </topicref>
+    <topicref href="../emocje/postawa.dita">
+        <topicref href="../emocje/milosc.dita">
+            <topicref href="../emocje/radosc.dita"/>
+            <topicref href="../emocje/akceptacja.dita"/>
+        </topicref>
+        <topicref href="../emocje/submisja.dita">
+            <topicref href="../emocje/akceptacja.dita"/>
+            <topicref href="../emocje/lek.dita"/>
+        </topicref>
+        <topicref href="../emocje/strach.dita">
+            <topicref href="../emocje/lek.dita"/>
+            <topicref href="../emocje/zdziwienie.dita"/>
+        </topicref>
+        <topicref href="../emocje/rozczarowanie.dita">
+            <topicref href="../emocje/zdziwienie.dita"/>
+            <topicref href="../emocje/smutek.dita"/>
+        </topicref>
+        <topicref href="../emocje/zal.dita">
+            <topicref href="../emocje/smutek.dita"/>
+            <topicref href="../emocje/wstret.dita"/>
+        </topicref>
+        <topicref href="../emocje/pogarda.dita">
+            <topicref href="../emocje/wstret.dita"/>
+            <topicref href="../emocje/gniew.dita"/>
+        </topicref>
+        <topicref href="../emocje/agresywnosc.dita">
+            <topicref href="../emocje/gniew.dita"/>
+            <topicref href="../emocje/oczekiwanie.dita"/>
+        </topicref>
+        <topicref href="../emocje/optymizm.dita">
+            <topicref href="../emocje/oczekiwanie.dita"/>
+            <topicref href="../emocje/radosc.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="../emocje/zachowania.dita">
+        <topicref href="../emocje/inkorporacja.dita">
+            <topicref href="../emocje/akceptacja.dita"/>
+        </topicref>
+        <topicref href="../emocje/odrzucenie.dita">
+            <topicref href="../emocje/wstret.dita"/>
+        </topicref>
+        <topicref href="../emocje/ochrona.dita">
+            <topicref href="../emocje/lek.dita"/>
+        </topicref>
+        <topicref href="../emocje/niszczenie.dita">
+            <topicref href="../emocje/gniew.dita"/>
+        </topicref>
+        <topicref href="../emocje/rozmnazanie.dita">
+            <topicref href="../emocje/radosc.dita"/>
+        </topicref>
+        <topicref href="../emocje/reintegracja.dita">
+            <topicref href="../emocje/smutek.dita"/>
+        </topicref>
+        <topicref href="../emocje/orientacja.dita">
+            <topicref href="../emocje/zdziwienie.dita"/>
+        </topicref>
+        <topicref href="../emocje/eksploracja.dita">
+            <topicref href="../emocje/oczekiwanie.dita"/>
+        </topicref>
+    </topicref>
+</map>
