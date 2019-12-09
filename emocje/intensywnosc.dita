@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="intensywnosc">
+    <title>intensywność</title>
+    <body>
+        <p></p>
+        <table id="table_gpt_lzp_zjb">
+            <tgroup cols="6">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <colspec colnum="5" colname="col5"/>
+                <colspec colnum="6" colname="col6"/>
+                <tbody>
+                    <row>
+                        <entry><keyword>Radość</keyword></entry>
+                        <entry>
+                            <keyword>Zdumienie</keyword>
+                        </entry>
+                        <entry> Wściekłość </entry>
+                        <entry> Wstręt </entry>
+                        <entry> Żal </entry>
+                        <entry> Przerażenie </entry>
+                    </row>
+                    <row>
+                        <entry><b>SZCZĘŚCIE</b></entry>
+                        <entry><b>ZASKOCZENIE</b></entry>
+                        <entry><b>GNIEW</b></entry>
+                        <entry><b>ODRAZA</b></entry>
+                        <entry><b>SMUTEK</b></entry>
+                        <entry><b>STRACH</b></entry>
+                    </row>
+                    <row>
+                        <entry>Satysfakcja</entry>
+                        <entry> Ciekawość </entry>
+                        <entry> Rozdrażnienie </entry>
+                        <entry> Nuda </entry>
+                        <entry> Melancholia </entry>
+                        <entry> Zmartwienie</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>Hill D., <i>Emocjonomika – wykorzystanie emocji a sukces w biznesie</i>, Dom Wydawniczy
+            REBIS, Poznań 2010, s. 110</p>
+    </body>
+</topic>
