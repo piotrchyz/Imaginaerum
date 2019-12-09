@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="submisja">
+<task id="submisja" class="- topic/topic">
     <title>submisja</title>
     <shortdesc>Poddanie się przedstawionym warunkom, oficjalna akceptacja narzuconych zasad.
         Uniżoność, uległość, pokora<xref href="https://sjp.pl/submisja" format="html"
             scope="external"/></shortdesc>
     <taskbody>
         <context>
-            <p></p>
+            <p/>
         </context>
         <steps>
             <step>
-                <cmd></cmd>
+                <cmd/>
             </step>
         </steps>
     </taskbody>

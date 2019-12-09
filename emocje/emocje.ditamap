@@ -9,6 +9,15 @@
             <topicref href="../emocje/pierwotne.dita"/>
             <topicref href="../emocje/wt_rne.dita"/>
         </topicref>
+        <topicref href="rodzaj.dita">
+            <topicref href="negatywne.dita"/>
+            <topicref href="neutralne.dita"/>
+            <topicref href="pozytywne.dita"/>
+        </topicref>
+        <topicref href="model_postrzegania.dita">
+            <topicref href="dualny.dita"/>
+            <topicref href="biegunowy.dita"/>
+        </topicref>
     </topicref>
     <topicref href="../emocje/podstawowe_emocje.dita">
         <topicref href="../emocje/gniew.dita"/>
@@ -17,7 +26,7 @@
         <topicref href="../emocje/wstret.dita"/>
         <topicref href="../emocje/wstyd.dita"/>
         <topicref href="../emocje/wina.dita"/>
-        <topicref href="../emocje/strach_0.dita"/>
+        <topicref href="strach.dita"/>
     </topicref>
     <topicref href="../emocje/postawa.dita">
         <topicref href="../emocje/milosc.dita">
@@ -77,6 +86,33 @@
         </topicref>
         <topicref href="../emocje/eksploracja.dita">
             <topicref href="../emocje/oczekiwanie.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="kolejnosc_doznan.dita">
+        <topicref href="zaduma.dita">
+            <topicref href="smutek.dita">
+                <topicref href="zal.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="nuda.dita">
+            <topicref href="wstret.dita">
+                <topicref href="obrzydzenie.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="zmartwienie.dita">
+            <topicref href="gniew.dita">
+                <topicref href="wscieklosc.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="obawa.dita">
+            <topicref href="niepok_j.dita">
+                <topicref href="strach.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="roztargnienie.dita">
+            <topicref href="zdziwienie.dita">
+                <topicref href="zdumienie.dita"/>
+            </topicref>
         </topicref>
     </topicref>
 </map>

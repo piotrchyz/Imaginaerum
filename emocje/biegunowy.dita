@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="biegunowy">
+    <title>biegunowy</title>
+    <abstract>
+        <equation-figure>
+            <desc>
+                <p>Tłumaczy, że wszystko ma dwa bieguny czy też przeciwne aspekty i że
+                    “przeciwieństwa” tak naprawdę są jedynie dwoma ekstremami tej samej rzeczy z
+                    wieloma różnymi stopniami pomiędzy nimi.</p>
+                <p> Aby to zilustrować: ciepło i zimno, chociaż są “przeciwnościami”, to jednak są
+                    tą samą rzeczą, a różnica bierze się tylko ze stopni tej rzeczy.</p>
+            </desc>
+        </equation-figure>
+    </abstract>
+    <body>
+        <p></p>
+    </body>
+    <related-links>
+        <link href="http://www.maszke.pl/2010/10/prawo-biegunowosci-wedlug-filozofii-hermetycznej/"
+            format="html" scope="external"/>
+    </related-links>
+</topic>

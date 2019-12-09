@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="zal">
+<task id="zal" class="- topic/topic">
     <title>żal</title>
-    <shortdesc></shortdesc>
+    <shortdesc/>
     <taskbody>
         <context>
-            <p></p>
+            <p/>
         </context>
         <steps>
             <step>
-                <cmd></cmd>
+                <cmd/>
             </step>
         </steps>
     </taskbody>
