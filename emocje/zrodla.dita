@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="zrodla">
+    <title>źródła</title>
+    <shortdesc>w celu zgromadzenia źródeł do materiałów</shortdesc>
+    <refbody>
+        <example>
+            <p>Gasiul H., <i>Teorie emocji i motywacji, rozważania psychologiczne,</i> Wydawnictwo
+                Uniwersytetu Kardynała Stefana Wyszyńskiego, Warszawa 2002, s. 37-38 <xref
+                    href="https://www.blogger.com/blogger.g?blogID=7195497492976835020#_ftnref2"
+                    format="html" scope="external">[2]</xref> Tamże,s. 38 <xref
+                    href="https://www.blogger.com/blogger.g?blogID=7195497492976835020#_ftnref3"
+                    format="html" scope="external">[3]</xref> Gasiul H., <i>Teorie emocji i
+                    motywacji, rozważania psychologiczne,</i> Wydawnictwo Uniwersytetu Kardynała
+                Stefana Wyszyńskiego, Warszawa 2002, s. 41 <xref
+                    href="https://www.blogger.com/blogger.g?blogID=7195497492976835020#_ftnref4"
+                    format="html" scope="external">[4]</xref> Hill D., <i>Emocjonomika –
+                    wykorzystanie emocji a sukces w biznesie</i>, Dom Wydawniczy REBIS, Poznań 2010,
+                s. 111-113</p>
+            <p><xref href="https://www.blogger.com/blogger.g?blogID=7195497492976835020#_ftnref5"
+                    format="html" scope="external">[5]</xref> Hill D., <i>Emocjonomika –
+                    wykorzystanie emocji a sukces w biznesie</i>, Dom Wydawniczy REBIS, Poznań 2010,
+                s.114 <xref
+                    href="https://www.blogger.com/blogger.g?blogID=7195497492976835020#_ftnref6"
+                    format="html" scope="external">[6]</xref> Tamże, s. 113 <xref
+                    href="https://www.blogger.com/blogger.g?blogID=7195497492976835020#_ftnref7"
+                    format="html" scope="external">[7]</xref> Hill D., <i>Emocjonomika –
+                    wykorzystanie emocji a sukces w biznesie</i>, Dom Wydawniczy REBIS, Poznań 2010,
+                s.114 </p>
+        </example>
+    </refbody>
+</reference>

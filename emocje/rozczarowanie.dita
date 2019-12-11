@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="rozczarowanie" class="- topic/topic">
+<topic id="rozczarowanie" >
     <title>rozczarowanie</title>
-    <shortdesc/>
-    <taskbody>
-        <context>
+    <abstract>
+        <equation-figure>
+            <desc>
+                <p>uświadomienie, że wysiłek nie przyniesie spodziewanej nagrody;</p>
+            </desc>
+        </equation-figure>
+    </abstract>
+    <body>
+        
             <p/>
-        </context>
-        <steps>
-            <step>
-                <cmd/>
-            </step>
-        </steps>
-    </taskbody>
-</task>
+    </body>
+</topic>
