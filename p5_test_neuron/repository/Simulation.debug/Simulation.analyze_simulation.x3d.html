@@ -1,0 +1,1711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:ptn="p5_test_neuron"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+      xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <title>X3Dom Example OnOutputChange Event</title>
+      <script type="text/javascript" src="https://x3dom.org/release/x3dom.js"> </script>
+      <link rel="stylesheet"
+            type="text/css"
+            href="https://www.x3dom.org/download/x3dom.css"/>
+   </head>
+   <body>
+      <p>
+                    Testing sequence capable neurons
+                </p>
+      <x3d width="1600px"
+           height="800px"
+           xsi:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+         <scene render="true"
+                bboxcenter="0,0,0"
+                bboxsize="-1,-1,-1"
+                pickmode="idBuf"
+                dopickpass="true">
+            <Viewpoint id="top"
+                       fieldOfView="0.05"
+                       description="camera"
+                       centerOfRotation="65 65 0"
+                       position="55 55 2700"
+                       orientation="10 20 -1000 0.1222"> </Viewpoint>
+            <Viewpoint id="rows"
+                       description="camera"
+                       position="-2.43383 1.07351 -5"
+                       orientation="0 -1 0 2.06609"> </Viewpoint>
+            <ptn:Simulator_tick__x3A__for-each-group name="ptn:Simulation.analyze_simulation.xml">
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="1"
+                                                        ptn:Simulation_body_tick="1"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="2"
+                                                        ptn:Simulation_body_tick="2"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="3"
+                                                        ptn:Simulation_body_tick="3"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="4"
+                                                        ptn:Simulation_body_tick="4"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="5"
+                                                        ptn:Simulation_body_tick="5"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="6"
+                                                        ptn:Simulation_body_tick="6"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="7"
+                                                        ptn:Simulation_body_tick="7"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="8"
+                                                        ptn:Simulation_body_tick="8"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="9"
+                                                        ptn:Simulation_body_tick="9"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="10"
+                                                        ptn:Simulation_body_tick="10"
+                                                        ptn:Simulator_tick="1"/>
+               <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="11"
+                                                        ptn:Simulation_body_tick="11"
+                                                        ptn:Simulator_tick="1"/>
+            </ptn:Simulator_tick__x3A__for-each-group>
+            <Group DEF="ColorAnimation">
+               <TimeSensor DEF="ColorAnimationTimer" cycleinterval="5.5" loop="true"> </TimeSensor>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+               <ColorInterpolator DEF="A_EmissiveColorInterpolator"
+                                  keyValue=" 1.00 1.00 1.00 ,  0.5 0.5 0.5 ,  0.01 0.01 0.01 ,  0.01 0.01 0.01 ,  0.01 0.01 0.01 ,  0.02 0.02 0.02 ,  0.02 0.02 0.02 ,  0.03 0.03 0.03 ,  0.03 0.03 0.03 ,  0.04 0.04 0.04 ,  0.04 0.04 0.04 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
+               <ColorInterpolator DEF="B_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.51 0.51 0.51 ,  1.00 1.00 1.00 ,  0.98 0.98 0.98 ,  0.96 0.96 0.96 ,  0.94 0.94 0.94 ,  0.93 0.93 0.93 ,  0.91 0.91 0.91 ,  0.89 0.89 0.89 ,  0.88 0.88 0.88 ,  0.86 0.86 0.86 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
+               <ColorInterpolator DEF="C_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.00 0.00 0.00 ,  0.51 0.51 0.51 ,  1.00 1.00 1.00 ,  0.98 0.98 0.98 ,  0.96 0.96 0.96 ,  0.94 0.94 0.94 ,  0.93 0.93 0.93 ,  0.91 0.91 0.91 ,  0.89 0.89 0.89 ,  0.88 0.88 0.88 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y10_Z10]-->
+               <ColorInterpolator DEF="RG__X10_Y10_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y11_Z10]-->
+               <ColorInterpolator DEF="RG__X10_Y11_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y12_Z10]-->
+               <ColorInterpolator DEF="RG__X10_Y12_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y13_Z10]-->
+               <ColorInterpolator DEF="RG__X10_Y13_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y10_Z10]-->
+               <ColorInterpolator DEF="RG__X11_Y10_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.39 0.39 0.39 ,  1.00 1.00 1.00 ,  0.5 0.5 0.5 ,  0.01 0.01 0.01 ,  0.02 0.02 0.02 ,  0.02 0.02 0.02 ,  0.03 0.03 0.03 ,  0.04 0.04 0.04 ,  0.04 0.04 0.04 ,  0.05 0.05 0.05 ,  0.06 0.06 0.06 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y11_Z10]-->
+               <ColorInterpolator DEF="RG__X11_Y11_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.39 0.39 0.39 ,  0.39 0.39 0.39 ,  1.00 1.00 1.00 ,  0.5 0.5 0.5 ,  0.01 0.01 0.01 ,  0.02 0.02 0.02 ,  0.02 0.02 0.02 ,  0.03 0.03 0.03 ,  0.04 0.04 0.04 ,  0.04 0.04 0.04 ,  0.05 0.05 0.05 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y12_Z10]-->
+               <ColorInterpolator DEF="RG__X11_Y12_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y13_Z10]-->
+               <ColorInterpolator DEF="RG__X11_Y13_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y10_Z10]-->
+               <ColorInterpolator DEF="RG__X12_Y10_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y11_Z10]-->
+               <ColorInterpolator DEF="RG__X12_Y11_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y12_Z10]-->
+               <ColorInterpolator DEF="RG__X12_Y12_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y13_Z10]-->
+               <ColorInterpolator DEF="RG__X12_Y13_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y10_Z10]-->
+               <ColorInterpolator DEF="RG__X13_Y10_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y11_Z10]-->
+               <ColorInterpolator DEF="RG__X13_Y11_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y12_Z10]-->
+               <ColorInterpolator DEF="RG__X13_Y12_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y13_Z10]-->
+               <ColorInterpolator DEF="RG__X13_Y13_Z10_EmissiveColorInterpolator"
+                                  keyValue=" 0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 ,  0.5 0.5 0.5 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[A-to-A]-->
+               <ColorInterpolator DEF="A-to-A_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 ,  0.5 0.5 0.5 ,  0.13 0.13 0.13 ,  0.27 0.27 0.27 ,  0.39 0.39 0.39 ,  0.52 0.52 0.52 ,  0.64 0.64 0.64 ,  0.76 0.76 0.76 ,  0.88 0.88 0.88 ,  1.00 1.00 1.00 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[RG__X11_Y10_Z10-to-RG__X11_Y10_Z10]-->
+               <ColorInterpolator DEF="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 ,  0.5 0.5 0.5 ,  0.15 0.15 0.15 ,  0.30 0.30 0.30 ,  0.45 0.45 0.45 ,  0.59 0.59 0.59 ,  0.73 0.73 0.73 ,  0.87 0.87 0.87 ,  1.00 1.00 1.00 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[B-to-C]-->
+               <ColorInterpolator DEF="B-to-C_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 ,  0.5 0.5 0.5 ,  0.17 0.17 0.17 ,  0.34 0.34 0.34 ,  0.51 0.51 0.51 ,  0.67 0.67 0.67 ,  0.84 0.84 0.84 ,  1.00 1.00 1.00 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_B-to-C]-->
+               <ColorInterpolator DEF="_B-to-C_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 ,  0.5 0.5 0.5 ,  0.17 0.17 0.17 ,  0.34 0.34 0.34 ,  0.51 0.51 0.51 ,  0.67 0.67 0.67 ,  0.84 0.84 0.84 ,  1.00 1.00 1.00 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_B-to-B]-->
+               <ColorInterpolator DEF="_B-to-B_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 ,  0.5 0.5 0.5 ,  0.17 0.17 0.17 ,  0.34 0.34 0.34 ,  0.51 0.51 0.51 ,  0.67 0.67 0.67 ,  0.84 0.84 0.84 ,  1.00 1.00 1.00 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+               <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[RG__X11_Y11_Z10-to-RG__X11_Y11_Z10]-->
+               <ColorInterpolator DEF="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_EmissiveColorInterpolator"
+                                  keyValue="1 1 1 , 1 1 1 , 1 1 1 , 1 1 1 ,  0.5 0.5 0.5 ,  0.18 0.18 0.18 ,  0.35 0.35 0.35 ,  0.52 0.52 0.52 ,  0.68 0.68 0.68 ,  0.84 0.84 0.84 ,  1.00 1.00 1.00 "
+                                  key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </ColorInterpolator>
+            </Group>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="A"
+                       id="A"
+                       translation="0 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="A_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="B"
+                       id="B"
+                       translation="10 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="B_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="C"
+                       id="C"
+                       translation="20 0 0"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="C_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X10_Y10_Z10"
+                       id="RG__X10_Y10_Z10"
+                       translation="100 100 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X10_Y10_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X10_Y11_Z10"
+                       id="RG__X10_Y11_Z10"
+                       translation="100 110 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X10_Y11_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X10_Y12_Z10"
+                       id="RG__X10_Y12_Z10"
+                       translation="100 120 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X10_Y12_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X10_Y13_Z10"
+                       id="RG__X10_Y13_Z10"
+                       translation="100 130 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X10_Y13_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X11_Y10_Z10"
+                       id="RG__X11_Y10_Z10"
+                       translation="110 100 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X11_Y10_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X11_Y11_Z10"
+                       id="RG__X11_Y11_Z10"
+                       translation="110 110 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X11_Y11_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X11_Y12_Z10"
+                       id="RG__X11_Y12_Z10"
+                       translation="110 120 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X11_Y12_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X11_Y13_Z10"
+                       id="RG__X11_Y13_Z10"
+                       translation="110 130 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X11_Y13_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X12_Y10_Z10"
+                       id="RG__X12_Y10_Z10"
+                       translation="120 100 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X12_Y10_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X12_Y11_Z10"
+                       id="RG__X12_Y11_Z10"
+                       translation="120 110 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X12_Y11_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X12_Y12_Z10"
+                       id="RG__X12_Y12_Z10"
+                       translation="120 120 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X12_Y12_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X12_Y13_Z10"
+                       id="RG__X12_Y13_Z10"
+                       translation="120 130 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X12_Y13_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X13_Y10_Z10"
+                       id="RG__X13_Y10_Z10"
+                       translation="130 100 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X13_Y10_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X13_Y11_Z10"
+                       id="RG__X13_Y11_Z10"
+                       translation="130 110 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X13_Y11_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X13_Y12_Z10"
+                       id="RG__X13_Y12_Z10"
+                       translation="130 120 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X13_Y12_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X13_Y13_Z10"
+                       id="RG__X13_Y13_Z10"
+                       translation="130 130 10"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X13_Y13_Z10_Material" emissiveColor="1 0 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="A-to-A"
+                       id="A-to-A"
+                       translation="0 10 2"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="A-to-A_Material" diffuseColor="0 1 0" emissiveColor="0 1 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10"
+                       id="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10"
+                       translation="110 110 3"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Material"
+                               diffuseColor="0 1 0"
+                               emissiveColor="0 1 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="B-to-C"
+                       id="B-to-C"
+                       translation="10 10 4"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="B-to-C_Material" diffuseColor="0 1 0" emissiveColor="0 1 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="_B-to-C"
+                       id="_B-to-C"
+                       translation="7.5 5 4"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="_B-to-C_Material" diffuseColor="0 0 1" emissiveColor="0 0 1"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="_B-to-B"
+                       id="_B-to-B"
+                       translation="6 7 4"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="_B-to-B_Material" diffuseColor="0 0 1" emissiveColor="0 0 1"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <transform render="true"
+                       bboxcenter="0,0,0"
+                       center="0,0,0"
+                       scaleorientation="0,0,0,0"
+                       bboxsize="-1,-1,-1"
+                       DEF="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10"
+                       id="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10"
+                       translation="110 120 4"
+                       scale="1,1,1"
+                       rotation="0,0,0,0">
+               <shape render="true"
+                      bboxcenter="0,0,0"
+                      bboxsize="-1,-1,-1"
+                      ispickable="true">
+                  <appearance sorttype="auto" alphaclipthreshold="0.1">
+                     <material DEF="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Material"
+                               diffuseColor="0 1 0"
+                               emissiveColor="0 1 0"> </material>
+                  </appearance>
+                  <sphere solid="true"
+                          ccw="true"
+                          usegeocache="true"
+                          lit="true"
+                          radius="1"
+                          subdivision="24,24"/>
+               </shape>
+            </transform>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="A_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="C_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="C_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="C_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y10_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X10_Y10_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X10_Y10_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X10_Y10_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y11_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X10_Y11_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X10_Y11_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X10_Y11_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y12_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X10_Y12_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X10_Y12_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X10_Y12_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X10_Y13_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X10_Y13_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X10_Y13_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X10_Y13_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y10_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y10_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y10_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y10_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y11_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y11_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y11_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y11_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y12_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y12_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y12_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y12_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X11_Y13_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y13_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y13_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y13_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y10_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X12_Y10_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X12_Y10_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X12_Y10_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y11_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X12_Y11_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X12_Y11_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X12_Y11_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y12_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X12_Y12_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X12_Y12_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X12_Y12_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X12_Y13_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X12_Y13_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X12_Y13_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X12_Y13_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y10_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X13_Y10_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X13_Y10_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X13_Y10_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y11_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X13_Y11_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X13_Y11_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X13_Y11_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y12_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X13_Y12_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X13_Y12_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X13_Y12_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Receptor__x3A__analyze] @tick[] $n[RG__X13_Y13_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X13_Y13_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X13_Y13_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X13_Y13_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[A-to-A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A-to-A_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A-to-A_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="A-to-A_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[RG__X11_Y10_Z10-to-RG__X11_Y10_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[B-to-C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B-to-C_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B-to-C_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="B-to-C_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze] @tick[] $n[_B-to-C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_B-to-C_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_B-to-C_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="_B-to-C_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze] @tick[] $n[_B-to-B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_B-to-B_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_B-to-B_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="_B-to-B_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <!--#204 DEF.ROUTE match[ptn:Leaky_neuron_standard__x3A__analyze] @tick[] $n[RG__X11_Y11_Z10-to-RG__X11_Y11_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_EmissiveColorInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_EmissiveColorInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Material"
+                   toField="set_emissiveColor"> </ROUTE>
+            <Group><!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[A-to-A]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="A_to_A-to-A_Current_synapse_LineSet" point="0 0 0 0 10 2 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="A_to_A-to-A_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[RG__X11_Y10_Z10-to-RG__X11_Y10_Z10]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="RG__X11_Y10_Z10_to_RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Current_synapse_LineSet"
+                                 point="110 100 10 110 110 3 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"
+                               DEF="RG__X11_Y10_Z10_to_RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[B-to-C]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="B_to_B-to-C_Current_synapse_LineSet" point="10 0 0 10 10 4 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="B_to_B-to-C_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_B-to-B]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="B_to__B-to-B_Current_synapse_LineSet" point="10 0 0 6 7 4 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="B_to__B-to-B_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[B-to-C]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="C_to_B-to-C_Current_synapse_LineSet" point="20 0 0 10 10 4 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="C_to_B-to-C_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[_B-to-C]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="C_to__B-to-C_Current_synapse_LineSet" point="20 0 0 7.5 5 4 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0" DEF="C_to__B-to-C_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[RG__X11_Y11_Z10-to-RG__X11_Y11_Z10]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="RG__X11_Y11_Z10_to_RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Current_synapse_LineSet"
+                                 point="110 110 10 110 120 4 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"
+                               DEF="RG__X11_Y11_Z10_to_RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[B-to-C]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="_B-to-C_to_B-to-C_Current_synapse_LineSet"
+                                 point="7.5 5 4 10 10 4 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"
+                               DEF="_B-to-C_to_B-to-C_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#480 n[ptn:Current_synapse__x3A__analyze]  ON[B-to-C]-->
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="_B-to-B_to_B-to-C_Current_synapse_LineSet" point="6 7 4 10 10 4 "> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"
+                               DEF="_B-to-B_to_B-to-C_Current_synapse_emissiveColor"> </Material>
+                     <LineProperties linewidthScaleFactor="5"> </LineProperties>
+                  </Appearance>
+               </Shape>
+            </Group>
+            <Group DEF="CoordAnimation"><!-- --><!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[3] $L[A]  CGK[A-A-to-A] ON[A-to-A]  X[0] Z[0]-->
+               <CoordinateInterpolator DEF="A_to_A-to-A_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="A-to-A A-to-A A-to-A A-to-A A-to-A A-to-A A-to-A A-to-A A-to-A"
+                                       keyValue="0 0 0 0 0 0 , 0 0 0 0 0 0 , 0 0 0 0 10 2 , 0 0 0 0 10 2 , 0 0 0 0 10 2 , 0 0 0 0 10 2 , 0 0 0 0 10 2 , 0 0 0 0 10 2 , 0 0 0 0 10 2 , 0 0 0 0 10 2 , 0 0 0 0 10 2 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[4] $L[RG__X11_Y10_Z10]  CGK[RG__X11_Y10_Z10-RG__X11_Y10_Z10-to-RG__X11_Y10_Z10] ON[RG__X11_Y10_Z10-to-RG__X11_Y10_Z10]  X[110] Z[10]-->
+               <CoordinateInterpolator DEF="RG__X11_Y10_Z10_to_RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="RG__X11_Y10_Z10-to-RG__X11_Y10_Z10 RG__X11_Y10_Z10-to-RG__X11_Y10_Z10 RG__X11_Y10_Z10-to-RG__X11_Y10_Z10 RG__X11_Y10_Z10-to-RG__X11_Y10_Z10 RG__X11_Y10_Z10-to-RG__X11_Y10_Z10 RG__X11_Y10_Z10-to-RG__X11_Y10_Z10 RG__X11_Y10_Z10-to-RG__X11_Y10_Z10 RG__X11_Y10_Z10-to-RG__X11_Y10_Z10"
+                                       keyValue="110 100 10 110 100 10 , 110 100 10 110 100 10 , 110 100 10 110 100 10 , 110 100 10 110 110 3 , 110 100 10 110 110 3 , 110 100 10 110 110 3 , 110 100 10 110 110 3 , 110 100 10 110 110 3 , 110 100 10 110 110 3 , 110 100 10 110 110 3 , 110 100 10 110 110 3 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-B-to-C] ON[B-to-C]  X[10] Z[0]-->
+               <CoordinateInterpolator DEF="B_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C"
+                                       keyValue="10 0 0 10 0 0 , 10 0 0 10 0 0 , 10 0 0 10 0 0 , 10 0 0 10 0 0 , 10 0 0 10 10 4 , 10 0 0 10 10 4 , 10 0 0 10 10 4 , 10 0 0 10 10 4 , 10 0 0 10 10 4 , 10 0 0 10 10 4 , 10 0 0 10 10 4 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[B]  CGK[B-_B-to-B] ON[_B-to-B]  X[10] Z[0]-->
+               <CoordinateInterpolator DEF="B_to__B-to-B_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_B-to-B _B-to-B _B-to-B _B-to-B _B-to-B _B-to-B _B-to-B"
+                                       keyValue="10 0 0 10 0 0 , 10 0 0 10 0 0 , 10 0 0 10 0 0 , 10 0 0 10 0 0 , 10 0 0 6 7 4 , 10 0 0 6 7 4 , 10 0 0 6 7 4 , 10 0 0 6 7 4 , 10 0 0 6 7 4 , 10 0 0 6 7 4 , 10 0 0 6 7 4 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[C]  CGK[C-B-to-C] ON[B-to-C]  X[20] Z[0]-->
+               <CoordinateInterpolator DEF="C_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C"
+                                       keyValue="20 0 0 20 0 0 , 20 0 0 20 0 0 , 20 0 0 20 0 0 , 20 0 0 20 0 0 , 20 0 0 10 10 4 , 20 0 0 10 10 4 , 20 0 0 10 10 4 , 20 0 0 10 10 4 , 20 0 0 10 10 4 , 20 0 0 10 10 4 , 20 0 0 10 10 4 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[true] @tick[5] $L[C]  CGK[C-_B-to-C] ON[_B-to-C]  X[20] Z[0]-->
+               <CoordinateInterpolator DEF="C_to__B-to-C_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="_B-to-C _B-to-C _B-to-C _B-to-C _B-to-C _B-to-C _B-to-C"
+                                       keyValue="20 0 0 20 0 0 , 20 0 0 20 0 0 , 20 0 0 20 0 0 , 20 0 0 20 0 0 , 20 0 0 7.5 5 4 , 20 0 0 7.5 5 4 , 20 0 0 7.5 5 4 , 20 0 0 7.5 5 4 , 20 0 0 7.5 5 4 , 20 0 0 7.5 5 4 , 20 0 0 7.5 5 4 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[RG__X11_Y11_Z10]  CGK[RG__X11_Y11_Z10-RG__X11_Y11_Z10-to-RG__X11_Y11_Z10] ON[RG__X11_Y11_Z10-to-RG__X11_Y11_Z10]  X[110] Z[10]-->
+               <CoordinateInterpolator DEF="RG__X11_Y11_Z10_to_RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="RG__X11_Y11_Z10-to-RG__X11_Y11_Z10 RG__X11_Y11_Z10-to-RG__X11_Y11_Z10 RG__X11_Y11_Z10-to-RG__X11_Y11_Z10 RG__X11_Y11_Z10-to-RG__X11_Y11_Z10 RG__X11_Y11_Z10-to-RG__X11_Y11_Z10 RG__X11_Y11_Z10-to-RG__X11_Y11_Z10 RG__X11_Y11_Z10-to-RG__X11_Y11_Z10"
+                                       keyValue="110 110 10 110 110 10 , 110 110 10 110 110 10 , 110 110 10 110 110 10 , 110 110 10 110 110 10 , 110 110 10 110 120 4 , 110 110 10 110 120 4 , 110 110 10 110 120 4 , 110 110 10 110 120 4 , 110 110 10 110 120 4 , 110 110 10 110 120 4 , 110 110 10 110 120 4 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_B-to-C]  CGK[_B-to-C-B-to-C] ON[B-to-C]  X[7.5] Z[4]-->
+               <CoordinateInterpolator DEF="_B-to-C_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C"
+                                       keyValue="7.5 5 4 7.5 5 4 , 7.5 5 4 7.5 5 4 , 7.5 5 4 7.5 5 4 , 7.5 5 4 7.5 5 4 , 7.5 5 4 10 10 4 , 7.5 5 4 10 10 4 , 7.5 5 4 10 10 4 , 7.5 5 4 10 10 4 , 7.5 5 4 10 10 4 , 7.5 5 4 10 10 4 , 7.5 5 4 10 10 4 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+               <!--#206S DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] AF[] @tick[5] $L[_B-to-B]  CGK[_B-to-B-B-to-C] ON[B-to-C]  X[6] Z[4]-->
+               <CoordinateInterpolator DEF="_B-to-B_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                                       current-group.n="ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze ptn:Current_synapse__x3A__analyze"
+                                       cgo="B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C B-to-C"
+                                       keyValue="6 7 4 6 7 4 , 6 7 4 6 7 4 , 6 7 4 6 7 4 , 6 7 4 6 7 4 , 6 7 4 10 10 4 , 6 7 4 10 10 4 , 6 7 4 10 10 4 , 6 7 4 10 10 4 , 6 7 4 10 10 4 , 6 7 4 10 10 4 , 6 7 4 10 10 4 "
+                                       key="0, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1"> </CoordinateInterpolator>
+            </Group>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[A]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="A_to_A-to-A_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="A_to_A-to-A_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="A_to_A-to-A_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[RG__X11_Y10_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y10_Z10_to_RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y10_Z10_to_RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y10_Z10_to_RG__X11_Y10_Z10-to-RG__X11_Y10_Z10_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="B_to_B-to-C_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="B_to__B-to-B_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="B_to__B-to-B_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="B_to__B-to-B_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="C_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="C_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="C_to_B-to-C_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="C_to__B-to-C_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="C_to__B-to-C_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="C_to__B-to-C_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[RG__X11_Y11_Z10]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="RG__X11_Y11_Z10_to_RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="RG__X11_Y11_Z10_to_RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="RG__X11_Y11_Z10_to_RG__X11_Y11_Z10-to-RG__X11_Y11_Z10_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[_B-to-C]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_B-to-C_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_B-to-C_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="_B-to-C_to_B-to-C_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#451 SYNPS DEF.ROUTE match[ptn:Current_synapse__x3A__analyze] @tick[] $n[_B-to-B]-->
+            <ROUTE fromNode="ColorAnimationTimer"
+                   fromField="fraction_changed"
+                   toNode="_B-to-B_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   toField="set_fraction"> </ROUTE>
+            <ROUTE fromNode="_B-to-B_to_B-to-C_Current_synapse_CoordinateInterpolator"
+                   fromField="value_changed"
+                   toNode="_B-to-B_to_B-to-C_Current_synapse_LineSet"
+                   toField="point"> </ROUTE>
+            <!--#18-107II Current_synapse.Input.Interpolator [CGK[]]   /n[ptn:Simulation.analyze_simulation.xml]-->
+            <Group><!--#18GG Current_synapse.Input.Shape [CGK[A]]--><!--#18GG Current_synapse.Input.Shape [CGK[B]]--><!--#18GG Current_synapse.Input.Shape [CGK[C]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[A-to-A]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y10_Z10-to-RG__X11_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[B-to-C]]--><!--#18GG Current_synapse.Input.Shape [CGK[_B-to-C]]--><!--#18GG Current_synapse.Input.Shape [CGK[_B-to-B]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y11_Z10-to-RG__X11_Y11_Z10]]--></Group>
+            <Group><!--#18GG Current_synapse.Input.Shape [CGK[A]]--><!--#18GG Current_synapse.Input.Shape [CGK[B]]--><!--#18GG Current_synapse.Input.Shape [CGK[C]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y11_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y12_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y13_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[A-to-A]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y10_Z10-to-RG__X11_Y10_Z10]]--><!--#18GG Current_synapse.Input.Shape [CGK[B-to-C]]--><!--#18GG Current_synapse.Input.Shape [CGK[_B-to-C]]--><!--#18GG Current_synapse.Input.Shape [CGK[_B-to-B]]--><!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y11_Z10-to-RG__X11_Y11_Z10]]--></Group>
+            <!--#174 SIR -->
+            <!--#18GG Current_synapse.Input.Shape [CGK[A]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[B]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[C]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y10_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y11_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y12_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X10_Y13_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y10_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y11_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y12_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y13_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y10_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y11_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y12_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X12_Y13_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y10_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y11_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y12_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X13_Y13_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[A-to-A]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y10_Z10-to-RG__X11_Y10_Z10]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[B-to-C]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[_B-to-C]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[_B-to-B]]-->
+            <!--#18GG Current_synapse.Input.Shape [CGK[RG__X11_Y11_Z10-to-RG__X11_Y11_Z10]]-->
+            <!--#81 DD [TODO][ptn:Input__x3A__generate__x3A__pattern] [/n][ptn:Input__x3A__generate__x3A__pattern-->
+            <!--#81-37 DD [TODO][ptn:Input__x3A__generate__x3A__pattern] [/n][ptn:Group__x3A__generate__x3A__pattern_Group-->
+            <Group ptn:Simulation__x3A__DEF__x3A__elements__x3A__group="Input_Attract"><!--#442 [ptn:Input__x3A__generate__x3A__pattern__X3A__scene]  [TODO][n][ptn:Input__x3A__generate__x3A__Shape]--><!--#373V TODO PATTERN--><!--#373D TODO PATTERN[ERROR] [n][IndexedFaceSet]--><!--#373V TODO PATTERN--><!--#373D TODO PATTERN[ERROR] [n][IndexedFaceSet]--><!--#373V TODO PATTERN--><!--#373D TODO PATTERN[ERROR] [n][IndexedFaceSet]--><!--#373V TODO PATTERN--><!--#373D TODO PATTERN[ERROR] [n][IndexedFaceSet]--><!--#373V TODO PATTERN--><!--#373D TODO PATTERN[ERROR] [n][IndexedFaceSet]--><!--#373V TODO PATTERN--><!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y11_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="125">
+                     <Coordinate point=" 105 105 -150                      105 85 -150                      85 105 -150                     110 110 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y11_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="125">
+                     <Coordinate point=" 85 105 -150                      105 85 -150                      85 85 -150                     110 110 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y12_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="145">
+                     <Coordinate point=" 105 125 -150                      105 105 -150                      85 125 -150                     110 120 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y12_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="145">
+                     <Coordinate point=" 85 125 -150                      105 105 -150                      85 105 -150                     110 120 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y13_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="">
+                     <Coordinate point=" 105 145 -150                      105 125 -150                      85 145 -150                     110 130 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X11_Y13_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="">
+                     <Coordinate point=" 85 145 -150                      105 125 -150                      85 125 -150                     110 130 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373D TODO PATTERN[ERROR] [n][IndexedFaceSet]-->
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y11_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="125">
+                     <Coordinate point=" 125 105 -150                      125 85 -150                      105 105 -150                     120 110 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y11_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="125">
+                     <Coordinate point=" 105 105 -150                      125 85 -150                      105 85 -150                     120 110 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y12_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="145">
+                     <Coordinate point=" 125 125 -150                      125 105 -150                      105 125 -150                     120 120 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y12_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="145">
+                     <Coordinate point=" 105 125 -150                      125 105 -150                      105 105 -150                     120 120 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y13_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="">
+                     <Coordinate point=" 125 145 -150                      125 125 -150                      105 145 -150                     120 130 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X12_Y13_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="">
+                     <Coordinate point=" 105 145 -150                      125 125 -150                      105 125 -150                     120 130 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373D TODO PATTERN[ERROR] [n][IndexedFaceSet]-->
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y11_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="125">
+                     <Coordinate point=" 145 105 -150                      145 85 -150                      125 105 -150                     130 110 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y11_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="110"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="105"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="85"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="125">
+                     <Coordinate point=" 125 105 -150                      145 85 -150                      125 85 -150                     130 110 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y12_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="145">
+                     <Coordinate point=" 145 125 -150                      145 105 -150                      125 125 -150                     130 120 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y12_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="120"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="125"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="105"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="145">
+                     <Coordinate point=" 125 125 -150                      145 105 -150                      125 105 -150                     130 120 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#373V TODO PATTERN-->
+               <!--#373ACC TODO PATTERN [n][IndexedFaceSet]-->
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y13_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="">
+                     <Coordinate point=" 145 145 -150                      145 125 -150                      125 145 -150                     130 130 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".9" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <Shape>
+                  <IndexedFaceSet coordIndex="0 1 2   -1 1 3    2 -1 2    3 0 -1     3 1 0"
+                                  ptn:Label__x3A__fieldOfView__x3A__ray="RG__X13_Y13_Z10"
+                                  ptn:Coordinate_X__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Y__x3A__fieldOfView="130"
+                                  ptn:Coordinate_Z__x3A__fieldOfView="10"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__context="145"
+                                  ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray__x3A__context="-150"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_X__x3A__fieldOfView__x3A__ray__x3A__more=""
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__less="125"
+                                  ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray__x3A__more="">
+                     <Coordinate point=" 125 145 -150                      145 125 -150                      125 125 -150                     130 130 10"> </Coordinate> 
+                  </IndexedFaceSet>
+                  <Appearance>
+                     <Material transparency=".5" diffuseColor="0.9 0.9 0.3 "> </Material>
+                  </Appearance> 
+               </Shape>
+               <!--#544 [generate ][TOOODO] [n][ptn:Input__x3A__generate__x3A__pattern_Group]  [ptn:debug=[ #123 here todo  1 to $ptn:Simulation_ticks__x3A__real[11]  ]]  [DEB]#C[@DEF[72]]-->
+               <!--#999A  [Colorinterporat] [current-group] [n][ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector]-->
+               <CoordinateInterpolator ptn:debug="#46 A1-A2D_scene__x3A__LineSet_CoordinateInterpolator"
+                                       DEF="A1-A2D_LineSet_Input_Attract_CoordinateInterpolator_point"
+                                       keyValue="30 10 -50 40 20 -50, 47.5 7.5 -52.5 57.5 17.5 -52.5, 62.5 2.5 -57.5 72.5 12.5 -57.5, 75 -5 -65 85 5 -65, 85 -15 -75 95 -5 -75, 92.5 -22.5 -82.5 102.5 -12.5 -82.5, 97.5 -27.5 -87.5 107.5 -17.5 -87.5"
+                                       key="0.090909090909090909, 0.181818181818181818, 0.272727272727272727, 0.363636363636363636, 0.454545454545454545, 0.545454545454545455, 0.636363636363636364"> </CoordinateInterpolator>
+               <!--#999A  [Colorinterporat] [current-group] [n][ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector]-->
+               <CoordinateInterpolator ptn:debug="#46 A2-A4D_scene__x3A__LineSet_CoordinateInterpolator"
+                                       DEF="A2-A4D_LineSet_Input_Attract_CoordinateInterpolator_point"
+                                       keyValue="41 20 -60 50 10 -60, 58.5 17.5 -62.5 67.5 7.5 -62.5, 73.5 12.5 -67.5 82.5 2.5 -67.5, 86 5 -75 95 -5 -75, 96 -5 -85 105 -15 -85, 103.5 -12.5 -92.5 112.5 -22.5 -92.5, 108.5 -17.5 -97.5 117.5 -27.5 -97.5"
+                                       key="0.090909090909090909, 0.181818181818181818, 0.272727272727272727, 0.363636363636363636, 0.454545454545454545, 0.545454545454545455, 0.636363636363636364"> </CoordinateInterpolator>
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="A1-A2D_LineSet_Input_Attract_LineSet_point"
+                                 point="10 10 -50 20 20 -50"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"> </Material>
+                     <LineProperties linewidthScaleFactor="1"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <Shape>
+                  <LineSet vertexCount="2">
+                     <Coordinate DEF="A2-A4D_LineSet_Input_Attract_LineSet_point"
+                                 point="21 20 -60 30 10 -60"> </Coordinate>
+                  </LineSet>
+                  <Appearance>
+                     <Material emissiveColor="1 0 0"> </Material>
+                     <LineProperties linewidthScaleFactor="1"> </LineProperties>
+                  </Appearance>
+               </Shape>
+               <!--#999R  [ROUTE] [current-group] [n][ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector]-->
+               <ROUTE fromNode="ColorAnimationTimer"
+                      fromField="fraction_changed"
+                      toField="set_fraction"
+                      toNode="A1-A2D_LineSet_Input_Attract_CoordinateInterpolator_point"> </ROUTE>
+               <ROUTE fromField="value_changed"
+                      toField="point"
+                      fromNode="A1-A2D_LineSet_Input_Attract_CoordinateInterpolator_point"
+                      toNode="A1-A2D_LineSet_Input_Attract_LineSet_point"> </ROUTE>
+               <!--#999R  [ROUTE] [current-group] [n][ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector]-->
+               <ROUTE fromNode="ColorAnimationTimer"
+                      fromField="fraction_changed"
+                      toField="set_fraction"
+                      toNode="A2-A4D_LineSet_Input_Attract_CoordinateInterpolator_point"> </ROUTE>
+               <ROUTE fromField="value_changed"
+                      toField="point"
+                      fromNode="A2-A4D_LineSet_Input_Attract_CoordinateInterpolator_point"
+                      toNode="A2-A4D_LineSet_Input_Attract_LineSet_point"> </ROUTE>  
+            </Group>
+         </scene>
+      </x3d>
+      <button onclick="document.getElementById('rows').setAttribute('set_bind','true');">rows</button>
+      <button onclick="document.getElementById('top').setAttribute('set_bind','true');">top </button>
+   </body>
+</html>

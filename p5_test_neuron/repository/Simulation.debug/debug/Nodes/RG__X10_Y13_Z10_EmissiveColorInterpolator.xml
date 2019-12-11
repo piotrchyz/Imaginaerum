@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:ColorInterpolator__x3A__debug xmlns:ptn="p5_test_neuron"
+                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+                                   xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
+                                   xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                   x3d:DEF="RG__X10_Y13_Z10_EmissiveColorInterpolator">
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="1"
+                                                  ptn:Simulation_body_tick="1"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="1">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="2"
+                                                  ptn:Simulation_body_tick="2"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="2">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="3"
+                                                  ptn:Simulation_body_tick="3"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="3">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="4"
+                                                  ptn:Simulation_body_tick="4"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="4">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="5"
+                                                  ptn:Simulation_body_tick="5"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="5">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="6"
+                                                  ptn:Simulation_body_tick="6"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="6">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="7"
+                                                  ptn:Simulation_body_tick="7"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="7">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="8"
+                                                  ptn:Simulation_body_tick="8"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="8">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="9"
+                                                  ptn:Simulation_body_tick="9"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="9">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="10"
+                                                  ptn:Simulation_body_tick="10"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="10">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="11"
+                                                  ptn:Simulation_body_tick="11"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="11">
+         <ptn:Receptor__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="RG__X10_Y13_Z10"
+                                                 ptn:Coordinate_X__x3A__debug="100"
+                                                 ptn:Coordinate_Y__x3A__debug="130"
+                                                 ptn:Coordinate_Z__x3A__debug="10"
+                                                 ptn:Is_inhibitor__x3A__debug="0"
+                                                 ptn:Outputs__x3A__count__x3A__debug="0"
+                                                 ptn:Simulated_potential__x3A__debug="-70"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-70"
+                                                            ptn:Simulated_potential__x3A__min="-70"
+                                                            ptn:Simulated_potential__x3A__max="-70"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0" ptn:position__x3A__last__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.18"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.27"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.36"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.45"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.55"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.64"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.73"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.82"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.91"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="1"/> 
+</ptn:ColorInterpolator__x3A__debug>

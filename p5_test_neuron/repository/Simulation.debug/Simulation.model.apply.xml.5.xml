@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:Simulation.model.apply.xml xmlns:ptn="p5_test_neuron"
+                                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                ptn:Simulation_body_tick="6"
+                                ptn:Simulation_body_time="6"
+                                ptn:Simulation_body_time__x3A__last="5"
+                                ptn:Simulator_tick="1"><!--#30 bypassed/n[ptn:Simulation.attract__x3A__aggregate__x3A__validated] to be context installed-->
+   <ptn:Receptors xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
+                  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+      <ptn:Receptor id="d29e135">
+         <ptn:Label>A</ptn:Label>
+         <ptn:Coordinate_X>0</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps">
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>4.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>A-to-A</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-74.61184080000001</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e178">
+         <ptn:Label>B</ptn:Label>
+         <ptn:Coordinate_X>10</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps">
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>4.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>B-to-C</ptn:Output_Node>
+            </ptn:Current_synapse>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>4.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>_B-to-B</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-56.35007313286401</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e231">
+         <ptn:Label>C</ptn:Label>
+         <ptn:Coordinate_X>20</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps">
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>4.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>B-to-C</ptn:Output_Node>
+            </ptn:Current_synapse>
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>4.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>_B-to-C</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-56.053424780864</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e283">
+         <ptn:Label>RG__X10_Y10_Z10</ptn:Label>
+         <ptn:Coordinate_X>100</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X10_Y10_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e317">
+         <ptn:Label>RG__X10_Y11_Z10</ptn:Label>
+         <ptn:Coordinate_X>100</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X10_Y11_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e351">
+         <ptn:Label>RG__X10_Y12_Z10</ptn:Label>
+         <ptn:Coordinate_X>100</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X10_Y12_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e385">
+         <ptn:Label>RG__X10_Y13_Z10</ptn:Label>
+         <ptn:Coordinate_X>100</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X10_Y13_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e419">
+         <ptn:Label>RG__X11_Y10_Z10</ptn:Label>
+         <ptn:Coordinate_X>110</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps">
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>4.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>RG__X11_Y10_Z10-to-RG__X11_Y10_Z10</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-74.70596</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X11_Y10_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e462">
+         <ptn:Label>RG__X11_Y11_Z10</ptn:Label>
+         <ptn:Coordinate_X>110</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps">
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>4.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>RG__X11_Y11_Z10-to-RG__X11_Y11_Z10</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-74.802</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X11_Y11_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e505">
+         <ptn:Label>RG__X11_Y12_Z10</ptn:Label>
+         <ptn:Coordinate_X>110</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X11_Y12_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e539">
+         <ptn:Label>RG__X11_Y13_Z10</ptn:Label>
+         <ptn:Coordinate_X>110</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X11_Y13_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e574">
+         <ptn:Label>RG__X12_Y10_Z10</ptn:Label>
+         <ptn:Coordinate_X>120</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X12_Y10_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e608">
+         <ptn:Label>RG__X12_Y11_Z10</ptn:Label>
+         <ptn:Coordinate_X>120</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X12_Y11_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e642">
+         <ptn:Label>RG__X12_Y12_Z10</ptn:Label>
+         <ptn:Coordinate_X>120</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X12_Y12_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e676">
+         <ptn:Label>RG__X12_Y13_Z10</ptn:Label>
+         <ptn:Coordinate_X>120</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X12_Y13_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e710">
+         <ptn:Label>RG__X13_Y10_Z10</ptn:Label>
+         <ptn:Coordinate_X>130</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X13_Y10_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e744">
+         <ptn:Label>RG__X13_Y11_Z10</ptn:Label>
+         <ptn:Coordinate_X>130</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X13_Y11_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e778">
+         <ptn:Label>RG__X13_Y12_Z10</ptn:Label>
+         <ptn:Coordinate_X>130</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X13_Y12_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+      <ptn:Receptor id="d29e812">
+         <ptn:Label>RG__X13_Y13_Z10</ptn:Label>
+         <ptn:Coordinate_X>130</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes/>
+         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Receptor_regex_filter>RG__X13_Y13_Z10</ptn:Receptor_regex_filter>
+      </ptn:Receptor>
+   </ptn:Receptors>
+   <ptn:Nodes xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
+              xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+      <ptn:Leaky_neuron_standard id="d29e847">
+         <ptn:Label>A-to-A</ptn:Label>
+         <ptn:Coordinate_X>0</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>2</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Input__x3A__node__x3A__prohibit>A</ptn:Input__x3A__node__x3A__prohibit>
+         </ptn:Input__x3A__nodes__x3A__prohibit>
+         <ptn:Simulated_potential>-74.61184080000001</ptn:Simulated_potential>
+      </ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_standard id="d29e884">
+         <ptn:Label>RG__X11_Y10_Z10-to-RG__X11_Y10_Z10</ptn:Label>
+         <ptn:Coordinate_X>110</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>3</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>RG__X11_Y10_Z10</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Input__x3A__node__x3A__prohibit>RG__X11_Y10_Z10</ptn:Input__x3A__node__x3A__prohibit>
+         </ptn:Input__x3A__nodes__x3A__prohibit>
+         <ptn:Simulated_potential>-74.70596</ptn:Simulated_potential>
+      </ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_standard id="d29e921">
+         <ptn:Label>B-to-C</ptn:Label>
+         <ptn:Coordinate_X>10</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>10</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Capacitance>1.2</ptn:Capacitance>
+         <ptn:Resistance>100</ptn:Resistance>
+         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70</ptn:Resting_potential>
+         <ptn:Reset_potential>-75</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
+         <ptn:Refactory_period>2</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>C</ptn:Input__x3A__node>
+            <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+            <ptn:Input__x3A__node>_B-to-C</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Simulated_potential>-74.91701388888889</ptn:Simulated_potential>
+      </ptn:Leaky_neuron_standard>
+      <ptn:Leaky_neuron_inhibitor__x3A__AB id="d29e959">
+         <ptn:Label>_B-to-C</ptn:Label>
+         <ptn:Coordinate_X>7.5</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>5</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Capacitance>1</ptn:Capacitance>
+         <ptn:Resistance>100</ptn:Resistance>
+         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70</ptn:Resting_potential>
+         <ptn:Reset_potential>-75</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
+         <ptn:Refactory_period>2</ptn:Refactory_period>
+         <ptn:Is_inhibitor>1</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps">
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>B-to-C</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>C</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Input__x3A__node__x3A__prohibit>B</ptn:Input__x3A__node__x3A__prohibit>
+         </ptn:Input__x3A__nodes__x3A__prohibit>
+         <ptn:Simulated_potential>-74.90050000000001</ptn:Simulated_potential>
+      </ptn:Leaky_neuron_inhibitor__x3A__AB>
+      <ptn:Leaky_neuron_inhibitor__X3A__AA id="d29e1005">
+         <ptn:Label>_B-to-B</ptn:Label>
+         <ptn:Coordinate_X>6</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>7</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Capacitance>1</ptn:Capacitance>
+         <ptn:Resistance>100</ptn:Resistance>
+         <ptn:Minimum_voltage>-90</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70</ptn:Resting_potential>
+         <ptn:Reset_potential>-75</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55</ptn:Firing_threshold>
+         <ptn:Refactory_period>2</ptn:Refactory_period>
+         <ptn:Is_inhibitor>1</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps">
+            <ptn:Current_synapse>
+               <ptn:Maximum_current>3.0</ptn:Maximum_current>
+               <ptn:Time_constant>2.0</ptn:Time_constant>
+               <ptn:Delay>5.0</ptn:Delay>
+               <ptn:Output_Node>B-to-C</ptn:Output_Node>
+            </ptn:Current_synapse>
+         </ptn:Outputs>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>B</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Input__x3A__node__x3A__prohibit>C</ptn:Input__x3A__node__x3A__prohibit>
+         </ptn:Input__x3A__nodes__x3A__prohibit>
+         <ptn:Simulated_potential>-74.90050000000001</ptn:Simulated_potential>
+      </ptn:Leaky_neuron_inhibitor__X3A__AA>
+      <ptn:Leaky_neuron_standard id="d29e1051">
+         <ptn:Label>RG__X11_Y11_Z10-to-RG__X11_Y11_Z10</ptn:Label>
+         <ptn:Coordinate_X>110</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>4</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.5</ptn:Capacitance>
+         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+         <ptn:Refactory_period>2.0</ptn:Refactory_period>
+         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+         <ptn:Outputs ptn:debug="#105  todo Install Synaps"/>
+         <ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__node>RG__X11_Y11_Z10</ptn:Input__x3A__node>
+         </ptn:Input__x3A__nodes>
+         <ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Input__x3A__node__x3A__prohibit>RG__X11_Y11_Z10</ptn:Input__x3A__node__x3A__prohibit>
+         </ptn:Input__x3A__nodes__x3A__prohibit>
+         <ptn:Simulated_potential>-74.802</ptn:Simulated_potential>
+      </ptn:Leaky_neuron_standard>
+      <!--#16 MI[/n][ptn:Simulation.attract__x3A__aggregate__x3A__validated]-->
+   </ptn:Nodes>
+</ptn:Simulation.model.apply.xml>

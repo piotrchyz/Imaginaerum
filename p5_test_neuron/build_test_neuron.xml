@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="default"><!-- default --><!-- analyze_simulation_x3d -->
+<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="debug"><!-- default --><!-- analyze_simulation_x3d -->
     
     
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
     <property name="p5_test_neuron.repository" location="${basedir}/p5_test_neuron/repository"/>
     
-    
-    <condition property="p5_test_neuron.Config" value="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml">
-        <available file="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml"/>
-    </condition>
-    
-    <echo>#13 [IF]$p5_test_neuron.Config[${p5_test_neuron.Config}]</echo>
-    <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
-    
+    <property name="p5suis" location="/Users/a.binder/Documents/se/SE/schema/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"/>
+   
     
     <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
     <property name="p5_test_neuron.snake.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron_snake.xsl"/>
@@ -24,7 +18,39 @@
     
     
     
-    <target name="default" depends="clean,generate_simulation_build__x3A__exec,analyze_simulation_x3d,open">
+    <target name="default.param">
+        <condition property="p5_test_neuron.Config" value="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml">
+            <available file="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml"/>
+        </condition>
+        
+        <echo>#13 [IF]$p5_test_neuron.Config[${p5_test_neuron.Config}]</echo>
+        <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config1.xml"/>
+        
+    </target>
+    
+    <target name="debug.param">
+        <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config.debug.xml"/>
+        <property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation.debug"/>
+        <echo>#28 setting default config base model for debugg engine
+            $p5_test_neuron.Config = ${p5_test_neuron.Config}
+            $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
+        </echo><!-- say_to_PL.file -->
+        
+        <!--<java fork="true" >-->
+        <ant inheritall="false" antfile="${p5suis}" target="p5suis:say_to_queue.PL.drop_overflow">
+            <property name="p5suis:say_text" value="Uruchamiam test podstawowych modeli silnika neuronowego"/>
+        </ant>
+        <ant   inheritall="false" antfile="${p5suis}" target="p5suis:say_from_queue.task.run.immediate"/>
+        <!--</java>--> 
+        
+        
+    </target>
+    
+    <target name="debug" depends="debug.param,default" description="base model for debugg engine">
+        <echo>#26 base model for debugg engine</echo>
+    </target>
+    
+    <target name="default" depends="default.param,clean,generate_simulation_build__x3A__exec,analyze_simulation_x3d,open">
         <echo> Running p5_test_neuron
             $p5_test_neuron.Config = ${p5_test_neuron.Config}
         </echo>
@@ -35,11 +61,12 @@
     </target>
     
     <target name="clean" depends="param">
-        <delete  file="${p5_test_neuron.Simulation.dir}/*"   excludes="Inputs1.xml,Inputs1.xml.Defaults.xml" verbose="true"/>
+        <delete verbose="true" failonerror="false">
+            <fileset dir="${p5_test_neuron.Simulation.dir}" excludes="Inputs1.xml,Inputs1.xml.Defaults.xml"/>
+        </delete>
     </target>
     
     <target name="param" >
-        
         <property name="p5_test_neuron.Simulation_ticks" value="10"/>
         <property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation"/>
         <property name="p5_test_neuron.Simulation.build.analys.xml" location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"/>

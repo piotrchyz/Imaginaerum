@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:ColorInterpolator__x3A__debug xmlns:ptn="p5_test_neuron"
+                                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+                                   xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
+                                   xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                                   x3d:DEF="_B-to-C_EmissiveColorInterpolator">
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:MFColor__x3A__sequence__x3A__debug ptn:MFColor__x3A__R="1"
+                                              ptn:MFColor__x3A__G="1"
+                                              ptn:MFColor__x3A__B="1"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:MFColor__x3A__sequence__x3A__debug ptn:MFColor__x3A__R="1"
+                                              ptn:MFColor__x3A__G="1"
+                                              ptn:MFColor__x3A__B="1"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:MFColor__x3A__sequence__x3A__debug ptn:MFColor__x3A__R="1"
+                                              ptn:MFColor__x3A__G="1"
+                                              ptn:MFColor__x3A__B="1"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:MFColor__x3A__sequence__x3A__debug ptn:MFColor__x3A__R="1"
+                                              ptn:MFColor__x3A__G="1"
+                                              ptn:MFColor__x3A__B="1"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="5"
+                                                  ptn:Simulation_body_tick="5"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="5">
+         <ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="_B-to-C"
+                                                                        ptn:Coordinate_X__x3A__debug="7.5"
+                                                                        ptn:Coordinate_Y__x3A__debug="5"
+                                                                        ptn:Coordinate_Z__x3A__debug="4"
+                                                                        ptn:Is_inhibitor__x3A__debug="1"
+                                                                        ptn:Outputs__x3A__count__x3A__debug="1"
+                                                                        ptn:Simulated_potential__x3A__debug="-74.95"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.5"
+                                                            ptn:MFColor__x3A__G="0.5"
+                                                            ptn:MFColor__x3A__B="0.5"
+                                                            ptn:Simulated_potential__x3A__current="-74.95"
+                                                            ptn:Simulated_potential__x3A__min="-74.95"
+                                                            ptn:Simulated_potential__x3A__max="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__diff_val="0"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__percent="0.5"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="6"
+                                                  ptn:Simulation_body_tick="6"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="6">
+         <ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="_B-to-C"
+                                                                        ptn:Coordinate_X__x3A__debug="7.5"
+                                                                        ptn:Coordinate_Y__x3A__debug="5"
+                                                                        ptn:Coordinate_Z__x3A__debug="4"
+                                                                        ptn:Is_inhibitor__x3A__debug="1"
+                                                                        ptn:Outputs__x3A__count__x3A__debug="1"
+                                                                        ptn:Simulated_potential__x3A__debug="-74.90050000000001"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.17"
+                                                            ptn:MFColor__x3A__G="0.17"
+                                                            ptn:MFColor__x3A__B="0.17"
+                                                            ptn:Simulated_potential__x3A__current="-74.90050000000001"
+                                                            ptn:Simulated_potential__x3A__min="-74.95"
+                                                            ptn:Simulated_potential__x3A__max="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__diff_val="0.04949999999999477"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__percent="0.17"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="7"
+                                                  ptn:Simulation_body_tick="7"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="7">
+         <ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="_B-to-C"
+                                                                        ptn:Coordinate_X__x3A__debug="7.5"
+                                                                        ptn:Coordinate_Y__x3A__debug="5"
+                                                                        ptn:Coordinate_Z__x3A__debug="4"
+                                                                        ptn:Is_inhibitor__x3A__debug="1"
+                                                                        ptn:Outputs__x3A__count__x3A__debug="1"
+                                                                        ptn:Simulated_potential__x3A__debug="-74.85149500000001"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.34"
+                                                            ptn:MFColor__x3A__G="0.34"
+                                                            ptn:MFColor__x3A__B="0.34"
+                                                            ptn:Simulated_potential__x3A__current="-74.85149500000001"
+                                                            ptn:Simulated_potential__x3A__min="-74.95"
+                                                            ptn:Simulated_potential__x3A__max="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__diff_val="0.09850499999998874"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__percent="0.34"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="8"
+                                                  ptn:Simulation_body_tick="8"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="8">
+         <ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="_B-to-C"
+                                                                        ptn:Coordinate_X__x3A__debug="7.5"
+                                                                        ptn:Coordinate_Y__x3A__debug="5"
+                                                                        ptn:Coordinate_Z__x3A__debug="4"
+                                                                        ptn:Is_inhibitor__x3A__debug="1"
+                                                                        ptn:Outputs__x3A__count__x3A__debug="1"
+                                                                        ptn:Simulated_potential__x3A__debug="-74.80298005000002"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.51"
+                                                            ptn:MFColor__x3A__G="0.51"
+                                                            ptn:MFColor__x3A__B="0.51"
+                                                            ptn:Simulated_potential__x3A__current="-74.80298005000002"
+                                                            ptn:Simulated_potential__x3A__min="-74.95"
+                                                            ptn:Simulated_potential__x3A__max="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__diff_val="0.14701994999998647"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__percent="0.51"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="9"
+                                                  ptn:Simulation_body_tick="9"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="9">
+         <ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="_B-to-C"
+                                                                        ptn:Coordinate_X__x3A__debug="7.5"
+                                                                        ptn:Coordinate_Y__x3A__debug="5"
+                                                                        ptn:Coordinate_Z__x3A__debug="4"
+                                                                        ptn:Is_inhibitor__x3A__debug="1"
+                                                                        ptn:Outputs__x3A__count__x3A__debug="1"
+                                                                        ptn:Simulated_potential__x3A__debug="-74.75495024950001"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.67"
+                                                            ptn:MFColor__x3A__G="0.67"
+                                                            ptn:MFColor__x3A__B="0.67"
+                                                            ptn:Simulated_potential__x3A__current="-74.75495024950001"
+                                                            ptn:Simulated_potential__x3A__min="-74.95"
+                                                            ptn:Simulated_potential__x3A__max="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__diff_val="0.19504975049999018"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__percent="0.67"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="10"
+                                                  ptn:Simulation_body_tick="10"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="10">
+         <ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="_B-to-C"
+                                                                        ptn:Coordinate_X__x3A__debug="7.5"
+                                                                        ptn:Coordinate_Y__x3A__debug="5"
+                                                                        ptn:Coordinate_Z__x3A__debug="4"
+                                                                        ptn:Is_inhibitor__x3A__debug="1"
+                                                                        ptn:Outputs__x3A__count__x3A__debug="1"
+                                                                        ptn:Simulated_potential__x3A__debug="-74.70740074700501"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="0.84"
+                                                            ptn:MFColor__x3A__G="0.84"
+                                                            ptn:MFColor__x3A__B="0.84"
+                                                            ptn:Simulated_potential__x3A__current="-74.70740074700501"
+                                                            ptn:Simulated_potential__x3A__min="-74.95"
+                                                            ptn:Simulated_potential__x3A__max="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__diff_val="0.2425992529949923"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__percent="0.84"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:keyValue__x3A__MFColor__x3A__debug>
+      <ptn:keyValue__x3A__current_tick__x3A__debug>
+         <ptn:Simulation.analys.xml__x3A__analyze ptn:Simulation_body_time="11"
+                                                  ptn:Simulation_body_tick="11"
+                                                  ptn:Simulator_tick="1"/>
+      </ptn:keyValue__x3A__current_tick__x3A__debug>
+      <ptn:current-group__x3A__debug ptn:Simulation_body_tick="11">
+         <ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze__x3A__debug ptn:Label__x3A__analyze__x3A__debug="_B-to-C"
+                                                                        ptn:Coordinate_X__x3A__debug="7.5"
+                                                                        ptn:Coordinate_Y__x3A__debug="5"
+                                                                        ptn:Coordinate_Z__x3A__debug="4"
+                                                                        ptn:Is_inhibitor__x3A__debug="1"
+                                                                        ptn:Outputs__x3A__count__x3A__debug="1"
+                                                                        ptn:Simulated_potential__x3A__debug="-74.66032673953497"/>
+      </ptn:current-group__x3A__debug> 
+      <ptn:MFColor__x3A__sequence__x3A__dynamic__x3A__debug ptn:MFColor__x3A__R="1.00"
+                                                            ptn:MFColor__x3A__G="1.00"
+                                                            ptn:MFColor__x3A__B="1.00"
+                                                            ptn:Simulated_potential__x3A__current="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__min="-74.95"
+                                                            ptn:Simulated_potential__x3A__max="-74.66032673953497"
+                                                            ptn:Simulated_potential__x3A__diff_val="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__diff_min_max="0.2896732604650367"
+                                                            ptn:Simulated_potential__x3A__percent="1.00"/>
+   </ptn:keyValue__x3A__MFColor__x3A__debug>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0" ptn:position__x3A__last__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.18"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.27"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.36"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.45"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.55"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.64"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.73"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.82"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="0.91"
+                        ptn:position__x3A__separator__x3A__debug=","/>
+   <ptn:key__x3A__debug ptn:key__value__x3A__debug="1"/> 
+</ptn:ColorInterpolator__x3A__debug>

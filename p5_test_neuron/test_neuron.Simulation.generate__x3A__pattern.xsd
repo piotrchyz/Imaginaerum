@@ -203,6 +203,11 @@
         type="ptn:Simulator_tick__count__step_delta_count"/>
     <xs:complexType name="Input__x3A__generate__x3A__Shape">
         <xs:sequence>
+            <xs:annotation>
+                <xs:documentation>generating</xs:documentation>
+            </xs:annotation>
+            <xs:element maxOccurs="unbounded" minOccurs="0"
+                name="Input__x3A__generate__x3A__fieldOfView__x3A__ray"/>
             <xs:element ref="ptn:Input__x3A__generate__x3A__pattern_Group"/>
         </xs:sequence>
     </xs:complexType>
@@ -400,6 +405,8 @@
                 ref="ptn:Input__x3A__attract__x3A__vectors"/>
             <xs:element name="Receptor_regex_filter" type="ptn:Receptor_regex_filter"/>
         </xs:sequence>
+        <xs:attribute ref="ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio" use="required"/>
+        <xs:attribute ref="ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray" use="required"/>
     </xs:complexType>
     <xs:element name="Receptor__x3A__generate" type="ptn:Receptor__x3A__generate"/>
     <xs:attribute name="Coordinate_X__x3A__generate__min" type="ptn:Coordinate"/>
@@ -440,6 +447,7 @@
         <xs:sequence>
             <xs:element ref="ptn:Defaults"/>
             <xs:element ref="ptn:Receptors"/>
+            <xs:element ref="ptn:Inputs"/>
         </xs:sequence>
         <xs:attribute ref="ptn:Simulation_body_tick" use="required"/>
         <xs:attribute ref="ptn:Simulation_body_time" use="required"/>

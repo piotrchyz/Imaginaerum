@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ptn:Defaults xmlns:ptn="p5_test_neuron"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+              xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
+   <ptn:Capacitance>0.5</ptn:Capacitance>
+   <ptn:Resistance>100.0</ptn:Resistance>
+   <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+   <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+   <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+   <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+   <ptn:Firing_threshold>-59.0</ptn:Firing_threshold>
+   <ptn:Adaptation_conductance>10.0</ptn:Adaptation_conductance>
+   <ptn:Adaptation_time_constant>500.0</ptn:Adaptation_time_constant>
+   <ptn:Refactory_period>2.0</ptn:Refactory_period>
+   <ptn:Maximum_current>4.0</ptn:Maximum_current>
+   <ptn:Time_constant>2.0</ptn:Time_constant>
+   <ptn:Delay>5.0</ptn:Delay>
+   <ptn:Attract_min>-60.0</ptn:Attract_min>
+   <ptn:Input__x3A__attract__x3A__vectors>
+      <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
+      <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+      <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
+   </ptn:Input__x3A__attract__x3A__vectors>
+</ptn:Defaults>

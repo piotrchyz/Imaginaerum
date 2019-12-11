@@ -75,12 +75,23 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern_Group|ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector|ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern_Group|ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"><!-- ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector -->
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__generated">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:keyValue__generate__basepoint__x3A__calculations|Coordinate">
         <xsl:copy>
