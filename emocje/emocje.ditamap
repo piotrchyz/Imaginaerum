@@ -2,7 +2,16 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>emocje</title>
-    <topicref href="../emocje/emocje.dita"/>
+    <topicref href="deskrypcja.dita"/>
+    <topicref href="spis.dita">
+        <topicref href="dualny.dita">
+            <topicref href="negatywne.dita"/>
+            <topicref href="pozytywne.dita"/>
+        </topicref>
+        <topicref href="biegunowy.dita">
+            <topicref href="neutralne.dita"/>
+        </topicref>
+    </topicref>
     <topicref href="../emocje/podstawowe_emocje.dita">
         <topicref href="../emocje/gniew.dita"/>
         <topicref href="../emocje/smutek.dita"/>
@@ -18,11 +27,7 @@
             <topicref href="../emocje/pierwotne.dita"/>
             <topicref href="../emocje/wt_rne.dita"/>
         </topicref>
-        <topicref href="rodzaj.dita">
-            <topicref href="negatywne.dita"/>
-            <topicref href="neutralne.dita"/>
-            <topicref href="pozytywne.dita"/>
-        </topicref>
+        <topicref href="rodzaj.dita"/>
         <topicref href="kierunek.dita">
             <topicref href="do_wewnatrz.dita">
                 <topicref href="zachwyt.dita"/>
