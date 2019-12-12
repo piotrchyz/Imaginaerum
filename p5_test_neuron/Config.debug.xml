@@ -258,7 +258,7 @@
        
     </ptn:Inputs>
     <ptn:Simulation>
-        <ptn:Simulator_tick>60</ptn:Simulator_tick>
-        <ptn:Simulation_ticks>5</ptn:Simulation_ticks>
+        <ptn:Simulator_tick>1</ptn:Simulator_tick>
+        <ptn:Simulation_ticks>80</ptn:Simulation_ticks>
     </ptn:Simulation>
 </ptn:Config>
