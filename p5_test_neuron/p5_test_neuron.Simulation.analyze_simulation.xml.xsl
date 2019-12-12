@@ -16,6 +16,8 @@
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Config">
         
         <xsl:variable name="ptn:Inputs" select="doc($ptn:Inputs)//ptn:Inputs"/>
+        <xsl:variable name="ptn:Simulation_ticks" select="ptn:Simulation/ptn:Simulation_ticks"/>
+        <xsl:variable name="ptn:Simulator_tick" select="ptn:Simulation/ptn:Simulator_tick"/>
         <xsl:variable name="file" select="concat('file:///',$ptn:Simulation.dir,'?select=Simulation.analys.xml.*.xml;recurse=no')"/>
         <!--<xsl:variable name="files" select="collection('file:///Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation?select=Simulation.analys.xml.*.xml;recurse=no')"/>-->
         <xsl:variable name="files" select="collection($file)"/>
@@ -33,7 +35,10 @@
                 <!-- ptn:Simulation_body -->
                 <xsl:message>#24AA [READING][<xsl:value-of select="document-uri(.)"/>]</xsl:message>
                 <!--<file url="{document-uri(.)}"></file>-->
-                <xsl:apply-templates mode="#current"/>
+                <xsl:apply-templates mode="#current">
+                    <xsl:with-param name="ptn:Simulation_ticks" select="$ptn:Simulation_ticks" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Simulator_tick" select="$ptn:Simulator_tick" tunnel="yes"/>
+                </xsl:apply-templates>
             </xsl:for-each>
             <!--<xsl:apply-templates mode="#current" select="collection($file)"/>-->
         </ptn:Simulation.analyze_simulation.xml>
@@ -210,18 +215,29 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit][number(ptn:Input_exec_time) &lt;= number(ancestor-or-self::ptn:Simulation.analys.xml/@ptn:Simulation_body_time__x3A__last)]">
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit]"><!-- [number(ptn:Input_exec_time) &lt;= number(ancestor-or-self::ptn:Simulation.analys.xml/@ptn:Simulation_body_time__x3A__last) -->
+        <xsl:param name="ptn:Simulation_ticks" required="yes" tunnel="yes"/>
+        <xsl:param name="ptn:Simulator_tick" required="yes" tunnel="yes"/>
         <!--<xsl:attribute name="{name()}" select="."/>-->
-        <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
-            <xsl:apply-templates mode="#current"/>
-        </xsl:element>
+        <xsl:choose>
+            <xsl:when test="number(ptn:Input_exec_time) &gt; number($ptn:Simulation_ticks * $ptn:Simulator_tick)">
+                <xsl:comment>#223 [bypassed[n][<xsl:value-of select="name()"/>]] [not fit][ptn:Input_exec_time=[<xsl:value-of select="number(ptn:Input_exec_time)"/>]=  [$ptn:Simulation_ticks[<xsl:value-of select="$ptn:Simulation_ticks"/>]]</xsl:comment>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
+                    <xsl:apply-templates mode="#current"/>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit][number(ptn:Input_exec_time) &gt; number(ancestor-or-self::ptn:Simulation.analys.xml/@ptn:Simulation_body_time__x3A__last)]">
-        <!--<xsl:attribute name="{name()}" select="."/>-->
-        <xsl:comment>#223 [bypassed[n][<xsl:value-of select="name()"/>]] [not fit][ptn:Input_exec_time] </xsl:comment>
-    </xsl:template>
+    <!--<xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit][number(ptn:Input_exec_time) &gt; number(ancestor-or-self::ptn:Simulation.analys.xml/@ptn:Simulation_body_time__x3A__last)]">
+        <xsl:param name="ptn:Simulation_ticks" required="yes" tunnel="yes"/>
+        <!-\-<xsl:attribute name="{name()}" select="."/>-\->
+        <xsl:comment>#223 [bypassed[n][<xsl:value-of select="name()"/>]] [not fit][ptn:Input_exec_time=[<xsl:value-of select="number(ptn:Input_exec_time)"/>]==@time[<xsl:value-of select="number(ancestor-or-self::ptn:Simulation.analys.xml/@ptn:Simulation_body_time__x3A__last)"/>]]  [$ptn:Simulation_ticks[<xsl:value-of select="$ptn:Simulation_ticks"/>]]</xsl:comment>
+    </xsl:template>-->
     
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector"/>
