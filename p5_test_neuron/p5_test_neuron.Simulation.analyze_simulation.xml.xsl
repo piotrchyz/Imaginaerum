@@ -210,11 +210,17 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit]">
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit][number(ptn:Input_exec_time) &lt;= number(ancestor-or-self::ptn:Simulation.analys.xml/@ptn:Simulation_body_time__x3A__last)]">
         <!--<xsl:attribute name="{name()}" select="."/>-->
         <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
             <xsl:apply-templates mode="#current"/>
         </xsl:element>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Input[parent::ptn:Current_synapse__x3A__emmit][number(ptn:Input_exec_time) &gt; number(ancestor-or-self::ptn:Simulation.analys.xml/@ptn:Simulation_body_time__x3A__last)]">
+        <!--<xsl:attribute name="{name()}" select="."/>-->
+        <xsl:comment>#223 [bypassed[n][<xsl:value-of select="name()"/>]] [not fit][ptn:Input_exec_time] </xsl:comment>
     </xsl:template>
     
     
