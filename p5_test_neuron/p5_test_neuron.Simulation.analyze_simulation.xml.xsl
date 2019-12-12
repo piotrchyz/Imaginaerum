@@ -150,6 +150,7 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Label">
+        <xsl:copy-of select="@ptn:Simulation__x3A__visualize"/>
         <xsl:attribute name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}" select="."/>
     </xsl:template>
     

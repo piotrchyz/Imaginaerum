@@ -258,6 +258,7 @@
             </appearance>
             <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element"/>
         </shape>
+        <xsl:apply-templates mode="#current" select="@*"/>
     </xsl:template>
     <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="ptn:Leaky_neuron_standard__x3A__analyze">
         <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
@@ -269,15 +270,33 @@
             <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element"/>
         </shape>
     </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze|ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze">
         <xsl:param name="ptn:Label__x3A__analyze" tunnel="yes" required="yes"/>
-        <shape xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape">
+        <shape xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape" ptn:debug="#275 parent:{parent::*/name()}">
             <appearance xsl:use-attribute-sets="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape.appearance">
                 <material DEF="{$ptn:Label__x3A__analyze}_Material"
                     diffuseColor="0 0 1" emissiveColor="0 0 1"><xsl:text> </xsl:text></material>
             </appearance>
             <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element"/>
         </shape>
+        <xsl:apply-templates mode="#current" select="@*"/>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="@*"/>
+    
+    <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="@ptn:Simulation__x3A__visualize">
+        <shape>
+            <Text string="{parent::*/@ptn:Label__x3A__analyze}">
+                <FontStyle  justify="MIDDLE MIDDLE" size="3"> </FontStyle>
+            </Text>
+            <Appearance >
+                <Material diffuseColor='0.1 0.1 0.7'> </Material>
+            </Appearance>
+        </shape>
+        
+        
     </xsl:template>
     
     

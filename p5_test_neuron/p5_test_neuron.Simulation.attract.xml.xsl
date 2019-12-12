@@ -253,7 +253,9 @@
                         </xsl:variable>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_standard'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="concat($ptn:Label,' ',ptn:Label)"/>-->
-                        <ptn:Label><xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
+                        <ptn:Label>
+                            <xsl:copy-of select="ptn:Label/@ptn:Simulation__x3A__visualize"/>
+                            <xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
                         <!--<ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X + $ptn:Coordinate_X) div 3"/></ptn:Coordinate_X>-->
                         <!--<ptn:Coordinate_Y>
                             <xsl:choose>
@@ -295,7 +297,9 @@
                         </xsl:variable>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_inhibitor__x3A__AB'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="$ptn:Label"/>-->
-                        <ptn:Label><xsl:value-of select="$ptn:Output_Node//@ptn:Output_Node__x3A__inhibitor"/></ptn:Label>
+                        <ptn:Label>
+                            <xsl:copy-of select="ptn:Label/@ptn:Simulation__x3A__visualize"/>
+                            <xsl:value-of select="$ptn:Output_Node//@ptn:Output_Node__x3A__inhibitor"/></ptn:Label>
                         <!--<ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X + $ptn:Coordinate_X) div 4"/></ptn:Coordinate_X>-->
                         <!--<ptn:Coordinate_Y>
                             <xsl:choose>
@@ -346,7 +350,9 @@
                         </xsl:variable>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_inhibitor__X3A__AA'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="ptn:Label"/>-->
-                        <ptn:Label><xsl:value-of select="$ptn:Output_Node//@ptn:Output_Node__x3A__inhibitor__x3A__self"/></ptn:Label>
+                        <ptn:Label><xsl:copy-of select="ptn:Label/@ptn:Simulation__x3A__visualize"/>
+                            <xsl:value-of select="$ptn:Output_Node//@ptn:Output_Node__x3A__inhibitor__x3A__self"/>
+                        </ptn:Label>
                         <!--<ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X + $ptn:Coordinate_X) div 5"/></ptn:Coordinate_X>-->
                         <!--<ptn:Coordinate_Y>
                             <xsl:choose>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="debug"><!-- debug --><!-- default --><!-- analyze_simulation_x3d -->
+<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="debug"><!-- analyze_simulation_x3d.debug --><!-- debug --><!-- default --><!-- analyze_simulation_x3d -->
     
     
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
@@ -149,6 +149,10 @@
         <echo>
             #80 will generate p5_test_neuron.Simulation.analyze_simulation.xml = ${p5_test_neuron.Simulation.analyze_simulation.xml}
         </echo>
+        <ant  inheritall="false" antfile="${p5suis}" target="p5suis:say_to_queue.PL.drop_overflow">
+            <property name="p5suis:say_text" value="Buduję indeks scen dla wizualizacji"/>
+        </ant>
+        
         <xslt in="${p5_test_neuron.Config}" 
             out="${p5_test_neuron.Simulation.analyze_simulation.xml}"
             style="${p5_test_neuron.xsl}"
@@ -177,6 +181,7 @@
         
         
         
+        
     </target>
     
     
@@ -191,6 +196,9 @@
             #80 will generate p5_test_neuron.Simulation.analyze_simulation.x3d = ${p5_test_neuron.Simulation.analyze_simulation.x3d}
         </echo>
         
+        <ant  inheritall="false" antfile="${p5suis}" target="p5suis:say_to_queue.PL.drop_overflow">
+            <property name="p5suis:say_text" value="Buduję wizualizację 3d"/>
+        </ant>
         
         <xslt in="${p5_test_neuron.Simulation.analyze_simulation.xml}" 
             out="${p5_test_neuron.Simulation.analyze_simulation.x3d}"
