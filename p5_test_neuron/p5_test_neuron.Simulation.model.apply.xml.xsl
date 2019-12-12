@@ -102,6 +102,7 @@
         <!--<xsl:copy>
             <xsl:copy-of select="@*"/>-->
             <!--<xsl:attribute name="ptn:debug">#96[TODO][RESET][POTENTIAL][WHEN_INSTALLED]</xsl:attribute>-->
+        <xsl:comment>#105 [ptn:Simulation.model.apply.xml] [n][<xsl:value-of select="name()"/>] call [ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential]</xsl:comment>
             <xsl:call-template name="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential">
                 <xsl:with-param name="ptn:Simulated_potential__x3A__current" select="." tunnel="yes"/>
             </xsl:call-template>
