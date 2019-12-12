@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="21.1">
+<project version="20.1">
     <meta>
         <filters directoryPatterns="" filePatterns="energo80_oxygen_imaginaerum.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="21.1" xml:space="preserve">
+            <serialized version="20.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>enable.project.master.files.support</String>
@@ -15,15 +15,39 @@
     </meta>
     <projectTree name="energo80_oxygen_imaginaerum.xpr">
         <folder masterFiles="true" name="Master Files">
+            <file name="p5_test_neuron/p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.param.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.Simulation.analys.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl%7E"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.bak"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.bak1"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.x3d.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.Simulation.analyze_simulation.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.attract.Stress.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.Simulation.attract.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.apply.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.model.stats.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.Stress.xml.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron.Simulation.model.validate.xml.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.Simulation.model.xml.xsl"/>
             <file name="p5_test_neuron/p5_test_neuron.xsl"/>
+            <file name="p5_test_neuron/p5_test_neuron_snake.xsl"/>
             <file name="p5_test_neuron/sqrt.xsl"/>
             <file name="p5_test_neuron/test_neuron.Simulation.analys.xml.xsd"/>
             <file name="p5_test_neuron/test_neuron.Simulation.analyze_simulation.xml.xsd"/>

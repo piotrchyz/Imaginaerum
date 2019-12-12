@@ -4,6 +4,7 @@
     xmlns:ptn="p5_test_neuron"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:math="http://exslt.org/math"
+    xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
     exclude-result-prefixes="xs math"
     version="2.0">
     
@@ -83,7 +84,7 @@
         <xsl:comment>#85AGG [ptn:Receptor__x3A__generate] [<xsl:value-of select="$ptn:Coordinate_X__x3A__generate__min"/>][to][<xsl:value-of select="$ptn:Coordinate_X__x3A__generate__max"/>]</xsl:comment>
         <xsl:for-each select="$ptn:Coordinate_X__x3A__generate__min to $ptn:Coordinate_X__x3A__generate__max">
             <xsl:variable name="ptn:Coordinate_X__x3A__generated" select="."/>
-            
+            <xsl:variable name="ptn:Coordinate_X__x3A__generated.position" select="position()"/>
             <xsl:variable name="ptn:Coordinate_X__x3A__generated__separator" select=". * $ptn:Coordinate_X__x3A__generate__separator"/>
             
             <!--<xsl:comment>#90 ptn:Coordinate_X__x3A__generated[<xsl:value-of select="$ptn:Coordinate_X__x3A__generated"/>] </xsl:comment>-->
@@ -100,6 +101,9 @@
                     ptn:Coordinate_X__x3A__generated__separator="{$ptn:Coordinate_X__x3A__generated__separator}"
                     ptn:Coordinate_Y__x3A__generated__separator="{$ptn:Coordinate_Y__x3A__generated__separator}"
                     ptn:Coordinate_Y__x3A__generated="{$ptn:Coordinate_Y__x3A__generated}">
+                    <xsl:if test="$ptn:Coordinate_X__x3A__generated.position = 1 and position() = 1">
+                        <xsl:attribute name="p5suis:say.PL">Konfiguracja matrycy receptorów o wymiarach X <xsl:value-of select="$ptn:Coordinate_X__x3A__generate__max - $ptn:Coordinate_X__x3A__generate__min"/> , Y <xsl:value-of select="$ptn:Receptor__x3A__generate/ptn:Coordinate_Y/@ptn:Coordinate_Y__x3A__generate__max - $ptn:Receptor__x3A__generate/ptn:Coordinate_Y/@ptn:Coordinate_Y__x3A__generate__min"/> </xsl:attribute>
+                    </xsl:if>
                     <xsl:call-template name="ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio_ray">
                         <xsl:with-param name="ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio"  select="$ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio"/>
                         <xsl:with-param name="ptn:Coordinate_X__x3A__max" select="$ptn:Receptor__x3A__generate/ptn:Coordinate_X/@ptn:Coordinate_X__x3A__generate__max * $ptn:Receptor__x3A__generate/ptn:Coordinate_X/@ptn:Coordinate_X__x3A__generate__separator"/>

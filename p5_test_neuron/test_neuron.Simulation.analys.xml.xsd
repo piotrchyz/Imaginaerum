@@ -20,6 +20,7 @@
                     <xs:element ref="ptn:Receptors"/>
                     <xs:element ref="ptn:Nodes"/>
                 </xs:sequence>
+                <xs:attribute ref="ptn:Simulation_ticks"/>
             </xs:restriction>
         </xs:complexContent>
     </xs:complexType>

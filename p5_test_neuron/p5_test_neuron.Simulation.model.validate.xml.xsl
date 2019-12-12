@@ -53,10 +53,48 @@
         <xsl:copy-of select="."/>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
+        <xsl:comment >#66AT bypassed/n[<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
     
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="*">
         <xsl:message terminate="yes">#661 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
+    
+    
+    
+        
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Coordinate_X__calculate__x3A__empty[@ptn:Coordinate_X__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">
+        <!--<ptn:Coordinate_X><xsl:value-of select="@ptn:Coordinate_X__x3A__more_charged_node + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/></ptn:Coordinate_X>-->
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Coordinate_Y__calculate__x3A__empty[@ptn:Coordinate_Y__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">
+        <!--<ptn:Coordinate_Y><xsl:value-of select="@ptn:Coordinate_Y__x3A__more_charged_node + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/></ptn:Coordinate_Y>-->
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Coordinate_Z__calculate__x3A__empty[@ptn:Coordinate_Z__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">
+        <!--<ptn:Coordinate_Z><xsl:value-of select="@ptn:Coordinate_Z__x3A__more_charged_node + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/></ptn:Coordinate_Z>-->
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty[preceding-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate][ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate][ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">
+        <!--<ptn:Input__x3A__attract__x3A__vectors ptn:debug="#124 to implement more than stress">
+            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector><xsl:value-of select="preceding-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/></ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector><xsl:value-of select="preceding-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/></ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector><xsl:value-of select="preceding-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/></ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
+        </ptn:Input__x3A__attract__x3A__vectors>-->
+    </xsl:template>
+    
     
     <!-- ptn:Simulation.Stress__x3A__calculate -->
     

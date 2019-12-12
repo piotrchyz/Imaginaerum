@@ -56,14 +56,6 @@
         </xsl:copy>
     </xsl:template>
     
-    
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
-        <xsl:copy>
-            <xsl:copy-of select="@*"/>
-            <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
-    </xsl:template>
-    
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply" match="ptn:Outputs|ptn:Input__x3A__nodes|ptn:Simulated_potential|ptn:Receptor_regex_filter|ptn:Inputs|ptn:Simulation">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
@@ -104,14 +96,6 @@
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
-    
-    
-    
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply" match="ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum|ptn:Current_synapse|ptn:Nodes">
-        <xsl:message terminate="no">#28G [TODO MIGRATE] [ptn:Input__x3A__generate__x3A__pattern__x3A__apply]  unantended/n[<xsl:value-of select="name()"/>]  </xsl:message>
-        <xsl:copy-of select="."/>
-    </xsl:template>
-    
     
     <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply" match="*">
         <xsl:message terminate="yes">#28 [ptn:Input__x3A__generate__x3A__pattern__x3A__apply]  unantended/n[<xsl:value-of select="name()"/>]  </xsl:message>
@@ -301,7 +285,7 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__generated">
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern__x3A__apply__x3A__calculate" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>

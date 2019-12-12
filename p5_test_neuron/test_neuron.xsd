@@ -277,9 +277,42 @@
     <xs:complexType name="Node">
         <xs:sequence>
             <xs:element name="Label" type="ptn:Label"/>
-            <xs:element default="0" name="Coordinate_X" type="ptn:Coordinate"/>
-            <xs:element default="0" name="Coordinate_Y" type="ptn:Coordinate"/>
-            <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element minOccurs="0"
+                        name="Coordinate_X__calculate__x3A__empty__x3A__assert">
+                        <xs:complexType>
+                            <xs:attribute ref="ptn:Coordinate_X__x3A__more_charged_node"/>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element default="0" name="Coordinate_X" type="ptn:Coordinate"/>
+                </xs:sequence>
+                <xs:element name="Coordinate_X__calculate__x3A__empty"/>
+            </xs:choice>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element minOccurs="0"
+                        name="Coordinate_Y__calculate__x3A__empty__x3A__assert">
+                        <xs:complexType>
+                            <xs:attribute ref="ptn:Coordinate_Y__x3A__more_charged_node"/>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element default="0" name="Coordinate_Y" type="ptn:Coordinate"/>
+                </xs:sequence>
+                <xs:element name="Coordinate_Y__calculate__x3A__empty"/>
+            </xs:choice>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element minOccurs="0"
+                        name="Coordinate_Z__calculate__x3A__empty__x3A__assert">
+                        <xs:complexType>
+                            <xs:attribute ref="ptn:Coordinate_Z__x3A__more_charged_node"/>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
+                </xs:sequence>
+                <xs:element name="Coordinate_Z__calculate__x3A__empty"/>
+            </xs:choice>
             <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance" minOccurs="0"/>
             <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="0"/>
             <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
@@ -302,7 +335,7 @@
             <xs:element ref="ptn:Input__x3A__nodes"/>
             <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
             <xs:element default="-80" name="Simulated_potential" type="ptn:Simulated_potential_CT"/>
-            <xs:element minOccurs="0" name="Attract__x3A__flag" type="ptn:Attract__x3A__flag"/>
+            <xs:element minOccurs="0" name="Attract__x3A__flag" type="ptn:Attract__x3A__flag_CT"/>
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 name="Simulation.attract__x3A__calculate"
                 type="ptn:Simulation.attract__x3A__calculate"/>
@@ -315,12 +348,37 @@
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 name="Simulated_potential__x3A__vectors.sum"
                 type="ptn:Simulated_potential__x3A__vectors.sum"/>
-            <xs:element maxOccurs="unbounded" minOccurs="0"
-                ref="ptn:Input__x3A__attract__x3A__vectors"/>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element minOccurs="0"
+                        name="Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert"/>
+                    <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__attract__x3A__vectors"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="Input__x3A__attract__x3A__vectors__x3A__calculate"
+                        type="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
+                        <xs:annotation>
+                            <xs:documentation>Do kalkulacji sprawdzenia obliczen wyjsciowego punktu attract</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Input__x3A__attract__x3A__vectors__calculate__x3A__empty"/>
+                </xs:sequence>
+            </xs:choice>
         </xs:sequence>
         <xs:attribute ref="ptn:debug"/>
         <xs:attribute ref="ptn:New"/>
         <xs:attribute name="id" type="xs:string"/>
+        <xs:anyAttribute
+            namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"/>
+        <xs:assert
+            test="ptn:Coordinate_X = ptn:Coordinate_X__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_X__x3A__more_charged_node + ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_X__calculate__x3A__empty__x3A__assert) "
+        />
+        <xs:assert
+            test="ptn:Coordinate_Y = ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Y__x3A__more_charged_node + ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert) "
+        />
+        <xs:assert
+            test="ptn:Coordinate_Z = ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Z__x3A__more_charged_node + ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert) "
+        />
     </xs:complexType>
     <xs:complexType name="Simulated_potential_CT">
         <xs:simpleContent>
@@ -367,7 +425,7 @@
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential_CT"/>
                     <xs:element minOccurs="0" name="Attract__x3A__flag"
-                        type="ptn:Attract__x3A__flag"/>
+                        type="ptn:Attract__x3A__flag_CT"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
                         name="Simulation.attract__x3A__calculate"
                         type="ptn:Simulation.attract__x3A__calculate"/>
@@ -380,8 +438,7 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0"
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
-                    <xs:element maxOccurs="unbounded" minOccurs="0"
-                        ref="ptn:Input__x3A__attract__x3A__vectors"/>
+                    <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__attract__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -420,7 +477,7 @@
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential_CT"/>
                     <xs:element minOccurs="0" name="Attract__x3A__flag"
-                        type="ptn:Attract__x3A__flag"/>
+                        type="ptn:Attract__x3A__flag_CT"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
                         name="Simulation.attract__x3A__calculate"
                         type="ptn:Simulation.attract__x3A__calculate"/>
@@ -433,6 +490,7 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0"
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
+                    <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__attract__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -478,6 +536,7 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0"
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
+                    <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__attract__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -527,6 +586,7 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0"
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
+                    <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__attract__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -573,6 +633,7 @@
                     <xs:element minOccurs="0" ref="ptn:Simulation.Stress__x3A__calculate"/>
                     <xs:element minOccurs="0" name="Simulated_potential__x3A__vectors"
                         type="ptn:Simulated_potential__x3A__vectors"/>
+                    <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__attract__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -622,6 +683,7 @@
                     <xs:element maxOccurs="unbounded" minOccurs="0"
                         name="Simulated_potential__x3A__vectors.sum"
                         type="ptn:Simulated_potential__x3A__vectors.sum"/>
+                    <xs:element maxOccurs="unbounded" ref="ptn:Input__x3A__attract__x3A__vectors"/>
                 </xs:sequence>
             </xs:restriction>
         </xs:complexContent>
@@ -649,6 +711,9 @@
                 <xs:attribute ref="ptn:Coordinate_Y__x3A__generated__separator"/>
                 <xs:attribute ref="ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff"/>
                 <xs:attribute ref="ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff"/>
+                <xs:anyAttribute
+                    namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+                />
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -700,17 +765,16 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="Config">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element ref="ptn:Defaults"/>
-                <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Receptor__x3A__generate"/>
-                <xs:element ref="ptn:Receptors"/>
-                <xs:element ref="ptn:Inputs"/>
-                <xs:element ref="ptn:Simulation"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+    <xs:complexType name="Config">
+        <xs:sequence>
+            <xs:element ref="ptn:Defaults"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Receptor__x3A__generate"/>
+            <xs:element ref="ptn:Receptors"/>
+            <xs:element ref="ptn:Inputs"/>
+            <xs:element ref="ptn:Simulation"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Config" type="ptn:Config"> </xs:element>
     <xs:element name="Defaults">
         <xs:complexType>
             <xs:sequence>
@@ -730,6 +794,7 @@
                 <xs:element default="2" name="Time_constant" type="ptn:Delay"/>
                 <xs:element default="5" name="Delay" type="ptn:Delay"/>
                 <xs:element default="-60" name="Attract_min" type="ptn:Attract_min"/>
+                <xs:element ref="ptn:Input__x3A__attract__x3A__vectors"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -737,6 +802,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" ref="ptn:Receptor"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Receptor__x3A__generate"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -752,16 +818,26 @@
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="ptn:Receptor">
-                    <xs:assert
+                    <!--<xs:assert
                         test="ptn:Attract__x3A__flag and not(ptn:Outputs/ptn:Current_synapse) or not(ptn:Attract__x3A__flag)">
                         <xs:annotation>
                             <xs:documentation>No attract when outputs avialable</xs:documentation>
                         </xs:annotation>
-                    </xs:assert>
+                    </xs:assert>-->
                 </xs:extension>
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
+    <xs:complexType name="Attract__x3A__flag_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Attract__x3A__flag">
+                <xs:attribute ref="ptn:debug"/>
+                <xs:anyAttribute
+                    namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+                />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Coordinate__x3A__fieldOfView__x3A__ray.diff">
         <xs:restriction base="xs:double"/>
     </xs:simpleType>
@@ -842,6 +918,10 @@
                 <xs:documentation>Todo ? optimize in config</xs:documentation>
             </xs:annotation>
         </xs:attribute>
+        <xs:attribute ref="ptn:Simulation_ticks"/>
+        <xs:anyAttribute
+            namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+        />
     </xs:complexType>
     <xs:complexType name="Simulation_body">
         <xs:complexContent>
@@ -991,41 +1071,6 @@ debug most feature</xs:documentation>
         </xs:annotation>
     </xs:attribute>
     <xs:attribute inheritable="false" name="debug" type="xs:string"/>
-    <xs:complexType name="Simulation.attract__x3A__aggregate">
-        <xs:annotation>
-            <xs:documentation>Analyzed to create modelk</xs:documentation>
-        </xs:annotation>
-        <xs:all>
-            <xs:element minOccurs="0"
-                name="Simulation.attract__x3A__calculate.best.unique__x3A__debug">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:any processContents="skip" minOccurs="0"/>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element maxOccurs="unbounded" minOccurs="0"
-                ref="ptn:Simulation.attract__x3A__calculate"/>
-            <xs:element maxOccurs="unbounded" minOccurs="0"
-                ref="ptn:Simulation.Stress__x3A__calculate"/>
-            <xs:element maxOccurs="unbounded" minOccurs="0"
-                ref="ptn:Simulation.attract__x3A__calculate__x3A__ignored"/>
-        </xs:all>
-    </xs:complexType>
-    <xs:element name="Simulation.attract__x3A__aggregate"
-        type="ptn:Simulation.attract__x3A__aggregate">
-        <xs:unique name="eliminate_duplicate_Label__x3A__context">
-            <xs:annotation>
-                <xs:documentation>Eliminacja attract dla juz wykorzystanego potencjalu do innego wezla</xs:documentation>
-            </xs:annotation>
-            <xs:selector xpath="ptn:Simulation.attract__x3A__calculate"/>
-            <xs:field xpath="@ptn:Label__x3A__context"/>
-        </xs:unique>
-        <xs:unique name="eliminate_duplicate_Label">
-            <xs:selector xpath="ptn:Simulation.attract__x3A__calculate"/>
-            <xs:field xpath="@ptn:Label"/>
-        </xs:unique>
-    </xs:element>
     <xs:complexType name="Simulation.attract__x3A__calculate__x3A__output_node">
         <xs:complexContent>
             <xs:extension base="ptn:Node">
@@ -1089,32 +1134,8 @@ debug most feature</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:element name="Input__x3A__node__x3A__prohibit" type="ptn:Output_Node"/>
-    <xs:complexType name="Simulation.Stress__x3A__calculate">
-        <xs:sequence>
-            <xs:element ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node" minOccurs="0"/>
-            <xs:element minOccurs="0"
-                ref="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated"/>
-        </xs:sequence>
-        <xs:attribute ref="ptn:debug"/>
-        <xs:attribute ref="ptn:Label"/>
-        <xs:attribute ref="ptn:Label__x3A__context"/>
-        <xs:attribute ref="ptn:Output_Node" use="prohibited"/>
-        <xs:attribute ref="ptn:Output_Node__x3A__attract" use="required"/>
-        <xs:attribute ref="ptn:Simulated_potential__x3A__more_charged_node"/>
-        <xs:attribute ref="ptn:Simulated_potential__x3A__diff"/>
-        <xs:attribute ref="ptn:Simulated_potential__x3A__less_charged_node"/>
-        <xs:attribute ref="ptn:Distance"/>
-    </xs:complexType>
     <xs:element name="Simulation.Stress__x3A__calculate"
         type="ptn:Simulation.Stress__x3A__calculate"/>
-    <xs:complexType name="Simulation.Stress__x3A__calculate__x3A__output_node">
-        <xs:complexContent>
-            <xs:extension base="ptn:Node">
-                <xs:attribute ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type"
-                    use="required"/>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>
     <xs:element name="Simulation.Stress__x3A__calculate__x3A__output_node"
         type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
     <xs:complexType name="Simulation.model.xml">
@@ -1219,4 +1240,7 @@ debug most feature</xs:documentation>
     <xs:attribute name="Coordinate_X" type="ptn:Coordinate"/>
     <xs:attribute name="Coordinate_Y" type="ptn:Coordinate"/>
     <xs:attribute name="Coordinate_Z" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_X__x3A__more_charged_node" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Y__x3A__more_charged_node" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z__x3A__more_charged_node" type="ptn:Coordinate"/>
 </xs:schema>

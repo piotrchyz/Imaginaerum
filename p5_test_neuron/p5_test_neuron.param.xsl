@@ -26,4 +26,8 @@
     <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Minimum_voltage" select="-70"/>
     <xsl:param name="ptn:Simulation.analyze_simulation.xml__x3A__Maximum_voltage" select="90"/>
     
+    <xsl:param name="ptn:debug__x3A__flag" select="false()"/>
+    
+    <xsl:param name="ptn:p5suis" select="false()"/>
+    
 </xsl:stylesheet>

@@ -43,8 +43,11 @@
         <xsl:comment>#306 bypassed/n[<xsl:value-of select="name()"/>] to be context installed</xsl:comment>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Input__x3A__attract__x3A__vectors">
-        <xsl:comment>#47 bypassed n[<xsl:value-of select="name()"/>]</xsl:comment>        
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>        
     </xsl:template>
     
     

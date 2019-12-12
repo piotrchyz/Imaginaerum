@@ -4,6 +4,7 @@
     xmlns:ptn="p5_test_neuron"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:math="http://exslt.org/math"
+    xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
     exclude-result-prefixes="xs math"
     version="2.0">
     
@@ -11,7 +12,7 @@
     <xsl:strip-space elements="*"/>
     
     
-    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Stress__x3A__flag">
+    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Stress__x3A__flag[following-sibling::ptn:Input__x3A__attract__x3A__vectors]">
         <xsl:param name="ptn:Attract__x3A__flag.nodes" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Stress__x3A__flag.nodes" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Defaults" tunnel="yes" required="yes"/>
@@ -43,6 +44,9 @@
                     <xsl:with-param name="ptn:Is_inhibitor" select="preceding-sibling::ptn:Is_inhibitor" tunnel="yes"/>
                     <xsl:with-param name="ptn:Input__x3A__nodes__x3A__prohibit" select="preceding-sibling::ptn:Input__x3A__nodes__x3A__prohibit" tunnel="yes"/>
                     <xsl:with-param name="ptn:Stress__x3A__flag" select="." tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector" select="following-sibling::ptn:Input__x3A__attract__x3A__vectors/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector" select="following-sibling::ptn:Input__x3A__attract__x3A__vectors/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector" tunnel="yes"/>
+                    <xsl:with-param name="ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector" select="following-sibling::ptn:Input__x3A__attract__x3A__vectors/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector" tunnel="yes"/>
                 </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>
@@ -146,7 +150,7 @@
                     <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
                 </ptn:Simulation.Stress__x3A__calculate__x3A__ignored>
                 
-                <ptn:Simulation.Stress__x3A__calculate><!-- 0A create -->
+                <ptn:Simulation.Stress__x3A__calculate p5suis:say.PL="Stres dla węzła {ptn:Label} w scenie nr {$ptn:Simulation_body_tick} ."><!-- 0A create -->
                     <xsl:attribute name="ptn:Label__x3A__context" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Label" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Distance" select="math:sqrt(((ptn:Coordinate_X - $ptn:Coordinate_X) * (ptn:Coordinate_X - $ptn:Coordinate_X)) + ((ptn:Coordinate_Y - $ptn:Coordinate_Y) * (ptn:Coordinate_Y - $ptn:Coordinate_Y)) ) "/>
@@ -154,15 +158,21 @@
                     <xsl:attribute name="ptn:Simulated_potential__x3A__more_charged_node" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__less_charged_node" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
-                    <xsl:attribute name="ptn:debug">#190XX@  create more clone, reconfigure self, mabe some inhibitors install std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]]  n[<xsl:value-of select="name()"/>]</xsl:attribute>
+                    <xsl:attribute name="ptn:debug">#190XX@  create more clone, reconfigure self, mabe some inhibitors install std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]]  n[<xsl:value-of select="name()"/>]  [ptn:Coordinate_X[<xsl:value-of select="ptn:Coordinate_X"/>]] [$ptn:Coordinate_X[<xsl:value-of select="$ptn:Coordinate_X"/>]]</xsl:attribute>
                     <ptn:Simulation.Stress__x3A__calculate__x3A__output_node>
+                        <xsl:variable name="ptn:Input__x3A__nodes"><!-- todo template -->
+                            <ptn:Input__x3A__nodes>
+                                <ptn:Input__x3A__node><xsl:value-of select="ptn:Label"/></ptn:Input__x3A__node>
+                            </ptn:Input__x3A__nodes>
+                        </xsl:variable>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_standard'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="concat($ptn:Label,' ',ptn:Label)"/>-->
-                        <ptn:Label><xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
-                        <ptn:Coordinate_X><xsl:value-of select="ptn:Coordinate_X"/></ptn:Coordinate_X>
-                        <ptn:Coordinate_Y><xsl:value-of select="ptn:Coordinate_Y + 10"/></ptn:Coordinate_Y>
+                        <ptn:Label><xsl:copy-of select="ptn:Label/@ptn:Simulation__x3A__visualize"/>
+                            <xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
                         
-                        <ptn:Coordinate_Z><xsl:value-of select="$ptn:Simulation_body_tick"/></ptn:Coordinate_Z>
+                        <ptn:Coordinate_X__calculate__x3A__empty ptn:Coordinate_X__x3A__more_charged_node="{ptn:Coordinate_X}"><!--<xsl:value-of select="ptn:Coordinate_X"/>--></ptn:Coordinate_X__calculate__x3A__empty>
+                        <ptn:Coordinate_Y__calculate__x3A__empty ptn:Coordinate_Y__x3A__more_charged_node="{ptn:Coordinate_Y}"><!--<xsl:value-of select="ptn:Coordinate_Y + 10"/>--></ptn:Coordinate_Y__calculate__x3A__empty>
+                        <ptn:Coordinate_Z__calculate__x3A__empty ptn:Coordinate_Z__x3A__more_charged_node="{ptn:Coordinate_Z}"><!--<xsl:value-of select="$ptn:Simulation_body_tick"/>--></ptn:Coordinate_Z__calculate__x3A__empty>
                         <ptn:Capacitance><xsl:value-of select="ptn:Capacitance"/></ptn:Capacitance><!-- todo config strategy -->
                         <ptn:Resistance><xsl:value-of select="ptn:Resistance"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage><xsl:value-of select="ptn:Minimum_voltage"/></ptn:Minimum_voltage><!-- todo config strategy -->
@@ -173,13 +183,17 @@
                         <ptn:Refactory_period><xsl:value-of select="ptn:Refactory_period"/></ptn:Refactory_period><!-- todo config strategy -->
                         <ptn:Is_inhibitor><xsl:value-of select="ptn:Is_inhibitor"/></ptn:Is_inhibitor>
                         <ptn:Outputs/>
-                        <ptn:Input__x3A__nodes>
-                            <ptn:Input__x3A__node><xsl:value-of select="ptn:Label"/></ptn:Input__x3A__node>
-                        </ptn:Input__x3A__nodes>
+                        <xsl:copy-of select="$ptn:Input__x3A__nodes"/>
                         <ptn:Input__x3A__nodes__x3A__prohibit>
                             <ptn:Input__x3A__node__x3A__prohibit><xsl:value-of select="ptn:Label"/></ptn:Input__x3A__node__x3A__prohibit>
                         </ptn:Input__x3A__nodes__x3A__prohibit>
                         <ptn:Simulated_potential><xsl:value-of select="ptn:Reset_potential"/></ptn:Simulated_potential><!-- todo config strategy -->
+                        <xsl:call-template name="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
+                            <xsl:with-param name="ptn:Input__x3A__nodes"  select="$ptn:Input__x3A__nodes" tunnel="yes"/>
+                            <xsl:with-param name="ptn:Leaky_neuron_standard" select="true()" tunnel="yes"/>
+                            <xsl:with-param name="ptn:Simulation.Stress__x3A__calculate" select="true()" tunnel="yes"/>
+                        </xsl:call-template>
+                        <ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty/>
                         <!--<ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>-->
                     </ptn:Simulation.Stress__x3A__calculate__x3A__output_node>
                     

@@ -339,7 +339,7 @@
         
     </xsl:template>
     
-    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector[@ptn:MFVec3f__x3A__distance__x3A__percent]">
+    <xsl:template mode="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__generated[@ptn:MFVec3f__x3A__distance__x3A__percent]">
         <xsl:param name="ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_step" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Receptors" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Input__x3A__generate__x3A__pattern_Group" required="yes" tunnel="yes"/>

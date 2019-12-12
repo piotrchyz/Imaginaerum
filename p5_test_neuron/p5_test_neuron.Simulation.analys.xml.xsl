@@ -75,12 +75,23 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern_Group|ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector|ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector">
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern_Group|ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"><!-- ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector -->
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector__x3A__generated">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:keyValue__generate__basepoint__x3A__calculations|Coordinate">
         <xsl:copy>
@@ -161,6 +172,7 @@
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Current_synapse|ptn:Receptor_regex_filter|ptn:Input__x3A__nodes|ptn:Input__x3A__node">
         <xsl:copy>
+            <xsl:copy-of select="@ptn:Simulation__x3A__visualize"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
