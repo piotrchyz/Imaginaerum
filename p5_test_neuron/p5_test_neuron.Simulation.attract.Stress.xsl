@@ -107,6 +107,7 @@
         <xsl:param name="ptn:Is_inhibitor"  tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Input__x3A__nodes__x3A__prohibit" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulation_body_tick" required="yes" tunnel="yes"/>
+        
         <xsl:variable name="ptn:Output_Node">
             <xsl:call-template name="ptn:Output_Node"/>            
         </xsl:variable>
@@ -177,8 +178,12 @@
                         <ptn:Resistance><xsl:value-of select="ptn:Resistance"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage><xsl:value-of select="ptn:Minimum_voltage"/></ptn:Minimum_voltage><!-- todo config strategy -->
                         <ptn:Maximum_voltage><xsl:value-of select="ptn:Maximum_voltage"/></ptn:Maximum_voltage><!-- todo config strategy -->
-                        <ptn:Resting_potential><xsl:value-of select="ptn:Resting_potential"/></ptn:Resting_potential><!-- todo config strategy -->
+                        <!--<ptn:Resting_potential><xsl:value-of select="ptn:Resting_potential"/></ptn:Resting_potential>--><!-- todo config strategy -->
+                        <xsl:call-template name="ptn:Resting_potential__x3A__Input__X3A__attract__x3A__vector__x3A__calculate">
+                            <xsl:with-param name="ptn:Simulation.Stress__x3A__calculate"  select="true()" tunnel="yes"/>
+                        </xsl:call-template>
                         <ptn:Reset_potential><xsl:value-of select="ptn:Reset_potential"/></ptn:Reset_potential><!-- todo config strategy -->
+                        
                         <ptn:Firing_threshold><xsl:value-of select="ptn:Firing_threshold"/></ptn:Firing_threshold><!-- todo config strategy -->
                         <ptn:Refactory_period><xsl:value-of select="ptn:Refactory_period"/></ptn:Refactory_period><!-- todo config strategy -->
                         <ptn:Is_inhibitor><xsl:value-of select="ptn:Is_inhibitor"/></ptn:Is_inhibitor>

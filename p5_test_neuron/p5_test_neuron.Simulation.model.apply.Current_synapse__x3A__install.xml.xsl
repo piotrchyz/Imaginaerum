@@ -213,6 +213,10 @@
     </xsl:template>-->
     
     
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
+        match="ptn:Refactory_period__x3A__flag"/>
+    
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
         match="ptn:Input__x3A__nodes__x3A__prohibit"/>
     

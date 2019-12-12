@@ -55,6 +55,14 @@
         <xsl:comment>#32 bypassed/n[<xsl:value-of select="name()"/>] to be context installed</xsl:comment>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="*">
         <xsl:message terminate="yes">#16 [ptn:Simulation.model.apply.xml]  unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>

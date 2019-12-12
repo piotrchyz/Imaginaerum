@@ -72,6 +72,14 @@
     </xsl:template>
     
     
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     
         
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Coordinate_X__calculate__x3A__empty[@ptn:Coordinate_X__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">

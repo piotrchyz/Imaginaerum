@@ -87,7 +87,7 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Simulated_potential|ptn:Is_inhibitor|ptn:Attract__x3A__flag|ptn:Output__x3A__flag|ptn:Stress__x3A__flag">
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Simulated_potential|ptn:Is_inhibitor|ptn:Attract__x3A__flag|ptn:Output__x3A__flag">
         <xsl:attribute name="{name()}" select="."/>
     </xsl:template>
     
@@ -125,7 +125,7 @@
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Z|ptn:Coordinate_Y|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage"/>
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Maximum_current|ptn:Time_constant"/>    
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Delay|ptn:Input__x3A__nodes|ptn:Simulated_potential|ptn:Attract__x3A__flag|ptn:Simulated_potential__x3A__vectors|ptn:Simulated_potential__x3A__vectors.sum"/>
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Receptor_regex_filter|ptn:Input__x3A__nodes__x3A__prohibit|ptn:Stress__x3A__flag"/>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Receptor_regex_filter|ptn:Input__x3A__nodes__x3A__prohibit|ptn:Stress__x3A__flag|ptn:Refactory_period__x3A__flag"/>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml.Outputs" match="ptn:Output__x3A__flag|ptn:Output__x3A__flag__x3A__emmit">
         <xsl:message>#109 [TODO][<xsl:value-of select="name()"/>]</xsl:message>
@@ -163,7 +163,7 @@
     
     
     
-    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Stress__x3A__flag"/>
+    <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Refactory_period__x3A__flag|ptn:Stress__x3A__flag"/>
         
         
     

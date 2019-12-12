@@ -64,7 +64,12 @@
     </xsl:template>
     
     
-    
+    <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Input__x3A__nodes__x3A__prohibit">
         <xsl:copy-of select="."/>
@@ -189,6 +194,14 @@
     
     <xsl:template mode="ptn:Output_Node" match="ptn:Simulation.attract__x3A__calculate[@ptn:Label]">
         <xsl:param name="ptn:Label"  tunnel="yes" required="yes"/>
+        <!--<xsl:choose>
+            <xsl:when test="tokenize($ptn:Label, substring-after($ptn:Label,'-to-'))[5]">-->
+                <xsl:message terminate="yes">#194 [subst after][<xsl:value-of select="substring-after($ptn:Label,'-to-')"/>]
+                    
+                </xsl:message>
+            <!--</xsl:when>
+        </xsl:choose>-->
+        
         <xsl:attribute name="ptn:Output_Node__x3A__inhibitor">_<xsl:value-of select="@ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label"/></xsl:attribute>
         <xsl:attribute name="ptn:Output_Node__x3A__inhibitor__x3A__self">_<xsl:value-of select="@ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="@ptn:Label"/></xsl:attribute>
         
@@ -198,9 +211,45 @@
     
     <xsl:template mode="ptn:Output_Node" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard|ptn:Leaky_neuron_inhibitor__X3A__AA|ptn:Leaky_neuron_inhibitor__x3A__AB">
         <xsl:param name="ptn:Label" tunnel="yes" required="yes"/>
-        <xsl:attribute name="ptn:Output_Node__x3A__inhibitor">_<xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label"/></xsl:attribute>
-        <xsl:attribute name="ptn:Output_Node__x3A__inhibitor__x3A__self">_<xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="ptn:Label"/></xsl:attribute>
-        <xsl:value-of select="ptn:Label"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label"/>
+        <xsl:variable name="module">
+            <xsl:for-each select="tokenize($ptn:Label,'-to-')[1]">
+                <xsl:value-of select="concat(.,'-to-',.)"/>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="ptn:Label__x3A__module">
+            <xsl:choose>
+                <xsl:when test="count(tokenize($ptn:Label,$module)) &gt;= 3">
+                    <xsl:value-of select="concat($module,'-',count(tokenize($ptn:Label,$module)),'-to-',$module)"/>
+                </xsl:when>
+                <xsl:otherwise><xsl:value-of select="$ptn:Label"/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="module2">
+            <xsl:for-each select="tokenize(ptn:Label,'-to-')[1]">
+                <xsl:value-of select="concat(.,'-to-',.)"/>
+            </xsl:for-each>
+        </xsl:variable>
+        <xsl:variable name="ptn:Label__x3A__module2">
+            <xsl:choose>
+                <xsl:when test="count(tokenize(ptn:Label,$module2)) &gt;= 3">
+                    <xsl:value-of select="concat($module2,'-',count(tokenize(ptn:Label,$module2)),'-to-',$module2)"/>
+                </xsl:when>
+                <xsl:otherwise><xsl:value-of select="ptn:Label"/></xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:message>#211[module[<xsl:value-of select="$module"/>]][v]   [$module2[<xsl:value-of select="$module2"/>]]</xsl:message>
+        <xsl:message terminate="no">#194A [tokens[$module]][<xsl:value-of select="count(tokenize($ptn:Label,$module))"/>] 
+            [$ptn:Label__x3A__module[<xsl:value-of select="$ptn:Label__x3A__module"/>]]
+            [$ptn:Label__x3A__module2[<xsl:value-of select="$ptn:Label__x3A__module2"/>]]
+            [$ptn:Label[<xsl:value-of select="$ptn:Label"/>]]
+            [ptn:Label[<xsl:value-of select="ptn:Label"/>]]
+        </xsl:message>
+        
+        <xsl:attribute name="ptn:Output_Node__x3A__inhibitor">_<xsl:value-of select="$ptn:Label__x3A__module2"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label__x3A__module"/></xsl:attribute>
+        <xsl:attribute name="ptn:Output_Node__x3A__inhibitor__x3A__self">_<xsl:value-of select="$ptn:Label__x3A__module2"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label__x3A__module2"/></xsl:attribute>
+        <xsl:value-of select="$ptn:Label__x3A__module2"/><xsl:text>-to-</xsl:text><xsl:value-of select="$ptn:Label__x3A__module"/>
     </xsl:template>
     
     

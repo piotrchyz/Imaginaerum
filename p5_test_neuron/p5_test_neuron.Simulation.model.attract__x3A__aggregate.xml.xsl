@@ -67,7 +67,15 @@
         <xsl:message terminate="yes">#66 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
-                        
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
         <!--<xsl:copy>
@@ -89,6 +97,8 @@
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
         <xsl:comment>#90 [bypassed][/n][<xsl:value-of select="name()"/>]</xsl:comment>
     </xsl:template>
+    
+    
     
     
     

@@ -43,8 +43,16 @@
         <xsl:message terminate="yes">#167A[install__x3A__Reset_potential] [unantended[n][<xsl:value-of select="name()"/>][ptn:Label[<xsl:value-of select="$ptn:Label"/>]]</xsl:message>
     </xsl:template>
     
+    
+    <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Refactory_period__x3A__flag">
+        <xsl:comment>#48 bypassed [n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Input__x3A__attract__x3A__vectors">
         <xsl:comment>#45AA n[<xsl:value-of select="name()"/>]</xsl:comment>        
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated">
     </xsl:template>
     
     

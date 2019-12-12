@@ -109,6 +109,14 @@
         </xsl:copy>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     
     <xsl:template mode="ptn:Simulation.attract.xml" match="*">
         <xsl:message terminate="yes">#30A unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
