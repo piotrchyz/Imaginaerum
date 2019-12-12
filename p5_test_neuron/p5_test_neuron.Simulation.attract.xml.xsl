@@ -28,8 +28,9 @@
     
     
     <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Receptors|ptn:Nodes">
+        <xsl:param name="ptn:Simulation_body_tick" tunnel="yes" required="yes"/>
         <xsl:copy>
-            <xsl:attribute name="p5suis:group.name" select="local-name()"/>
+            <xsl:attribute name="p5suis:group.name"><xsl:value-of select="local-name()"/> in scene <xsl:value-of select="$ptn:Simulation_body_tick"/></xsl:attribute>
             <xsl:attribute name="p5suis:group.by">child::local-name()</xsl:attribute>
             <xsl:attribute name="p5suis:group-desc">child::local-name()</xsl:attribute>
           <xsl:apply-templates mode="#current"/>
@@ -287,6 +288,7 @@
                         <xsl:call-template name="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
                             <xsl:with-param name="ptn:Input__x3A__nodes"  select="$ptn:Input__x3A__nodes" tunnel="yes"/>
                             <xsl:with-param name="ptn:Leaky_neuron_standard" tunnel="yes" select="true()"/>
+                            <xsl:with-param name="ptn:Simulation.attract__x3A__calculate" select="true()" tunnel="yes"/>
                         </xsl:call-template>
                         <ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty/>
                         <!--<ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>-->
@@ -340,6 +342,7 @@
                         <xsl:call-template name="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
                             <xsl:with-param name="ptn:Input__x3A__nodes"  select="$ptn:Input__x3A__nodes" tunnel="yes"/>
                             <xsl:with-param name="ptn:Leaky_neuron_inhibitor__x3A__AB" select="true()" tunnel="yes"/>
+                            <xsl:with-param name="ptn:Simulation.attract__x3A__calculate" select="true()" tunnel="yes"/>
                         </xsl:call-template>
                         <ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty/>
                         <!--<ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>-->
@@ -392,6 +395,7 @@
                         <xsl:call-template name="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
                             <xsl:with-param name="ptn:Input__x3A__nodes"  select="$ptn:Input__x3A__nodes" tunnel="yes"/>
                             <xsl:with-param name="ptn:Leaky_neuron_inhibitor__X3A__AA" select="true()" tunnel="yes"/>
+                            <xsl:with-param name="ptn:Simulation.attract__x3A__calculate" select="true()" tunnel="yes"/>
                         </xsl:call-template>
                         <ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty/>
                         <!--<ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>-->

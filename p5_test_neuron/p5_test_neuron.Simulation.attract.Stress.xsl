@@ -190,6 +190,8 @@
                         <ptn:Simulated_potential><xsl:value-of select="ptn:Reset_potential"/></ptn:Simulated_potential><!-- todo config strategy -->
                         <xsl:call-template name="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
                             <xsl:with-param name="ptn:Input__x3A__nodes"  select="$ptn:Input__x3A__nodes" tunnel="yes"/>
+                            <xsl:with-param name="ptn:Leaky_neuron_standard" select="true()" tunnel="yes"/>
+                            <xsl:with-param name="ptn:Simulation.Stress__x3A__calculate" select="true()" tunnel="yes"/>
                         </xsl:call-template>
                         <ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty/>
                         <!--<ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>-->
