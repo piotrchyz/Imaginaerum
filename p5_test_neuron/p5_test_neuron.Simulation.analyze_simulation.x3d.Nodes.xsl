@@ -269,6 +269,7 @@
             </appearance>
             <xsl:call-template name="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform.shape__x3A__element"/>
         </shape>
+        <xsl:apply-templates mode="#current" select="@*"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="ptn:Leaky_neuron_inhibitor__x3A__AB__x3A__analyze|ptn:Leaky_neuron_inhibitor__X3A__AA__x3A__analyze">

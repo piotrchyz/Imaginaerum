@@ -24,7 +24,7 @@
         <xsl:param name="ptn:Coordinate_X" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Y" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Coordinate_Z" required="yes" tunnel="yes"/>
-        <xsl:param name="ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio" tunnel="yes" select="10"/>
+        <xsl:param name="ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio" tunnel="yes" select="1"/>
         <xsl:param name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.offset" select="0" tunnel="yes"/>
         <xsl:param name="ptn:Leaky_neuron_inhibitor__x3A__AB" tunnel="yes" select="false()"/>
         <xsl:param name="ptn:Leaky_neuron_inhibitor__X3A__AA" tunnel="yes" select="false()"/>
@@ -42,7 +42,7 @@
                 <xsl:when test="count($ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ]) = 2 and not($ptn:Leaky_neuron_inhibitor__x3A__AB) and not($ptn:Leaky_neuron_inhibitor__X3A__AA)">
                             <xsl:comment>#39 [cnt[<xsl:value-of select="count($ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ])"/>]]   cnt2[<xsl:value-of select="count($ptn:Attract__x3A__flag.nodes//*[ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ]])"/>]</xsl:comment>
                             <xsl:call-template name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate">
-                                <xsl:with-param name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.offset" select="0.333" tunnel="yes"/>
+                                <xsl:with-param name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.offset" select="0.133" tunnel="yes"/>
                             </xsl:call-template>
                             <xsl:call-template name="ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate">
                                 <xsl:with-param name="ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment" select="5" tunnel="yes"/>
@@ -55,7 +55,7 @@
                         <xsl:when test="count($ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ]) = 1 and $ptn:Leaky_neuron_inhibitor__x3A__AB">
                             <xsl:comment>#39 [cnt[<xsl:value-of select="count($ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ])"/>]]   cnt2[<xsl:value-of select="count($ptn:Attract__x3A__flag.nodes//*[ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ]])"/>]</xsl:comment>
                             <xsl:call-template name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate">
-                                <xsl:with-param name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.offset" select="0.666" tunnel="yes"/>
+                                <xsl:with-param name="ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.offset" select="0.866" tunnel="yes"/>
                             </xsl:call-template>
                             <xsl:call-template name="ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate">
                                 <xsl:with-param name="ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment" select="6" tunnel="yes"/>
