@@ -287,15 +287,17 @@
     <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="@*"/>
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.x3d.Scene.Transform.DEF.Transform" match="@ptn:Simulation__x3A__visualize">
-        <shape>
-            <Text string="{parent::*/@ptn:Label__x3A__analyze}">
-                <FontStyle  justify="MIDDLE MIDDLE" size="3"> </FontStyle>
-            </Text>
-            <Appearance >
-                <Material diffuseColor='0.1 0.1 0.7'> </Material>
-            </Appearance>
-        </shape>
-        
+        <transform translation="-3 -4 -3">
+            <shape>
+                <Text string="{parent::*/@ptn:Label__x3A__analyze}">
+                    <FontStyle  justify="MIDDLE MIDDLE" size="1.5"><xsl:text> </xsl:text></FontStyle>
+                </Text>
+                <Appearance >
+                    <Material diffuseColor='0.1 0.1 0.7'><xsl:text> </xsl:text></Material>
+                </Appearance>
+            </shape>
+            <xsl:text> </xsl:text>
+        </transform>
         
     </xsl:template>
     

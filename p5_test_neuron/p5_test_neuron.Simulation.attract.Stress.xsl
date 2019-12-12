@@ -167,7 +167,8 @@
                         </xsl:variable>
                         <xsl:attribute name="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type" select="'ptn:Leaky_neuron_standard'"/>
                         <!--<xsl:attribute name="ptn:Inputs" select="concat($ptn:Label,' ',ptn:Label)"/>-->
-                        <ptn:Label><xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
+                        <ptn:Label><xsl:copy-of select="ptn:Label/@ptn:Simulation__x3A__visualize"/>
+                            <xsl:value-of select="$ptn:Output_Node"/></ptn:Label>
                         
                         <ptn:Coordinate_X__calculate__x3A__empty ptn:Coordinate_X__x3A__more_charged_node="{ptn:Coordinate_X}"><!--<xsl:value-of select="ptn:Coordinate_X"/>--></ptn:Coordinate_X__calculate__x3A__empty>
                         <ptn:Coordinate_Y__calculate__x3A__empty ptn:Coordinate_Y__x3A__more_charged_node="{ptn:Coordinate_Y}"><!--<xsl:value-of select="ptn:Coordinate_Y + 10"/>--></ptn:Coordinate_Y__calculate__x3A__empty>
