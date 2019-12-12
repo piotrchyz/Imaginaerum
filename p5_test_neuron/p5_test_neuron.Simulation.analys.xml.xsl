@@ -172,6 +172,7 @@
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z|ptn:Capacitance|ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Current_synapse|ptn:Receptor_regex_filter|ptn:Input__x3A__nodes|ptn:Input__x3A__node">
         <xsl:copy>
+            <xsl:copy-of select="@ptn:Simulation__x3A__visualize"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>

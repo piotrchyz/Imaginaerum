@@ -77,6 +77,7 @@
     
     <xsl:template mode="ptn:Simulation.analyze_simulation.xml" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_inhibitor__X3A__AA[ptn:Label]|ptn:Leaky_neuron_inhibitor__x3A__AB[ptn:Label]|ptn:Leaky_neuron_standard[ptn:Label]">
         <xsl:element name="{ptn:Simulation.analyze_simulation.xml__x3A__element.name(name())}">
+            <xsl:copy-of select="@ptn:Simulation__x3A__visualize"/>
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Label" select="ptn:Label" tunnel="yes"/>
             </xsl:apply-templates>

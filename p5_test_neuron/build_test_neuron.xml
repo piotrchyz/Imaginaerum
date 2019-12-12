@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="debug"><!-- default --><!-- analyze_simulation_x3d -->
+<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="debug"><!-- debug --><!-- default --><!-- analyze_simulation_x3d -->
     
     
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
@@ -38,6 +38,8 @@
             $p5_test_neuron.debug__x3A__flag = ${p5_test_neuron.debug__x3A__flag}
         </echo><!-- say_to_PL.file -->
     </target>
+    
+    <extension-point name="analyze_simulation_x3d.debug" depends="debug.param,analyze_simulation_x3d"/>
     
     <target name="debug" depends="debug.param,default" description="base model for debugg engine">
         <echo>#26 base model for debugg engine</echo>
