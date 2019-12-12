@@ -5,7 +5,7 @@
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
     <property name="p5_test_neuron.repository" location="${basedir}/p5_test_neuron/repository"/>
     
-    <property name="p5suis" location="/Users/a.binder/Documents/se/SE/schema/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"/>
+    <property name="p5suis" location="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"/>
    
     
     <property name="p5_test_neuron.xsl" location="${p5_test_neuron.basedir}/p5_test_neuron.xsl"/>
@@ -31,19 +31,12 @@
     <target name="debug.param">
         <property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config.debug.xml"/>
         <property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation.debug"/>
+        <property name="p5_test_neuron.debug__x3A__flag" value="true"/>
         <echo>#28 setting default config base model for debugg engine
             $p5_test_neuron.Config = ${p5_test_neuron.Config}
             $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
+            $p5_test_neuron.debug__x3A__flag = ${p5_test_neuron.debug__x3A__flag}
         </echo><!-- say_to_PL.file -->
-        
-        <!--<java fork="true" >-->
-        <ant inheritall="false" antfile="${p5suis}" target="p5suis:say_to_queue.PL.drop_overflow">
-            <property name="p5suis:say_text" value="Uruchamiam test podstawowych modeli silnika neuronowego"/>
-        </ant>
-        <ant   inheritall="false" antfile="${p5suis}" target="p5suis:say_from_queue.task.run.immediate"/>
-        <!--</java>--> 
-        
-        
     </target>
     
     <target name="debug" depends="debug.param,default" description="base model for debugg engine">
@@ -101,31 +94,45 @@
             #34 will read $p5_test_neuron.Config[${p5_test_neuron.Config}]
             to generate $p5_test_neuron.Simulation.build.analys.xml[${p5_test_neuron.Simulation.build.analys.xml}]
         </echo>
-        <xslt in="${p5_test_neuron.Config}" 
-            out="${p5_test_neuron.Simulation.build.analys.xml}"
-            style="${p5_test_neuron.xsl}"
-            force="true">
-            <factory name="net.sf.saxon.TransformerFactoryImpl">
-                <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
-                <attribute name="http://saxon.sf.net/feature/initialMode"
-                    value="{p5_test_neuron}Simulation.build.analys.xml"/>
-                <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
-            </factory>
-            
-            <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>
-            <param name="{p5_test_neuron}Inputs" expression="${p5_test_neuron.Inputs}"/>
-            <param name="{p5_test_neuron}Simulation_ticks" expression="${p5_test_neuron.Simulation_ticks}"/>
-            <param name="{p5_test_neuron}Simulation.dir" expression="${p5_test_neuron.Simulation.dir}"/>
-            <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
-            <param name="basedir" expression="${basedir}"/>
-            <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
-            <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
-            
-            <classpath location="/opt/local/share/java/saxon9he.jar"/>
-        </xslt>
-        
-    
+        <parallel threadcount="2">
+            <sequential>
+                <antcall target="generate_simulation_build.debug.say"/>
+            </sequential>
+            <sequential>
+            <xslt in="${p5_test_neuron.Config}" 
+                out="${p5_test_neuron.Simulation.build.analys.xml}"
+                style="${p5_test_neuron.xsl}"
+                force="true">
+                <factory name="net.sf.saxon.TransformerFactoryImpl">
+                    <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                    <attribute name="http://saxon.sf.net/feature/initialMode"
+                        value="{p5_test_neuron}Simulation.build.analys.xml"/>
+                    <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+                </factory>
+                
+                <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>
+                <param name="{p5_test_neuron}Inputs" expression="${p5_test_neuron.Inputs}"/>
+                <param name="{p5_test_neuron}Simulation_ticks" expression="${p5_test_neuron.Simulation_ticks}"/>
+                <param name="{p5_test_neuron}Simulation.dir" expression="${p5_test_neuron.Simulation.dir}"/>
+                <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
+                <param name="basedir" expression="${basedir}"/>
+                <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
+                <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
+                <param name="{p5_test_neuron}debug__x3A__flag" expression="${p5_test_neuron.debug__x3A__flag}"/>
+                <param name="{p5_test_neuron}p5suis" expression="${p5suis}"/>
+                <classpath location="/opt/local/share/java/saxon9he.jar"/>
+            </xslt>       
+            </sequential>
+        </parallel>
     </target>
+    
+    <target name="generate_simulation_build.debug.say" if="p5_test_neuron.debug__x3A__flag">
+        <ant  inheritall="false" antfile="${p5suis}" target="p5suis:say_to_queue.PL.drop_overflow">
+            <property name="p5suis:say_text" value="Uruchamiam test podstawowych modeli silnika neuronowego"/>
+        </ant>
+        <!--<ant   inheritall="false" antfile="${p5suis}" target="p5suis:say_from_queue.task.run.immediate"/>-->
+    </target>
+    
 
     <target name="generate_simulation_build__x3A__exec" depends="generate_simulation_build">
         <ant antfile="${p5_test_neuron.Simulation.build.analys.xml}"/>

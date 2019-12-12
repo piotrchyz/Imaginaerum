@@ -73,12 +73,17 @@
     
     
     
+    <xsl:template mode="ptn:Simulation.model.stats.xml__x3A__generate-id" match="ptn:Coordinate_X__calculate__x3A__empty__x3A__assert[following-sibling::ptn:Coordinate_X]|ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert[following-sibling::ptn:Coordinate_Y]|ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert[following-sibling::ptn:Coordinate_Z]|ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert[following-sibling::ptn:Input__x3A__attract__x3A__vectors]">
+        <xsl:comment>#77 bypassed[n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.model.stats.xml__x3A__generate-id" match="*">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
+    
     
     <xsl:template mode="ptn:Simulation.model.stats.xml__x3A__generate-id" match="ptn:Receptor|*[parent::ptn:Nodes]">
         <xsl:copy>

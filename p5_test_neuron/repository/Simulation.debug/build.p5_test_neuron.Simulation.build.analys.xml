@@ -8,37 +8,53 @@
          basedir="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"
          name="Simulation.build.analys.xml"
          default="Simulation.build.analys.xml.10">
+   <property name="p5suis"
+             value="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"/>
+   <!--#84 
+                $ptn:p5suis = [/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml]
+                $ptn:debug__x3A__flag = [true]
+            -->
    <target name="Simulation.build.analys.xml.0">
       <echo>Initial simulation</echo>
-      <xslt out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Receptor__x3A__generate.0.xml"
-            style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
-            in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config.debug.xml"
-            force="false">
-         <factory name="net.sf.saxon.TransformerFactoryImpl">
-            <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
-            <attribute name="http://saxon.sf.net/feature/initialMode"
-                       value="{p5_test_neuron}Simulation.analys.xml__x3A__Receptor__x3A__generate"/>
-            <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
-                       value="true"/>
-            <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
-         </factory>
-         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config.debug.xml"
-                name="{p5_test_neuron}Config"/>
-         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Inputs1.xml"
-                name="{p5_test_neuron}Inputs"/>
-         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
-                name="{p5_test_neuron}xsl"/>
-         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
-                name="{p5_test_neuron}xsd"/>
-         <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
-         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug"
-                name="{p5_test_neuron}Simulation.dir"/>
-         <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
-                name="{p5_test_neuron}basedir"/>
-         <param name="basedir"
-                expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
-         <classpath location="/opt/local/share/java/saxon9he.jar"/>
-      </xslt>
+      <sequential>
+         <xslt out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Receptor__x3A__generate.0.xml"
+               style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+               in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config.debug.xml"
+               force="false">
+            <factory name="net.sf.saxon.TransformerFactoryImpl">
+               <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+               <attribute name="http://saxon.sf.net/feature/initialMode"
+                          value="{p5_test_neuron}Simulation.analys.xml__x3A__Receptor__x3A__generate"/>
+               <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable"
+                          value="true"/>
+               <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+            </factory>
+            <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/Config.debug.xml"
+                   name="{p5_test_neuron}Config"/>
+            <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Inputs1.xml"
+                   name="{p5_test_neuron}Inputs"/>
+            <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
+                   name="{p5_test_neuron}xsl"/>
+            <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
+                   name="{p5_test_neuron}xsd"/>
+            <param expression="10" name="{p5_test_neuron}Simulation_ticks"/>
+            <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug"
+                   name="{p5_test_neuron}Simulation.dir"/>
+            <param expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron"
+                   name="{p5_test_neuron}basedir"/>
+            <param name="basedir"
+                   expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
+            <classpath location="/opt/local/share/java/saxon9he.jar"/>
+         </xslt>
+      </sequential>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Receptor__x3A__generate.0.xml"/>
+         </ant>
+      </sequential>
       <xslt out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Input__x3A__generate.0.xml"
             style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Receptor__x3A__generate.0.xml"
@@ -213,6 +229,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.0.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.0.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.0.xml"
@@ -386,6 +410,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.1.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.1.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.1.xml"
@@ -563,6 +595,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.2.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.2.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.2.xml"
@@ -740,6 +780,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.3.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.3.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.3.xml"
@@ -917,6 +965,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.4.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.4.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.4.xml"
@@ -1094,6 +1150,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.5.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.5.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.5.xml"
@@ -1271,6 +1335,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.6.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.6.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.6.xml"
@@ -1448,6 +1520,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.7.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.7.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.7.xml"
@@ -1625,6 +1705,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.8.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.8.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.8.xml"
@@ -1802,6 +1890,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.9.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.9.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.9.xml"
@@ -1979,6 +2075,14 @@
                 expression="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum"/>
          <classpath location="/opt/local/share/java/saxon9he.jar"/>
       </xslt>
+      <sequential>
+         <ant inheritall="false"
+              antfile="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"
+              target="p5suis.say_to_queue.copy_file.drop_overflow">
+            <property name="p5suis.say_to_queue.copy_file"
+                      value="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.10.xml"/>
+         </ant>
+      </sequential>
       <xslt style="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/p5_test_neuron.xsl"
             in="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.attract.xml.10.xml"
             out="/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/repository/Simulation.debug/Simulation.model.xml.10.xml"

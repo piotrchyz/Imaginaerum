@@ -7,124 +7,10 @@
                           ptn:Simulator_tick="1"
                           ptn:Simulation_body_time__x3A__last="0"
                           ptn:Simulation_ticks="10">
-   <ptn:Simulation.attract__x3A__aggregate>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-      <ptn:Input__x3A__attract__x3A__vectors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                                             xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
-         <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-      </ptn:Input__x3A__attract__x3A__vectors>
-   </ptn:Simulation.attract__x3A__aggregate>
+   <ptn:Simulation.attract__x3A__aggregate/>
    <ptn:Receptors xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                  xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">
+                  xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
+                  xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd">
       <ptn:Receptor>
          <ptn:Label>A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
@@ -584,5 +470,6 @@
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-              xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"/>
+              xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
+              xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"/>
 </ptn:Simulation.model.xml>

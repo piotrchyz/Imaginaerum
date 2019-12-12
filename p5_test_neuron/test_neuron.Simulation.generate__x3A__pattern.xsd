@@ -463,6 +463,7 @@
             <xs:element name="Coordinate_Y__x3A__Input__X3A__attract__x3A__vector"/>
             <xs:element name="Coordinate_Z__x3A__Input__X3A__attract__x3A__vector"/>
         </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
     </xs:complexType>
     <xs:element name="Input__x3A__attract__x3A__vectors"
         type="ptn:Input__x3A__attract__x3A__vectors">

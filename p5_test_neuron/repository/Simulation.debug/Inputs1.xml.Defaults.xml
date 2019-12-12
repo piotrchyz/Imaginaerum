@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ptn:Defaults xmlns:ptn="p5_test_neuron"
+<ptn:Defaults xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+              xmlns:ptn="p5_test_neuron"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
               xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd">

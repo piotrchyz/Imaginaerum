@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ptn:Simulation.attract.xml xmlns:ptn="p5_test_neuron"
                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
                             xsi:schemaLocation="p5_test_neuron file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd"
                             ptn:Simulation_body_tick="1"
                             ptn:Simulation_body_time="1"
