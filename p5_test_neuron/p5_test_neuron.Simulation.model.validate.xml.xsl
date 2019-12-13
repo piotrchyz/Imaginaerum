@@ -32,11 +32,11 @@
     
     
     <xsl:template mode="ptn:Simulation.model.validate.xml" match="*">
-        <xsl:message terminate="yes">#33 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
+        <xsl:message terminate="yes">#33 unantended/n[<xsl:value-of select="name()"/>]    [followings[<xsl:value-of select="following-sibling::*[position() &lt; 5]/name()"/>]]</xsl:message>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Simulation.model.validate.xml__x3A__stats">
-        <xsl:comment>#33AA unantended/n[<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:comment>#33AA unantended/n[<xsl:value-of select="name()"/>]     </xsl:comment>
         <!--<xsl:apply-templates mode="#current"/>-->
     </xsl:template>
     
@@ -50,8 +50,70 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Receptors|ptn:Nodes">
-        <xsl:copy-of select="."/>
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
     </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Input|ptn:Input_exec_time|
+        ptn:Input_exec_time__x3A__initial|ptn:Input_exec_receptor|ptn:Input_exec_Time_constant|ptn:Input_exec_Maximum_current|ptn:Input__x3A__Is_inhibitor">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Label|ptn:Coordinate_X|ptn:Coordinate_Y|ptn:Coordinate_Z|
+        ptn:Resistance|ptn:Minimum_voltage|ptn:Maximum_voltage|ptn:Resting_potential|ptn:Reset_potential|
+        ptn:Firing_threshold|ptn:Refactory_period|ptn:Is_inhibitor|ptn:Outputs|ptn:Input__x3A__nodes|
+        ptn:Simulated_potential|ptn:Receptor_regex_filter|
+        ptn:Current_synapse|ptn:Maximum_current|ptn:Time_constant|ptn:Delay|ptn:Output_Node|
+        ptn:Output__x3A__flag__x3A__emmit|ptn:Refactory_period__x3A__flag|
+        ptn:Refactory_period__x3A__flag__x3A__until|ptn:Input__x3A__node|
+        ptn:Current_synapse__x3A__emmit|ptn:Stress__x3A__flag">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Input__x3A__nodes__x3A__prohibit|ptn:Input__x3A__node__x3A__prohibit">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Capacitance">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#71 [todo] validate capacitance</xsl:attribute>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert">
+        <xsl:comment>#68 bypassed[ptn:Simulation.model.validate.xml]    [n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    
+    
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard[ptn:Label]">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current">
+                <xsl:with-param name="ptn:Label" select="ptn:Label" tunnel="yes"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     
     <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
         <xsl:copy>
@@ -67,32 +129,35 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert">
+    <!--<xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
-    </xsl:template>
+    </xsl:template>-->
     
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="*">
         <xsl:message terminate="yes">#661 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node__x3A__assert">
-        <xsl:copy>
+    <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert|
+        ptn:Capacitance__x3A__calculate__x3A__empty|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert">
+        <xsl:comment>#84 bypassed [n][<xsl:value-of select="name()"/>]</xsl:comment>
+        <!--<xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
+        </xsl:copy>-->
     </xsl:template>
     
     
     
     <xsl:template mode="ptn:Simulation.model.validate.xml__x3A__apply" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
-        <xsl:copy>
+        <xsl:comment>#156 [bypassed][n][<xsl:value-of select="name()"/>]</xsl:comment>
+        <!--<xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
+        </xsl:copy>-->
     </xsl:template>
     
     

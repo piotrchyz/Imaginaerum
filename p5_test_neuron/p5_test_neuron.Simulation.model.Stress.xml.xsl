@@ -16,7 +16,7 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Simulation.Stress__x3A__calculate">
-        <xsl:comment >#74M unintended/n[<xsl:value-of select="name()"/>]</xsl:comment>
+        <xsl:comment >#74M to implement context attract/n[<xsl:value-of select="name()"/>]</xsl:comment>
         <!--<xsl:apply-templates mode="#current">
             <xsl:with-param name="ptn:Label" select="preceding-sibling::ptn:Label" tunnel="yes"/>
         </xsl:apply-templates>-->

@@ -88,6 +88,13 @@
             <xs:maxInclusive value="2"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="Capacitance_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Capacitance">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Resistance">
         <xs:annotation>
             <xs:documentation>Membrane Resistance 1...200M Ohm
@@ -98,6 +105,13 @@
             <xs:maxInclusive value="200"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="Resistance_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Resistance">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="voltage">
         <xs:annotation>
             <xs:documentation>Membrane Minimum Voltage -200 to 200mV</xs:documentation>
@@ -110,9 +124,23 @@
     <xs:simpleType name="Minimum_voltage">
         <xs:restriction base="ptn:voltage"/>
     </xs:simpleType>
+    <xs:complexType name="Minimum_voltage_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Minimum_voltage">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Maximum_voltage">
         <xs:restriction base="ptn:voltage"/>
     </xs:simpleType>
+    <xs:complexType name="Maximum_voltage_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Maximum_voltage">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Potentials">
         <xs:annotation>
             <xs:documentation>Membrane Potentials -100 to 50mV</xs:documentation>
@@ -131,15 +159,47 @@
             <xs:maxInclusive value="200"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="Simulated_potential_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Simulated_potential">
+                <xs:attribute ref="ptn:debug"/>
+                <xs:attribute ref="ptn:Simulated_potential__x3A__current"/>
+                <xs:attribute
+                    ref="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed"
+                />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Resting_potential">
         <xs:restriction base="ptn:Potentials"/>
     </xs:simpleType>
+    <xs:complexType name="Resting_potential_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Resting_potential">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Reset_potential">
         <xs:restriction base="ptn:Potentials"/>
     </xs:simpleType>
+    <xs:complexType name="Reset_potential_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Reset_potential">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Firing_threshold">
         <xs:restriction base="ptn:Potentials"/>
     </xs:simpleType>
+    <xs:complexType name="Firing_threshold_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Firing_threshold">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Adaptation_conductance">
         <xs:annotation>
             <xs:documentation>Adaptation Conductance of Adaptive Neuron 0.0 to 1000.0nS</xs:documentation>
@@ -167,6 +227,13 @@
             <xs:maxInclusive value="50"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="Refactory_period_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Refactory_period">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Maximum_current">
         <xs:annotation>
             <xs:documentation>Synapse Maximum Current 0.01 to 10.00 nA - with Time Constant - how much amperage will be unloaded</xs:documentation>
@@ -229,6 +296,13 @@
         </xs:annotation>
         <xs:restriction base="xs:decimal"> </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="Coordinate_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Coordinate">
+                <xs:attribute ref="ptn:debug"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:simpleType name="Receptor_regex_filter">
         <xs:annotation>
             <xs:documentation>Simple filter for receptor s/A/g  - for A letter</xs:documentation>
@@ -276,7 +350,7 @@
     </xs:simpleType>
     <xs:complexType name="Node">
         <xs:sequence>
-            <xs:element name="Label" type="ptn:Label"/>
+            <xs:element name="Label" type="ptn:Label_CT"/>
             <xs:choice>
                 <xs:sequence>
                     <xs:element minOccurs="0"
@@ -285,7 +359,7 @@
                             <xs:attribute ref="ptn:Coordinate_X__x3A__more_charged_node"/>
                         </xs:complexType>
                     </xs:element>
-                    <xs:element default="0" name="Coordinate_X" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_X" type="ptn:Coordinate_CT"/>
                 </xs:sequence>
                 <xs:element name="Coordinate_X__calculate__x3A__empty"/>
             </xs:choice>
@@ -297,7 +371,7 @@
                             <xs:attribute ref="ptn:Coordinate_Y__x3A__more_charged_node"/>
                         </xs:complexType>
                     </xs:element>
-                    <xs:element default="0" name="Coordinate_Y" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Y" type="ptn:Coordinate_CT"/>
                 </xs:sequence>
                 <xs:element name="Coordinate_Y__calculate__x3A__empty"/>
             </xs:choice>
@@ -309,32 +383,40 @@
                             <xs:attribute ref="ptn:Coordinate_Z__x3A__more_charged_node"/>
                         </xs:complexType>
                     </xs:element>
-                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
                 </xs:sequence>
                 <xs:element name="Coordinate_Z__calculate__x3A__empty"/>
             </xs:choice>
-            <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance" minOccurs="0"/>
-            <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="0"/>
-            <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+            <xs:sequence>
+                <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance_CT" minOccurs="0"/>
+                <xs:element name="Capacitance__x3A__attract__x3A__calculate__x3A__assert"
+                    type="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert" minOccurs="0"
+                />
+            </xs:sequence>
+            <xs:element default="100" name="Resistance" type="ptn:Resistance_CT" minOccurs="0"/>
+            <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage_CT"
                 minOccurs="0"/>
-            <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage" minOccurs="0"/>
-            <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+            <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage_CT"
                 minOccurs="0"/>
-            <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+            <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential_CT"
                 minOccurs="0"/>
-            <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+            <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential_CT"
+                minOccurs="0"/>
+            <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold_CT"
                 minOccurs="0"/>
             <xs:element default="10" minOccurs="0" name="Adaptation_conductance"
                 type="ptn:Adaptation_conductance"/>
             <xs:element default="500" minOccurs="0" name="Adaptation_time_constant"
                 type="ptn:Adaptation_time_constant"/>
-            <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+            <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period_CT"
                 minOccurs="0"/>
             <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
             <xs:element ref="ptn:Outputs"/>
             <xs:element ref="ptn:Input__x3A__nodes"/>
             <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
             <xs:element default="-80" name="Simulated_potential" type="ptn:Simulated_potential_CT"/>
+            <xs:element minOccurs="0" name="Refactory_period__x3A__flag"
+                type="ptn:Refactory_period__x3A__flag"/>
             <xs:element minOccurs="0" name="Attract__x3A__flag" type="ptn:Attract__x3A__flag_CT"/>
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 name="Simulation.attract__x3A__calculate"
@@ -371,52 +453,67 @@
         <xs:anyAttribute
             namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"/>
         <xs:assert
-            test="ptn:Coordinate_X = ptn:Coordinate_X__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_X__x3A__more_charged_node + ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_X__calculate__x3A__empty__x3A__assert) "
-        />
+            test="ptn:Coordinate_X = ptn:Coordinate_X__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_X__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(.=0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_X__calculate__x3A__empty__x3A__assert)"/>
         <xs:assert
-            test="ptn:Coordinate_Y = ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Y__x3A__more_charged_node + ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert) "
-        />
+            test="ptn:Coordinate_Y = ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Y__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(.=0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert)"/>
         <xs:assert
-            test="ptn:Coordinate_Z = ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Z__x3A__more_charged_node + ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert) "
+            test="ptn:Coordinate_Z = ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Z__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(.=0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert)"/>
+        <xs:assert
+            test="ptn:Refactory_period__x3A__flag and ptn:Simulated_potential > ptn:Firing_threshold or not(ptn:Refactory_period__x3A__flag) or ptn:Simulated_potential = ptn:Reset_potential"
         />
     </xs:complexType>
-    <xs:complexType name="Simulated_potential_CT">
+    <xs:complexType name="Refactory_period__x3A__flag">
+        <xs:sequence>
+            <xs:element name="Refactory_period__x3A__flag__x3A__until"
+                type="ptn:Refactory_period__x3A__flag__x3A__until_CT"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:debug"/>
+    </xs:complexType>
+    <xs:simpleType name="Refactory_period__x3A__flag__x3A__until">
+        <xs:restriction base="xs:double">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="Refactory_period__x3A__flag__x3A__until_CT">
         <xs:simpleContent>
-            <xs:extension base="ptn:Simulated_potential">
-                <xs:attribute ref="ptn:Simulated_potential__x3A__current"/>
-                <xs:attribute
-                    ref="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed"
-                />
+            <xs:extension base="ptn:Refactory_period__x3A__flag__x3A__until">
+                <xs:attribute ref="ptn:debug"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    <xs:attribute fixed="true" name="Simulation__x3A__visualize" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Pokazac na symulacji</xs:documentation>
+        </xs:annotation>
+    </xs:attribute>
     <xs:attribute name="Inputs" type="xs:IDREFS"/>
     <xs:complexType name="Leaky_neuron">
         <xs:complexContent>
             <xs:restriction base="ptn:Node">
                 <xs:sequence>
-                    <xs:element name="Label" type="ptn:Label"/>
-                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
-                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
-                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
-                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                    <xs:element name="Label" type="ptn:Label_CT"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate_CT"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance_CT"
                         minOccurs="1"/>
-                    <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
-                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance_CT"
                         minOccurs="1"/>
-                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage_CT"
                         minOccurs="1"/>
-                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage_CT"
                         minOccurs="1"/>
-                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                    <xs:element default="-70" name="Resting_potential"
+                        type="ptn:Resting_potential_CT" minOccurs="1"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential_CT"
                         minOccurs="1"/>
-                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold_CT"
                         minOccurs="1"/>
                     <xs:element default="10" maxOccurs="0" minOccurs="0"
                         name="Adaptation_conductance" type="ptn:Adaptation_conductance"/>
                     <xs:element default="500" maxOccurs="0" minOccurs="0"
                         name="Adaptation_time_constant" type="ptn:Adaptation_time_constant"/>
-                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period_CT"
                         minOccurs="1"/>
                     <xs:element minOccurs="0" name="Is_inhibitor" type="ptn:Is_inhibitor"/>
                     <xs:element ref="ptn:Outputs"/>
@@ -424,6 +521,8 @@
                     <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential_CT"/>
+                    <xs:element minOccurs="0" name="Refactory_period__x3A__flag"
+                        type="ptn:Refactory_period__x3A__flag"/>
                     <xs:element minOccurs="0" name="Attract__x3A__flag"
                         type="ptn:Attract__x3A__flag_CT"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -447,28 +546,29 @@
         <xs:complexContent>
             <xs:restriction base="ptn:Leaky_neuron">
                 <xs:sequence>
-                    <xs:element name="Label" type="ptn:Label"/>
-                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
-                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
-                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
-                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                    <xs:element name="Label" type="ptn:Label_CT"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate_CT"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance_CT"
                         minOccurs="1"/>
-                    <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
-                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance_CT"
                         minOccurs="1"/>
-                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage_CT"
                         minOccurs="1"/>
-                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage_CT"
                         minOccurs="1"/>
-                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                    <xs:element default="-70" name="Resting_potential"
+                        type="ptn:Resting_potential_CT" minOccurs="1"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential_CT"
                         minOccurs="1"/>
-                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold_CT"
                         minOccurs="1"/>
                     <xs:element default="10" maxOccurs="0" minOccurs="0"
                         name="Adaptation_conductance" type="ptn:Adaptation_conductance"/>
                     <xs:element default="500" maxOccurs="0" minOccurs="0"
                         name="Adaptation_time_constant" type="ptn:Adaptation_time_constant"/>
-                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period_CT"
                         minOccurs="1"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_false"/>
                     <xs:element ref="ptn:Outputs"/>
@@ -476,6 +576,8 @@
                     <xs:element minOccurs="0" ref="ptn:Input__x3A__nodes__x3A__prohibit"/>
                     <xs:element default="-80" name="Simulated_potential"
                         type="ptn:Simulated_potential_CT"/>
+                    <xs:element minOccurs="0" name="Refactory_period__x3A__flag"
+                        type="ptn:Refactory_period__x3A__flag"/>
                     <xs:element minOccurs="0" name="Attract__x3A__flag"
                         type="ptn:Attract__x3A__flag_CT"/>
                     <xs:element maxOccurs="unbounded" minOccurs="0"
@@ -499,28 +601,29 @@
         <xs:complexContent>
             <xs:restriction base="ptn:Leaky_neuron">
                 <xs:sequence>
-                    <xs:element name="Label" type="ptn:Label"/>
-                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
-                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
-                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
-                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                    <xs:element name="Label" type="ptn:Label_CT"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate_CT"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance_CT"
                         minOccurs="1"/>
-                    <xs:element default="100" name="Resistance" type="ptn:Resistance" minOccurs="1"/>
-                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
+                    <xs:element default="100" name="Resistance" type="ptn:Resistance_CT"
                         minOccurs="1"/>
-                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage"
+                    <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage_CT"
                         minOccurs="1"/>
-                    <xs:element default="-70" name="Resting_potential" type="ptn:Resting_potential"
+                    <xs:element default="60" name="Maximum_voltage" type="ptn:Maximum_voltage_CT"
                         minOccurs="1"/>
-                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential"
+                    <xs:element default="-70" name="Resting_potential"
+                        type="ptn:Resting_potential_CT" minOccurs="1"/>
+                    <xs:element default="-80" name="Reset_potential" type="ptn:Reset_potential_CT"
                         minOccurs="1"/>
-                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold"
+                    <xs:element default="-55" name="Firing_threshold" type="ptn:Firing_threshold_CT"
                         minOccurs="1"/>
                     <xs:element default="10" maxOccurs="0" minOccurs="0"
                         name="Adaptation_conductance" type="ptn:Adaptation_conductance"/>
                     <xs:element default="500" maxOccurs="0" minOccurs="0"
                         name="Adaptation_time_constant" type="ptn:Adaptation_time_constant"/>
-                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period"
+                    <xs:element default="2" name="Refactory_period" type="ptn:Refactory_period_CT"
                         minOccurs="1"/>
                     <xs:element minOccurs="1" name="Is_inhibitor" type="ptn:Is_inhibitor_true"/>
                     <xs:element ref="ptn:Outputs"/>
@@ -545,12 +648,17 @@
         <xs:complexContent>
             <xs:restriction base="ptn:Node">
                 <xs:sequence>
-                    <xs:element name="Label" type="ptn:Label"/>
-                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
-                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
-                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
-                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
-                        maxOccurs="0" minOccurs="0"/>
+                    <xs:element name="Label" type="ptn:Label_CT"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate_CT"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
+                    <xs:sequence>
+                        <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                            maxOccurs="0" minOccurs="0"/>
+                        <xs:element name="Capacitance__x3A__attract__x3A__calculate__x3A__assert"
+                            type="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert"
+                            minOccurs="0"/>
+                    </xs:sequence>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
                         minOccurs="0"/>
                     <xs:element default="-90" name="Minimum_voltage" type="ptn:Minimum_voltage"
@@ -595,11 +703,11 @@
         <xs:complexContent>
             <xs:restriction base="ptn:Adaptive_neuron">
                 <xs:sequence>
-                    <xs:element name="Label" type="ptn:Label"/>
-                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
-                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
-                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
-                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                    <xs:element name="Label" type="ptn:Label_CT"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate_CT"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance_CT"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
                         minOccurs="0"/>
@@ -642,11 +750,11 @@
         <xs:complexContent>
             <xs:restriction base="ptn:Adaptive_neuron">
                 <xs:sequence>
-                    <xs:element name="Label" type="ptn:Label"/>
-                    <xs:element name="Coordinate_X" type="ptn:Coordinate"/>
-                    <xs:element name="Coordinate_Y" type="ptn:Coordinate"/>
-                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate"/>
-                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance"
+                    <xs:element name="Label" type="ptn:Label_CT"/>
+                    <xs:element name="Coordinate_X" type="ptn:Coordinate_CT"/>
+                    <xs:element name="Coordinate_Y" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
+                    <xs:element default="0.5" name="Capacitance" type="ptn:Capacitance_CT"
                         maxOccurs="0" minOccurs="0"/>
                     <xs:element default="100" name="Resistance" type="ptn:Resistance" maxOccurs="0"
                         minOccurs="0"/>
@@ -798,14 +906,16 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="Receptors">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="ptn:Receptor"/>
-                <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Receptor__x3A__generate"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+    <xs:complexType name="Receptors">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" ref="ptn:Receptor"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" ref="ptn:Receptor__x3A__generate"/>
+        </xs:sequence>
+        <xs:anyAttribute
+            namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+            processContents="skip"/>
+    </xs:complexType>
+    <xs:element name="Receptors" type="ptn:Receptors"> </xs:element>
     <xs:attribute name="Receptor__x3A__generate__fieldOfView__x3A__ratio"
         type="ptn:fieldOfView__x3A__ratio"/>
     <xs:simpleType name="fieldOfView__x3A__ratio">
@@ -845,23 +955,25 @@
         type="ptn:Coordinate__x3A__fieldOfView__x3A__ray.diff"/>
     <xs:attribute name="Coordinate_X__x3A__fieldOfView__x3A__ray.diff"
         type="ptn:Coordinate__x3A__fieldOfView__x3A__ray.diff"/>
-    <xs:element name="Nodes">
-        <xs:complexType>
-            <xs:sequence maxOccurs="unbounded">
-                <xs:element ref="ptn:Leaky_neuron_standard" minOccurs="0"/>
-                <xs:element form="qualified" minOccurs="0" name="Leaky_neuron_inhibitor"
-                    type="ptn:Leaky_neuron_inhibitor"/>
-                <xs:element name="Leaky_neuron_inhibitor__x3A__AB" type="ptn:Leaky_neuron_inhibitor"
-                    minOccurs="0"/>
-                <xs:element name="Leaky_neuron_inhibitor__X3A__AA" type="ptn:Leaky_neuron_inhibitor"
-                    minOccurs="0"/>
-                <xs:element minOccurs="0" name="Adaptive_neuron_standard"
-                    type="ptn:Adaptive_neuron_standard"/>
-                <xs:element minOccurs="0" name="Adaptive_neuron_inhibitor"
-                    type="ptn:Adaptive_neuron_inhibitor"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+    <xs:complexType name="Nodes">
+        <xs:sequence maxOccurs="unbounded">
+            <xs:element ref="ptn:Leaky_neuron_standard" minOccurs="0"/>
+            <xs:element form="qualified" minOccurs="0" name="Leaky_neuron_inhibitor"
+                type="ptn:Leaky_neuron_inhibitor"/>
+            <xs:element name="Leaky_neuron_inhibitor__x3A__AB" type="ptn:Leaky_neuron_inhibitor"
+                minOccurs="0"/>
+            <xs:element name="Leaky_neuron_inhibitor__X3A__AA" type="ptn:Leaky_neuron_inhibitor"
+                minOccurs="0"/>
+            <xs:element minOccurs="0" name="Adaptive_neuron_standard"
+                type="ptn:Adaptive_neuron_standard"/>
+            <xs:element minOccurs="0" name="Adaptive_neuron_inhibitor"
+                type="ptn:Adaptive_neuron_inhibitor"/>
+        </xs:sequence>
+        <xs:anyAttribute
+            namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+            processContents="skip"/>
+    </xs:complexType>
+    <xs:element name="Nodes" type="ptn:Nodes"> </xs:element>
     <xs:element name="Leaky_neuron_standard" type="ptn:Leaky_neuron_standard"/>
     <xs:element name="Inputs">
         <xs:complexType>
@@ -1034,6 +1146,9 @@ debug most feature</xs:documentation>
         </xs:sequence>
         <xs:attributeGroup ref="ptn:Simulation.attract__x3A__calculate"/>
         <xs:attribute ref="ptn:debug"/>
+        <xs:anyAttribute
+            namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+            processContents="skip"/>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__calculate"
         type="ptn:Simulation.attract__x3A__calculate"/>
@@ -1100,6 +1215,14 @@ debug most feature</xs:documentation>
             <xs:documentation>When new created - to optimize 3d</xs:documentation>
         </xs:annotation>
     </xs:attribute>
+    <xs:complexType name="Label_CT">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Label">
+                <xs:attribute ref="ptn:debug"/>
+                <xs:attribute ref="ptn:Simulation__x3A__visualize"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:element name="Output__x3A__flag__x3A__emmit">
         <xs:annotation>
             <xs:documentation>w analyz reagukje na flag, do zabrania w attract</xs:documentation>
@@ -1136,8 +1259,6 @@ debug most feature</xs:documentation>
     <xs:element name="Input__x3A__node__x3A__prohibit" type="ptn:Output_Node"/>
     <xs:element name="Simulation.Stress__x3A__calculate"
         type="ptn:Simulation.Stress__x3A__calculate"/>
-    <xs:element name="Simulation.Stress__x3A__calculate__x3A__output_node"
-        type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
     <xs:complexType name="Simulation.model.xml">
         <xs:complexContent>
             <xs:restriction base="ptn:Simulation_body__x3A__abstract">
@@ -1164,6 +1285,9 @@ debug most feature</xs:documentation>
                         ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated"
                     />
                 </xs:sequence>
+                <xs:anyAttribute
+                    namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+                    processContents="skip"/>
             </xs:restriction>
         </xs:complexContent>
     </xs:complexType>

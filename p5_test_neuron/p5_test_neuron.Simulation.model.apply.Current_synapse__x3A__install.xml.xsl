@@ -17,10 +17,10 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
+    <!--<xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
         match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node__x3A__assert">
         <xsl:comment>#22 [bypassed][n][<xsl:value-of select="name()"/>]</xsl:comment>
-    </xsl:template>
+    </xsl:template>-->
 
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
         match="ptn:Simulation.attract__x3A__aggregate__x3A__validated">

@@ -479,11 +479,12 @@
     
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
-        <xsl:copy>
+        <xsl:comment>#483 todo test bypassed [n][<xsl:value-of select="name()"/>] - ulozyc w simulated potential</xsl:comment>
+        <!--<xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:attribute name="ptn:debug">#483 todo ptn:Refactory_period__x3A__flag in mode ptn:Simulation.analys.xml</xsl:attribute>
             <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
+        </xsl:copy>-->
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Refactory_period__x3A__flag[number(ptn:Refactory_period__x3A__flag__x3A__until) &gt;= number(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match.xml/@ptn:Simulation_body_time)]">

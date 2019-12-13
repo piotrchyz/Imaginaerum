@@ -67,6 +67,7 @@
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#70 mode testing simulate model [n][<xsl:value-of select="name()"/>]</xsl:attribute>
             <xsl:apply-templates mode="#current"/>
         </xsl:copy>
     </xsl:template>
@@ -117,20 +118,41 @@
     </xsl:template>
     
     
-    <xsl:template match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert" mode="ptn:Simulation.model.xml">
+    <!--<xsl:template match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert" mode="ptn:Simulation.model.xml">
         <xsl:comment>#133 bypassed[n][<xsl:value-of select="name()"/>]</xsl:comment>
-    </xsl:template>
+    </xsl:template>-->
     
-    <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Capacitance[following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]]">
-        <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert ptn:debug="#1125 to test it sure template, associate attracted node to besure what happen">
+    <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Capacitance[following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate]]]">
+        <ptn:Capacitance ptn:debug="#125A to test  [{text()}] mode ptn:Simulation.model.xml - now calc __x3A__calculate__x3A__empty"/>
+        <!--<ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert ptn:debug="#1125 to test it sure template, associate attracted node to besure what happen">
             <xsl:copy-of select="following-sibling::ptn:Simulation.attract__x3A__calculate/ptn:Simulation.attract__x3A__calculate__x3A__output_node/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node/@*"/>
             <xsl:copy-of select="following-sibling::ptn:Simulation.attract__x3A__calculate/ptn:Simulation.attract__x3A__calculate__x3A__output_node/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node/text()"/>
-        </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert>
-        <xsl:copy>
+        </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert>-->
+        <xsl:comment>#130AA call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert"</xsl:comment>
+        <xsl:call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+        <!--<xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:attribute name="ptn:debug">#121 todo  ptn:Capacitance[following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]]</xsl:attribute>
             <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
+        </xsl:copy>-->
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Capacitance[following-sibling::ptn:Simulation.Stress__x3A__calculate[ptn:Simulation.Stress__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node[@ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio]]]]]">
+        <ptn:Capacitance ptn:debug="#125B to test  [{text()}] mode ptn:Simulation.model.xml - now calc __x3A__calculate__x3A__empty">
+            
+            <xsl:value-of select="following-sibling::ptn:Simulation.Stress__x3A__calculate/ptn:Simulation.Stress__x3A__calculate__x3A__output_node/ptn:Capacitance__x3A__attract__x3A__calculate/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node/(text() div @ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio )"/>
+        </ptn:Capacitance>
+        <!--<ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert ptn:debug="#1125 to test it sure template, associate attracted node to besure what happen">
+            <xsl:copy-of select="following-sibling::ptn:Simulation.attract__x3A__calculate/ptn:Simulation.attract__x3A__calculate__x3A__output_node/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node/@*"/>
+            <xsl:copy-of select="following-sibling::ptn:Simulation.attract__x3A__calculate/ptn:Simulation.attract__x3A__calculate__x3A__output_node/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node/text()"/>
+        </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert>-->
+        <xsl:comment>#130BB call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert"</xsl:comment>
+        <xsl:call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+        <!--<xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#121 todo  ptn:Capacitance[following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]]</xsl:attribute>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>-->
     </xsl:template>
     
     

@@ -14,7 +14,7 @@
     <!-- przekopiowanie attract na wierzch tylko -->
     
     <xsl:template name="ptn:Simulation.attract__x3A__aggregate"><!--ptn:Simulation.attract__x3A__calculate.best.unique-->
-        <ptn:Simulation.attract__x3A__aggregate>
+        <ptn:Simulation.attract__x3A__aggregate ptn:debug="#17 mode/name ptn:Simulation.attract__x3A__aggregate">
         <!--<ptn:Simulation.attract__x3A__aggregate ptn:debug="#133 just for devel analys, passed to childs">
             <xsl:for-each-group select="descendant-or-self::ptn:Simulation.attract__x3A__calculate[number(@ptn:Simulated_potential__x3A__diff) &gt; 0 ]" group-by="@ptn:Label">
                 <xsl:sort select="@ptn:Distance" data-type="number" order="ascending"/>
@@ -68,16 +68,19 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
-        <xsl:copy>
+        <xsl:comment>#71 aggregate bypassed[n][<xsl:value-of select="name()"/>] </xsl:comment>
+        <!--<xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
-        </xsl:copy>
+        </xsl:copy>-->
     </xsl:template>
     
     
     
     
-    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Input__x3A__attract__x3A__vectors|ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector|
+        ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector|
+        ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector">
         <!--<xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
@@ -96,6 +99,10 @@
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Input__x3A__attract__x3A__vectors__x3A__calculate">
         <xsl:comment>#90 [bypassed][/n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate" match="ptn:Capacitance__x3A__calculate__x3A__empty">
+        <xsl:comment>#102 [bypassed][/n][<xsl:value-of select="name()"/>]</xsl:comment>
     </xsl:template>
     
     
@@ -156,12 +163,24 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node">
-        <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/><xsl:copy-of select="text()"/></xsl:element>
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Capacitance__x3A__calculate__x3A__empty[following-sibling::ptn:Capacitance__x3A__attract__x3A__calculate[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node[@ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio]]]">
+        <ptn:Capacitance>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#167 todo validate method sum caps - use template to extract values </xsl:attribute>
+            <!--<xsl:apply-templates mode="#current"/>-->
+            <!--<xsl:value-of select="0.5"/>-->
+            
+            <xsl:value-of select="following-sibling::ptn:Capacitance__x3A__attract__x3A__calculate/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node/(@ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio * text()) "/>
+        </ptn:Capacitance>
     </xsl:template>
-    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Capacitance__x3A__calculate__x3A__empty[following-sibling::ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node]">
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Capacitance__x3A__attract__x3A__calculate|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node">
+        <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/><xsl:apply-templates mode="#current"/></xsl:element>
+    </xsl:template>
+    <!--<xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Capacitance__x3A__calculate__x3A__empty[following-sibling::ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node]">
         <xsl:element name="ptn:Capacitance"><xsl:copy-of select="@*"/><xsl:copy-of select="text()"/></xsl:element>
-    </xsl:template>
+    </xsl:template>-->
     
     
     
@@ -177,9 +196,10 @@
     
     <!-- STRESS MOSTTLY METHOD -->
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Coordinate_X__calculate__x3A__empty[not(@ptn:Coordinate_X__x3A__less_charged_node)][@ptn:Coordinate_X__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio][ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">
-        <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/></xsl:element>
-        <ptn:Coordinate_X ptn:debug="avg[{avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate )}]*[ratio[{following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio}]]"
-            ><xsl:value-of select="@ptn:Coordinate_X__x3A__more_charged_node + avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate) * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_X>
+        <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/></xsl:element><!-- ptn:debug="#200 test[{following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/name()}]  [avg[{avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate[ not(.=0)])}]]  [ratio[{following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio}]]" -->
+        <ptn:Coordinate_X ><xsl:value-of select="@ptn:Coordinate_X__x3A__more_charged_node + avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate[ not(.=0)]) * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_X>
+        <!--<ptn:Coordinate_X ptn:debug="avg[{avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate )}]*[ratio[{following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio}]]"
+            ><xsl:value-of select="@ptn:Coordinate_X__x3A__more_charged_node + avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate) * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_X>-->
     </xsl:template>
     
     
@@ -187,21 +207,22 @@
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Coordinate_Y__calculate__x3A__empty[not(@ptn:Coordinate_Y__x3A__less_charged_node)][@ptn:Coordinate_Y__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio][ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment]]">
         <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/></xsl:element>
-        <ptn:Coordinate_Y><xsl:value-of select="abs(@ptn:Coordinate_Y__x3A__more_charged_node  ) div 2 + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment + 
+        <ptn:Coordinate_Y ><xsl:value-of select="@ptn:Coordinate_Y__x3A__more_charged_node + avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate[ not(.=0)]) * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Y>
+        <!--<ptn:Coordinate_Y><xsl:value-of select="abs(@ptn:Coordinate_Y__x3A__more_charged_node  ) div 2 + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment + 
             ( avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate) + (1 - 1 div following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment ) ) div 2
-            * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Y>
+            * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Y>-->
         <!--<ptn:Coordinate_Y><xsl:value-of select="@ptn:Coordinate_Y__x3A__more_charged_node + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/> </ptn:Coordinate_Y>-->
     </xsl:template>
     
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Coordinate_Y__calculate__x3A__empty[not(@ptn:Coordinate_Y__x3A__less_charged_node)][@ptn:Coordinate_Y__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio][ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">
         <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/></xsl:element>
-        <ptn:Coordinate_Y><xsl:value-of select="@ptn:Coordinate_Y__x3A__more_charged_node + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Y>
+        <ptn:Coordinate_Y><xsl:value-of select="@ptn:Coordinate_Y__x3A__more_charged_node + avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate[not(.=0)]) * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Y>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Coordinate_Z__calculate__x3A__empty[not(@ptn:Coordinate_Z__x3A__less_charged_node)][@ptn:Coordinate_Z__x3A__more_charged_node][following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate[@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio][ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]]">
         <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/></xsl:element>
-        <ptn:Coordinate_Z><xsl:value-of select="@ptn:Coordinate_Z__x3A__more_charged_node + following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Z>
+        <ptn:Coordinate_Z><xsl:value-of select="@ptn:Coordinate_Z__x3A__more_charged_node + avg(following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate[not(.=0)]) * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Z>
     </xsl:template>
     
     
@@ -334,7 +355,7 @@
     
     
     
-    <!--  --><!--  --><!--  --><!--  --><!--  -->
+        <!--  --><!--  --><!--  -->
     
     
     
