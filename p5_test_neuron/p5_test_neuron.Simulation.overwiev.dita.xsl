@@ -99,7 +99,7 @@
                                                     
                                                 </strow> 
                                             </xsl:for-each>
-                                        <xsl:for-each select="current-group()[@ptn:Attract__x3A__flag]" >
+                                        <xsl:for-each select="current-group()[ptn:Current_synapse__x3A__analyze]" >
                                             <xsl:variable name="ptn:Simulation_body_time" select="parent::*/@ptn:Simulation_body_time"/>
                                             <strow rev="#82 gr_key[{current-grouping-key()}]">
                                                 <stentry><xsl:value-of select="$ptn:Simulation_body_time"/></stentry>
@@ -111,7 +111,7 @@
                                                 <!--<stentry ><xsl:value-of select="replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/></stentry>-->
                                                 <stentry><xsl:value-of select="@ptn:Simulated_potential"/></stentry>
                                                 <stentry><xsl:for-each select="ptn:Current_synapse__x3A__analyze">Variant: <xsl:value-of select="@ptn:Output_Node__x3A__analyze"/> <xsl:text> </xsl:text></xsl:for-each></stentry>
-                                                <stentry>Attract</stentry>
+                                                <stentry><xsl:if test="@ptn:Attract__x3A__flag">Attract</xsl:if></stentry>
                                                 
                                             </strow> 
                                         </xsl:for-each>
