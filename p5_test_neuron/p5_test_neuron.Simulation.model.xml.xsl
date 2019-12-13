@@ -122,8 +122,8 @@
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Capacitance[following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]]">
-        <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert>
-            <xsl:copy-of select="following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]"/>
+        <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert ptn:debug="#1125 to test it sure template">
+            <xsl:copy-of select="following-sibling::ptn:Simulation.attract__x3A__calculate/ptn:Simulation.attract__x3A__calculate__x3A__output_node/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node"/>
         </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert>
         <xsl:copy>
             <xsl:copy-of select="@*"/>

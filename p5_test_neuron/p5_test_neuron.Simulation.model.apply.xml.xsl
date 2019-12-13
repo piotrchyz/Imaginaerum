@@ -68,6 +68,13 @@
     </xsl:template>
     
     
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Receptors">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
