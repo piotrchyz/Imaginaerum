@@ -20,7 +20,7 @@
    <ptn:Attract_min>-60.0</ptn:Attract_min>
    <ptn:Input__x3A__attract__x3A__vectors>
       <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-      <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+      <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
       <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
    </ptn:Input__x3A__attract__x3A__vectors>
 </ptn:Defaults>
