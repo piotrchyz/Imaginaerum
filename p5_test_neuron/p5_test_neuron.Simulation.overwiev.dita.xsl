@@ -28,7 +28,7 @@
                 <topicmeta>
                     <navtitle>Analiza zdarzeń symulacji sieci  w jednostce czasu </navtitle>
                 </topicmeta>
-                <topicref href="{$ptn:Simulation.overwiev.ditamap}" format="dita"/>
+                <topicref href="{tokenize($ptn:Simulation.overwiev.dita,'/')[last()]}" format="dita"/>
             </map>
             </xsl:result-document>
         </xsl:if>
@@ -43,6 +43,7 @@
         <xsl:call-template name="ptn:Simulation.overwiev.ditamap">
             <xsl:with-param name="ptn:Simulation_ticks" tunnel="yes" select="$ptn:Simulation_ticks"/>
             <xsl:with-param name="ptn:Simulator_tick" tunnel="yes" select="$ptn:Simulator_tick"/>
+            
         </xsl:call-template>
         
         
@@ -51,32 +52,32 @@
             <title>Analiza zdarzeń symulacji sieci  w jednostce czasu <codeph><xsl:value-of select="$ptn:Simulator_tick"/></codeph><parmname>[ms]</parmname> i długości <codeph><xsl:value-of select="$ptn:Simulation_ticks"/></codeph> <parmname>[scen]</parmname> </title>
             <body>
                 <p>
-                    
-                    <simpletable frame="all" relcolwidth="1* 1* 1* 1* 1*" id="simpletable_neurony">
-                        <sthead>
-                            <stentry>Czas</stentry>
-                            <stentry>Wejscie</stentry>
-                            <stentry>Nazwa</stentry>
-                            <stentry>Wyjscie</stentry>
-                            <stentry>Poziom[V]</stentry>
-                        </sthead>
-                                            
-                    
-                            <xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
-                                <xsl:variable name="ptn:Simulation_body_time" select="parent::ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_time"/>
-                                <strow>
-                                    <stentry><xsl:value-of select="$ptn:Simulation_body_time"/></stentry>
-                                    <stentry>
-                                        <xsl:for-each select="$ptn:Simulation.analyze_simulation.xml//ptn:Simulation.analys.xml__x3A__analyze/*[ptn:Current_synapse__x3A__analyze[@ptn:Output_Node__x3A__analyze = current()/@ptn:Label__x3A__analyze]]">
-                                            <xsl:if test="position() = 1"><xsl:value-of select="@ptn:Label__x3A__analyze"/></xsl:if>
-                                        </xsl:for-each>
-                                    </stentry>
-                                    <stentry id="Simulation_body_time_{@ptn:Label__x3A__analyze}"><xsl:value-of select="@ptn:Label__x3A__analyze"/></stentry>
-                                    <stentry><xsl:value-of select="ptn:Current_synapse__x3A__analyze/@ptn:Output_Node__x3A__analyze"/></stentry>
-                                    <stentry><xsl:value-of select="@ptn:Simulated_potential"/></stentry>
-                                </strow>
-                            </xsl:for-each-group>
-                    </simpletable>
+                    <xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze]"  group-adjacent="position() mod 50 = 0">
+                        <simpletable frame="all" relcolwidth="1* 1* 1* 1* 1*" id="simpletable_neurony_{position()}">
+                            <sthead>
+                                <stentry>Czas</stentry>
+                                <stentry>Wejscie</stentry>
+                                <stentry>Nazwa</stentry>
+                                <stentry>Wyjscie</stentry>
+                                <stentry>Poziom[V]</stentry>
+                            </sthead>
+                                                
+                                <xsl:for-each-group select="current-group()" group-by="@ptn:Label__x3A__analyze">
+                                    <xsl:variable name="ptn:Simulation_body_time" select="parent::ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_time"/>
+                                    <strow>
+                                        <stentry><xsl:value-of select="$ptn:Simulation_body_time"/></stentry>
+                                        <stentry>
+                                            <xsl:for-each select="$ptn:Simulation.analyze_simulation.xml//ptn:Simulation.analys.xml__x3A__analyze/*[ptn:Current_synapse__x3A__analyze[@ptn:Output_Node__x3A__analyze = current()/@ptn:Label__x3A__analyze]]">
+                                                <xsl:if test="position() = 1"><xsl:value-of select="@ptn:Label__x3A__analyze"/></xsl:if>
+                                            </xsl:for-each>
+                                        </stentry>
+                                        <stentry id="Simulation_body_time_{@ptn:Label__x3A__analyze}"><xsl:value-of select="@ptn:Label__x3A__analyze"/></stentry>
+                                        <stentry><xsl:value-of select="ptn:Current_synapse__x3A__analyze/@ptn:Output_Node__x3A__analyze"/></stentry>
+                                        <stentry><xsl:value-of select="@ptn:Simulated_potential"/></stentry>
+                                    </strow>
+                                </xsl:for-each-group>
+                        </simpletable>
+                    </xsl:for-each-group>
                 </p>
                 
                 <section id="section_aktywnosci_na_synapsach">
