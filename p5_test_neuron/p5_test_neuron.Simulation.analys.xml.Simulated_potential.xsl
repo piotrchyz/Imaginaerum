@@ -17,14 +17,14 @@
     </xsl:template>
     
     
-    <xsl:template mode="ptn:Simulated_potential"  match="ptn:Simulated_potential[following-sibling::ptn:Refactory_period__x3A__flag[number(ptn:Refactory_period__x3A__flag__x3A__until) &lt;= number(ancestor-or-self::*[name()='ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match.xml' or name()='ptn:Simulation.model.apply.xml']/@ptn:Simulation_body_time) ]]">
+    <!--<xsl:template mode="ptn:Simulated_potential"  match="ptn:Simulated_potential[following-sibling::ptn:Refactory_period__x3A__flag[number(ptn:Refactory_period__x3A__flag__x3A__until) &lt;= number(ancestor-or-self::*[name()='ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match.xml' or name()='ptn:Simulation.model.apply.xml']/@ptn:Simulation_body_time) ]]">
         <xsl:param name="ptn:Reset_potential" required="yes" tunnel="yes"/>
         <xsl:comment>#21 [ptn:Simulated_potential][following-sibling::ptn:Refactory_period__x3A__flag] [flag active[<xsl:value-of select="following-sibling::ptn:Refactory_period__x3A__flag/ptn:Refactory_period__x3A__flag__x3A__until"/>]]</xsl:comment>
         <xsl:message>#21 [ptn:Simulated_potential][following-sibling::ptn:Refactory_period__x3A__flag] [flag active[<xsl:value-of select="following-sibling::ptn:Refactory_period__x3A__flag/ptn:Refactory_period__x3A__flag__x3A__until"/>]]</xsl:message>
         <xsl:copy>
             <xsl:value-of select="$ptn:Reset_potential"/>
         </xsl:copy>
-    </xsl:template>
+    </xsl:template>-->
     
     
     <xsl:template mode="ptn:Simulated_potential"  match="ptn:Simulated_potential[preceding-sibling::ptn:Firing_threshold][preceding-sibling::ptn:Capacitance][preceding-sibling::ptn:Resistance][preceding-sibling::ptn:Resting_potential][preceding-sibling::ptn:Reset_potential][not(following-sibling::ptn:Refactory_period__x3A__flag[number(ptn:Refactory_period__x3A__flag__x3A__until) &gt; number(ancestor-or-self::*[name()='ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match.xml' or name()='ptn:Simulation.model.apply.xml']/@ptn:Simulation_body_time) ])]">

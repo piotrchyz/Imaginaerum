@@ -23,6 +23,8 @@
         <xsl:variable name="files" select="collection($file)"/>
         <ptn:Simulation.analyze_simulation.xml file="{$file}">
             <xsl:copy-of select="@xsi:schemaLocation"/>
+            <xsl:attribute name="ptn:Simulation_ticks" select="$ptn:Simulation_ticks"/>
+            <xsl:attribute name="ptn:Simulator_tick" select="$ptn:Simulator_tick"/>
             <xsl:apply-templates mode="ptn:Simulation.analyze_simulation.xml__x3A__Inputs" select="$ptn:Inputs"/>
             <xsl:for-each select="$files">
                 <xsl:sort select="ptn:Simulation.analys.xml/@ptn:Simulation_body_tick" data-type="number" order="ascending"/>

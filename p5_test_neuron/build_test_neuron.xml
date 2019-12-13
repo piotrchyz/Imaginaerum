@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="analyze_simulation_x3d.debug"><!-- analyze_simulation_x3d.debug --><!-- debug --><!-- default --><!-- analyze_simulation_x3d -->
+<project basedir="../." name="p5_test_neuron" xmlns:ptn="p5_test_neuron" default="analyze_simulation_overwiev.dita.debug"><!-- analyze_simulation_overwiev.dita --><!-- analyze_simulation_x3d.debug --><!-- debug --><!-- default --><!-- analyze_simulation_x3d -->
     
     
     <property name="p5_test_neuron.basedir" location="${basedir}/p5_test_neuron"/>
@@ -67,7 +67,10 @@
         <property name="p5_test_neuron.Simulation.build.analys.xml" location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"/>
         <property name="p5_test_neuron.Simulation.analyze_simulation.xml" location="${p5_test_neuron.Simulation.dir}/analyze_simulation.xml"/>
         <property name="p5_test_neuron.Simulation.analyze_simulation.x3d" location="${p5_test_neuron.Simulation.dir}/Simulation.analyze_simulation.x3d.html"/>
-        <property name="p5_test_neuron.Simulation.snake.xml" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.snake.xml"/><!-- todo -->
+        <property name="p5_test_neuron.Simulation.snake.xml" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.snake.xml"/>
+        <property name="p5_test_neuron.Simulation.overwiev.dita" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.overwiev.dita"/>
+        <property name="p5_test_neuron.Simulation.overwiev.ditamap" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.overwiev.ditamap"/>
+        <!-- todo -->
         
         <property name="p5_test_neuron.Inputs" location="${p5_test_neuron.Simulation.dir}/Inputs1.xml"/>
         
@@ -156,7 +159,7 @@
         <xslt in="${p5_test_neuron.Config}" 
             out="${p5_test_neuron.Simulation.analyze_simulation.xml}"
             style="${p5_test_neuron.xsl}"
-            force="true"><!-- ${p5_test_neuron.Simulation.analyze_simulation.xml.xsl} -->
+            force="false"><!-- ${p5_test_neuron.Simulation.analyze_simulation.xml.xsl} -->
             <factory name="net.sf.saxon.TransformerFactoryImpl">
                 <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                 <attribute name="http://saxon.sf.net/feature/initialMode"
@@ -203,7 +206,7 @@
         <xslt in="${p5_test_neuron.Simulation.analyze_simulation.xml}" 
             out="${p5_test_neuron.Simulation.analyze_simulation.x3d}"
             style="${p5_test_neuron.xsl}"
-            force="true"><!-- ${p5_test_neuron.Simulation.analyze_simulation.x3d.xsl} -->
+            force="false"><!-- ${p5_test_neuron.Simulation.analyze_simulation.x3d.xsl} -->
             <factory name="net.sf.saxon.TransformerFactoryImpl">
                 <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
                 <attribute name="http://saxon.sf.net/feature/initialMode"
@@ -228,6 +231,61 @@
         
         
     </target>
+    
+    
+    
+    <target name="analyze_simulation_overwiev.dita.debug"  depends="analyze_simulation_x3d.debug">
+        <input addproperty="p5_test_neuron.Simulation.dir" message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
+        <input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
+        <input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>
+        <input addproperty="p5_test_neuron.Simulation.build.analys.xml" message="p5_test_neuron.Simulation.build.analys.xml"/>
+        <input addproperty="p5_test_neuron.Simulation.analyze_simulation.xml" message="p5_test_neuron.Simulation.analyze_simulation.xml"/>
+        <input addproperty="p5_test_neuron.Simulation.analyze_simulation.x3d" message="p5_test_neuron.Simulation.analyze_simulation.x3d"/>
+        <input addproperty="p5_test_neuron.Simulation.overwiev.dita" message="p5_test_neuron.Simulation.overwiev.dita"/>
+        <echo>
+            #245 will generate $p5_test_neuron.Simulation.overwiev.dita = ${p5_test_neuron.Simulation.overwiev.dita}
+        </echo>
+        
+        <ant  inheritall="false" antfile="${p5suis}" target="p5suis:say_to_queue.PL.drop_overflow">
+            <property name="p5suis:say_text" value="Buduję opis symulaci dita"/>
+        </ant>
+        
+        <xslt in="${p5_test_neuron.Simulation.analyze_simulation.xml}" 
+            out="${p5_test_neuron.Simulation.overwiev.dita}"
+            style="${p5_test_neuron.xsl}"
+            force="true"><!-- ${p5_test_neuron.Simulation.analyze_simulation.x3d.xsl} -->
+            <factory name="net.sf.saxon.TransformerFactoryImpl">
+                <attribute name="http://saxon.sf.net/feature/xinclude-aware" value="true"/>
+                <attribute name="http://saxon.sf.net/feature/initialMode"
+                    value="{p5_test_neuron}Simulation.overwiev.dita"/>
+                <attribute name="http://saxon.sf.net/feature/dtd-validation-recoverable" value="true"/>
+                <attribute name="http://saxon.sf.net/feature/validation" value="off"/>
+                <!--<attribute name="http://saxon.sf.net/feature/sourceParserClass" value="org.apache.xml.resolver.tools.ResolvingXMLReader"/>-->
+            </factory>
+            
+            <param name="{p5_test_neuron}Config" expression="${p5_test_neuron.Config}"/>
+            <param name="{p5_test_neuron}Inputs" expression="${p5_test_neuron.Inputs}"/>
+            <param name="{p5_test_neuron}Simulation_ticks" expression="${p5_test_neuron.Simulation_ticks}"/>
+            <param name="{p5_test_neuron}Simulation.dir" expression="${p5_test_neuron.Simulation.dir}"/>
+            <param name="{p5_test_neuron}basedir" expression="${p5_test_neuron.basedir}"/>
+            <param name="basedir" expression="${basedir}"/>
+            <param name="{p5_test_neuron}xsl" expression="${p5_test_neuron.xsl}"/>
+            <param name="{p5_test_neuron}xsd" expression="${p5_test_neuron.xsd}"/>
+            <param name="{p5_test_neuron}Simulation.overwiev.dita" expression="${p5_test_neuron.Simulation.overwiev.dita}"/>
+            <param name="{p5_test_neuron}Simulation.overwiev.ditamap" expression="${p5_test_neuron.Simulation.overwiev.ditamap}"/>
+            
+            
+            <classpath location="/opt/local/share/java/saxon9he.jar"/>
+        </xslt>
+        
+        <exec executable="open" >
+            <arg file="${p5_test_neuron.Simulation.overwiev.ditamap}"/>
+        </exec>
+        
+    </target>
+    
+    
+    
   
   
 </project>
