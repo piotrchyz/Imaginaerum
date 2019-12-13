@@ -23,7 +23,11 @@
             <xsl:result-document href="{$ptn:Simulation.overwiev.ditamap}">
             <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:map.xsd">
-                <title>Analiza zdarzeń symulacji sieci  w jednostce czasu <codeph><xsl:value-of select="$ptn:Simulator_tick"/></codeph><parmname>[ms]</parmname> i długości <codeph><xsl:value-of select="$ptn:Simulation_ticks"/></codeph> <parmname>[scen]</parmname> </title>
+                <!--<title>Analiza zdarzeń symulacji sieci  w jednostce czasu <codeph><xsl:value-of select="$ptn:Simulator_tick"/></codeph><parmname>[ms]</parmname> i długości <codeph><xsl:value-of select="$ptn:Simulation_ticks"/></codeph> <parmname>[scen]</parmname> </title>-->
+                <title>Analiza zdarzeń symulacji sieci  w jednostce czasu <xsl:value-of select="$ptn:Simulator_tick"/>[ms] i długości <xsl:value-of select="$ptn:Simulation_ticks"/> [scen] </title>
+                <topicmeta>
+                    <navtitle>Analiza zdarzeń symulacji sieci  w jednostce czasu </navtitle>
+                </topicmeta>
                 <topicref href="{$ptn:Simulation.overwiev.ditamap}" format="dita"/>
             </map>
             </xsl:result-document>
