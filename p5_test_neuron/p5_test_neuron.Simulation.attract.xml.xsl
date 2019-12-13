@@ -12,6 +12,7 @@
     <xsl:strip-space elements="*"/>
     
     <xsl:include href="p5_test_neuron.Simulation.attract.Stress.xsl"/>
+    <xsl:include href="p5_test_neuron.Simulation.attract__x3A__calculate.xsl"/>
     
     <xsl:template mode="ptn:Simulation.attract.xml" match="ptn:Simulation.analys.xml">
         <ptn:Simulation.attract.xml>
@@ -254,7 +255,7 @@
                     <xsl:attribute name="ptn:Simulated_potential__x3A__more_charged_node" select="$ptn:Label"/>
                     <xsl:attribute name="ptn:Simulated_potential__x3A__less_charged_node" select="ptn:Label"/>
                     <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node"/>
-                    <xsl:attribute name="ptn:debug">#190 std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]] ++[(ptn:Capacitance + $ptn:Capacitance) * 1.2]</xsl:attribute>
+                    <xsl:attribute name="ptn:debug">#190 std create; [ptn:Outputs/#[<xsl:value-of select="count($ptn:Outputs/*)"/>]] ++[(ptn:Capacitance + $ptn:Capacitance) * 1.2], wfter attract should fire more, less attract</xsl:attribute>
                     <ptn:Simulation.attract__x3A__calculate__x3A__output_node>
                         <xsl:variable name="ptn:Input__x3A__nodes"><!-- todo template -->
                             <ptn:Input__x3A__nodes>
@@ -280,8 +281,8 @@
                         <ptn:Coordinate_Y__calculate__x3A__empty ptn:Coordinate_Y__x3A__more_charged_node="{$ptn:Coordinate_Y}" ptn:Coordinate_Y__x3A__less_charged_node="{ptn:Coordinate_Y}"></ptn:Coordinate_Y__calculate__x3A__empty>
                         <ptn:Coordinate_Z__calculate__x3A__empty ptn:Coordinate_Z__x3A__more_charged_node="{$ptn:Coordinate_Z}" ptn:Coordinate_Z__x3A__less_charged_node="{ptn:Coordinate_Z}"></ptn:Coordinate_Z__calculate__x3A__empty>
                         
-                        
-                        <ptn:Capacitance ptn:debug="#268 todo __assert"><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance) * 1.2"/></ptn:Capacitance><!-- todo config strategy -->
+                        <xsl:call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node"/>
+                        <!--<ptn:Capacitance ptn:debug="#268 todo __assert"><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance) * 1.2"/></ptn:Capacitance>--><!-- todo config strategy -->
                         <ptn:Resistance ptn:debug="#269 todo __assert"><xsl:value-of select="(ptn:Resistance + $ptn:Resistance) div 2"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage ptn:debug="#270 todo __assert"><xsl:value-of select="(ptn:Minimum_voltage + $ptn:Minimum_voltage) div 2"/></ptn:Minimum_voltage><!-- todo config strategy -->
                         <ptn:Maximum_voltage ptn:debug="#272 todo __assert"><xsl:value-of select="(ptn:Maximum_voltage + $ptn:Maximum_voltage) div 2"/></ptn:Maximum_voltage><!-- todo config strategy -->

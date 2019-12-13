@@ -61,6 +61,9 @@
                                 <xsl:with-param name="ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment" select="9" tunnel="yes"/>
                             </xsl:call-template>
                             <xsl:call-template name="ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>
+                    
+                    
+                    
                             <!--<ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate ptn:debug="#42 todo attract vectors #cnt[{count($ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ])}]  Attract[Labels][{$ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ]}]"><xsl:value-of select="$ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector"/></ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate>
                             <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate><xsl:value-of select="$ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector"/></ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate>
                             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate><xsl:value-of select="$ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector"/></ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate>-->

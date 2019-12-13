@@ -102,6 +102,7 @@
     
     
     
+    
     <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="*">
         <xsl:message terminate="yes">#90 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
@@ -153,6 +154,15 @@
             * following-sibling::ptn:Input__x3A__attract__x3A__vectors__x3A__calculate/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/></ptn:Coordinate_Y>
         <!--<ptn:Coordinate_X><xsl:value-of select="abs(ptn:Coordinate_X + $ptn:Coordinate_X) div 3"/></ptn:Coordinate_X>-->
     </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node">
+        <xsl:element name="{name()}__x3A__assert"><xsl:copy-of select="@*"/><xsl:copy-of select="text()"/></xsl:element>
+    </xsl:template>
+    <xsl:template mode="ptn:Simulation.attract__x3A__aggregate__x3A__apply" match="ptn:Capacitance__x3A__calculate__x3A__empty[following-sibling::ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node]">
+        <xsl:element name="ptn:Capacitance"><xsl:copy-of select="@*"/><xsl:copy-of select="text()"/></xsl:element>
+    </xsl:template>
+    
     
     
     

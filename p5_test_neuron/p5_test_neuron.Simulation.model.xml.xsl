@@ -116,6 +116,23 @@
         </xsl:copy>
     </xsl:template>
     
+    
+    <xsl:template match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert" mode="ptn:Simulation.model.xml">
+        <xsl:comment>#133 bypassed[n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Capacitance[following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]]">
+        <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert>
+            <xsl:copy-of select="following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]"/>
+        </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert>
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#121 todo  ptn:Capacitance[following-sibling::ptn:Simulation.attract__x3A__calculate[ptn:Simulation.attract__x3A__calculate__x3A__output_node[ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node]]]</xsl:attribute>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.model.xml" match="ptn:Output_Node|ptn:Maximum_current|ptn:Time_constant|ptn:Delay">
         <!--<xsl:param name="ptn:Simulation.attract__x3A__calculate.best.unique" tunnel="yes" required="yes"/>-->
         <xsl:copy>
