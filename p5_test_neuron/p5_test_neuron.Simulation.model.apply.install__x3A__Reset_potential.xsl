@@ -44,6 +44,11 @@
     </xsl:template>
     
     
+    <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node__x3A__assert|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert">
+        <xsl:comment> #47 [bypassed][n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Refactory_period__x3A__flag">
         <xsl:comment>#48 bypassed [n][<xsl:value-of select="name()"/>]</xsl:comment>
     </xsl:template>
