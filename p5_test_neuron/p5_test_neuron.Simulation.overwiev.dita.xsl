@@ -49,10 +49,11 @@
         
         <topic id="ptn.Simulation.overwiev.dita" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
-            <title>Analiza zdarzeń symulacji sieci  w jednostce czasu <codeph><xsl:value-of select="$ptn:Simulator_tick"/></codeph><parmname>[ms]</parmname> i długości <codeph><xsl:value-of select="$ptn:Simulation_ticks"/></codeph> <parmname>[scen]</parmname> </title>
+            <title>Analiza zdarzeń symulacji sieci  w jednostce czasu <xsl:value-of select="$ptn:Simulator_tick"/>[ms] i długości <xsl:value-of select="$ptn:Simulation_ticks"/> [scen] </title>
+            <!--<title>Analiza zdarzeń symulacji sieci  w jednostce czasu <codeph><xsl:value-of select="$ptn:Simulator_tick"/></codeph><parmname>[ms]</parmname> i długości <codeph><xsl:value-of select="$ptn:Simulation_ticks"/></codeph> <parmname>[scen]</parmname> </title>-->
             <body>
                 <p>
-                    <!--<xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze" group-adjacent="position() mod 50">-->
+                    <xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze]"  group-adjacent="position() mod 50 = 0"><!-- group-by="@ptn:Label__x3A__analyze" -->
                         <simpletable frame="all" relcolwidth="1* 1* 1* 1* 1*" id="simpletable_neurony_{position()}">
                             <sthead>
                                 <stentry>Czas</stentry>
@@ -62,7 +63,7 @@
                                 <stentry>Poziom[V]</stentry>
                             </sthead>
                                                 
-                                <xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze]" group-by="@ptn:Label__x3A__analyze">
+                            <xsl:for-each-group select="current-group()" group-by="@ptn:Label__x3A__analyze"><!-- ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze] -->
                                     <xsl:variable name="ptn:Simulation_body_time" select="parent::ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_time"/>
                                     <strow>
                                         <stentry><xsl:value-of select="$ptn:Simulation_body_time"/></stentry>
@@ -77,11 +78,13 @@
                                     </strow>
                                 </xsl:for-each-group>
                         </simpletable>
-                    <!--</xsl:for-each-group>-->
+                    </xsl:for-each-group>
                 </p>
-                
-                <section id="section_aktywnosci_na_synapsach">
+            </body>
+            
+                <topic id="section_aktywnosci_na_synapsach">
                     <title>Aktywności na synapsach</title>
+                    <body>
                     <p>
                         
                         <simpletable frame="all" relcolwidth="1* 1* 1* 1* 1* 1* 1* 1*" id="simpletable_synapsy">
@@ -128,36 +131,38 @@
                             </xsl:for-each-group>
                         </simpletable>
                     </p>
-                </section>
+                    </body>
+                    <related-links>
+                        <linklist>
+                            <linkinfo>Autor Arkadiusz Binder Procesy5</linkinfo>
+                        </linklist>
+                    </related-links>
+                </topic>
                 
                 <xsl:apply-templates mode="#current" select="$ptn:Config"/>
                 
-                
-                
-            </body>
-            <related-links>
-                <linklist>
-                    <linkinfo>Autor Arkadiusz Binder Procesy5</linkinfo>
-                </linklist>
-            </related-links>
+            
         </topic>
     </xsl:template>
     
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Config">
-        <section id="section_config_{local-name()}">
+        <topic id="section_config_{local-name()}">
             <title>Cechy środowiska</title>
+            <body>
             <p>
                 
             </p>
-        </section>
+            </body>
+        </topic>
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Defaults">
-        <section id="section_config_{local-name()}">
+        <topic id="section_config_{local-name()}">
             <title>Domyślne wartości</title>
+            <body>
             <p>
                 <simpletable frame="all" relcolwidth="1* 1* 1*" id="simpletable_synapsy_{local-name()}">
                     <sthead>
@@ -174,21 +179,23 @@
                     </xsl:for-each>
                 </simpletable>
             </p>
-        </section>
+            </body>
+        </topic>
         
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Receptors">
-        <section id="section_config_{local-name()}">
+        <topic id="section_config_{local-name()}">
             <title>Domyślne receptory</title>
             
-        </section>
+        </topic>
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Receptor">
-        <section id="section_config_{local-name()}_{ptn:Label}">
+        <topic id="section_config_{local-name()}_{ptn:Label}">
             <title>Parametry receptora</title>
+            <body>
             <p>
                 <simpletable frame="all" relcolwidth="1* 1* 1*" >
                     <sthead>
@@ -205,45 +212,49 @@
                     </xsl:for-each>
                 </simpletable>
             </p>
-        </section>
+            </body>
+        </topic>
         
     </xsl:template>
     
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Inputs">
-        <section id="section_config_{local-name()}">
+        <topic id="section_config_{local-name()}">
             <title>Domyślne zadane wzbudzenia</title>
             
-        </section>
+        </topic>
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Input">
-        <section id="section_config_{local-name()}_{ptn:Input_exec_time}_{count(preceding-sibling::ptn:Input)}">
+        <topic id="section_config_{local-name()}_{ptn:Input_exec_time}_{count(preceding-sibling::ptn:Input)}">
             <title>Parametry receptora</title>
-            <p>
-                <simpletable frame="all" relcolwidth="1* 1* 1*" >
-                    <sthead>
-                        <stentry>Lp</stentry>
-                        <stentry>Parametr</stentry>
-                        <stentry>Wartość</stentry>
-                    </sthead>
-                    <xsl:for-each select="descendant-or-self::*">
-                        <strow>
-                            <stentry><xsl:value-of select="position()"/></stentry>
-                            <stentry><xsl:value-of select="local-name()"/></stentry>
-                            <stentry><xsl:value-of select="."/></stentry>
-                        </strow>
-                    </xsl:for-each>
-                </simpletable>
-            </p>
-        </section>
+            <body>
+                <p>
+                    <simpletable frame="all" relcolwidth="1* 1* 1*" >
+                        <sthead>
+                            <stentry>Lp</stentry>
+                            <stentry>Parametr</stentry>
+                            <stentry>Wartość</stentry>
+                        </sthead>
+                        <xsl:for-each select="descendant-or-self::*">
+                            <strow>
+                                <stentry><xsl:value-of select="position()"/></stentry>
+                                <stentry><xsl:value-of select="local-name()"/></stentry>
+                                <stentry><xsl:value-of select="."/></stentry>
+                            </strow>
+                        </xsl:for-each>
+                    </simpletable>
+                </p>
+            </body>
+        </topic>
         
     </xsl:template>
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Simulation">
-        <section id="section_config_{local-name()}">
+        <topic id="section_config_{local-name()}">
             <title>Granice czasowe symulacji</title>
+            <body>
             <p>
                 <simpletable frame="all" relcolwidth="1* 1* 1*" >
                     <sthead>
@@ -260,7 +271,8 @@
                     </xsl:for-each>
                 </simpletable>
             </p>
-        </section>
+            </body>
+        </topic>
         
     </xsl:template>
     
