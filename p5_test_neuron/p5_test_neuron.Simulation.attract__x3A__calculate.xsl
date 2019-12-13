@@ -13,11 +13,15 @@
     
     
     <xsl:template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node">
+        <xsl:param name="ptn:Output_Node__x3A__attract" required="yes" tunnel="yes"/><!-- attracted new node -->
         <xsl:param name="ptn:Capacitance" tunnel="yes" required="yes"/>
         <xsl:param name="ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio" select="1.2" tunnel="yes"/>
         <ptn:Capacitance__x3A__calculate__x3A__empty/>
         <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node ptn:debug="#268A _give_own__x3A__ratio=[{$ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio}]"><xsl:value-of select="((ptn:Capacitance + $ptn:Capacitance)) div 2 * $ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio"/></ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node>
-        <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node ptn:debug="#268B_ _give_own__x3A__ratio=[{$ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio}]"><xsl:value-of select="((ptn:Capacitance + $ptn:Capacitance)) div 2 div $ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio"/></ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node>
+        <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node ptn:debug="#268B_ _give_own__x3A__ratio=[{$ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio}]">
+            <xsl:attribute name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node__x3A__attract"/>
+            <xsl:value-of select="((ptn:Capacitance + $ptn:Capacitance)) div 2 div $ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio"/>
+        </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node>
     </xsl:template>
     
     

@@ -281,7 +281,9 @@
                         <ptn:Coordinate_Y__calculate__x3A__empty ptn:Coordinate_Y__x3A__more_charged_node="{$ptn:Coordinate_Y}" ptn:Coordinate_Y__x3A__less_charged_node="{ptn:Coordinate_Y}"></ptn:Coordinate_Y__calculate__x3A__empty>
                         <ptn:Coordinate_Z__calculate__x3A__empty ptn:Coordinate_Z__x3A__more_charged_node="{$ptn:Coordinate_Z}" ptn:Coordinate_Z__x3A__less_charged_node="{ptn:Coordinate_Z}"></ptn:Coordinate_Z__calculate__x3A__empty>
                         
-                        <xsl:call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node"/>
+                        <xsl:call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node">
+                            <xsl:with-param name="ptn:Output_Node__x3A__attract" select="$ptn:Output_Node" tunnel="yes"/>
+                        </xsl:call-template>
                         <!--<ptn:Capacitance ptn:debug="#268 todo __assert"><xsl:value-of select="(ptn:Capacitance + $ptn:Capacitance) * 1.2"/></ptn:Capacitance>--><!-- todo config strategy -->
                         <ptn:Resistance ptn:debug="#269 todo __assert"><xsl:value-of select="(ptn:Resistance + $ptn:Resistance) div 2"/></ptn:Resistance><!-- todo config strategy -->
                         <ptn:Minimum_voltage ptn:debug="#270 todo __assert"><xsl:value-of select="(ptn:Minimum_voltage + $ptn:Minimum_voltage) div 2"/></ptn:Minimum_voltage><!-- todo config strategy -->
