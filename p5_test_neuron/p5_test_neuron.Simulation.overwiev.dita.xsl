@@ -51,38 +51,123 @@
             xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
             <title>Analiza zdarzeń symulacji sieci  w jednostce czasu <xsl:value-of select="$ptn:Simulator_tick"/>[ms] i długości <xsl:value-of select="$ptn:Simulation_ticks"/> [scen] </title>
             <!--<title>Analiza zdarzeń symulacji sieci  w jednostce czasu <codeph><xsl:value-of select="$ptn:Simulator_tick"/></codeph><parmname>[ms]</parmname> i długości <codeph><xsl:value-of select="$ptn:Simulation_ticks"/></codeph> <parmname>[scen]</parmname> </title>-->
-            <body>
-                <p>
-                    <xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze]"  group-adjacent="position() mod 50 = 0"><!-- group-by="@ptn:Label__x3A__analyze" -->
-                        <simpletable frame="all" relcolwidth="1* 1* 1* 1* 1*" id="simpletable_neurony_{position()}">
-                            <sthead>
-                                <stentry>Czas</stentry>
-                                <stentry>Wejscie</stentry>
-                                <stentry>Nazwa</stentry>
-                                <stentry>Wyjscie</stentry>
-                                <stentry>Poziom[V]</stentry>
-                            </sthead>
-                                                
-                            <xsl:for-each-group select="current-group()" group-by="@ptn:Label__x3A__analyze"><!-- ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze] -->
-                                    <xsl:variable name="ptn:Simulation_body_time" select="parent::ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_time"/>
-                                    <strow>
-                                        <stentry><xsl:value-of select="$ptn:Simulation_body_time"/></stentry>
-                                        <stentry>
-                                            <xsl:for-each select="$ptn:Simulation.analyze_simulation.xml//ptn:Simulation.analys.xml__x3A__analyze/*[ptn:Current_synapse__x3A__analyze[@ptn:Output_Node__x3A__analyze = current()/@ptn:Label__x3A__analyze]]">
-                                                <xsl:if test="position() = 1"><xsl:value-of select="replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/></xsl:if>
-                                            </xsl:for-each>
-                                        </stentry>
-                                        <stentry ><xsl:value-of select="replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/></stentry>
-                                        <stentry><xsl:value-of select="ptn:Current_synapse__x3A__analyze/replace(@ptn:Output_Node__x3A__analyze,'-to-','-to- ')"/></stentry>
-                                        <stentry><xsl:value-of select="@ptn:Simulated_potential"/></stentry>
-                                    </strow>
-                                </xsl:for-each-group>
-                        </simpletable>
-                    </xsl:for-each-group>
-                </p>
-            </body>
             
-                <topic id="section_aktywnosci_na_synapsach">
+                
+            <xsl:for-each-group select="ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze][descendant-or-self::ptn:Input__x3A__analyze]"  group-by="@ptn:Label__x3A__analyze"><!-- group-by="@ptn:Label__x3A__analyze" -->
+                        <xsl:variable name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze"/>
+                        <topic id="{@ptn:Label__x3A__analyze}_analiza_wezla_{position()}">
+                            <title>Analiza węzła <b><xsl:value-of select="@ptn:Label__x3A__analyze"/></b></title>
+                            <body>
+                                <!--<xsl:for-each-group select="current-group()" group-by="concat(parent::*/@ptn:Simulation_body_time,round(position() div 10))">-->
+                                    
+                                    <simpletable frame="all"  ><!-- relcolwidth="0.3* 1* 1* 0.5*" -->
+                                        <sthead props="pos={position()}   time={parent::ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_time} ]  gr_key=[{current-grouping-key()}]">
+                                            <stentry>Czas</stentry>
+                                            <!--<stentry>Wejscie</stentry>-->
+                                            <!--<stentry>Nazwa</stentry>-->
+                                            <stentry>Poziom[V]</stentry>
+                                            <stentry>Wyjscie</stentry>
+                                            <stentry>[mA]</stentry>
+                                            
+                                        </sthead>
+                                        <strow >
+                                            <stentry/>
+                                            <stentry/>
+                                            <stentry/>
+                                            <stentry/>
+                                        </strow>
+                                        <!--<xsl:for-each select="current-group()" >--><!-- group-by="parent::*/@ptn:Simulation_body_time" ptn:Simulation.analys.xml__x3A__analyze/*[@ptn:Label__x3A__analyze] -->
+                                            
+                                            <!--<DEBUG13>
+                                                <xsl:copy-of select="current-group()"/>
+                                            </DEBUG13>-->
+                                            
+                                            
+                                        <xsl:for-each select="descendant::ptn:Input__x3A__analyze" >
+                                            <xsl:variable name="ptn:Simulation_body_time" select="@ptn:Input_exec_time__x3A__analyze"/>
+                                                <strow rev="#82 gr_key[{current-grouping-key()}]">
+                                                    <stentry><xsl:value-of select="$ptn:Simulation_body_time"/></stentry>
+                                                    <!--<stentry>
+                                                    <xsl:for-each select="$ptn:Simulation.analyze_simulation.xml//ptn:Simulation.analys.xml__x3A__analyze/*[ptn:Current_synapse__x3A__analyze[@ptn:Output_Node__x3A__analyze = current()/@ptn:Label__x3A__analyze]]">
+                                                        <xsl:if test="position() = 1"><xsl:value-of select="replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/></xsl:if>
+                                                    </xsl:for-each>
+                                                </stentry>-->
+                                                    <!--<stentry ><xsl:value-of select="replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/></stentry>-->
+                                                    <stentry><xsl:value-of select="ancestor-or-self::ptn:Output__x3A__flag__x3A__emmit__x3A__analyze/parent::*/@ptn:Simulated_potential"/></stentry>
+                                                    <stentry><xsl:value-of select="replace(@ptn:Input_exec_receptor__x3A__analyze,'-to-','-to- ')"/></stentry>
+                                                    <stentry><xsl:value-of select="@ptn:Input_exec_Maximum_current__x3A__analyze"/></stentry>
+                                                    
+                                                </strow> 
+                                            </xsl:for-each>
+                                        
+                                        
+                                        <xsl:for-each select="$ptn:Simulation.analyze_simulation.xml//ptn:Simulation.analys.xml__x3A__analyze/*[descendant::ptn:Input__x3A__analyze[@ptn:Input_exec_receptor__x3A__analyze = $ptn:Label__x3A__analyze]]/descendant::ptn:Input__x3A__analyze[@ptn:Input_exec_receptor__x3A__analyze = $ptn:Label__x3A__analyze]">
+                                            <!--<DEBUG333>
+                                                <xsl:copy-of select="."></xsl:copy-of>
+                                            </DEBUG333>-->
+                                                <strow props="dwa94">
+                                                    <stentry>
+                                                        <xsl:value-of select="@ptn:Input_exec_time__x3A__initial__x3A__analyze"/>
+                                                    </stentry>
+                                                    <stentry>
+                                                        <xsl:value-of select="@ptn:Input_exec_time__x3A__analyze"/>
+                                                    </stentry>
+                                                    <stentry>
+                                                        <xsl:value-of select="ancestor-or-self::*[@ptn:Label__x3A__analyze][1]/replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/>
+                                                    </stentry>
+                                                    <stentry>IN</stentry>
+                                                </strow>
+                                            </xsl:for-each>
+                                            
+                                        <!--</xsl:for-each>-->
+                                    </simpletable>
+                                <!--</xsl:for-each-group>-->
+                                
+                                
+                                
+                                <!--<simpletable frame="all" relcolwidth="0.3* 1* 1* " >
+                                    <sthead>
+                                        <stentry>Czas</stentry>
+                                        <!-\-<stentry>Wejscie</stentry>-\->
+                                        <!-\-<stentry>Nazwa</stentry>-\->
+                                        <stentry>Poziom[V]</stentry>
+                                        <stentry>Wejscie</stentry>
+                                        <!-\-<stentry>[mA]</stentry>-\->
+                                        
+                                    </sthead>
+                                    <strow >
+                                        <stentry/>
+                                        <stentry/>
+                                        <stentry/>
+                                        <!-\-<stentry/>-\->
+                                    </strow>
+                                    
+                                    <xsl:for-each select="$ptn:Simulation.analyze_simulation.xml//ptn:Simulation.analys.xml__x3A__analyze/*[ptn:Current_synapse__x3A__analyze[@ptn:Output_Node__x3A__analyze = $ptn:Label__x3A__analyze]]">
+                                        <strow props="dwa94">
+                                            <stentry>
+                                                <xsl:value-of select="parent::ptn:Simulation.analys.xml__x3A__analyze/@ptn:Simulation_body_time"/>
+                                            </stentry>
+                                            <stentry>
+                                                <xsl:value-of select="@ptn:Simulated_potential"/>
+                                            </stentry>
+                                            <stentry>
+                                                <xsl:value-of select="replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/>
+                                            </stentry>
+                                        </strow>
+                                    </xsl:for-each>
+                                    
+                                </simpletable>-->
+                                
+                            </body>
+                        </topic>
+                        
+                        
+                        
+                    </xsl:for-each-group>
+                
+            
+            
+                <!--<topic id="section_aktywnosci_na_synapsach">
                     <title>Aktywności na synapsach</title>
                     <body>
                     <p>
@@ -106,7 +191,7 @@
                                     <xsl:variable name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze"/>
                                     <xsl:for-each select="descendant-or-self::ptn:Input__x3A__analyze">
                                         <strow>
-                                            <stentry ><xsl:value-of select="$ptn:Simulation_body_time"/></stentry><!-- id="simpletable_synapsy_{$ptn:Simulation_body_time}_{$ptn:Label__x3A__analyze}_{@ptn:Input_exec_time__x3A__analyze}_{@ptn:Input_exec_receptor__x3A__analyze}" -->
+                                            <stentry ><xsl:value-of select="$ptn:Simulation_body_time"/></stentry><!-\- id="simpletable_synapsy_{$ptn:Simulation_body_time}_{$ptn:Label__x3A__analyze}_{@ptn:Input_exec_time__x3A__analyze}_{@ptn:Input_exec_receptor__x3A__analyze}" -\->
                                             <stentry ><xsl:value-of select="replace($ptn:Label__x3A__analyze,'-to-','-to- ')"/></stentry>
                                             
                                             <stentry><xsl:value-of select="current-group()/@ptn:Simulated_potential"/>[mV]</stentry>
@@ -137,7 +222,7 @@
                             <linkinfo>Autor Arkadiusz Binder Procesy5</linkinfo>
                         </linklist>
                     </related-links>
-                </topic>
+                </topic>-->
                 
                 <xsl:apply-templates mode="#current" select="$ptn:Config"/>
                 
@@ -149,11 +234,7 @@
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Config">
         <topic id="section_config_{local-name()}">
             <title>Cechy środowiska</title>
-            <body>
-            <p>
-                
-            </p>
-            </body>
+            
         </topic>
         <xsl:apply-templates mode="#current"/>
     </xsl:template>
@@ -203,7 +284,7 @@
                         <stentry>Parametr</stentry>
                         <stentry>Wartość</stentry>
                     </sthead>
-                    <xsl:for-each select="descendant-or-self::*">
+                    <xsl:for-each select="descendant::*">
                         <strow>
                             <stentry><xsl:value-of select="position()"/></stentry>
                             <stentry><xsl:value-of select="local-name()"/></stentry>
@@ -228,7 +309,7 @@
     
     <xsl:template mode="ptn:Simulation.overwiev.dita" match="ptn:Input">
         <topic id="section_config_{local-name()}_{ptn:Input_exec_time}_{count(preceding-sibling::ptn:Input)}">
-            <title>Parametry receptora</title>
+            <title>Parametry receptora <xsl:value-of select="ptn:Label"/></title>
             <body>
                 <p>
                     <simpletable frame="all" relcolwidth="1* 1* 1*" >
@@ -237,7 +318,7 @@
                             <stentry>Parametr</stentry>
                             <stentry>Wartość</stentry>
                         </sthead>
-                        <xsl:for-each select="descendant-or-self::*">
+                        <xsl:for-each select="descendant-or-self::*[not(name()='ptn:Label')]">
                             <strow>
                                 <stentry><xsl:value-of select="position()"/></stentry>
                                 <stentry><xsl:value-of select="local-name()"/></stentry>
@@ -262,7 +343,7 @@
                         <stentry>Parametr</stentry>
                         <stentry>Wartość</stentry>
                     </sthead>
-                    <xsl:for-each select="descendant-or-self::*">
+                    <xsl:for-each select="descendant::*">
                         <strow>
                             <stentry><xsl:value-of select="position()"/></stentry>
                             <stentry><xsl:value-of select="local-name()"/></stentry>
