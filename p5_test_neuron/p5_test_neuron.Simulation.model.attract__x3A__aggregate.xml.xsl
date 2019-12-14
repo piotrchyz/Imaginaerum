@@ -171,7 +171,7 @@
             <!--<xsl:apply-templates mode="#current"/>-->
             <!--<xsl:value-of select="0.5"/>-->
             
-            <xsl:value-of select="following-sibling::ptn:Capacitance__x3A__attract__x3A__calculate/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node/(@ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio * text()) "/>
+            <xsl:value-of select="avg(following-sibling::ptn:Capacitance__x3A__attract__x3A__calculate/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node/(@ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio * text()) )"/>
         </ptn:Capacitance>
     </xsl:template>
     

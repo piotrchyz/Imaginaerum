@@ -381,6 +381,11 @@
                         name="Coordinate_Z__calculate__x3A__empty__x3A__assert">
                         <xs:complexType>
                             <xs:attribute ref="ptn:Coordinate_Z__x3A__more_charged_node"/>
+                            <xs:attribute ref="ptn:Coordinate_Z__x3A__less_charged_node">
+                                <xs:annotation>
+                                    <xs:documentation>TODO test if good</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
                         </xs:complexType>
                     </xs:element>
                     <xs:element default="0" name="Coordinate_Z" type="ptn:Coordinate_CT"/>
@@ -453,11 +458,11 @@
         <xs:anyAttribute
             namespace="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"/>
         <xs:assert
-            test="ptn:Coordinate_X = ptn:Coordinate_X__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_X__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(.=0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_X__calculate__x3A__empty__x3A__assert)"/>
+            test="ptn:Coordinate_X = ptn:Coordinate_X__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_X__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(. = 0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_X__calculate__x3A__empty__x3A__assert)"/>
         <xs:assert
-            test="ptn:Coordinate_Y = ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Y__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(.=0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert)"/>
+            test="ptn:Coordinate_Y = ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Y__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(. = 0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert)"/>
         <xs:assert
-            test="ptn:Coordinate_Z = ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Z__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(.=0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert)"/>
+            test="ptn:Coordinate_Z = ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert/@ptn:Coordinate_Z__x3A__more_charged_node + avg(ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert[not(. = 0)]) * ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert/@ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio or not(ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert)"/>
         <xs:assert
             test="ptn:Refactory_period__x3A__flag and ptn:Simulated_potential > ptn:Firing_threshold or not(ptn:Refactory_period__x3A__flag) or ptn:Simulated_potential = ptn:Reset_potential"
         />
@@ -1367,4 +1372,5 @@ debug most feature</xs:documentation>
     <xs:attribute name="Coordinate_X__x3A__more_charged_node" type="ptn:Coordinate"/>
     <xs:attribute name="Coordinate_Y__x3A__more_charged_node" type="ptn:Coordinate"/>
     <xs:attribute name="Coordinate_Z__x3A__more_charged_node" type="ptn:Coordinate"/>
+    <xs:attribute name="Coordinate_Z__x3A__less_charged_node" type="ptn:Coordinate"/>
 </xs:schema>

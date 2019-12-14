@@ -73,7 +73,7 @@
         ptn:Current_synapse|ptn:Maximum_current|ptn:Time_constant|ptn:Delay|ptn:Output_Node|
         ptn:Output__x3A__flag__x3A__emmit|ptn:Refactory_period__x3A__flag|
         ptn:Refactory_period__x3A__flag__x3A__until|ptn:Input__x3A__node|
-        ptn:Current_synapse__x3A__emmit|ptn:Stress__x3A__flag">
+        ptn:Current_synapse__x3A__emmit|ptn:Stress__x3A__flag|ptn:Attract__x3A__flag">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current"/>
