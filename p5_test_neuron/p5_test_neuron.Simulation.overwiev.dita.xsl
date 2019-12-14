@@ -57,9 +57,9 @@
                         <xsl:variable name="ptn:Label__x3A__analyze" select="@ptn:Label__x3A__analyze"/>
                         <topic id="{@ptn:Label__x3A__analyze}_analiza_wezla">
                             <title>Analiza węzła <b><xsl:value-of select="@ptn:Label__x3A__analyze"/></b>
-                                <parmname>X</parmname><codeph><xsl:value-of select="@ptn:Coordinate_X"/></codeph>
-                                <parmname>Y</parmname><codeph><xsl:value-of select="@ptn:Coordinate_Y"/></codeph>
-                                <parmname>Z</parmname><codeph><xsl:value-of select="@ptn:Coordinate_Z"/></codeph>
+                                <parmname>X</parmname><codeph><xsl:value-of select="format-number(@ptn:Coordinate_X,'#.##')"/></codeph>
+                                <parmname>Y</parmname><codeph><xsl:value-of select="format-number(@ptn:Coordinate_Y,'#.##')"/></codeph>
+                                <parmname>Z</parmname><codeph><xsl:value-of select="format-number(@ptn:Coordinate_Z,'#.##')"/></codeph>
                             </title>
                             <body>
                                 <!--<xsl:for-each-group select="current-group()" group-by="concat(parent::*/@ptn:Simulation_body_time,round(position() div 10))">-->
@@ -104,7 +104,7 @@
                                                 <!--<stentry ><xsl:value-of select="replace(@ptn:Label__x3A__analyze,'-to-','-to- ')"/></stentry>-->
                                                 <stentry><xsl:value-of select="format-number(@ptn:Simulated_potential,'#.##')"/></stentry>
                                                 <stentry><xsl:value-of select="replace(@ptn:Input_exec_receptor__x3A__analyze,'-to-','-to- ')"/></stentry>
-                                                <stentry><xsl:value-of select="@ptn:Input_exec_Maximum_current__x3A__analyze"/></stentry>
+                                                <stentry><xsl:value-of select="format-number(@ptn:Input_exec_Maximum_current__x3A__analyze,'#.##')"/></stentry>
                                                 
                                             </strow> 
                                         </xsl:for-each>

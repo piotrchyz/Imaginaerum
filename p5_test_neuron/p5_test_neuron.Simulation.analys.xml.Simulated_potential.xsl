@@ -62,7 +62,7 @@
                 <xsl:copy>
                     <xsl:value-of select="preceding-sibling::ptn:Reset_potential"/>
                 </xsl:copy>
-                <xsl:comment>#63 calling refactory period?</xsl:comment>
+                <xsl:comment>#63-65 calling refactory period?</xsl:comment>
                 <xsl:call-template name="ptn:Refactory_period__x3A__flag"/>
                 <xsl:variable name="ptn:Simulated_potential__x3A__flags">
                     <ptn:Simulated_potential__x3A__flags>
@@ -109,8 +109,8 @@
                 <xsl:copy>
                     <xsl:value-of select="$ptn:Simulated_potential__x3A__vectors.sum/ptn:Simulated_potential__x3A__vectors.sum/*[last()]"/>
                 </xsl:copy>
-                <xsl:comment>#63 calling refactory period?</xsl:comment>
-                <xsl:call-template name="ptn:Refactory_period__x3A__flag"/>
+                <xsl:comment>#63-112 calling refactory period?</xsl:comment>
+                <!--<xsl:call-template name="ptn:Refactory_period__x3A__flag"/>-->
                 <xsl:variable name="ptn:Simulated_potential__x3A__flags">
                     <ptn:Simulated_potential__x3A__flags>
                         <xsl:choose>

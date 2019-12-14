@@ -104,7 +104,7 @@
     
     
     
-    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard[ptn:Label]">
+    <xsl:template mode="ptn:Simulation.model.validate.xml" match="ptn:Receptor[ptn:Label]|ptn:Leaky_neuron_standard[ptn:Label]|ptn:Leaky_neuron_inhibitor__X3A__AA[ptn:Label]|ptn:Leaky_neuron_inhibitor__x3A__AB[ptn:Label]">
         <xsl:copy>
             <xsl:copy-of select="@*"/>
             <xsl:apply-templates mode="#current">
