@@ -36,6 +36,8 @@
     <xsl:include href="p5_test_neuron.Simulation.analyze_simulation.xml.xsl"/>
     
     <xsl:include href="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl"/>
+    <xsl:include href="p5_test_neuron.Simulation.overwiev.dita.xsl"/>
+    
     
     <xsl:template mode="ptn:Simulation.build.analys.xml" match="ptn:Config">
         <xsl:message>#16 will 

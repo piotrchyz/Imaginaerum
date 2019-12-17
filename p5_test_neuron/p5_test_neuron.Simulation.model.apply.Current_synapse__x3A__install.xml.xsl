@@ -15,6 +15,12 @@
         match="*">
         <xsl:message terminate="yes">#16 unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
+    
+    
+    <!--<xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
+        match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node__x3A__assert">
+        <xsl:comment>#22 [bypassed][n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>-->
 
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
         match="ptn:Simulation.attract__x3A__aggregate__x3A__validated">
@@ -212,6 +218,10 @@
             <xsl:comment>224 APL [ERROR][/n[<xsl:value-of select="name()"/>]] [FROM][[ptn:Label]<xsl:value-of select="$ptn:Label"/>] </xsl:comment>
     </xsl:template>-->
     
+    
+    
+    <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
+        match="ptn:Refactory_period__x3A__flag"/>
     
     <xsl:template mode="ptn:Simulation.attract__x3A__calculate.best.unique__x3A__Current_synapse__x3A__install" 
         match="ptn:Input__x3A__nodes__x3A__prohibit"/>

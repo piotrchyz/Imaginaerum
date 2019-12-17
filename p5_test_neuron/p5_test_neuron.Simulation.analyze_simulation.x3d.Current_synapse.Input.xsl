@@ -440,7 +440,7 @@
             <!--<xsl:copy-of select="$ptn:Simulator_tick__x3A__for-each-group"></xsl:copy-of>-->
             <xsl:if test="string-length($ptn:Label__x3A__analyze) = 0"><xsl:message terminate="yes">#478 empty[$ptn:Label__x3A__analyze]</xsl:message></xsl:if>
             <xsl:call-template name="ptn:Simulation__x3A__ROUTE">
-                <xsl:with-param name="ptn:Simulation__x3A__TimeSensor" tunnel="yes"/>
+                <!--<xsl:with-param name="ptn:Simulation__x3A__TimeSensor" tunnel="yes" />-->
             </xsl:call-template>
             
         

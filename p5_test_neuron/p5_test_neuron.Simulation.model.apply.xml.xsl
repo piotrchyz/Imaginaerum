@@ -55,10 +55,25 @@
         <xsl:comment>#32 bypassed/n[<xsl:value-of select="name()"/>] to be context installed</xsl:comment>
     </xsl:template>
     
+    <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="*">
         <xsl:message terminate="yes">#16 [ptn:Simulation.model.apply.xml]  unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
     </xsl:template>
     
+    
+    <!--<xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>
+    </xsl:template>-->
     
     <xsl:template mode="ptn:Simulation.model.apply.xml" match="ptn:Receptors">
         <xsl:copy>
@@ -102,6 +117,7 @@
         <!--<xsl:copy>
             <xsl:copy-of select="@*"/>-->
             <!--<xsl:attribute name="ptn:debug">#96[TODO][RESET][POTENTIAL][WHEN_INSTALLED]</xsl:attribute>-->
+        <xsl:comment>#105 [ptn:Simulation.model.apply.xml] [n][<xsl:value-of select="name()"/>] call [ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential]</xsl:comment>
             <xsl:call-template name="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential">
                 <xsl:with-param name="ptn:Simulated_potential__x3A__current" select="." tunnel="yes"/>
             </xsl:call-template>

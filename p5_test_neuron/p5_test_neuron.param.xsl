@@ -30,4 +30,9 @@
     
     <xsl:param name="ptn:p5suis" select="false()"/>
     
+    
+    <xsl:param name="ptn:Simulation.overwiev.dita" select="false()"/>
+    <xsl:param name="ptn:Simulation.overwiev.ditamap" select="false()"/>
+    
+    
 </xsl:stylesheet>

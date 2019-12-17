@@ -20,11 +20,12 @@
                 <xsl:apply-templates mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" select="$ptn:Simulation.attract__x3A__aggregate__x3A__validated"/>
             </ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential>
         </xsl:variable>
+        
         <xsl:choose>
-            <xsl:when test="$ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulated_potential[@ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed]">
-                <xsl:copy-of select="$ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulated_potential[1][@ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed]"/>
+            <xsl:when test="$ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.attract__x3A__aggregate__x3A__validated/ptn:Simulated_potential[@ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed]">
+                <xsl:copy-of select="$ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.attract__x3A__aggregate__x3A__validated/ptn:Simulated_potential[1][@ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed]"/>
                 <xsl:choose>
-                    <xsl:when test="$ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulated_potential[2][@ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed]">
+                    <xsl:when test="$ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential/ptn:Simulation.attract__x3A__aggregate__x3A__validated/ptn:Simulated_potential[2][@ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed]">
                         <xsl:message>#167GG [install__x3A__Reset_potential][TODO][TOO MANY NODES NOT UNIQE]</xsl:message>
                     </xsl:when>
                 </xsl:choose>
@@ -42,8 +43,21 @@
         <xsl:message terminate="yes">#167A[install__x3A__Reset_potential] [unantended[n][<xsl:value-of select="name()"/>][ptn:Label[<xsl:value-of select="$ptn:Label"/>]]</xsl:message>
     </xsl:template>
     
+    
+    <!--<xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__output_node__x3A__assert|ptn:Capacitance__x3A__attract__x3A__calculate__x3A__self_node__x3A__assert">
+        <xsl:comment> #47 [bypassed][n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>-->
+    
+    
+    <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Refactory_period__x3A__flag">
+        <xsl:comment>#48 bypassed [n][<xsl:value-of select="name()"/>]</xsl:comment>
+    </xsl:template>
+    
     <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Input__x3A__attract__x3A__vectors">
         <xsl:comment>#45AA n[<xsl:value-of select="name()"/>]</xsl:comment>        
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential" match="ptn:Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated">
     </xsl:template>
     
     

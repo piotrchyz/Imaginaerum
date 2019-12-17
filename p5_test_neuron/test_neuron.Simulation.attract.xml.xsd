@@ -41,6 +41,7 @@
             <xs:extension base="ptn:Node">
                 <xs:attribute ref="ptn:Simulation.attract__x3A__calculate__x3A__output_node.type"
                     use="required"/>
+                <xs:assert test="ptn:Capacitance = ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert/(@ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio * text())  or not(ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert)"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
@@ -101,6 +102,7 @@
             <xs:element maxOccurs="unbounded" minOccurs="0"
                 ref="ptn:Simulation.attract__x3A__calculate__x3A__ignored"/>
         </xs:all>
+        <xs:attribute ref="ptn:debug"/>
     </xs:complexType>
     <xs:element name="Simulation.attract__x3A__aggregate"
         type="ptn:Simulation.attract__x3A__aggregate">
@@ -116,4 +118,29 @@
             <xs:field xpath="@ptn:Label"/>
         </xs:unique>
     </xs:element>
+    <xs:element name="Simulation.Stress__x3A__calculate__x3A__output_node"
+        type="ptn:Simulation.Stress__x3A__calculate__x3A__output_node"/>
+    <xs:complexType name="Capacitance__x3A__attract__x3A__calculate__x3A__assert">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded"
+                name="Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert"
+                type="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert"/>
+        </xs:sequence>
+        <xs:attribute ref="ptn:Output_Node__x3A__attract" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert">
+        <xs:simpleContent>
+            <xs:extension base="ptn:Capacitance">
+                <xs:attribute ref="ptn:Label__x3A__context" use="required"/>
+                <xs:attribute ref="ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:attribute name="Capacitance__x3A__attract__x3A__give_own__x3A__ratio"
+        type="ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio"/>
+    <xs:simpleType name="Capacitance__x3A__attract__x3A__give_own__x3A__ratio">
+        <xs:restriction base="xs:double">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

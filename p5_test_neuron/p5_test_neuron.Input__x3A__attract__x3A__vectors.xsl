@@ -61,6 +61,9 @@
                                 <xsl:with-param name="ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment" select="9" tunnel="yes"/>
                             </xsl:call-template>
                             <xsl:call-template name="ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>
+                    
+                    
+                    
                             <!--<ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate ptn:debug="#42 todo attract vectors #cnt[{count($ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ])}]  Attract[Labels][{$ptn:Attract__x3A__flag.nodes//ptn:Label[ text() =  $ptn:Input__x3A__nodes//ptn:Input__x3A__node/text() ]}]"><xsl:value-of select="$ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector"/></ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate>
                             <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate><xsl:value-of select="$ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector"/></ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate>
                             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate><xsl:value-of select="$ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector"/></ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate>-->
@@ -211,5 +214,31 @@
         </xsl:for-each>-->
         
     </xsl:template>
+    
+    
+    <xsl:template name="ptn:Resting_potential__x3A__Input__X3A__attract__x3A__vector__x3A__calculate">
+        <xsl:param name="ptn:Defaults" tunnel="yes" required="yes"/>
+        <xsl:param name="ptn:Simulation.Stress__x3A__calculate" tunnel="yes" select="false()"/>
+        
+        <ptn:Resting_potential>
+            <xsl:choose>
+                <xsl:when test="$ptn:Simulation.Stress__x3A__calculate">
+                    <xsl:choose>
+                        <xsl:when test="number(ptn:Resting_potential) &gt; number($ptn:Defaults//ptn:Resting_potential)">
+                            <xsl:message>#225 [ptn:Resting_potential__x3A__Input__X3A__attract__x3A__vector__x3A__calculate]  [TO IMPROVE TODO]</xsl:message>
+                            <xsl:value-of select="$ptn:Defaults//ptn:Resting_potential"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="number(ptn:Resting_potential) + 0.1 * ( number(ptn:Resting_potential) - number($ptn:Defaults//ptn:Resting_potential)) "/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:message terminate="yes">#233 [not implemented [other[$ptn:Simulation.Stress__x3A__calculate]]]</xsl:message>
+                </xsl:otherwise>
+            </xsl:choose>
+        </ptn:Resting_potential>
+    </xsl:template>
+    
     
 </xsl:stylesheet>

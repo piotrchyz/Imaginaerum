@@ -166,6 +166,9 @@
             <xsl:apply-templates mode="#current">
                 <xsl:with-param name="ptn:Outputs" select="ptn:Outputs" tunnel="yes"/>
                 <xsl:with-param name="ptn:Is_inhibitor" select="ptn:Is_inhibitor" tunnel="yes"/>
+                <xsl:with-param name="ptn:Refactory_period" select="ptn:Refactory_period" tunnel="yes"/>
+                <xsl:with-param name="ptn:Refactory_period__x3A__flag" select="ptn:Refactory_period__x3A__flag" tunnel="yes"/>
+                <xsl:with-param name="ptn:Reset_potential" select="ptn:Reset_potential" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
@@ -405,7 +408,6 @@
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Output__x3A__flag__x3A__emmit[not(*)]">
         <xsl:comment >#241A bypassed empty <xsl:value-of select="name()"/>; [text?[<xsl:value-of select="text()"/>]]</xsl:comment>
-        
     </xsl:template>
     
     
@@ -473,6 +475,26 @@
     
     <xsl:template mode="ptn:Simulation.analys.xml" match="*">
         <xsl:message terminate="yes">#15AAN unantended/n[<xsl:value-of select="name()"/>]</xsl:message>
+    </xsl:template>
+    
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Refactory_period__x3A__flag|ptn:Refactory_period__x3A__flag__x3A__until">
+        <xsl:comment>#483 todo test bypassed [n][<xsl:value-of select="name()"/>] - ulozyc w simulated potential</xsl:comment>
+        <!--<xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#483 todo ptn:Refactory_period__x3A__flag in mode ptn:Simulation.analys.xml</xsl:attribute>
+            <xsl:apply-templates mode="#current"/>
+        </xsl:copy>-->
+    </xsl:template>
+    
+    <xsl:template mode="ptn:Simulation.analys.xml" match="ptn:Refactory_period__x3A__flag[number(ptn:Refactory_period__x3A__flag__x3A__until) &gt;= number(ancestor-or-self::ptn:Input__x3A__generate__x3A__pattern__x3A__apply_match.xml/@ptn:Simulation_body_time)]">
+        <xsl:element name="{name()}__x3A__assert">
+            <xsl:copy-of select="@*"/>
+            <xsl:attribute name="ptn:debug">#483 todo ptn:Refactory_period__x3A__flag in mode ptn:Simulation.analys.xml</xsl:attribute>
+            <ptn:Refactory_period__x3A__flag__x3A__until__x3A__assert>
+                <xsl:value-of select="ptn:Refactory_period__x3A__flag__x3A__until"/>
+            </ptn:Refactory_period__x3A__flag__x3A__until__x3A__assert>
+        </xsl:element>
     </xsl:template>
     
     

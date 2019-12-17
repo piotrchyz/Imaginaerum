@@ -384,6 +384,7 @@
         <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__type" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target" required="yes" tunnel="yes"/>
         <xsl:param name="ptn:Simulation__x3A__Interpolator__x3A__target_field" required="yes" tunnel="yes"/>
+        <xsl:if test="string-length($ptn:Simulation__x3A__TimeSensor)=0"><xsl:message terminate="yes">#387 [incorrect][$$ptn:Simulation__x3A__TimeSensor]</xsl:message></xsl:if>
         <ROUTE fromNode="{$ptn:Simulation__x3A__TimeSensor}"
             fromField="fraction_changed"
             toField="set_fraction">
