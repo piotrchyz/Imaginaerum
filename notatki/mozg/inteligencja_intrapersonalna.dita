@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_intrapersonalna">
+    <title>inteligencja intrapersonalna</title>
+    <shortdesc>znaczna wiedza o sobie, uznawanie określonych wartości, świadomość siebie (własnego
+        "ja"), swych uczuć I roli w życiu, dobrze rozwinięta intuicja, znajomość swych zalet I wad,
+        silna motywacja wewnętrzna, cenienie swej prywatności, potrzeba indywiduaności.</shortdesc>
+    <taskbody>
+        <context>ćwiczenia<p/></context>
+        <steps>
+            <step>
+                <cmd>analiza własnych myśli</cmd>
+            </step>
+            <step>
+                <cmd>oddawanie się wewnętrznym refleksją</cmd>
+            </step>
+            <step>
+                <cmd>wsłuchiwanie się w intuicję</cmd>
+            </step>
+            <step>
+                <cmd>docenienie swej odmienności</cmd>
+            </step>
+            <step>
+                <cmd>pisanie dziennika, bądź biografii</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

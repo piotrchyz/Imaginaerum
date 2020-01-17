@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_kinestetyczna">
+    <title>inteligencja kinestetyczna</title>
+    <shortdesc>poznawanie świata przez dotyk, znaczna kontrola nad ciałem I dobry refleks, wyczucie
+        czasu, upodobanie do zabaw, sportu I zadań fizycznych (także robót ręcznych), wrażliwość na
+        otoczenie, skłonność do manipulowania rękoma lub samymi dłońmi.</shortdesc>
+    <taskbody>
+        <context>ćwiczenie<p/></context>
+        <steps>
+            <step>
+                <cmd>aktywność fizyczna, np. taniec, spacery</cmd>
+            </step>
+            <step>
+                <cmd>stosowanie aktywnych przerw podczas pracy, nauki</cmd>
+            </step>
+            <step>
+                <cmd>wykorzystywanie dramy I pantonimy do nauki</cmd>
+            </step>
+            <step>
+                <cmd>powtarzanie I zapamiętywanie podczas ruchu</cmd>
+            </step>
+            <step>
+                <cmd>stosowanie ćwiczeń manualnych, np. robótek ręcznych, modelarstwa</cmd>
+            </step>
+            <step>
+                <cmd>stosowanie gimnastyki relaksacyjnej, np. jogi</cmd>
+            </step>
+            <step>
+                <cmd>klaskanie, skoki, chodzenie podczas zapamiętywania informacji</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

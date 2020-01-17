@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_jezykowa">
+    <title>inteligencja językowa</title>
+    <shortdesc>inaczej inteligencja lingwistyczna. Upodobanie do czytania, pisania, słuchania,
+        znajomość ortografii, uporządkowanie I systematyczność, wrążliwość na wzory, zapamiętywanie
+        rzeczy mniej istotnych, zdolności oratorskie.</shortdesc>
+    <taskbody>
+        <context>ćwiczenie<p/></context>
+        <steps>
+            <step>
+                <cmd>częste opowiadanie np. "wydarzeń dnia"</cmd>
+            </step>
+            <step>
+                <cmd>ćwiczenia pamięci I ortograficzne</cmd>
+            </step>
+            <step>
+                <cmd>układanie puzzli</cmd>
+            </step>
+            <step>
+                <cmd>czytanie I pisanie opowiadań</cmd>
+            </step>
+            <step>
+                <cmd>przeprowadzanie wywiadów lub dyskusji</cmd>
+            </step>
+            <step>
+                <cmd>pisanie na komputerze</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_logiczna">
+    <title>inteligencja logiczna</title>
+    <shortdesc>inaczej zwana matematyczną. Umiejętność myślenia abstrakcyjnego I rozwiązywania
+        problemów, dokładność I zorganizowanie, upodobanie do liczb, eksperymentów I zagadek
+        logicznych, łatwość wykonywania obliczeń, częste wykorzystywanie komputera, stoswanie
+        notatek.</shortdesc>
+    <taskbody>
+        <context>ćwiczenie<p/></context>
+        <steps>
+            <step>
+                <cmd>korzystanie z gier logicznych oraz matematycznych</cmd>
+            </step>
+            <step>
+                <cmd>eksperymentowanie z liczbami</cmd>
+            </step>
+            <step>
+                <cmd>myślenie dedukcyjne</cmd>
+            </step>
+            <step>
+                <cmd>rozwiązywanie zagadek</cmd>
+            </step>
+            <step>
+                <cmd>łączenie matematyki z innymi dziedzinami</cmd>
+            </step>
+            <step>
+                <cmd>korzystanie z komputera</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="homunkulus">
+    <title>homunkulus</title>
+    <shortdesc>mały człowieczek wewnątrz mózgu.</shortdesc>
+    <prolog>
+        <source>B. Arowsmith-Young, Kobieta, która zmieniła swój mózg oraz inne inspirujące historie
+            nie tylko o pionierskich transformacjach mózgu, Wrocław 2015, s. 176.</source>
+    </prolog>
+    <body>
+        <p>W XX wieku neurolog Wilder Penfield, badając siedliska pamięci w mózgu, zbudował diagram
+            odzwierciedaljący istnienie "małego człowieczka", humunkulusa w ludzkim mózgu. Jak się
+            okazało, wzdłuż przebiegu linii kory sensorycznej po obu stronach mózgu istnieją punkty
+            odpowiedzialne za czucie w poszczególnych paritach ciała.</p>
+        <p><image href="homunkulus_sensoryczny.png" id="image_ikm_5fn_kkb"/></p>
+        <p>Podobnie jest w przypadku kory motorycznej. Odpowiednie fragmenty mózgu odpowiadają za
+            ruch mięśni w odpowiednich częściach ciała. Co ciekawe, powierzchnia odpowiedzialna za
+            ruchy narządów artykulacyjnych mowy czy motorykę dłoni jest niezwykle duża w porównaniu
+            np. z obszarem odpowiadającym za rychy tułowia.</p>
+        <p><image href="homunkulus_motoryczny.png" id="image_xph_mgn_kkb"/></p>
+    </body>
+</topic>

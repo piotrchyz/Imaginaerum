@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_muzyczna">
+    <title>inteligencja muzyczna</title>
+    <shortdesc>wrażliwość na dźwięk I ładunek emocjonalny muzyki, głęboka duchowość I wrażliwość
+        wewnętrzna.</shortdesc>
+    <taskbody>
+        <context>ćwiczenia<p/></context>
+        <steps>
+            <step>
+                <cmd>nauka gry na jakimś instrumencie</cmd>
+            </step>
+            <step>
+                <cmd>komponowanie</cmd>
+            </step>
+            <step>
+                <cmd>śpiewanie</cmd>
+            </step>
+            <step>
+                <cmd>uczęszczanie na koncerty</cmd>
+            </step>
+            <step>
+                <cmd>słuchanie muzyki barokowej</cmd>
+            </step>
+            <step>
+                <cmd>gimnastyka przy muzyce</cmd>
+            </step>
+            <step>
+                <cmd>wpływanie na swój nastrój muzyką, np. relaksacyjną</cmd>
+            </step>
+            <step>
+                <cmd>śpiew w chórze, zespole muzycznym</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

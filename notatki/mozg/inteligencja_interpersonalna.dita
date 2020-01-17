@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_interpersonalna">
+    <title>inteligencja interpersonalna</title>
+    <shortdesc>sympatia względem ludzi (liczne przyjaźnie), skłonność do współpracy, dobry kontakt z
+        ludźmi I aklimatyzacja w grupie, umiejętność negocjacji I mediacji, łatwość porozumiewania
+        się (I manipulacji), szybka orientacja w sytuacji.</shortdesc>
+    <taskbody>
+        <context>trening<p/></context>
+        <steps>
+            <step>
+                <cmd>nauka w grupie, bądź parach</cmd>
+            </step>
+            <step>
+                <cmd>częste rozmowy z ludźmi</cmd>
+            </step>
+            <step>
+                <cmd>zadawanie innym pytań</cmd>
+            </step>
+            <step>
+                <cmd>uczenie innych</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_wizualno_przestrzenna">
+    <title>inteligencja wizualno-przestrzenna</title>
+    <shortdesc>myślenie obrazowe, tworzenie wizualizacji, stosowanie przenośni, łatwość posługiwania
+        się mapami, tabelami itd., upodobanie do sztuki (malarstwo, rzeźbiarstwo), wyczucie barw do
+        tworzenia obrazów wyobrażeniowych.</shortdesc>
+    <taskbody>
+        <context>
+            <p>ćwiczenie</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>wykorzystywanie obrazów do zapamiętania</cmd>
+            </step>
+            <step>
+                <cmd>wykonywanie map umysłowych</cmd>
+            </step>
+            <step>
+                <cmd>rysowanie kreatywnych bazgrołów, ale też diagramów I map</cmd>
+            </step>
+            <step>
+                <cmd>wyobrażenie sobie rzeczy, zjawisk, ludzi</cmd>
+            </step>
+            <step>
+                <cmd>korzystanie z kolorowych zakreślaczy I karteczek samoprzylepnych podczas nauki
+                    I zbierania danych</cmd>
+            </step>
+            <step>
+                <cmd>korzystanie z plakatów I obrazów</cmd>
+            </step>
+            <step>
+                <cmd>oglądanie filmów</cmd>
+            </step>
+            <step>
+                <cmd>częsta zmiana miejsca w pokoju</cmd>
+            </step>
+            <step>
+                <cmd>stosowanie kalendarza lub organizera</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

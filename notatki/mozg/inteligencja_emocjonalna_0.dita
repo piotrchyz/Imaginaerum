@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="inteligencja_emocjonalna_0">
+    <title>inteligencja emocjonalna</title>
+    <shortdesc>zdolność rozumienia I rozpoznawania emocji własnych I innych osób oraz kompetencje
+        personalne ułatwiające funkcjonowanie w zbiorowości społecznej, np. zdolność do współpracy.
+        Teoria zapoczątkowana przez Daniela Golemana.</shortdesc>
+    <taskbody>
+        <context>ćwieczenie <p/></context>
+        <steps>
+            <step>
+                <cmd>ćwiczenie się w empatii; wczuwanie w sytuację I odczucia innych osób</cmd>
+            </step>
+            <step>
+                <cmd>refleksje nad własnymi uczuciami</cmd>
+            </step>
+            <step>
+                <cmd>analiza emocji osób doświadczających trudnych sytuacji</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

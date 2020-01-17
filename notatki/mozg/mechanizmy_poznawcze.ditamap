@@ -23,6 +23,7 @@
             <topicref href="prawa_polkula.dita"/>
         </topicref>
         <topicref href="dzia_anie.dita"/>
+        <topicref href="homunkulus.dita"/>
     </topicref>
     <topicref href="kora_mozgowa.dita">
         <topicref href="zrodlo.dita"/>
@@ -120,5 +121,41 @@
             <topicref href="plat_ciemieniowy.dita"/>
         </topicref>
         <topicref href="zrodlo_0.dita"/>
+    </topicref>
+    <topicref href="typy_mozgu.dita">
+        <topicref href="typ_afektywny_mozgu.dita"/>
+        <topicref href="typ_impulsywno_kompulsywny_mozgu.dita"/>
+        <topicref href="typ_impulsywny_mozgu.dita"/>
+        <topicref href="typ_kompulsywny_mozgu.dita"/>
+        <topicref href="typ_lekowy_mozgu.dita"/>
+        <topicref href="typ_skroniowy_mozgu.dita"/>
+        <topicref href="typ_stresu_pourazowego_mozgu.dita"/>
+        <topicref href="typ_toksyczny_mozgu.dita"/>
+    </topicref>
+    <topicref href="sposoby_zachowania_sprawnosci_mozgu.dita"/>
+    <topicref href="neuroplastycznosc.dita"/>
+    <topicref href="poznanie.dita"/>
+    <topicref href="terminologia_w_procesach_poznawczych.dita">
+        <topicref href="decydowanie.dita"/>
+        <topicref href="inteligencja.dita">
+            <topicref href="inteligencja_emocjonalna_0.dita"/>
+            <topicref href="inteligencja_interpersonalna.dita"/>
+            <topicref href="inteligencja_intrapersonalna.dita"/>
+            <topicref href="inteligencja_jezykowa.dita"/>
+            <topicref href="inteligencja_kinestetyczna.dita"/>
+            <topicref href="inteligencja_logiczna.dita"/>
+            <topicref href="inteligencja_muzyczna.dita"/>
+            <topicref href="inteligencja_wizualno_przestrzenna.dita"/>
+        </topicref>
+        <topicref href="jezyk.dita"/>
+        <topicref href="pamiec.dita"/>
+        <topicref href="percepcja.dita"/>
+        <topicref href="planowanie.dita"/>
+        <topicref href="rozumowanie.dita"/>
+        <topicref href="rozwiazywanie_problemow.dita"/>
+        <topicref href="sadzenie.dita"/>
+        <topicref href="uwaga.dita"/>
+        <topicref href="wyobraznia.dita"/>
+        <topicref href="zrodla.dita"/>
     </topicref>
 </map>
