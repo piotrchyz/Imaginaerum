@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
-    <title>emocje</title>
+    <title>Imersja emocjonalna</title>
     <topicref href="deskrypcja.dita"/>
     <topicref href="spis.dita">
         <topicref href="dualny.dita">
@@ -25,9 +25,8 @@
         <topicref href="../emocje/intensywnosc.dita"/>
         <topicref href="../emocje/rodzaj.dita">
             <topicref href="../emocje/pierwotne.dita"/>
-            <topicref href="../emocje/wt_rne.dita"/>
+            <topicref href="wtorne.dita"/>
         </topicref>
-        <topicref href="rodzaj.dita"/>
         <topicref href="kierunek.dita">
             <topicref href="do_wewnatrz.dita">
                 <topicref href="zachwyt.dita"/>
@@ -56,6 +55,15 @@
                 <topicref href="pruderia.dita"/>
                 <topicref href="bolesc.dita"/>
             </topicref>
+        </topicref>
+        <topicref href="zmysly.dita">
+            <topicref href="zapach.dita"/>
+            <topicref href="smak.dita"/>
+            <topicref href="dotyk.dita"/>
+            <topicref href="sluch.dita"/>
+            <topicref href="wzrok.dita"/>
+            <topicref href="intuicja.dita"/>
+            <topicref href="odruch.dita"/>
         </topicref>
     </topicref>
     <topicref href="warunkuja.dita">

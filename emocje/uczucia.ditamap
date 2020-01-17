@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>uczucia</title>
+    <topicref href="uczucia.dita"/>
+    <topicref href="rodzaj.dita">
+        <topicref href="podstawowe.dita">
+            <topicref href="szczescie.dita"/>
+            <topicref href="gniew.dita"/>
+            <topicref href="lek.dita"/>
+            <topicref href="wstret.dita"/>
+        </topicref>
+        <topicref href="subtelne.dita">
+            <topicref href="szczescie.dita">
+                <topicref href="ekstaza.dita"/>
+                <topicref href="euforia.dita"/>
+            </topicref>
+            <topicref href="smutek.dita">
+                <topicref href="zaduma.dita"/>
+                <topicref href="melancholia.dita"/>
+            </topicref>
+            <topicref href="lek.dita">
+                <topicref href="niesmialosc.dita"/>
+                <topicref href="panika.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="swietliste.dita"/>
+    </topicref>
+</map>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>mechanizmy poznawcze</title>
+    <topicref href="wielkosc_mozgu.dita">
+        <topicref href="waga_mozgu_mezczyzny_vs_kobiety.dita"/>
+    </topicref>
+    <topicref href="podzial_mozgu.dita">
+        <topicref href="mozg_gadzi.dita"/>
+        <topicref href="mozg_ssaczy.dita"/>
+        <topicref href="kora_mozgowa.dita"/>
+    </topicref>
+    <topicref href="procesy_umyslowe.dita">
+        <topicref href="poznawanie.dita"/>
+        <topicref href="koordynator_dzialan.dita"/>
+    </topicref>
+    <topicref href="mozg.dita">
+        <topicref href="waga.dita"/>
+        <topicref href="proporcje.dita"/>
+        <topicref href="energochlonny.dita"/>
+        <topicref href="budowa___podstawy.dita">
+            <topicref href="lewa_polkula.dita"/>
+            <topicref href="prawa_polkula.dita"/>
+        </topicref>
+        <topicref href="dzia_anie.dita"/>
+    </topicref>
+    <topicref href="kora_mozgowa.dita">
+        <topicref href="zrodlo.dita"/>
+        <topicref href="plat_czolowy.dita">
+            <topicref href="budowa_i_funkcje.dita">
+                <topicref href="zakret_przedsrodkowy.dita"/>
+                <topicref href="okolica_przedruchowa.dita"/>
+                <topicref href="osrodek_ruchow_galek_ocznych.dita"/>
+                <topicref href="okolica_przedczolowa.dita"/>
+                <topicref href="osrodek_ruchowy_mowy__broki.dita"/>
+                <topicref href="osrodek_pamieci_operacyjnej.dita"/>
+            </topicref>
+            <topicref href="zaburzenia_plata_czolowego.dita"/>
+        </topicref>
+        <topicref href="plat_ciemieniowy.dita">
+            <topicref href="budowa_i_funkcje.dita">
+                <topicref href="zakret_zasrodkowy.dita"/>
+                <topicref href="okolica_asocjacyjna_czuciowa.dita"/>
+                <topicref href="osrodek_asocjacyjny_wzrokowy.dita"/>
+            </topicref>
+            <topicref href="zaburzenia_plata_ciemieniowego.dita"/>
+        </topicref>
+        <topicref href="plat_skroniowy.dita">
+            <topicref href="budowa_i_funkcje.dita">
+                <topicref href="osrodek_sluchu.dita"/>
+                <topicref href="osrodek_czuciowy_mowy_wernickiego.dita"/>
+                <topicref href="osrodek_asocjacyjny_wzroku.dita"/>
+            </topicref>
+            <topicref href="zaburzenia_plata_skroniowego.dita"/>
+        </topicref>
+        <topicref href="zakret_obreczy.dita">
+            <topicref href="obszary_limbiczne.dita"/>
+            <topicref href="okolica_infralimbiczna.dita"/>
+            <topicref href="okolica_prelimbiczna.dita"/>
+        </topicref>
+        <topicref href="plat_potyliczny.dita">
+            <topicref href="zaburzenie_plata_potylicznego.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="uklad_nerwowy.dita"/>
+    <topicref href="platy.dita"/>
+    <topicref href="funkcje_poznawczne.dita">
+        <topicref href="motoryczne_sekwencjonowanie_symboli.dita">
+            <topicref href="srodek_obszaru_przedruchowego_lewej_polkuli.dita"/>
+        </topicref>
+        <topicref href="relacje_miedzy_symbolami.dita">
+            <topicref href="styk_okolicy_potyliczno_ciemieniowo_skroniowej_lewej_polkuli.dita"/>
+        </topicref>
+        <topicref href="pamiec_danych_i_instrukcja.dita">
+            <topicref href="okolica_skroniowa_lewej_polkuli_mozgu.dita"/>
+        </topicref>
+        <topicref href="mowa_predykatywna.dita"/>
+        <topicref href="osrodek_mowy_broki.dita">
+            <topicref href="plat_czolowy_lewej_polkuli__osrodek_broki.dita"/>
+        </topicref>
+        <topicref href="dyskryminacja_sluchowa.dita">
+            <topicref href="wyzsza_okolica_skroniowa_lewej_polkuli.dita"/>
+        </topicref>
+        <topicref href="myslenie_symboliczne.dita">
+            <topicref href="kora_przedczolowa_lewej_strony_mozgu.dita"/>
+        </topicref>
+        <topicref href="rozpoznawanie_symboli.dita">
+            <topicref href="potyliczno_skroniowy_obszar_mozgu.dita"/>
+        </topicref>
+        <topicref href="pamiec_leksykalna.dita">
+            <topicref href="plat_skroniowy_lewej_polkuli.dita"/>
+        </topicref>
+        <topicref href="percepcja_kinestetyczna.dita">
+            <topicref
+                href="obszar_somatosensoryczny_plata_ciemieniowego_lewej_lub_prawej_polkuli.dita"/>
+        </topicref>
+        <topicref href="kinestetyka_mowy.dita">
+            <topicref href="lewa_polkula.dita"/>
+            <topicref href="prawa_polkula.dita"/>
+        </topicref>
+        <topicref href="myslenie_artefaktowe.dita">
+            <topicref href="kora_przedczo_lowa.dita"/>
+        </topicref>
+        <topicref href="zawezenie_pola_widzenia.dita">
+            <topicref href="plat_potyliczny.dita"/>
+        </topicref>
+        <topicref href="rozpoznawanie_obiektow.dita">
+            <topicref href="srodkowy_obszar_prawej_polkuli.dita"/>
+        </topicref>
+        <topicref href="rozumowanie_przestrzenne.dita">
+            <topicref href="plat_ciemieniowy_prawej_polkuli.dita"/>
+        </topicref>
+        <topicref href="rozumowanie_techniczne.dita">
+            <topicref href="prawa_polkula.dita"/>
+        </topicref>
+        <topicref href="motoryka_prymarna.dita">
+            <topicref href="za_kora_przedczolowa.dita"/>
+        </topicref>
+        <topicref href="motoryka_kwantyfikacyjna.dita">
+            <topicref href="plat_ciemieniowy.dita"/>
+        </topicref>
+        <topicref href="zrodlo_0.dita"/>
+    </topicref>
+</map>

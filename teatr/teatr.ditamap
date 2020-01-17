@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>teatr</title>
+    <topicref href="tworcy.dita"/>
+    <topicref href="scenariusz.dita"/>
+    <topicref href="gracze.dita">
+        <topicref href="ilosc.dita"/>
+        <topicref href="fobie.dita"/>
+        <topicref href="zaangazowanie.dita"/>
+        <topicref href="specjalizacje.dita"/>
+        <topicref href="predyspozycje.dita">
+            <topicref href="indywidualne.dita"/>
+            <topicref href="kolektywne.dita"/>
+        </topicref>
+        <topicref href="wplywy.dita"/>
+    </topicref>
+    <topicref href="widownia.dita"/>
+    <topicref href="plan.dita"/>
+    <topicref href="rezyseria.dita"/>
+    <topicref href="ryzyko.dita">
+        <topicref href="stawka.dita">
+            <topicref href="okazje.dita"/>
+            <topicref href="zagrozenia.dita"/>
+            <topicref href="wyrachowanie.dita"/>
+        </topicref>
+        <topicref href="cena.dita">
+            <topicref href="kompromis.dita"/>
+            <topicref href="oczekiwania.dita"/>
+            <topicref href="starania.dita"/>
+        </topicref>
+    </topicref>
+</map>

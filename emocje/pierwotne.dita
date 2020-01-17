@@ -2,6 +2,11 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="pierwotne">
     <title>pierwotne</title>
+    <abstract><equation-figure>
+            <desc>automatyczna inicjacja w oparciu o nasze nawyki oraz predyspozycję</desc>
+        </equation-figure><image href="pierwotne.png" id="image_atp_fsk_1kb"/><image
+            href="pierwotne2.png" id="image_kgn_nsk_1kb"/><image href="pierwotne3.png"
+            id="image_bs4_4sk_1kb"/></abstract>
     <body>
         <p></p>
     </body>

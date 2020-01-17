@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="procesy_umyslowe">
+    <title>procesy umyslowe</title>
+    <abstract>
+        <ol>
+            <li>percepcja</li>
+            <li>uwaga</li>
+            <li>pamięć</li>
+            <li>myślenie</li>
+            <li>język I mowę</li>
+        </ol>
+    </abstract>
+    <body>
+        <p><xref
+                href="https://depot.ceon.pl/bitstream/handle/123456789/10671/pamiec_sensoryczna_czyli_myslec_cia%C5%82em-mechanizmy-poznawcze.pdf?sequence=3&amp;isAllowed=y"
+                format="pdf" scope="external"/></p>
+    </body>
+</topic>

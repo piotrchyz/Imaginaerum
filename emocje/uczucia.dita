@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="uczucia">
+    <title>uczucia</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <example><p><b>Uczucia</b> – pojęcie często używane zamiennie z <xref
+                    href="https://pl.wikipedia.org/wiki/Emocja" format="html" scope="external"
+                    >emocje</xref>, jednak nierównoznaczne, ponieważ część uczuć nie wypływa z
+                emocji</p><xref
+                href="https://pl.wikipedia.org/wiki/Uczucia#cite_note-CITEREFDamásio2013165-178-1"
+                format="html" scope="external">[1]</xref><xref
+                href="https://pl.wikipedia.org/wiki/Uczucia#cite_note-SciAm-2" format="html"
+                scope="external">[2]</xref><p>. <xref
+                    href="https://pl.wikipedia.org/wiki/Ant%C3%B3nio_Dam%C3%A1sio" format="html"
+                    scope="external">António Damásio</xref> wyodrębnia trzy rodzaje uczuć</p><xref
+                href="https://pl.wikipedia.org/wiki/Uczucia#cite_note-SciAm-2" format="html"
+                scope="external">[2]</xref><p>: </p><xref
+                href="https://pl.wikipedia.org/wiki/Uczucia" format="html" scope="external"
+            /></example>
+        <example>Uczucia I emocje mają się do siebie tak jak kwadrat ma się do prostokąta.</example>
+    </refbody>
+</reference>
