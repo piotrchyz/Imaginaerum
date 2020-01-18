@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="zaleznosci_pomiedzy_zywiolami">
+    <title>zależnosci pomiędzy żywiołami</title>
+    <prolog>
+        <source>dr Haha Lung, Christopher B. Prowant, Mroczna Wiedza. Podręcznik manipulacji
+            umysłami, 2001.</source>
+    </prolog>
+    <body>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_vn3_pkt_kkb">
+                <title>Związki między pierwiastkami</title>
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="c3" colnum="3" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Oddziaływanie</entry>
+                            <entry>Efekt</entry>
+                            <entry>Technika/Przykład</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Drewno tworzy ogień</entry>
+                            <entry>Spalanie</entry>
+                            <entry>Złość daje przyjemność (podniecenie, "uzależni od
+                                adrenaliny").</entry>
+                        </row>
+                        <row>
+                            <entry>Ogień tworzy ziemię</entry>
+                            <entry>Popiół</entry>
+                            <entry>Radość (aktywna) rodzi współczucie (pasywne).</entry>
+                        </row>
+                        <row>
+                            <entry>Ziemia tworzy metal</entry>
+                            <entry>Ruda</entry>
+                            <entry>Współczucie prowadzi do gnuśności. (Wykorzystaj altruizm I
+                                schwytaj go za pomocą fałszywego współczucia).</entry>
+                        </row>
+                        <row>
+                            <entry>Metal tworzy wodę</entry>
+                            <entry>Kondensacja, wytapianie</entry>
+                            <entry>Gnuśność zdradza strach. (przekształć strach I bezsilność w
+                                defetyzm)</entry>
+                        </row>
+                        <row>
+                            <entry>Woda tworzy drewno</entry>
+                            <entry>Wzrost, irygacja</entry>
+                            <entry>Strach rodzi gniew. (zasiej ziarna paranoi I pielęgnuj jego
+                                tchórzostwo)</entry>
+                        </row>
+                        <row>
+                            <entry>Drewno pokona wodę</entry>
+                            <entry>Obwałowanie</entry>
+                            <entry>Gniew pokona strach. (Udaremnij jego plany I wykorzystaj jego
+                                frustrację do własnych celów).</entry>
+                        </row>
+                        <row>
+                            <entry>Woda pokona ogień</entry>
+                            <entry>Gaszenie</entry>
+                            <entry>Strach dławi radość. (Paranoja zatruwa przyjemność)</entry>
+                        </row>
+                        <row>
+                            <entry>Ogień pokona metal</entry>
+                            <entry>Topienie</entry>
+                            <entry>Radość zwycięża gnuśność. (Zniszcz rutynę jego działań
+                                propozycjami "zbyt dobrymi, by były prawdziwe")</entry>
+                        </row>
+                        <row>
+                            <entry>Metal pokona drewno</entry>
+                            <entry>Rąbanie</entry>
+                            <entry>Gnuśność zwycięża gniew. (Lenistwo I skłonność do zwlekania
+                                pokrzyżują jego plany).</entry>
+                        </row>
+                        <row>
+                            <entry>Drewno pokona ziemię</entry>
+                            <entry>Wzrost korzeni</entry>
+                            <entry>Gniew pokona współczucie. (przekonaj go, że "Sprawa" porzuciła
+                                go).</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <!--kluczem do zrozumienia treści jest bardzo głębokie zrozumienie pojęć. Użyte w tabeli "żywioły", to słowa klucze, które należy umieć interpretować. Każdy żywioł przypisuje się innemu wymiarowi rzeczywistości. Człowiek czerpie energię z 9 wymiarów (Bram percepcji) rzeczywistości.-->
+        </p>
+        <p/>
+    </body>
+</topic>
