@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="odwrotna_implikacja">
+    <title>odwrotna implikacja</title>
+    <body>
+        <p></p>
+        <p><xref href="https://pl.wikipedia.org/wiki/Twierdzenie_odwrotne" format="html"
+                scope="external"/></p>
+    </body>
+    <topic id="1_poziom_1p">
+        <body>
+            <p><b>Twierdzenie odwrotne</b> – dla danego <xref
+                    href="https://pl.wikipedia.org/wiki/Twierdzenie" format="html" scope="external"
+                    >twierdzenia</xref> twierdzenie, w którym założenie zamieniono z tezą
+                wyjściowego twierdzenia. Niech będzie dane twierdzenie: <i>jeśli A, to B</i>; wtedy
+                twierdzenie odwrotne do niego jest zdaniem <i>jeśli B, to A</i>. Twierdzenie
+                odwrotne do danego prawdziwego twierdzenia nie musi być zdaniem prawdziwym.
+                Twierdzenie odwrotne jest równoważne <xref
+                    href="https://pl.wikipedia.org/wiki/Twierdzenie_przeciwne" format="html"
+                    scope="external">twierdzeniu przeciwnemu</xref>. </p>
+            <dl>
+                <dlentry>
+                    <dt>Przykład 1. </dt>
+                    <dd>Twierdzeniem odwrotnym do twierdzenia: <i>w każdym prostokącie przekątne są
+                            równe</i> jest zdanie: <i>jeżeli przekątne czworokąta są równe, to jest
+                            on prostokątem</i>, które jest zdaniem fałszywym (np. w trapezie
+                        równoramiennym przekątne też są równe).</dd>
+                </dlentry>
+            </dl>
+            <dl>
+                <dlentry>
+                    <dt>Przykład 2. </dt>
+                    <dd>Twierdzeniem odwrotnym do twierdzenia: <i>jeżeli iloczyn dwóch liczb
+                            rzeczywistych jest równy zeru, to jedna z tych liczb jest równa zeru</i>
+                        jest zdanie: <i>jeżeli jedna z liczb rzeczywistych jest równa zeru, to ich
+                            iloczyn jest równy zeru</i> będące zdaniem prawdziwym.</dd>
+                </dlentry>
+            </dl>
+        </body>
+    </topic>
+</topic>

@@ -35,7 +35,7 @@
             </topicref>
         </topicref>
     </topicref>
-    <topicref href="grawitacja_8d.dita">
+    <topicref href="sumienie_8d.dita">
         <topicref href="zagrozenie.dita">
             <topicref href="cechy_dowodcy.dita">
                 <topicref href="tomnosc_4d_umyslu_6d.dita"/>
@@ -352,15 +352,33 @@
         <topicref href="falszowanie.dita"/>
         <topicref href="satsujin_jutsu.dita">
             <topicref href="jujushin.dita">
-                <topicref href="1_poziom_1p.dita"/>
-                <topicref href="2_poziom_2p.dita"/>
+                <topicref href="1_poziom_1p.dita">
+                    <topicref href="odwrotna_implikacja.dita"/>
+                </topicref>
+                <topicref href="2_poziom_2p.dita">
+                    <topicref href="biegunowosc.dita"/>
+                </topicref>
                 <topicref href="3_poziom_3p.dita"/>
                 <topicref href="4_poziom_4p.dita"/>
                 <topicref href="5_poziom_5p.dita"/>
                 <topicref href="6_poziom_2d6p.dita"/>
+                <topicref href="7_poziom_7p.dita"/>
+                <topicref href="8_poziom_8p.dita"/>
+                <topicref href="9_poziom_9p.dita"/>
+                <topicref href="10_poziom_10p.dita"/>
             </topicref>
-            <topicref href="ekkyo.dita"/>
-            <topicref href="junishi_do_jutsu.dita"/>
+            <topicref href="ekkyo.dita">
+                <topicref href="11_poziom_11p.dita"/>
+                <topicref href="12_poziom_12p.dita"/>
+            </topicref>
+            <topicref href="junishi_do_jutsu.dita">
+                <topicref href="13_poziom_13p.dita"/>
+                <topicref href="14_poziom_14p.dita"/>
+                <topicref href="15_poziom_15p.dita"/>
+                <topicref href="16_poziom_16p.dita"/>
+                <topicref href="17_poziom_17p.dita"/>
+                <topicref href="18_poziom_18p.dita"/>
+            </topicref>
         </topicref>
     </topicref>
 </map>
