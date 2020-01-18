@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="rozpoznanie">
+    <title>rozpoznanie</title>
+    <shortdesc>testowanie siły</shortdesc>
+    <taskbody>
+        <context>zadanie polega na dowiedzeniu się o słabościach twierdzy przeciwnika.<p/></context>
+        <steps>
+            <step>
+                <cmd>poznanie sposobu postrzegania przeciwnika (ogólnych wartości, nastawienia do
+                    życia, tego co ma dla niego znaczenie oraz sensu) </cmd>
+            </step>
+            <step>
+                <cmd>oraz odkrycie nierozerwalnie związanych z tym słabości, co jest związane z
+                    satsujinjutsu</cmd>
+            </step>
+            <step>
+                <cmd>przygotowanie właściwej strategii szturmowania twierdzy przeciwnika</cmd>
+            </step>
+            <stepsection>Jeśli zaczniesz postrzegać siebie jako zamek, to można powiedzieć, iż jego
+                mury, to Twoje ciało, a wnętrze zamku, to Twój umysł. Można zajrzeć przez okna zamku
+                I dowiedzieć się, jak wygląda wnętrze, a dzięki temu potajemnie
+                przejąć twierdzę.</stepsection>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="fa_szowanie">
+    <title>fałszowanie</title>
+    <shortdesc>działania dotyczą zniszczenia zaufania przeciwnika do postrzeganego na zewnątrz
+        siebie świata, a zatem uderzają bezpośrednio w paradygmaty umysłu, czyli fundamenty
+        twierdzy.</shortdesc>
+    <taskbody>
+        <context id="context_tb4_phs_kkb">Po rozpoznaniu dotyczącym postrzeganego przez przeciwnika
+            świata I odkrycia jego słabości rozpoczynają się działania<p/></context>
+        <steps id="steps_ub4_phs_kkb">
+            <step>
+                <cmd>fałszowanie rzeczywistości postrzeganej przez przeciwnika</cmd>
+            </step>
+            <step>
+                <cmd>zniszczenie zaufania, jakim przeciwnik obdarza Świat</cmd>
+            </step>
+            <step>
+                <cmd>zniszczenie jego pewności siebie, a zatem kompetencji</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

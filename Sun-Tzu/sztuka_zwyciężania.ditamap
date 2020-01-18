@@ -2,7 +2,7 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title><keyword>Działania</keyword> wojenne</title>
-    <topicref href="energia_9d.dita">
+    <topicref href="metody_9d.dita">
         <topicref href="zwodzenie.dita">
             <topicref href="po_rednia.dita">
                 <topicref href="obyczajowosc.dita"/>
@@ -344,4 +344,23 @@
         <topicref href="teren_obrebowy.dita"/>
     </topicref>
     <topicref href="faq.dita"/>
+    <topicref href="sentencje_1d.dita">
+        <topicref href="najpotezniejsza_bron.dita"/>
+    </topicref>
+    <topicref href="szturm.dita">
+        <topicref href="rozpoznanie.dita"/>
+        <topicref href="falszowanie.dita"/>
+        <topicref href="satsujin_jutsu.dita">
+            <topicref href="jujushin.dita">
+                <topicref href="1_poziom_1p.dita"/>
+                <topicref href="2_poziom_2p.dita"/>
+                <topicref href="3_poziom_3p.dita"/>
+                <topicref href="4_poziom_4p.dita"/>
+                <topicref href="5_poziom_5p.dita"/>
+                <topicref href="6_poziom_2d6p.dita"/>
+            </topicref>
+            <topicref href="ekkyo.dita"/>
+            <topicref href="junishi_do_jutsu.dita"/>
+        </topicref>
+    </topicref>
 </map>
