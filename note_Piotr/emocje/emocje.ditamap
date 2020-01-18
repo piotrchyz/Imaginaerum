@@ -180,6 +180,42 @@
             <topicref href="dualny.dita"/>
             <topicref href="biegunowy.dita"/>
         </topicref>
+        <topicref href="tworzenie.dita">
+            <topicref href="zrodlo.dita"/>
+            <topicref href="zlosc.dita">
+                <topicref href="przyjemnosc.dita"/>
+            </topicref>
+            <topicref href="radosc.dita">
+                <topicref href="wspolczucie.dita"/>
+            </topicref>
+            <topicref href="wspolczucie.dita">
+                <topicref href="gnusnosc.dita"/>
+            </topicref>
+            <topicref href="gnusnosc.dita">
+                <topicref href="strach.dita"/>
+            </topicref>
+            <topicref href="strach.dita">
+                <topicref href="gniew.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="zwyciezca.dita">
+            <topicref href="zrodlo.dita"/>
+            <topicref href="gniew.dita">
+                <topicref href="strach.dita"/>
+            </topicref>
+            <topicref href="strach.dita">
+                <topicref href="radosc.dita"/>
+            </topicref>
+            <topicref href="radosc.dita">
+                <topicref href="gnusnosc.dita"/>
+            </topicref>
+            <topicref href="gnusnosc.dita">
+                <topicref href="gniew.dita"/>
+            </topicref>
+            <topicref href="gniew.dita">
+                <topicref href="wspolczucie.dita"/>
+            </topicref>
+        </topicref>
     </topicref>
     <topicref href="zrodla.dita"/>
 </map>
