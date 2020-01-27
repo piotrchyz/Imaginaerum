@@ -2,4 +2,29 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>wpisy</title>
+    <topicref href="s_owiano_aryjski_system_czakr_czlowieka.dita">
+        <topicref href="zrodlo_slowiano_aryjski_system_czakralny.dita"/>
+        <topicref href="mechanika_systemu_czakralnego.dita"/>
+        <topicref href="wiat_nawi.dita">
+            <topicref href="czakra_gwiazda_ziemi.dita"/>
+            <topicref href="czakra_podstawy.dita"/>
+            <topicref href="czakra_sakralna.dita"/>
+            <topicref href="czakra_splotu_s_onecznego.dita"/>
+        </topicref>
+        <topicref href="wiat_jawi.dita">
+            <topicref href="czakra_serca.dita"/>
+        </topicref>
+        <topicref href="swiat_slawi.dita">
+            <topicref href="cakra_lejla__chandra.dita"/>
+            <topicref href="czakra_surya.dita"/>
+        </topicref>
+        <topicref href="swiat_prawi.dita">
+            <topicref href="czakra_gard_a.dita"/>
+            <topicref href="czakra_trzeciego_oka.dita"/>
+            <topicref href="czakra_korony.dita"/>
+            <topicref href="czakra_kauzualna__przyczynowa__bindu.dita"/>
+            <topicref href="czakra_gwiazda_duszy.dita"/>
+            <topicref href="czakra_gwiezdna_brama.dita"/>
+        </topicref>
+    </topicref>
 </map>
