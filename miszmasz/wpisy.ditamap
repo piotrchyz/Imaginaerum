@@ -31,32 +31,88 @@
         <topicref href="tadeusz_mrozinski_o_ziemi_i_kosmosie.dita"/>
         <topicref href="szymon_magus_vs_swiety_piotr.dita"/>
         <topicref href="balwochwalstwo_chrzescijan.dita"/>
-        <topicref href="afirmacje_latian.dita">
-            <topicref href="parabellum.dita"/>
-            <topicref href="amor.dita"/>
-        </topicref>
-        <topicref href="afirmacje_hellen_w.dita">
-            <topicref href="aleksander_wielki.dita"/>
-        </topicref>
-        <topicref href="afirmacje_samuraj_w.dita">
-            <topicref href="miyamoto_musashi.dita"/>
-            <topicref href="inazo_nitobe.dita"/>
-            <topicref href="chozan_shissai.dita"/>
-            <topicref href="yamamoto_tsunetomo.dita"/>
-        </topicref>
-        <topicref href="afirmacje_chi_skie.dita">
-            <topicref href="sun_tzu.dita"/>
-        </topicref>
-        <topicref href="afirmacje_amerykan_w.dita">
-            <topicref href="bruce_lee.dita"/>
-            <topicref href="jocko_willink.dita"/>
-        </topicref>
         <topicref href="asasiyun.dita"/>
-        <topicref href="afirmacje_szkot_w.dita">
-            <topicref href="william_wallace.dita"/>
+        <topicref href="istota_rzeczy.dita">
+            <topicref href="afirmacje_hellen_w.dita">
+                <topicref href="aleksander_wielki.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="afirmacje_latian.dita">
+                <topicref href="parabellum.dita"/>
+                <topicref href="amor.dita"/>
+                <topicref href="marek_aureliusz.dita">
+                    <topicref href="marcus_aurelius__life_changing_quotes_part_2.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="afirmacje_samuraj_w.dita">
+                <topicref href="miyamoto_musashi.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+                <topicref href="inazo_nitobe.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+                <topicref href="chozan_shissai.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+                <topicref href="yamamoto_tsunetomo.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="afirmacje_chi_skie.dita">
+                <topicref href="sun_tzu.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="afirmacje_amerykan_w.dita">
+                <topicref href="bruce_lee.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+                <topicref href="jocko_willink.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+                <topicref href="mark_twain.dita"/>
+            </topicref>
+            <topicref href="afirmacje_szkot_w.dita">
+                <topicref href="william_wallace.dita">
+                    <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
+                </topicref>
+            </topicref>
         </topicref>
     </topicref>
-    <topicref href="sytuacja_geopolityczna_polski.dita">
+    <topicref href="teoria_roar.dita">
+        <topicref href="pierwiastki_slowotworcze.dita">
+            <topicref href="ra.dita"/>
+            <topicref href="ro.dita"/>
+            <topicref href="or.dita"/>
+            <topicref href="o.dita"/>
+            <topicref href="drg.dita"/>
+            <topicref href="dr.dita"/>
+            <topicref href="bry.dita"/>
+            <topicref href="chr.dita"/>
+            <topicref href="ach.dita"/>
+            <topicref href="och.dita"/>
+            <topicref href="mmm.dita"/>
+            <topicref href="aj.dita"/>
+            <topicref href="oj.dita"/>
+            <topicref href="uj.dita"/>
+            <topicref href="pry.dita"/>
+            <topicref href="hr.dita"/>
+            <topicref href="bzy.dita"/>
+            <topicref href="rzy.dita"/>
+            <topicref href="sz.dita"/>
+            <topicref href="tra.dita"/>
+            <topicref href="si.dita"/>
+            <topicref href="ci.dita"/>
+            <topicref href="cho.dita"/>
+            <topicref href="cs.dita"/>
+            <topicref href="zi.dita"/>
+            <topicref href="kra.dita"/>
+            <topicref href="gr.dita"/>
+            <topicref href="om.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="geopolitycznosc_polski.dita">
         <topicref href="polska__surowce__dzia_ania_rzadu.dita">
             <topicref href="okupacja.dita"/>
             <topicref href="polska_ropa_naftowa.dita"/>
@@ -146,14 +202,14 @@
         <topicref href="tusk_zdyskredytowany_na_forum_ue.dita"/>
         <topicref href="1polska__inicjatywa_i_przedstawienie_kandydatow.dita"/>
     </topicref>
-    <topicref href="teoria_roar.dita"/>
-    <topicref href="sytuacja_geopolityczna_swiata.dita">
+    <topicref href="geopolitycznosc_swiata.dita">
         <topicref href="cejrowski_doktryna_trumpa.dita"/>
         <topicref href="iran.dita">
             <topicref href="reakcja_na_zabicie_generala.dita"/>
             <topicref href="zabicie_gen__kassema_sulejmaniego.dita"/>
             <topicref href="iranski_gen___jestesmy_gotowi_do_wojny.dita"/>
             <topicref href="odwet_na_izrael_za_atak_na_iran.dita"/>
+            <topicref href="asasiyun.dita"/>
         </topicref>
         <topicref href="globalna_inwigilacja.dita"/>
         <topicref href="australia.dita">
@@ -189,14 +245,14 @@
             <topicref href="a__savin.dita"/>
         </topicref>
     </topicref>
-    <topicref href="sektor_kosmiczny.dita">
-        <topicref href="odyseja_kosmiczna_2020.dita"/>
-        <topicref href="internet_wartosci.dita"/>
-    </topicref>
     <topicref href="neuranet.dita">
         <topicref href="dziedziczenie_pamieci_neuronalnej.dita"/>
         <topicref href="synapsy_muchy.dita"/>
         <topicref href="dlatego_internet_wartosci.dita"/>
+    </topicref>
+    <topicref href="sektor_kosmiczny.dita">
+        <topicref href="odyseja_kosmiczna_2020.dita"/>
+        <topicref href="internet_wartosci.dita"/>
     </topicref>
     <topicref href="5g.dita">
         <topicref href="5g_w_3miescie.dita"/>

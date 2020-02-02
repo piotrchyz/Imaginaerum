@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="prometeusz_wyzwolony">
+    <title>"Prometeusz Wyzwolony"</title>
+    <shortdesc>Vloger, który udowadnia swoją teorię "roar", jakoby mowa polska była zaawansowanym
+        językiem strukturalnym, wchodzącym w relację z pierwotną naturą.</shortdesc>
+    <refbody>
+        <example>
+            <p><object data="https://www.youtube.com/channel/UCzESQP6-Mjo5DyOiP5Xv-xg/videos"
+                    outputclass="iframe"/></p>
+        </example>
+    </refbody>
+</reference>
