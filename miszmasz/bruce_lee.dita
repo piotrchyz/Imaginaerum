@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="bruce_lee">
+    <title>Bruce Lee</title>
+    <body>
+        <p><object data="https://www.youtube.com/embed/Z1nmYDF19ZY&amp;t=47s" outputclass="iframe">
+                <param name="allowfullscreen"/>
+            </object></p>
+        <p>"Nie lękam się człowieka, kóry praktykował 10000 różnych kopnięć; lecz lękam się
+            człowieka, który praktykował jedno kopnięcie 10000 razy."</p>
+        <p>"Zwycięzki wojownik jest przeciętnym człowiekiem, z laserowym skupieniem uwagi."</p>
+        <p>"Wiedzieć to za mało, musimy wdrażać. Pragnąć to mierzyć zbyt nisko, musimy działać."</p>
+    </body>
+</topic>
