@@ -3,7 +3,7 @@
 <topic id="szczecin">
     <title>Szczecin</title>
     <body>
-        <p><image href="szczecin_mapa.png" id="image_c5b_tfl_rkb"/></p>
+        <p><image href="szczecin_mapa.png" id="image_c5b_tfl_rkb" width="500"/></p>
         <p>Prawdopodobna stolica Szczytii Królewskiej. Terytorium dookoła o tyle ciekawe, iż
             znajduje się ono w epicentrum pruskich sławian, czyli sławian nauczonych "zarządzania
             sobą w procesie", drylu. To poniekąd na coś nam wskazuje, ale tylko nieznacznie.</p>
