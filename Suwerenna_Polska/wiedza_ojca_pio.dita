@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="wiedza_ojca_pio">
+    <title>Wiedza Ojca Pio</title>
+    <body>
+        <p>Uważam, że to prawdopodobnie Prawda.</p>
+        <p><object
+                data="https://www.youtube.com/embed/Q6xqr0a8jsw&amp;fbclid=IwAR0It3Y80Yzhx0rcWfVv8PJdJBmdaicvKW4YhHKCXG_OX5bX4cUkuHfM9z4"
+                outputclass="iframe">
+                <param name="allowfullscreen"/>
+            </object></p>
+    </body>
+</topic>
