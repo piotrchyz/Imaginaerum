@@ -1,0 +1,754 @@
+Return-path: <smigielski@optinav.pl>
+Received: from ms11p00im-qufv17093301.me.com ([17.58.36.74])
+ by ms02543.mac.com (Oracle Communications Messaging Server 8.0.1.3.20170906
+ 64bit (built Sep  6 2017)) with ESMTP id <0POQ004RGNXKVB20@ms02543.mac.com>
+ for energo@icloud.com; Thu, 21 Mar 2019 23:00:56 +0000 (GMT)
+Original-recipient: rfc822;energo@icloud.com
+Received: from relay19.infocity.pl (relay19.infocity.pl [212.244.112.19])
+	by ms11p00im-qufv17093301.me.com (Postfix) with ESMTPS id 7312EB00082	for
+ <energo@icloud.com>; Thu, 21 Mar 2019 23:00:50 +0000 (UTC)
+Authentication-results: ms11p00im-qufv17233101.me.com; dmarc=none
+ header.from=optinav.pl
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+Authentication-results: ms11p00im-qufv17233001.me.com; dkim=none
+Authentication-results: ms11p00im-qufv10114001.me.com; spf=pass
+ (ms11p00im-qufv10114001.me.com: domain of smigielski@optinav.pl designates
+ 212.244.112.19 as permitted sender) smtp.mailfrom=smigielski@optinav.pl
+Received-SPF: pass (ms11p00im-qufv10114001.me.com: domain of
+ smigielski@optinav.pl designates 212.244.112.19 as permitted sender)
+ receiver=ms11p00im-qufv10114001.me.com; client-ip=212.244.112.19;
+ helo=relay19.infocity.pl; envelope-from=smigielski@optinav.pl
+Received: from DESKTOPSVASP76 ([91.222.163.97])
+ by smtp.infocity.pl with Infocity SMTP.NET;	Fri, 22 Mar 2019 00:00:34 +0100
+From: smigielski@optinav.pl
+To: d.kucharska@optinav.pl
+Cc: marek.koper@biall-net.pl, 'Arkadiusz Binder' <energo@icloud.com>
+References: <013301d4df2e$85245ef0$8f6d1cd0$@optinav.pl>
+ <8F493D19-27C5-4A8D-99C4-A44E4D10B9AF@icloud.com>
+ <6CC3AA85-FB54-4748-8ECA-564C8A1A0B63@biall-net.pl>
+ <005201d4dfc2$5d5ef260$181cd720$@optinav.pl>
+ <D51FAF0A-3756-49B6-BCFF-158B481A1197@icloud.com>
+In-reply-to: <D51FAF0A-3756-49B6-BCFF-158B481A1197@icloud.com>
+Subject: ODP: NDA
+Date: Fri, 22 Mar 2019 00:00:41 +0100
+Message-id: <049a01d4e039$e9076280$bb162780$@optinav.pl>
+MIME-version: 1.0
+Content-type: multipart/alternative;
+ boundary="----=_NextPart_000_049B_01D4E042.4AD16FD0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-index: AQKZOD/I0t0YI5kiawVFEXF0Pn3k5gLApoeVARUri8QB4ZLjlAHohG97pFEALmA=
+Content-language: en-us
+X-MANTSH: 1TEIXR1kbG1oaGkNHB1tfTFwbGhoTGhMaGxEKTEMXGxoEGxsYBBsbGgQeGRAbHho
+ fGhEKTFkXGxoaHxEKWU0Xbk9GQ1xPWBEKX1kXGxgaEQpfTRdkRURPEQpZSRcacRoQGncGGxoac
+ RsZExAbGXcGGBoGGhEKWV4XaGN5EQpDThdsH2MeWW1rAXBMRHpuGnJDZlJCYEZ8REZkQRkbfWt
+ rHhEKWFwXGQQaBB4aB0wbT0kSEhhIBRsaBBMEGwQdHxAbHhofGhEKXlkXflNIUm4RCk1cFxgeH
+ xEKTFoXaE1rTWsRCkxGF2JraxEKQ1oXGBsYBBgeHgQbGxgEGxMRCkJeFxsRCkRJFxgRCkJFF2g
+ bYB9fYhwab1MZEQpCThducEJZfBt/Yn5DWREKQkwXb1MTXxxNUBlfUx8RCkJsF29TE18cTVAZX
+ 1MfEQpCQBdrSVpAE3JcGHpMbREKQlgXen1uTl5DHBt6GFgRCk1eFxsRCnBnF2FSeWNERRpCHAE
+ cEBkaEQpwaBdsfQVrHAF7ZGVfARAZGhEKcGgXYkFyekNBGGloRWEQGRoRCnBoF2hvbAUBQ05yY
+ x8YEBkaEQpwaBdtbkBuE0RpeEQcXBAZGhEKcGgXbFkaWVtBWQUdW0AQGRoRCnB/F2dGexNHeWV
+ uGFNNEBkaEQpwXxdkUB5/BWlcYV5OWRAZGhEKcH0XYEZfel9bf0lJGUIQGRoRCnBnF3pmb1hOX
+ XpOBXlEEBkaEQpwfRdgRl96X1t/SUkZQhAZGhEKcH8XbB4Yc2sYek9+elkQGRoRCnB9F2weGHN
+ rGHpPfnpZEBkaEQpwfxdtT08dRFBlbBxPeBAZGhEKcF8XbB9MaXhIa3AZRmcQGRoRCnB9F2VyY
+ nNsZRxGXEROEBkaEQpwfRdgRl96X1t/SUkZQhAZGhEKcH0XYEZfel9bf0lJGUIQGRoRCnB9F2B
+ GX3pfW39JSRlCEBkaEQpwTBdgS3xDXmxzaE9LRhAZGhEKcEMXbW1AGUZea15tARsQGRoRCm1+F
+ xsRClhNF0sR
+X-CLX-Shades: Deliver
+X-CLX-UShades: None
+X-CLX-Score: 1005
+X-CLX-UnSpecialScore: 120
+X-CLX-Spam: false
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:,,
+ definitions=2019-03-21_11:,, signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=1005 suspectscore=0 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=clx:Deliver adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1812120000 definitions=main-1903210159
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_049B_01D4E042.4AD16FD0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+ZWA=C5=BBYWSZY, =C5=BCe Strony zamierzaj=C4=85 om=C3=B3wi=C4=87 lub =
+podj=C4=85=C4=87 nast=C4=99puj=C4=85ce dzia=C5=82ania:
+
+Prezentacja informatycznej technologii modelowania =
+system=C3=B3w/proces=C3=B3w/algorytm=C3=B3w, wykorzystuj=C4=85cej  =
+opracowane przez Partnera, metody dynamicznego uczenia i podejmowania =
+decyzji (sztucznej inteligencji)=20
+
+=20
+
+Pozdrawiam/Best regards
+Arkadiusz =C5=9Amigielski
+________________________
+
+Arkadiusz =C5=9Amigielski
+Chief Executive Officer (CEO)
+Prezes Zarz=C4=85du
+
+OptiNav Sp. z o.o.=20
+
+Carl Zeiss Group
+ul. Grunwaldzka 10
+76-200 S=C5=82upsk, Poland
+
+tel: +48 662 010 174
+ <mailto:smigielski@optinav.pl> smigielski@optinav.pl
+ <http://www.optinav.pl/> www.optinav.pl
+
+=20
+
+Od: Arkadiusz Binder <energo@icloud.com>=20
+Wys=C5=82ano: Thursday, March 21, 2019 3:03 PM
+Do: d.kucharska@optinav.pl
+DW: Marek Koper <marek.koper@biall-net.pl>; smigielski@optinav.pl
+Temat: Re: NDA
+
+=20
+
+Kompletne rozwi=C4=85zanie sztucznej inteligencji w spos=C3=B3b nie =
+dzia=C5=82aj=C4=85cy rynkowo a daj=C4=85cy 1000 wi=C4=99ksze rezultaty?
+
+=E2=80=94=E2=80=94-
+
+Arkadiusz Binder=20
+energo@me.com <mailto:energo@me.com>=20
+
+tel. +48 600 064=20
+
+
+On 21 Mar 2019, at 09:44, d.kucharska@optinav.pl =
+<mailto:d.kucharska@optinav.pl>  wrote:
+
+Dzie=C5=84 dobry,
+
+=20
+
+Do przygotowania NDA potrzebuj=C4=99 jeszcze kilku informacji. =
+Prosz=C4=99 o uzupe=C5=82nienie zaznaczonych miejsc i sprawdzenie =
+poprawno=C5=9Bci danych rejestrowych firmy.
+
+Kompletny dokument prze=C5=9Bl=C4=99 do Pa=C5=84stwa w dw=C3=B3ch =
+egzemplarzach poczt=C4=85, oraz skan mailem.=20
+
+=20
+
+=20
+
+The Binder Consulting Sp. z o.o.
+
+ul. S=C5=82oneczna 43
+
+80-174 Gda=C5=84sk
+
+reprezentowany przez: Arkadiusz Marek Binder - Prezes Zarz=C4=85du
+
+- zwanym dalej "Partnerem" -
+
+- OptiNav i Partner s=C4=85 dalej okre=C5=9Blani odpowiednio jako =
+"Strona Otrzymuj=C4=85ca" i "Strona Ujawniaj=C4=85ca" lub "Strona" lub =
+razem "Strony". -
+
+=20
+
+Preambu=C5=82a
+
+ZWA=C5=BBYWSZY, =C5=BCe OptiNav zajmuje si=C4=99 projektowaniem, =
+produkcj=C4=85 i sprzeda=C5=BC=C4=85 produkt=C3=B3w i =
+rozwi=C4=85za=C5=84 zwi=C4=85zanych z nawigacj=C4=85 optyczn=C4=85 i =
+technologiami widzenia maszynowego;
+
+ZWA=C5=BBYWSZY, =C5=BCe Partner jest zaanga=C5=BCowany w =
+................................. ..;
+
+ZWA=C5=BBYWSZY, =C5=BCe Strony zamierzaj=C4=85 om=C3=B3wi=C4=87 lub =
+podj=C4=85=C4=87 nast=C4=99puj=C4=85ce dzia=C5=82ania: [prosz=C4=99 =
+opisa=C4=87 cel negocjacji / dzia=C5=82a=C5=84 w szerokim znaczeniu] =
+(zwanym dalej "Celem");
+
+ZWA=C5=BBYWSZY, =C5=BCe podczas negocjacji lub omawiania lub =
+wdra=C5=BCania w/w dzia=C5=82a=C5=84 mo=C5=BCe sta=C4=87 si=C4=99 =
+po=C5=BC=C4=85dane lub konieczne, aby Strony ujawni=C5=82y sobie =
+nawzajem pewne informacje o zastrze=C5=BConym lub poufnym charakterze;=20
+
+i=20
+
+ZWA=C5=BBYWSZY, =C5=BCe Strony zamierzaj=C4=85 okre=C5=9Bli=C4=87 =
+warunki dotycz=C4=85ce ujawniania, wykorzystywania i ochrony takich =
+informacji;
+
+Strony zawieraj=C4=85 niniejsz=C4=85 umow=C4=99 o zachowaniu =
+poufno=C5=9Bci (zwan=C4=85 dalej "Umow=C4=85"), w kt=C3=B3rej =
+uzgadniaj=C4=85, co nast=C4=99puje:
+
+=20
+
+=20
+
+=20
+
+Pozdrawiam / Best regards
+
+Dorota Kucharska
+__________
+
+Dorota Kucharska
+
+Administration Specialist
+
+Administration
+
+=20
+
+OptiNav Sp. z o.o.=20
+
+Carl Zeiss Group
+ul. Grunwaldzka 10
+76-200 S=C5=82upsk, Poland
+
+=20
+
+Mobile:+48 602 283 858
+
+ <mailto:d.kucharska@optinav.pl> d.kucharska@optinav.pl=20
+
+ <http://www.optinav.pl/> www.optinav.pl
+
+=20
+
+NIP 8393126592
+
+VAT UE PL8393126592
+
+REGON 221015074
+
+KRS 0000356413
+
+=20
+
+From: Marek Koper <marek.koper@biall-net.pl =
+<mailto:marek.koper@biall-net.pl> >=20
+Sent: Wednesday, March 20, 2019 5:42 PM
+To: Arkadiusz Binder <energo@icloud.com <mailto:energo@icloud.com> >
+Cc: smigielski@optinav.pl <mailto:smigielski@optinav.pl> ; =
+d.kucharska@optinav.pl <mailto:d.kucharska@optinav.pl>=20
+Subject: Re: NDA
+
+=20
+
+Witam,
+
+Przesy=C5=82am dane dotycz=C4=85ce The Binder Consulting. Pozdrawiam!
+
+=20
+
+THE BINDER CONSULTING SPO=CC=81=C5=81KA Z OGRANICZONA=CC=A8 =
+ODPOWIEDZIALNOS=CC=81CIA=CC=A8
+
+ul. S=C5=82oneczna 43
+
+80-174 Gda=C5=84sk
+
+NIP  6040165176
+
+REGON 361006075
+
+KRS 0000548256
+
+http://binderconsulting.eu
+
+=20
+
+=20
+
+=20
+
+=20
+
+=20
+
+Marek Koper
+
+Koordynator Inwestycji
+Dzia=C5=82 Planowania Inwestycji Sieciowych
+M +48 571 335 547
+
+=20
+
+
+
+
+BIALL-NET Sp. z o.o.
+Otomin, ul. S=C5=82oneczna 43
+80-174 Gda=C5=84sk
+www.biall.net.pl <http://www.biall.net.pl/>=20
+
+=20
+
+NIP: 593-22-68-672, REGON: 192120212, KRS: 0000210311
+S=C4=85d Rejonowy Gda=C5=84sk-P=C3=B3=C5=82noc w Gda=C5=84sku,
+VII Wydzia=C5=82 Gospodarczy Krajowego Rejestru S=C4=85dowego
+Kapita=C5=82 zak=C5=82adowy: 50.000 PLN
+
+
+  _____ =20
+
+
+Ta wiadomo=C5=9B=C4=87 oraz wszelkie za=C5=82=C4=85czniki do niej =
+s=C4=85 poufne i przeznaczone wy=C5=82=C4=85cznie do wiadomo=C5=9Bci =
+adresata. Je=C5=9Bli otrzyma=C5=82e=C5=9B t=C4=99 wiadomo=C5=9B=C4=87 =
+przez pomy=C5=82k=C4=99 to u=C5=BCywanie, przekazywanie dalej lub =
+jakiekolwiek kopiowanie jest prawnie zabronione. W takim wypadku prosimy =
+o zniszczenie wiadomo=C5=9Bci wraz z za=C5=82=C4=85cznikami oraz =
+poinformowanie o tym nadawcy.
+
+=20
+
+Wiadomo=C5=9B=C4=87 napisana przez Arkadiusz Binder <energo@icloud.com =
+<mailto:energo@icloud.com> > w dniu 20.03.2019, o godz. 16:08:
+
+=20
+
+Marku, prosz=C4=99 daj panom dane BinderConsulting
+
+
+
+
+=E2=80=94=E2=80=94-
+
+Arkadiusz Binder=20
+ <mailto:energo@me.com> energo@me.com
+
+tel. +48 600 064=20
+
+
+On 20 Mar 2019, at 16:06,  <mailto:smigielski@optinav.pl> =
+smigielski@optinav.pl wrote:
+
+Dorotka,
+
+=20
+
+Wy=C5=9Blij prosz=C4=99 nasze NDA na ten adres:
+
+Arkadiusz Binder  <mailto:energo@icloud.com> energo@icloud.com
+
+=20
+
+=20
+
+Pozdrawiam/Best regards
+Arkadiusz =C5=9Amigielski
+________________________
+
+Arkadiusz =C5=9Amigielski
+Chief Executive Officer (CEO)
+Prezes Zarz=C4=85du
+
+OptiNav Sp. z o.o.=20
+
+Carl Zeiss Group
+ul. Grunwaldzka 10
+76-200 S=C5=82upsk, Poland
+
+tel: +48 662 010 174
+ <mailto:smigielski@optinav.pl> smigielski@optinav.pl
+ <http://www.optinav.pl/> www.optinav.pl
+
+=20
+
+Od: Arkadiusz Binder < <mailto:energo@icloud.com> energo@icloud.com>=20
+Wys=C5=82ano: Monday, March 18, 2019 7:17 PM
+Do: Arkadiusz =C5=9Amigielski < <mailto:smigielski@optinav.pl> =
+smigielski@optinav.pl>
+Temat: Analiza zastosowania podstaowych poje=CC=A8c=CC=81 z wikipedii =
+dla potrzeb rozwia=CC=A8zania problemu efektywnego dzia=C5=82ania =
+wykruywania cech obrazu w produkcie OptiNav w konteks=CC=81cie =
+zasz=C5=82yszanych problemo=CC=81w
+
+=20
+
+Tu model z drona, bardizej uzasadniony - nie skonczona koncepcja.=20
+
+=20
+
+
+------=_NextPart_000_049B_01D4E042.4AD16FD0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8"><meta =
+name=3DGenerator content=3D"Microsoft Word 15 (filtered medium)"><!--[if =
+!mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.Stylwiadomocie-mail19
+	{mso-style-type:personal;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.Stylwiadomocie-mail20
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue =
+vlink=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span =
+lang=3DPL =
+style=3D'font-size:9.0pt;font-family:"Arial",sans-serif;color:#4472C4'>ZW=
+A=C5=BBYWSZY, =C5=BCe Strony zamierzaj=C4=85 om=C3=B3wi=C4=87 lub =
+podj=C4=85=C4=87 nast=C4=99puj=C4=85ce =
+dzia=C5=82ania:<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL>Prezentacja informatycznej technologii modelowania =
+system=C3=B3w/proces=C3=B3w/algorytm=C3=B3w, wykorzystuj=C4=85cej =
+=C2=A0opracowane przez Partnera, metody dynamicznego uczenia i =
+podejmowania decyzji (sztucznej inteligencji) <o:p></o:p></span></p><p =
+class=3DMsoNormal><span lang=3DPL><o:p>&nbsp;</o:p></span></p><div><p =
+class=3DMsoNormal><span lang=3DPL =
+style=3D'font-size:10.0pt;color:black'>Pozdrawiam/Best =
+regards</span><span lang=3DPL><br>Arkadiusz =
+=C5=9Amigielski<br>________________________<o:p></o:p></span></p><p =
+class=3DMsoNormal><b><span lang=3DPL>Arkadiusz =
+=C5=9Amigielski</span></b><span lang=3DPL><br>Chief Executive Officer =
+(CEO)<br>Prezes Zarz=C4=85du<br><br>OptiNav Sp. z o.o. =
+<o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DPL>Carl Zeiss =
+Group<br>ul. Grunwaldzka 10<br>76-200 S=C5=82upsk, Poland<br><br>tel: =
++48&nbsp;662 010 174<br><u><span style=3D'color:#00B0F0'><a =
+href=3D"mailto:smigielski@optinav.pl"><span =
+style=3D'color:#00B0F0'>smigielski@optinav.pl</span></a></span></u><span =
+style=3D'color:#00B0F0'><br><u><a href=3D"http://www.optinav.pl/"><span =
+style=3D'color:#00B0F0'>www.optinav.pl</span></a></u></span><o:p></o:p></=
+span></p></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in'><p class=3DMsoNormal><b><span lang=3DPL>Od:</span></b><span =
+lang=3DPL> Arkadiusz Binder &lt;energo@icloud.com&gt; =
+<br><b>Wys=C5=82ano:</b> Thursday, March 21, 2019 3:03 PM<br><b>Do:</b> =
+d.kucharska@optinav.pl<br><b>DW:</b> Marek Koper =
+&lt;marek.koper@biall-net.pl&gt;; smigielski@optinav.pl<br><b>Temat:</b> =
+Re: NDA<o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:12.0pt'>Kompletne rozwi=C4=85zanie sztucznej =
+inteligencji w spos=C3=B3b nie dzia=C5=82aj=C4=85cy rynkowo a =
+daj=C4=85cy 1000 wi=C4=99ksze rezultaty?<o:p></o:p></p><div =
+id=3DAppleMailSignature><p =
+class=3DMsoNormal>=E2=80=94=E2=80=94-<o:p></o:p></p><div><p =
+class=3DMsoNormal>Arkadiusz Binder&nbsp;<br><a =
+href=3D"mailto:energo@me.com">energo@me.com</a><br><br>tel. +48 600 =
+064&nbsp;<o:p></o:p></p></div></div><div><p class=3DMsoNormal =
+style=3D'margin-bottom:12.0pt'><br>On 21 Mar 2019, at 09:44, <a =
+href=3D"mailto:d.kucharska@optinav.pl">d.kucharska@optinav.pl</a> =
+wrote:<o:p></o:p></p></div><blockquote =
+style=3D'margin-top:5.0pt;margin-bottom:5.0pt'><div><p =
+class=3DMsoNormal>Dzie=C5=84 dobry,<o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal>Do =
+przygotowania NDA potrzebuj=C4=99 jeszcze kilku informacji. Prosz=C4=99 =
+o uzupe=C5=82nienie zaznaczonych miejsc i sprawdzenie poprawno=C5=9Bci =
+danych rejestrowych firmy.<o:p></o:p></p><p class=3DMsoNormal>Kompletny =
+dokument prze=C5=9Bl=C4=99 do Pa=C5=84stwa w dw=C3=B3ch egzemplarzach =
+poczt=C4=85, oraz skan mailem. <o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt'><b><span =
+style=3D'font-size:9.0pt;font-family:"Arial",sans-serif;color:#4472C4'>Th=
+e Binder Consulting Sp. z o.o.</span></b><o:p></o:p></p><p =
+class=3DMsoNormal style=3D'margin-bottom:8.0pt'><span =
+style=3D'font-size:9.0pt;font-family:"Arial",sans-serif;color:#4472C4'>ul=
+. S=C5=82oneczna 43</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt'><span =
+style=3D'font-size:9.0pt;font-family:"Arial",sans-serif;color:#4472C4'>80=
+-174 Gda=C5=84sk</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt'><span =
+style=3D'font-size:9.0pt;font-family:"Arial",sans-serif;color:#4472C4'>re=
+prezentowany przez: Arkadiusz Marek Binder - Prezes =
+Zarz=C4=85du</span><o:p></o:p></p><p class=3DMsoNormal align=3Dright =
+style=3D'margin-bottom:8.0pt;text-align:right;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>- zwanym dalej &quot;<b>Partnerem</b>&quot; =
+-</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>- <b>OptiNav</b> i <b>Partner</b> s=C4=85 dalej =
+okre=C5=9Blani odpowiednio jako &quot;<b>Strona =
+Otrzymuj=C4=85ca</b>&quot; i &quot;<b>Strona Ujawniaj=C4=85ca</b>&quot; =
+lub &quot;<b>Strona</b>&quot; lub razem &quot;<b>Strony</b>&quot;. =
+-</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'text-align:justify;line-height:115%'><span =
+style=3D'font-size:9.0pt;line-height:115%;font-family:"Arial",sans-serif;=
+color:#4472C4'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;line-height:150%'><b><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>Preambu=C5=82a</span></b><o:p></o:p></p><p =
+class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>ZWA=C5=BBYWSZY, =C5=BCe OptiNav zajmuje si=C4=99 =
+projektowaniem, produkcj=C4=85 i sprzeda=C5=BC=C4=85 produkt=C3=B3w i =
+rozwi=C4=85za=C5=84 zwi=C4=85zanych z nawigacj=C4=85 optyczn=C4=85 i =
+technologiami</span><span style=3D'color:#4472C4'> </span><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>widzenia maszynowego;</span><o:p></o:p></p><p =
+class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>ZWA=C5=BBYWSZY, =C5=BCe Partner jest zaanga=C5=BCowany w =
+<span =
+style=3D'background:yellow;mso-highlight:yellow'>........................=
+......... ..;</span></span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>ZWA=C5=BBYWSZY, =C5=BCe Strony zamierzaj=C4=85 =
+om=C3=B3wi=C4=87 lub podj=C4=85=C4=87 nast=C4=99puj=C4=85ce =
+dzia=C5=82ania: <span =
+style=3D'background:yellow;mso-highlight:yellow'>[prosz=C4=99 =
+opisa=C4=87 cel negocjacji / dzia=C5=82a=C5=84 w&nbsp;szerokim =
+znaczeniu]</span> (zwanym dalej =
+&quot;<b>Celem</b>&quot;);</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>ZWA=C5=BBYWSZY, =C5=BCe podczas<s> </s>negocjacji lub =
+omawiania lub wdra=C5=BCania w/w dzia=C5=82a=C5=84 mo=C5=BCe sta=C4=87 =
+si=C4=99 po=C5=BC=C4=85dane lub konieczne, aby Strony ujawni=C5=82y =
+sobie nawzajem pewne informacje o zastrze=C5=BConym lub poufnym =
+charakterze; </span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>i </span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>ZWA=C5=BBYWSZY, =C5=BCe Strony zamierzaj=C4=85 =
+okre=C5=9Bli=C4=87 warunki dotycz=C4=85ce ujawniania, wykorzystywania i =
+ochrony takich informacji;</span><o:p></o:p></p><p class=3DMsoNormal =
+style=3D'margin-bottom:8.0pt;text-align:justify;line-height:150%'><span =
+style=3D'font-size:9.0pt;line-height:150%;font-family:"Arial",sans-serif;=
+color:#4472C4'>Strony zawieraj=C4=85 niniejsz=C4=85 umow=C4=99 o =
+zachowaniu poufno=C5=9Bci (zwan=C4=85 dalej =
+&quot;<b>Umow=C4=85</b>&quot;), w kt=C3=B3rej uzgadniaj=C4=85, co =
+nast=C4=99puje:</span><o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><div><p =
+class=3DMsoNormal>Pozdrawiam / Best regards<o:p></o:p></p><p =
+class=3DMsoNormal>Dorota Kucharska<br>__________<o:p></o:p></p><p =
+class=3DMsoNormal><b>Dorota Kucharska</b><o:p></o:p></p><p =
+class=3DMsoNormal>Administration Specialist<o:p></o:p></p><p =
+class=3DMsoNormal>Administration<o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal>OptiNav Sp. =
+z o.o. <o:p></o:p></p><p class=3DMsoNormal>Carl Zeiss Group<br>ul. =
+Grunwaldzka 10<br>76-200 S=C5=82upsk, Poland<o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal>Mobile:<span =
+lang=3DDE>+48 602 283&nbsp;858</span><o:p></o:p></p><p =
+class=3DMsoNormal><u><a href=3D"mailto:d.kucharska@optinav.pl"><span =
+style=3D'color:#0563C1'>d.kucharska@optinav.pl</span></a> =
+</u><o:p></o:p></p><p class=3DMsoNormal><u><a =
+href=3D"http://www.optinav.pl/"><span =
+style=3D'color:#0563C1'>www.optinav.pl</span></a></u><o:p></o:p></p><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><p class=3DMsoNormal>NIP =
+8393126592<o:p></o:p></p><p class=3DMsoNormal>VAT UE =
+PL8393126592<o:p></o:p></p><p class=3DMsoNormal>REGON =
+221015074<o:p></o:p></p><p class=3DMsoNormal>KRS =
+0000356413<o:p></o:p></p></div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><div><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in'><p class=3DMsoNormal><b>From:</b> Marek Koper &lt;<a =
+href=3D"mailto:marek.koper@biall-net.pl">marek.koper@biall-net.pl</a>&gt;=
+ <br><b>Sent:</b> Wednesday, March 20, 2019 5:42 PM<br><b>To:</b> =
+Arkadiusz Binder &lt;<a =
+href=3D"mailto:energo@icloud.com">energo@icloud.com</a>&gt;<br><b>Cc:</b>=
+ <a href=3D"mailto:smigielski@optinav.pl">smigielski@optinav.pl</a>; <a =
+href=3D"mailto:d.kucharska@optinav.pl">d.kucharska@optinav.pl</a><br><b>S=
+ubject:</b> Re: NDA<o:p></o:p></p></div></div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><div><p =
+class=3DMsoNormal>Witam,<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>Przesy=C5=82am dane dotycz=C4=85ce The Binder =
+Consulting. Pozdrawiam!<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><p =
+class=3DMsoNormal><b><span style=3D'font-size:10.5pt'>THE BINDER =
+CONSULTING SPO=CC=81=C5=81KA Z OGRANICZONA=CC=A8 =
+ODPOWIEDZIALNOS=CC=81CIA=CC=A8</span></b><o:p></o:p></p><div><p =
+class=3DMsoNormal><span style=3D'font-size:10.5pt'>ul. S=C5=82oneczna =
+43</span><o:p></o:p></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-size:10.5pt'>80-174 =
+Gda=C5=84sk</span><o:p></o:p></p><div><div><p class=3DMsoNormal><span =
+style=3D'font-size:10.5pt'>NIP =
+&nbsp;6040165176</span><o:p></o:p></p></div><div><p =
+class=3DMsoNormal><span style=3D'font-size:10.5pt'>REGON =
+361006075</span><o:p></o:p></p></div></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-size:10.5pt;font-family:"Arial",sans-serif;background:#FBFB=
+FB'>KRS 0000548256</span><o:p></o:p></p></div><div><p =
+class=3DMsoNormal><span style=3D'font-size:10.5pt'><a =
+href=3D"http://binderconsulting.eu">http://binderconsulting.eu</a></span>=
+<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><div><p =
+class=3DMsoNormal><b><span =
+style=3D'font-size:10.0pt;color:#0048AA'>Marek =
+Koper</span></b><o:p></o:p></p></div><div><p class=3DMsoNormal><span =
+style=3D'font-size:10.0pt;color:#417DD6'>Koordynator =
+Inwestycji<br>Dzia=C5=82 Planowania Inwestycji Sieciowych<br>M +48 571 =
+335 547</span><o:p></o:p></p></div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><table class=3DMsoNormalTable =
+border=3D0 cellspacing=3D0 cellpadding=3D0><tr><td valign=3Dtop =
+style=3D'padding:0in 0in 0in 0in'><p class=3DMsoNormal><img border=3D0 =
+width=3D73 height=3D77 style=3D'width:.7583in;height:.8in' =
+id=3D"_x0000_i1025" =
+src=3D"cid:/C:/Users/OptiNav/AppData/Local/Microsoft/Windows/INetCache/Co=
+ntent.MSO/5478039.tmp"><o:p></o:p></p></td><td valign=3Dtop =
+style=3D'padding:0in 0in 0in 0in'><p class=3DMsoNormal><b><span =
+style=3D'font-size:10.0pt;color:#404040'>BIALL-NET Sp. z =
+o.o.</span></b><span =
+style=3D'font-size:10.0pt;color:#404040'><br>Otomin, ul. S=C5=82oneczna =
+43<br>80-174 Gda=C5=84sk<br><a =
+href=3D"http://www.biall.net.pl/">www.biall.net.pl</a></span><o:p></o:p><=
+/p></td></tr></table><p class=3DMsoNormal>&nbsp;<o:p></o:p></p><div><p =
+class=3DMsoNormal><span style=3D'font-size:8.5pt;color:gray'>NIP: =
+593-22-68-672, REGON: 192120212, KRS: 0000210311<br>S=C4=85d Rejonowy =
+Gda=C5=84sk-P=C3=B3=C5=82noc w Gda=C5=84sku,<br>VII Wydzia=C5=82 =
+Gospodarczy Krajowego Rejestru S=C4=85dowego<br>Kapita=C5=82 =
+zak=C5=82adowy: 50.000 PLN</span><o:p></o:p></p><div class=3DMsoNormal =
+align=3Dcenter style=3D'text-align:center'><span =
+style=3D'font-size:8.5pt;color:gray'><hr size=3D3 width=3D"100%" =
+align=3Dcenter></span></div><p class=3DMsoNormal><span =
+style=3D'font-size:8.5pt;color:gray'>Ta wiadomo=C5=9B=C4=87 oraz =
+wszelkie za=C5=82=C4=85czniki do niej s=C4=85 poufne i przeznaczone =
+wy=C5=82=C4=85cznie do wiadomo=C5=9Bci adresata. Je=C5=9Bli =
+otrzyma=C5=82e=C5=9B t=C4=99 wiadomo=C5=9B=C4=87 przez pomy=C5=82k=C4=99 =
+to u=C5=BCywanie, przekazywanie dalej lub jakiekolwiek kopiowanie jest =
+prawnie zabronione. W takim wypadku prosimy o zniszczenie =
+wiadomo=C5=9Bci wraz z za=C5=82=C4=85cznikami oraz poinformowanie o tym =
+nadawcy.</span><o:p></o:p></p></div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><div><blockquote =
+style=3D'margin-top:5.0pt;margin-bottom:5.0pt'><div><p =
+class=3DMsoNormal>Wiadomo=C5=9B=C4=87 napisana przez Arkadiusz Binder =
+&lt;<a href=3D"mailto:energo@icloud.com">energo@icloud.com</a>&gt; w =
+dniu 20.03.2019, o godz. 16:08:<o:p></o:p></p></div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p><div><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Helvetica",sans-serif'>Marku, =
+prosz=C4=99 daj panom dane =
+BinderConsulting<br><br><br></span><o:p></o:p></p><div><p =
+class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Helvetica",sans-serif'>=E2=80=94=E2=
+=80=94-</span><o:p></o:p></p><div><p class=3DMsoNormal><span =
+style=3D'font-size:9.0pt;font-family:"Helvetica",sans-serif'>Arkadiusz =
+Binder&nbsp;<br><a href=3D"mailto:energo@me.com"><span =
+style=3D'color:#954F72'>energo@me.com</span></a><br><br>tel. +48 600 =
+064&nbsp;</span><o:p></o:p></p></div></div><div><p class=3DMsoNormal =
+style=3D'margin-bottom:12.0pt'><span =
+style=3D'font-size:9.0pt;font-family:"Helvetica",sans-serif'><br>On 20 =
+Mar 2019, at 16:06,<span class=3Dapple-converted-space>&nbsp;</span><a =
+href=3D"mailto:smigielski@optinav.pl"><span =
+style=3D'color:#954F72'>smigielski@optinav.pl</span></a><span =
+class=3Dapple-converted-space>&nbsp;</span>wrote:</span><o:p></o:p></p></=
+div><blockquote =
+style=3D'margin-top:5.0pt;margin-bottom:5.0pt;font-variant-caps: =
+normal;orphans: auto;text-align:start;widows: =
+auto;-webkit-text-size-adjust: auto;-webkit-text-stroke-width: =
+0px;word-spacing:0px'><div><div><p =
+class=3DMsoNormal>Dorotka,<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>Wy=C5=9Blij prosz=C4=99 nasze NDA na ten =
+adres:<o:p></o:p></p></div><div><p class=3DMsoNormal>Arkadiusz =
+Binder<span class=3Dapple-converted-space>&nbsp;</span><a =
+href=3D"mailto:energo@icloud.com"><span =
+style=3D'color:#954F72'>energo@icloud.com</span></a><o:p></o:p></p></div>=
+<div><p class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><div><p =
+class=3DMsoNormal><span style=3D'font-size:10.0pt'>Pozdrawiam/Best =
+regards</span><br>Arkadiusz =
+=C5=9Amigielski<br>________________________<o:p></o:p></p></div><div><p =
+class=3DMsoNormal><b>Arkadiusz =C5=9Amigielski</b><br>Chief Executive =
+Officer (CEO)<br>Prezes Zarz=C4=85du<br><br>OptiNav Sp. z o.o.<span =
+class=3Dapple-converted-space>&nbsp;</span><o:p></o:p></p></div><div><p =
+class=3DMsoNormal>Carl Zeiss Group<br>ul. Grunwaldzka 10<br>76-200 =
+S=C5=82upsk, Poland<br><br>tel: +48&nbsp;662 010 174<br><u><span =
+style=3D'color:#00B0F0'><a href=3D"mailto:smigielski@optinav.pl"><span =
+style=3D'color:#00B0F0'>smigielski@optinav.pl</span></a></span></u><span =
+style=3D'color:#00B0F0'><br><u><a href=3D"http://www.optinav.pl/"><span =
+style=3D'color:#00B0F0'>www.optinav.pl</span></a></u></span><o:p></o:p></=
+p></div></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in'><div><p class=3DMsoNormal><b>Od:</b><span =
+class=3Dapple-converted-space>&nbsp;</span>Arkadiusz Binder &lt;<a =
+href=3D"mailto:energo@icloud.com"><span =
+style=3D'color:#954F72'>energo@icloud.com</span></a>&gt;<span =
+class=3Dapple-converted-space>&nbsp;</span><br><b>Wys=C5=82ano:</b><span =
+class=3Dapple-converted-space>&nbsp;</span>Monday, March 18, 2019 7:17 =
+PM<br><b>Do:</b><span =
+class=3Dapple-converted-space>&nbsp;</span>Arkadiusz =C5=9Amigielski =
+&lt;<a href=3D"mailto:smigielski@optinav.pl"><span =
+style=3D'color:#954F72'>smigielski@optinav.pl</span></a>&gt;<br><b>Temat:=
+</b><span class=3Dapple-converted-space>&nbsp;</span>Analiza =
+zastosowania podstaowych poje=CC=A8c=CC=81 z wikipedii dla potrzeb =
+rozwia=CC=A8zania problemu efektywnego dzia=C5=82ania wykruywania cech =
+obrazu w produkcie OptiNav w konteks=CC=81cie zasz=C5=82yszanych =
+problemo=CC=81w<o:p></o:p></p></div></div></div><div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div><div><div><p =
+class=3DMsoNormal>Tu model z drona, bardizej uzasadniony - nie skonczona =
+koncepcja.&nbsp;<o:p></o:p></p></div></div></div></blockquote></div></blo=
+ckquote></div><p =
+class=3DMsoNormal>&nbsp;<o:p></o:p></p></div></div></div></blockquote></d=
+iv></body></html>
+------=_NextPart_000_049B_01D4E042.4AD16FD0--
+

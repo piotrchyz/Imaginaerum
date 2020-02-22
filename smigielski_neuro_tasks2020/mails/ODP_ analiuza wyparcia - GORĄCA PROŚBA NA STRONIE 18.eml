@@ -1,0 +1,277 @@
+Return-path: <smigielski@optinav.pl>
+Received: from pv33p00im-smtpin012.me.com ([17.142.194.146])
+ by ms02543.mac.com (Oracle Communications Messaging Server 8.0.1.3.20170906
+ 64bit (built Sep  6 2017)) with ESMTP id <0POF00L49F6REZ00@ms02543.mac.com>
+ for energo@icloud.com; Fri, 15 Mar 2019 21:18:27 +0000 (GMT)
+Original-recipient: rfc822;energo@icloud.com
+Received: from relay18.infocity.pl (relay18.infocity.pl [212.244.112.18])
+	by pv33p00im-smtpin012.me.com (Postfix) with ESMTPS id 36E3BAA00A0	for
+ <energo@icloud.com>; Fri, 15 Mar 2019 21:18:20 +0000 (UTC)
+Authentication-results: pv33p00im-dmarcmilter005.me.com; dmarc=none
+ header.from=optinav.pl
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+Authentication-results: pv33p00im-dkimmilter009.me.com; dkim=none
+Authentication-results: pv33p00im-spfmilter004.me.com; spf=pass
+ (pv33p00im-spfmilter004.me.com: domain of smigielski@optinav.pl designates
+ 212.244.112.18 as permitted sender) smtp.mailfrom=smigielski@optinav.pl
+Received-SPF: pass (pv33p00im-spfmilter004.me.com: domain of
+ smigielski@optinav.pl designates 212.244.112.18 as permitted sender)
+ receiver=pv33p00im-spfmilter004.me.com; client-ip=212.244.112.18;
+ helo=relay18.infocity.pl; envelope-from=smigielski@optinav.pl
+Received: from DESKTOPSVASP76 ([81.18.208.70])
+ by smtp.infocity.pl with Infocity SMTP.NET;	Fri, 15 Mar 2019 22:18:00 +0100
+From: smigielski@optinav.pl
+To: 'Arkadiusz Binder' <energo@icloud.com>
+References: <41FCD596-AC3A-4EE6-8E52-9D8415322CF1@icloud.com>
+ <091F422B-0DC1-405E-B141-D9B2F3D1CC93@icloud.com>
+ <4619986D-A5D1-4AA0-956F-C3E432E3066D@icloud.com>
+In-reply-to: <4619986D-A5D1-4AA0-956F-C3E432E3066D@icloud.com>
+Subject: =?utf-8?Q?ODP:_analiuza_wyparcia_-_GOR=C4=84CA_?=
+	=?utf-8?Q?PRO=C5=9ABA_NA_STRONIE_18?=
+Date: Fri, 15 Mar 2019 22:18:12 +0100
+Message-id: <34a801d4db74$99083c10$cb18b430$@optinav.pl>
+MIME-version: 1.0
+Content-type: multipart/alternative;
+ boundary="----=_NextPart_000_34A9_01D4DB7C.FACD6760"
+X-Mailer: Microsoft Outlook 16.0
+Thread-index: AQMRhPsCbKIW+xg49YC0tdznGxaGxwJkrhCyApmHZHSja+rZgA==
+Content-language: en-us
+X-MANTSH: 1TEIXWlwZGVoaGkNHB0tNT0ReQ0QeHBocEQpMQxcbHQQbHhgEGxMfBBkYEBseGh8
+ aEQpMWRcbGhofEQpZTRduT0ZDXE9YEQpfWRccGREKX00XZEVETxEKWUkXGnEaEBp3Bh4ZcR0fE
+ BgcdwYYGgYaEQpZXhdoY3kRCkNOF0hzGFJlbEhEHEtHWERQSE9BGExrc3kTQR5vYEB8a0lvEQp
+ YXBcZBBoEHhoHTBtPSRISGEgFGx0EGx4YBBsTEwQbGhgQGx4aHxoRCl5ZF35dSFkBEQpNXBcbH
+ BMRCkxaF2hNa01rEQpMRhdia2sRCkNaFxgbGAQYHh4EGxsYBBsSEQpCXhcbEQpCRRdoG2AfX2I
+ cGm9TGREKQk4XbnBCWXwbf2J+Q1kRCkJMF29TE18cTVAZX1MfEQpCbBdvUxNfHE1QGV9THxEKQ
+ kAXa11Obl4cZxJDZVkRCkJYF3p9bk5eQxwbehhYEQpNXhcbEQpwaBdlZ2UbXV5aG1NtbxAZGhE
+ KcGgXYRttb1hMfHMTchMQGRoRCnBoF2EaWRpdax9ZTRJgEBkaEQpwaBdlel5dQEFebUFdaRAZG
+ hEKcGgXZFhcAVtME2hBRmIQGRoRCnB/F2dGexNHeWVuGFNNEBkaEQpwXxdkUB5/BWlcYV5OWRA
+ ZGhEKcH0XYEZfel9bf0lJGUIQGRoRCnB9F2BGX3pfW39JSRlCEBkaEQpwTBdgS3xDXmxzaE9LR
+ hAZGhEKcEMXb0h7b0ZiTUkBeV0QGRoRCm1+FxsRClhNF0sR
+X-CLX-Shades: Deliver
+X-CLX-UShades: None
+X-CLX-Score: 1005
+X-CLX-UnSpecialScore: 63
+X-CLX-Spam: false
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:,,
+ definitions=2019-03-15_14:,, signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=1005 suspectscore=0 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=clx:Deliver adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1812120000 definitions=main-1903150144
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_34A9_01D4DB7C.FACD6760
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Witam Panie Arku,
+
+=20
+
+Trzeba przyzna=C4=87, =C5=BCe jest Pan bardzo tw=C3=B3rczy=E2=80=A6tylko =
+po co? Przecie=C5=BC tego nikt nie jest w stanie przeczyta=C4=87, z =
+uwagi na ilo=C5=9B=C4=87 stron oraz czysto=C5=9B=C4=87 j=C4=99zyka =
+polskiego (styl, interpunkcja). Czy Pan czyta czasami to co pisze? Dla =
+przyk=C5=82adu takie zdanie:
+
+=20
+
+=E2=80=9EMechanizmy te s=C4=85 dzia=C5=82aj=C4=85ce a efektywne =
+"wymy=C5=9Blenie" takich szeregow
+
+funkcjonuj=C4=85cych konsekwencji w=C5=82=C4=85cznie z dowodami z bardzo =
+wysokich miejsc
+
+wdro=C5=BCe=C5=84 oraz komplikacji wskazuj=C4=85 na bardzo silnie =
+dzia=C5=82aj=C4=85ce mechanizmy
+
+wyparcia.=E2=80=9D
+
+=20
+
+Przecie=C5=BC to trzeba czyta=C4=87 10 razy =C5=BCeby cokolwiek =
+zrozumie=C4=87 =E2=80=93 nikt nie ma tyle czasu. =E2=98=B9
+
+=20
+
+Je=C5=BCeli mamy w przysz=C5=82o=C5=9Bci wsp=C3=B3=C5=82pracowa=C4=87, =
+to proponuj=C4=99 inne podej=C5=9Bcie do pracy =E2=80=93 ja =
+b=C4=99d=C4=99 proponowa=C5=82 co mo=C5=BCe Pan przygotowa=C4=87, a Pan =
+to wys=C5=82ucha, przemy=C5=9Bli, dopyta o szczeg=C3=B3=C5=82y i =
+ewentualnie przygotuje (je=C5=BCeli b=C4=99dzie si=C4=99 Pan z tym =
+zgadza=C5=82). Takie skakanie po wszystkim i generowanie tony tekstu i =
+video, niczego konstruktywnego nie wnosi.=20
+
+=20
+
+Zadzwoni=C4=99 w poniedzia=C5=82ek i ustalimy termin spotkania, a =
+weekend sugeruj=C4=99 po=C5=9Bwi=C4=99ci=C4=87 na relaks, rodzin=C4=99 =
+itp..
+
+=20
+
+Pozdrawiam/Best regards
+Arkadiusz =C5=9Amigielski
+________________________
+
+Arkadiusz =C5=9Amigielski
+Chief Executive Officer (CEO)
+Prezes Zarz=C4=85du
+
+OptiNav Sp. z o.o.=20
+
+Carl Zeiss Group
+ul. Grunwaldzka 10
+76-200 S=C5=82upsk, Poland
+
+tel: +48 662 010 174
+ <mailto:smigielski@optinav.pl> smigielski@optinav.pl
+ <http://www.optinav.pl/> www.optinav.pl
+
+=20
+
+Od: Arkadiusz Binder <energo@icloud.com>=20
+Wys=C5=82ano: Thursday, March 14, 2019 8:12 PM
+Do: Arkadiusz =C5=9Amigielski <smigielski@optinav.pl>
+Temat: Re: analiuza wyparcia - GOR=C4=84CA PRO=C5=9ABA NA STRONIE 18
+
+=20
+
+=20
+
+
+------=_NextPart_000_34A9_01D4DB7C.FACD6760
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3DUTF-8">
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta name=3DGenerator =
+content=3D"Microsoft Word 15 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Roboto-Regular;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@Roboto-Regular";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Stylwiadomocie-mail18
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US =
+link=3D"#0563C1" vlink=3D"#954F72"><div class=3DWordSection1><p =
+class=3DMsoNormal>Witam Panie Arku,<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><span =
+lang=3DPL>Trzeba przyzna=C4=87, =C5=BCe jest Pan bardzo =
+tw=C3=B3rczy=E2=80=A6tylko po co? Przecie=C5=BC tego nikt nie jest w =
+stanie przeczyta=C4=87, z uwagi na ilo=C5=9B=C4=87 stron oraz =
+czysto=C5=9B=C4=87 j=C4=99zyka polskiego (styl, interpunkcja). Czy Pan =
+czyta czasami to co pisze? Dla przyk=C5=82adu takie =
+zdanie:<o:p></o:p></span></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><span lang=3DPL =
+style=3D'font-size:10.0pt;font-family:Roboto-Regular'><o:p>&nbsp;</o:p></=
+span></p><p class=3DMsoNormal style=3D'text-autospace:none'><i><span =
+lang=3DPL>=E2=80=9EMechanizmy te s=C4=85 dzia=C5=82aj=C4=85ce a =
+efektywne &quot;wymy=C5=9Blenie&quot; takich =
+szeregow<o:p></o:p></span></i></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><i><span lang=3DPL>funkcjonuj=C4=85cych =
+konsekwencji w=C5=82=C4=85cznie z dowodami z bardzo wysokich =
+miejsc<o:p></o:p></span></i></p><p class=3DMsoNormal =
+style=3D'text-autospace:none'><i><span lang=3DPL>wdro=C5=BCe=C5=84 oraz =
+komplikacji wskazuj=C4=85 na bardzo silnie dzia=C5=82aj=C4=85ce =
+mechanizmy<o:p></o:p></span></i></p><p class=3DMsoNormal><i><span =
+lang=3DPL>wyparcia.=E2=80=9D<o:p></o:p></span></i></p><p =
+class=3DMsoNormal><span lang=3DPL =
+style=3D'font-size:10.0pt;font-family:Roboto-Regular'><o:p>&nbsp;</o:p></=
+span></p><p class=3DMsoNormal><span lang=3DPL>Przecie=C5=BC to trzeba =
+czyta=C4=87 10 razy =C5=BCeby cokolwiek zrozumie=C4=87 =E2=80=93 nikt =
+nie ma tyle czasu. </span><span lang=3DPL style=3D'font-family:"Segoe UI =
+Emoji",sans-serif'>=E2=98=B9</span><span =
+lang=3DPL><o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL>Je=C5=BCeli mamy w przysz=C5=82o=C5=9Bci =
+wsp=C3=B3=C5=82pracowa=C4=87, to proponuj=C4=99 inne podej=C5=9Bcie do =
+pracy =E2=80=93 ja b=C4=99d=C4=99 proponowa=C5=82 co mo=C5=BCe Pan =
+przygotowa=C4=87, a Pan to wys=C5=82ucha, przemy=C5=9Bli, dopyta o =
+szczeg=C3=B3=C5=82y i ewentualnie przygotuje (je=C5=BCeli b=C4=99dzie =
+si=C4=99 Pan z tym zgadza=C5=82). Takie skakanie po wszystkim i =
+generowanie tony tekstu i video, niczego konstruktywnego nie wnosi. =
+<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL>Zadzwoni=C4=99 w poniedzia=C5=82ek i ustalimy termin =
+spotkania, a weekend sugeruj=C4=99 po=C5=9Bwi=C4=99ci=C4=87 na relaks, =
+rodzin=C4=99 itp..<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL style=3D'font-size:10.0pt;color:black'>Pozdrawiam/Best =
+regards</span><span lang=3DPL><br>Arkadiusz =
+=C5=9Amigielski<br>________________________<o:p></o:p></span></p><p =
+class=3DMsoNormal><b><span lang=3DPL>Arkadiusz =
+=C5=9Amigielski</span></b><span lang=3DPL><br>Chief Executive Officer =
+(CEO)<br>Prezes Zarz=C4=85du<br><br>OptiNav Sp. z o.o. =
+<o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DPL>Carl Zeiss =
+Group<br>ul. Grunwaldzka 10<br>76-200 S=C5=82upsk, Poland<br><br>tel: =
++48&nbsp;662 010 174<br><u><span style=3D'color:#00B0F0'><a =
+href=3D"mailto:smigielski@optinav.pl"><span =
+style=3D'color:#00B0F0'>smigielski@optinav.pl</span></a></span></u><span =
+style=3D'color:#00B0F0'><br><u><a href=3D"http://www.optinav.pl/"><span =
+style=3D'color:#00B0F0'>www.optinav.pl</span></a></u></span><o:p></o:p></=
+span></p><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><b><span lang=3DPL>Od:</span></b><span lang=3DPL> =
+Arkadiusz Binder &lt;energo@icloud.com&gt; <br><b>Wys=C5=82ano:</b> =
+Thursday, March 14, 2019 8:12 PM<br><b>Do:</b> Arkadiusz =C5=9Amigielski =
+&lt;smigielski@optinav.pl&gt;<br><b>Temat:</b> Re: analiuza wyparcia - =
+GOR=C4=84CA PRO=C5=9ABA NA STRONIE 18<o:p></o:p></span></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+------=_NextPart_000_34A9_01D4DB7C.FACD6760--
+

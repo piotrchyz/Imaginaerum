@@ -1,0 +1,208 @@
+Return-path: <smigielski@optinav.pl>
+Received: from mr28p00im-smtpin039.me.com ([17.110.71.38])
+ by ms02543.mac.com (Oracle Communications Messaging Server 8.0.1.3.20170906
+ 64bit (built Sep  6 2017)) with ESMTP id <0POO00JUZ7BM5U30@ms02543.mac.com>
+ for energo@icloud.com; Wed, 20 Mar 2019 15:06:58 +0000 (GMT)
+Original-recipient: rfc822;energo@icloud.com
+Received: from relay19.infocity.pl (relay19.infocity.pl [212.244.112.19])
+	by mr28p00im-smtpin039.me.com (Postfix) with ESMTPS id 3795CAA00DB	for
+ <energo@icloud.com>; Wed, 20 Mar 2019 15:06:49 +0000 (UTC)
+Authentication-results: mr21p00im-dmarcmilter001.me.com; dmarc=none
+ header.from=optinav.pl
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+Authentication-results: mr21p00im-dkimmilter018.me.com; dkim=none
+Authentication-results: mr21p00im-spfmilter006.me.com; spf=pass
+ (mr21p00im-spfmilter006.me.com: domain of smigielski@optinav.pl designates
+ 212.244.112.19 as permitted sender) smtp.mailfrom=smigielski@optinav.pl
+Received-SPF: pass (mr21p00im-spfmilter006.me.com: domain of
+ smigielski@optinav.pl designates 212.244.112.19 as permitted sender)
+ receiver=mr21p00im-spfmilter006.me.com; client-ip=212.244.112.19;
+ helo=relay19.infocity.pl; envelope-from=smigielski@optinav.pl
+Received: from DESKTOPSVASP76 ([193.239.126.193])
+ by smtp.infocity.pl with Infocity SMTP.NET;	Wed, 20 Mar 2019 16:06:34 +0100
+From: smigielski@optinav.pl
+To: d.kucharska@optinav.pl
+Cc: 'Arkadiusz Binder' <energo@icloud.com>
+Subject: NDA
+Date: Wed, 20 Mar 2019 16:06:38 +0100
+Message-id: <013301d4df2e$85245ef0$8f6d1cd0$@optinav.pl>
+MIME-version: 1.0
+Content-type: multipart/alternative;
+ boundary="----=_NextPart_000_0134_01D4DF36.E6EBFB40"
+X-Mailer: Microsoft Outlook 16.0
+Thread-index: AdTfLmuExOcQwiP5TpmTpirYwca/SQ==
+Content-language: en-us
+X-MANTSH: 1TEIXR1gbG1oaGkNHB15TTk0bGxoeGhIaGxEKTEMXGx0EGxsbBBsdGQQZGBAbHho
+ fGhEKTFkXGxoaHxEKWU0Xbk9GQ1xPWBEKX1kXHBwRCl9NF2RFRE8RCllJFxpxGhAadwYeHHEdE
+ hAYHHcGGBoGGhEKWV4XaGN5EQpDThdIf3obYXlEQk9pU0ltZUFIRGF5ZUgZfkhgXUFuRWtuXRE
+ KWFwXGQQaBB4aB0wbT0kSEhhIBRsdBBsbGgQdGgQbGRkQGx4aHxoRCl5ZF35SBV9eEQpNXBcbG
+ BIRCkxaF3hDa11rEQpFWRdpEQpMXxd6BQUFBQUFBQUFRBEKQ1oXGBsYBBgeHgQbGxgEGxMRCkJ
+ eFxsRCkRJFxsRCkJFF2gbYB9fYhwab1MZEQpCThducEJZfBt/Yn5DWREKQkwXb1MTXxxNUBlfU
+ x8RCkJsF29TE18cTVAZX1MfEQpCQBdpT3h8HB1kfEVpcxEKQlgXen1uTl5DHBt6GFgRCk1eFxs
+ RCnBoF2J+AWR+En1heXxyEBkaEQpwaBdsW29pcBlbRgVnQhAZGhEKcGgXZkNtRGREb0dya1gQG
+ RoRCnBoF21uQG4TRGl4RBxcEBkaEQpwaBdsWRpZW0FZBR1bQBAZGhEKcH8XZ0Z7E0d5ZW4YU00
+ QGRoRCnBfF2RQHn8FaVxhXk5ZEBkaEQpwfRdgRl96X1t/SUkZQhAZGhEKcH0XYEZfel9bf0lJG
+ UIQGRoRCnBMF2BLfENebHNoT0tGEBkaEQpwQxdnbAEdEm8BTX5rHBAZGhEKbX4XGxEKWE0XSxE =
+X-CLX-Shades: Deliver
+X-CLX-UShades: None
+X-CLX-Score: 1005
+X-CLX-UnSpecialScore: 66
+X-CLX-Spam: false
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:,,
+ definitions=2019-03-20_09:,, signatures=0
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=1005 suspectscore=0 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=clx:Deliver adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1812120000 definitions=main-1903200115
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0134_01D4DF36.E6EBFB40
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dorotka,
+
+=20
+
+Wy=C5=9Blij prosz=C4=99 nasze NDA na ten adres:
+
+Arkadiusz Binder energo@icloud.com <mailto:energo@icloud.com>=20
+
+=20
+
+=20
+
+Pozdrawiam/Best regards
+Arkadiusz =C5=9Amigielski
+________________________
+
+Arkadiusz =C5=9Amigielski
+Chief Executive Officer (CEO)
+Prezes Zarz=C4=85du
+
+OptiNav Sp. z o.o.=20
+
+Carl Zeiss Group
+ul. Grunwaldzka 10
+76-200 S=C5=82upsk, Poland
+
+tel: +48 662 010 174
+ <mailto:smigielski@optinav.pl> smigielski@optinav.pl
+ <http://www.optinav.pl/> www.optinav.pl
+
+=20
+
+Od: Arkadiusz Binder <energo@icloud.com>=20
+Wys=C5=82ano: Monday, March 18, 2019 7:17 PM
+Do: Arkadiusz =C5=9Amigielski <smigielski@optinav.pl>
+Temat: Analiza zastosowania podstaowych poje=CC=A8c=CC=81 z wikipedii =
+dla potrzeb rozwia=CC=A8zania problemu efektywnego dzia=C5=82ania =
+wykruywania cech obrazu w produkcie OptiNav w konteks=CC=81cie =
+zasz=C5=82yszanych problemo=CC=81w
+
+=20
+
+Tu model z drona, bardizej uzasadniony - nie skonczona koncepcja.=20
+
+
+------=_NextPart_000_0134_01D4DF36.E6EBFB40
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<META HTTP-EQUIV=3D"Content-Type" CONTENT=3D"text/html; =
+charset=3Dutf-8">
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta name=3DGenerator =
+content=3D"Microsoft Word 15 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Stylwiadomocie-mail18
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US =
+link=3D"#0563C1" vlink=3D"#954F72"><div class=3DWordSection1><p =
+class=3DMsoNormal>Dorotka,<o:p></o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNormal><span =
+lang=3DPL>Wy=C5=9Blij prosz=C4=99 nasze NDA na ten =
+adres:<o:p></o:p></span></p><p class=3DMsoNormal><span =
+lang=3DPL>Arkadiusz Binder <a =
+href=3D"mailto:energo@icloud.com">energo@icloud.com</a><o:p></o:p></span>=
+</p><p class=3DMsoNormal><span lang=3DPL><o:p>&nbsp;</o:p></span></p><p =
+class=3DMsoNormal><span lang=3DPL><o:p>&nbsp;</o:p></span></p><div><p =
+class=3DMsoNormal><span lang=3DPL =
+style=3D'font-size:10.0pt;color:black'>Pozdrawiam/Best =
+regards</span><span lang=3DPL><br>Arkadiusz =
+=C5=9Amigielski<br>________________________<o:p></o:p></span></p><p =
+class=3DMsoNormal><b><span lang=3DPL>Arkadiusz =
+=C5=9Amigielski</span></b><span lang=3DPL><br>Chief Executive Officer =
+(CEO)<br>Prezes Zarz=C4=85du<br><br>OptiNav Sp. z o.o. =
+<o:p></o:p></span></p><p class=3DMsoNormal><span lang=3DPL>Carl Zeiss =
+Group<br>ul. Grunwaldzka 10<br>76-200 S=C5=82upsk, Poland<br><br>tel: =
++48&nbsp;662 010 174<br><u><span style=3D'color:#00B0F0'><a =
+href=3D"mailto:smigielski@optinav.pl"><span =
+style=3D'color:#00B0F0'>smigielski@optinav.pl</span></a></span></u><span =
+style=3D'color:#00B0F0'><br><u><a href=3D"http://www.optinav.pl/"><span =
+style=3D'color:#00B0F0'>www.optinav.pl</span></a></u></span><o:p></o:p></=
+span></p></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in'><p class=3DMsoNormal><b><span lang=3DPL>Od:</span></b><span =
+lang=3DPL> Arkadiusz Binder &lt;energo@icloud.com&gt; =
+<br><b>Wys=C5=82ano:</b> Monday, March 18, 2019 7:17 PM<br><b>Do:</b> =
+Arkadiusz =C5=9Amigielski &lt;smigielski@optinav.pl&gt;<br><b>Temat:</b> =
+Analiza zastosowania podstaowych poje=CC=A8c=CC=81 z wikipedii dla =
+potrzeb rozwia=CC=A8zania problemu efektywnego dzia=C5=82ania =
+wykruywania cech obrazu w produkcie OptiNav w konteks=CC=81cie =
+zasz=C5=82yszanych problemo=CC=81w<o:p></o:p></span></p></div></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><p class=3DMsoNormal>Tu =
+model z drona, bardizej uzasadniony - nie skonczona =
+koncepcja.&nbsp;<o:p></o:p></p></div></div></body></html>
+------=_NextPart_000_0134_01D4DF36.E6EBFB40--
+
