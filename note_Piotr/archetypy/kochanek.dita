@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="kochanek">
-    <title>kochanek</title>
-    <shortdesc/>
+    <title>Kochanek</title>
+    <shortdesc>Reprezentuje ego.</shortdesc>
     <body>
-        <p></p>
+        <p>Osobowość wyróżniająca się brakiem korzeni, estetyzmem oraz ekstremalną subtelnością.
+            Kochanek nie jest bezpośredni. </p>
+        <p>Jego dotyk zdradza więcej, niż słowa, a słowa podporządkowane są roztaczanemu
+            urokowi.</p>
+        <p>Kieruje się uczuciami.</p>
+        <p>Kochanek to iluzjonista, administrator; w pewien sposób kłamca.</p>
     </body>
 </topic>

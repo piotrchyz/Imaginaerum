@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>MTUmontasje</title>
+    <topicref href="o_nas.dita"/>
+    <topicref href="kontakt.dita"/>
+    <topicref href="realizacje.dita"/>
+    <topicref href="technologia.dita"/>
+</map>

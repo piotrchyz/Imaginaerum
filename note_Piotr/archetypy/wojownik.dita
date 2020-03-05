@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="wojownik">
-    <title>wojownik</title>
+    <title>Wojownik</title>
+    <shortdesc>Reprezentuje instynkty</shortdesc>
     <body>
-        <p></p>
+        <p>Wojownik nie potrafi sobie pomóc; walczy do końca. Jest ekstremalnie bezpośredni, ale
+            stosuje też metody pośrednie. Wojownikowi zależy na wygraniu siebie poprzez
+            kształtowanie się na nowo. Osobowość ta charakteryzuje się wytrwałością, cierpliwością
+            oraz siłą, która powstaje w skutek czczenia walki. Opór kształtuje charakter. Jego
+            świadomość wyrasta z Ziemi, Świata Nawi.</p>
+        <p>Prawdziwy wojownik trzyma wszystko do kupy, nawet gdy inni zrozumieliby, że nie był w
+            stanie tego utrzymać. Wojownik się nie poddaje. To władca strachu. Strach transponuje w
+            podniecenie. Działa, jakby jego życie nie miało znaczenia. Po prawdzie, wojownik wierzy,
+            iż jego życie nabierze znaczenia po śmierci.</p>
+        <p>Świadomość wojownika wyrasta z Ziemi.</p>
+        <p>Wojownik kieruje się odczuciami.</p>
     </body>
 </topic>

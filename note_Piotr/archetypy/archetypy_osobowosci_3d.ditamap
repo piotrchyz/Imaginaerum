@@ -2,8 +2,15 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>archetypy osobowości 3D</title>
-    <topicref href="krol.dita"/>
-    <topicref href="wojownik.dita"/>
-    <topicref href="magik.dita"/>
-    <topicref href="kochanek.dita"/>
+    <topicref href="tetragrammaton.dita">
+        <topicref href="krol.dita">
+            <topicref href="gwiezdny_ogien_nhsh.dita"/>
+        </topicref>
+        <topicref href="magik.dita">
+            <topicref href="inkantacje.dita"/>
+        </topicref>
+        <topicref href="kochanek.dita"/>
+        <topicref href="wojownik.dita"/>
+    </topicref>
+    <topicref href="arcygama.dita"/>
 </map>

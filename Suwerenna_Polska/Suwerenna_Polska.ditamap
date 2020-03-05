@@ -3,30 +3,42 @@
 <map>
     <title>Suwerenna Polska</title>
     <topicref href="mistycyzm.dita">
-        <topicref href="s_owiano_aryjski_system_czakr_czlowieka.dita">
+        <topicref href="slawiano_aryjski_system_czakr_czlowieka.dita">
             <topicref href="zrodlo_slowiano_aryjski_system_czakralny.dita"/>
             <topicref href="polska__narod__ktory_gnije_w_milczeniu.dita"/>
-            <topicref href="mechanika_systemu_czakralnego.dita"/>
-            <topicref href="wiat_nawi.dita">
-                <topicref href="czakra_gwiazda_ziemi.dita"/>
-                <topicref href="czakra_podstawy.dita"/>
-                <topicref href="czakra_sakralna.dita"/>
-                <topicref href="czakra_splotu_s_onecznego.dita"/>
-            </topicref>
-            <topicref href="wiat_jawi.dita">
-                <topicref href="czakra_serca.dita"/>
-            </topicref>
-            <topicref href="swiat_slawi.dita">
-                <topicref href="cakra_lejla__chandra.dita"/>
-                <topicref href="czakra_surya.dita"/>
-            </topicref>
-            <topicref href="swiat_prawi.dita">
-                <topicref href="czakra_gard_a.dita"/>
-                <topicref href="czakra_trzeciego_oka.dita"/>
-                <topicref href="czakra_korony.dita"/>
-                <topicref href="czakra_kauzualna__przyczynowa__bindu.dita"/>
-                <topicref href="czakra_gwiazda_duszy.dita"/>
-                <topicref href="czakra_gwiezdna_brama.dita"/>
+            <topicref href="teoria_cialo_swietliste.dita">
+                <topicref href="mechanika_systemu_czakralnego.dita">
+                    <topicref href="wiat_nawi.dita">
+                        <topicref href="czakra_gwiazda_ziemi.dita"/>
+                        <topicref href="czakra_podstawy.dita">
+                            <topicref href="cierpliwosc.dita"/>
+                        </topicref>
+                        <topicref href="czakra_sakralna.dita">
+                            <topicref href="dyscyplina.dita"/>
+                            <topicref href="pokora.dita"/>
+                            <topicref href="czakra_slawa.dita"/>
+                        </topicref>
+                        <topicref href="czakra_splotu_slonecznego.dita"/>
+                    </topicref>
+                    <topicref href="swiat_jawi.dita">
+                        <topicref href="czakra_serca.dita"/>
+                    </topicref>
+                    <topicref href="swiat_slawi.dita">
+                        <topicref href="cakra_lejla__chandra.dita"/>
+                        <topicref href="czakra_surya.dita"/>
+                    </topicref>
+                    <topicref href="swiat_prawi.dita">
+                        <topicref href="czakra_gardla.dita"/>
+                        <topicref href="czakra_trzeciego_oka.dita"/>
+                        <topicref href="czakra_korony.dita"/>
+                        <topicref href="czakra_kauzualna__przyczynowa__bindu.dita"/>
+                        <topicref href="czakra_gwiazda_duszy.dita"/>
+                        <topicref href="czakra_gwiezdna_brama.dita"/>
+                    </topicref>
+                </topicref>
+                <topicref href="grzech.dita">
+                    <topicref href="pycha.dita"/>
+                </topicref>
             </topicref>
         </topicref>
         <topicref href="teoria_roar.dita">
@@ -60,11 +72,16 @@
                 <topicref href="gr.dita"/>
                 <topicref href="om.dita"/>
             </topicref>
-            <topicref href="emwe_lah.dita"/>
+            <topicref href="emwe_lah.dita">
+                <topicref href="olsnienie.dita"/>
+                <topicref href="sumienie.dita"/>
+            </topicref>
         </topicref>
-        <topicref href="tadeusz_mrozinski_o_ziemi_i_kosmosie.dita"/>
+        <topicref href="bogoznawstwo_slawian.dita">
+            <topicref href="tadeusz_mrozinski_o_ziemi_i_kosmosie.dita"/>
+        </topicref>
         <topicref href="asasiyun.dita"/>
-        <topicref href="istota_rzeczy.dita">
+        <topicref href="odpis_istoty_rzeczy.dita">
             <topicref href="afirmacje_hellen_w.dita">
                 <topicref href="aleksander_wielki.dita">
                     <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
@@ -110,6 +127,9 @@
                     <topicref href="greatest_warrior_quotes__live_with_valor.dita"/>
                 </topicref>
             </topicref>
+            <topicref href="afirmacje_hunow.dita">
+                <topicref href="czyngis_chan.dita"/>
+            </topicref>
         </topicref>
         <topicref href="chrzescijanie.dita">
             <topicref href="szymon_magus_vs_swiety_piotr.dita"/>
@@ -119,7 +139,8 @@
     </topicref>
     <topicref href="geopolityka.dita">
         <topicref href="geopolitycznosc_polski.dita">
-            <topicref href="hala_slawy.dita">
+            <topicref href="polonia_w_angli_oddaje_glosy_na_konfederacje.dita"/>
+            <topicref href="wiec_slawy.dita">
                 <topicref href="kazimierz__bradl__leski.dita"/>
             </topicref>
             <topicref href="historia.dita">
@@ -130,8 +151,11 @@
                     href="14_czerwiec__to_dzien_pamieci_o_polakach_zeslanych_do_auschwitz.dita"/>
                 <topicref href="roman_kryze__odpowiada_za_smierc_pileckiego.dita"/>
             </topicref>
-            <topicref href="partia_polityczna.dita">
+            <topicref href="polityka.dita">
                 <topicref href="pis.dita">
+                    <topicref href="wdrozenie_pegasus.dita"/>
+                    <topicref href="wydatki_spoleczne_w_polsce.dita"/>
+                    <topicref href="pis_i_frekwencja.dita"/>
                     <topicref href="megazus.dita"/>
                     <topicref href="pegasus.dita"/>
                     <topicref href="koscinski__minister_finansow.dita"/>
@@ -141,6 +165,7 @@
                     <topicref href="emerytury.dita"/>
                     <topicref href="skandal__pis_rozbil_polski_wywiad.dita"/>
                     <topicref href="pis__kolesie___rozdawnictwo___premie.dita"/>
+                    <topicref href="skradziona_z_pck_kasa_szla_na_kampanie_wyborcze_pis.dita"/>
                 </topicref>
                 <topicref href="konfederacja.dita">
                     <topicref href="jkm_w_sowieckiej_telewizji.dita"/>
@@ -150,6 +175,9 @@
                     <topicref
                         href="konfederacja__jakubiak__liroy__rola__szlachtowicz__o_przyszlosci_polskiej_prawicy.dita"
                     />
+                </topicref>
+                <topicref href="wosp.dita">
+                    <topicref href="skradziona_z_pck_kasa_szla_na_kampanie_wyborcze_pis.dita"/>
                 </topicref>
             </topicref>
             <topicref href="politycy.dita">
@@ -186,6 +214,8 @@
                         <topicref href="jonny_daniels__mateusz_morawiecki.dita"/>
                         <topicref href="jonny_daniels__prezydent_duda.dita"/>
                         <topicref href="jonny_daniels__tadeusz_rydzyk.dita"/>
+                        <topicref
+                            href="Chazarzy___konfederacja___kaczynski___rydzyk___liroy.dita"/>
                     </topicref>
                 </topicref>
                 <topicref href="polska_ropa_naftowa.dita"/>
@@ -226,7 +256,6 @@
             <topicref href="rosyjska_propaganda.dita"/>
             <topicref href="patointeligencja.dita"/>
             <topicref href="mafie_smieciowe.dita"/>
-            <topicref href="wdrozenie_pegasus.dita"/>
             <topicref href="1polska_houston_mamy_problem.dita"/>
             <topicref href="1polska__zastraszanie_partii.dita"/>
             <topicref href="unia_europejska_vs_morawiecki.dita"/>
@@ -246,7 +275,6 @@
             <topicref href="stop_act_just_447.dita"/>
             <topicref href="iii_wojna_swiatowa_wybuchnie_obok_polski.dita"/>
             <topicref href="koniec_wspolpracy_liroya_z_jakubiakiem.dita"/>
-            <topicref href="wydatki_spoleczne_w_polsce.dita"/>
             <topicref href="statystyka_gospodarcza_polski.dita"/>
             <topicref href="tyson_o_powstaniu_warszawskim.dita"/>
             <topicref href="1polska__inicjatywa_i_przedstawienie_kandydatow.dita"/>
@@ -290,7 +318,6 @@
             <topicref href="antysystemowcy__gdzie_jest_lider.dita"/>
             <topicref href="kwota_wolna_od_podatku_w_polsce.dita"/>
             <topicref href="co_sie_stalo_z_lepperem.dita"/>
-            <topicref href="pis_i_frekwencja.dita"/>
             <topicref href="usa_jest_winne_polsce_miliardy_dolarow_paderewskiego.dita"/>
             <topicref href="niemcy_sa_winne_polsce_ok__820_mld_reparacji_wojennych.dita"/>
             <topicref href="doswiadczenia_polaka_z_paryza_dotyczace_zydostwa.dita"/>
@@ -301,6 +328,7 @@
         </topicref>
         <topicref href="geopolitycznosc_swiata.dita">
             <topicref href="usa.dita">
+                <topicref href="5g__koronawirus__a_rockefeller.dita"/>
                 <topicref href="cejrowski_doktryna_trumpa.dita"/>
                 <topicref href="namaszczenie_trumpa.dita"/>
                 <topicref href="plan_alberta_pike_a.dita"/>
@@ -309,6 +337,7 @@
                 <topicref href="ameryka_vs__polska.dita"/>
                 <topicref href="amerykanscy_zolnierze_pobili_polakow.dita"/>
                 <topicref href="usa_jest_winne_polsce_miliardy_dolarow_paderewskiego.dita"/>
+                <topicref href="bartosiak__czy_hegemonia_ameryki_sie_konczy.dita"/>
             </topicref>
             <topicref href="rosja.dita">
                 <topicref href="pieriestojka.dita"/>
@@ -326,6 +355,9 @@
                 <topicref href="niemiecki_mistycyzm.dita"/>
                 <topicref href="ue__suwerennosc_wzgledem_swego_suwerena.dita"/>
             </topicref>
+            <topicref href="wielka_brytania.dita">
+                <topicref href="polonia_w_angli_oddaje_glosy_na_konfederacje.dita"/>
+            </topicref>
             <topicref href="slawia.dita">
                 <topicref href="iv_rzesza__imigranci__jaki_procent_z_nich__to_kryminalisci.dita"/>
             </topicref>
@@ -336,6 +368,7 @@
             <topicref href="niemcy.dita">
                 <topicref href="niemcy_sa_winne_polsce_ok__820_mld_reparacji_wojennych.dita"/>
                 <topicref href="obozy_zaglady_nie_byly_polskie.dita"/>
+                <topicref href="niemcy__atak_przeciwko_zydostwu.dita"/>
             </topicref>
             <topicref href="szwecja.dita">
                 <topicref href="szwecja__raj__ktory_stal_sie_pieklem__przestroga_dla_europy.dita"/>
@@ -416,6 +449,7 @@
             <topicref href="5g__rezerwat_zwany_polska.dita"/>
             <topicref href="5g_to_zagrozenie.dita"/>
             <topicref href="chcemy_miec_lepsze_zdrowie__czy_szybzy_internet.dita"/>
+            <topicref href="5g__koronawirus__a_rockefeller.dita"/>
         </topicref>
         <topicref href="miszmasz.dita">
             <topicref
@@ -466,8 +500,11 @@
                 <topicref href="emwe_lah.dita"/>
             </topicref>
             <topicref href="wladcy.dita">
-                <topicref href="zygmunt_iii_waza__44_krol_polski_wg_kolumny_zygmunta.dita"/>
                 <topicref href="leh_iii_ariowit.dita"/>
+                <topicref href="mieszko_iii.dita">
+                    <topicref href="moneta_mieszka_iii.dita"/>
+                </topicref>
+                <topicref href="zygmunt_iii_waza__44_krol_polski_wg_kolumny_zygmunta.dita"/>
             </topicref>
             <topicref href="dyskusje_na_temat.dita">
                 <topicref href="swaroznica.dita"/>
@@ -485,7 +522,6 @@
             <topicref href="korzenie_prusow.dita"/>
             <topicref href="interpretacja_snu_nabuchodonozora_przez_daniela.dita"/>
             <topicref href="megality_sprzed_5500_lat_w_polsce.dita"/>
-            <topicref href="polonia_w_angli_oddaje_glosy_na_konfederacje.dita"/>
         </topicref>
         <topicref href="legendy_to_nie_bajki.dita"/>
         <topicref href="egipt__plaskorzezby_przedstawiajace_bogow.dita"/>
@@ -507,5 +543,11 @@
         <topicref href="geoinzynieria__bron_promienista_nowej_generacji.dita"/>
         <topicref href="robert_downey_jr__chce_w_ciagu_dekady_oczyscic_ziemie.dita"/>
         <topicref href="geoinzynieria__zaniepokojony_polak_o_tym__co_sie_dzieje.dita"/>
+    </topicref>
+    <topicref href="tozsamosc_polaka.dita">
+        <topicref href="herb_polski.dita"/>
+        <topicref href="artefakty.dita">
+            <topicref href="moneta_mieszka_iii.dita"/>
+        </topicref>
     </topicref>
 </map>
