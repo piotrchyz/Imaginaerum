@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="aktywno___odebranie_prawdziwemu_bohaterowi_to_samo_ci">
+    <title>aktywność odebranie prawdziwemu bohaterowi tożsamości</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context/>
+        <steps>
+            <step>
+                <cmd>wybranie za cel <xref href="glossary.bohater.dita">Bohatera</xref></cmd>
+            </step>
+            <step>
+                <cmd><xref href="wykonywanie_dzia_a__negatywnych_w_stosunku_do_osoby.dita"/></cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="drugie_pokolenie___osoba_oprawca_jest_spokrewniona__posiada_rodzica_lub_dziadka___kt_ry_by__aktywnym_oprawc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+    <title>Drugie pokolenie - osoba oprawca jest spokrewniona (posiada rodzica lub dziadka), który był aktywnym oprawcą </title>
+    <related-links>
+        <linklist>
+            <title>W przypakdu, kiedy osoba/rodzic była jednym z </title>
+            <link href="negatywne_role.oprawcy.dita"/>
+            <linklist>
+                <title>np:</title>
+                <link href="negatywne_role.oszust.dita"/>
+                <link href="negatywne_role.bandyta.dita"/>
+                <link href="negatywne_role.beneficjent_dzia_a__oprawczych.dita"/>
+            </linklist>
+            <linklist>
+                <title>to na podstawie np. </title>
+                <link href="prowokator_z_ukrainy_28_latek.dita"/>
+            </linklist>
+            <linklist>
+                <title>można się spodziewać, że syn/wnuk, będzie podobnie przymować rolę </title>
+                <link href="negatywne_role.oszust.dita"/>
+                <link href="negatywne_role.bandyta.dita"/>
+                <link href="negatywne_role.beneficjent_dzia_a__oprawczych.dita"/>
+            </linklist>
+        </linklist>
+    </related-links>
+</topic>
