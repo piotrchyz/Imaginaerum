@@ -20,7 +20,7 @@
       <ptn:Attract_min>-60.0</ptn:Attract_min>
       <ptn:Input__x3A__attract__x3A__vectors>
          <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+         <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
          <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
       </ptn:Input__x3A__attract__x3A__vectors>
    </ptn:Defaults>
@@ -44,7 +44,7 @@
          <ptn:Simulated_potential>-71.0</ptn:Simulated_potential>
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
@@ -68,7 +68,7 @@
          <ptn:Simulated_potential>-71.0</ptn:Simulated_potential>
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
@@ -92,693 +92,70 @@
          <ptn:Simulated_potential>-71.0</ptn:Simulated_potential>
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
-      <!--#85AGG [ptn:Receptor__x3A__generate] [10][to][13]-->
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="10"
-                    ptn:Coordinate_X__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated="10"
-                    p5suis:say.PL="Konfiguracja matrycy receptorów o wymiarach X 3 , Y 3"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X10_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
+      <ptn:Receptor>
+         <ptn:Label ptn:Simulation__x3A__visualize="true">Stres</ptn:Label>
+         <ptn:Coordinate_X>40</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>3</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance>0.1</ptn:Capacitance>
+         <ptn:Resistance>20.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
          <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Resting_potential>-50.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-65.0</ptn:Reset_potential>
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-71.0</ptn:Simulated_potential>
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="10"
-                    ptn:Coordinate_X__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X10_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="10"
-                    ptn:Coordinate_X__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X10_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="10"
-                    ptn:Coordinate_X__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X10_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y13_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated="10"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X11_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X11_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X11_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X11_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y13_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated="10"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X12_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X12_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X12_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X12_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y13_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated__separator="100"
-                    ptn:Coordinate_Y__x3A__generated="10"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="85"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X13_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated__separator="110"
-                    ptn:Coordinate_Y__x3A__generated="11"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="105"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="-5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X13_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated__separator="120"
-                    ptn:Coordinate_Y__x3A__generated="12"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="125"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="5"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X13_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio="0.3"
-                    ptn:Coordinate_X__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated__separator="130"
-                    ptn:Coordinate_Y__x3A__generated="13"
-                    ptn:Coordinate_X__x3A__min="100"
-                    ptn:Coordinate_X__x3A__max="130"
-                    ptn:Coordinate_Y__x3A__min="100"
-                    ptn:Coordinate_Y__x3A__max="130"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="145"
-                    ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="15"
-                    ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="-150">
-         <ptn:Label>RG__X13_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70.0</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y13_Z10</ptn:Receptor_regex_filter>
+         <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Inputs xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Input>
-         <ptn:Input_exec_time>1</ptn:Input_exec_time>
+         <ptn:Input_exec_time>10</ptn:Input_exec_time>
          <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
          <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
          <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
       </ptn:Input>
       <ptn:Input>
-         <ptn:Input_exec_time>2</ptn:Input_exec_time>
+         <ptn:Input_exec_time>12</ptn:Input_exec_time>
          <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
          <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
          <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
       </ptn:Input>
       <ptn:Input>
-         <ptn:Input_exec_time>3</ptn:Input_exec_time>
+         <ptn:Input_exec_time>13</ptn:Input_exec_time>
          <ptn:Input_exec_receptor>C</ptn:Input_exec_receptor>
          <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
          <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
       </ptn:Input>
       <ptn:Input>
-         <ptn:Input_exec_time>4</ptn:Input_exec_time>
-         <ptn:Input_exec_receptor>RG__X11_Y10_Z10</ptn:Input_exec_receptor>
+         <ptn:Input_exec_time>22</ptn:Input_exec_time>
+         <ptn:Input_exec_receptor>A</ptn:Input_exec_receptor>
          <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
          <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
       </ptn:Input>
       <ptn:Input>
-         <ptn:Input_exec_time>5</ptn:Input_exec_time>
-         <ptn:Input_exec_receptor>RG__X11_Y11_Z10</ptn:Input_exec_receptor>
+         <ptn:Input_exec_time>23</ptn:Input_exec_time>
+         <ptn:Input_exec_receptor>B</ptn:Input_exec_receptor>
          <ptn:Input_exec_Time_constant>2</ptn:Input_exec_Time_constant>
          <ptn:Input_exec_Maximum_current>3</ptn:Input_exec_Maximum_current>
       </ptn:Input>
-      <ptn:Input__x3A__generate>
-         <ptn:Input_exec_time ptn:Input_exec_time__x3A__start="2"
-                              ptn:Input_exec_time__x3A__end="3"
-                              ptn:Input_exec_time__x3A__pause="1"/>
-         <ptn:Input_exec_receptor ptn:Input_exec_receptor__start="1" ptn:Input_exec_receptor__end="3"/>
-         <ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__start="2"
-                                       ptn:Input_exec_Time_constant__x3A__end="2"/>
-         <ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__start="4"
-                                         ptn:Input_exec_Maximum_current__x3A__end="4"/>
-      </ptn:Input__x3A__generate>
-      <ptn:Input__x3A__generate__x3A__pattern ptn:Input__x3A__generate__x3A__sequences="9">
-         <ptn:Group__x3A__generate__x3A__pattern_Group ptn:Simulation__x3A__DEF__x3A__elements__x3A__group="Input_Attract">
-            <ptn:Input__x3A__generate__x3A__Shape>
-               <ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="todo300D">
-                  <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A1-A2D">
-                     <ptn:keyValue__generate__basepoint_1 ptn:Coordinate_X="10" ptn:Coordinate_Y="10" ptn:Coordinate_Z="-50"/>
-                     <ptn:keyValue__generate__basepoint_2 ptn:Coordinate_X="20" ptn:Coordinate_Y="20" ptn:Coordinate_Z="-50"/>
-                  </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-                  <ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector DEF="A2-A4D">
-                     <ptn:keyValue__generate__basepoint_1 ptn:debug="todo301D"
-                                                          ptn:Coordinate_X="21"
-                                                          ptn:Coordinate_Y="20"
-                                                          ptn:Coordinate_Z="-60"/>
-                     <ptn:keyValue__generate__basepoint_2 ptn:debug="todo304D"
-                                                          ptn:Coordinate_X="30"
-                                                          ptn:Coordinate_Y="10"
-                                                          ptn:Coordinate_Z="-60"/>
-                  </ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector>
-                  <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="10"
-                                                                                              ptn:Coordinate_Y__x3A__vector="10"
-                                                                                              ptn:Coordinate_Z__x3A__vector="10"
-                                                                                              ptn:MFVec3f__x3A__distance__x3A__percent="0.4"/>
-                  <ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="10"
-                                                                                              ptn:Coordinate_Y__x3A__vector="-10"
-                                                                                              ptn:Coordinate_Z__x3A__vector="-10"
-                                                                                              ptn:MFVec3f__x3A__distance__x3A__percent="0.8"/>
-                  <ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector ptn:debug="#242D [TODO??[ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min]???[ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max]] modyfikacja 1 - jak tlumaczyc obiekt do receptorow">
-                     <ptn:Input_exec_timex__x3A__generate__x3A__pattern ptn:Input_exec_time__x3A__generate__x3A__pattern___x3A___pause="2"
-                                                                        ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min="1"
-                                                                        ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max="5"/>
-                     <ptn:Input_exec_receptor__x3A__generate__x3A__pattern/>
-                     <ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern>2</ptn:Input_exec_Time_constant__x3A__generate__x3A__pattern>
-                     <ptn:Input_exec_Maximum_current__x3A__generate__x3A__pattern>3</ptn:Input_exec_Maximum_current__x3A__generate__x3A__pattern>
-                  </ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector>
-                  <ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance>
-                     <ptn:Input__x3A__generate__x3A__pattern__x3A__Material emissiveColor="1 0 0"
-                                                                            DEF="A1_Input__x3A__generate__x3A__pattern_emissiveColor"/>
-                     <ptn:Input__x3A__generate__x3A__pattern__x3A__LineProperties applied="true" linewidthScaleFactor="1" linetype="1"/>
-                  </ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance>
-               </ptn:Input__x3A__generate__x3A__pattern_Group>
-            </ptn:Input__x3A__generate__x3A__Shape>
-         </ptn:Group__x3A__generate__x3A__pattern_Group>
-      </ptn:Input__x3A__generate__x3A__pattern>
    </ptn:Inputs>
    <ptn:Simulation xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
       <ptn:Simulator_tick>1</ptn:Simulator_tick>
-      <ptn:Simulation_ticks>10</ptn:Simulation_ticks>
+      <ptn:Simulation_ticks>300</ptn:Simulation_ticks>
    </ptn:Simulation>
 </ptn:Simulation.analys.xml__x3A__Receptor__x3A__generate.xml>

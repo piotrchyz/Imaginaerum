@@ -6,12 +6,71 @@
                           ptn:Simulation_body_time="3"
                           ptn:Simulation_body_time__x3A__last="2"
                           ptn:Simulator_tick="1">
-   <ptn:Simulation.attract__x3A__aggregate/>
+   <ptn:Simulation.attract__x3A__aggregate ptn:debug="#17 mode/name ptn:Simulation.attract__x3A__aggregate"><!--#71 aggregate bypassed[n][ptn:Refactory_period__x3A__flag] -->
+      <ptn:Simulation.Stress__x3A__calculate xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
+                                             xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+                                             xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+                                             p5suis:say.PL="Stres dla węzła Stres w scenie nr 3 ."
+                                             ptn:Label__x3A__context="Stres"
+                                             ptn:Label="Stres"
+                                             ptn:Distance="0.0009765625"
+                                             ptn:Simulated_potential__x3A__diff="0"
+                                             ptn:Simulated_potential__x3A__more_charged_node="Stres"
+                                             ptn:Simulated_potential__x3A__less_charged_node="Stres"
+                                             ptn:Output_Node__x3A__attract="Stres-to-Stres"
+                                             ptn:debug="#190XX@  create more clone, reconfigure self, mabe some inhibitors install std create; [ptn:Outputs/#[0]]  n[ptn:Receptor]  [ptn:Coordinate_X[40]] [$ptn:Coordinate_X[40]]">
+         <ptn:Simulation.Stress__x3A__calculate__x3A__output_node ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="ptn:Leaky_neuron_standard">
+            <ptn:Label ptn:Simulation__x3A__visualize="true">Stres-to-Stres</ptn:Label>
+            <ptn:Coordinate_X__calculate__x3A__empty__x3A__assert ptn:Coordinate_X__x3A__more_charged_node="40"/>
+            <ptn:Coordinate_X>40.4</ptn:Coordinate_X>
+            <ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert ptn:Coordinate_Y__x3A__more_charged_node="3"/>
+            <ptn:Coordinate_Y>4</ptn:Coordinate_Y>
+            <ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert ptn:Coordinate_Z__x3A__more_charged_node="0"/>
+            <ptn:Coordinate_Z>1</ptn:Coordinate_Z>
+            <ptn:Capacitance ptn:debug="#167 todo validate method sum caps - use template to extract values ">0.12</ptn:Capacitance>
+            <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert ptn:Output_Node__x3A__attract="Stres-to-Stres">
+               <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert ptn:Label__x3A__context="Stres"
+                                                                                            ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio="1.2">0.1</ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert>
+            </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert>
+            <ptn:Resistance>20.0</ptn:Resistance>
+            <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
+            <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
+            <ptn:Resting_potential>-70.0</ptn:Resting_potential>
+            <ptn:Reset_potential>-65.0</ptn:Reset_potential>
+            <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
+            <ptn:Refactory_period>2.0</ptn:Refactory_period>
+            <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
+            <ptn:Outputs/>
+            <ptn:Input__x3A__nodes>
+               <ptn:Input__x3A__node>Stres</ptn:Input__x3A__node>
+            </ptn:Input__x3A__nodes>
+            <ptn:Input__x3A__nodes__x3A__prohibit>
+               <ptn:Input__x3A__node__x3A__prohibit>Stres</ptn:Input__x3A__node__x3A__prohibit>
+            </ptn:Input__x3A__nodes__x3A__prohibit>
+            <ptn:Simulated_potential>-65.0</ptn:Simulated_potential>
+            <ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio="1">
+               <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>
+               <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>0.4</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>
+               <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>
+               <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment__x3A__assert>10</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.increment__x3A__assert>
+               <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate__x3A__assert>
+            </ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert>
+            <ptn:Input__x3A__attract__x3A__vectors ptn:debug="#124 to implement more than stress">
+               <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0.2</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
+               <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+               <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
+            </ptn:Input__x3A__attract__x3A__vectors>
+         </ptn:Simulation.Stress__x3A__calculate__x3A__output_node>
+      </ptn:Simulation.Stress__x3A__calculate>
+   </ptn:Simulation.attract__x3A__aggregate>
    <ptn:Receptors xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
                   xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-                  xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd">
+                  xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+                  p5suis:group.name="Receptors in scene 3"
+                  p5suis:group.by="child::local-name()"
+                  p5suis:group-desc="child::local-name()">
       <ptn:Receptor>
-         <ptn:Label>A</ptn:Label>
+         <ptn:Label ptn:Simulation__x3A__visualize="true">A</ptn:Label>
          <ptn:Coordinate_X>0</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
          <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
@@ -24,25 +83,18 @@
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs>
-            <ptn:Current_synapse>
-               <ptn:Maximum_current>4.0</ptn:Maximum_current>
-               <ptn:Time_constant>2.0</ptn:Time_constant>
-               <ptn:Delay>5.0</ptn:Delay>
-               <ptn:Output_Node>A-to-A</ptn:Output_Node>
-            </ptn:Current_synapse>
-         </ptn:Outputs>
+         <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-74.9</ptn:Simulated_potential>
+         <ptn:Simulated_potential ptn:debug="#101 testing correct order flags">-70.941192</ptn:Simulated_potential>
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
          <ptn:Receptor_regex_filter>A</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
-         <ptn:Label>B</ptn:Label>
+         <ptn:Label ptn:Simulation__x3A__visualize="true">B</ptn:Label>
          <ptn:Coordinate_X>10</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
          <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
@@ -57,17 +109,16 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-55.49719200000001</ptn:Simulated_potential>
-         <ptn:Attract__x3A__flag><!--#59 TODO handle this flag when created model stale flag that was used-->true</ptn:Attract__x3A__flag>
+         <ptn:Simulated_potential ptn:debug="#101 testing correct order flags">-70.941192</ptn:Simulated_potential>
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
          <ptn:Receptor_regex_filter>B</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
-         <ptn:Label>C</ptn:Label>
+         <ptn:Label ptn:Simulation__x3A__visualize="true">C</ptn:Label>
          <ptn:Coordinate_X>20</ptn:Coordinate_X>
          <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
          <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
@@ -82,429 +133,57 @@
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-63.141192000000004</ptn:Simulated_potential>
+         <ptn:Simulated_potential ptn:debug="#101 testing correct order flags">-70.941192</ptn:Simulated_potential>
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0.1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
          <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
       <ptn:Receptor>
-         <ptn:Label>RG__X10_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
+         <ptn:Label ptn:Simulation__x3A__visualize="true">Stres</ptn:Label>
+         <ptn:Coordinate_X>40</ptn:Coordinate_X>
+         <ptn:Coordinate_Y>3</ptn:Coordinate_Y>
+         <ptn:Coordinate_Z>0</ptn:Coordinate_Z>
+         <ptn:Capacitance ptn:debug="#125B to test  [0.1] mode ptn:Simulation.model.xml - now calc __x3A__calculate__x3A__empty">0.08333333333333334</ptn:Capacitance>
+         <!--#130BB call-template name="ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert"-->
+         <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert ptn:Output_Node__x3A__attract="Stres-to-Stres"
+                                                                     ptn:debug="#86 mdoe ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert on [n][ptn:Capacitance__x3A__attract__x3A__calculate]">
+            <ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node ptn:Label__x3A__context="Stres"
+                                                                            ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio="1.2">0.1</ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node>
+         </ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert>
+         <ptn:Resistance>20.0</ptn:Resistance>
          <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
          <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
+         <ptn:Resting_potential>-50.0</ptn:Resting_potential>
+         <ptn:Reset_potential>-65.0</ptn:Reset_potential>
          <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
          <ptn:Refactory_period>2.0</ptn:Refactory_period>
          <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
          <ptn:Outputs/>
          <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
+         <ptn:Simulated_potential>-65.0</ptn:Simulated_potential>
+         <ptn:Refactory_period__x3A__flag ptn:debug="#70 mode testing simulate model [n][ptn:Refactory_period__x3A__flag]">
+            <ptn:Refactory_period__x3A__flag__x3A__until ptn:debug="#70 mode testing simulate model [n][ptn:Refactory_period__x3A__flag__x3A__until]">5</ptn:Refactory_period__x3A__flag__x3A__until>
+         </ptn:Refactory_period__x3A__flag>
+         <!--#57M unintended/n[ptn:Output__x3A__flag]-->
+         <!--#59M unintended/n[ptn:Output__x3A__flag__x3A__emmit]-->
+         <ptn:Output__x3A__flag__x3A__emmit/>
+         <ptn:Stress__x3A__flag><!--#59X TODO handle this flag when created model stale flag that was used-->true</ptn:Stress__x3A__flag>
+         <!--#74M to implement context attract/n[ptn:Simulation.Stress__x3A__calculate]-->
          <ptn:Input__x3A__attract__x3A__vectors>
             <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
+            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
             <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
          </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X10_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X10_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X10_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>100</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X10_Y13_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X11_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X11_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X11_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X11_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>110</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X11_Y13_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X12_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X12_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X12_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X12_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>120</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X12_Y13_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X13_Y10_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>100</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y10_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X13_Y11_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>110</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y11_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X13_Y12_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>120</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y12_Z10</ptn:Receptor_regex_filter>
-      </ptn:Receptor>
-      <ptn:Receptor>
-         <ptn:Label>RG__X13_Y13_Z10</ptn:Label>
-         <ptn:Coordinate_X>130</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>130</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes/>
-         <ptn:Simulated_potential>-70</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors>
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-         <ptn:Receptor_regex_filter>RG__X13_Y13_Z10</ptn:Receptor_regex_filter>
+         <ptn:Receptor_regex_filter>C</ptn:Receptor_regex_filter>
       </ptn:Receptor>
    </ptn:Receptors>
    <ptn:Nodes xmlns:x3d="http://www.web3d.org/specifications/x3d-3.0.xsd"
               xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
-              xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd">
-      <ptn:Leaky_neuron_standard>
-         <ptn:Label>A-to-A</ptn:Label>
-         <ptn:Coordinate_X>0</ptn:Coordinate_X>
-         <ptn:Coordinate_Y>0</ptn:Coordinate_Y>
-         <ptn:Coordinate_Z>10</ptn:Coordinate_Z>
-         <ptn:Capacitance>0.5</ptn:Capacitance>
-         <ptn:Resistance>100.0</ptn:Resistance>
-         <ptn:Minimum_voltage>-90.0</ptn:Minimum_voltage>
-         <ptn:Maximum_voltage>60.0</ptn:Maximum_voltage>
-         <ptn:Resting_potential>-70.0</ptn:Resting_potential>
-         <ptn:Reset_potential>-75.0</ptn:Reset_potential>
-         <ptn:Firing_threshold>-55.0</ptn:Firing_threshold>
-         <ptn:Refactory_period>2.0</ptn:Refactory_period>
-         <ptn:Is_inhibitor>0</ptn:Is_inhibitor>
-         <ptn:Outputs/>
-         <ptn:Input__x3A__nodes>
-            <ptn:Input__x3A__node>A</ptn:Input__x3A__node>
-         </ptn:Input__x3A__nodes>
-         <ptn:Input__x3A__nodes__x3A__prohibit>
-            <ptn:Input__x3A__node__x3A__prohibit>A</ptn:Input__x3A__node__x3A__prohibit>
-         </ptn:Input__x3A__nodes__x3A__prohibit>
-         <ptn:Simulated_potential>-74.9</ptn:Simulated_potential>
-         <ptn:Input__x3A__attract__x3A__vectors ptn:debug="#124 to implement more than stress">
-            <ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>0</ptn:Coordinate_Y__x3A__Input__X3A__attract__x3A__vector>
-            <ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>1</ptn:Coordinate_Z__x3A__Input__X3A__attract__x3A__vector>
-         </ptn:Input__x3A__attract__x3A__vectors>
-      </ptn:Leaky_neuron_standard>
-   </ptn:Nodes>
+              xmlns:p5suis="http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd"
+              p5suis:group.name="Nodes in scene 3"
+              p5suis:group.by="child::local-name()"
+              p5suis:group-desc="child::local-name()"/>
 </ptn:Simulation.model.xml>
