@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="wsparcie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+    <title>Wsparcie</title>
+    <body>
+        <p>Serwis powstał dzięki współpracy z amerykańską fundacją na rzecz otwartej
+            komunikacji.</p>
+        <lq><p><b>Instytut Wielka Polska</b></p>176 Java Street<p>Brooklyn, NY 11222</p></lq>
+    </body>
+</topic>

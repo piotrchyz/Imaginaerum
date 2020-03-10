@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="wykonywanie_dzia_a__negatywnych_w_stosunku_do_osoby">
+    <title>wykonywanie działań negatywnych w stosunku do osoby</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>
+            <p>Celem tego działania jest wprowadzenie w błąd opinii publicznej na temat prawdziwego
+                działania jakiejs osoby.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>typowy sposób wykonywania działań</cmd>
+                <substeps>
+                    <substep>
+                        <cmd><xref
+                                href="dzialania_negatywne.ukrywanie_prawdziwych_dzia_a__oraz_motyw_w__jakimi_kierowa_a_si__dana_osoba.dita"
+                            /></cmd>
+                    </substep>
+                    <substep>
+                        <cmd><xref
+                                href="dzialania_negatywne.nadawanie_cech_dzia_a__danej_osoby_w_taki_spos_b_aby_pasowa_y_one_do_bie__cej_mody_propagandy_narracji_realizowanej_przez_pozosta_e_struktury_oepracyjne.dita"
+                            /></cmd>
+                    </substep>
+                    <substep>
+                        <cmd><xref
+                                href="dzialania_negatywne.likwidacja__wiadk_w_prawdzi_ych_dzia_a__danej_osoby.dita"
+                            /></cmd>
+                    </substep>
+                    <substep>
+                        <cmd><xref
+                                href="dzialania_negatywne.preparowanie_fa_szywych_materia__w_na_temat_dzia_a__danej_osoby.dita"
+                            /></cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+    </taskbody>
+</task>

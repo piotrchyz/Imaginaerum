@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="przem_wienie_jacka_kuronia_o_bogactwie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+    <title>Przemówienie Jacka Kuronia o bogactwie </title>
+    <body>
+        <object data="kuron/Przemowienie_Jacka_Kuronia_o_bogactwie.mp4" outputclass="video"/>
+    </body>
+    <related-links>
+        <linkpool role="parent">
+            <link href="jacek_kuro.dita"/>
+        </linkpool>
+    </related-links>
+</topic>

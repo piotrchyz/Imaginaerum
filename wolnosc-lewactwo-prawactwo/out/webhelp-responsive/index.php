@@ -1,0 +1,241 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" lang="en" dir="ltr">
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="wh-path2root" content="" /><title>http://lewactwo-vs-prawactwo.org</title>
+        
+                
+        <script>
+            /**
+             * If an old URL is given, redirect to the corresponding topic from the WebHelp Responsive
+             */
+            var actualLocation = window.location.href;
+            var newLocation;
+            if (actualLocation.indexOf('/#')!=-1) {
+                newLocation = actualLocation.replace(/\/#/g, "/");
+                window.location.replace(newLocation);
+            }
+            if (actualLocation.match(/\/index\.(.*)#/gi)!=null) {
+                newLocation = actualLocation.replace(/\/index\.(.*)#/gi, "/");
+                window.location.replace(newLocation);
+            }
+        </script>
+
+        <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+        
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/main-page.css?buildId=2018061311" />
+
+        
+        <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"></script>
+
+        <script data-main="./oxygen-webhelp/app/main-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen-red.css?buildId=2018061311" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    </head>
+    <body class="wh_main_page">
+        <a href="#content" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="index.html"><span xmlns="" class="title">http://lewactwo-vs-prawactwo.org</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li class="has-children"><span data-tocid="tocId-d66e11" data-state="not-ready" class=" topicref "><span class="title"><a href="referencje.geremek_prawda.html">referencje</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e468" data-state="not-ready" class=" topicref "><span class="title"><a href="glossary.bartoszewski.html">Osoby</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e510" data-state="not-ready" class=" topicref "><span class="title"><a href="negatywne_role.oprawcy.html">Role</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e568" data-state="not-ready" class=" topicref "><span class="title"><a href="aktywno___odebranie_prawdziwemu_bohaterowi_to_samo_ci.html">Typowe aktywności</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e641" data-state="not-ready" class=" topicref "><span class="title"><a href="rotmistrz_pilecki.html">Ofiary</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e651" data-state="not-ready" class=" topicref "><span class="title"><a href="korzysci_z_bycia_oprawca.otrzymywanie_pieni_dzy_od_aktualnie_b_d_cej_oprawc__struktury_organizacyjnej.html">Korzyści osiągane w wyniku bycia oprawcą</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e749" data-state="not-ready" class=" topicref "><span class="title"><a href="drugie_pokolenie___osoba_oprawca_jest_spokrewniona__posiada_rodzica_lub_dziadka___kt_ry_by__aktywnym_oprawc.html">Typowe zależności dla negatywnych działań</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e759" data-state="not-ready" class=" topicref "><span class="title"><a href="specjalne_podzi_kowania_dla_igor_s.html">Credits</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>        
+        
+        <!-- Search form -->
+        <div class=" wh_search_input navbar-form wh_main_page_search " role="form">
+          
+          <div class="wh_welcome"></div>          
+          <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form>
+          
+        </div>
+        <div class="wh_content_area " id="content">
+            
+            <!-- This is the placeholder for the main page tiles. -->
+            <div class="container-fluid wh_content_flex_container">
+                <!-- This is the placeholder for the main page tiles. -->
+                <div class=" wh_tiles "><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="referencje.geremek_prawda.html">referencje</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="glossary.bartoszewski.html">Osoby</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="negatywne_role.oprawcy.html">Role</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="aktywno___odebranie_prawdziwemu_bohaterowi_to_samo_ci.html">Typowe aktywności</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="rotmistrz_pilecki.html">Ofiary</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="korzysci_z_bycia_oprawca.otrzymywanie_pieni_dzy_od_aktualnie_b_d_cej_oprawc__struktury_organizacyjnej.html">Korzyści osiągane w wyniku bycia oprawcą</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="drugie_pokolenie___osoba_oprawca_jest_spokrewniona__posiada_rodzica_lub_dziadka___kt_ry_by__aktywnym_oprawc.html">Typowe zależności dla negatywnych działań</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  ">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="specjalne_podzi_kowania_dla_igor_s.html">Credits</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div></div>
+                <!--
+                    This is the placeholder for the main page entries
+                    presented in a tree-like fashion.
+                -->
+                
+                
+            </div>
+        </div>
+        
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    lewactwo_prawactwo
+  </div>
+</footer>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        
+    </body>
+</html>

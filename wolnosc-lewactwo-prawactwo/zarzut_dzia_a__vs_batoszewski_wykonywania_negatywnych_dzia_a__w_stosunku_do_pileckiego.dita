@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="zarzut_dzia_a__vs_batoszewski_wykonywania_negatywnych_dzia_a__w_stosunku_do_pileckiego" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+    <title>zarzut działań vs Batoszewski wykonywania negatywnych działań w stosunku do Pileckiego</title>
+    <related-links>
+        <linkpool role="parent">
+            <link href="glossary.bartoszewski.dita"/>
+        </linkpool>
+        <linklist>
+            <title>osoba ta, na podstawie materiału</title>
+            <link href="referencje.bartoszewski_fa_szywa_posta.dita"/>
+            <linklist>
+                <title>możemy stwierdzić, że miało miejsce </title>
+                <link href="aktywno___odebranie_prawdziwemu_bohaterowi_to_samo_ci.dita"/>
+                <linklist>
+                    <title>dotycząca roli</title>
+                    <link href="glossary.bohater.dita"/>
+                    <linklist>
+                        <title>w osobie </title>
+                        <link href="rotmistrz_pilecki.dita"/>
+                    </linklist>
+                </linklist>
+            </linklist>
+        </linklist>
+    </related-links>
+</topic>

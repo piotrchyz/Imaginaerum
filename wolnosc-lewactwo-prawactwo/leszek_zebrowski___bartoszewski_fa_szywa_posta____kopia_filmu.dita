@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topic id="leszek_zebrowski___bartoszewski_fa_szywa_posta____kopia_filmu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:oasis:names:tc:dita:xsd:topic.xsd">
+    <title>Leszek Zebrowski - Bartoszewski Fałszywa Postać - kopia filmu</title>
+    <body>
+        <p><object data="bartoszewski_referencje/Leszek_Zebrowski_Bartoszewski_cz1.mp4"
+                outputclass="video"/></p>
+    </body>
+    <related-links>
+        <linkpool role="parent">
+            <link href="referencje.bartoszewski_fa_szywa_posta.dita"/>
+        </linkpool>
+    </related-links>
+</topic>

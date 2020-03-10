@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="negatywne_role.oprawcy">
+    <glossterm>oprawcy</glossterm>
+    <glossdef></glossdef>
+    <related-links>
+        <linklist>
+            <title>z uwagi na zasięg, szkodliwość, wykonywane działania, można oprawców podzielić
+                na</title>
+            <link href="negatywne_role.oszust.dita"/>
+            <link href="negatywne_role.bandyta.dita"/>
+            <link href="negatywne_role.beneficjent_dzia_a__oprawczych.dita"/>
+        </linklist>
+    </related-links>
+</glossentry>

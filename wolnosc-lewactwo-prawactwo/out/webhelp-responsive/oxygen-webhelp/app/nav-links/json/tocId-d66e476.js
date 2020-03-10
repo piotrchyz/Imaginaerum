@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Przemówienie Jacka Kuronia o bogactwie ","href":"przem_wienie_jacka_kuronia_o_bogactwie.html","attributes": {"data-id":"przem_wienie_jacka_kuronia_o_bogactwie",},"menu": {"hasChildren":false,},"tocID":"przem_wienie_jacka_kuronia_o_bogactwie-d66e477","topics":[]}]});
