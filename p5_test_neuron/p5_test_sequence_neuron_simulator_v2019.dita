@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="p5_test_sequence_neuron_simulator_v2019">
+    <glossterm>p5 test sequence neuron simulator v2019</glossterm>
+    <glossdef>
+        <fig id="fig_fyf_qhq_qlb">
+            <title>Files used by simulator</title>
+            <image href="docs/files_sim.png" id="image_r4b_shq_qlb" width="500"/>
+        </fig>
+    </glossdef>
+    <related-links>
+        <linklist role="parent">
+            <title>Initially developped by </title>
+            <link keyref="person.Binder_Arkadiusz.person_no" scope="local"/>
+        </linklist>
+        <linklist role="previous">
+            <title>after some test on </title>
+            <link
+                keyref="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"
+                scope="local"/>
+        </linklist>
+    </related-links>
+</glossentry>

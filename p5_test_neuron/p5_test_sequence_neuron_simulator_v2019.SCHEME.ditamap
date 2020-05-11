@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme
+  PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd">
+<subjectScheme>
+   <subjectHead>
+      <subjectHeadMeta>
+         <navtitle> Struktura informacji dla p5_test_sequence_neuron_simulator_v2019</navtitle>
+      </subjectHeadMeta>
+   </subjectHead>
+   <hasInstance id="hasInstance">
+      <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.PropsKey"
+                  navtitle="$p5_test_sequence_neuron_simulator_v2019.PropsKey ">
+         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita.props"
+                     navtitle="p5_test_sequence_neuron_simulator_v2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=p5_test_sequence_neuron_simulator_v2019.dita.props)
+        -->
+            <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita"
+                      navtitle="p5_test_sequence_neuron_simulator_v2019.dita [p5_test_sequence_neuron_simulator_v2019]"
+                      href="p5_test_sequence_neuron_simulator_v2019.dita"/>
+         </subjectdef>
+         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props"
+                     navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]">
+            <topicref keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"
+                      navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"
+                      href="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"/>
+            <!--
+                #64a ./n=topicref ; @* =  neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita - map/topicref    $SubjectName.new = neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props ; 
+            -->
+         </subjectdef>
+      </subjectdef>
+   </hasInstance>
+   <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__CLASS.ditamap"
+             format="ditamap"/>
+</subjectScheme>

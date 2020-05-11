@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "-//OASIS//DTD DITA Classification Map//EN" "classifyMap.dtd">
+<map>
+   <title>Struktura informacji CLASS dla p5_test_sequence_neuron_simulator_v2019</title>
+   <topichead id="p5_test_sequence_neuron_simulator_v2019.topichead"
+              collection-type="family"
+              navtitle="p5_test_sequence_neuron_simulator_v2019__CLASS">
+      <topicref href="p5_test_sequence_neuron_simulator_v2019.dita">
+         <topicref href="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"/>
+      </topicref>
+   </topichead>
+   <!--#43 not found .//*[topicref[@keys]]-->
+</map>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme
+  PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd">
+<subjectScheme>
+   <enumerationdef>
+      <attributedef name="props"/>
+      <subjectdef keyref="p5_test_sequence_neuron_simulator_v2019.PropsKey"/>
+   </enumerationdef>
+</subjectScheme>
