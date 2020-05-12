@@ -1119,4 +1119,5 @@
       <topicref href="test_neuron_xsd_Attribute_Group_ptn_Simulation_attract__x3A__calculate.dita"/>
    </topicref>
    <topicref href="test_neuron.indexList.dita"/>
+   <topicref href="test_neuron.SCHEME.ditamap" format="ditamap"/>
 </map>
