@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Input__x3A__generate__x3A__pattern__x3A__Appearance">
+   <title>Element ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>todo struct</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Appearance">
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Appearance.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>430,2,743,25</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Material.dita#Input__x3A__generate__x3A__pattern__x3A__Material"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>430,63,772,86</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__LineProperties.dita#Input__x3A__generate__x3A__pattern__x3A__LineProperties"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern_Group.dita#p5_test_neuron_Input__x3A__generate__x3A__pattern_Group"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Material.dita#Input__x3A__generate__x3A__pattern__x3A__Material"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__LineProperties.dita#Input__x3A__generate__x3A__pattern__x3A__LineProperties"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__LineProperties.dita#Input__x3A__generate__x3A__pattern__x3A__LineProperties"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Material.dita#Input__x3A__generate__x3A__pattern__x3A__Material"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern__x3A__Material DEF="" emissiveColor=""&gt;{1,1}&lt;/ptn:Input__x3A__generate__x3A__pattern__x3A__Material&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern__x3A__LineProperties applied="" linetype="" linewidthScaleFactor=""&gt;{1,1}&lt;/ptn:Input__x3A__generate__x3A__pattern__x3A__LineProperties&gt;
+&lt;/ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.generate__x3A__pattern.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

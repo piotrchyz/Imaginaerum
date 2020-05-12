@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Simulation.attract.xml">
+   <title>Complex Type ptn:Simulation.attract.xml</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_attract_xml">
+                           <image href="img/test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_attract_xml.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>219,77,402,117</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_Simulation_body_tick.dita#p5_test_neuron_Simulation_body_tick"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>219,127,406,167</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_Simulation_body_time.dita#p5_test_neuron_Simulation_body_time"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>219,177,449,217</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_Simulation_body_time__x3A__last.dita#Simulation_body_time__x3A__last"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>219,227,369,267</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_Simulator_tick.dita#p5_test_neuron_Simulator_tick"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>219,305,365,328</coords>
+                              <xref href="test_neuron_Simulation_analys_xml_xsd_Attribute_ptn_Simulation_ticks.dita#p5_test_neuron_Simulation_ticks"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>276,378,536,401</coords>
+                              <xref href="test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Simulation_model_validate_xml__x3A__stats.dita#Simulation.model.validate.xml__x3A__stats"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>276,411,502,434</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Element_ptn_Simulation_attract__x3A__aggregate.dita#Simulation.attract__x3A__aggregate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>276,472,586,512</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_attract__x3A__aggregate__x3A__validated.dita#Simulation.attract__x3A__aggregate__x3A__validated"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>276,522,405,562</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Receptors.dita#Receptors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>276,572,387,612</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Nodes.dita#p5_test_neuron_Nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>194,3,507,25</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_body__x3A__abstract.dita#Simulation_body__x3A__abstract"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>266,629,492,652</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Element_ptn_Simulation_attract__x3A__aggregate.dita#Simulation.attract__x3A__aggregate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>266,690,364,713</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Receptors.dita#Receptors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>266,723,346,746</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Nodes.dita#p5_test_neuron_Nodes"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>restriction of <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_body__x3A__abstract.dita#Simulation_body__x3A__abstract"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_body__x3A__abstract.dita#Simulation_body__x3A__abstract"/>
+                           </p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref href="#Simulation.attract.xml"/>
+                                 </p>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_attract_xml_xsd_Element_ptn_Simulation_attract_xml.dita#p5_test_neuron_Simulation.attract.xml"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_attract_xml_xsd_Element_ptn_Simulation_attract__x3A__aggregate.dita#Simulation.attract__x3A__aggregate"/> , <xref href="test_neuron_xsd_Element_ptn_Receptors.dita#Receptors"/> , <xref href="test_neuron_xsd_Element_ptn_Nodes.dita#p5_test_neuron_Nodes"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_xsd_Element_ptn_Nodes.dita#p5_test_neuron_Nodes"/>, <xref href="test_neuron_xsd_Element_ptn_Receptors.dita#Receptors"/>, <xref href="test_neuron_Simulation_attract_xml_xsd_Element_ptn_Simulation_attract__x3A__aggregate.dita#Simulation.attract__x3A__aggregate"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_Simulation_body_tick.dita#p5_test_neuron_Simulation_body_tick"/>
+                                    </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Simulation_body_tick.dita#Simulation_body_tick"/>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_Simulation_body_time.dita#p5_test_neuron_Simulation_body_time"/>
+                                    </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Simulation_body_time.dita#Simulation_body_time"/>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_Simulation_body_time__x3A__last.dita#Simulation_body_time__x3A__last"/>
+                                    </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Simulation_body_time.dita#Simulation_body_time"/>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_analys_xml_xsd_Attribute_ptn_Simulation_ticks.dita#p5_test_neuron_Simulation_ticks"/>
+                                    </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Simulation_ticks.dita#Simulation_ticks"/>
+                                    </entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_Simulator_tick.dita#p5_test_neuron_Simulator_tick"/>
+                                    </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Simulator_tick.dita#Simulator_tick"/>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.attract.xml.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

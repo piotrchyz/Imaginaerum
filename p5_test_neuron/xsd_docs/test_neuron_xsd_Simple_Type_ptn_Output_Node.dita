@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Output_Node">
+   <title>Simple Type ptn:Output_Node</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Synapse Output Node</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>xs:IDREF</entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Simple Type </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Input_exec_receptor.dita#Input_exec_receptor"/>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Attributes </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_Label.dita#p5_test_neuron_Label"/>, <xref href="test_neuron_xsd_Attribute_ptn_Label__x3A__context.dita#Label__x3A__context"/>, <xref href="test_neuron_xsd_Attribute_ptn_Output_Node.dita#p5_test_neuron_Output_Node"/>, <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Attribute_ptn_Output_Node__x3A__analyze.dita#Output_Node__x3A__analyze"/>, <xref href="test_neuron_xsd_Attribute_ptn_Simulated_potential__x3A__less_charged_node.dita#Simulated_potential__x3A__less_charged_node"/>, <xref href="test_neuron_xsd_Attribute_ptn_Simulated_potential__x3A__more_charged_node.dita#Simulated_potential__x3A__more_charged_node"/>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Elements </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Complex_Type_ptn_Current_synapse.dita#Current_synapse_Output_Node"/>, <xref href="test_neuron_xsd_Element_ptn_Input__x3A__node__x3A__prohibit.dita#Input__x3A__node__x3A__prohibit"/>, <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes_Input__x3A__node"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

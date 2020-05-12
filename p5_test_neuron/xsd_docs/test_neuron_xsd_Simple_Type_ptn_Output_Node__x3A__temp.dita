@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Output_Node__x3A__temp">
+   <title>Simple Type ptn:Output_Node__x3A__temp</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Dla potrzeb nie uzwyania ID, na etapie draftow.</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>xs:string</entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Attributes </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_Input__x3A__node__x3A__stats.dita#Input__x3A__node__x3A__stats"/>, <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Label__x3A__analyze__x3A__debug.dita#Label__x3A__analyze__x3A__debug"/>, <xref href="test_neuron_Simulation_model_stats_xml_xsd_Attribute_ptn_Label__x3A__stats.dita#Label__x3A__stats"/>, <xref href="test_neuron_xsd_Attribute_ptn_Output_Node__x3A__attract.dita#Output_Node__x3A__attract"/>, <xref href="test_neuron_xsd_Attribute_ptn_Output_Node__x3A__stats.dita#Output_Node__x3A__stats"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

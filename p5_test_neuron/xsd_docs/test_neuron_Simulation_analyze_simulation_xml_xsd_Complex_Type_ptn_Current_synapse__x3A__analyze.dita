@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="p5_test_neuron_Current_synapse__x3A__analyze">
+   <title>Complex Type ptn:Current_synapse__x3A__analyze</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_analyze_simulation_xml_xsd_Complex_Type_ptn_Current_synapse__x3A__analyze">
+                           <image href="img/test_neuron_Simulation_analyze_simulation_xml_xsd_Complex_Type_ptn_Current_synapse__x3A__analyze.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,37,463,60</coords>
+                              <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Attribute_ptn_Output_Node__x3A__analyze.dita#Output_Node__x3A__analyze"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Current_synapse__x3A__analyze.dita#Current_synapse__x3A__analyze"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Attribute_ptn_Output_Node__x3A__analyze.dita#Output_Node__x3A__analyze"/>
+                                    </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Output_Node.dita#Output_Node"/>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.analyze_simulation.xml.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Current_synapse__x3A__emmit__x3A__analyze">
+   <title>Element ptn:Current_synapse__x3A__emmit__x3A__analyze</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Current_synapse__x3A__emmit__x3A__analyze">
+                           <image href="img/test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Current_synapse__x3A__emmit__x3A__analyze.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>301,39,574,62</coords>
+                              <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Attribute_ptn_Current_synapse__x3A__emmit__x3A__count.dita#Current_synapse__x3A__emmit__x3A__count"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>301,72,626,95</coords>
+                              <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Attribute_ptn_Current_synapse__x3A__emmit__x3A__time__x3A__min.dita#Current_synapse__x3A__emmit__x3A__time__x3A__min"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>377,117,529,140</coords>
+                              <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Input__x3A__analyze.dita#Input__x3A__analyze"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Complex_Type_ptn_Output__x3A__flag__x3A__emmit__x3A__analyze.dita#p5_test_neuron_Output__x3A__flag__x3A__emmit__x3A__analyze"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Input__x3A__analyze.dita#Input__x3A__analyze"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Input__x3A__analyze.dita#Input__x3A__analyze"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Current_synapse__x3A__emmit__x3A__analyze ptn:Current_synapse__x3A__emmit__x3A__count="" ptn:Current_synapse__x3A__emmit__x3A__time__x3A__min="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Input__x3A__analyze ptn:Input_exec_Maximum_current__x3A__analyze="" ptn:Input_exec_receptor__x3A__analyze="" ptn:Input_exec_time__x3A__analyze="" ptn:Input_exec_time__x3A__initial__x3A__analyze="" ptn:Input_exec_Time_constant__x3A__analyze=""&gt;{0,unbounded}&lt;/ptn:Input__x3A__analyze&gt;
+&lt;/ptn:Current_synapse__x3A__emmit__x3A__analyze&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Attribute_ptn_Current_synapse__x3A__emmit__x3A__count.dita#Current_synapse__x3A__emmit__x3A__count"/>
+                                    </entry>
+                                    <entry/>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Attribute_ptn_Current_synapse__x3A__emmit__x3A__time__x3A__min.dita#Current_synapse__x3A__emmit__x3A__time__x3A__min"/>
+                                    </entry>
+                                    <entry/>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.analyze_simulation.xml.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

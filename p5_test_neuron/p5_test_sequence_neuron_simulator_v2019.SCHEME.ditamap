@@ -7,27 +7,102 @@
          <navtitle> Struktura informacji dla p5_test_sequence_neuron_simulator_v2019</navtitle>
       </subjectHeadMeta>
    </subjectHead>
+   
+   
+   
+   
+   <!-- NEW IMPORTED -->
    <hasInstance id="hasInstance">
       <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.PropsKey"
                   navtitle="$p5_test_sequence_neuron_simulator_v2019.PropsKey ">
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita.props"
-                     navtitle="p5_test_sequence_neuron_simulator_v2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=p5_test_sequence_neuron_simulator_v2019.dita.props)
+         <!-- STANDARDS -->
+          <subjectdef keys="xml"/>
+          <subjectdef keys="xsl"/>
+         <subjectdef keys="imported"/>
+         <subjectdef keys="build"/>
+          <subjectdef keys="xsd"/>
+         
+         
+         <subjectdef keys="html"/>
+          <!--<subjectdef keys="mode"/>-->
+              
+          
+          <subjectdef keyref="mode"/>
+          
+          <subjectdef keyref="test_neuron.PropsKey"/>
+          
+          
+          <!-- EOF LOCAL CONF -->
+         
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita.props"
+              navtitle="p5_test_sequence_neuron_simulator_v2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=p5_test_sequence_neuron_simulator_v2019.dita.props)
         -->
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita"
-                      navtitle="p5_test_sequence_neuron_simulator_v2019.dita [p5_test_sequence_neuron_simulator_v2019]"
-                      href="p5_test_sequence_neuron_simulator_v2019.dita"/>
-         </subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props"
-                     navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]">
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"
-                      navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"
-                      href="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"/>
-            <!--
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita"
+                  navtitle="p5_test_sequence_neuron_simulator_v2019.dita [p5_test_sequence_neuron_simulator_v2019]"
+                  href="p5_test_sequence_neuron_simulator_v2019.dita"/>
+          </subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props"
+              navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]">
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"
+                  navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"
+                  href="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"/>
+              <!--
                 #64a ./n=topicref ; @* =  neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita - map/topicref    $SubjectName.new = neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props ; 
             -->
-         </subjectdef>
+          </subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_ .props"
+              navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_ .props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_ .props)
+        --></subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron.html.props"
+              navtitle="doc_xslt/p5_test_neuron.html.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=doc_xslt/p5_test_neuron.html.props)
+        -->
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron.html" format="html"
+                  navtitle="doc_xslt/p5_test_neuron.html [p5_test_sequence_neuron_simulator_v2019]"
+                  href="doc_xslt/p5_test_neuron.html"/>
+          </subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron.indexList.html.props"
+              navtitle="doc_xslt/p5_test_neuron.indexList.html.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=doc_xslt/p5_test_neuron.indexList.html.props)
+        -->
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron.indexList.html" format="html"
+                  navtitle="doc_xslt/p5_test_neuron.indexList.html [p5_test_sequence_neuron_simulator_v2019]"
+                  href="doc_xslt/p5_test_neuron.indexList.html"/>
+          </subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron0.html.props"
+              navtitle="doc_xslt/p5_test_neuron0.html.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=doc_xslt/p5_test_neuron0.html.props)
+        -->
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron0.html" format="html"
+                  navtitle="doc_xslt/p5_test_neuron0.html [p5_test_sequence_neuron_simulator_v2019]"
+                  href="doc_xslt/p5_test_neuron0.html"/>
+          </subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron1.html.props"
+              navtitle="doc_xslt/p5_test_neuron1.html.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=doc_xslt/p5_test_neuron1.html.props)
+        -->
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron1.html" format="html"
+                  navtitle="doc_xslt/p5_test_neuron1.html [p5_test_sequence_neuron_simulator_v2019]"
+                  href="doc_xslt/p5_test_neuron1.html"/>
+          </subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron2.html.props"
+              navtitle="doc_xslt/p5_test_neuron2.html.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=doc_xslt/p5_test_neuron2.html.props)
+        -->
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron2.html" format="html"
+                  navtitle="doc_xslt/p5_test_neuron2.html [p5_test_sequence_neuron_simulator_v2019]"
+                  href="doc_xslt/p5_test_neuron2.html"/>
+          </subjectdef>
+          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron3.html.props"
+              navtitle="doc_xslt/p5_test_neuron3.html.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=doc_xslt/p5_test_neuron3.html.props)
+        -->
+              <topicref keys="p5_test_sequence_neuron_simulator_v2019.doc_xslt_p5_test_neuron3.html" format="html"
+                  navtitle="doc_xslt/p5_test_neuron3.html [p5_test_sequence_neuron_simulator_v2019]"
+                  href="doc_xslt/p5_test_neuron3.html"/>
+          </subjectdef>
+         
       </subjectdef>
    </hasInstance>
-   <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__CLASS.ditamap"
-             format="ditamap"/>
+   
+   
+   
+   <schemeref href="../../../../__ROOT_DITAMAP__SPECS__/props.development/props_mode__SCHEME.ditamap"></schemeref>
+    <schemeref href="xsd_docs/test_neuron.SCHEME.ditamap"/>
+   <!--<topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__CLASS.ditamap"
+             format="ditamap"/>-->
 </subjectScheme>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Coordinate">
+   <title>Simple Type ptn:Coordinate</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Coordinate of node X Y or Z or more?</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>xs:decimal</entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Attributes </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_Coordinate_X.dita#Coordinate_X"/>, <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Coordinate_X__x3A__debug.dita#Coordinate_X__x3A__debug"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_X__x3A__fieldOfView__x3A__ray.dita#Coordinate_X__x3A__fieldOfView__x3A__ray"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_X__x3A__generate__max.dita#Coordinate_X__x3A__generate__max"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_X__x3A__generate__min.dita#Coordinate_X__x3A__generate__min"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_X__x3A__generate__separator.dita#Coordinate_X__x3A__generate__separator"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_X__x3A__generated.dita#Coordinate_X__x3A__generated"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_X__x3A__generated__separator.dita#Coordinate_X__x3A__generated__separator"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_X__x3A__max.dita#Coordinate_X__x3A__max"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_X__x3A__min.dita#Coordinate_X__x3A__min"/>, <xref href="test_neuron_xsd_Attribute_ptn_Coordinate_X__x3A__more_charged_node.dita#Coordinate_X__x3A__more_charged_node"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_X__x3A__remote.dita#Coordinate_X__x3A__remote"/>, <xref href="test_neuron_xsd_Attribute_ptn_Coordinate_Y.dita#Coordinate_Y"/>, <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Coordinate_Y__x3A__debug.dita#Coordinate_Y__x3A__debug"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_Y__x3A__fieldOfView__x3A__ray.dita#Coordinate_Y__x3A__fieldOfView__x3A__ray"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Y__x3A__generate__max.dita#Coordinate_Y__x3A__generate__max"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Y__x3A__generate__min.dita#Coordinate_Y__x3A__generate__min"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Y__x3A__generate__separator.dita#Coordinate_Y__x3A__generate__separator"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_Y__x3A__generated.dita#Coordinate_Y__x3A__generated"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_Y__x3A__generated__separator.dita#Coordinate_Y__x3A__generated__separator"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_Y__x3A__max.dita#Coordinate_Y__x3A__max"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_Y__x3A__min.dita#Coordinate_Y__x3A__min"/>, <xref href="test_neuron_xsd_Attribute_ptn_Coordinate_Y__x3A__more_charged_node.dita#Coordinate_Y__x3A__more_charged_node"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Y__x3A__remote.dita#Coordinate_Y__x3A__remote"/>, <xref href="test_neuron_xsd_Attribute_ptn_Coordinate_Z.dita#Coordinate_Z"/>, <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Coordinate_Z__x3A__debug.dita#Coordinate_Z__x3A__debug"/>, <xref href="test_neuron_generated_xsd_Attribute_ptn_Coordinate_Z__x3A__fieldOfView__x3A__ray.dita#Coordinate_Z__x3A__fieldOfView__x3A__ray"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Z__x3A__generate__max.dita#Coordinate_Z__x3A__generate__max"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Z__x3A__generate__min.dita#Coordinate_Z__x3A__generate__min"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Z__x3A__generate__separator.dita#Coordinate_Z__x3A__generate__separator"/>, <xref href="test_neuron_xsd_Attribute_ptn_Coordinate_Z__x3A__less_charged_node.dita#Coordinate_Z__x3A__less_charged_node"/>, <xref href="test_neuron_xsd_Attribute_ptn_Coordinate_Z__x3A__more_charged_node.dita#Coordinate_Z__x3A__more_charged_node"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Coordinate_Z__x3A__remote.dita#Coordinate_Z__x3A__remote"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

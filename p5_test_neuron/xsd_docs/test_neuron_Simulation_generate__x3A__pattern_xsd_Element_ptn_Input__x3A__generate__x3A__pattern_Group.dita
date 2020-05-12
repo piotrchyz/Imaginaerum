@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Input__x3A__generate__x3A__pattern_Group">
+   <title>Element ptn:Input__x3A__generate__x3A__pattern_Group</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_Group">
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_Group.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>304,77,401,100</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>380,117,722,140</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_LineSet__x3A__vector.dita#Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>380,178,799,201</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.dita#Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>380,211,844,234</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector.dita#Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>380,244,710,267</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Appearance.dita#Input__x3A__generate__x3A__pattern__x3A__Appearance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>279,3,566,25</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern_Group.dita#p5_test_neuron_Input__x3A__generate__x3A__pattern_Group"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern_Group.dita#p5_test_neuron_Input__x3A__generate__x3A__pattern_Group"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__Shape.dita#p5_test_neuron_Input__x3A__generate__x3A__Shape"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_LineSet__x3A__vector.dita#Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.dita#Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector.dita#Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Appearance.dita#Input__x3A__generate__x3A__pattern__x3A__Appearance"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.dita#Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_LineSet__x3A__vector.dita#Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector.dita#Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern__x3A__Appearance.dita#Input__x3A__generate__x3A__pattern__x3A__Appearance"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector ptn:debug="" DEF=""&gt;{1,unbounded}&lt;/ptn:Input__x3A__generate__x3A__pattern_LineSet__x3A__vector&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector ptn:Coordinate_X__x3A__vector="" ptn:Coordinate_Y__x3A__vector="" ptn:Coordinate_Z__x3A__vector="" ptn:debug="" ptn:MFVec3f__x3A__distance__x3A__percent="" ptn:Simulator_tick__count__step_delta_count="" ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_max="" ptn:Simulator_tick__x3A__for-each-group__x3A__key__x3A__count_analys_min=""&gt;{1,unbounded}&lt;/ptn:Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector ptn:debug="" ptn:MFVec3f__x3A__length__x3A__max="" ptn:MFVec3f__x3A__length__x3A__min="" ptn:Simulator_tick__count__step_delta_count=""&gt;{1,1}&lt;/ptn:Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance&gt;{1,1}&lt;/ptn:Input__x3A__generate__x3A__pattern__x3A__Appearance&gt;
+&lt;/ptn:Input__x3A__generate__x3A__pattern_Group&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.generate__x3A__pattern.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

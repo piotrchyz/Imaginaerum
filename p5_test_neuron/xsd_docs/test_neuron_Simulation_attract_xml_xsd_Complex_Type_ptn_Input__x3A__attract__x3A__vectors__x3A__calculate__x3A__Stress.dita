@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__Stress">
+   <title>Complex Type ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__Stress</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__Stress">
+                           <image href="img/test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__Stress.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>433,77,747,100</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Input__x3A__attract__x3A__vectors__x3A__calculate.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>433,110,868,133</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Attribute_ptn_Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate_ratio.dita#Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>506,211,879,234</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>506,244,879,267</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>506,277,879,300</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>408,3,815,25</coords>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>extension of <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>
+                              <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate"/>
+                           </p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref href="#Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__Stress"/>
+                                 </p>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/> , <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/> , <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>, <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_Y__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>, <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Coordinate_Z__x3A__Input__X3A__attract__x3A__vector__x3A__calculate"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors__x3A__calculate.dita#Input__x3A__attract__x3A__vectors__x3A__calculate_Input__x3A__attract__x3A__vectors__x3A__calculate.sum"/>
+                                    </entry>
+                                    <entry/>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_attract_xml_xsd_Attribute_ptn_Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate_ratio.dita#Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio"/>
+                                    </entry>
+                                    <entry>xs:double</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">do tworzenia wymnoznik nowej lokalizacji z wektora attract</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="1*" align="left"/>
+                              <colspec colwidth="9*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <b>Wildcard:</b>
+                                    </entry>
+                                    <entry>ANY attribute from namespace(s) 'http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd'</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Asserts</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="4*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="4*"/>
+                              <thead>
+                                 <row>
+                                    <entry>Test</entry>
+                                    <entry>XPath default namespace</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>Coordinate_X__x3A__Input__X3A__attract__x3A__vector__x3A__calculate = parent::ptn:Simulation.Stress__x3A__calculate__x3A__output_node/parent::ptn:Simulation.Stress__x3A__calculate/following-sibling::ptn:Input__x3A__attract__x3A__vectors/ptn:Coordinate_X__x3A__Input__X3A__attract__x3A__vector or ancestor::ptn:Simulation.attract__x3A__aggregate</entry>
+                                    <entry/>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.attract.xml.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

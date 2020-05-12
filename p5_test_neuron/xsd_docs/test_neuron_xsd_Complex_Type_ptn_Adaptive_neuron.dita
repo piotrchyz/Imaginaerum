@@ -1,0 +1,2913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Adaptive_neuron">
+   <title>Complex Type ptn:Adaptive_neuron</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron">
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>193,77,297,117</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>193,127,308,167</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_New.dita#New"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>193,205,297,245</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_id"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,438,394,478</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,488,699,511</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,521,577,578</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,588,548,611</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,621,699,644</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,654,577,711</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,721,548,744</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,754,699,777</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,787,577,844</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,854,548,877</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,887,512,944</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,954,655,994</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1004,433,1061</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1071,467,1128</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1138,470,1195</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1205,466,1262</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1272,457,1329</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1339,459,1396</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1406,483,1463</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1473,491,1530</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1540,463,1597</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1607,404,1647</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1657,389,1697</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1707,412,1730</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1740,520,1780</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1818,478,1875</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1885,490,1925</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1935,460,1975</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Attract__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,1985,520,2025</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulation.attract__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,2035,442,2075</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,2085,481,2108</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,2146,437,2186</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,2196,516,2236</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,2246,521,2286</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>269,2296,528,2336</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>430,2346,773,2369</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>430,2379,651,2402</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,2440,696,2480</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>411,2518,725,2541</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>168,3,348,25</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,2558,380,2598</coords>
+                              <xref href="#Adaptive_neuron_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,2608,408,2648</coords>
+                              <xref href="#Adaptive_neuron_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,2658,408,2698</coords>
+                              <xref href="#Adaptive_neuron_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,2708,421,2765</coords>
+                              <xref href="#Adaptive_neuron_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>330,2775,484,2832</coords>
+                              <xref href="#Adaptive_neuron_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>330,2842,645,2882</coords>
+                              <xref href="#Adaptive_neuron_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,2892,401,2949</coords>
+                              <xref href="#Adaptive_neuron_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,2959,435,3016</coords>
+                              <xref href="#Adaptive_neuron_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3026,438,3083</coords>
+                              <xref href="#Adaptive_neuron_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3093,434,3150</coords>
+                              <xref href="#Adaptive_neuron_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3227,425,3284</coords>
+                              <xref href="#Adaptive_neuron_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3294,427,3351</coords>
+                              <xref href="#Adaptive_neuron_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3361,469,3418</coords>
+                              <xref href="#Adaptive_neuron_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3428,477,3485</coords>
+                              <xref href="#Adaptive_neuron_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3495,431,3552</coords>
+                              <xref href="#Adaptive_neuron_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3562,390,3602</coords>
+                              <xref href="#Adaptive_neuron_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3612,375,3652</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3662,398,3685</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3695,506,3735</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3773,464,3830</coords>
+                              <xref href="#Adaptive_neuron_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3840,428,3880</coords>
+                              <xref href="#Adaptive_neuron_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3890,467,3913</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,3951,423,3991</coords>
+                              <xref href="#Adaptive_neuron_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,4001,502,4041</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,4051,507,4091</coords>
+                              <xref href="#Adaptive_neuron_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,4101,514,4141</coords>
+                              <xref href="#Adaptive_neuron_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>255,4151,476,4174</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>restriction of <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>
+                           </p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref href="#Adaptive_neuron"/>
+                                 </p>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron_inhibitor.dita#Adaptive_neuron_inhibitor"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron_standard.dita#Adaptive_neuron_standard"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="#Adaptive_neuron_Label"/> , <xref href="#Adaptive_neuron_Coordinate_X"/> , <xref href="#Adaptive_neuron_Coordinate_Y"/> , <xref href="#Adaptive_neuron_Coordinate_Z"/> , <xref href="#Adaptive_neuron_Capacitance"/> , <xref href="#Adaptive_neuron_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/> , <xref href="#Adaptive_neuron_Resistance"/> , <xref href="#Adaptive_neuron_Minimum_voltage"/> , <xref href="#Adaptive_neuron_Maximum_voltage"/> , <xref href="#Adaptive_neuron_Resting_potential"/> , <xref href="#Adaptive_neuron_Resting_potential"/> , <xref href="#Adaptive_neuron_Reset_potential"/> , <xref href="#Adaptive_neuron_Firing_threshold"/> , <xref href="#Adaptive_neuron_Adaptation_conductance"/> , <xref href="#Adaptive_neuron_Adaptation_time_constant"/> , <xref href="#Adaptive_neuron_Refactory_period"/> , <xref href="#Adaptive_neuron_Is_inhibitor"/> , <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/> , <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/> , <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/> , <xref href="#Adaptive_neuron_Simulated_potential"/> , <xref href="#Adaptive_neuron_Output__x3A__flag"/> , <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/> , <xref href="#Adaptive_neuron_Stress__x3A__flag"/> , <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/> , <xref href="#Adaptive_neuron_Simulated_potential__x3A__vectors"/> , <xref href="#Adaptive_neuron_Simulated_potential__x3A__vectors.sum"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="#Adaptive_neuron_Adaptation_conductance"/>, <xref href="#Adaptive_neuron_Adaptation_time_constant"/>, <xref href="#Adaptive_neuron_Capacitance"/>, <xref href="#Adaptive_neuron_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>, <xref href="#Adaptive_neuron_Coordinate_X"/>, <xref href="#Adaptive_neuron_Coordinate_Y"/>, <xref href="#Adaptive_neuron_Coordinate_Z"/>, <xref href="#Adaptive_neuron_Firing_threshold"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>, <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>, <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>, <xref href="#Adaptive_neuron_Is_inhibitor"/>, <xref href="#Adaptive_neuron_Label"/>, <xref href="#Adaptive_neuron_Maximum_voltage"/>, <xref href="#Adaptive_neuron_Minimum_voltage"/>, <xref href="#Adaptive_neuron_Output__x3A__flag"/>, <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>, <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>, <xref href="#Adaptive_neuron_Refactory_period"/>, <xref href="#Adaptive_neuron_Reset_potential"/>, <xref href="#Adaptive_neuron_Resistance"/>, <xref href="#Adaptive_neuron_Resting_potential"/>, <xref href="#Adaptive_neuron_Simulated_potential"/>, <xref href="#Adaptive_neuron_Simulated_potential__x3A__vectors"/>, <xref href="#Adaptive_neuron_Simulated_potential__x3A__vectors.sum"/>, <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>, <xref href="#Adaptive_neuron_Stress__x3A__flag"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_id"/>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_New.dita#New"/>
+                                    </entry>
+                                    <entry>xs:boolean</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">When new created - to optimize 3d</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+   <topic id="Adaptive_neuron_Label">
+      <title>Element ptn:Adaptive_neuron / ptn:Label</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Label_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Label_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>167,57,267,83</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Label.dita#Label"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>181,158,285,198</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>181,208,381,248</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_Simulation__x3A__visualize.dita#Simulation__x3A__visualize"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>156,3,285,42</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Label_CT.dita#Label_CT"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Label_CT.dita#Label_CT"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:ID</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Label.dita#Label"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Complex_Type_ptn_Label_CT.dita#Label_CT"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>complex</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Attributes</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                                 <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                                 <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                                 <thead>
+                                    <row>
+                                       <entry>QName</entry>
+                                       <entry>Type</entry>
+                                       <entry>Use</entry>
+                                    </row>
+                                 </thead>
+                                 <tbody>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_Simulation__x3A__visualize.dita#Simulation__x3A__visualize"/>
+                                       </entry>
+                                       <entry>xs:string</entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                    <row>
+                                       <entry namest="col1" nameend="col3">Pokazac na symulacji</entry>
+                                    </row>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                                       </entry>
+                                       <entry>xs:string</entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Coordinate_X">
+      <title>Element ptn:Adaptive_neuron / ptn:Coordinate_X</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Coordinate_X_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_X_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>195,57,323,83</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Coordinate.dita#Coordinate"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>209,158,313,198</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>184,3,341,42</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Coordinate.dita#Coordinate"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>complex</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Attributes</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                                 <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                                 <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                                 <thead>
+                                    <row>
+                                       <entry>QName</entry>
+                                       <entry>Type</entry>
+                                       <entry>Use</entry>
+                                    </row>
+                                 </thead>
+                                 <tbody>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                                       </entry>
+                                       <entry>xs:string</entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Coordinate_Y">
+      <title>Element ptn:Adaptive_neuron / ptn:Coordinate_Y</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Coordinate_Y_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_Y_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>195,57,323,83</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Coordinate.dita#Coordinate"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>209,158,313,198</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>184,3,341,42</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Coordinate.dita#Coordinate"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>complex</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Attributes</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                                 <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                                 <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                                 <thead>
+                                    <row>
+                                       <entry>QName</entry>
+                                       <entry>Type</entry>
+                                       <entry>Use</entry>
+                                    </row>
+                                 </thead>
+                                 <tbody>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                                       </entry>
+                                       <entry>xs:string</entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Coordinate_Z">
+      <title>Element ptn:Adaptive_neuron / ptn:Coordinate_Z</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Coordinate_Z_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_Z_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>208,57,336,83</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Coordinate.dita#Coordinate"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>222,158,326,198</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>197,3,354,42</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Coordinate.dita#Coordinate"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>complex</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Attributes</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                                 <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                                 <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                                 <thead>
+                                    <row>
+                                       <entry>QName</entry>
+                                       <entry>Type</entry>
+                                       <entry>Use</entry>
+                                    </row>
+                                 </thead>
+                                 <tbody>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                                       </entry>
+                                       <entry>xs:string</entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Capacitance">
+      <title>Element ptn:Adaptive_neuron / ptn:Capacitance</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Capacitance_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Capacitance_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>182,15,316,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Capacitance.dita#Capacitance"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Capacitance.dita#Capacitance"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>0.5</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>2</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>0.01</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Capacitance__x3A__attract__x3A__calculate__x3A__assert">
+      <title>Element ptn:Adaptive_neuron / ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Capacitance__x3A__attract__x3A__calculate__x3A__assert_1">
+                              <image href="img/test_neuron_xsd_Element_ptn_Capacitance__x3A__attract__x3A__calculate__x3A__assert_1.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>371,77,574,100</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_Output_Node__x3A__attract.dita#Output_Node__x3A__attract"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>447,122,855,145</coords>
+                                 <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Capacitance__x3A__attract__x3A__calculate__x3A__assert.dita#Capacitance__x3A__attract__x3A__calculate__x3A__assert_Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>346,3,700,25</coords>
+                                 <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Capacitance__x3A__attract__x3A__calculate__x3A__assert.dita#Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Capacitance__x3A__attract__x3A__calculate__x3A__assert.dita#Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>complex</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Model</entry>
+                     <entry>
+                        <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Capacitance__x3A__attract__x3A__calculate__x3A__assert.dita#Capacitance__x3A__attract__x3A__calculate__x3A__assert_Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Children</entry>
+                     <entry>
+                        <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Capacitance__x3A__attract__x3A__calculate__x3A__assert.dita#Capacitance__x3A__attract__x3A__calculate__x3A__assert_Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Instance</entry>
+                     <entry>
+                        <codeblock outputclass="language-xml">&lt;ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert ptn:Output_Node__x3A__attract="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert ptn:Capacitance__x3A__attract__x3A__give_own__x3A__ratio="" ptn:Label__x3A__context=""&gt;{1,unbounded}&lt;/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__input_node__x3A__assert&gt;
+&lt;/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert&gt;</codeblock>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Attributes</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                                 <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                                 <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                                 <thead>
+                                    <row>
+                                       <entry>QName</entry>
+                                       <entry>Type</entry>
+                                       <entry>Use</entry>
+                                    </row>
+                                 </thead>
+                                 <tbody>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_Output_Node__x3A__attract.dita#Output_Node__x3A__attract"/>
+                                       </entry>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Simple_Type_ptn_Output_Node__x3A__temp.dita#Output_Node__x3A__temp"/>
+                                       </entry>
+                                       <entry>required</entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Resistance">
+      <title>Element ptn:Adaptive_neuron / ptn:Resistance</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Resistance_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Resistance_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>174,15,300,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Resistance.dita#Resistance"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Resistance.dita#Resistance"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>100</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>200</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>1</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Minimum_voltage">
+      <title>Element ptn:Adaptive_neuron / ptn:Minimum_voltage</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Minimum_voltage_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Minimum_voltage_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>208,15,368,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Minimum_voltage.dita#Minimum_voltage"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Minimum_voltage.dita#Minimum_voltage"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_voltage.dita#voltage"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Simple_Type_ptn_Minimum_voltage.dita#Minimum_voltage"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>-90</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>200</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>-200</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Maximum_voltage">
+      <title>Element ptn:Adaptive_neuron / ptn:Maximum_voltage</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Maximum_voltage_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Maximum_voltage_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>211,15,374,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Maximum_voltage.dita#Maximum_voltage"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Maximum_voltage.dita#Maximum_voltage"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_voltage.dita#voltage"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Simple_Type_ptn_Maximum_voltage.dita#Maximum_voltage"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>60</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>200</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>-200</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Resting_potential">
+      <title>Element ptn:Adaptive_neuron / ptn:Resting_potential</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Resting_potential_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Resting_potential_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>207,15,366,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Resting_potential.dita#Resting_potential"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Resting_potential.dita#Resting_potential"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Potentials.dita#Potentials"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Simple_Type_ptn_Resting_potential.dita#Resting_potential"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>-70</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>50</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>-100</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Reset_potential">
+      <title>Element ptn:Adaptive_neuron / ptn:Reset_potential</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Reset_potential_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Reset_potential_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>198,15,348,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Reset_potential.dita#Reset_potential"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Reset_potential.dita#Reset_potential"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Potentials.dita#Potentials"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Simple_Type_ptn_Reset_potential.dita#Reset_potential"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>-80</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>50</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>-100</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Firing_threshold">
+      <title>Element ptn:Adaptive_neuron / ptn:Firing_threshold</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Firing_threshold_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Firing_threshold_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>200,15,352,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Firing_threshold.dita#Firing_threshold"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Firing_threshold.dita#Firing_threshold"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Potentials.dita#Potentials"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Simple_Type_ptn_Firing_threshold.dita#Firing_threshold"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>-55</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>50</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>-100</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Adaptation_conductance">
+      <title>Element ptn:Adaptive_neuron / ptn:Adaptation_conductance</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Adaptation_conductance_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Adaptation_conductance_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>242,15,436,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Adaptation_conductance.dita#Adaptation_conductance"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Adaptation_conductance.dita#Adaptation_conductance"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>1</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>10</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>100</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>0.1</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Adaptation_time_constant">
+      <title>Element ptn:Adaptive_neuron / ptn:Adaptation_time_constant</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Adaptation_time_constant_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Adaptation_time_constant_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>250,15,452,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Adaptation_time_constant.dita#Adaptation_time_constant"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Adaptation_time_constant.dita#Adaptation_time_constant"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>1</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>500</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>600</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>0.1</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Refactory_period">
+      <title>Element ptn:Adaptive_neuron / ptn:Refactory_period</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Refactory_period_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Refactory_period_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>204,15,360,41</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Refactory_period.dita#Refactory_period"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Refactory_period.dita#Refactory_period"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>2</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Facets</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="3*" align="left"/>
+                                 <colspec colwidth="5*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>maxInclusive</entry>
+                                       <entry>50</entry>
+                                       <entry/>
+                                    </row>
+                                    <row>
+                                       <entry>minInclusive</entry>
+                                       <entry>0</entry>
+                                       <entry/>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Is_inhibitor">
+      <title>Element ptn:Adaptive_neuron / ptn:Is_inhibitor</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Is_inhibitor_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Is_inhibitor_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>163,7,291,33</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Is_inhibitor.dita#Is_inhibitor"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Is_inhibitor.dita#Is_inhibitor"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Simulated_potential">
+      <title>Element ptn:Adaptive_neuron / ptn:Simulated_potential</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Simulated_potential_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>251,57,422,83</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Simulated_potential.dita#Simulated_potential"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>265,158,369,198</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>265,208,503,231</coords>
+                                 <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__current.dita#Simulated_potential__x3A__current"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>265,241,731,264</coords>
+                                 <xref href="test_neuron_Simulation_model_apply_xml_xsd_Attribute_ptn_Simulation_model_apply_xml__x3A__install__x3A__Reset_potential__x3A__installed.dita#Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>240,3,440,42</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential_CT.dita#Simulated_potential_CT"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential_CT.dita#Simulated_potential_CT"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type hierarchy</entry>
+                     <entry>
+                        <ul>
+                           <li>
+                              <p>xs:decimal</p>
+                              <ul>
+                                 <li>
+                                    <p>
+                                       <xref href="test_neuron_xsd_Simple_Type_ptn_Simulated_potential.dita#Simulated_potential"/>
+                                    </p>
+                                    <ul>
+                                       <li>
+                                          <p>
+                                             <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential_CT.dita#Simulated_potential_CT"/>
+                                          </p>
+                                       </li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>complex</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>default: </entry>
+                                       <entry>
+                                          <b>-80</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Attributes</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                                 <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                                 <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                                 <thead>
+                                    <row>
+                                       <entry>QName</entry>
+                                       <entry>Type</entry>
+                                       <entry>Use</entry>
+                                    </row>
+                                 </thead>
+                                 <tbody>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__current.dita#Simulated_potential__x3A__current"/>
+                                       </entry>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Simple_Type_ptn_Simulated_potential.dita#Simulated_potential"/>
+                                       </entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_Simulation_model_apply_xml_xsd_Attribute_ptn_Simulation_model_apply_xml__x3A__install__x3A__Reset_potential__x3A__installed.dita#Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed"/>
+                                       </entry>
+                                       <entry>xs:boolean</entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                    <row>
+                                       <entry namest="col1" nameend="col3">verbosed on apply when reset potential</entry>
+                                    </row>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                                       </entry>
+                                       <entry>xs:string</entry>
+                                       <entry>optional</entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Output__x3A__flag">
+      <title>Element ptn:Adaptive_neuron / ptn:Output__x3A__flag</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Output__x3A__flag_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Output__x3A__flag_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>201,7,367,33</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Output__x3A__flag.dita#Output__x3A__flag"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Output__x3A__flag.dita#Output__x3A__flag"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Stress__x3A__flag">
+      <title>Element ptn:Adaptive_neuron / ptn:Stress__x3A__flag</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Stress__x3A__flag_3">
+                              <image href="img/test_neuron_xsd_Element_ptn_Stress__x3A__flag_3.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>196,7,357,33</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Stress__x3A__flag.dita#Stress__x3A__flag"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Stress__x3A__flag.dita#Stress__x3A__flag"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Simulated_potential__x3A__vectors">
+      <title>Element ptn:Adaptive_neuron / ptn:Simulated_potential__x3A__vectors</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>327,77,585,117</coords>
+                                 <xref href="test_neuron_xsd_Attribute_ptn_Simulated_potential__x3A__previous.dita#Simulated_potential__x3A__previous"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>403,134,651,174</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.resting.vector"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>403,184,642,224</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.input.vector"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>403,234,648,274</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.emmit.vector"/>
+                              </area>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>302,3,543,25</coords>
+                                 <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>complex</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Model</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.resting.vector"/> , <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.input.vector"/> , <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.emmit.vector"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Children</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.emmit.vector"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.input.vector"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential__x3A__vectors.dita#Simulated_potential__x3A__vectors_Simulated_potential.resting.vector"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Instance</entry>
+                     <entry>
+                        <codeblock outputclass="language-xml">&lt;ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Simulated_potential.resting.vector&gt;{0,unbounded}&lt;/ptn:Simulated_potential.resting.vector&gt;
+  &lt;ptn:Simulated_potential.input.vector&gt;{0,unbounded}&lt;/ptn:Simulated_potential.input.vector&gt;
+  &lt;ptn:Simulated_potential.emmit.vector ptn:debug="" ptn:Label__x3A__context=""&gt;{0,unbounded}&lt;/ptn:Simulated_potential.emmit.vector&gt;
+&lt;/ptn:Simulated_potential__x3A__vectors&gt;</codeblock>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Attributes</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="3">
+                                 <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                                 <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                                 <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                                 <thead>
+                                    <row>
+                                       <entry>QName</entry>
+                                       <entry>Type</entry>
+                                       <entry>Use</entry>
+                                    </row>
+                                 </thead>
+                                 <tbody>
+                                    <row>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Attribute_ptn_Simulated_potential__x3A__previous.dita#Simulated_potential__x3A__previous"/>
+                                       </entry>
+                                       <entry>
+                                          <xref href="test_neuron_xsd_Simple_Type_ptn_Simulated_potential__x3A__previous.dita#p5_test_neuron_Simulated_potential__x3A__previous"/>
+                                       </entry>
+                                       <entry>required</entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+   <topic id="Adaptive_neuron_Simulated_potential__x3A__vectors.sum">
+      <title>Element ptn:Adaptive_neuron / ptn:Simulated_potential__x3A__vectors.sum</title>
+      <body>
+         <table frame="all" rowsep="1" colsep="1">
+            <tgroup cols="2">
+               <colspec colwidth="3*" align="left"/>
+               <colspec colwidth="25*" align="left"/>
+               <tbody>
+                  <row>
+                     <entry>Namespace</entry>
+                     <entry>p5_test_neuron</entry>
+                  </row>
+                  <row>
+                     <entry>Diagram</entry>
+                     <entry>
+                        <p>
+                           <imagemap id="test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_sum_4">
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_sum_4.jpeg"/>
+                              <area>
+                                 <shape>rect</shape>
+                                 <coords>287,7,555,33</coords>
+                                 <xref href="test_neuron_xsd_Simple_Type_ptn_Simulated_potential__x3A__vectors_sum.dita#Simulated_potential__x3A__vectors.sum"/>
+                              </area>
+                           </imagemap>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Type</entry>
+                     <entry>
+                        <xref href="test_neuron_xsd_Simple_Type_ptn_Simulated_potential__x3A__vectors_sum.dita#Simulated_potential__x3A__vectors.sum"/>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Properties</entry>
+                     <entry>
+                        <p>
+                           <table frame="all" rowsep="1" colsep="1">
+                              <tgroup cols="2">
+                                 <colspec colwidth="2*" align="left"/>
+                                 <colspec colwidth="8*" align="left"/>
+                                 <tbody>
+                                    <row>
+                                       <entry>content: </entry>
+                                       <entry>
+                                          <b>simple</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>minOccurs: </entry>
+                                       <entry>
+                                          <b>0</b>
+                                       </entry>
+                                    </row>
+                                    <row>
+                                       <entry>maxOccurs: </entry>
+                                       <entry>
+                                          <b>unbounded</b>
+                                       </entry>
+                                    </row>
+                                 </tbody>
+                              </tgroup>
+                           </table>
+                        </p>
+                     </entry>
+                  </row>
+                  <row>
+                     <entry>Schema location</entry>
+                     <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+                  </row>
+               </tbody>
+            </tgroup>
+         </table>
+      </body>
+   </topic>
+</topic>

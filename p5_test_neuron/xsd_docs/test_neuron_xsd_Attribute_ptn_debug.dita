@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="debug">
+   <title>Attribute @ptn:debug</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>xs:string</entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>inheritable: </entry>
+                                    <entry>
+                                       <b>false</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Complex_Type_ptn_Attract__x3A__flag_CT.dita#Attract__x3A__flag_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Capacitance_CT.dita#Capacitance_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Coordinate_CT.dita#Coordinate_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Current_synapse.dita#Current_synapse"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Current_synapse__x3A__emmit.dita#p5_test_neuron_Current_synapse__x3A__emmit"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Firing_threshold_CT.dita#Firing_threshold_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Input.dita#p5_test_neuron_Input"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__attract__x3A__vectors.dita#p5_test_neuron_Input__x3A__attract__x3A__vectors"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.dita#p5_test_neuron_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern_Group.dita#p5_test_neuron_Input__x3A__generate__x3A__pattern_Group"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern_LineSet__x3A__vector.dita#p5_test_neuron_Input__x3A__generate__x3A__pattern_LineSet__x3A__vector"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector.dita#p5_test_neuron_Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Label_CT.dita#Label_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Maximum_voltage_CT.dita#Maximum_voltage_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Minimum_voltage_CT.dita#Minimum_voltage_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Outputs.dita#p5_test_neuron_Outputs"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Refactory_period_CT.dita#Refactory_period_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag.dita#Refactory_period__x3A__flag"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag__x3A__until_CT.dita#Refactory_period__x3A__flag__x3A__until_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Reset_potential_CT.dita#Reset_potential_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Resistance_CT.dita#Resistance_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Resting_potential_CT.dita#Resting_potential_CT"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential_emmit_vector.dita#Simulated_potential.emmit.vector"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulated_potential_CT.dita#Simulated_potential_CT"/>, <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_Stress__x3A__calculate.dita#p5_test_neuron_Simulation.Stress__x3A__calculate"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_Stress__x3A__calculate__x3A__output_node__x3A__not_validated.dita#p5_test_neuron_Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated"/>, <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_attract__x3A__aggregate.dita#p5_test_neuron_Simulation.attract__x3A__aggregate"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_attract__x3A__calculate.dita#Simulation.attract__x3A__calculate"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_keyValue__generate__basepoint.dita#keyValue__generate__basepoint"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_keyValue__generate__basepoint__length.dita#p5_test_neuron_keyValue__generate__basepoint__length"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_keyValue__generate__basepoint__vector.dita#p5_test_neuron_keyValue__generate__basepoint__vector"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

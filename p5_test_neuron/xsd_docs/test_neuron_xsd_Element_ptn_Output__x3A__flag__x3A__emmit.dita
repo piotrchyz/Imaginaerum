@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Output__x3A__flag__x3A__emmit">
+   <title>Element ptn:Output__x3A__flag__x3A__emmit</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>w analyz reagukje na flag, do zabrania w attract</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit">
+                           <image href="img/test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>331,2,563,42</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Current_synapse__x3A__emmit.dita#Current_synapse__x3A__emmit"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron_inhibitor.dita#Adaptive_neuron_inhibitor"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron_standard.dita#Adaptive_neuron_standard"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_standard.dita#Leaky_neuron_standard"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Receptor.dita#Receptor"/>, <xref href="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_Stress__x3A__calculate__x3A__output_node.dita#p5_test_neuron_Simulation.Stress__x3A__calculate__x3A__output_node"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_attract__x3A__calculate__x3A__output_node.dita#p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node"/>, <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_attract__x3A__calculate__x3A__output_node__x3A__validated.dita#p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated"/>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Element_ptn_Receptor.dita#p5_test_neuron_Receptor"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_xsd_Element_ptn_Current_synapse__x3A__emmit.dita#Current_synapse__x3A__emmit"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_xsd_Element_ptn_Current_synapse__x3A__emmit.dita#Current_synapse__x3A__emmit"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Output__x3A__flag__x3A__emmit xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Current_synapse__x3A__emmit ptn:debug="" ptn:Output_Node=""&gt;{0,unbounded}&lt;/ptn:Current_synapse__x3A__emmit&gt;
+&lt;/ptn:Output__x3A__flag__x3A__emmit&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

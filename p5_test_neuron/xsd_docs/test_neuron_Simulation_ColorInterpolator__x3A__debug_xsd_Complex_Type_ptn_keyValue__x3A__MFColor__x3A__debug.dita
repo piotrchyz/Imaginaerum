@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="p5_test_neuron_keyValue__x3A__MFColor__x3A__debug">
+   <title>Complex Type ptn:keyValue__x3A__MFColor__x3A__debug</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_keyValue__x3A__MFColor__x3A__debug">
+                           <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_keyValue__x3A__MFColor__x3A__debug.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>385,0,629,23</coords>
+                              <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_MFColor__x3A__sequence__x3A__debug.dita#MFColor__x3A__sequence__x3A__debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>385,33,646,56</coords>
+                              <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_keyValue__x3A__current_tick__x3A__debug.dita#keyValue__x3A__current_tick__x3A__debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>385,66,573,89</coords>
+                              <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_current-group__x3A__debug.dita#current-group__x3A__debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>385,99,708,122</coords>
+                              <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_MFColor__x3A__sequence__x3A__dynamic__x3A__debug.dita#MFColor__x3A__sequence__x3A__dynamic__x3A__debug"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_keyValue__x3A__MFColor__x3A__debug.dita#keyValue__x3A__MFColor__x3A__debug"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_MFColor__x3A__sequence__x3A__debug.dita#MFColor__x3A__sequence__x3A__debug"/> | <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_keyValue__x3A__current_tick__x3A__debug.dita#keyValue__x3A__current_tick__x3A__debug"/> | <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_current-group__x3A__debug.dita#current-group__x3A__debug"/> | <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_MFColor__x3A__sequence__x3A__dynamic__x3A__debug.dita#MFColor__x3A__sequence__x3A__dynamic__x3A__debug"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_MFColor__x3A__sequence__x3A__debug.dita#MFColor__x3A__sequence__x3A__debug"/>, <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_MFColor__x3A__sequence__x3A__dynamic__x3A__debug.dita#MFColor__x3A__sequence__x3A__dynamic__x3A__debug"/>, <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_current-group__x3A__debug.dita#current-group__x3A__debug"/>, <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_keyValue__x3A__current_tick__x3A__debug.dita#keyValue__x3A__current_tick__x3A__debug"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

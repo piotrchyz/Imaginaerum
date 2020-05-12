@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Input__x3A__generate">
+   <title>Element ptn:Input__x3A__generate</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate">
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>195,77,460,100</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Input__x3A__generate__x3A__sequences.dita#Input__x3A__generate__x3A__sequences"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>252,117,363,140</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_time"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>252,150,382,173</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_receptor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>252,183,412,206</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_Time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>252,216,429,239</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_Maximum_current"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>170,3,348,25</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref href="test_neuron_xsd_Element_ptn_Inputs.dita#p5_test_neuron_Inputs"/>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_time"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_receptor"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_Time_constant"/> , <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_Maximum_current"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_Maximum_current"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_Time_constant"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_receptor"/>, <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.dita#p5_test_neuron_Input__x3A__generate_Input_exec_time"/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Input_exec_time ptn:Input_exec_time__x3A__end="" ptn:Input_exec_time__x3A__pause="" ptn:Input_exec_time__x3A__start=""&gt;{1,1}&lt;/ptn:Input_exec_time&gt;
+  &lt;ptn:Input_exec_receptor ptn:Input_exec_receptor__end="" ptn:Input_exec_receptor__start=""&gt;{1,1}&lt;/ptn:Input_exec_receptor&gt;
+  &lt;ptn:Input_exec_Time_constant ptn:Input_exec_Time_constant__x3A__end="" ptn:Input_exec_Time_constant__x3A__start=""&gt;{1,1}&lt;/ptn:Input_exec_Time_constant&gt;
+  &lt;ptn:Input_exec_Maximum_current ptn:Input_exec_Maximum_current__x3A__end="" ptn:Input_exec_Maximum_current__x3A__start=""&gt;{1,1}&lt;/ptn:Input_exec_Maximum_current&gt;
+&lt;/ptn:Input__x3A__generate&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Attribute_ptn_Input__x3A__generate__x3A__sequences.dita#Input__x3A__generate__x3A__sequences"/>
+                                    </entry>
+                                    <entry>xs:int</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/xmlschema_procesy5/src-xmlschema/public_html/p5_test_neuron/test_neuron.Simulation.generate__x3A__pattern.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>
