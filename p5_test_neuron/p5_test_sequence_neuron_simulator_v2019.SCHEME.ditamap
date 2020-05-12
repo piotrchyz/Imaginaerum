@@ -589,22 +589,9 @@
          <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.param.xsl p5_test_neuron.param.xsl p5_test_neuron.param.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.param.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.colorIncerpol.html.colorIncerpol.html_to_create_props"
-                     navtitle="colorIncerpol.html.colorIncerpol.html_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=colorIncerpol.html.colorIncerpol.html_to_create_props)
-        --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.colorIncerpol.html.props"
-                     navtitle="colorIncerpol.html.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="html"
-                    processing-role="resource-only"
-                    navtitle="colorIncerpol.html"
-                    keys="colorIncerpol.html"
-                    href="colorIncerpol.html"
-                    props=" imported  html "
-                    class="+ map/topicref mapgroup-d/keydef "/>
-         </subjectdef>
-         <!--
-                #64b ./n=keydef ; @* =  html resource-only colorIncerpol.html colorIncerpol.html colorIncerpol.html  imported  html  + map/topicref mapgroup-d/keydef    $SubjectName.new = colorIncerpol.html.props ; 
-            -->
+         
+         
+         
          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props"
                      navtitle="test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props)
         --></subjectdef>
@@ -928,16 +915,7 @@
          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.anim.html.anim.html_to_create_props"
                      navtitle="anim.html.anim.html_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=anim.html.anim.html_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.anim.html.props"
-                     navtitle="anim.html.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="html"
-                    processing-role="resource-only"
-                    navtitle="anim.html"
-                    keys="anim.html"
-                    href="anim.html"
-                    props=" imported  html "
-                    class="+ map/topicref mapgroup-d/keydef "/>
-         </subjectdef>
+         
          <!--
                 #64b ./n=keydef ; @* =  html resource-only anim.html anim.html anim.html  imported  html  + map/topicref mapgroup-d/keydef    $SubjectName.new = anim.html.props ; 
             -->
