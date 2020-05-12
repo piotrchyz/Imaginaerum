@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_Stress__x3A__calculate__x3A__output_node">
-                           <image href="img/test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_Stress__x3A__calculate__x3A__output_node.jpeg"/>
+                           <image href="img/test_neuron_Simulation_attract_xml_xsd_Complex_Type_ptn_Simulation_Stress__x3A__calculate__x3A__output_node.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>377,77,481,117</coords>

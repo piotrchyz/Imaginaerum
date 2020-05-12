@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Element_ptn_Simulation">
-                           <image href="img/test_neuron_xsd_Element_ptn_Simulation.jpeg"/>
+                           <image href="img/test_neuron_xsd_Element_ptn_Simulation.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>181,2,344,59</coords>
@@ -121,7 +121,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Simulator_tick">
-                              <image href="img/test_neuron_xsd_Element_ptn_Simulator_tick.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulator_tick.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>191,15,334,41</coords>
@@ -216,7 +216,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Simulation_ticks">
-                              <image href="img/test_neuron_xsd_Element_ptn_Simulation_ticks.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulation_ticks.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>201,15,354,41</coords>

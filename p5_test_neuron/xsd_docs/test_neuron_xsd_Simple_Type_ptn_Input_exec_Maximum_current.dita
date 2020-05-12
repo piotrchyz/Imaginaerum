@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Input_exec_Maximum_current">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Input_exec_Maximum_current.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Input_exec_Maximum_current.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>249,0,411,26</coords>

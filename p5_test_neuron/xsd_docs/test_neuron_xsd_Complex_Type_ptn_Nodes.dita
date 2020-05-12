@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Complex_Type_ptn_Nodes">
-                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Nodes.jpeg"/>
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Nodes.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>203,77,399,117</coords>
@@ -132,7 +132,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor">
-                              <image href="img/test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>354,228,479,268</coords>
@@ -793,7 +793,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor__x3A__AB">
-                              <image href="img/test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor__x3A__AB.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor__x3A__AB.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>356,228,481,268</coords>
@@ -1454,7 +1454,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor__X3A__AA">
-                              <image href="img/test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor__X3A__AA.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor__X3A__AA.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>357,228,482,268</coords>

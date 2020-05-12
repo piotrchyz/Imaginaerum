@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Minimum_voltage">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Minimum_voltage.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Minimum_voltage.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>169,0,279,26</coords>

@@ -52,7 +52,7 @@
     </target>
     
     <target  name="open" depends="param">
-        <exec command="open ${p5_test_neuron.Simulation.analyze_simulation.x3d}"></exec>
+        <exec command="open ${p5_test_neuron.Simulation.analyze_simulation.x3d}"/>
     </target>
     
     <target name="clean" depends="param">

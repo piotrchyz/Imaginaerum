@@ -24,7 +24,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Simulated_potential_input_vector">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Simulated_potential_input_vector.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Simulated_potential_input_vector.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>261,0,432,26</coords>

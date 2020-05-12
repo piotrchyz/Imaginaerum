@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Element_ptn_Current_synapse__x3A__emmit">
-                           <image href="img/test_neuron_xsd_Element_ptn_Current_synapse__x3A__emmit.jpeg"/>
+                           <image href="img/test_neuron_xsd_Element_ptn_Current_synapse__x3A__emmit.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>288,77,392,117</coords>

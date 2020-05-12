@@ -27,6 +27,16 @@
                                 </topicmeta>
                         </keydef>
                 </topicref>
+                
+                
+                <topicref  navtitle="build_test_neuron.xml"
+                        keys="build_test_neuron.xml" keyscope="build_test_neuron.xml"
+                        href="build_test_neuron.xml.dita" props=" imported  build  xml ">
+                        <keydef format="xml" processing-role="resource-only"
+                                navtitle="build_test_neuron.xml" keys="build_test_neuron.xml"
+                                href="build_test_neuron.xml" props=" imported  build  xml "/>
+                </topicref>
+                
                 <topicref navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"
                         keys="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_ "
                         keyscope="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"
@@ -46,6 +56,12 @@
                         <topicsetref
                                 href="../../../../Imaginaerum/p5_test_neuron/xsd_docs/test_neuron.ditamap"
                                 format="ditamap" processing-role="resource-only"/>
+                </topicref>
+                <topicref
+                        href="absstract_simulation_debug_simulation_directory_generated_structure.dita">
+                        <topicref
+                                href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita"
+                        />
                 </topicref>
                 
         </topichead>
@@ -512,13 +528,7 @@
                                 href="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl"
                                 props=" imported  xsl "/>
                 </topicref>
-                <topicref scope="external" navtitle="build_test_neuron.xml[to_create]"
-                        keys="build_test_neuron.xml_to_create_ " keyscope="build_test_neuron.xml"
-                        href="build_test_neuron.xml.dita" props=" imported  build  xml ">
-                        <keydef format="xml" processing-role="resource-only"
-                                navtitle="build_test_neuron.xml" keys="build_test_neuron.xml"
-                                href="build_test_neuron.xml" props=" imported  build  xml "/>
-                </topicref>
+                
                 <topicref scope="external" navtitle="anim.html[to_create]"
                         keys="anim.html_to_create_ " keyscope="anim.html" href="anim.html.dita"
                         props=" imported  html ">

@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Complex_Type_ptn_Current_synapse">
-                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Current_synapse.jpeg"/>
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Current_synapse.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>198,37,302,77</coords>
@@ -143,7 +143,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Maximum_current">
-                              <image href="img/test_neuron_xsd_Element_ptn_Maximum_current.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Maximum_current.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>210,15,372,41</coords>
@@ -238,7 +238,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Time_constant">
-                              <image href="img/test_neuron_xsd_Element_ptn_Time_constant.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Time_constant.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>193,15,338,41</coords>
@@ -333,7 +333,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Delay">
-                              <image href="img/test_neuron_xsd_Element_ptn_Delay.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Delay.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>149,15,250,41</coords>
@@ -428,7 +428,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Output_Node">
-                              <image href="img/test_neuron_xsd_Element_ptn_Output_Node.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Output_Node.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>173,7,311,33</coords>

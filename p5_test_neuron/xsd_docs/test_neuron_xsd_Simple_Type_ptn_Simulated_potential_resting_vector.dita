@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Simulated_potential_resting_vector">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Simulated_potential_resting_vector.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Simulated_potential_resting_vector.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>270,0,441,26</coords>

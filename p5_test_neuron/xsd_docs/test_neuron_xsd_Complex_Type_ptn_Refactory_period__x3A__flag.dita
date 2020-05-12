@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag">
-                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag.jpeg"/>
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>237,37,341,77</coords>
@@ -121,7 +121,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Refactory_period__x3A__flag__x3A__until">
-                              <image href="img/test_neuron_xsd_Element_ptn_Refactory_period__x3A__flag__x3A__until.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Refactory_period__x3A__flag__x3A__until.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>304,57,579,83</coords>

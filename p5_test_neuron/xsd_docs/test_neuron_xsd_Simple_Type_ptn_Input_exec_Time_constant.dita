@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Input_exec_Time_constant">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Input_exec_Time_constant.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Input_exec_Time_constant.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>232,0,377,26</coords>

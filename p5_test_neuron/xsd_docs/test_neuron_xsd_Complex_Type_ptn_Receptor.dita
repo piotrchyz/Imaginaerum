@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Complex_Type_ptn_Receptor">
-                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Receptor.jpeg"/>
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Receptor.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>264,134,368,174</coords>
@@ -745,7 +745,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Receptor_regex_filter">
-                              <image href="img/test_neuron_xsd_Element_ptn_Receptor_regex_filter.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Receptor_regex_filter.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>214,7,393,33</coords>

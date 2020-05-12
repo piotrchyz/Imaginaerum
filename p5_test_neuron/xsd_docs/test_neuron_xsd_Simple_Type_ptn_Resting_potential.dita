@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Resting_potential">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Resting_potential.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Resting_potential.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>168,0,291,26</coords>

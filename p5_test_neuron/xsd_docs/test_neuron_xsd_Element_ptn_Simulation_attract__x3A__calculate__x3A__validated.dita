@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__validated">
-                           <image href="img/test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__validated.jpeg"/>
+                           <image href="img/test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__validated.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>358,137,602,163</coords>

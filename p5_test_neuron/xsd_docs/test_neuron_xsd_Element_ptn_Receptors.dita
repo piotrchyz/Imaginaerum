@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Element_ptn_Receptors">
-                           <image href="img/test_neuron_xsd_Element_ptn_Receptors.jpeg"/>
+                           <image href="img/test_neuron_xsd_Element_ptn_Receptors.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>261,117,452,157</coords>

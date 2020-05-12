@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag__x3A__until_CT">
-                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag__x3A__until_CT.jpeg"/>
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Refactory_period__x3A__flag__x3A__until_CT.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>316,0,591,26</coords>

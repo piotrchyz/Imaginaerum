@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Complex_Type_ptn_Outputs">
-                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Outputs.jpeg"/>
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Outputs.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>136,37,240,77</coords>
@@ -121,7 +121,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Current_synapse">
-                              <image href="img/test_neuron_xsd_Element_ptn_Current_synapse.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Current_synapse.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>218,77,322,117</coords>

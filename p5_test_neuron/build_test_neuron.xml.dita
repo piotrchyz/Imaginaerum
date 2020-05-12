@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossary Group//EN" "glossgroup.dtd">
+<glossgroup id="build_test_neuron_xml">
+    <title>build_test_neuron.xml description</title>
+    <glossgroup id="properties_group">
+        <title>properties group global</title>
+        <glossentry id="p5_test_neuron.basedir">
+            <glossterm>p5_test_neuron.basedir</glossterm>
+            <glossBody>
+                <glossUsage>location="${basedir}/p5_test_neuron"</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5_test_neuron.repository">
+            <glossterm>p5_test_neuron.repository</glossterm>
+            <glossdef>location for simulation xml files</glossdef>
+            <glossBody>
+                <glossUsage>location="${basedir}/p5_test_neuron/repository"</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5suis">
+            <glossterm>p5suis</glossterm>
+            <glossdef>path to ant speech module integrated with <term>say</term> executable in
+                mac</glossdef>
+            <glossBody>
+                <glossUsage>location="/opt/local/pl.procesy5/p5build_SE/WPS_Functions/system_ui_info_speech/build_system_ui_info_speech.xml"</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="glossentry_hxq_cm5_qlb">
+            <glossterm>p5_test_neuron.xsl</glossterm>
+            <glossdef>localisation of main xslt transform file  <xref
+                    keyref="p5_test_neuron.xsl.p5_test_neuron.xsl" scope="local"/></glossdef>
+        </glossentry>
+        <glossentry id="p5_test_neuron.snake.xsl" rev="incomplete">
+            <glossterm>p5_test_neuron.snake.xsl</glossterm>
+            <glossdef>unfinished transform for snake comparation analys advantage in sequenced
+                neurons</glossdef>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.analyze_simulation.xml.xsl">
+            <glossterm>p5_test_neuron.Simulation.analyze_simulation.xml.xsl</glossterm>
+            <glossdef>localisation of main analyse aggregation xsl transform file</glossdef>
+            <glossBody>
+                <glossUsage>location="${p5_test_neuron.basedir}/p5_test_neuron.Simulation.analyze_simulation.xml.xsl"</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl">
+            <glossterm>p5_test_neuron.Simulation.analyze_simulation.x3d.xsl</glossterm>
+            <glossdef>localisation of main 3d visualisation to xsd transform file</glossdef>
+            <glossBody>
+                <glossUsage>location="${<xref href="#p5_test_neuron.basedir"
+                        >p5_test_neuron.basedir</xref>}/p5_test_neuron.Simulation.analyze_simulation.x3d.xsl"</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5_test_neuron.xsd">
+            <glossterm>p5_test_neuron.xsd</glossterm>
+            <glossdef>localisation of main schema file<note>This file could be driven used to
+                    achieve some contsants in simulations from <xmlelement>assert</xmlelement>
+                    definitions by using included own xsl specialized templates</note></glossdef>
+            <glossBody>
+                <glossUsage>location="${<xref href="#p5_test_neuron.basedir"
+                        >p5_test_neuron.basedir</xref>}/test_neuron.xsd"</glossUsage>
+            </glossBody>
+        </glossentry>
+    </glossgroup>
+    <glossentry id="p5_test_neuron.Simulation.analyze_simulation.x3d" props="ant.property.props">
+        <glossterm>p5_test_neuron.Simulation.analyze_simulation.x3d</glossterm>
+    </glossentry>
+    
+    <glossgroup id="default.param_group">
+        <title>default.param grouped target </title>
+        <glossentry id="default.param" props="ant.target.props">
+            <glossterm>default.param</glossterm>
+            <glossdef>task for evaluate default params</glossdef>
+            <glossBody>
+                <glossUsage>accidentatlly
+                    debug<codeblock>&lt;condition property="p5_test_neuron.Config" value="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml">
+    &lt;available file="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml"/>
+&lt;/condition></codeblock>default
+                    behavior<codeblock>&lt;property name="p5_test_neuron.Config" location="${<xref href="#p5_test_neuron.basedir">p5_test_neuron.basedir</xref>}/Config1.xml"/></codeblock></glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Config">
+            <glossterm>p5_test_neuron.Config</glossterm>
+            <glossBody>
+                <glossUsage>value="${p5_test_neuron.repository}/Simulation.analys.xml.50.xml"</glossUsage>
+            </glossBody>
+        </glossentry>
+    </glossgroup>
+    <glossentry id="debug.param" props="ant.target.props">
+        <glossterm>debug.param</glossterm>
+        <glossBody>
+            <glossUsage>task for evaluate extra debugging
+                params<codeblock>&lt;target name="debug.param">
+        &lt;property name="p5_test_neuron.Config" location="${p5_test_neuron.basedir}/Config.debug.xml"/>
+        &lt;property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation.debug"/>
+        &lt;property name="p5_test_neuron.debug__x3A__flag" value="true"/>
+        &lt;echo>#28 setting default config base model for debugg engine
+            $p5_test_neuron.Config = ${p5_test_neuron.Config}
+            $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
+            $p5_test_neuron.debug__x3A__flag = ${p5_test_neuron.debug__x3A__flag}
+        &lt;/echo>&lt;!-- say_to_PL.file -->
+&lt;/target></codeblock></glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="analyze_simulation_x3d.debug" props="ant.extension-point.props">
+        <glossterm>analyze_simulation_x3d.debug</glossterm>
+        <glossBody>
+            <glossUsage>
+                <codeblock>&lt;extension-point name="analyze_simulation_x3d.debug" depends="debug.param,analyze_simulation_x3d"/></codeblock>
+            </glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="debug" props="ant.target.props">
+        <glossterm>debug</glossterm>
+        <glossdef>base model for debugg engine</glossdef>
+        <glossBody>
+            <glossUsage props="ant.target.depends.props">depends <xref href="#debug.param"/>,<xref
+                    href="#default"/></glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="default" props="ant.target.props">
+        <glossterm>default</glossterm>
+        <glossBody>
+            <glossUsage props="ant.target.depends.props"><xref href="#default.param"/>, <xref
+                    href="#clean"/>, <xref href="#generate_simulation_build__x3A__exec"/>,<xref
+                    href="#analyze_simulation_x3d"/>,<xref href="#open"/></glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="open">
+        <glossterm id="open">open</glossterm>
+        <glossdef>opens final xsd simulation <xref
+                href="#p5_test_neuron.Simulation.analyze_simulation.x3d"
+                >p5_test_neuron.Simulation.analyze_simulation.x3d</xref></glossdef>
+        <glossBody>
+            <glossUsage>
+                <codeblock>&lt;exec command="open ${<xref href="#p5_test_neuron.Simulation.analyze_simulation.x3d">p5_test_neuron.Simulation.analyze_simulation.x3d</xref>}"/></codeblock>
+            </glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="clean">
+        <glossterm>clean</glossterm>
+        <glossBody>
+            <glossUsage>depends <xref href="#param"/></glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="param">
+        <glossterm id="param">param</glossterm>
+        <glossdef>Default parameters evaluate</glossdef>
+        <glossBody>
+            <glossUsage>
+                <codeblock>&lt;property name="p5_test_neuron.Simulation_ticks" value="10"/>
+&lt;property name="p5_test_neuron.Simulation.dir" location="${p5_test_neuron.repository}/Simulation"/>
+&lt;property name="p5_test_neuron.Simulation.build.analys.xml" location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"/>
+&lt;property name="p5_test_neuron.Simulation.analyze_simulation.xml" location="${p5_test_neuron.Simulation.dir}/analyze_simulation.xml"/>
+&lt;property name="p5_test_neuron.Simulation.analyze_simulation.x3d" location="${p5_test_neuron.Simulation.dir}/Simulation.analyze_simulation.x3d.html"/>
+&lt;property name="p5_test_neuron.Simulation.snake.xml" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.snake.xml"/>
+&lt;property name="p5_test_neuron.Simulation.overwiev.dita" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.overwiev.dita"/>
+&lt;property name="p5_test_neuron.Simulation.overwiev.ditamap" location="${p5_test_neuron.Simulation.dir}/p5_test_neuron.Simulation.overwiev.ditamap"/></codeblock>
+                <codeblock>&lt;echo>Eventually some params override
+            $p5_test_neuron.Simulation_ticks} = ${p5_test_neuron.Simulation_ticks}
+            $p5_test_neuron.Simulation.dir = ${p5_test_neuron.Simulation.dir}
+            $p5_test_neuron.Simulation.analyze_simulation.xml = ${p5_test_neuron.Simulation.analyze_simulation.xml}
+            $p5_test_neuron.Simulation.analyze_simulation.x3d = ${p5_test_neuron.Simulation.analyze_simulation.x3d}
+&lt;/echo></codeblock>
+            </glossUsage>
+        </glossBody>
+        
+    </glossentry>
+    <glossgroup id="param.group">
+        <title>params list grouped</title>
+        <glossentry id="p5_test_neuron.Simulation_ticks">
+            <glossterm>p5_test_neuron.Simulation_ticks</glossterm>
+            <glossBody>
+                <glossUsage>default value 10</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.dir">
+            <glossterm>p5_test_neuron.Simulation.dir</glossterm>
+            <glossBody>
+                <glossUsage>location="${p5_test_neuron.repository}/Simulation"</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.build.analys.xml">
+            <glossterm>p5_test_neuron.Simulation.build.analys.xml</glossterm>
+            <glossdef>Context simulation generated build which consists exact actions for each tick
+                and scenarios with final <xref href="#analyze_simulation_x3d"/></glossdef>
+            <glossBody>
+                <glossUsage>location="${p5_test_neuron.Simulation.dir}/build.p5_test_neuron.Simulation.build.analys.xml"</glossUsage>
+            </glossBody>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.analyze_simulation.xml">
+            <glossterm>p5_test_neuron.Simulation.analyze_simulation.xml</glossterm>
+            <glossdef>file with some more aggregated final informations mainly generated by <xref
+                    keyref="p5_test_neuron.Simulation.analyze_simulation.xml.xsl.p5_test_neuron.Simulation.analyze_simulation.xml.xsl"
+                    format="xsl" scope="local"/> - with structure mainly in <xref
+                    keyref="test_neuron.Simulation.analyze_simulation.xml.xsd.test_neuron.Simulation.analyze_simulation.xml.xsd"
+                    format="xsd" scope="local"/> with root <xref
+                    keyref="test_neuron.test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Simulation_analyze_simulation_xml.dita__Simulation.analyze_simulation.xml"
+                    scope="local"/></glossdef>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.snake.xml">
+            <glossterm>p5_test_neuron.Simulation.snake.xml</glossterm>
+            <glossdef>Not used yed special file to purpose of expose extra capabilities of sequenced
+                neurons</glossdef>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.overwiev.dita">
+            <glossterm>p5_test_neuron.Simulation.overwiev.dita</glossterm>
+            <glossdef>Dita file with special raport of exact voltages and properties in
+                scenes</glossdef>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Simulation.overwiev.ditamap">
+            <glossterm>p5_test_neuron.Simulation.overwiev.ditamap</glossterm>
+            <glossdef>Map file for simulation overwiev</glossdef>
+        </glossentry>
+        <glossentry id="p5_test_neuron.Inputs">
+            <glossterm>p5_test_neuron.Inputs</glossterm>
+            <glossdef>Initial file with Inputs - <xref
+                    keyref="test_neuron.test_neuron_xsd_Element_ptn_Inputs.dita__p5_test_neuron_Inputs"
+                    scope="local"/></glossdef>
+            <glossBody>
+                <glossUsage>location="${p5_test_neuron.Simulation.dir}/Inputs1.xml"</glossUsage>
+            </glossBody>
+        </glossentry>
+    </glossgroup>
+    <glossentry id="generate_simulation_build__x3A__if_exists_flag">
+        <glossterm id="generate_simulation_build__x3A__if_exists_flag"
+            >generate_simulation_build__x3A__if_exists_flag</glossterm>
+        <glossdef>flag to optimize and detect partially finished build/simulation</glossdef>
+        <glossBody>
+            <glossUsage>
+                <codeblock>&lt;condition property="generate_simulation_build__x3A__if_exists_flag" value="exists ${p5_test_neuron.Simulation.build.analys.xml} or maybe ${p5_test_neuron.Simulation.analyze_simulation.xml}">
+            &lt;available file="${p5_test_neuron.Simulation.analyze_simulation.xml}"/>&lt;!-- ${p5_test_neuron.Simulation.build.analys.xml} -->
+&lt;/condition>
+&lt;echo>#40 $generate_simulation_build__x3A__if_exists_flag = ${generate_simulation_build__x3A__if_exists_flag}&lt;/echo></codeblock>
+            </glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="generate_simulation_build">
+        <glossterm>generate_simulation_build</glossterm>
+        <glossdef>will #34 will read <xref href="#p5_test_neuron.Config"
+                >p5_test_neuron.Config</xref>       to generate <xref
+                href="#p5_test_neuron.Simulation.build.analys.xml"/></glossdef>
+        <glossBody>
+            <glossUsage>
+                <p>depends="<xref href="#generate_simulation_build__x3A__if_exists_flag"/>"</p>
+                <p>unless="<xref href="#generate_simulation_build__x3A__if_exists_flag"
+                        >generate_simulation_build__x3A__if_exists_flag</xref>"</p>
+                <p>
+                    <codeblock>&lt;input addproperty="p5_test_neuron.Simulation.dir" 
+        message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
+        &lt;input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
+        &lt;input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>
+        &lt;input addproperty="p5_test_neuron.Simulation.build.analys.xml" message="p5_test_neuron.Simulation.build.analys.xml"/></codeblock>
+                </p>
+                <codeblock/>
+            </glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="glossentry_vg4_ym5_qlb">
+        <glossterm id="generate_simulation_build__x3A__exec"
+            >generate_simulation_build__x3A__exec</glossterm>
+        <glossdef>just ant execute generated <xref
+                href="#p5_test_neuron.Simulation.build.analys.xml"/> file</glossdef>
+        <glossBody>
+            <glossUsage>
+                <codeblock>&lt;ant antfile="${p5_test_neuron.Simulation.build.analys.xml}"/></codeblock>
+            </glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="analyze_simulation_build">
+        <glossterm>analyze_simulation_build</glossterm>
+        <glossdef>standard context according to <xref href="#analyze_simulation_build.debug"
+            /></glossdef>
+    </glossentry>
+    <glossentry id="analyze_simulation_x3d">
+        <glossterm>analyze_simulation_x3d</glossterm>
+        <glossdef>generate final x3d visualisation</glossdef>
+        <glossBody>
+            <glossUsage>
+                <codeblock>&lt;input addproperty="p5_test_neuron.Simulation.dir" message="p5_test_neuron.Simulation.dir ${p5_test_neuron.repository}/Simulation" />
+&lt;input addproperty="p5_test_neuron.Simulation_ticks" message="p5_test_neuron.Simulation_ticks" defaultvalue="10"/>
+&lt;input addproperty="p5_test_neuron.Config" message="p5_test_neuron.Config"/>
+&lt;input addproperty="p5_test_neuron.Simulation.build.analys.xml" message="p5_test_neuron.Simulation.build.analys.xml"/>
+&lt;input addproperty="p5_test_neuron.Simulation.analyze_simulation.xml" message="p5_test_neuron.Simulation.analyze_simulation.xml"/>
+&lt;input addproperty="p5_test_neuron.Simulation.analyze_simulation.x3d" message="p5_test_neuron.Simulation.analyze_simulation.x3d"/></codeblock>
+            </glossUsage>
+        </glossBody>
+    </glossentry>
+    <glossentry id="analyze_simulation_overwiev.dita.debug">
+        <glossterm>analyze_simulation_overwiev.dita.debug</glossterm>
+        <glossdef>generate analys for debug contex</glossdef>
+        <glossBody>
+            <glossUsage>depends <xref href="#analyze_simulation_x3d.debug"/></glossUsage>
+        </glossBody>
+    </glossentry>
+    
+    
+</glossgroup>

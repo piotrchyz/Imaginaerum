@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_standard">
-                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_standard.jpeg"/>
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_standard.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>244,134,348,174</coords>
@@ -669,7 +669,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Label_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Label_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Label_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>167,57,267,83</coords>
@@ -811,7 +811,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Coordinate_X_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_X_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_X_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>195,57,323,83</coords>
@@ -938,7 +938,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Coordinate_Y_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_Y_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_Y_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>195,57,323,83</coords>
@@ -1065,7 +1065,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Coordinate_Z_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_Z_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Coordinate_Z_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>208,57,336,83</coords>
@@ -1198,7 +1198,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Capacitance_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Capacitance_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Capacitance_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>214,57,348,83</coords>
@@ -1337,7 +1337,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Resistance_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Resistance_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Resistance_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>206,57,332,83</coords>
@@ -1476,7 +1476,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Minimum_voltage_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Minimum_voltage_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Minimum_voltage_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>240,57,400,83</coords>
@@ -1622,7 +1622,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Maximum_voltage_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Maximum_voltage_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Maximum_voltage_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>243,57,406,83</coords>
@@ -1768,7 +1768,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Resting_potential_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Resting_potential_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Resting_potential_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>239,57,398,83</coords>
@@ -1914,7 +1914,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Reset_potential_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Reset_potential_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Reset_potential_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>230,57,380,83</coords>
@@ -2060,7 +2060,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Firing_threshold_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Firing_threshold_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Firing_threshold_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>232,57,384,83</coords>
@@ -2206,7 +2206,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Adaptation_conductance_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Adaptation_conductance_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Adaptation_conductance_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>242,15,436,41</coords>
@@ -2313,7 +2313,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Adaptation_time_constant_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Adaptation_time_constant_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Adaptation_time_constant_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>250,15,452,41</coords>
@@ -2420,7 +2420,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Refactory_period_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Refactory_period_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Refactory_period_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>236,57,392,83</coords>
@@ -2559,7 +2559,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Is_inhibitor_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Is_inhibitor_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Is_inhibitor_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>192,7,349,33</coords>
@@ -2673,7 +2673,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Simulated_potential_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>251,57,422,83</coords>
@@ -2835,7 +2835,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Refactory_period__x3A__flag_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Refactory_period__x3A__flag_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Refactory_period__x3A__flag_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>277,77,381,117</coords>
@@ -2964,7 +2964,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Attract__x3A__flag_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Attract__x3A__flag_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Attract__x3A__flag_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>233,57,399,83</coords>
@@ -3113,7 +3113,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>310,80,554,106</coords>
@@ -3357,7 +3357,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Output__x3A__flag_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Output__x3A__flag_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Output__x3A__flag_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>201,7,367,33</coords>
@@ -3426,7 +3426,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Stress__x3A__flag_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Stress__x3A__flag_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Stress__x3A__flag_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>196,7,357,33</coords>
@@ -3495,7 +3495,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>327,77,585,117</coords>
@@ -3638,7 +3638,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_sum_2">
-                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_sum_2.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Simulated_potential__x3A__vectors_sum_2.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>287,7,555,33</coords>

@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern__x3A__apply_xml">
-                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern__x3A__apply_xml.jpeg"/>
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__pattern__x3A__apply_xml.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>366,37,535,60</coords>

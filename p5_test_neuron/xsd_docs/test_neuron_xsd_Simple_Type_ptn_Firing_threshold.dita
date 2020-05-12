@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Firing_threshold">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Firing_threshold.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Firing_threshold.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>161,0,284,26</coords>

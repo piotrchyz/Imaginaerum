@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors">
-                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.jpeg"/>
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>278,77,375,100</coords>

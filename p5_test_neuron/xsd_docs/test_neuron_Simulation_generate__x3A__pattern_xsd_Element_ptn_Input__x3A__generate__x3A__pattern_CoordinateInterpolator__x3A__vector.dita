@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector">
-                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.jpeg"/>
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>456,77,881,100</coords>

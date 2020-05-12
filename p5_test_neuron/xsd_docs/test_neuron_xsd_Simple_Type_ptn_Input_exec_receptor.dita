@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Input_exec_receptor">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Input_exec_receptor.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Input_exec_receptor.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>202,0,340,26</coords>

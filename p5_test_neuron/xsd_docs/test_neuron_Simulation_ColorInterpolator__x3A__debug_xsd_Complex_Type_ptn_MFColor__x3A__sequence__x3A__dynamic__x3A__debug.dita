@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_MFColor__x3A__sequence__x3A__dynamic__x3A__debug">
-                           <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_MFColor__x3A__sequence__x3A__dynamic__x3A__debug.jpeg"/>
+                           <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_MFColor__x3A__sequence__x3A__dynamic__x3A__debug.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>370,37,522,60</coords>

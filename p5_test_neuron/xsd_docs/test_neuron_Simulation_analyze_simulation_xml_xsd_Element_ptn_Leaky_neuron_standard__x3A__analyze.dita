@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Leaky_neuron_standard__x3A__analyze">
-                           <image href="img/test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Leaky_neuron_standard__x3A__analyze.jpeg"/>
+                           <image href="img/test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Leaky_neuron_standard__x3A__analyze.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>279,77,372,100</coords>

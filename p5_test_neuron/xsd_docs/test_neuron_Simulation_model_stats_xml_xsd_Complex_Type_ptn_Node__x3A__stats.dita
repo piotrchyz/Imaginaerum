@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_model_stats_xml_xsd_Complex_Type_ptn_Node__x3A__stats">
-                           <image href="img/test_neuron_Simulation_model_stats_xml_xsd_Complex_Type_ptn_Node__x3A__stats.jpeg"/>
+                           <image href="img/test_neuron_Simulation_model_stats_xml_xsd_Complex_Type_ptn_Node__x3A__stats.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>185,37,341,60</coords>
@@ -290,7 +290,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Output__x3A__stats">
-                              <image href="img/test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Output__x3A__stats.jpeg"/>
+                              <image href="img/test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Output__x3A__stats.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>184,77,378,100</coords>
@@ -426,7 +426,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Input__x3A__stats">
-                              <image href="img/test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Input__x3A__stats.jpeg"/>
+                              <image href="img/test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Input__x3A__stats.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>175,77,393,100</coords>

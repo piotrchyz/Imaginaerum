@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Element_ptn_Input__x3A__nodes">
-                           <image href="img/test_neuron_xsd_Element_ptn_Input__x3A__nodes.jpeg"/>
+                           <image href="img/test_neuron_xsd_Element_ptn_Input__x3A__nodes.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>242,2,387,42</coords>
@@ -121,7 +121,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_xsd_Element_ptn_Input__x3A__node">
-                              <image href="img/test_neuron_xsd_Element_ptn_Input__x3A__node.jpeg"/>
+                              <image href="img/test_neuron_xsd_Element_ptn_Input__x3A__node.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>173,7,311,33</coords>

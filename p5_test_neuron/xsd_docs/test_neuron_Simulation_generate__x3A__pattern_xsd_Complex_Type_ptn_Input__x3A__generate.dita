@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate">
-                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.jpeg"/>
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>205,37,470,60</coords>
@@ -136,7 +136,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_time">
-                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_time.jpeg"/>
+                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_time.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>153,39,362,62</coords>
@@ -253,7 +253,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_receptor">
-                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_receptor.jpeg"/>
+                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_receptor.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>172,39,371,62</coords>
@@ -356,7 +356,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_Time_constant">
-                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_Time_constant.jpeg"/>
+                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_Time_constant.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>202,39,460,62</coords>
@@ -459,7 +459,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_Maximum_current">
-                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_Maximum_current.jpeg"/>
+                              <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input_exec_Maximum_current.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>219,39,494,62</coords>

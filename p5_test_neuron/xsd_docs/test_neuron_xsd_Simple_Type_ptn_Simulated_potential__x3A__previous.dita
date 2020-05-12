@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Simple_Type_ptn_Simulated_potential__x3A__previous">
-                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Simulated_potential__x3A__previous.jpeg"/>
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Simulated_potential__x3A__previous.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>280,0,451,26</coords>

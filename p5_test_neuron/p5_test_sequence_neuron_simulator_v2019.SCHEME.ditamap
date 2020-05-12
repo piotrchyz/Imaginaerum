@@ -30,7 +30,7 @@
           <subjectdef keyref="mode"/>
           
           <subjectdef keyref="test_neuron.PropsKey"/>
-          
+          <subjectdef keyref="ant.PropsKey"/>
           
           <!-- EOF LOCAL CONF -->
          
@@ -101,7 +101,9 @@
    
    
    
-   <schemeref href="../../../../__ROOT_DITAMAP__SPECS__/props.development/props_mode__SCHEME.ditamap"></schemeref>
+   <schemeref href="../../../../__ROOT_DITAMAP__SPECS__/props.development/props_mode__SCHEME.ditamap"/>
+    <schemeref href="../../../../__ROOT_DITAMAP__SPECS__/props.development/props_ant__SCHEME.ditamap"/>
+    
     <schemeref href="xsd_docs/test_neuron.SCHEME.ditamap"/>
    <!--<topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__CLASS.ditamap"
              format="ditamap"/>-->

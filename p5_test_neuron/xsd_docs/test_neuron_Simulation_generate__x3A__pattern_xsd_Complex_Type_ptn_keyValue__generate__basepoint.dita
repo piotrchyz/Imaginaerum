@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_keyValue__generate__basepoint">
-                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_keyValue__generate__basepoint.jpeg"/>
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_keyValue__generate__basepoint.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>254,37,351,60</coords>

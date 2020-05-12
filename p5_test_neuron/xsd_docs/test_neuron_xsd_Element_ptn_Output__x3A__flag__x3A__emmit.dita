@@ -22,7 +22,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit">
-                           <image href="img/test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.jpeg"/>
+                           <image href="img/test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>331,2,563,42</coords>

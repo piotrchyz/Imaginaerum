@@ -18,7 +18,7 @@
                   <entry>
                      <p>
                         <imagemap id="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_keyValue__x3A__current_tick__x3A__debug">
-                           <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_keyValue__x3A__current_tick__x3A__debug.jpeg"/>
+                           <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_keyValue__x3A__current_tick__x3A__debug.jpeg" scalefit="yes"/>
                            <area>
                               <shape>rect</shape>
                               <coords>365,5,579,28</coords>
@@ -86,7 +86,7 @@
                      <entry>
                         <p>
                            <imagemap id="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_Simulation_analys_xml__x3A__analyze">
-                              <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_Simulation_analys_xml__x3A__analyze.jpeg"/>
+                              <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_Simulation_analys_xml__x3A__analyze.jpeg" scalefit="yes"/>
                               <area>
                                  <shape>rect</shape>
                                  <coords>270,77,443,100</coords>
