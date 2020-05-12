@@ -51,15 +51,6 @@
                         
                         
                 </topicref>
-                
-                
-                <topicref navtitle="test_neuron.xsd" keys="test_neuron.xsd"
-                        keyscope="test_neuron.xsd" href="test_neuron.xsd.dita"
-                        props=" imported  xsd ">
-                        <topicsetref
-                                href="../../../../Imaginaerum/p5_test_neuron/xsd_docs/test_neuron.ditamap"
-                                format="ditamap" processing-role="resource-only"/>
-                </topicref>
                 <topicref
                         href="absstract_simulation_debug_simulation_directory_generated_structure.dita">
                         <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita">
@@ -617,12 +608,12 @@
                                 props=" imported  xsl "/>
                 </topicref>
         </topichead>
-        <topicref href="doc_xslt/p5_test_neuron.html" format="html" navtitle="p5_test_neuron.html"/>
-        <topicref href="doc_xslt/p5_test_neuron.indexList.html" format="html"/>
-        <topicref href="doc_xslt/p5_test_neuron0.html" format="html"/>
-        <topicref href="doc_xslt/p5_test_neuron1.html" format="html"/>
-        <topicref href="doc_xslt/p5_test_neuron2.html" format="html"/>
-        <topicref href="doc_xslt/p5_test_neuron3.html" format="html"/>
+        <topicref navtitle="test_neuron.xsd" keys="test_neuron.xsd" keyscope="test_neuron.xsd"
+                href="test_neuron.xsd.dita" props=" imported  xsd ">
+                <topicsetref
+                        href="../../../../Imaginaerum/p5_test_neuron/xsd_docs/test_neuron.ditamap"
+                        format="ditamap" processing-role="resource-only" toc="no"/>
+        </topicref>
         <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME.ditamap" format="ditamap"/>
         <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__ENUM.ditamap"
                 format="ditamap"/>

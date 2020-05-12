@@ -268,8 +268,7 @@
     </glossentry>
     <glossentry id="analyze_simulation_build">
         <glossterm>analyze_simulation_build</glossterm>
-        <glossdef>standard context according to <xref href="#analyze_simulation_build.debug"
-            /></glossdef>
+        <glossdef>standard context according to <xref href="#debug.param"/></glossdef>
     </glossentry>
     <glossentry id="analyze_simulation_x3d">
         <glossterm>analyze_simulation_x3d</glossterm>
