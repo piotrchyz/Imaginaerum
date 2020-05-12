@@ -9,10 +9,10 @@
    </subjectHead>
    <hasInstance id="hasInstance">
       <subjectdef keys="test_neuron.PropsKey" navtitle="$test_neuron.PropsKey ">
-         <subjectdef keys="test_neuron.Main_schema.dita.props"
+           <subjectdef keys="test_neuron.Main_schema.dita.props"
                      navtitle="Main_schema.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Main_schema.dita.props)
         -->
-            <topicref keys="test_neuron.Main_schema.dita.props"
+            <topicref keys="test_neuron.Main_schema.dita"
                       navtitle="Main_schema.dita [test_neuron]"
                       href="Main_schema.dita"/>
          </subjectdef>
@@ -28,7 +28,7 @@
          <subjectdef keys="test_neuron.Included_schema.dita.props"
                      navtitle="Included_schema.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Included_schema.dita.props)
         -->
-            <topicref keys="test_neuron.Included_schema.dita.props"
+            <topicref keys="test_neuron.Included_schema.dita"
                       navtitle="Included_schema.dita [test_neuron]"
                       href="Included_schema.dita"/>
          </subjectdef>
@@ -125,7 +125,7 @@
          <subjectdef keys="test_neuron.Imported_schema.dita.props"
                      navtitle="Imported_schema.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Imported_schema.dita.props)
         -->
-            <topicref keys="test_neuron.Imported_schema.dita.props"
+            <topicref keys="test_neuron.Imported_schema.dita"
                       navtitle="Imported_schema.dita [test_neuron]"
                       href="Imported_schema.dita"/>
          </subjectdef>
@@ -141,7 +141,7 @@
          <subjectdef keys="test_neuron.Element.dita.props"
                      navtitle="Element.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Element.dita.props)
         -->
-            <topicref keys="test_neuron.Element.dita.props"
+            <topicref keys="test_neuron.Element.dita"
                       navtitle="Element.dita [test_neuron]"
                       href="Element.dita"/>
          </subjectdef>
@@ -2929,7 +2929,7 @@
          <subjectdef keys="test_neuron.Simple_Type.dita.props"
                      navtitle="Simple_Type.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Simple_Type.dita.props)
         -->
-            <topicref keys="test_neuron.Simple_Type.dita.props"
+            <topicref keys="test_neuron.Simple_Type.dita"
                       navtitle="Simple_Type.dita [test_neuron]"
                       href="Simple_Type.dita"/>
          </subjectdef>
@@ -3539,7 +3539,7 @@
          <subjectdef keys="test_neuron.Complex_Type.dita.props"
                      navtitle="Complex_Type.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Complex_Type.dita.props)
         -->
-            <topicref keys="test_neuron.Complex_Type.dita.props"
+            <topicref keys="test_neuron.Complex_Type.dita"
                       navtitle="Complex_Type.dita [test_neuron]"
                       href="Complex_Type.dita"/>
          </subjectdef>
@@ -4401,7 +4401,7 @@
          <subjectdef keys="test_neuron.Attribute.dita.props"
                      navtitle="Attribute.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Attribute.dita.props)
         -->
-            <topicref keys="test_neuron.Attribute.dita.props"
+            <topicref keys="test_neuron.Attribute.dita"
                       navtitle="Attribute.dita [test_neuron]"
                       href="Attribute.dita"/>
          </subjectdef>
@@ -5677,7 +5677,7 @@
          <subjectdef keys="test_neuron.Attribute_Group.dita.props"
                      navtitle="Attribute_Group.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=Attribute_Group.dita.props)
         -->
-            <topicref keys="test_neuron.Attribute_Group.dita.props"
+            <topicref keys="test_neuron.Attribute_Group.dita"
                       navtitle="Attribute_Group.dita [test_neuron]"
                       href="Attribute_Group.dita"/>
          </subjectdef>
@@ -5693,7 +5693,7 @@
          <subjectdef keys="test_neuron.test_neuron.indexList.dita.props"
                      navtitle="test_neuron.indexList.dita.props [test_neuron]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=test_neuron.indexList.dita.props)
         -->
-            <topicref keys="test_neuron.test_neuron.indexList.dita.props"
+            <topicref keys="test_neuron.test_neuron.indexList.dita"
                       navtitle="test_neuron.indexList.dita [test_neuron]"
                       href="test_neuron.indexList.dita"/>
          </subjectdef>

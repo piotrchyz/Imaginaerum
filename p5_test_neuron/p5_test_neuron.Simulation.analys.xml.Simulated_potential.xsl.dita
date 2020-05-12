@@ -2,7 +2,33 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="p5_test_neuron_Simulation_analys_xml_Simulated_potential_xsl">
     <title>p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl</title>
-    <body>
-        <p></p>
-    </body>
+    <related-links>
+        <linklist role="descendant">
+            <title>Transformation mainly to controll </title>
+            <link
+                keyref="test_neuron.test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita__Adaptive_neuron_Simulated_potential"
+                scope="local"/>
+        </linklist>
+        <linklist>
+            <title>Also used in visualisation</title>
+            <link
+                keyref="test_neuron.test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__current.dita__Simulated_potential__x3A__current"
+                scope="local"/>
+            <link
+                keyref="test_neuron.test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__diff_min_max.dita__Simulated_potential__x3A__diff_min_max"
+                scope="local"/>
+            <link
+                keyref="test_neuron.test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__diff_val.dita__Simulated_potential__x3A__diff_val"
+                scope="local"/>
+            <link
+                keyref="test_neuron.test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__max.dita__Simulated_potential__x3A__max"
+                scope="local"/>
+            <link
+                keyref="test_neuron.test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__min.dita__Simulated_potential__x3A__min"
+                scope="local"/>
+            <link
+                keyref="test_neuron.test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Attribute_ptn_Simulated_potential__x3A__percent.dita__Simulated_potential__x3A__percent"
+                scope="local"/>
+        </linklist>
+    </related-links>
 </topic>

@@ -11,7 +11,9 @@
     <related-links>
         <linklist role="parent">
             <title>Initially developped by </title>
-            <link keyref="person.Binder_Arkadiusz.person_no" scope="local"/>
+            <link keyref="person.Binder_Arkadiusz.person_no" scope="local">
+                <linktext>Arkadiusz Binder</linktext>
+            </link>
         </linklist>
         <linklist role="previous">
             <title>after some test on </title>

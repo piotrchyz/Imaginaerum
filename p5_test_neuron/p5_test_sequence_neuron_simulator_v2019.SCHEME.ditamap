@@ -21,16 +21,21 @@
          <subjectdef keys="imported"/>
          <subjectdef keys="build"/>
           <subjectdef keys="xsd"/>
+          
          
          
          <subjectdef keys="html"/>
           <!--<subjectdef keys="mode"/>-->
           <subjectdef keys="png"/>
           
-          <subjectdef keyref="mode"/>
+          <subjectdef keyref="xsl.PropsKey"/>
           
           <subjectdef keyref="test_neuron.PropsKey"/>
           <subjectdef keyref="ant.PropsKey"/>
+          
+          <subjectdef keyref="ditamap.PropsKey"/>
+          
+          <subjectdef keyref="person.Binder_Arkadiusz.key"/>
           
           <!-- EOF LOCAL CONF -->
          
@@ -69,7 +74,7 @@
          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.ptn_Simulation.build.analys.xml.props"
                      navtitle="ptn_Simulation.build.analys.xml.props [p5_test_sequence_neuron_simulator_v2019]">
             <keydef keys="ptn_Simulation.build.analys.xml"
-                    props="mode"
+                    props="xsl.mode.props"
                     processing-role="resource-only"
                     class="+ map/topicref mapgroup-d/keydef "/>
          </subjectdef>
@@ -1040,11 +1045,15 @@
    </hasInstance>
    
    
-   
-   <schemeref href="../../../../__ROOT_DITAMAP__SPECS__/props.development/props_mode__SCHEME.ditamap"/>
-    <schemeref href="../../../../__ROOT_DITAMAP__SPECS__/props.development/props_ant__SCHEME.ditamap"/>
+    
+    <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props_xsl__SCHEME.ditamap"/>
+    <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props_ant__SCHEME.ditamap"/>
+    <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props_ditamap__SCHEME.ditamap"/>
     
     <schemeref href="xsd_docs/test_neuron.SCHEME.ditamap"/>
    <!--<topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__CLASS.ditamap"
              format="ditamap"/>-->
+    <schemeref href="../../LUDZIE/Binder_Arkadiusz/person.Binder_Arkadiusz.SCHEME.ditamap"/>
+    
+    
 </subjectScheme>

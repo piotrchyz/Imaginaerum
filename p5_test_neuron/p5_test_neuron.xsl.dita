@@ -2,20 +2,16 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="p5_test_neuron_xsl">
     <title>p5_test_neuron.xsl</title>
-    <topic id="topic_xgf_rpt_qlb" props="mode">
-        <title>ptn:Simulation.build.analys.xml</title>
-        <topic id="topic_m5d_5pt_qlb">
-            <title>match
-                    <option>ptn:Defaults</option><option>ptn:Receptors</option><option>ptn:Inputs</option><option>ptn:Receptor__x3A__generate</option></title>
-            <topic id="topic_h2d_zpt_qlb">
-                <title>output is bypassed</title>
-            </topic>
-        </topic>
-        <topic id="topic_snh_1qt_qlb">
-            <title>match ptn:Simulation[ptn:Simulation_ticks][ptn:Simulator_tick]</title>
-            <topic id="topic_hyn_bqt_qlb">
-                <title>output</title>
-            </topic>
-        </topic>
-    </topic>
+    <related-links>
+        <linklist props="xsl.mode.props">
+            <title>ptn:Simulation.build.analys.xml</title>
+            <linklist props="xsl.template.match.props">
+                <title>match
+                        <option>ptn:Defaults</option><option>ptn:Receptors</option><option>ptn:Inputs</option></title>
+            </linklist>
+            <linklist props="xsl.template.match.props">
+                <title>match ptn:Simulation[ptn:Simulation_ticks][ptn:Simulator_tick]</title>
+            </linklist>
+        </linklist>
+    </related-links>
 </topic>

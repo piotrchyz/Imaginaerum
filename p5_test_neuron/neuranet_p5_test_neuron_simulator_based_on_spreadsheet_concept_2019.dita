@@ -3,26 +3,36 @@
 <glossentry id="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019">
     <glossterm>NeuraNet p5 test neuron simulator based on spreadsheet concept 2019</glossterm>
     <glossdef>
-        <fig id="fig_ddy_xfq_qlb">
-            <title>Calculating example on spreadsheet</title>
-            <image href="docs/sim_b.png" id="image_mrw_wfq_qlb"/>
-        </fig>
-        <fig id="fig_v1s_zfq_qlb">
-            <title>Sample config of coordinates in spreadsheet simulator</title>
-            <image href="docs/sim_coords.png" id="image_nrw_wfq_qlb"/>
-        </fig>
-        <fig id="fig_vn2_cgq_qlb">
-            <title>Sample calculation with visible input and output of neuron membrane activated in
-                spreadsheet</title>
-            <image href="docs/sim_exc_17a.png" id="image_orw_wfq_qlb" width="500"/>
-        </fig>
-        <fig id="fig_ans_2gq_qlb">
-            <title>sample calculations of dimensions in spreadsheet simulator</title>
-            <image href="docs/sim_matrix.png" id="image_prw_wfq_qlb"/>
-        </fig>
-        <fig id="fig_m4x_ggq_qlb">
-            <title>sample config of simulation in spreadsheet</title>
-            <image href="docs/sim1.png" id="image_qrw_wfq_qlb" width="500"/>
-        </fig>
+        <equation-figure>
+            <figgroup>
+                <title/>
+                <image href="asd" id="image_ydb_ckw_qlb"/>
+                <fig id="fig_ddy_xfq_qlb">
+                    <title>Calculating example on spreadsheet</title>
+                    <image href="docs/sim_b.png" id="image_mrw_wfq_qlb" width="200"/>
+                </fig>
+                <fig id="fig_v1s_zfq_qlb">
+                    <title>Sample config of coordinates in spreadsheet simulator</title>
+                    <image href="docs/sim_coords.png" id="image_nrw_wfq_qlb" width="100"/>
+                </fig>
+                <fig id="fig_vn2_cgq_qlb">
+                    <title>Sample calculation with visible input and output of neuron membrane
+                        activated in spreadsheet</title>
+                    <image href="docs/sim_exc_17a.png" id="image_orw_wfq_qlb" width="300"/>
+                </fig>
+                <fig id="fig_ans_2gq_qlb">
+                    <title>sample calculations of dimensions in spreadsheet simulator</title>
+                    <image href="docs/sim_matrix.png" id="image_prw_wfq_qlb" width="200"/>
+                </fig>
+                <fig id="fig_m4x_ggq_qlb">
+                    <title>sample config of simulation in spreadsheet</title>
+                    <image href="docs/sim1.png" id="image_qrw_wfq_qlb" width="300"/>
+                </fig>
+            </figgroup>
+        </equation-figure>
+        
+        
+            
+         
     </glossdef>
 </glossentry>

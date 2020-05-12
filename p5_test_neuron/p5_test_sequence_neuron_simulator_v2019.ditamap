@@ -19,7 +19,7 @@
                         <keydef format="xsl" processing-role="resource-only"
                                 navtitle="p5_test_neuron.xsl" keys="p5_test_neuron.xsl"
                                 href="p5_test_neuron.xsl" props=" imported  xsl "/>
-                        <keydef keys="ptn_Simulation.build.analys.xml" props="mode">
+                        <keydef keys="ptn_Simulation.build.analys.xml" props="xsl.mode.props">
                                 <topicmeta>
                                         <keywords>
                                                 <keyword>ptn:Simulation.build.analys.xml</keyword>
