@@ -47,6 +47,9 @@
                                 keys="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"
                                 href="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"
                                 props=" imported  xsl "/>
+                        
+                        
+                        
                 </topicref>
                 
                 
@@ -59,9 +62,27 @@
                 </topicref>
                 <topicref
                         href="absstract_simulation_debug_simulation_directory_generated_structure.dita">
-                        <topicref
-                                href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita"
-                        />
+                        <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita">
+                                <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#first_time_tick_strategy_group" keys="first_time_tick_strategy_group">
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml__x3A__Receptor__x3A__generate" keys="Simulation.analys.xml__x3A__Receptor__x3A__generate"/>
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate" keys="Input__x3A__generate"/>
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern" keys="Input__x3A__generate__x3A__pattern"/>
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply" keys="Input__x3A__generate__x3A__pattern__x3A__apply"/>
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply_match" keys="Input__x3A__generate__x3A__pattern__x3A__apply_match"/>
+                                </keydef>
+                               
+                                <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#next_time_tick_strategy_group" keys="next_time_tick_strategy_group">
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml" keys="Simulation.analys.xml"/>
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.attract.xml" keys="Simulation.attract.xml"/>
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.xml" keys="Simulation.model.xml"/>
+                                        
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.stats.xml" keys="Simulation.model.stats.xml"/>
+                                        <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.validate.xml" keys="Simulation.model.validate.xml"/>
+                                        
+                                </keydef>
+                                
+                                
+                        </topicref>
                 </topicref>
                 
         </topichead>
@@ -139,12 +160,10 @@
                                 href="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl"
                                 props=" imported  xsl "/>
                 </topicref>
-                <topicref scope="external" navtitle="vectr.png[to_create]"
-                        keys="vectr.png_to_create_ " keyscope="vectr.png" href="vectr.png.dita"
-                        format="png" props=" imported  png ">
-                        <keydef format="png" processing-role="resource-only" navtitle="vectr.png"
+                
+                 <keydef format="png" processing-role="resource-only" navtitle="vectr.png - problem of pyramid section analys" scope="external"
                                 keys="vectr.png" href="vectr.png" props=" imported  png "/>
-                </topicref>
+                
                 <topicref scope="external" navtitle="Simulation_body1.xml[to_create]"
                         keys="Simulation_body1.xml_to_create_ " keyscope="Simulation_body1.xml"
                         href="Simulation_body1.xml.dita" props=" imported  xml ">

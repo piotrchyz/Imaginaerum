@@ -222,7 +222,7 @@
         </glossentry>
     </glossgroup>
     <glossentry id="generate_simulation_build__x3A__if_exists_flag">
-        <glossterm id="generate_simulation_build__x3A__if_exists_flag"
+        <glossterm 
             >generate_simulation_build__x3A__if_exists_flag</glossterm>
         <glossdef>flag to optimize and detect partially finished build/simulation</glossdef>
         <glossBody>
@@ -255,8 +255,8 @@
             </glossUsage>
         </glossBody>
     </glossentry>
-    <glossentry id="glossentry_vg4_ym5_qlb">
-        <glossterm id="generate_simulation_build__x3A__exec"
+    <glossentry id="generate_simulation_build__x3A__exec">
+        <glossterm 
             >generate_simulation_build__x3A__exec</glossterm>
         <glossdef>just ant execute generated <xref
                 href="#p5_test_neuron.Simulation.build.analys.xml"/> file</glossdef>

@@ -25,7 +25,7 @@
          
          <subjectdef keys="html"/>
           <!--<subjectdef keys="mode"/>-->
-              
+          <subjectdef keys="png"/>
           
           <subjectdef keyref="mode"/>
           

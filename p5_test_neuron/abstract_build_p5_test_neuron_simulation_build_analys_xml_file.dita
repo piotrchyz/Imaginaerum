@@ -2,7 +2,7 @@
 <!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossary Group//EN" "glossgroup.dtd">
 <glossgroup id="abstract_build_p5_test_neuron_simulation_build_analys_xml_file">
     <title>abstract build.p5_test_neuron.Simulation.build.analys.xml file</title>
-    <glossgroup id="glossgroup_f5p_l45_qlb">
+    <glossgroup id="first_time_tick_strategy_group">
         <title>First time tick strategy</title>
         <glossentry id="Simulation.analys.xml__x3A__Receptor__x3A__generate" props="mode">
             <glossterm>Simulation.analys.xml__x3A__Receptor__x3A__generate</glossterm>
@@ -29,7 +29,7 @@
                 steps for ease of development</glossdef>
         </glossentry>
     </glossgroup>
-    <glossgroup id="glossgroup_htm_fp5_qlb">
+    <glossgroup id="next_time_tick_strategy_group">
         <title>Next time tick strategy</title>
         <glossentry id="Simulation.analys.xml" props="mode">
             <glossterm>Simulation.analys.xml</glossterm>
@@ -62,7 +62,7 @@
                     scope="local"/></glossdef>
         </glossentry>
     </glossgroup>
-    <glossentry id="ddl">
+    <glossentry id="target_structure_for_first_time_tick">
         <glossterm>Target structure for first time-tick</glossterm>
         <glossdef></glossdef>
         <glossBody>
@@ -406,7 +406,7 @@
             </glossUsage>
         </glossBody>
     </glossentry>
-    <glossentry id="glossentry_e4v_f45_qlb">
+    <glossentry id="target_structure_for_rest_simulation">
         <glossterm>Target structure for rest simulation</glossterm>
         <glossBody>
             <glossUsage>
