@@ -1900,6 +1900,9 @@
                 #64a ./n=topicref ; @* =  test_neuron_xsd_Complex_Type_ptn_Receptor.dita#Receptor_Receptor_regex_filter - map/topicref    $SubjectName.new = test_neuron_xsd_Complex_Type_ptn_Receptor.dita__Receptor_Receptor_regex_filter.props ; 
             -->
          </subjectdef>
+          <subjectdef keys="test_neuron.test_neuron_xsd_Element_ptn_Defaults.dita.props">
+              <topicref keys="test_neuron.test_neuron_xsd_Element_ptn_Defaults.dita" href="test_neuron_xsd_Element_ptn_Defaults.dita"/>
+          </subjectdef>
          <subjectdef keys="test_neuron.test_neuron_xsd_Element_ptn_Defaults.dita__Defaults.props"
                      navtitle="test_neuron_xsd_Element_ptn_Defaults.dita__Defaults.props [test_neuron]">
             <topicref keys="test_neuron.test_neuron_xsd_Element_ptn_Defaults.dita__Defaults"
@@ -5697,6 +5700,10 @@
                       navtitle="test_neuron.indexList.dita [test_neuron]"
                       href="test_neuron.indexList.dita"/>
          </subjectdef>
+          
+          <subjectdef keys="test_neuron_xsd_Element_ptn_Defaults.dita.props">
+              <topicref href="test_neuron_xsd_Element_ptn_Defaults.dita" keys="test_neuron_xsd_Element_ptn_Defaults.dita"/>
+          </subjectdef>
       </subjectdef>
    </hasInstance>
    <!--<topicref href="test_neuron.SCHEME__CLASS.ditamap" format="ditamap"/>-->

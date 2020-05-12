@@ -389,6 +389,8 @@
       <topicref
          href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron_inhibitor.dita#Adaptive_neuron_inhibitor_Simulated_potential__x3A__vectors.sum"/>
       <topicref href="test_neuron_xsd_Complex_Type_ptn_Receptor.dita#Receptor_Receptor_regex_filter"/>
+      
+      <topicref href="test_neuron_xsd_Element_ptn_Defaults.dita"/>
       <topicref href="test_neuron_xsd_Element_ptn_Defaults.dita#Defaults"/>
       <topicref href="test_neuron_xsd_Element_ptn_Defaults.dita#Defaults_Capacitance"/>
       <topicref href="test_neuron_xsd_Element_ptn_Defaults.dita#Defaults_Resistance"/>

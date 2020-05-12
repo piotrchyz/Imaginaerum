@@ -93,6 +93,7 @@
                     keys="build_test_neuron.xml"
                     href="build_test_neuron.xml"
                     props=" imported  build  xml "
+                    scope="external"
                     />
          </subjectdef>
          <!--
@@ -340,6 +341,7 @@
                     keys="Config21.xml"
                     href="Config21.xml"
                     props=" imported  xml "
+                    scope="external"
                     />
          </subjectdef>
          <!--
@@ -372,6 +374,7 @@
                     keys="Simulation_body1.xml"
                     href="Simulation_body1.xml"
                     props=" imported  xml "
+                    scope="external"
                     />
          </subjectdef>
          <!--
@@ -807,6 +810,7 @@
                     keys="Inputs1.xml"
                     href="Inputs1.xml"
                     props=" imported  xml "
+                    scope="external"
                     />
          </subjectdef>
          <!--
@@ -926,6 +930,7 @@
                     keys="Generate_config.xml"
                     href="Generate_config.xml"
                     props=" imported  xml "
+                    scope="external"
                     />
          </subjectdef>
          <!--
@@ -957,7 +962,9 @@
                     navtitle="Config.debug.xml"
                     keys="Config.debug.xml"
                     href="Config.debug.xml"
+                    scope="external"
                     props=" imported  xml "
+                    
                     />
          </subjectdef>
          <!--
