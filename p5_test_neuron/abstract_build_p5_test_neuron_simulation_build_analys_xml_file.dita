@@ -4,26 +4,26 @@
     <title>abstract build.p5_test_neuron.Simulation.build.analys.xml file</title>
     <glossgroup id="first_time_tick_strategy_group">
         <title>First time tick strategy</title>
-        <glossentry id="Simulation.analys.xml__x3A__Receptor__x3A__generate" props="mode">
+        <glossentry id="Simulation.analys.xml__x3A__Receptor__x3A__generate" props="xsl.mode.props">
             <glossterm>Simulation.analys.xml__x3A__Receptor__x3A__generate</glossterm>
             <glossdef>Extend functions of models of array or other receptor structures for ease
                 simulation</glossdef>
         </glossentry>
-        <glossentry id="Input__x3A__generate" props="mode">
+        <glossentry id="Input__x3A__generate" props="xsl.mode.props">
             <glossterm>Input__x3A__generate</glossterm>
             <glossdef>Extend functions of models of some sequenced receptors activations </glossdef>
         </glossentry>
-        <glossentry id="Input__x3A__generate__x3A__pattern" props="mode">
+        <glossentry id="Input__x3A__generate__x3A__pattern" props="xsl.mode.props">
             <glossterm>Input__x3A__generate__x3A__pattern</glossterm>
             <glossdef>Extend functions of models of some 3d shapes with moving options to add to
                 simulation</glossdef>
         </glossentry>
-        <glossentry id="Input__x3A__generate__x3A__pattern__x3A__apply" props="mode">
+        <glossentry id="Input__x3A__generate__x3A__pattern__x3A__apply" props="xsl.mode.props">
             <glossterm>Input__x3A__generate__x3A__pattern__x3A__apply</glossterm>
             <glossdef><xref href="#Input__x3A__generate__x3A__pattern"/> is divided to distinct
                 steps for ease of development</glossdef>
         </glossentry>
-        <glossentry id="Input__x3A__generate__x3A__pattern__x3A__apply_match" props="mode">
+        <glossentry id="Input__x3A__generate__x3A__pattern__x3A__apply_match" props="xsl.mode.props">
             <glossterm>Input__x3A__generate__x3A__pattern__x3A__apply_match</glossterm>
             <glossdef><xref href="#Input__x3A__generate__x3A__pattern"/> is divided to distinct
                 steps for ease of development</glossdef>
@@ -31,31 +31,31 @@
     </glossgroup>
     <glossgroup id="next_time_tick_strategy_group">
         <title>Next time tick strategy</title>
-        <glossentry id="Simulation.analys.xml" props="mode">
+        <glossentry id="Simulation.analys.xml" props="xsl.mode.props">
             <glossterm>Simulation.analys.xml</glossterm>
             <glossdef>will generate <xref
                     keyref="test_neuron.test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Simulation_analys_xml__x3A__analyze.dita__Simulation.analys.xml__x3A__analyze"
                     scope="local"/> element</glossdef>
         </glossentry>
-        <glossentry id="Simulation.attract.xml" props="mode">
+        <glossentry id="Simulation.attract.xml" props="xsl.mode.props">
             <glossterm>Simulation.attract.xml</glossterm>
             <glossdef>will generate <xref
                     keyref="test_neuron.test_neuron_Simulation_attract_xml_xsd_Element_ptn_Simulation_attract_xml.dita__p5_test_neuron_Simulation.attract.xml"
                     scope="local"/> element</glossdef>
         </glossentry>
-        <glossentry id="Simulation.model.xml" props="mode">
+        <glossentry id="Simulation.model.xml" props="xsl.mode.props">
             <glossterm>Simulation.model.xml</glossterm>
             <glossdef>will generate <xref
                     keyref="test_neuron.test_neuron_xsd_Element_ptn_Simulation_model_xml.dita__p5_test_neuron_Simulation.model.xml"
                     scope="local"/> element</glossdef>
         </glossentry>
-        <glossentry id="Simulation.model.stats.xml" props="mode test_neuron.Main_schema.dita.props">
+        <glossentry id="Simulation.model.stats.xml" props="xsl.mode.props test_neuron.Main_schema.dita.props">
             <glossterm>Simulation.model.stats.xml</glossterm>
             <glossdef>will generate <xref
                     keyref="test_neuron.test_neuron_Simulation_model_stats_xml_xsd_Element_ptn_Simulation_model_stats_xml.dita__p5_test_neuron_Simulation.model.stats.xml"
                     scope="local"/></glossdef>
         </glossentry>
-        <glossentry id="Simulation.model.validate.xml" props="mode">
+        <glossentry id="Simulation.model.validate.xml" props="xsl.mode.props">
             <glossterm>Simulation.model.validate.xml</glossterm>
             <glossdef><xref
                     keyref="test_neuron.test_neuron_Simulation_model_validate_xml_xsd_Element_ptn_Simulation_model_validate_xml.dita__p5_test_neuron_Simulation.model.validate.xml"
