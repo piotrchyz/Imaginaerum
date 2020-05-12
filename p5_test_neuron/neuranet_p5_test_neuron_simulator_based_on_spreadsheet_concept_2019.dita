@@ -3,10 +3,8 @@
 <glossentry id="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019">
     <glossterm>NeuraNet p5 test neuron simulator based on spreadsheet concept 2019</glossterm>
     <glossdef>
-        <equation-figure>
-            <figgroup>
-                <title/>
-                <image href="asd" id="image_ydb_ckw_qlb"/>
+        
+        
                 <fig id="fig_ddy_xfq_qlb">
                     <title>Calculating example on spreadsheet</title>
                     <image href="docs/sim_b.png" id="image_mrw_wfq_qlb" width="200"/>
@@ -28,8 +26,6 @@
                     <title>sample config of simulation in spreadsheet</title>
                     <image href="docs/sim1.png" id="image_qrw_wfq_qlb" width="300"/>
                 </fig>
-            </figgroup>
-        </equation-figure>
         
         
             

@@ -42,7 +42,7 @@
        <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita.props"
                      navtitle="p5_test_sequence_neuron_simulator_v2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=p5_test_sequence_neuron_simulator_v2019.dita.props)
         -->
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita.props"
+            <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita"
                       navtitle="p5_test_sequence_neuron_simulator_v2019.dita [p5_test_sequence_neuron_simulator_v2019]"
                       href="p5_test_sequence_neuron_simulator_v2019.dita"/>
          </subjectdef>
@@ -120,7 +120,7 @@
          <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.absstract_simulation_debug_simulation_directory_generated_structure.dita.props"
                      navtitle="absstract_simulation_debug_simulation_directory_generated_structure.dita.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=absstract_simulation_debug_simulation_directory_generated_structure.dita.props)
         -->
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.absstract_simulation_debug_simulation_directory_generated_structure.dita.props"
+            <topicref keys="p5_test_sequence_neuron_simulator_v2019.absstract_simulation_debug_simulation_directory_generated_structure.dita"
                       navtitle="absstract_simulation_debug_simulation_directory_generated_structure.dita [p5_test_sequence_neuron_simulator_v2019]"
                       href="absstract_simulation_debug_simulation_directory_generated_structure.dita"/>
          </subjectdef>

@@ -612,7 +612,7 @@
                 href="test_neuron.xsd.dita" props=" imported  xsd ">
                 <topicsetref
                         href="../../../../Imaginaerum/p5_test_neuron/xsd_docs/test_neuron.ditamap"
-                        format="ditamap" processing-role="resource-only" toc="no"/>
+                        format="ditamap" processing-role="normal"/>
         </topicref>
         <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME.ditamap" format="ditamap"/>
         <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__ENUM.ditamap"
