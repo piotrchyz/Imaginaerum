@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Adaptive_neuron_standard">
+   <title>Complex Type ptn:Adaptive_neuron_standard</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron_standard">
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron_standard.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>259,134,363,174</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>259,184,374,224</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_New.dita#New"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>259,262,363,302</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_id"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,495,460,535</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,545,765,568</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,578,643,635</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>406,645,614,668</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,678,765,701</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,711,643,768</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>406,778,614,801</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,811,765,834</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,844,643,901</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>406,911,614,934</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>406,944,578,1001</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>406,1011,721,1051</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1061,499,1118</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1128,533,1185</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1195,536,1252</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1262,532,1319</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1329,523,1386</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1396,525,1453</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1463,549,1520</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1530,557,1587</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1597,529,1654</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1664,470,1704</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1714,455,1754</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1764,478,1787</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1797,586,1837</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1875,544,1932</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1942,556,1982</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,1992,526,2032</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Attract__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,2042,586,2082</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulation.attract__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,2092,508,2132</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,2142,547,2165</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,2203,503,2243</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,2253,582,2293</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,2303,587,2343</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>335,2353,594,2393</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,2403,839,2426</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,2436,717,2459</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,2497,762,2537</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>477,2575,791,2598</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>234,60,414,82</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,2615,446,2655</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,2665,474,2705</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,2715,474,2755</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,2765,487,2822</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>396,2832,550,2889</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>396,2899,711,2939</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,2949,467,3006</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3016,501,3073</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3083,504,3140</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3150,500,3207</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3284,491,3341</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3351,493,3408</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3418,535,3475</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3485,543,3542</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3552,497,3609</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3619,456,3659</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3669,441,3709</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3719,464,3742</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3752,572,3792</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3830,530,3887</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3897,494,3937</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,3947,533,3970</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,4008,489,4048</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,4058,568,4098</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,4108,573,4148</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,4158,580,4198</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>321,4208,542,4231</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>220,3,457,42</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Adaptive_neuron.dita#Adaptive_neuron"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4276,432,4316</coords>
+                              <xref href="#Adaptive_neuron_standard_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4326,460,4366</coords>
+                              <xref href="#Adaptive_neuron_standard_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4376,460,4416</coords>
+                              <xref href="#Adaptive_neuron_standard_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4426,473,4483</coords>
+                              <xref href="#Adaptive_neuron_standard_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4493,479,4550</coords>
+                              <xref href="#Adaptive_neuron_standard_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4560,453,4617</coords>
+                              <xref href="#Adaptive_neuron_standard_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4627,487,4684</coords>
+                              <xref href="#Adaptive_neuron_standard_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4694,490,4751</coords>
+                              <xref href="#Adaptive_neuron_standard_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4761,486,4818</coords>
+                              <xref href="#Adaptive_neuron_standard_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4895,477,4952</coords>
+                              <xref href="#Adaptive_neuron_standard_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,4962,479,5019</coords>
+                              <xref href="#Adaptive_neuron_standard_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5029,521,5086</coords>
+                              <xref href="#Adaptive_neuron_standard_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5096,529,5153</coords>
+                              <xref href="#Adaptive_neuron_standard_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5163,483,5220</coords>
+                              <xref href="#Adaptive_neuron_standard_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5230,471,5270</coords>
+                              <xref href="#Adaptive_neuron_standard_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5280,427,5320</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5330,450,5353</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5363,558,5403</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5441,516,5498</coords>
+                              <xref href="#Adaptive_neuron_standard_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5508,480,5548</coords>
+                              <xref href="#Adaptive_neuron_standard_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5558,519,5581</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5619,475,5659</coords>
+                              <xref href="#Adaptive_neuron_standard_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5669,554,5709</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5719,559,5759</coords>
+                              <xref href="#Adaptive_neuron_standard_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>307,5769,528,5792</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>restriction of <xref keyref="Adaptive_neuron.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>
+                              <xref keyref="Node.dita"/>
+                              <draft-comment author="a.binder">#386 -[$ref/@refId][Node]</draft-comment>
+                           </p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref keyref="Adaptive_neuron.dita"/>
+                                    <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron]</draft-comment>
+                                 </p>
+                                 <ul>
+                                    <li>
+                                       <p>
+                                          <xref keyref="Adaptive_neuron_standard.dita"/>
+                                          <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard]</draft-comment>
+                                       </p>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref keyref="Nodes_Adaptive_neuron_standard.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Adaptive_neuron_standard]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Adaptive_neuron_standard_Label.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Label]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Coordinate_X.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Coordinate_X]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Coordinate_Y.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Coordinate_Y]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Coordinate_Z.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Coordinate_Z]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Capacitance]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Resistance]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Minimum_voltage]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Maximum_voltage]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Resting_potential]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Resting_potential]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Reset_potential]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Firing_threshold]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Adaptation_conductance]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Adaptation_time_constant]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Refactory_period]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Is_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Is_inhibitor]</draft-comment> , <xref keyref="Outputs.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Outputs]</draft-comment> , <xref keyref="Input__x3A__nodes.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes]</draft-comment> , <xref keyref="Input__x3A__nodes__x3A__prohibit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes__x3A__prohibit]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Simulated_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Simulated_potential]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Output__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Output__x3A__flag]</draft-comment> , <xref keyref="Output__x3A__flag__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Output__x3A__flag__x3A__emmit]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Stress__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Stress__x3A__flag]</draft-comment> , <xref keyref="Simulation.Stress__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.Stress__x3A__calculate]</draft-comment> , <xref keyref="Adaptive_neuron_standard_Simulated_potential__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Simulated_potential__x3A__vectors]</draft-comment> , <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Adaptive_neuron_standard_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Adaptation_conductance]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Adaptation_time_constant]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Capacitance]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Coordinate_X.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Coordinate_X]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Coordinate_Y.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Coordinate_Y]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Coordinate_Z.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Coordinate_Z]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Firing_threshold]</draft-comment>, <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>, <xref keyref="Input__x3A__nodes.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes]</draft-comment>, <xref keyref="Input__x3A__nodes__x3A__prohibit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes__x3A__prohibit]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Is_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Is_inhibitor]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Label.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Label]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Maximum_voltage]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Minimum_voltage]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Output__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Output__x3A__flag]</draft-comment>, <xref keyref="Output__x3A__flag__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Output__x3A__flag__x3A__emmit]</draft-comment>, <xref keyref="Outputs.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Outputs]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Refactory_period]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Reset_potential]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Resistance]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Resting_potential]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Simulated_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Simulated_potential]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Simulated_potential__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Simulated_potential__x3A__vectors]</draft-comment>, <xref keyref="Simulation.Stress__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.Stress__x3A__calculate]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Stress__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Stress__x3A__flag]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Node_id.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Node_id]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="New.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][New]</draft-comment>
+                                    </entry>
+                                    <entry>xs:boolean</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">When new created - to optimize 3d</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][debug]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

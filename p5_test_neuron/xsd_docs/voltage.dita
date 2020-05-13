@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="voltage">
+   <title>Simple Type ptn:voltage</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Membrane Minimum Voltage -200 to 200mV</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>restriction of xs:decimal</entry>
+               </row>
+               <row>
+                  <entry>Facets</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="3*" align="left"/>
+                              <colspec colwidth="5*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>maxInclusive</entry>
+                                    <entry>200</entry>
+                                    <entry/>
+                                 </row>
+                                 <row>
+                                    <entry>minInclusive</entry>
+                                    <entry>-200</entry>
+                                    <entry/>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Simple Types </entry>
+                                    <entry>
+                                       <xref keyref="Attract_min.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Attract_min]</draft-comment>, <xref keyref="Maximum_voltage.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Maximum_voltage]</draft-comment>, <xref keyref="Minimum_voltage.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Minimum_voltage]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

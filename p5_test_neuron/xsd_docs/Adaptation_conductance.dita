@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Adaptation_conductance">
+   <title>Simple Type ptn:Adaptation_conductance</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Adaptation Conductance of Adaptive Neuron 0.0 to 1000.0nS</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>restriction of xs:decimal</entry>
+               </row>
+               <row>
+                  <entry>Facets</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="3*" align="left"/>
+                              <colspec colwidth="5*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>maxInclusive</entry>
+                                    <entry>100</entry>
+                                    <entry/>
+                                 </row>
+                                 <row>
+                                    <entry>minInclusive</entry>
+                                    <entry>0.1</entry>
+                                    <entry/>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Elements </entry>
+                                    <entry>
+                                       <xref keyref="Adaptive_neuron_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_Adaptation_conductance]</draft-comment>, <xref keyref="Adaptive_neuron_inhibitor_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_inhibitor_Adaptation_conductance]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Adaptation_conductance]</draft-comment>, <xref keyref="Defaults_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Adaptation_conductance]</draft-comment>, <xref keyref="Leaky_neuron_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_Adaptation_conductance]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Adaptation_conductance]</draft-comment>, <xref keyref="Leaky_neuron_standard_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_standard_Adaptation_conductance]</draft-comment>, <xref keyref="Node_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Adaptation_conductance]</draft-comment>, <xref keyref="p5_test_neuron_Receptor__x3A__generate_Adaptation_conductance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Receptor__x3A__generate_Adaptation_conductance]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

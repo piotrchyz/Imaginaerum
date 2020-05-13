@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="Simulation.analys.xml__x3A__Receptor__x3A__generate" props="xsl.mode.props">
+    <glossterm>Simulation.analys.xml__x3A__Receptor__x3A__generate</glossterm>
+    <glossdef>Extend functions of models of array or other receptor structures for ease
+        simulation</glossdef>
+</glossentry>

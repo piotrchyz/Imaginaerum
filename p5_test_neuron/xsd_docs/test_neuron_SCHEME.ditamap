@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd"> 
+<subjectScheme>
+    <subjectHead>
+        <subjectHeadMeta>
+            <navtitle>
+                Struktura informacji dla test_neuron SCHEME
+            </navtitle>
+        </subjectHeadMeta>
+    </subjectHead>
+    
+    
+    <hasKind id="hasInstance">
+            
+            
+            
+      
+        <!--<topichead id="test_neuron.topichead" navtitle="test_neuron" >
+            <topicref  conref="#test_neuron" />
+        </topichead>-->
+        
+        
+        <topicref href="test_neuron.SCHEME__CLASS.ditamap" keys="test_neuron.class" id="test_neuron"  format="ditamap"/>
+        
+        
+        <subjectdef id="test_neuron.ProductKey" keys="test_neuron.ProductKey" navtitle="test_neuron.ProductKey [ test_neuron . product]">
+            <subjectdef id="test_neuron.product" keys="test_neuron.product" navtitle="test_neuron [test_neuron . product]"  >
+                <!--<topicref href="test_neuron.dita" keys="test_neuron.no" id="test_neuron" product="test_neuron.product"/>-->
+            </subjectdef>            
+        </subjectdef>
+    
+        <!--<subjectdef id="test_neuron.AudienceKey" keys="test_neuron.AudienceKey" navtitle="test_neuron.AudienceKey [ test_neuron . audience]">
+            <subjectdef keys="test_neuron.audience" navtitle="test_neuron [test_neuron .audience]"  >
+                <topicref href="test_neuron.dita" keys="test_neuron.no" audience="test_neuron.audience" id="test_neuron"/>
+            </subjectdef>            
+        </subjectdef>-->
+        
+        <subjectdef id="test_neuron.PropsKey" keys="test_neuron.PropsKey" navtitle="test_neuron.PropsKey [ test_neuron . props]">
+            <subjectdef id="test_neuron.props" keys="test_neuron.props" navtitle="test_neuron [test_neuron .props]"  >
+                <!--<topicref conref="test_neuron.SCHEME__CLASS.ditamap#test_neuron.props.no" href="test_neuron.dita" />--><!-- keys="test_neuron.dita.no" id="test_neuron.props.no" props="test_neuron.props" -->
+            </subjectdef>            
+        </subjectdef>
+        
+        <!--<subjectdef id="test_neuron.OtherpropsKey" keys="test_neuron.OtherpropsKey" navtitle="test_neuron.OtherpropsKey [ test_neuron .otherprops ]">
+            <subjectdef id="test_neuron.otherprops" keys="test_neuron.otherprops" navtitle="test_neuron [test_neuron  .otherprops]"  >
+                <topicref href="test_neuron.dita" keys="test_neuron.no" id="test_neuron" otherprops="test_neuron.otherprops"/>
+            </subjectdef>            
+        </subjectdef>-->
+        
+        <!--<subjectdef id="test_neuron.PlatformKey" keys="test_neuron.PlatformKey" navtitle="test_neuron.PlatformKey [ test_neuron . platform]">
+            <subjectdef id="test_neuron.platform" keys="test_neuron.platform" navtitle="test_neuron [test_neuron .platform ]"  >
+                <topicref href="test_neuron.dita" keys="test_neuron.no" id="test_neuron" platform="test_neuron.platform"/>
+            </subjectdef>            
+        </subjectdef>-->
+    </hasKind>
+    
+    
+    
+    
+    
+    
+</subjectScheme>

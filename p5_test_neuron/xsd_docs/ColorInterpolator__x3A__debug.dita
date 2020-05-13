@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ColorInterpolator__x3A__debug">
+   <title>Complex Type ptn:ColorInterpolator__x3A__debug</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_ColorInterpolator__x3A__debug">
+                           <image href="img/test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Complex_Type_ptn_ColorInterpolator__x3A__debug.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>250,37,336,60</coords>
+                              <xref href="test_neuron_x3d_xsd_Attribute_x3d_DEF.dita#http___www.web3d.org_specifications_x3d-3.0.xsd_DEF"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,77,569,100</coords>
+                              <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_keyValue__x3A__MFColor__x3A__debug.dita#keyValue__x3A__MFColor__x3A__debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,110,462,133</coords>
+                              <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Element_ptn_key__x3A__debug.dita#key__x3A__debug"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_ColorInterpolator__x3A__debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_ColorInterpolator__x3A__debug]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="keyValue__x3A__MFColor__x3A__debug.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][keyValue__x3A__MFColor__x3A__debug]</draft-comment> , <xref keyref="key__x3A__debug.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][key__x3A__debug]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="keyValue__x3A__MFColor__x3A__debug.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][keyValue__x3A__MFColor__x3A__debug]</draft-comment>, <xref keyref="key__x3A__debug.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][key__x3A__debug]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="http___www.web3d.org_specifications_x3d-3.0.xsd_DEF.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][http___www.web3d.org_specifications_x3d-3.0.xsd_DEF]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="DEF.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][DEF]</draft-comment>
+                                    </entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

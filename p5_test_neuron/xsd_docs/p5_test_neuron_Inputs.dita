@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="p5_test_neuron_Inputs">
+   <title>Element ptn:Inputs</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Inputs">
+                           <image href="img/test_neuron_xsd_Element_ptn_Inputs.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>179,2,285,42</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input.dita#Input"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>179,52,337,75</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate.dita#Input__x3A__generate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>179,85,412,108</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern.dita#Input__x3A__generate__x3A__pattern"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Config.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Config]</draft-comment>, <xref keyref="Input__x3A__generate.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate.xml]</draft-comment>, <xref keyref="Input__x3A__generate__x3A__pattern.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate__x3A__pattern.xml]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Input.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input]</draft-comment> , <xref keyref="Input__x3A__generate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate]</draft-comment> , <xref keyref="Input__x3A__generate__x3A__pattern.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate__x3A__pattern]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Input.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input]</draft-comment>, <xref keyref="Input__x3A__generate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate]</draft-comment>, <xref keyref="Input__x3A__generate__x3A__pattern.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate__x3A__pattern]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Inputs xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Input ptn:debug=""&gt;{0,unbounded}&lt;/ptn:Input&gt;
+  &lt;ptn:Input__x3A__generate ptn:Input__x3A__generate__x3A__sequences=""&gt;{0,unbounded}&lt;/ptn:Input__x3A__generate&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern ptn:Input__x3A__generate__x3A__sequences=""&gt;{0,unbounded}&lt;/ptn:Input__x3A__generate__x3A__pattern&gt;
+&lt;/ptn:Inputs&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

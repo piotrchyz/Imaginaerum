@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="p5_test_neuron_Nodes">
+   <title>Element ptn:Nodes</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Nodes">
+                           <image href="img/test_neuron_xsd_Element_ptn_Nodes.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>243,117,439,157</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Leaky_neuron_standard.dita#p5_test_neuron_Leaky_neuron_standard"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>243,167,437,207</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Nodes.dita#Nodes_Leaky_neuron_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>243,217,439,257</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Nodes.dita#Nodes_Leaky_neuron_inhibitor__x3A__AB"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>243,267,440,307</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Nodes.dita#Nodes_Leaky_neuron_inhibitor__X3A__AA"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>243,317,454,357</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Nodes.dita#Nodes_Adaptive_neuron_standard"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>243,367,452,407</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Nodes.dita#Nodes_Adaptive_neuron_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>161,3,261,25</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Nodes.dita#Nodes"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="Nodes.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Simulation.analys.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.analys.xml]</draft-comment>, <xref keyref="Simulation.attract.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract.xml]</draft-comment>, <xref keyref="Simulation.model.apply.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.apply.xml]</draft-comment>, <xref keyref="Simulation.model.stats.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.stats.xml]</draft-comment>, <xref keyref="Simulation.model.validate.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.validate.xml]</draft-comment>, <xref keyref="Simulation.model.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.xml]</draft-comment>, <xref keyref="Simulation_body.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_body]</draft-comment>, <xref keyref="Simulation_body__x3A__abstract.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_body__x3A__abstract]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Leaky_neuron_standard.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Leaky_neuron_standard]</draft-comment> , <xref keyref="Nodes_Leaky_neuron_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Leaky_neuron_inhibitor]</draft-comment> , <xref keyref="Nodes_Leaky_neuron_inhibitor__x3A__AB.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Leaky_neuron_inhibitor__x3A__AB]</draft-comment> , <xref keyref="Nodes_Leaky_neuron_inhibitor__X3A__AA.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Leaky_neuron_inhibitor__X3A__AA]</draft-comment> , <xref keyref="Nodes_Adaptive_neuron_standard.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Adaptive_neuron_standard]</draft-comment> , <xref keyref="Nodes_Adaptive_neuron_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Adaptive_neuron_inhibitor]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Nodes_Adaptive_neuron_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Adaptive_neuron_inhibitor]</draft-comment>, <xref keyref="Nodes_Adaptive_neuron_standard.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Adaptive_neuron_standard]</draft-comment>, <xref keyref="Nodes_Leaky_neuron_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Leaky_neuron_inhibitor]</draft-comment>, <xref keyref="Nodes_Leaky_neuron_inhibitor__X3A__AA.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Leaky_neuron_inhibitor__X3A__AA]</draft-comment>, <xref keyref="Nodes_Leaky_neuron_inhibitor__x3A__AB.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Nodes_Leaky_neuron_inhibitor__x3A__AB]</draft-comment>, <xref keyref="p5_test_neuron_Leaky_neuron_standard.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Leaky_neuron_standard]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Nodes xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Leaky_neuron_standard ptn:debug="" id="" ptn:New=""&gt;{0,1}&lt;/ptn:Leaky_neuron_standard&gt;
+  &lt;ptn:Leaky_neuron_inhibitor ptn:debug="" id="" ptn:New=""&gt;{0,1}&lt;/ptn:Leaky_neuron_inhibitor&gt;
+  &lt;ptn:Leaky_neuron_inhibitor__x3A__AB ptn:debug="" id="" ptn:New=""&gt;{0,1}&lt;/ptn:Leaky_neuron_inhibitor__x3A__AB&gt;
+  &lt;ptn:Leaky_neuron_inhibitor__X3A__AA ptn:debug="" id="" ptn:New=""&gt;{0,1}&lt;/ptn:Leaky_neuron_inhibitor__X3A__AA&gt;
+  &lt;ptn:Adaptive_neuron_standard ptn:debug="" id="" ptn:New=""&gt;{0,1}&lt;/ptn:Adaptive_neuron_standard&gt;
+  &lt;ptn:Adaptive_neuron_inhibitor ptn:debug="" id="" ptn:New=""&gt;{0,1}&lt;/ptn:Adaptive_neuron_inhibitor&gt;
+&lt;/ptn:Nodes&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="1*" align="left"/>
+                              <colspec colwidth="9*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <b>Wildcard:</b>
+                                    </entry>
+                                    <entry>ANY attribute from namespace(s) 'http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd'</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

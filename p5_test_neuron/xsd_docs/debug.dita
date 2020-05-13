@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="debug">
+   <title>Attribute @ptn:debug</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>xs:string</entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>inheritable: </entry>
+                                    <entry>
+                                       <b>false</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Attract__x3A__flag_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Attract__x3A__flag_CT]</draft-comment>, <xref keyref="Capacitance_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Capacitance_CT]</draft-comment>, <xref keyref="Coordinate_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_CT]</draft-comment>, <xref keyref="Current_synapse.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Current_synapse]</draft-comment>, <xref keyref="p5_test_neuron_Current_synapse__x3A__emmit.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Current_synapse__x3A__emmit]</draft-comment>, <xref keyref="Firing_threshold_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Firing_threshold_CT]</draft-comment>, <xref keyref="p5_test_neuron_Input.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input]</draft-comment>, <xref keyref="p5_test_neuron_Input__x3A__attract__x3A__vectors.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__attract__x3A__vectors]</draft-comment>, <xref keyref="p5_test_neuron_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__generate__x3A__pattern_CoordinateInterpolator__x3A__vector]</draft-comment>, <xref keyref="p5_test_neuron_Input__x3A__generate__x3A__pattern_Group.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__generate__x3A__pattern_Group]</draft-comment>, <xref keyref="p5_test_neuron_Input__x3A__generate__x3A__pattern_LineSet__x3A__vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__generate__x3A__pattern_LineSet__x3A__vector]</draft-comment>, <xref keyref="p5_test_neuron_Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__generate__x3A__pattern__Receptor__emmit__Interpolator__x3A__vector]</draft-comment>, <xref keyref="Label_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Label_CT]</draft-comment>, <xref keyref="Maximum_voltage_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Maximum_voltage_CT]</draft-comment>, <xref keyref="Minimum_voltage_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Minimum_voltage_CT]</draft-comment>, <xref keyref="Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Node]</draft-comment>, <xref keyref="p5_test_neuron_Outputs.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Outputs]</draft-comment>, <xref keyref="Refactory_period_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Refactory_period_CT]</draft-comment>, <xref keyref="Refactory_period__x3A__flag.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Refactory_period__x3A__flag]</draft-comment>, <xref keyref="Refactory_period__x3A__flag__x3A__until_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Refactory_period__x3A__flag__x3A__until_CT]</draft-comment>, <xref keyref="Reset_potential_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Reset_potential_CT]</draft-comment>, <xref keyref="Resistance_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Resistance_CT]</draft-comment>, <xref keyref="Resting_potential_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Resting_potential_CT]</draft-comment>, <xref keyref="Simulated_potential.emmit.vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential.emmit.vector]</draft-comment>, <xref keyref="Simulated_potential_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential_CT]</draft-comment>, <xref keyref="p5_test_neuron_Simulation.Stress__x3A__calculate.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.Stress__x3A__calculate]</draft-comment>, <xref keyref="p5_test_neuron_Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.Stress__x3A__calculate__x3A__output_node__x3A__not_validated]</draft-comment>, <xref keyref="p5_test_neuron_Simulation.attract__x3A__aggregate.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__aggregate]</draft-comment>, <xref keyref="Simulation.attract__x3A__calculate.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate]</draft-comment>, <xref keyref="keyValue__generate__basepoint.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][keyValue__generate__basepoint]</draft-comment>, <xref keyref="p5_test_neuron_keyValue__generate__basepoint__length.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_keyValue__generate__basepoint__length]</draft-comment>, <xref keyref="p5_test_neuron_keyValue__generate__basepoint__vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_keyValue__generate__basepoint__vector]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

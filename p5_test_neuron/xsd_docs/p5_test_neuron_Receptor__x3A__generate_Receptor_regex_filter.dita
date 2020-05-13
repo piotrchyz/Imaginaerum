@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="p5_test_neuron_Receptor__x3A__generate_Receptor_regex_filter">
+   <title>Element ptn:Receptor__x3A__generate / ptn:Receptor_regex_filter</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Receptor_regex_filter">
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Receptor_regex_filter.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>164,0,343,26</coords>
+                              <xref href="test_neuron_xsd_Simple_Type_ptn_Receptor_regex_filter.dita#Receptor_regex_filter"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="Receptor_regex_filter.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Receptor_regex_filter]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>simple</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.Simulation.generate__x3A__pattern.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

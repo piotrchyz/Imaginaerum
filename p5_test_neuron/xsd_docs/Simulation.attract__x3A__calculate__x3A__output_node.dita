@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Simulation.attract__x3A__calculate__x3A__output_node">
+   <title>Element ptn:Simulation.attract__x3A__calculate__x3A__output_node</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Calculations are optimal in attract mode, to just remodel in model scenario</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__output_node">
+                           <image href="img/test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__output_node.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>391,134,495,174</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>391,184,506,224</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_New.dita#New"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>391,262,495,302</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_id"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,495,592,535</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,545,897,568</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,578,775,635</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>538,645,746,668</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,678,897,701</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,711,775,768</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>538,778,746,801</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,811,897,834</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,844,775,901</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>538,911,746,934</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>538,944,710,1001</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>538,1011,853,1051</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1061,631,1118</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1128,665,1185</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1195,668,1252</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1262,664,1319</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1329,655,1386</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1396,657,1453</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1463,681,1520</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1530,689,1587</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1597,661,1654</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1664,602,1704</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1714,587,1754</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1764,610,1787</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1797,718,1837</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1875,676,1932</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1942,688,1982</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,1992,658,2032</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Attract__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,2042,718,2082</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulation.attract__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,2092,640,2132</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,2142,679,2165</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,2203,635,2243</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,2253,714,2293</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,2303,719,2343</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>467,2353,726,2393</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>628,2403,971,2426</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>628,2436,849,2459</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,2497,894,2537</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>609,2575,923,2598</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>366,60,544,82</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>377,2652,738,2692</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_Simulation_attract__x3A__calculate__x3A__output_node_type.dita#Simulation.attract__x3A__calculate__x3A__output_node.type"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>352,3,692,42</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_attract__x3A__calculate__x3A__output_node.dita#p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>
+                              <xref keyref="Node.dita"/>
+                              <draft-comment author="a.binder">#386 -[$ref/@refId][Node]</draft-comment>
+                           </p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref keyref="p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node.dita"/>
+                                    <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node]</draft-comment>
+                                 </p>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Simulation.attract__x3A__calculate.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate]</draft-comment>, <xref keyref="p5_test_neuron_Simulation.attract__x3A__calculate__x3A__validated.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__calculate__x3A__validated]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Node_Label.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Label]</draft-comment> , ((<xref keyref="Node_Coordinate_X__calculate__x3A__empty__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_X__calculate__x3A__empty__x3A__assert]</draft-comment> , <xref keyref="Node_Coordinate_X.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_X]</draft-comment>) | <xref keyref="Node_Coordinate_X__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_X__calculate__x3A__empty]</draft-comment>) , ((<xref keyref="Node_Coordinate_Y__calculate__x3A__empty__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Y__calculate__x3A__empty__x3A__assert]</draft-comment> , <xref keyref="Node_Coordinate_Y.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Y]</draft-comment>) | <xref keyref="Node_Coordinate_Y__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Y__calculate__x3A__empty]</draft-comment>) , ((<xref keyref="Node_Coordinate_Z__calculate__x3A__empty__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Z__calculate__x3A__empty__x3A__assert]</draft-comment> , <xref keyref="Node_Coordinate_Z.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Z]</draft-comment>) | <xref keyref="Node_Coordinate_Z__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Z__calculate__x3A__empty]</draft-comment>) , <xref keyref="Node_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Capacitance]</draft-comment> , <xref keyref="Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert]</draft-comment> , <xref keyref="Node_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Resistance]</draft-comment> , <xref keyref="Node_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Minimum_voltage]</draft-comment> , <xref keyref="Node_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Maximum_voltage]</draft-comment> , <xref keyref="Node_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Resting_potential]</draft-comment> , <xref keyref="Node_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Reset_potential]</draft-comment> , <xref keyref="Node_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Firing_threshold]</draft-comment> , <xref keyref="Node_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Adaptation_conductance]</draft-comment> , <xref keyref="Node_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Adaptation_time_constant]</draft-comment> , <xref keyref="Node_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Refactory_period]</draft-comment> , <xref keyref="Node_Is_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Is_inhibitor]</draft-comment> , <xref keyref="Outputs.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Outputs]</draft-comment> , <xref keyref="Input__x3A__nodes.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes]</draft-comment> , <xref keyref="Input__x3A__nodes__x3A__prohibit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes__x3A__prohibit]</draft-comment> , <xref keyref="Node_Simulated_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulated_potential]</draft-comment> , <xref keyref="Node_Refactory_period__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Refactory_period__x3A__flag]</draft-comment> , <xref keyref="Node_Attract__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Attract__x3A__flag]</draft-comment> , <xref keyref="Node_Simulation.attract__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulation.attract__x3A__calculate]</draft-comment> , <xref keyref="Node_Output__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Output__x3A__flag]</draft-comment> , <xref keyref="Output__x3A__flag__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Output__x3A__flag__x3A__emmit]</draft-comment> , <xref keyref="Node_Stress__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Stress__x3A__flag]</draft-comment> , <xref keyref="Simulation.Stress__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.Stress__x3A__calculate]</draft-comment> , <xref keyref="Node_Simulated_potential__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulated_potential__x3A__vectors]</draft-comment> , <xref keyref="Node_Simulated_potential__x3A__vectors.sum.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulated_potential__x3A__vectors.sum]</draft-comment> , ((<xref keyref="Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert]</draft-comment> , <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>) | (<xref keyref="Node_Input__x3A__attract__x3A__vectors__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Input__x3A__attract__x3A__vectors__x3A__calculate]</draft-comment> , <xref keyref="Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty]</draft-comment>))</entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Node_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Adaptation_conductance]</draft-comment>, <xref keyref="Node_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Adaptation_time_constant]</draft-comment>, <xref keyref="Node_Attract__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Attract__x3A__flag]</draft-comment>, <xref keyref="Node_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Capacitance]</draft-comment>, <xref keyref="Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert]</draft-comment>, <xref keyref="Node_Coordinate_X.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_X]</draft-comment>, <xref keyref="Node_Coordinate_X__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_X__calculate__x3A__empty]</draft-comment>, <xref keyref="Node_Coordinate_X__calculate__x3A__empty__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_X__calculate__x3A__empty__x3A__assert]</draft-comment>, <xref keyref="Node_Coordinate_Y.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Y]</draft-comment>, <xref keyref="Node_Coordinate_Y__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Y__calculate__x3A__empty]</draft-comment>, <xref keyref="Node_Coordinate_Y__calculate__x3A__empty__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Y__calculate__x3A__empty__x3A__assert]</draft-comment>, <xref keyref="Node_Coordinate_Z.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Z]</draft-comment>, <xref keyref="Node_Coordinate_Z__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Z__calculate__x3A__empty]</draft-comment>, <xref keyref="Node_Coordinate_Z__calculate__x3A__empty__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Coordinate_Z__calculate__x3A__empty__x3A__assert]</draft-comment>, <xref keyref="Node_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Firing_threshold]</draft-comment>, <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>, <xref keyref="Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty]</draft-comment>, <xref keyref="Node_Input__x3A__attract__x3A__vectors__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Input__x3A__attract__x3A__vectors__x3A__calculate]</draft-comment>, <xref keyref="Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert]</draft-comment>, <xref keyref="Input__x3A__nodes.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes]</draft-comment>, <xref keyref="Input__x3A__nodes__x3A__prohibit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes__x3A__prohibit]</draft-comment>, <xref keyref="Node_Is_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Is_inhibitor]</draft-comment>, <xref keyref="Node_Label.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Label]</draft-comment>, <xref keyref="Node_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Maximum_voltage]</draft-comment>, <xref keyref="Node_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Minimum_voltage]</draft-comment>, <xref keyref="Node_Output__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Output__x3A__flag]</draft-comment>, <xref keyref="Output__x3A__flag__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Output__x3A__flag__x3A__emmit]</draft-comment>, <xref keyref="Outputs.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Outputs]</draft-comment>, <xref keyref="Node_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Refactory_period]</draft-comment>, <xref keyref="Node_Refactory_period__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Refactory_period__x3A__flag]</draft-comment>, <xref keyref="Node_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Reset_potential]</draft-comment>, <xref keyref="Node_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Resistance]</draft-comment>, <xref keyref="Node_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Resting_potential]</draft-comment>, <xref keyref="Node_Simulated_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulated_potential]</draft-comment>, <xref keyref="Node_Simulated_potential__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulated_potential__x3A__vectors]</draft-comment>, <xref keyref="Node_Simulated_potential__x3A__vectors.sum.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulated_potential__x3A__vectors.sum]</draft-comment>, <xref keyref="Simulation.Stress__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.Stress__x3A__calculate]</draft-comment>, <xref keyref="Node_Simulation.attract__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Simulation.attract__x3A__calculate]</draft-comment>, <xref keyref="Node_Stress__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Stress__x3A__flag]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="" id="" ptn:New="" ptn:Simulation.attract__x3A__calculate__x3A__output_node.type="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Label ptn:debug="" ptn:Simulation__x3A__visualize=""&gt;{1,1}&lt;/ptn:Label&gt;
+  &lt;ptn:Coordinate_X__calculate__x3A__empty__x3A__assert ptn:Coordinate_X__x3A__more_charged_node=""&gt;{0,1}&lt;/ptn:Coordinate_X__calculate__x3A__empty__x3A__assert&gt;
+  &lt;ptn:Coordinate_X ptn:debug=""&gt;{1,1}&lt;/ptn:Coordinate_X&gt;
+  &lt;ptn:Coordinate_X__calculate__x3A__empty&gt;{1,1}&lt;/ptn:Coordinate_X__calculate__x3A__empty&gt;
+  &lt;ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert ptn:Coordinate_Y__x3A__more_charged_node=""&gt;{0,1}&lt;/ptn:Coordinate_Y__calculate__x3A__empty__x3A__assert&gt;
+  &lt;ptn:Coordinate_Y ptn:debug=""&gt;{1,1}&lt;/ptn:Coordinate_Y&gt;
+  &lt;ptn:Coordinate_Y__calculate__x3A__empty&gt;{1,1}&lt;/ptn:Coordinate_Y__calculate__x3A__empty&gt;
+  &lt;ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert ptn:Coordinate_Z__x3A__less_charged_node="" ptn:Coordinate_Z__x3A__more_charged_node=""&gt;{0,1}&lt;/ptn:Coordinate_Z__calculate__x3A__empty__x3A__assert&gt;
+  &lt;ptn:Coordinate_Z ptn:debug=""&gt;{1,1}&lt;/ptn:Coordinate_Z&gt;
+  &lt;ptn:Coordinate_Z__calculate__x3A__empty&gt;{1,1}&lt;/ptn:Coordinate_Z__calculate__x3A__empty&gt;
+  &lt;ptn:Capacitance ptn:debug=""&gt;{0,1}&lt;/ptn:Capacitance&gt;
+  &lt;ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert ptn:Output_Node__x3A__attract=""&gt;{0,1}&lt;/ptn:Capacitance__x3A__attract__x3A__calculate__x3A__assert&gt;
+  &lt;ptn:Resistance ptn:debug=""&gt;{0,1}&lt;/ptn:Resistance&gt;
+  &lt;ptn:Minimum_voltage ptn:debug=""&gt;{0,1}&lt;/ptn:Minimum_voltage&gt;
+  &lt;ptn:Maximum_voltage ptn:debug=""&gt;{0,1}&lt;/ptn:Maximum_voltage&gt;
+  &lt;ptn:Resting_potential ptn:debug=""&gt;{0,1}&lt;/ptn:Resting_potential&gt;
+  &lt;ptn:Reset_potential ptn:debug=""&gt;{0,1}&lt;/ptn:Reset_potential&gt;
+  &lt;ptn:Firing_threshold ptn:debug=""&gt;{0,1}&lt;/ptn:Firing_threshold&gt;
+  &lt;ptn:Adaptation_conductance&gt;{0,1}&lt;/ptn:Adaptation_conductance&gt;
+  &lt;ptn:Adaptation_time_constant&gt;{0,1}&lt;/ptn:Adaptation_time_constant&gt;
+  &lt;ptn:Refactory_period ptn:debug=""&gt;{0,1}&lt;/ptn:Refactory_period&gt;
+  &lt;ptn:Is_inhibitor&gt;{0,1}&lt;/ptn:Is_inhibitor&gt;
+  &lt;ptn:Outputs ptn:debug=""&gt;{1,1}&lt;/ptn:Outputs&gt;
+  &lt;ptn:Input__x3A__nodes&gt;{1,1}&lt;/ptn:Input__x3A__nodes&gt;
+  &lt;ptn:Input__x3A__nodes__x3A__prohibit&gt;{0,1}&lt;/ptn:Input__x3A__nodes__x3A__prohibit&gt;
+  &lt;ptn:Simulated_potential ptn:debug="" ptn:Simulated_potential__x3A__current="" ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed=""&gt;{1,1}&lt;/ptn:Simulated_potential&gt;
+  &lt;ptn:Refactory_period__x3A__flag ptn:debug=""&gt;{0,1}&lt;/ptn:Refactory_period__x3A__flag&gt;
+  &lt;ptn:Attract__x3A__flag ptn:debug=""&gt;{0,1}&lt;/ptn:Attract__x3A__flag&gt;
+  &lt;ptn:Simulation.attract__x3A__calculate ptn:debug="" ptn:Distance="" ptn:Label="" ptn:Label__x3A__context="" ptn:Output_Node__x3A__attract="" ptn:Simulated_potential__x3A__diff="" ptn:Simulated_potential__x3A__less_charged_node="" ptn:Simulated_potential__x3A__more_charged_node="" ptn:Simulation.attract__x3A__calculate.best.unique.position=""&gt;{0,unbounded}&lt;/ptn:Simulation.attract__x3A__calculate&gt;
+  &lt;ptn:Output__x3A__flag&gt;{0,1}&lt;/ptn:Output__x3A__flag&gt;
+  &lt;ptn:Output__x3A__flag__x3A__emmit&gt;{0,1}&lt;/ptn:Output__x3A__flag__x3A__emmit&gt;
+  &lt;ptn:Stress__x3A__flag&gt;{0,1}&lt;/ptn:Stress__x3A__flag&gt;
+  &lt;ptn:Simulation.Stress__x3A__calculate ptn:debug="" ptn:Distance="" ptn:Label="" ptn:Label__x3A__context="" ptn:Output_Node__x3A__attract="" ptn:Simulated_potential__x3A__diff="" ptn:Simulated_potential__x3A__less_charged_node="" ptn:Simulated_potential__x3A__more_charged_node=""&gt;{0,1}&lt;/ptn:Simulation.Stress__x3A__calculate&gt;
+  &lt;ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous=""&gt;{0,1}&lt;/ptn:Simulated_potential__x3A__vectors&gt;
+  &lt;ptn:Simulated_potential__x3A__vectors.sum&gt;{0,unbounded}&lt;/ptn:Simulated_potential__x3A__vectors.sum&gt;
+  &lt;ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert&gt;{0,1}&lt;/ptn:Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert&gt;
+  &lt;ptn:Input__x3A__attract__x3A__vectors ptn:debug=""&gt;{1,unbounded}&lt;/ptn:Input__x3A__attract__x3A__vectors&gt;
+  &lt;ptn:Input__x3A__attract__x3A__vectors__x3A__calculate ptn:Coordinate__x3A__Input__X3A__attract__x3A__vector__x3A__calculate.ratio="" Input__x3A__attract__x3A__vectors__x3A__calculate.sum=""&gt;{1,1}&lt;/ptn:Input__x3A__attract__x3A__vectors__x3A__calculate&gt;
+  &lt;ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty&gt;{1,1}&lt;/ptn:Input__x3A__attract__x3A__vectors__calculate__x3A__empty&gt;
+&lt;/ptn:Simulation.attract__x3A__calculate__x3A__output_node&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Node_id.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Node_id]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="New.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][New]</draft-comment>
+                                    </entry>
+                                    <entry>xs:boolean</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">When new created - to optimize 3d</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Simulation.attract__x3A__calculate__x3A__output_node.type.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate__x3A__output_node.type]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node.type.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node.type]</draft-comment>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][debug]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

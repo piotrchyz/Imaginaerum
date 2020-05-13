@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Adaptive_neuron_standard_Is_inhibitor">
+   <title>Element ptn:Adaptive_neuron_standard / ptn:Is_inhibitor</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Is_inhibitor_5">
+                           <image href="img/test_neuron_xsd_Element_ptn_Is_inhibitor_5.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>192,7,349,33</coords>
+                              <xref href="test_neuron_xsd_Simple_Type_ptn_Is_inhibitor_false.dita#Is_inhibitor_false"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="Is_inhibitor_false.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Is_inhibitor_false]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>xs:boolean</p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref keyref="Is_inhibitor.dita"/>
+                                    <draft-comment author="a.binder">#386 -[$ref/@refId][Is_inhibitor]</draft-comment>
+                                 </p>
+                                 <ul>
+                                    <li>
+                                       <p>
+                                          <xref keyref="Is_inhibitor_false.dita"/>
+                                          <draft-comment author="a.binder">#386 -[$ref/@refId][Is_inhibitor_false]</draft-comment>
+                                       </p>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>simple</b>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>minOccurs: </entry>
+                                    <entry>
+                                       <b>1</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Facets</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="3*" align="left"/>
+                              <colspec colwidth="5*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>pattern</entry>
+                                    <entry>0</entry>
+                                    <entry/>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Output__x3A__flag__x3A__emmit">
+   <title>Element ptn:Output__x3A__flag__x3A__emmit</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>w analyz reagukje na flag, do zabrania w attract</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit">
+                           <image href="img/test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>331,2,563,42</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Current_synapse__x3A__emmit.dita#Current_synapse__x3A__emmit"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Adaptive_neuron.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron]</draft-comment>, <xref keyref="Adaptive_neuron_inhibitor.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_inhibitor]</draft-comment>, <xref keyref="Adaptive_neuron_standard.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard]</draft-comment>, <xref keyref="Leaky_neuron.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor]</draft-comment>, <xref keyref="Leaky_neuron_standard.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_standard]</draft-comment>, <xref keyref="Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Node]</draft-comment>, <xref keyref="Receptor.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Receptor]</draft-comment>, <xref keyref="p5_test_neuron_Simulation.Stress__x3A__calculate__x3A__output_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.Stress__x3A__calculate__x3A__output_node]</draft-comment>, <xref keyref="p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node]</draft-comment>, <xref keyref="p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Receptor.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Receptor]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Current_synapse__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Current_synapse__x3A__emmit]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Current_synapse__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Current_synapse__x3A__emmit]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Output__x3A__flag__x3A__emmit xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Current_synapse__x3A__emmit ptn:debug="" ptn:Output_Node=""&gt;{0,unbounded}&lt;/ptn:Current_synapse__x3A__emmit&gt;
+&lt;/ptn:Output__x3A__flag__x3A__emmit&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

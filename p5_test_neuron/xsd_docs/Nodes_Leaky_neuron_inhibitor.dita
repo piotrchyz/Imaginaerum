@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Nodes_Leaky_neuron_inhibitor">
+   <title>Element ptn:Nodes / ptn:Leaky_neuron_inhibitor</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor">
+                           <image href="img/test_neuron_xsd_Element_ptn_Leaky_neuron_inhibitor.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,228,479,268</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,278,784,301</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,311,662,368</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>425,378,633,401</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_X__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,411,784,434</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,444,662,501</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>425,511,633,534</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Y__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,544,784,567</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,577,662,634</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>425,644,633,667</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Coordinate_Z__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>425,677,597,734</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>425,744,740,784</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Capacitance__x3A__attract__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,794,518,851</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,861,552,918</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,928,555,985</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,995,551,1052</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1062,542,1119</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1129,544,1186</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1196,568,1253</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1263,576,1320</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1330,548,1387</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1397,489,1437</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1447,474,1487</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1497,497,1520</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1530,605,1570</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1608,563,1665</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1675,575,1715</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Refactory_period__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1725,545,1765</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Attract__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1775,605,1815</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulation.attract__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1825,527,1865</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1875,566,1898</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1936,522,1976</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,1986,601,2026</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,2036,606,2076</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>354,2086,613,2126</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>515,2136,858,2159</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate__x3A__assert"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>515,2169,736,2192</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,2230,781,2270</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>496,2308,810,2331</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node_Input__x3A__attract__x3A__vectors__calculate__x3A__empty"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>253,117,433,139</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Node.dita#Node"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2348,465,2388</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2398,493,2438</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2448,493,2488</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2498,506,2555</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2565,512,2622</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2632,504,2689</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2699,538,2756</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2766,541,2823</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2833,537,2890</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2900,528,2957</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,2967,530,3024</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3034,554,3091</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3101,562,3158</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3168,534,3225</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3235,475,3275</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3285,460,3325</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3335,483,3358</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3368,591,3408</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3446,549,3503</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3513,561,3553</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Refactory_period__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3563,531,3603</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Attract__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3613,591,3653</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Simulation.attract__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3663,513,3703</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3713,552,3736</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3774,508,3814</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Stress__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3824,587,3864</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3874,592,3914</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3924,599,3964</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>340,3974,561,3997</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>239,60,461,99</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron.dita#Leaky_neuron"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4042,451,4082</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4092,479,4132</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Coordinate_X"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4142,479,4182</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Coordinate_Y"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4192,492,4249</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Coordinate_Z"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4259,498,4316</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4326,490,4383</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4393,524,4450</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4460,527,4517</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4527,523,4584</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4594,514,4651</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4661,516,4718</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4728,540,4785</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4795,548,4852</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4862,520,4919</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4929,486,4969</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Is_inhibitor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,4979,446,5019</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Outputs.dita#Outputs"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5029,469,5052</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes.dita#Input__x3A__nodes"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5062,577,5102</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Input__x3A__nodes__x3A__prohibit.dita#Input__x3A__nodes__x3A__prohibit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5140,535,5197</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Simulated_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5207,499,5247</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Output__x3A__flag"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5257,538,5280</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Output__x3A__flag__x3A__emmit.dita#Output__x3A__flag__x3A__emmit"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5318,573,5358</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_Stress__x3A__calculate.dita#Simulation.Stress__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5368,578,5408</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5418,585,5458</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors.sum"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>326,5468,547,5491</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>225,3,408,42</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Leaky_neuron_inhibitor.dita#Leaky_neuron_inhibitor"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="Leaky_neuron_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>
+                              <xref keyref="Node.dita"/>
+                              <draft-comment author="a.binder">#386 -[$ref/@refId][Node]</draft-comment>
+                           </p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref keyref="Leaky_neuron.dita"/>
+                                    <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron]</draft-comment>
+                                 </p>
+                                 <ul>
+                                    <li>
+                                       <p>
+                                          <xref keyref="Leaky_neuron_inhibitor.dita"/>
+                                          <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor]</draft-comment>
+                                       </p>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>minOccurs: </entry>
+                                    <entry>
+                                       <b>0</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Leaky_neuron_inhibitor_Label.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Label]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Coordinate_X.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Coordinate_X]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Coordinate_Y.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Coordinate_Y]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Coordinate_Z.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Coordinate_Z]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Capacitance]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Resistance]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Minimum_voltage]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Maximum_voltage]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Resting_potential]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Reset_potential]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Firing_threshold]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Adaptation_conductance]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Adaptation_time_constant]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Refactory_period]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Is_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Is_inhibitor]</draft-comment> , <xref keyref="Outputs.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Outputs]</draft-comment> , <xref keyref="Input__x3A__nodes.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes]</draft-comment> , <xref keyref="Input__x3A__nodes__x3A__prohibit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes__x3A__prohibit]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Simulated_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Simulated_potential]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Output__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Output__x3A__flag]</draft-comment> , <xref keyref="Output__x3A__flag__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Output__x3A__flag__x3A__emmit]</draft-comment> , <xref keyref="Simulation.Stress__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.Stress__x3A__calculate]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors]</draft-comment> , <xref keyref="Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors.sum.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors.sum]</draft-comment> , <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Leaky_neuron_inhibitor_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Adaptation_conductance]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Adaptation_time_constant]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Capacitance]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Coordinate_X.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Coordinate_X]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Coordinate_Y.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Coordinate_Y]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Coordinate_Z.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Coordinate_Z]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Firing_threshold]</draft-comment>, <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>, <xref keyref="Input__x3A__nodes.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes]</draft-comment>, <xref keyref="Input__x3A__nodes__x3A__prohibit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes__x3A__prohibit]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Is_inhibitor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Is_inhibitor]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Label.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Label]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Maximum_voltage]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Minimum_voltage]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Output__x3A__flag.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Output__x3A__flag]</draft-comment>, <xref keyref="Output__x3A__flag__x3A__emmit.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Output__x3A__flag__x3A__emmit]</draft-comment>, <xref keyref="Outputs.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Outputs]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Refactory_period]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Reset_potential]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Resistance]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Resting_potential]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Simulated_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Simulated_potential]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors.sum.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Simulated_potential__x3A__vectors.sum]</draft-comment>, <xref keyref="Simulation.Stress__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.Stress__x3A__calculate]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Leaky_neuron_inhibitor ptn:debug="" id="" ptn:New="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Label ptn:debug="" ptn:Simulation__x3A__visualize=""&gt;{1,1}&lt;/ptn:Label&gt;
+  &lt;ptn:Coordinate_X ptn:debug=""&gt;{1,1}&lt;/ptn:Coordinate_X&gt;
+  &lt;ptn:Coordinate_Y ptn:debug=""&gt;{1,1}&lt;/ptn:Coordinate_Y&gt;
+  &lt;ptn:Coordinate_Z ptn:debug=""&gt;{1,1}&lt;/ptn:Coordinate_Z&gt;
+  &lt;ptn:Capacitance ptn:debug=""&gt;{1,1}&lt;/ptn:Capacitance&gt;
+  &lt;ptn:Resistance ptn:debug=""&gt;{1,1}&lt;/ptn:Resistance&gt;
+  &lt;ptn:Minimum_voltage ptn:debug=""&gt;{1,1}&lt;/ptn:Minimum_voltage&gt;
+  &lt;ptn:Maximum_voltage ptn:debug=""&gt;{1,1}&lt;/ptn:Maximum_voltage&gt;
+  &lt;ptn:Resting_potential ptn:debug=""&gt;{1,1}&lt;/ptn:Resting_potential&gt;
+  &lt;ptn:Reset_potential ptn:debug=""&gt;{1,1}&lt;/ptn:Reset_potential&gt;
+  &lt;ptn:Firing_threshold ptn:debug=""&gt;{1,1}&lt;/ptn:Firing_threshold&gt;
+  &lt;ptn:Adaptation_conductance&gt;{0,0}&lt;/ptn:Adaptation_conductance&gt;
+  &lt;ptn:Adaptation_time_constant&gt;{0,0}&lt;/ptn:Adaptation_time_constant&gt;
+  &lt;ptn:Refactory_period ptn:debug=""&gt;{1,1}&lt;/ptn:Refactory_period&gt;
+  &lt;ptn:Is_inhibitor&gt;{1,1}&lt;/ptn:Is_inhibitor&gt;
+  &lt;ptn:Outputs ptn:debug=""&gt;{1,1}&lt;/ptn:Outputs&gt;
+  &lt;ptn:Input__x3A__nodes&gt;{1,1}&lt;/ptn:Input__x3A__nodes&gt;
+  &lt;ptn:Input__x3A__nodes__x3A__prohibit&gt;{0,1}&lt;/ptn:Input__x3A__nodes__x3A__prohibit&gt;
+  &lt;ptn:Simulated_potential ptn:debug="" ptn:Simulated_potential__x3A__current="" ptn:Simulation.model.apply.xml__x3A__install__x3A__Reset_potential__x3A__installed=""&gt;{1,1}&lt;/ptn:Simulated_potential&gt;
+  &lt;ptn:Output__x3A__flag&gt;{0,1}&lt;/ptn:Output__x3A__flag&gt;
+  &lt;ptn:Output__x3A__flag__x3A__emmit&gt;{0,1}&lt;/ptn:Output__x3A__flag__x3A__emmit&gt;
+  &lt;ptn:Simulation.Stress__x3A__calculate ptn:debug="" ptn:Distance="" ptn:Label="" ptn:Label__x3A__context="" ptn:Output_Node__x3A__attract="" ptn:Simulated_potential__x3A__diff="" ptn:Simulated_potential__x3A__less_charged_node="" ptn:Simulated_potential__x3A__more_charged_node=""&gt;{0,1}&lt;/ptn:Simulation.Stress__x3A__calculate&gt;
+  &lt;ptn:Simulated_potential__x3A__vectors ptn:Simulated_potential__x3A__previous=""&gt;{0,1}&lt;/ptn:Simulated_potential__x3A__vectors&gt;
+  &lt;ptn:Simulated_potential__x3A__vectors.sum&gt;{0,unbounded}&lt;/ptn:Simulated_potential__x3A__vectors.sum&gt;
+  &lt;ptn:Input__x3A__attract__x3A__vectors ptn:debug=""&gt;{1,unbounded}&lt;/ptn:Input__x3A__attract__x3A__vectors&gt;
+&lt;/ptn:Leaky_neuron_inhibitor&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Node_id.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Node_id]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="New.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][New]</draft-comment>
+                                    </entry>
+                                    <entry>xs:boolean</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">When new created - to optimize 3d</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][debug]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

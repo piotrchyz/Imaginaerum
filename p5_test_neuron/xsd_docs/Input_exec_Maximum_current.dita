@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Input_exec_Maximum_current">
+   <title>Simple Type ptn:Input_exec_Maximum_current</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>How much current will input be loaded</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Simple_Type_ptn_Input_exec_Maximum_current">
+                           <image href="img/test_neuron_xsd_Simple_Type_ptn_Input_exec_Maximum_current.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>249,0,411,26</coords>
+                              <xref href="test_neuron_xsd_Simple_Type_ptn_Maximum_current.dita#Maximum_current"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="Maximum_current.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Maximum_current]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>xs:decimal</p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref keyref="Maximum_current.dita"/>
+                                    <draft-comment author="a.binder">#386 -[$ref/@refId][Maximum_current]</draft-comment>
+                                 </p>
+                                 <ul>
+                                    <li>
+                                       <p>
+                                          <xref keyref="Input_exec_Maximum_current.dita"/>
+                                          <draft-comment author="a.binder">#386 -[$ref/@refId][Input_exec_Maximum_current]</draft-comment>
+                                       </p>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Facets</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="3*" align="left"/>
+                              <colspec colwidth="5*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>maxInclusive</entry>
+                                    <entry>10</entry>
+                                    <entry/>
+                                 </row>
+                                 <row>
+                                    <entry>minInclusive</entry>
+                                    <entry>0.01</entry>
+                                    <entry/>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Input_Input_exec_Maximum_current.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input_Input_exec_Maximum_current]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Attributes </entry>
+                                    <entry>
+                                       <xref keyref="Input_exec_Maximum_current__x3A__end.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input_exec_Maximum_current__x3A__end]</draft-comment>, <xref keyref="Input_exec_Maximum_current__x3A__start.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input_exec_Maximum_current__x3A__start]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref keyref="Input_exec_Maximum_current__x3A__generate__x3A__pattern.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input_exec_Maximum_current__x3A__generate__x3A__pattern]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

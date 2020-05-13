@@ -9,8 +9,8 @@
       <topicref href="p5_test_sequence_neuron_simulator_v2019.dita">
          <topicref href="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"/>
       </topicref>
-      <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.p5_test_neuron.xsl.props"
-                navtitle="p5_test_neuron.xsl.p5_test_neuron.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+      <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.p5_test_neuron.xsl.dita.props"
+                navtitle="p5_test_neuron.xsl.p5_test_neuron.xsl.dita.props [p5_test_sequence_neuron_simulator_v2019]">
          <keydef processing-role="resource-only"
                  navtitle="p5_test_neuron.xsl"
                  keys="p5_test_neuron.xsl"
@@ -25,8 +25,8 @@
       </topicref>
       <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
         -->
-      <topicref keys="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.build_test_neuron.xml.props"
-                navtitle="build_test_neuron.xml.build_test_neuron.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+      <topicref keys="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.build_test_neuron.xml.dita.props"
+                navtitle="build_test_neuron.xml.build_test_neuron.xml.dita.props [p5_test_sequence_neuron_simulator_v2019]">
          <keydef processing-role="resource-only"
                  navtitle="build_test_neuron.xml"
                  keys="build_test_neuron.xml"
@@ -45,44 +45,56 @@
         -->
       <topicref href="absstract_simulation_debug_simulation_directory_generated_structure.dita">
          <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita">
-            <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#first_time_tick_strategy_group"
-                    keys="first_time_tick_strategy_group"
-                    processing-role="resource-only">
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml__x3A__Receptor__x3A__generate"
-                       keys="Simulation.analys.xml__x3A__Receptor__x3A__generate"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate"
-                       keys="Input__x3A__generate"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern"
-                       keys="Input__x3A__generate__x3A__pattern"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply"
-                       keys="Input__x3A__generate__x3A__pattern__x3A__apply"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply_match"
-                       keys="Input__x3A__generate__x3A__pattern__x3A__apply_match"
-                       processing-role="resource-only"/>
-            </keydef>
-            <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#next_time_tick_strategy_group"
-                    keys="next_time_tick_strategy_group"
-                    processing-role="resource-only">
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml"
-                       keys="Simulation.analys.xml"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.attract.xml"
-                       keys="Simulation.attract.xml"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.xml"
-                       keys="Simulation.model.xml"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.stats.xml"
-                       keys="Simulation.model.stats.xml"
-                       processing-role="resource-only"/>
-               <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.validate.xml"
-                       keys="Simulation.model.validate.xml"
-                       processing-role="resource-only"/>
-            </keydef>
+            <topicref keys="p5_test_sequence_neuron_simulator_v2019.first_time_tick_strategy_group.props"
+                      navtitle="first_time_tick_strategy_group.props [p5_test_sequence_neuron_simulator_v2019]">
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml__x3A__Receptor__x3A__generate.props"
+                         navtitle="Simulation.analys.xml__x3A__Receptor__x3A__generate.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate.props"
+                         navtitle="Input__x3A__generate.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern.props"
+                         navtitle="Input__x3A__generate__x3A__pattern.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply.props"
+                         navtitle="Input__x3A__generate__x3A__pattern__x3A__apply.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply_match.props"
+                         navtitle="Input__x3A__generate__x3A__pattern__x3A__apply_match.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+            </topicref>
+            <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+            <topicref keys="p5_test_sequence_neuron_simulator_v2019.next_time_tick_strategy_group.props"
+                      navtitle="next_time_tick_strategy_group.props [p5_test_sequence_neuron_simulator_v2019]">
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml.props"
+                         navtitle="Simulation.analys.xml.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Simulation.attract.xml.props"
+                         navtitle="Simulation.attract.xml.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.xml.props"
+                         navtitle="Simulation.model.xml.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.stats.xml.props"
+                         navtitle="Simulation.model.stats.xml.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+               <topicref keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.validate.xml.props"
+                         navtitle="Simulation.model.validate.xml.props [p5_test_sequence_neuron_simulator_v2019]"/>
+               <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+            </topicref>
+            <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
          </topicref>
       </topicref>
       <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.xsl.p5_test_neuron.Simulation.analys.xml.xsl_to_create_ .props"
@@ -534,6 +546,7 @@
                 navtitle="test_neuron.xsd.test_neuron.xsd.props [p5_test_sequence_neuron_simulator_v2019]"/>
       <!--#46  sibling root lower build_Subject:SCHEME__CLASS 
         -->
+      <topicref href="xsd_docs/test_neuron.ditamap"/>
       <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME.ditamap"/>
       <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__ENUM.ditamap"/>
    </topichead>
@@ -541,10 +554,10 @@
       <topicSubjectRow>
          <topicCell>
             <topicref href="p5_test_neuron.xsl.dita"
-                      keys="p5_test_neuron.xsl.p5_test_neuron.xsl.props"/>
+                      keys="p5_test_neuron.xsl.p5_test_neuron.xsl.dita.props"/>
          </topicCell>
          <subjectCell>
-            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.p5_test_neuron.xsl.props"/>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.p5_test_neuron.xsl.dita.props"/>
          </subjectCell>
       </topicSubjectRow>
       <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
@@ -552,10 +565,10 @@
       <topicSubjectRow>
          <topicCell>
             <topicref href="build_test_neuron.xml.dita"
-                      keys="build_test_neuron.xml.build_test_neuron.xml.props"/>
+                      keys="build_test_neuron.xml.build_test_neuron.xml.dita.props"/>
          </topicCell>
          <subjectCell>
-            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.build_test_neuron.xml.props"/>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.build_test_neuron.xml.dita.props"/>
          </subjectCell>
       </topicSubjectRow>
       <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
@@ -567,6 +580,158 @@
          </topicCell>
          <subjectCell>
             <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_ .props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#first_time_tick_strategy_group"
+                      keys="first_time_tick_strategy_group.props"/>
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml__x3A__Receptor__x3A__generate Simulation.analys.xml__x3A__Receptor__x3A__generate - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate Input__x3A__generate - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern Input__x3A__generate__x3A__pattern - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply Input__x3A__generate__x3A__pattern__x3A__apply - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply_match Input__x3A__generate__x3A__pattern__x3A__apply_match - map/topicref -->
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.first_time_tick_strategy_group.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml__x3A__Receptor__x3A__generate"
+                      keys="Simulation.analys.xml__x3A__Receptor__x3A__generate.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml__x3A__Receptor__x3A__generate.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate"
+                      keys="Input__x3A__generate.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern"
+                      keys="Input__x3A__generate__x3A__pattern.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply"
+                      keys="Input__x3A__generate__x3A__pattern__x3A__apply.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply_match"
+                      keys="Input__x3A__generate__x3A__pattern__x3A__apply_match.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply_match.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#next_time_tick_strategy_group"
+                      keys="next_time_tick_strategy_group.props"/>
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml Simulation.analys.xml - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.attract.xml Simulation.attract.xml - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.xml Simulation.model.xml - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.stats.xml Simulation.model.stats.xml - map/topicref -->
+            <!--
+                #64a TODO TOPIC ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.validate.xml Simulation.model.validate.xml - map/topicref -->
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.next_time_tick_strategy_group.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml"
+                      keys="Simulation.analys.xml.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.attract.xml"
+                      keys="Simulation.attract.xml.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Simulation.attract.xml.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.xml"
+                      keys="Simulation.model.xml.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Simulation.model.xml.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.stats.xml"
+                      keys="Simulation.model.stats.xml.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Simulation.model.stats.xml.props"/>
+         </subjectCell>
+      </topicSubjectRow>
+      <!--#107  sibling root lower build_Subject:SCHEME__CLASS 
+        -->
+      <topicSubjectRow>
+         <topicCell>
+            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.validate.xml"
+                      keys="Simulation.model.validate.xml.props"/>
+         </topicCell>
+         <subjectCell>
+            <topicsubject keyref="p5_test_sequence_neuron_simulator_v2019.Simulation.model.validate.xml.props"/>
          </subjectCell>
       </topicSubjectRow>
       <!--#107  sibling root lower build_Subject:SCHEME__CLASS 

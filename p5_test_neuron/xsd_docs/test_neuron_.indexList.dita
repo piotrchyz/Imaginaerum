@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test_neuron_.indexList.tmp">
+   <title>Resource hierarchy</title>
+   <body>
+      <p>
+         <b>Legend: </b>
+         <image href="img/Import12.gif"/>
+         <i> Import, </i>
+         <image href="img/Include12.gif"/>
+         <i> Include, </i>
+         <image href="img/Redefine12.gif"/>
+         <i> Redefine, </i>
+         <image href="img/Override12.gif"/>
+         <i> Override, </i>
+         <image href="img/Cycle12.png"/>
+         <i> Cycle detected</i>
+      </p>
+      <ul>
+         <li>
+            <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_analys_xml_xsd_Included_schema_test_neuron_Simulation_analys_xml_xsd.dita">test_neuron_Simulation_analys_xml_xsd_Included_schema_test_neuron_Simulation_analys_xml_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_attract_xml_xsd_Included_schema_test_neuron_Simulation_attract_xml_xsd.dita">test_neuron_Simulation_attract_xml_xsd_Included_schema_test_neuron_Simulation_attract_xml_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_model_xml_xsd_Included_schema_test_neuron_Simulation_model_xml_xsd.dita">test_neuron_Simulation_model_xml_xsd_Included_schema_test_neuron_Simulation_model_xml_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_model_stats_xml_xsd_Included_schema_test_neuron_Simulation_model_stats_xml_xsd.dita">test_neuron_Simulation_model_stats_xml_xsd_Included_schema_test_neuron_Simulation_model_stats_xml_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_model_validate_xml_xsd_Included_schema_test_neuron_Simulation_model_validate_xml_xsd.dita">test_neuron_Simulation_model_validate_xml_xsd_Included_schema_test_neuron_Simulation_model_validate_xml_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_model_apply_xml_xsd_Included_schema_test_neuron_Simulation_model_apply_xml_xsd.dita">test_neuron_Simulation_model_apply_xml_xsd_Included_schema_test_neuron_Simulation_model_apply_xml_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_analyze_simulation_xml_xsd_Included_schema_test_neuron_Simulation_analyze_simulation_xml_xsd.dita">test_neuron_Simulation_analyze_simulation_xml_xsd_Included_schema_test_neuron_Simulation_analyze_simulation_xml_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Included_schema_test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd.dita">test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd_Included_schema_test_neuron_Simulation_ColorInterpolator__x3A__debug_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <image href="img/HierarchyArrow12.jpg"/>
+                     <image href="img/Import12.gif"/>
+                     <xref href="test_neuron_x3d_xsd_Imported_schema_test_neuron_x3d_xsd.dita">test_neuron_x3d_xsd_Imported_schema_test_neuron_x3d_xsd.dita</xref>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <image href="img/HierarchyArrow12.jpg"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_Simulation_model_stats_xml_xsd_Included_schema_test_neuron_Simulation_model_stats_xml_xsd.dita">test_neuron_Simulation_model_stats_xml_xsd_Included_schema_test_neuron_Simulation_model_stats_xml_xsd.dita</xref>
+                  </p>
+                  <ul>
+                     <li>
+                        <p>
+                           <image href="img/Cycle12.png"/>
+                           <image href="img/Include12.gif"/>
+                           <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Included_schema_test_neuron_Simulation_generate__x3A__pattern_xsd.dita">test_neuron_Simulation_generate__x3A__pattern_xsd_Included_schema_test_neuron_Simulation_generate__x3A__pattern_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <image href="img/HierarchyArrow12.jpg"/>
+                     <image href="img/Import12.gif"/>
+                     <xref href="test_neuron_x3d_xsd_Imported_schema_test_neuron_x3d_xsd.dita">test_neuron_x3d_xsd_Imported_schema_test_neuron_x3d_xsd.dita</xref>
+                  </p>
+               </li>
+               <li>
+                  <p>
+                     <image href="img/HierarchyArrow12.jpg"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_Simulation_model_stats_xml_xsd_Included_schema_test_neuron_Simulation_model_stats_xml_xsd.dita">test_neuron_Simulation_model_stats_xml_xsd_Included_schema_test_neuron_Simulation_model_stats_xml_xsd.dita</xref>
+                  </p>
+                  <ul>
+                     <li>
+                        <p>
+                           <image href="img/Cycle12.png"/>
+                           <image href="img/Include12.gif"/>
+                           <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                        </p>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li>
+            <p>
+               <image href="img/HierarchyArrow12.jpg"/>
+               <image href="img/Include12.gif"/>
+               <xref href="test_neuron_generated_xsd_Included_schema_test_neuron_generated_xsd.dita">test_neuron_generated_xsd_Included_schema_test_neuron_generated_xsd.dita</xref>
+            </p>
+            <ul>
+               <li>
+                  <p>
+                     <image href="img/Cycle12.png"/>
+                     <image href="img/Include12.gif"/>
+                     <xref href="test_neuron_xsd_Main_schema_test_neuron_xsd.dita">test_neuron_xsd_Main_schema_test_neuron_xsd.dita</xref>
+                  </p>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </body>
+</topic>

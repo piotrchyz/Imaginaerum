@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Simulation">
+   <title>Element ptn:Simulation</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Simulation">
+                           <image href="img/test_neuron_xsd_Element_ptn_Simulation.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>181,2,344,59</coords>
+                              <xref href="#Simulation_Simulator_tick"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>181,69,354,126</coords>
+                              <xref href="#Simulation_Simulation_ticks"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Config.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Config]</draft-comment>, <xref keyref="Input__x3A__generate.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate.xml]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Simulation_Simulator_tick.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_Simulator_tick]</draft-comment> , <xref keyref="Simulation_Simulation_ticks.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_Simulation_ticks]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Simulation_Simulation_ticks.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_Simulation_ticks]</draft-comment>, <xref keyref="Simulation_Simulator_tick.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_Simulator_tick]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Simulation xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Simulator_tick&gt;{1,1}&lt;/ptn:Simulator_tick&gt;
+  &lt;ptn:Simulation_ticks&gt;{1,1}&lt;/ptn:Simulation_ticks&gt;
+&lt;/ptn:Simulation&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

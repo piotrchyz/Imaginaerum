@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Coordinate">
+   <title>Simple Type ptn:Coordinate</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Coordinate of node X Y or Z or more?</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>xs:decimal</entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref keyref="Coordinate_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_CT]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Attributes </entry>
+                                    <entry>
+                                       <xref keyref="Coordinate_X.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X]</draft-comment>, <xref keyref="Coordinate_X__x3A__debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__debug]</draft-comment>, <xref keyref="Coordinate_X__x3A__fieldOfView__x3A__ray.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__fieldOfView__x3A__ray]</draft-comment>, <xref keyref="Coordinate_X__x3A__generate__max.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__generate__max]</draft-comment>, <xref keyref="Coordinate_X__x3A__generate__min.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__generate__min]</draft-comment>, <xref keyref="Coordinate_X__x3A__generate__separator.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__generate__separator]</draft-comment>, <xref keyref="Coordinate_X__x3A__generated.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__generated]</draft-comment>, <xref keyref="Coordinate_X__x3A__generated__separator.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__generated__separator]</draft-comment>, <xref keyref="Coordinate_X__x3A__max.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__max]</draft-comment>, <xref keyref="Coordinate_X__x3A__min.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__min]</draft-comment>, <xref keyref="Coordinate_X__x3A__more_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__more_charged_node]</draft-comment>, <xref keyref="Coordinate_X__x3A__remote.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_X__x3A__remote]</draft-comment>, <xref keyref="Coordinate_Y.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y]</draft-comment>, <xref keyref="Coordinate_Y__x3A__debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__debug]</draft-comment>, <xref keyref="Coordinate_Y__x3A__fieldOfView__x3A__ray.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__fieldOfView__x3A__ray]</draft-comment>, <xref keyref="Coordinate_Y__x3A__generate__max.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__generate__max]</draft-comment>, <xref keyref="Coordinate_Y__x3A__generate__min.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__generate__min]</draft-comment>, <xref keyref="Coordinate_Y__x3A__generate__separator.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__generate__separator]</draft-comment>, <xref keyref="Coordinate_Y__x3A__generated.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__generated]</draft-comment>, <xref keyref="Coordinate_Y__x3A__generated__separator.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__generated__separator]</draft-comment>, <xref keyref="Coordinate_Y__x3A__max.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__max]</draft-comment>, <xref keyref="Coordinate_Y__x3A__min.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__min]</draft-comment>, <xref keyref="Coordinate_Y__x3A__more_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__more_charged_node]</draft-comment>, <xref keyref="Coordinate_Y__x3A__remote.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Y__x3A__remote]</draft-comment>, <xref keyref="Coordinate_Z.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z]</draft-comment>, <xref keyref="Coordinate_Z__x3A__debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__debug]</draft-comment>, <xref keyref="Coordinate_Z__x3A__fieldOfView__x3A__ray.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__fieldOfView__x3A__ray]</draft-comment>, <xref keyref="Coordinate_Z__x3A__generate__max.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__generate__max]</draft-comment>, <xref keyref="Coordinate_Z__x3A__generate__min.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__generate__min]</draft-comment>, <xref keyref="Coordinate_Z__x3A__generate__separator.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__generate__separator]</draft-comment>, <xref keyref="Coordinate_Z__x3A__less_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__less_charged_node]</draft-comment>, <xref keyref="Coordinate_Z__x3A__more_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__more_charged_node]</draft-comment>, <xref keyref="Coordinate_Z__x3A__remote.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Coordinate_Z__x3A__remote]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

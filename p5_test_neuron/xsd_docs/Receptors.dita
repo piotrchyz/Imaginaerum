@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Receptors">
+   <title>Element ptn:Receptors</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Receptors">
+                           <image href="img/test_neuron_xsd_Element_ptn_Receptors.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>261,117,452,157</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Receptor.dita#p5_test_neuron_Receptor"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>261,167,437,190</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Receptor__x3A__generate.dita#Receptor__x3A__generate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>160,3,278,25</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Receptors.dita#p5_test_neuron_Receptors"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Receptors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Receptors]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Config.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Config]</draft-comment>, <xref keyref="Input__x3A__generate.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate.xml]</draft-comment>, <xref keyref="Input__x3A__generate__x3A__pattern.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate__x3A__pattern.xml]</draft-comment>, <xref keyref="Simulation.analys.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.analys.xml]</draft-comment>, <xref keyref="Simulation.attract.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract.xml]</draft-comment>, <xref keyref="Simulation.model.apply.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.apply.xml]</draft-comment>, <xref keyref="Simulation.model.stats.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.stats.xml]</draft-comment>, <xref keyref="Simulation.model.validate.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.validate.xml]</draft-comment>, <xref keyref="Simulation.model.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.model.xml]</draft-comment>, <xref keyref="Simulation_body.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_body]</draft-comment>, <xref keyref="Simulation_body__x3A__abstract.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation_body__x3A__abstract]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Receptor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Receptor]</draft-comment> , <xref keyref="Receptor__x3A__generate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Receptor__x3A__generate]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Receptor.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Receptor]</draft-comment>, <xref keyref="Receptor__x3A__generate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Receptor__x3A__generate]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Receptors xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Receptor ptn:Coordinate_X__x3A__fieldOfView__x3A__ray="" ptn:Coordinate_X__x3A__fieldOfView__x3A__ray.diff="" ptn:Coordinate_X__x3A__generated="" ptn:Coordinate_X__x3A__generated__separator="" ptn:Coordinate_X__x3A__max="" ptn:Coordinate_X__x3A__min="" ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray="" ptn:Coordinate_Y__x3A__fieldOfView__x3A__ray.diff="" ptn:Coordinate_Y__x3A__generated="" ptn:Coordinate_Y__x3A__generated__separator="" ptn:Coordinate_Y__x3A__max="" ptn:Coordinate_Y__x3A__min="" ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="" ptn:debug="" id="" ptn:New="" ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio=""&gt;{1,unbounded}&lt;/ptn:Receptor&gt;
+  &lt;ptn:Receptor__x3A__generate ptn:Coordinate_Z__x3A__fieldOfView__x3A__ray="" ptn:Receptor__x3A__generate__fieldOfView__x3A__ratio=""&gt;{0,unbounded}&lt;/ptn:Receptor__x3A__generate&gt;
+&lt;/ptn:Receptors&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="1*" align="left"/>
+                              <colspec colwidth="9*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <b>Wildcard:</b>
+                                    </entry>
+                                    <entry>ANY attribute from namespace(s) 'http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd'</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

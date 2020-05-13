@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Label_CT">
+   <title>Complex Type ptn:Label_CT</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Complex_Type_ptn_Label_CT">
+                           <image href="img/test_neuron_xsd_Complex_Type_ptn_Label_CT.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>161,0,261,26</coords>
+                              <xref href="test_neuron_xsd_Simple_Type_ptn_Label.dita#Label"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>175,101,279,141</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>175,151,375,191</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_Simulation__x3A__visualize.dita#Simulation__x3A__visualize"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>extension of <xref keyref="Label.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Label]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type hierarchy</entry>
+                  <entry>
+                     <ul>
+                        <li>
+                           <p>xs:ID</p>
+                           <ul>
+                              <li>
+                                 <p>
+                                    <xref keyref="Label.dita"/>
+                                    <draft-comment author="a.binder">#386 -[$ref/@refId][Label]</draft-comment>
+                                 </p>
+                                 <ul>
+                                    <li>
+                                       <p>
+                                          <xref keyref="Label_CT.dita"/>
+                                          <draft-comment author="a.binder">#386 -[$ref/@refId][Label_CT]</draft-comment>
+                                       </p>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Elements </entry>
+                                    <entry>
+                                       <xref keyref="Adaptive_neuron_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_Label]</draft-comment>, <xref keyref="Adaptive_neuron_inhibitor_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_inhibitor_Label]</draft-comment>, <xref keyref="Adaptive_neuron_standard_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Adaptive_neuron_standard_Label]</draft-comment>, <xref keyref="Leaky_neuron_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_Label]</draft-comment>, <xref keyref="Leaky_neuron_inhibitor_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_inhibitor_Label]</draft-comment>, <xref keyref="Leaky_neuron_standard_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Leaky_neuron_standard_Label]</draft-comment>, <xref keyref="Node_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Node_Label]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Simulation__x3A__visualize.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation__x3A__visualize]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">Pokazac na symulacji</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][debug]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

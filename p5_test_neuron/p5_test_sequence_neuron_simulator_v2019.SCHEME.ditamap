@@ -2,1083 +2,1058 @@
 <!DOCTYPE subjectScheme
   PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "subjectScheme.dtd">
 <subjectScheme>
-   <subjectHead>
-      <subjectHeadMeta>
-         <navtitle> Struktura informacji dla p5_test_sequence_neuron_simulator_v2019</navtitle>
-      </subjectHeadMeta>
-   </subjectHead>
-   
-   
-   
-   
-   <!-- NEW IMPORTED -->
-   <hasInstance id="hasInstance">
-      <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.PropsKey"
-                  navtitle="$p5_test_sequence_neuron_simulator_v2019.PropsKey ">
-         <!-- STANDARDS -->
-          <subjectdef keys="xml"/>
-          <subjectdef keys="xsl"/>
-         <subjectdef keys="imported"/>
-         <subjectdef keys="build"/>
-          <subjectdef keys="xsd"/>
-          
-         
-         
-         <subjectdef keys="html"/>
-          <!--<subjectdef keys="mode"/>-->
-          <subjectdef keys="png"/>
-          
-          <subjectdef keyref="xsl.PropsKey"/>
-          
-          <subjectdef keyref="test_neuron.PropsKey"/>
-          <subjectdef keyref="ant.PropsKey"/>
-          
-          <subjectdef keyref="ditamap.PropsKey"/>
-          
-          <subjectdef keyref="person.Binder_Arkadiusz.key"/>
-          
-          <!-- EOF LOCAL CONF -->
-         
-       <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita.props"
-                     navtitle="p5_test_sequence_neuron_simulator_v2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=p5_test_sequence_neuron_simulator_v2019.dita.props)
+    <subjectHead>
+        <subjectHeadMeta>
+            <navtitle> Struktura informacji dla p5_test_sequence_neuron_simulator_v2019</navtitle>
+        </subjectHeadMeta>
+    </subjectHead>
+    <!-- NEW IMPORTED -->
+    <hasInstance id="hasInstance">
+        <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.PropsKey"
+            navtitle="$p5_test_sequence_neuron_simulator_v2019.PropsKey ">
+            <!-- STANDARDS -->
+            <subjectdef keys="xml"/>
+            <!--<subjectdef keys="xsl"/>-->
+            <subjectdef keys="imported"/>
+            <subjectdef keys="build"/>
+            <subjectdef keys="xsd"/>
+            <subjectdef keys="html"/>
+            <!--<subjectdef keys="mode"/>-->
+            <subjectdef keys="png"/>
+            <subjectdef keyref="xsl.PropsKey"/>
+            <subjectdef keyref="test_neuron.PropsKey"/>
+            <subjectdef keyref="ant.PropsKey"/>
+            <subjectdef keyref="ditamap.PropsKey"/>
+            <subjectdef keyref="person.Binder_Arkadiusz.key"/>
+            <subjectdef keyref="props.projekt.PropsKey"/>
+            <subjectdef keyref="xsd.PropsKey"/>
+            <!-- EOF LOCAL CONF -->
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita.props"
+                navtitle="p5_test_sequence_neuron_simulator_v2019.dita.props [p5_test_sequence_neuron_simulator_v2019]">
+                <!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=p5_test_sequence_neuron_simulator_v2019.dita.props)
         -->
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita"
-                      navtitle="p5_test_sequence_neuron_simulator_v2019.dita [p5_test_sequence_neuron_simulator_v2019]"
-                      href="p5_test_sequence_neuron_simulator_v2019.dita"/>
-         </subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props"
-                     navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]">
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"
-                      navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"
-                      href="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"/>
-            <!--
+                <topicref
+                    keys="p5_test_sequence_neuron_simulator_v2019.p5_test_sequence_neuron_simulator_v2019.dita"
+                    navtitle="p5_test_sequence_neuron_simulator_v2019.dita [p5_test_sequence_neuron_simulator_v2019]"
+                    href="p5_test_sequence_neuron_simulator_v2019.dita"/>
+            </subjectdef>
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props"
+                navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    keys="p5_test_sequence_neuron_simulator_v2019.neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"
+                    navtitle="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props [p5_test_sequence_neuron_simulator_v2019]"
+                    href="neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita"/>
+                <!--
                 #64a ./n=topicref ; @* =  neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita - map/topicref    $SubjectName.new = neuranet_p5_test_neuron_simulator_based_on_spreadsheet_concept_2019.dita.props ; 
             -->
-         </subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.p5_test_neuron.xsl.props"
-                     navtitle="p5_test_neuron.xsl.p5_test_neuron.xsl.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.xsl.p5_test_neuron.xsl.props)
+            </subjectdef>
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.p5_test_neuron.xsl.props"
+                navtitle="p5_test_neuron.xsl.p5_test_neuron.xsl.props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.xsl.p5_test_neuron.xsl.props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.props"
-                     navtitle="p5_test_neuron.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
-                    navtitle="p5_test_neuron.xsl"
-                    keys="p5_test_neuron.xsl"
-                    href="p5_test_neuron.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.xsl.props"
+                navtitle="p5_test_neuron.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only" navtitle="p5_test_neuron.xsl"
+                    keys="p5_test_neuron.xsl" href="p5_test_neuron.xsl"
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.xsl p5_test_neuron.xsl p5_test_neuron.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.ptn_Simulation.build.analys.xml.props"
-                     navtitle="ptn_Simulation.build.analys.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef keys="ptn_Simulation.build.analys.xml"
-                    props="xsl.mode.props" scope="external" 
-                    processing-role="resource-only" format="xml"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.ptn_Simulation.build.analys.xml.props"
+                navtitle="ptn_Simulation.build.analys.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef keys="ptn_Simulation.build.analys.xml" props="xsl.mode.props"
+                    scope="external" processing-role="resource-only" format="xml"
                     href="repository/Simulation.debug/build.p5_test_neuron.Simulation.build.analys.xml"
-                    />
-         </subjectdef>
-         <!--
+                />
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  ptn_Simulation.build.analys.xml mode resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = ptn_Simulation.build.analys.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.build_test_neuron.xml.props"
-                     navtitle="build_test_neuron.xml.build_test_neuron.xml.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=build_test_neuron.xml.build_test_neuron.xml.props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.build_test_neuron.xml.props"
+                navtitle="build_test_neuron.xml.build_test_neuron.xml.props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=build_test_neuron.xml.build_test_neuron.xml.props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.props"
-                     navtitle="build_test_neuron.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xml"
-                    processing-role="resource-only"
-                    navtitle="build_test_neuron.xml"
-                    keys="build_test_neuron.xml"
-                    href="build_test_neuron.xml"
-                    props=" imported  build  xml "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.build_test_neuron.xml.props"
+                navtitle="build_test_neuron.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xml" processing-role="resource-only"
+                    navtitle="build_test_neuron.xml" keys="build_test_neuron.xml"
+                    href="build_test_neuron.xml" props=" imported  build  xml " scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xml resource-only build_test_neuron.xml build_test_neuron.xml build_test_neuron.xml  imported  build  xml  + map/topicref mapgroup-d/keydef    $SubjectName.new = build_test_neuron.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
-                    scope="external"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only" scope="external"
                     navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"
                     keys="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"
                     href="p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl"
-                    props=" imported  xsl "
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only external p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analys.xml.Simulated_potential.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.xsd.test_neuron.xsd.props"
-                     navtitle="test_neuron.xsd.test_neuron.xsd.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.xsd.test_neuron.xsd.props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.xsd.test_neuron.xsd.props"
+                navtitle="test_neuron.xsd.test_neuron.xsd.props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.xsd.test_neuron.xsd.props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.absstract_simulation_debug_simulation_directory_generated_structure.dita.props"
-                     navtitle="absstract_simulation_debug_simulation_directory_generated_structure.dita.props [p5_test_sequence_neuron_simulator_v2019]"><!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=absstract_simulation_debug_simulation_directory_generated_structure.dita.props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.absstract_simulation_debug_simulation_directory_generated_structure.dita.props"
+                navtitle="absstract_simulation_debug_simulation_directory_generated_structure.dita.props [p5_test_sequence_neuron_simulator_v2019]">
+                <!--#46B  sibling root lower build_Subject:DITAMAP.subjectdef  (SubjectName.new=absstract_simulation_debug_simulation_directory_generated_structure.dita.props)
         -->
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.absstract_simulation_debug_simulation_directory_generated_structure.dita"
-                      navtitle="absstract_simulation_debug_simulation_directory_generated_structure.dita [p5_test_sequence_neuron_simulator_v2019]"
-                      href="absstract_simulation_debug_simulation_directory_generated_structure.dita"/>
-         </subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita.props"
-                     navtitle="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita.props [p5_test_sequence_neuron_simulator_v2019]">
-            <topicref keys="p5_test_sequence_neuron_simulator_v2019.abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita"
-                      navtitle="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita.props [p5_test_sequence_neuron_simulator_v2019]"
-                      href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita"/>
-            <!--
+                <topicref
+                    keys="p5_test_sequence_neuron_simulator_v2019.absstract_simulation_debug_simulation_directory_generated_structure.dita"
+                    navtitle="absstract_simulation_debug_simulation_directory_generated_structure.dita [p5_test_sequence_neuron_simulator_v2019]"
+                    href="absstract_simulation_debug_simulation_directory_generated_structure.dita"
+                />
+            </subjectdef>
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita.props"
+                navtitle="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    keys="p5_test_sequence_neuron_simulator_v2019.abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita"
+                    navtitle="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita.props [p5_test_sequence_neuron_simulator_v2019]"
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita"/>
+                <!--
                 #64a ./n=topicref ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita - map/topicref    $SubjectName.new = abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita.props ; 
             -->
-         </subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.first_time_tick_strategy_group.props"
-                     navtitle="first_time_tick_strategy_group.props [p5_test_sequence_neuron_simulator_v2019]">
-            <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#first_time_tick_strategy_group"
+            </subjectdef>
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.first_time_tick_strategy_group.props"
+                navtitle="first_time_tick_strategy_group.props [p5_test_sequence_neuron_simulator_v2019]">
+                <!--<topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#first_time_tick_strategy_group"
                     keys="first_time_tick_strategy_group"
-                    />
-         </subjectdef>
-         <!--
+                    />-->
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.first_time_tick_strategy_group.dita"
+                    keys="first_time_tick_strategy_group"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#first_time_tick_strategy_group first_time_tick_strategy_group resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = first_time_tick_strategy_group.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml__x3A__Receptor__x3A__generate.props"
-                     navtitle="Simulation.analys.xml__x3A__Receptor__x3A__generate.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml__x3A__Receptor__x3A__generate"
-                    keys="Simulation.analys.xml__x3A__Receptor__x3A__generate"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml__x3A__Receptor__x3A__generate.props"
+                navtitle="Simulation.analys.xml__x3A__Receptor__x3A__generate.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_fileSimulation.analys.xml__x3A__Receptor__x3A__generate.dita"
+                    keys="Simulation.analys.xml__x3A__Receptor__x3A__generate"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml__x3A__Receptor__x3A__generate Simulation.analys.xml__x3A__Receptor__x3A__generate resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Simulation.analys.xml__x3A__Receptor__x3A__generate.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate.props"
-                     navtitle="Input__x3A__generate.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate"
-                    keys="Input__x3A__generate"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate.props"
+                navtitle="Input__x3A__generate.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Input__x3A__generate.dita"
+                    keys="Input__x3A__generate"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate Input__x3A__generate resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Input__x3A__generate.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern.props"
-                     navtitle="Input__x3A__generate__x3A__pattern.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern"
-                    keys="Input__x3A__generate__x3A__pattern"
-                    processing-role="resource-only"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern.props"
+                navtitle="Input__x3A__generate__x3A__pattern.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Input__x3A__generate__x3A__pattern.dita"
+                    keys="Input__x3A__generate__x3A__pattern" processing-role="resource-only"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern Input__x3A__generate__x3A__pattern resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Input__x3A__generate__x3A__pattern.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply.props"
-                     navtitle="Input__x3A__generate__x3A__pattern__x3A__apply.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply.props"
+                navtitle="Input__x3A__generate__x3A__pattern__x3A__apply.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Input__x3A__generate__x3A__pattern__x3A__apply.dita"
                     keys="Input__x3A__generate__x3A__pattern__x3A__apply"
-                    processing-role="resource-only"
-                    />
-         </subjectdef>
-         <!--
+                    processing-role="resource-only"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply Input__x3A__generate__x3A__pattern__x3A__apply resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Input__x3A__generate__x3A__pattern__x3A__apply.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply_match.props"
-                     navtitle="Input__x3A__generate__x3A__pattern__x3A__apply_match.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply_match"
-                    keys="Input__x3A__generate__x3A__pattern__x3A__apply_match"
-                    
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Input__x3A__generate__x3A__pattern__x3A__apply_match.props"
+                navtitle="Input__x3A__generate__x3A__pattern__x3A__apply_match.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Input__x3A__generate__x3A__pattern__x3A__apply_match.dita"
+                    keys="Input__x3A__generate__x3A__pattern__x3A__apply_match"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Input__x3A__generate__x3A__pattern__x3A__apply_match Input__x3A__generate__x3A__pattern__x3A__apply_match resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Input__x3A__generate__x3A__pattern__x3A__apply_match.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.next_time_tick_strategy_group.props"
-                     navtitle="next_time_tick_strategy_group.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#next_time_tick_strategy_group"
-                    keys="next_time_tick_strategy_group"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.next_time_tick_strategy_group.props"
+                navtitle="next_time_tick_strategy_group.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_next_time_tick_strategy_group.dita"
+                    keys="next_time_tick_strategy_group"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#next_time_tick_strategy_group next_time_tick_strategy_group resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = next_time_tick_strategy_group.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml.props"
-                     navtitle="Simulation.analys.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml"
-                    keys="Simulation.analys.xml"
-                    
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.analys.xml.props"
+                navtitle="Simulation.analys.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Simulation.analys.xml.dita"
+                    keys="Simulation.analys.xml"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.analys.xml Simulation.analys.xml resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Simulation.analys.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.attract.xml.props"
-                     navtitle="Simulation.attract.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.attract.xml"
-                    keys="Simulation.attract.xml"
-                    
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.attract.xml.props"
+                navtitle="Simulation.attract.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Simulation.attract.xml.dita"
+                    keys="Simulation.attract.xml"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.attract.xml Simulation.attract.xml resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Simulation.attract.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.xml.props"
-                     navtitle="Simulation.model.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.xml"
-                    keys="Simulation.model.xml"
-                    
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.xml.props"
+                navtitle="Simulation.model.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Simulation.model.xml.dita"
+                    keys="Simulation.model.xml"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.xml Simulation.model.xml resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Simulation.model.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.stats.xml.props"
-                     navtitle="Simulation.model.stats.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-             <topicref href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.stats.xml"
-                    keys="Simulation.model.stats.xml"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.stats.xml.props"
+                navtitle="Simulation.model.stats.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <topicref
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita_Simulation.model.stats.xml.dita"
+                    keys="Simulation.model.stats.xml"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.stats.xml Simulation.model.stats.xml resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Simulation.model.stats.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.validate.xml.props"
-                     navtitle="Simulation.model.validate.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.validate.xml"
-                    keys="Simulation.model.validate.xml"
-                    processing-role="resource-only"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Simulation.model.validate.xml.props"
+                navtitle="Simulation.model.validate.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef
+                    href="abstract_build_p5_test_neuron_simulation_build_analys_xml_file_Simulation.model.validate.xml.dita"
+                    keys="Simulation.model.validate.xml" processing-role="resource-only"/>
+            </subjectdef>
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.target_structure_for_first_time_tick.props"
+                navtitle="for_first_time_tick.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef
+                    href="p5_test_sequence_neuron_simulator_v2019.target_structure_for_first_time_tick.props.dita"
+                    keys="for_first_time_tick.props" processing-role="resource-only"/>
+            </subjectdef>
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.target_structure_for_rest_simulation"
+                navtitle="target_structure_for_rest_simulation [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef
+                    href="p5_test_sequence_neuron_simulator_v2019.target_structure_for_rest_simulation.dita"
+                    keys="target_structure_for_rest_simulation.props"
+                    processing-role="resource-only"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  abstract_build_p5_test_neuron_simulation_build_analys_xml_file.dita#Simulation.model.validate.xml Simulation.model.validate.xml resource-only + map/topicref mapgroup-d/keydef    $SubjectName.new = Simulation.model.validate.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.xsl.p5_test_neuron.Simulation.analys.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.xsl.p5_test_neuron.Simulation.analys.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.xsl.p5_test_neuron.Simulation.analys.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.xsl.p5_test_neuron.Simulation.analys.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.xsl.p5_test_neuron.Simulation.analys.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.xsl.p5_test_neuron.Simulation.analys.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analys.xml.xsl"
                     keys="p5_test_neuron.Simulation.analys.xml.xsl"
-                    href="p5_test_neuron.Simulation.analys.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="p5_test_neuron.Simulation.analys.xml.xsl" props="xsl.stylkesheet.props"
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analys.xml.xsl p5_test_neuron.Simulation.analys.xml.xsl p5_test_neuron.Simulation.analys.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analys.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.validate.xml.xsl.p5_test_neuron.Simulation.model.validate.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.validate.xml.xsl.p5_test_neuron.Simulation.model.validate.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.validate.xml.xsl.p5_test_neuron.Simulation.model.validate.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.validate.xml.xsl.p5_test_neuron.Simulation.model.validate.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.validate.xml.xsl.p5_test_neuron.Simulation.model.validate.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.validate.xml.xsl.p5_test_neuron.Simulation.model.validate.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.validate.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.validate.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.validate.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.validate.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.validate.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.validate.xml.xsl"
                     href="p5_test_neuron.Simulation.model.validate.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.validate.xml.xsl p5_test_neuron.Simulation.model.validate.xml.xsl p5_test_neuron.Simulation.model.validate.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.validate.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron_snake.xsl.p5_test_neuron_snake.xsl_to_create_props"
-                     navtitle="p5_test_neuron_snake.xsl.p5_test_neuron_snake.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron_snake.xsl.p5_test_neuron_snake.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron_snake.xsl.p5_test_neuron_snake.xsl_to_create_props"
+                navtitle="p5_test_neuron_snake.xsl.p5_test_neuron_snake.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron_snake.xsl.p5_test_neuron_snake.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron_snake.xsl.props"
-                     navtitle="p5_test_neuron_snake.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
-                    navtitle="p5_test_neuron_snake.xsl"
-                    keys="p5_test_neuron_snake.xsl"
-                    href="p5_test_neuron_snake.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron_snake.xsl.props"
+                navtitle="p5_test_neuron_snake.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
+                    navtitle="p5_test_neuron_snake.xsl" keys="p5_test_neuron_snake.xsl"
+                    href="p5_test_neuron_snake.xsl" props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron_snake.xsl p5_test_neuron_snake.xsl p5_test_neuron_snake.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron_snake.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.Input.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl"
                     keys="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl"
                     href="p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analys.xml__x3A__Receptor__x3A__generate.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Config21.xml.Config21.xml_to_create_props"
-                     navtitle="Config21.xml.Config21.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Config21.xml.Config21.xml_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Config21.xml.Config21.xml_to_create_props"
+                navtitle="Config21.xml.Config21.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Config21.xml.Config21.xml_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Config21.xml.props"
-                     navtitle="Config21.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xml"
-                    processing-role="resource-only"
-                    navtitle="Config21.xml"
-                    keys="Config21.xml"
-                    href="Config21.xml"
-                    props=" imported  xml "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Config21.xml.props"
+                navtitle="Config21.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xml" processing-role="resource-only" navtitle="Config21.xml"
+                    keys="Config21.xml" href="Config21.xml" props="xml.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xml resource-only Config21.xml Config21.xml Config21.xml  imported  xml  + map/topicref mapgroup-d/keydef    $SubjectName.new = Config21.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl_to_create_props"
+                navtitle="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.props"
-                     navtitle="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.props"
+                navtitle="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl"
                     keys="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl"
                     href="p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Input__x3A__attract__x3A__vectors.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation_body1.xml.Simulation_body1.xml_to_create_props"
-                     navtitle="Simulation_body1.xml.Simulation_body1.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Simulation_body1.xml.Simulation_body1.xml_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Simulation_body1.xml.Simulation_body1.xml_to_create_props"
+                navtitle="Simulation_body1.xml.Simulation_body1.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Simulation_body1.xml.Simulation_body1.xml_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation_body1.xml.props"
-                     navtitle="Simulation_body1.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xml"
-                    processing-role="resource-only"
-                    navtitle="Simulation_body1.xml"
-                    keys="Simulation_body1.xml"
-                    href="Simulation_body1.xml"
-                    props=" imported  xml "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Simulation_body1.xml.props"
+                navtitle="Simulation_body1.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xml" processing-role="resource-only" navtitle="Simulation_body1.xml"
+                    keys="Simulation_body1.xml" href="Simulation_body1.xml" props="xml.props"
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xml resource-only Simulation_body1.xml Simulation_body1.xml Simulation_body1.xml  imported  xml  + map/topicref mapgroup-d/keydef    $SubjectName.new = Simulation_body1.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract__x3A__calculate.xsl.p5_test_neuron.Simulation.attract__x3A__calculate.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.attract__x3A__calculate.xsl.p5_test_neuron.Simulation.attract__x3A__calculate.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.attract__x3A__calculate.xsl.p5_test_neuron.Simulation.attract__x3A__calculate.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract__x3A__calculate.xsl.p5_test_neuron.Simulation.attract__x3A__calculate.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.attract__x3A__calculate.xsl.p5_test_neuron.Simulation.attract__x3A__calculate.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.attract__x3A__calculate.xsl.p5_test_neuron.Simulation.attract__x3A__calculate.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract__x3A__calculate.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.attract__x3A__calculate.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract__x3A__calculate.xsl.props"
+                navtitle="p5_test_neuron.Simulation.attract__x3A__calculate.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.attract__x3A__calculate.xsl"
                     keys="p5_test_neuron.Simulation.attract__x3A__calculate.xsl"
                     href="p5_test_neuron.Simulation.attract__x3A__calculate.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.attract__x3A__calculate.xsl p5_test_neuron.Simulation.attract__x3A__calculate.xsl p5_test_neuron.Simulation.attract__x3A__calculate.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.attract__x3A__calculate.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl"
                     href="p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.attract__x3A__aggregate.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.xml.xsl.p5_test_neuron.Simulation.analyze_simulation.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.xml.xsl.p5_test_neuron.Simulation.analyze_simulation.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.xml.xsl.p5_test_neuron.Simulation.analyze_simulation.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.xml.xsl.p5_test_neuron.Simulation.analyze_simulation.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.xml.xsl.p5_test_neuron.Simulation.analyze_simulation.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.xml.xsl.p5_test_neuron.Simulation.analyze_simulation.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.xml.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.xml.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.xml.xsl p5_test_neuron.Simulation.analyze_simulation.xml.xsl p5_test_neuron.Simulation.analyze_simulation.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply_match.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.props"
-                     navtitle="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.props"
+                navtitle="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd"
                     keys="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd"
                     href="test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props=" imported  xsd " scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.ColorInterpolator__x3A__debug.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.xml.xsl.p5_test_neuron.Simulation.model.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.xml.xsl.p5_test_neuron.Simulation.model.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.xml.xsl.p5_test_neuron.Simulation.model.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.xml.xsl.p5_test_neuron.Simulation.model.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.xml.xsl.p5_test_neuron.Simulation.model.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.xml.xsl.p5_test_neuron.Simulation.model.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.xml.xsl"
-                    href="p5_test_neuron.Simulation.model.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="p5_test_neuron.Simulation.model.xml.xsl" props="xsl.stylkesheet.props"
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.xml.xsl p5_test_neuron.Simulation.model.xml.xsl p5_test_neuron.Simulation.model.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analyze_simulation.xml.xsd.test_neuron.Simulation.analyze_simulation.xml.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.analyze_simulation.xml.xsd.test_neuron.Simulation.analyze_simulation.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.analyze_simulation.xml.xsd.test_neuron.Simulation.analyze_simulation.xml.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analyze_simulation.xml.xsd.test_neuron.Simulation.analyze_simulation.xml.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.analyze_simulation.xml.xsd.test_neuron.Simulation.analyze_simulation.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.analyze_simulation.xml.xsd.test_neuron.Simulation.analyze_simulation.xml.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analyze_simulation.xml.xsd.props"
-                     navtitle="test_neuron.Simulation.analyze_simulation.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analyze_simulation.xml.xsd.props"
+                navtitle="test_neuron.Simulation.analyze_simulation.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.analyze_simulation.xml.xsd"
                     keys="test_neuron.Simulation.analyze_simulation.xml.xsd"
-                    href="test_neuron.Simulation.analyze_simulation.xml.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.analyze_simulation.xml.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.analyze_simulation.xml.xsd test_neuron.Simulation.analyze_simulation.xml.xsd test_neuron.Simulation.analyze_simulation.xml.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.analyze_simulation.xml.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.Stress.xml.xsl.p5_test_neuron.Simulation.model.Stress.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.Stress.xml.xsl.p5_test_neuron.Simulation.model.Stress.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.Stress.xml.xsl.p5_test_neuron.Simulation.model.Stress.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.Stress.xml.xsl.p5_test_neuron.Simulation.model.Stress.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.Stress.xml.xsl.p5_test_neuron.Simulation.model.Stress.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.Stress.xml.xsl.p5_test_neuron.Simulation.model.Stress.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.Stress.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.Stress.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.Stress.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.Stress.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.Stress.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.Stress.xml.xsl"
                     href="p5_test_neuron.Simulation.model.Stress.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.Stress.xml.xsl p5_test_neuron.Simulation.model.Stress.xml.xsl p5_test_neuron.Simulation.model.Stress.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.Stress.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl"
                     keys="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl"
                     href="p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analys.xml.Input__x3A__generate.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl"
                     href="p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.apply.Current_synapse__x3A__install.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern__x3A__apply.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.param.xsl.p5_test_neuron.param.xsl_to_create_props"
-                     navtitle="p5_test_neuron.param.xsl.p5_test_neuron.param.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.param.xsl.p5_test_neuron.param.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.param.xsl.p5_test_neuron.param.xsl_to_create_props"
+                navtitle="p5_test_neuron.param.xsl.p5_test_neuron.param.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.param.xsl.p5_test_neuron.param.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.param.xsl.props"
-                     navtitle="p5_test_neuron.param.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
-                    navtitle="p5_test_neuron.param.xsl"
-                    keys="p5_test_neuron.param.xsl"
-                    href="p5_test_neuron.param.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.param.xsl.props"
+                navtitle="p5_test_neuron.param.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
+                    navtitle="p5_test_neuron.param.xsl" keys="p5_test_neuron.param.xsl"
+                    href="p5_test_neuron.param.xsl" props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.param.xsl p5_test_neuron.param.xsl p5_test_neuron.param.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.param.xsl.props ; 
             -->
-         
-         
-         
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.stats.xml.xsd.test_neuron.Simulation.model.stats.xml.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.stats.xml.xsd.props"
-                     navtitle="test_neuron.Simulation.model.stats.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.stats.xml.xsd.props"
+                navtitle="test_neuron.Simulation.model.stats.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.model.stats.xml.xsd"
                     keys="test_neuron.Simulation.model.stats.xml.xsd"
-                    href="test_neuron.Simulation.model.stats.xml.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.model.stats.xml.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.model.stats.xml.xsd test_neuron.Simulation.model.stats.xml.xsd test_neuron.Simulation.model.stats.xml.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.model.stats.xml.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.attract.xml.xsd.test_neuron.Simulation.attract.xml.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.attract.xml.xsd.test_neuron.Simulation.attract.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.attract.xml.xsd.test_neuron.Simulation.attract.xml.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.attract.xml.xsd.test_neuron.Simulation.attract.xml.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.attract.xml.xsd.test_neuron.Simulation.attract.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.attract.xml.xsd.test_neuron.Simulation.attract.xml.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.attract.xml.xsd.props"
-                     navtitle="test_neuron.Simulation.attract.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.attract.xml.xsd.props"
+                navtitle="test_neuron.Simulation.attract.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.attract.xml.xsd"
                     keys="test_neuron.Simulation.attract.xml.xsd"
-                    href="test_neuron.Simulation.attract.xml.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.attract.xml.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.attract.xml.xsd test_neuron.Simulation.attract.xml.xsd test_neuron.Simulation.attract.xml.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.attract.xml.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.model.stats.xml.xsl.p5_test_neuron.Simulation.model.model.stats.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.model.stats.xml.xsl.p5_test_neuron.Simulation.model.model.stats.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.model.stats.xml.xsl.p5_test_neuron.Simulation.model.model.stats.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.model.stats.xml.xsl.p5_test_neuron.Simulation.model.model.stats.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.model.stats.xml.xsl.p5_test_neuron.Simulation.model.model.stats.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.model.stats.xml.xsl.p5_test_neuron.Simulation.model.model.stats.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.model.stats.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.model.stats.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.model.stats.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.model.stats.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.model.stats.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.model.stats.xml.xsl"
                     href="p5_test_neuron.Simulation.model.model.stats.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.model.stats.xml.xsl p5_test_neuron.Simulation.model.model.stats.xml.xsl p5_test_neuron.Simulation.model.model.stats.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.model.stats.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.xml.xsl.p5_test_neuron.Simulation.model.apply.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.xml.xsl.p5_test_neuron.Simulation.model.apply.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.xml.xsl.p5_test_neuron.Simulation.model.apply.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.xml.xsl.p5_test_neuron.Simulation.model.apply.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.apply.xml.xsl.p5_test_neuron.Simulation.model.apply.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.xml.xsl.p5_test_neuron.Simulation.model.apply.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.apply.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.apply.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.apply.xml.xsl"
                     href="p5_test_neuron.Simulation.model.apply.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.apply.xml.xsl p5_test_neuron.Simulation.model.apply.xml.xsl p5_test_neuron.Simulation.model.apply.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.apply.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.sqrt.xsl.sqrt.xsl_to_create_props"
-                     navtitle="sqrt.xsl.sqrt.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=sqrt.xsl.sqrt.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.sqrt.xsl.sqrt.xsl_to_create_props"
+                navtitle="sqrt.xsl.sqrt.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=sqrt.xsl.sqrt.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.sqrt.xsl.props"
-                     navtitle="sqrt.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
-                    navtitle="sqrt.xsl"
-                    keys="sqrt.xsl"
-                    href="sqrt.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.sqrt.xsl.props"
+                navtitle="sqrt.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only" navtitle="sqrt.xsl"
+                    keys="sqrt.xsl" href="sqrt.xsl" props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only sqrt.xsl sqrt.xsl sqrt.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = sqrt.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.xml.xsl.p5_test_neuron.Simulation.attract.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.attract.xml.xsl.p5_test_neuron.Simulation.attract.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.attract.xml.xsl.p5_test_neuron.Simulation.attract.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.xml.xsl.p5_test_neuron.Simulation.attract.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.attract.xml.xsl.p5_test_neuron.Simulation.attract.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.attract.xml.xsl.p5_test_neuron.Simulation.attract.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.attract.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.attract.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.attract.xml.xsl"
                     keys="p5_test_neuron.Simulation.attract.xml.xsl"
-                    href="p5_test_neuron.Simulation.attract.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    
-                    />
-         </subjectdef>
-         <!--
+                    href="p5_test_neuron.Simulation.attract.xml.xsl" props="xsl.stylkesheet.props"
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.attract.xml.xsl p5_test_neuron.Simulation.attract.xml.xsl p5_test_neuron.Simulation.attract.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.attract.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.generate__x3A__pattern.xsd.test_neuron.Simulation.generate__x3A__pattern.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.generate__x3A__pattern.xsd.test_neuron.Simulation.generate__x3A__pattern.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.generate__x3A__pattern.xsd.test_neuron.Simulation.generate__x3A__pattern.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.generate__x3A__pattern.xsd.test_neuron.Simulation.generate__x3A__pattern.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.generate__x3A__pattern.xsd.test_neuron.Simulation.generate__x3A__pattern.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.generate__x3A__pattern.xsd.test_neuron.Simulation.generate__x3A__pattern.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.generate__x3A__pattern.xsd.props"
-                     navtitle="test_neuron.Simulation.generate__x3A__pattern.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.generate__x3A__pattern.xsd.props"
+                navtitle="test_neuron.Simulation.generate__x3A__pattern.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.generate__x3A__pattern.xsd"
                     keys="test_neuron.Simulation.generate__x3A__pattern.xsd"
-                    href="test_neuron.Simulation.generate__x3A__pattern.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.generate__x3A__pattern.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.generate__x3A__pattern.xsd test_neuron.Simulation.generate__x3A__pattern.xsd test_neuron.Simulation.generate__x3A__pattern.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.generate__x3A__pattern.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.x3d.xsd.test_neuron.x3d.xsd_to_create_props"
-                     navtitle="test_neuron.x3d.xsd.test_neuron.x3d.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.x3d.xsd.test_neuron.x3d.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.x3d.xsd.test_neuron.x3d.xsd_to_create_props"
+                navtitle="test_neuron.x3d.xsd.test_neuron.x3d.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.x3d.xsd.test_neuron.x3d.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.x3d.xsd.props"
-                     navtitle="test_neuron.x3d.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
-                    navtitle="test_neuron.x3d.xsd"
-                    keys="test_neuron.x3d.xsd"
-                    href="test_neuron.x3d.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.x3d.xsd.props"
+                navtitle="test_neuron.x3d.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only" navtitle="test_neuron.x3d.xsd"
+                    keys="test_neuron.x3d.xsd" href="test_neuron.x3d.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.x3d.xsd test_neuron.x3d.xsd test_neuron.x3d.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.x3d.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.apply.xml.xsd.test_neuron.Simulation.model.apply.xml.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.model.apply.xml.xsd.test_neuron.Simulation.model.apply.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.apply.xml.xsd.test_neuron.Simulation.model.apply.xml.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.apply.xml.xsd.test_neuron.Simulation.model.apply.xml.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.model.apply.xml.xsd.test_neuron.Simulation.model.apply.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.apply.xml.xsd.test_neuron.Simulation.model.apply.xml.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.apply.xml.xsd.props"
-                     navtitle="test_neuron.Simulation.model.apply.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.apply.xml.xsd.props"
+                navtitle="test_neuron.Simulation.model.apply.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.model.apply.xml.xsd"
                     keys="test_neuron.Simulation.model.apply.xml.xsd"
-                    href="test_neuron.Simulation.model.apply.xml.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.model.apply.xml.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.model.apply.xml.xsd test_neuron.Simulation.model.apply.xml.xsd test_neuron.Simulation.model.apply.xml.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.model.apply.xml.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analys.xml.xsd.test_neuron.Simulation.analys.xml.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.analys.xml.xsd.test_neuron.Simulation.analys.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.analys.xml.xsd.test_neuron.Simulation.analys.xml.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analys.xml.xsd.test_neuron.Simulation.analys.xml.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.analys.xml.xsd.test_neuron.Simulation.analys.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.analys.xml.xsd.test_neuron.Simulation.analys.xml.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analys.xml.xsd.props"
-                     navtitle="test_neuron.Simulation.analys.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.analys.xml.xsd.props"
+                navtitle="test_neuron.Simulation.analys.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.analys.xml.xsd"
                     keys="test_neuron.Simulation.analys.xml.xsd"
-                    href="test_neuron.Simulation.analys.xml.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.analys.xml.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.analys.xml.xsd test_neuron.Simulation.analys.xml.xsd test_neuron.Simulation.analys.xml.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.analys.xml.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.xml.xsd.test_neuron.Simulation.model.xml.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.model.xml.xsd.test_neuron.Simulation.model.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.xml.xsd.test_neuron.Simulation.model.xml.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.xml.xsd.test_neuron.Simulation.model.xml.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.model.xml.xsd.test_neuron.Simulation.model.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.xml.xsd.test_neuron.Simulation.model.xml.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.xml.xsd.props"
-                     navtitle="test_neuron.Simulation.model.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.xml.xsd.props"
+                navtitle="test_neuron.Simulation.model.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.model.xml.xsd"
                     keys="test_neuron.Simulation.model.xml.xsd"
-                    href="test_neuron.Simulation.model.xml.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.model.xml.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.model.xml.xsd test_neuron.Simulation.model.xml.xsd test_neuron.Simulation.model.xml.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.model.xml.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.generated.xsd.test_neuron.generated.xsd_to_create_props"
-                     navtitle="test_neuron.generated.xsd.test_neuron.generated.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.generated.xsd.test_neuron.generated.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.generated.xsd.test_neuron.generated.xsd_to_create_props"
+                navtitle="test_neuron.generated.xsd.test_neuron.generated.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.generated.xsd.test_neuron.generated.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.generated.xsd.props"
-                     navtitle="test_neuron.generated.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
-                    navtitle="test_neuron.generated.xsd"
-                    keys="test_neuron.generated.xsd"
-                    href="test_neuron.generated.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.generated.xsd.props"
+                navtitle="test_neuron.generated.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
+                    navtitle="test_neuron.generated.xsd" keys="test_neuron.generated.xsd"
+                    href="test_neuron.generated.xsd" props=" imported  xsd " scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.generated.xsd test_neuron.generated.xsd test_neuron.generated.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.generated.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.Nodes.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Inputs1.xml.Inputs1.xml_to_create_props"
-                     navtitle="Inputs1.xml.Inputs1.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Inputs1.xml.Inputs1.xml_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Inputs1.xml.Inputs1.xml_to_create_props"
+                navtitle="Inputs1.xml.Inputs1.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Inputs1.xml.Inputs1.xml_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Inputs1.xml.props"
-                     navtitle="Inputs1.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xml"
-                    processing-role="resource-only"
-                    navtitle="Inputs1.xml"
-                    keys="Inputs1.xml"
-                    href="Inputs1.xml"
-                    props=" imported  xml "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Inputs1.xml.props"
+                navtitle="Inputs1.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xml" processing-role="resource-only" navtitle="Inputs1.xml"
+                    keys="Inputs1.xml" href="Inputs1.xml" props="xml.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xml resource-only Inputs1.xml Inputs1.xml Inputs1.xml  imported  xml  + map/topicref mapgroup-d/keydef    $SubjectName.new = Inputs1.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.overwiev.dita.xsl.p5_test_neuron.Simulation.overwiev.dita.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.overwiev.dita.xsl.p5_test_neuron.Simulation.overwiev.dita.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.overwiev.dita.xsl.p5_test_neuron.Simulation.overwiev.dita.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.overwiev.dita.xsl.p5_test_neuron.Simulation.overwiev.dita.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.overwiev.dita.xsl.p5_test_neuron.Simulation.overwiev.dita.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.overwiev.dita.xsl.p5_test_neuron.Simulation.overwiev.dita.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.overwiev.dita.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.overwiev.dita.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.overwiev.dita.xsl.props"
+                navtitle="p5_test_neuron.Simulation.overwiev.dita.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.overwiev.dita.xsl"
                     keys="p5_test_neuron.Simulation.overwiev.dita.xsl"
-                    href="p5_test_neuron.Simulation.overwiev.dita.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="p5_test_neuron.Simulation.overwiev.dita.xsl" props="xsl.stylkesheet.props"
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.overwiev.dita.xsl p5_test_neuron.Simulation.overwiev.dita.xsl p5_test_neuron.Simulation.overwiev.dita.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.overwiev.dita.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl"
                     keys="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl"
                     href="p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.apply.Nodes__x3A__install.xml.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.Current_synapse.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.validate.xml.xsd.test_neuron.Simulation.model.validate.xml.xsd_to_create_props"
-                     navtitle="test_neuron.Simulation.model.validate.xml.xsd.test_neuron.Simulation.model.validate.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.validate.xml.xsd.test_neuron.Simulation.model.validate.xml.xsd_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.validate.xml.xsd.test_neuron.Simulation.model.validate.xml.xsd_to_create_props"
+                navtitle="test_neuron.Simulation.model.validate.xml.xsd.test_neuron.Simulation.model.validate.xml.xsd_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=test_neuron.Simulation.model.validate.xml.xsd.test_neuron.Simulation.model.validate.xml.xsd_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.validate.xml.xsd.props"
-                     navtitle="test_neuron.Simulation.model.validate.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsd"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.test_neuron.Simulation.model.validate.xml.xsd.props"
+                navtitle="test_neuron.Simulation.model.validate.xml.xsd.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsd" processing-role="resource-only"
                     navtitle="test_neuron.Simulation.model.validate.xml.xsd"
                     keys="test_neuron.Simulation.model.validate.xml.xsd"
-                    href="test_neuron.Simulation.model.validate.xml.xsd"
-                    props=" imported  xsd "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    href="test_neuron.Simulation.model.validate.xml.xsd" props=" imported  xsd "
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsd resource-only test_neuron.Simulation.model.validate.xml.xsd test_neuron.Simulation.model.validate.xml.xsd test_neuron.Simulation.model.validate.xml.xsd  imported  xsd  + map/topicref mapgroup-d/keydef    $SubjectName.new = test_neuron.Simulation.model.validate.xml.xsd.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.section.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.anim.html.anim.html_to_create_props"
-                     navtitle="anim.html.anim.html_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=anim.html.anim.html_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.anim.html.anim.html_to_create_props"
+                navtitle="anim.html.anim.html_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=anim.html.anim.html_to_create_props)
         --></subjectdef>
-         
-         <!--
+            <!--
                 #64b ./n=keydef ; @* =  html resource-only anim.html anim.html anim.html  imported  html  + map/topicref mapgroup-d/keydef    $SubjectName.new = anim.html.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Generate_config.xml.Generate_config.xml_to_create_props"
-                     navtitle="Generate_config.xml.Generate_config.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Generate_config.xml.Generate_config.xml_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Generate_config.xml.Generate_config.xml_to_create_props"
+                navtitle="Generate_config.xml.Generate_config.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Generate_config.xml.Generate_config.xml_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Generate_config.xml.props"
-                     navtitle="Generate_config.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xml"
-                    processing-role="resource-only"
-                    navtitle="Generate_config.xml"
-                    keys="Generate_config.xml"
-                    href="Generate_config.xml"
-                    props=" imported  xml "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Generate_config.xml.props"
+                navtitle="Generate_config.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xml" processing-role="resource-only" navtitle="Generate_config.xml"
+                    keys="Generate_config.xml" href="Generate_config.xml" props="xml.props"
+                    scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xml resource-only Generate_config.xml Generate_config.xml Generate_config.xml  imported  xml  + map/topicref mapgroup-d/keydef    $SubjectName.new = Generate_config.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl"
                     keys="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl"
                     href="p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analys.xml.Simulated_potential.Output__x3A__flag__x3A__emmit.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Config.debug.xml.Config.debug.xml_to_create_props"
-                     navtitle="Config.debug.xml.Config.debug.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Config.debug.xml.Config.debug.xml_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.Config.debug.xml.Config.debug.xml_to_create_props"
+                navtitle="Config.debug.xml.Config.debug.xml_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=Config.debug.xml.Config.debug.xml_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Config.debug.xml.props"
-                     navtitle="Config.debug.xml.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xml"
-                    processing-role="resource-only"
-                    navtitle="Config.debug.xml"
-                    keys="Config.debug.xml"
-                    href="Config.debug.xml"
-                    scope="external"
-                    props=" imported  xml "
-                    
-                    />
-         </subjectdef>
-         <!--
+            <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.Config.debug.xml.props"
+                navtitle="Config.debug.xml.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xml" processing-role="resource-only" navtitle="Config.debug.xml"
+                    keys="Config.debug.xml" href="Config.debug.xml" scope="external"
+                    props="xml.props"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xml resource-only Config.debug.xml Config.debug.xml Config.debug.xml  imported  xml  + map/topicref mapgroup-d/keydef    $SubjectName.new = Config.debug.xml.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.Stress.xsl.p5_test_neuron.Simulation.attract.Stress.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.attract.Stress.xsl.p5_test_neuron.Simulation.attract.Stress.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.attract.Stress.xsl.p5_test_neuron.Simulation.attract.Stress.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.Stress.xsl.p5_test_neuron.Simulation.attract.Stress.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.attract.Stress.xsl.p5_test_neuron.Simulation.attract.Stress.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.attract.Stress.xsl.p5_test_neuron.Simulation.attract.Stress.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.Stress.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.attract.Stress.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.attract.Stress.xsl.props"
+                navtitle="p5_test_neuron.Simulation.attract.Stress.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.attract.Stress.xsl"
                     keys="p5_test_neuron.Simulation.attract.Stress.xsl"
                     href="p5_test_neuron.Simulation.attract.Stress.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.attract.Stress.xsl p5_test_neuron.Simulation.attract.Stress.xsl p5_test_neuron.Simulation.attract.Stress.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.attract.Stress.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.props"
+                navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl"
                     keys="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl"
                     href="p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props="xsl.stylkesheet.props" scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.analyze_simulation.x3d.generate__x3A__pattern.scene__x3A__LineSet__CoordinateInterpolator.xsl.props ; 
             -->
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl_to_create_props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl_to_create_props)
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl_to_create_props"
+                navtitle="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl_to_create_props [p5_test_sequence_neuron_simulator_v2019]"
+                ><!--#46a  sibling root lower build_Subject:DITAMAP.subjectdef (SubjectName.new=p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl_to_create_props)
         --></subjectdef>
-         <subjectdef keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.props"
-                     navtitle="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
-            <keydef format="xsl"
-                    processing-role="resource-only"
+            <subjectdef
+                keys="p5_test_sequence_neuron_simulator_v2019.p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.props"
+                navtitle="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.props [p5_test_sequence_neuron_simulator_v2019]">
+                <keydef format="xsl" processing-role="resource-only"
                     navtitle="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl"
                     keys="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl"
                     href="p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl"
-                    props=" imported  xsl "
-                    scope="external"
-                    />
-         </subjectdef>
-         <!--
+                    props=" imported   " scope="external"/>
+            </subjectdef>
+            <!--
                 #64b ./n=keydef ; @* =  xsl resource-only p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl  imported  xsl  + map/topicref mapgroup-d/keydef    $SubjectName.new = p5_test_neuron.Simulation.model.apply.install__x3A__Reset_potential.xsl.props ; 
             -->
-         
-         
-        
-         
-      </subjectdef>
-   </hasInstance>
-   
-   
-    
+        </subjectdef>
+    </hasInstance>
     <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props_xsl__SCHEME.ditamap"/>
     <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props_ant__SCHEME.ditamap"/>
     <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props_ditamap__SCHEME.ditamap"/>
-    
     <schemeref href="xsd_docs/test_neuron.SCHEME.ditamap"/>
-   <!--<topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__CLASS.ditamap"
-             format="ditamap"/>-->
+    <topicref href="p5_test_sequence_neuron_simulator_v2019.SCHEME__CLASS.ditamap"
+             format="ditamap"/>
     <schemeref href="../../LUDZIE/Binder_Arkadiusz/person.Binder_Arkadiusz.SCHEME.ditamap"/>
-    
-    
+    <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props.projekt.SCHEME.ditamap"
+        navtitle="schemat z definicja styli projektowych"/>
+    <schemeref href="../../__ROOT_DITAMAP__SPECS__/props.development/props_xsd__SCHEME.ditamap"/>
 </subjectScheme>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Defaults">
+   <title>Element ptn:Defaults</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Defaults">
+                           <image href="img/test_neuron_xsd_Element_ptn_Defaults.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,2,325,59</coords>
+                              <xref href="#Defaults_Capacitance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,69,317,126</coords>
+                              <xref href="#Defaults_Resistance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,136,351,193</coords>
+                              <xref href="#Defaults_Minimum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,203,354,260</coords>
+                              <xref href="#Defaults_Maximum_voltage"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,270,350,327</coords>
+                              <xref href="#Defaults_Resting_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,337,341,394</coords>
+                              <xref href="#Defaults_Reset_potential"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,404,343,461</coords>
+                              <xref href="#Defaults_Firing_threshold"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,471,385,528</coords>
+                              <xref href="#Defaults_Adaptation_conductance"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,538,393,595</coords>
+                              <xref href="#Defaults_Adaptation_time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,605,347,662</coords>
+                              <xref href="#Defaults_Refactory_period"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,672,353,729</coords>
+                              <xref href="#Defaults_Maximum_current"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,739,292,796</coords>
+                              <xref href="#Defaults_Time_constant"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,806,292,863</coords>
+                              <xref href="#Defaults_Delay"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,873,322,930</coords>
+                              <xref href="#Defaults_Attract_min"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>171,940,392,963</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__attract__x3A__vectors.dita#Input__x3A__attract__x3A__vectors"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Config.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Config]</draft-comment>, <xref keyref="Input__x3A__generate.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate.xml]</draft-comment>, <xref keyref="Input__x3A__generate__x3A__pattern.xml.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate__x3A__pattern.xml]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Defaults_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Capacitance]</draft-comment> , <xref keyref="Defaults_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Resistance]</draft-comment> , <xref keyref="Defaults_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Minimum_voltage]</draft-comment> , <xref keyref="Defaults_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Maximum_voltage]</draft-comment> , <xref keyref="Defaults_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Resting_potential]</draft-comment> , <xref keyref="Defaults_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Reset_potential]</draft-comment> , <xref keyref="Defaults_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Firing_threshold]</draft-comment> , <xref keyref="Defaults_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Adaptation_conductance]</draft-comment> , <xref keyref="Defaults_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Adaptation_time_constant]</draft-comment> , <xref keyref="Defaults_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Refactory_period]</draft-comment> , <xref keyref="Defaults_Maximum_current.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Maximum_current]</draft-comment> , <xref keyref="Defaults_Time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Time_constant]</draft-comment> , <xref keyref="Defaults_Delay.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Delay]</draft-comment> , <xref keyref="Defaults_Attract_min.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Attract_min]</draft-comment> , <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Defaults_Adaptation_conductance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Adaptation_conductance]</draft-comment>, <xref keyref="Defaults_Adaptation_time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Adaptation_time_constant]</draft-comment>, <xref keyref="Defaults_Attract_min.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Attract_min]</draft-comment>, <xref keyref="Defaults_Capacitance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Capacitance]</draft-comment>, <xref keyref="Defaults_Delay.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Delay]</draft-comment>, <xref keyref="Defaults_Firing_threshold.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Firing_threshold]</draft-comment>, <xref keyref="Input__x3A__attract__x3A__vectors.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__attract__x3A__vectors]</draft-comment>, <xref keyref="Defaults_Maximum_current.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Maximum_current]</draft-comment>, <xref keyref="Defaults_Maximum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Maximum_voltage]</draft-comment>, <xref keyref="Defaults_Minimum_voltage.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Minimum_voltage]</draft-comment>, <xref keyref="Defaults_Refactory_period.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Refactory_period]</draft-comment>, <xref keyref="Defaults_Reset_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Reset_potential]</draft-comment>, <xref keyref="Defaults_Resistance.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Resistance]</draft-comment>, <xref keyref="Defaults_Resting_potential.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Resting_potential]</draft-comment>, <xref keyref="Defaults_Time_constant.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Defaults_Time_constant]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Defaults xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Capacitance&gt;{1,1}&lt;/ptn:Capacitance&gt;
+  &lt;ptn:Resistance&gt;{1,1}&lt;/ptn:Resistance&gt;
+  &lt;ptn:Minimum_voltage&gt;{1,1}&lt;/ptn:Minimum_voltage&gt;
+  &lt;ptn:Maximum_voltage&gt;{1,1}&lt;/ptn:Maximum_voltage&gt;
+  &lt;ptn:Resting_potential&gt;{1,1}&lt;/ptn:Resting_potential&gt;
+  &lt;ptn:Reset_potential&gt;{1,1}&lt;/ptn:Reset_potential&gt;
+  &lt;ptn:Firing_threshold&gt;{1,1}&lt;/ptn:Firing_threshold&gt;
+  &lt;ptn:Adaptation_conductance&gt;{1,1}&lt;/ptn:Adaptation_conductance&gt;
+  &lt;ptn:Adaptation_time_constant&gt;{1,1}&lt;/ptn:Adaptation_time_constant&gt;
+  &lt;ptn:Refactory_period&gt;{1,1}&lt;/ptn:Refactory_period&gt;
+  &lt;ptn:Maximum_current&gt;{1,1}&lt;/ptn:Maximum_current&gt;
+  &lt;ptn:Time_constant&gt;{1,1}&lt;/ptn:Time_constant&gt;
+  &lt;ptn:Delay&gt;{1,1}&lt;/ptn:Delay&gt;
+  &lt;ptn:Attract_min&gt;{1,1}&lt;/ptn:Attract_min&gt;
+  &lt;ptn:Input__x3A__attract__x3A__vectors ptn:debug=""&gt;{1,1}&lt;/ptn:Input__x3A__attract__x3A__vectors&gt;
+&lt;/ptn:Defaults&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

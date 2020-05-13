@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Output_Node">
+   <title>Simple Type ptn:Output_Node</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Synapse Output Node</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>xs:IDREF</entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Simple Type </entry>
+                                    <entry>
+                                       <xref keyref="Input_exec_receptor.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input_exec_receptor]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Attributes </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Label]</draft-comment>, <xref keyref="Label__x3A__context.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Label__x3A__context]</draft-comment>, <xref keyref="p5_test_neuron_Output_Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Output_Node]</draft-comment>, <xref keyref="Output_Node__x3A__analyze.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Output_Node__x3A__analyze]</draft-comment>, <xref keyref="Simulated_potential__x3A__less_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__less_charged_node]</draft-comment>, <xref keyref="Simulated_potential__x3A__more_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__more_charged_node]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Elements </entry>
+                                    <entry>
+                                       <xref keyref="Current_synapse_Output_Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Current_synapse_Output_Node]</draft-comment>, <xref keyref="Input__x3A__node__x3A__prohibit.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__node__x3A__prohibit]</draft-comment>, <xref keyref="Input__x3A__nodes_Input__x3A__node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__nodes_Input__x3A__node]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

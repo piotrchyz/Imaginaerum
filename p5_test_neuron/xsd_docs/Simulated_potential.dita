@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Simulated_potential">
+   <title>Simple Type ptn:Simulated_potential</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Annotations</entry>
+                  <entry>Current simulated potential mV. probably min -200mV max 200mV</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p/>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>restriction of xs:decimal</entry>
+               </row>
+               <row>
+                  <entry>Facets</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="3*" align="left"/>
+                              <colspec colwidth="5*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>maxInclusive</entry>
+                                    <entry>200</entry>
+                                    <entry/>
+                                 </row>
+                                 <row>
+                                    <entry>minInclusive</entry>
+                                    <entry>-200</entry>
+                                    <entry/>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Types </entry>
+                                    <entry>
+                                       <xref keyref="Simulated_potential.emmit.vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential.emmit.vector]</draft-comment>, <xref keyref="Simulated_potential_CT.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential_CT]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Attributes </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Simulated_potential.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulated_potential]</draft-comment>, <xref keyref="Simulated_potential__x3A__current.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__current]</draft-comment>, <xref keyref="Simulated_potential__x3A__debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__debug]</draft-comment>, <xref keyref="Simulated_potential__x3A__diff.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__diff]</draft-comment>, <xref keyref="Simulated_potential__x3A__diff_min_max.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__diff_min_max]</draft-comment>, <xref keyref="Simulated_potential__x3A__diff_val.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__diff_val]</draft-comment>, <xref keyref="Simulated_potential__x3A__max.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__max]</draft-comment>, <xref keyref="Simulated_potential__x3A__min.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__min]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Simple Types </entry>
+                                    <entry>
+                                       <xref keyref="Simulated_potential.input.vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential.input.vector]</draft-comment>, <xref keyref="Simulated_potential.resting.vector.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential.resting.vector]</draft-comment>, <xref keyref="p5_test_neuron_Simulated_potential__x3A__previous.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulated_potential__x3A__previous]</draft-comment>
+                                    </entry>
+                                 </row>
+                                 <row>
+                                    <entry>Element </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Receptor__x3A__generate_Simulated_potential.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Receptor__x3A__generate_Simulated_potential]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

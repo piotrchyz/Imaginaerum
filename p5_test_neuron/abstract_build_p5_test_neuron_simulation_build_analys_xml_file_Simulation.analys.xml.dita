@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="Simulation.analys.xml" props="xsl.mode.props">
+    <glossterm>Simulation.analys.xml</glossterm>
+    <glossdef>will generate <xref
+        keyref="test_neuron.test_neuron_Simulation_analyze_simulation_xml_xsd_Element_ptn_Simulation_analys_xml__x3A__analyze.dita__Simulation.analys.xml__x3A__analyze"
+        scope="local"/> element</glossdef>
+</glossentry>

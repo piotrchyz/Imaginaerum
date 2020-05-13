@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Input__x3A__generate__x3A__Shape">
+   <title>Element ptn:Input__x3A__generate__x3A__Shape</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__Shape">
+                           <image href="img/test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__Shape.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>359,40,638,63</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__Shape.dita#p5_test_neuron_Input__x3A__generate__x3A__Shape_Input__x3A__generate__x3A__fieldOfView__x3A__ray"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>359,73,626,96</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Element_ptn_Input__x3A__generate__x3A__pattern_Group.dita#Input__x3A__generate__x3A__pattern_Group"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>238,3,484,25</coords>
+                              <xref href="test_neuron_Simulation_generate__x3A__pattern_xsd_Complex_Type_ptn_Input__x3A__generate__x3A__Shape.dita#p5_test_neuron_Input__x3A__generate__x3A__Shape"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Input__x3A__generate__x3A__Shape.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__generate__x3A__Shape]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Group__x3A__generate__x3A__pattern_Group.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Group__x3A__generate__x3A__pattern_Group]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Input__x3A__generate__x3A__Shape_Input__x3A__generate__x3A__fieldOfView__x3A__ray.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__generate__x3A__Shape_Input__x3A__generate__x3A__fieldOfView__x3A__ray]</draft-comment> , <xref keyref="Input__x3A__generate__x3A__pattern_Group.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate__x3A__pattern_Group]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="p5_test_neuron_Input__x3A__generate__x3A__Shape_Input__x3A__generate__x3A__fieldOfView__x3A__ray.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Input__x3A__generate__x3A__Shape_Input__x3A__generate__x3A__fieldOfView__x3A__ray]</draft-comment>, <xref keyref="Input__x3A__generate__x3A__pattern_Group.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Input__x3A__generate__x3A__pattern_Group]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Input__x3A__generate__x3A__Shape xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray&gt;{0,unbounded}&lt;/ptn:Input__x3A__generate__x3A__fieldOfView__x3A__ray&gt;
+  &lt;ptn:Input__x3A__generate__x3A__pattern_Group ptn:debug=""&gt;{1,1}&lt;/ptn:Input__x3A__generate__x3A__pattern_Group&gt;
+&lt;/ptn:Input__x3A__generate__x3A__Shape&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.Simulation.generate__x3A__pattern.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>

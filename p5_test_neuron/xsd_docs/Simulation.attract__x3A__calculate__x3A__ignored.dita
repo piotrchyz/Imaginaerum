@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="Simulation.attract__x3A__calculate__x3A__ignored">
+   <title>Element ptn:Simulation.attract__x3A__calculate__x3A__ignored</title>
+   <body>
+      <table frame="all" rowsep="1" colsep="1">
+         <tgroup cols="2">
+            <colspec colwidth="3*" align="left"/>
+            <colspec colwidth="25*" align="left"/>
+            <tbody>
+               <row>
+                  <entry>Namespace</entry>
+                  <entry>p5_test_neuron</entry>
+               </row>
+               <row>
+                  <entry>Diagram</entry>
+                  <entry>
+                     <p>
+                        <imagemap id="test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__ignored">
+                           <image href="img/test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__ignored.jpeg"/>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>336,80,580,106</coords>
+                              <xref href="test_neuron_xsd_Attribute_Group_ptn_Simulation_attract__x3A__calculate.dita#p5_test_neuron_Simulation.attract__x3A__calculate"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>333,149,437,189</coords>
+                              <xref href="test_neuron_xsd_Attribute_ptn_debug.dita#debug"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>406,239,726,279</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__output_node.dita#Simulation.attract__x3A__calculate__x3A__output_node"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>406,317,810,357</coords>
+                              <xref href="test_neuron_xsd_Element_ptn_Simulation_attract__x3A__calculate__x3A__output_node__x3A__validated.dita#Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated"/>
+                           </area>
+                           <area>
+                              <shape>rect</shape>
+                              <coords>308,3,548,25</coords>
+                              <xref href="test_neuron_xsd_Complex_Type_ptn_Simulation_attract__x3A__calculate.dita#Simulation.attract__x3A__calculate"/>
+                           </area>
+                        </imagemap>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Type</entry>
+                  <entry>
+                     <xref keyref="Simulation.attract__x3A__calculate.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Properties</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>content: </entry>
+                                    <entry>
+                                       <b>complex</b>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Used by</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="2*" align="left"/>
+                              <colspec colwidth="8*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>Complex Type </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Simulation.attract__x3A__aggregate.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Simulation.attract__x3A__aggregate]</draft-comment>
+                                    </entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Model</entry>
+                  <entry>
+                     <xref keyref="Simulation.attract__x3A__calculate__x3A__output_node.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate__x3A__output_node]</draft-comment> , <xref keyref="Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Children</entry>
+                  <entry>
+                     <xref keyref="Simulation.attract__x3A__calculate__x3A__output_node.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate__x3A__output_node]</draft-comment>, <xref keyref="Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated.dita"/>
+                     <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated]</draft-comment>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Instance</entry>
+                  <entry>
+                     <codeblock outputclass="language-xml">&lt;ptn:Simulation.attract__x3A__calculate__x3A__ignored ptn:debug="" ptn:Distance="" ptn:Label="" ptn:Label__x3A__context="" ptn:Output_Node__x3A__attract="" ptn:Simulated_potential__x3A__diff="" ptn:Simulated_potential__x3A__less_charged_node="" ptn:Simulated_potential__x3A__more_charged_node="" ptn:Simulation.attract__x3A__calculate.best.unique.position="" xmlns:ptn="p5_test_neuron"&gt;
+  &lt;ptn:Simulation.attract__x3A__calculate__x3A__output_node ptn:debug="" id="" ptn:New="" ptn:Simulation.attract__x3A__calculate__x3A__output_node.type=""&gt;{0,3}&lt;/ptn:Simulation.attract__x3A__calculate__x3A__output_node&gt;
+  &lt;ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated ptn:debug="" id="" ptn:New="" ptn:Simulation.attract__x3A__calculate__x3A__output_node.type=""&gt;{0,3}&lt;/ptn:Simulation.attract__x3A__calculate__x3A__output_node__x3A__validated&gt;
+&lt;/ptn:Simulation.attract__x3A__calculate__x3A__ignored&gt;</codeblock>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Attributes</entry>
+                  <entry>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="3">
+                              <colspec colnum="1" colname="col1" align="left" colwidth="3*"/>
+                              <colspec colnum="2" colname="col2" align="left" colwidth="3*"/>
+                              <colspec colnum="3" colname="col3" align="left" colwidth="1*"/>
+                              <thead>
+                                 <row>
+                                    <entry>QName</entry>
+                                    <entry>Type</entry>
+                                    <entry>Use</entry>
+                                 </row>
+                              </thead>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Distance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Distance]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Distance.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Distance]</draft-comment>
+                                    </entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="p5_test_neuron_Label.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][p5_test_neuron_Label]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="Output_Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Output_Node]</draft-comment>
+                                    </entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Label__x3A__context.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Label__x3A__context]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="Output_Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Output_Node]</draft-comment>
+                                    </entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">Used in attract to provide linking for model</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Output_Node__x3A__attract.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Output_Node__x3A__attract]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="Output_Node__x3A__temp.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Output_Node__x3A__temp]</draft-comment>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Simulated_potential__x3A__diff.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__diff]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="Simulated_potential.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential]</draft-comment>
+                                    </entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Simulated_potential__x3A__less_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__less_charged_node]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="Output_Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Output_Node]</draft-comment>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">To decide further strategy of new model</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Simulated_potential__x3A__more_charged_node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulated_potential__x3A__more_charged_node]</draft-comment>
+                                    </entry>
+                                    <entry>
+                                       <xref keyref="Output_Node.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Output_Node]</draft-comment>
+                                    </entry>
+                                    <entry>required</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">To decide further strategy of new model</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="Simulation.attract__x3A__calculate.best.unique.position.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][Simulation.attract__x3A__calculate.best.unique.position]</draft-comment>
+                                    </entry>
+                                    <entry>xs:int</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                                 <row>
+                                    <entry namest="col1" nameend="col3">Just for select in for-each row number order best</entry>
+                                 </row>
+                                 <row>
+                                    <entry>
+                                       <xref keyref="debug.dita"/>
+                                       <draft-comment author="a.binder">#386 -[$ref/@refId][debug]</draft-comment>
+                                    </entry>
+                                    <entry>xs:string</entry>
+                                    <entry>optional</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                     <p>
+                        <table frame="all" rowsep="1" colsep="1">
+                           <tgroup cols="2">
+                              <colspec colwidth="1*" align="left"/>
+                              <colspec colwidth="9*" align="left"/>
+                              <tbody>
+                                 <row>
+                                    <entry>
+                                       <b>Wildcard:</b>
+                                    </entry>
+                                    <entry>ANY attribute from namespace(s) 'http://biuro.biall-net.pl/xmlschema_procesy5/WPS_Functions/system_ui_info_speech/system_ui_info_speech.xsd'</entry>
+                                 </row>
+                              </tbody>
+                           </tgroup>
+                        </table>
+                     </p>
+                  </entry>
+               </row>
+               <row>
+                  <entry>Schema location</entry>
+                  <entry>file:/Users/a.binder/procesy5-dita-templates-druki/Imaginaerum/p5_test_neuron/test_neuron.xsd</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </body>
+</topic>
