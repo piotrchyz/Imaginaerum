@@ -5,7 +5,8 @@
     <glossdef>
         <fig id="fig_fyf_qhq_qlb">
             <title>Files used by simulator</title>
-            <image href="docs/files_sim.png" id="image_r4b_shq_qlb" width="500"/>
+            <image href="docs/files_sim.png" id="image_r4b_shq_qlb"  
+                height="300"/>
         </fig>
     </glossdef>
     <related-links>
