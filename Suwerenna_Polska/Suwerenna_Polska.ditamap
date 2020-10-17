@@ -384,16 +384,16 @@
             <topicref href="../Geografia/chiny.dita">
                 <topicref href="tomasz_gryguc__przemowienie_xi_jinpinga__swiat_bez_zachodu.dita"/>
             </topicref>
-            <topicref href="unia_europejska.dita">
+            <topicref href="../Geografia/unia_europejska.dita">
                 <topicref href="laicyzm_francji.dita"/>
                 <topicref href="luterianizm_vs_mentalnosc_polakow.dita"/>
                 <topicref href="niemiecki_mistycyzm.dita"/>
                 <topicref href="ue__suwerennosc_wzgledem_swego_suwerena.dita"/>
             </topicref>
-            <topicref href="wielka_brytania.dita">
+            <topicref href="../Geografia/wielka_brytania.dita">
                 <topicref href="polonia_w_angli_oddaje_glosy_na_konfederacje.dita"/>
             </topicref>
-            <topicref href="slawia.dita">
+            <topicref href="../Geografia/slawia.dita">
                 <topicref href="iv_rzesza__imigranci__jaki_procent_z_nich__to_kryminalisci.dita"/>
             </topicref>
             <topicref href="../Geografia/turcja.dita">
@@ -552,8 +552,8 @@
             <topicref href="dyskusje_na_temat.dita">
                 <topicref href="swaroznica.dita"/>
             </topicref>
-            <topicref href="scytia.dita">
-                <topicref href="szczecin.dita"/>
+            <topicref href="../Geografia/scytia.dita">
+                <topicref href="../Geografia/szczecin.dita"/>
                 <topicref href="ksiestwo_pomorskie.dita"/>
                 <topicref href="gryf__symbolika.dita"/>
             </topicref>

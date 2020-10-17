@@ -2,13 +2,13 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Geografia</title>
-    <topicref href="argentyna.dita"/>
     <topicref href="afganistan.dita"/>
     <topicref href="algieria.dita"/>
     <topicref href="andora.dita"/>
     <topicref href="angola.dita"/>
     <topicref href="antarktyda.dita"/>
     <topicref href="antigua.dita"/>
+    <topicref href="argentyna.dita"/>
     <topicref href="australia.dita"/>
     <topicref href="azerbejdzan.dita"/>
     <topicref href="chiny.dita"/>
@@ -18,7 +18,12 @@
     <topicref href="niemcy.dita"/>
     <topicref href="nigeria.dita"/>
     <topicref href="rosja.dita"/>
+    <topicref href="scytia.dita"/>
+    <topicref href="slawia.dita"/>
+    <topicref href="szczecin.dita"/>
     <topicref href="szwecja.dita"/>
     <topicref href="turcja.dita"/>
+    <topicref href="unia_europejska.dita"/>
     <topicref href="usa.dita"/>
+    <topicref href="wielka_brytania.dita"/>
 </map>
