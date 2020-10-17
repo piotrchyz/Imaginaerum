@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Geografia</title>
+    <topicref href="argentyna.dita"/>
+    <topicref href="afganistan.dita"/>
+    <topicref href="algieria.dita"/>
+    <topicref href="andora.dita"/>
+    <topicref href="angola.dita"/>
+    <topicref href="antarktyda.dita"/>
+    <topicref href="antigua.dita"/>
+    <topicref href="australia.dita"/>
+    <topicref href="azerbejdzan.dita"/>
+    <topicref href="chiny.dita"/>
+    <topicref href="iran.dita"/>
+    <topicref href="izrael.dita"/>
+    <topicref href="liban.dita"/>
+    <topicref href="niemcy.dita"/>
+    <topicref href="nigeria.dita"/>
+    <topicref href="rosja.dita"/>
+    <topicref href="szwecja.dita"/>
+    <topicref href="turcja.dita"/>
+    <topicref href="usa.dita"/>
+</map>

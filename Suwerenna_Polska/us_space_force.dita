@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="us_space_force">
+    <title>US Space Force</title>
+    <body>
+        <p><data>2020-06-19</data></p>
+        <p>Dziedzictwo Nicoli Tesli i wielu naukowców po nim.</p>
+        <p>Wszystko w temacie.</p>
+        <p><object
+                data="https://www.youtube.com/embed/Gn6-fT4ZIpo&amp;feature=share&amp;fbclid=IwAR1Wce6Ae9-LYbQyQAK94Cq5lLAqEzf_jpHtmzyk6GzC4aQh5GNfs3pCzSk"
+                outputclass="iframe">
+                <param name="allowfullscreen"/>
+            </object></p>
+    </body>
+</topic>
