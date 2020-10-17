@@ -2,11 +2,29 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
     <title>Geografia</title>
+    <topicref href="geografia_readme.dita"/>
+    <topicref href="wielka_brytania.dita">
+        <topicref href="londyn.dita">
+            <topicref href="stolica.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="polska.dita">
+        <topicref href="warszawa.dita">
+            <topicref href="stolica.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="scytia.dita">
+        <topicref href="szczecin.dita">
+            <topicref href="stolica.dita"/>
+        </topicref>
+    </topicref>
+    <topicref href="antarktyda.dita">
+        <topicref href="ziemia_krolowej_maud.dita"/>
+    </topicref>
     <topicref href="afganistan.dita"/>
     <topicref href="algieria.dita"/>
     <topicref href="andora.dita"/>
     <topicref href="angola.dita"/>
-    <topicref href="antarktyda.dita"/>
     <topicref href="antigua.dita"/>
     <topicref href="argentyna.dita"/>
     <topicref href="australia.dita"/>
@@ -18,12 +36,17 @@
     <topicref href="niemcy.dita"/>
     <topicref href="nigeria.dita"/>
     <topicref href="rosja.dita"/>
-    <topicref href="scytia.dita"/>
     <topicref href="slawia.dita"/>
-    <topicref href="szczecin.dita"/>
     <topicref href="szwecja.dita"/>
     <topicref href="turcja.dita"/>
     <topicref href="unia_europejska.dita"/>
     <topicref href="usa.dita"/>
-    <topicref href="wielka_brytania.dita"/>
+    <topicref href="norwegia.dita"/>
+    <topicref href="arktyka.dita"/>
+    <topicref href="finlandia.dita"/>
+    <topicref href="japonia.dita"/>
+    <topicref href="maroko.dita"/>
+    <topicref href="egipt.dita"/>
+    <topicref href="palestyna.dita"/>
+    <topicref href="grenlandia.dita"/>
 </map>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="mechanizm_absorbcji_ideii">
+    <title>Mechanizm absorbcji precepcji</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>Oto kolejność postępującego fanatzmu ideologicznego; proces reprezentuje naturalną
+            kolej rzeczy.<p/></context>
+        <steps>
+            <step>
+                <cmd>zainteresowanie</cmd>
+            </step>
+            <step>
+                <cmd>wiedza</cmd>
+            </step>
+            <step>
+                <cmd>specjalizacja</cmd>
+            </step>
+            <step>
+                <cmd>nacjonalizm</cmd>
+            </step>
+            <step>
+                <cmd>nazim</cmd>
+            </step>
+            <step>
+                <cmd>faszyzm</cmd>
+            </step>
+            <step>
+                <cmd>socjalizm</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

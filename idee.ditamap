@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Idee</title>
+    <topicref href="Idee/idee_readme.dita"/>
+    <topicref href="Idee/mechanizm_absorbcji_percepcji.dita"/>
+    <topicref href="wolnosc-lewactwo-prawactwo/przemowienie_jacka_kuronia_o_bogactwie.dita"/>
+    <topicref href="Idee/kapitalizm.dita"/>
+    <topicref href="Idee/socjalizm.dita"/>
+    <topicref href="Idee/nazizm.dita"/>
+    <topicref href="Idee/faszyzm.dita"/>
+    <topicref href="Idee/nacjonalizm.dita"/>
+    <topicref href="Idee/egalitaryzm.dita"/>
+</map>

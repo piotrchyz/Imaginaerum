@@ -159,8 +159,10 @@
                 <topicref href="litwo__ojczyzno_moja.dita"/>
                 <topicref href="polska__narod__ktory_gnije_w_milczeniu.dita"/>
                 <topicref
-                    href="14_czerwiec__to_dzien_pamieci_o_polakach_zeslanych_do_auschwitz.dita"/>
+                    href="dzien_pamieci_o_polakach_zeslanych_do_auschwitz.dita"/>
                 <topicref href="roman_kryze__odpowiada_za_smierc_pileckiego.dita"/>
+                <topicref
+                    href="../wolnosc-lewactwo-prawactwo/referencje.jaruzelski_mordowa__ak.dita"/>
             </topicref>
             <topicref href="polityka.dita">
                 <topicref href="pis.dita">
@@ -351,14 +353,15 @@
         </topicref>
         <topicref href="geopolitycznosc_swiata.dita">
             <topicref href="../Geografia/antarktyda.dita">
-                <topicref href="brytyjczycy_antarktyda.dita">
+                <topicref href="brytyjczycy_a_antarktyda.dita">
                     <topicref href="zolnierze_sas_na_antarktydzie.dita"/>
                     <topicref href="brytyjskie_archiwa_antarktyda.dita"/>
                 </topicref>
-                <topicref href="gry_wojenne_o_antarktyde.dita"/>
                 <topicref href="iii_rzesza.dita">
                     <topicref href="karl_donitz.dita"/>
                 </topicref>
+                <topicref href="gry_wojenne_o_antarktyde.dita"/>
+                <topicref href="../Geografia/roszczenia_terytorialne_na_antarktydzie.dita"/>
             </topicref>
             <topicref href="../Geografia/usa.dita">
                 <topicref href="glosowanie_w_sprawie_447.dita"/>
@@ -454,19 +457,27 @@
             <topicref href="../Geografia/angola.dita"/>
             <topicref href="../Geografia/antigua.dita"/>
             <topicref href="../Geografia/argentyna.dita"/>
+            <topicref href="../Geografia/norwegia.dita">
+                <topicref href="../Idee/egalitaryzm.dita"/>
+                <topicref href="../Geografia/ziemia_krolowej_maud.dita"/>
+            </topicref>
         </topicref>
         <topicref href="agenda_lozy.dita">
-            <topicref href="kosciol_katolicki__a_rothschildowie.dita"/>
+            <topicref href="kosciol_katolicki.dita">
+                <topicref href="kosciol_katolicki__a_rothschildowie.dita"/>
+            </topicref>
             <topicref href="masoneria_w_gda_sku.dita"/>
             <topicref href="krolestwo_polskie_a_zydostwo.dita"/>
             <topicref href="napoleon_bonaparte_i_mistycyzm.dita"/>
             <topicref href="iv_rzesza.dita">
                 <topicref href="iv_rzesza__imigranci__jaki_procent_z_nich__to_kryminalisci.dita"/>
             </topicref>
-            <topicref href="szwajcarscy_templariusze.dita"/>
             <topicref href="zakon_krzyzacki.dita"/>
             <topicref href="bractwo_babilonskie__sekretna_historia_odkrycia_ameryki.dita"/>
-            <topicref href="dorobek_templariuszy.dita"/>
+            <topicref href="templariusze.dita">
+                <topicref href="szwajcarscy_templariusze.dita"/>
+                <topicref href="dorobek_templariuszy.dita"/>
+            </topicref>
         </topicref>
     </topicref>
     <topicref href="technologia.dita">
@@ -496,7 +507,6 @@
                 href="zabronione_odkrycia__niewygodne_ekonomicznie_dla_wspolczesnego_swiata.dita"/>
             <topicref href="starozytne_wynalazki__cywilizacja_z_balochistanu.dita"/>
             <topicref href="cywilizacja__technologia_promienista__a_nie_indykcyjna.dita"/>
-            <topicref href="kompleks_riese___dolina_krzemowa__iii_rzeszy.dita"/>
             <topicref href="technologia__wajtmany__skrzydla_zuka_etc.dita"/>
         </topicref>
         <topicref href="akasha.dita">
@@ -510,6 +520,7 @@
             <topicref href="w_jaki_sposob_ai_oraz_ludzkosc_moga_koegzystowac.dita"/>
         </topicref>
         <topicref href="iii_rzesza.dita">
+            <topicref href="kompleks_riese___dolina_krzemowa__iii_rzeszy.dita"/>
             <topicref href="krew_bogow.dita"/>
         </topicref>
     </topicref>
