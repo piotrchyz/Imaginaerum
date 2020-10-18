@@ -613,7 +613,7 @@
         <topicref href="historia_ziemi_potop_baalbeck.dita"/>
         <topicref href="szkliwo_bron_wysokoenergetyczna.dita"/>
     </topicref>
-    <topicref href="planeta_ziemia.dita">
+    <topicref href="../Geografia/planeta_ziemia.dita">
         <topicref href="amazaonia_plonie.dita"/>
         <topicref href="globalne_ocieplenie__a_czestotliwosci.dita"/>
         <topicref href="topnieje_lod_na_grenlandii.dita"/>
@@ -621,6 +621,7 @@
         <topicref href="geoinzynieria__bron_promienista_nowej_generacji.dita"/>
         <topicref href="robert_downey_jr__chce_w_ciagu_dekady_oczyscic_ziemie.dita"/>
         <topicref href="geoinzynieria__zaniepokojony_polak_o_tym__co_sie_dzieje.dita"/>
+        <topicref href="zasmiecona_planeta.dita"/>
     </topicref>
     <topicref href="tozsamosc_polaka.dita">
         <topicref href="herb_polski.dita"/>

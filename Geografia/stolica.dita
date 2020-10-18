@@ -3,5 +3,18 @@
 <?xml-model href="urn:oasis:names:tc:dita:rng:glossentry.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <glossentry id="stolica">
     <glossterm>stolica</glossterm>
-    <glossdef></glossdef>
+    <glossdef>
+        <p><b>Stolica</b> – miasto, w którym znajduje się siedziba centralnych organów <xref
+                href="https://pl.wikipedia.org/wiki/Pa%C5%84stwo" format="html" scope="external"
+                >państwa</xref> lub główne miasto <xref
+                href="https://pl.wikipedia.org/wiki/Okr%C4%99g_(jednostka_administracyjna)"
+                format="html" scope="external">okręgu</xref>, <xref
+                href="https://pl.wikipedia.org/wiki/Rejon" format="html" scope="external"
+                >rejonu</xref>, <xref href="https://pl.wikipedia.org/wiki/Wojew%C3%B3dztwo"
+                format="html" scope="external">województwa</xref>, <xref
+                href="https://pl.wikipedia.org/wiki/Powiat" format="html" scope="external"
+                >powiatu</xref>, <xref href="https://pl.wikipedia.org/wiki/Kraina_historyczna"
+                format="html" scope="external">krainy historycznej</xref> itp.</p>
+        <p><xref href="https://pl.wikipedia.org/wiki/Stolica" format="html" scope="external"/></p>
+    </glossdef>
 </glossentry>
