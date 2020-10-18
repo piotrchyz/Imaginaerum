@@ -60,7 +60,11 @@
             <topicref href="portugalia.dita"/>
             <topicref href="litwa.dita"/>
             <topicref href="lotwa.dita"/>
-            <topicref href="estonia.dita"/>
+            <topicref href="estonia.dita">
+                <topicref href="tallin.dita">
+                    <topicref href="stolica.dita"/>
+                </topicref>
+            </topicref>
             <topicref href="luksemburg.dita"/>
             <topicref href="slowacja.dita"/>
             <topicref href="monako.dita"/>
@@ -139,7 +143,11 @@
                 <topicref href="grenlandia.dita"/>
                 <topicref href="usa.dita"/>
                 <topicref href="kanada.dita"/>
-                <topicref href="meksyk.dita"/>
+                <topicref href="meksyk.dita">
+                    <topicref href="miasta.dita">
+                        <topicref href="tijuana.dita"/>
+                    </topicref>
+                </topicref>
                 <topicref href="kuba.dita"/>
             </topicref>
             <topicref href="ameryka_srodkowa.dita">
