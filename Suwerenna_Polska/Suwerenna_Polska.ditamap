@@ -504,10 +504,17 @@
         </topicref>
     </topicref>
     <topicref href="technologia.dita">
+        <topicref href="miszmasz.dita">
+            <topicref
+                href="zabronione_odkrycia__niewygodne_ekonomicznie_dla_wspolczesnego_swiata.dita"/>
+            <topicref href="starozytne_wynalazki__cywilizacja_z_balochistanu.dita"/>
+            <topicref href="cywilizacja__technologia_promienista__a_nie_indykcyjna.dita"/>
+            <topicref href="technologia__wajtmany__skrzydla_zuka_etc.dita"/>
+        </topicref>
         <topicref href="neuranet.dita">
             <topicref href="dziedziczenie_pamieci_neuronalnej.dita"/>
             <topicref href="synapsy_muchy.dita"/>
-            <topicref href="dlatego_internet_wartosci.dita"/>
+            <topicref href="sekwencyjnosc_sieci_neuronowej.dita"/>
         </topicref>
         <topicref href="sektor_kosmiczny.dita">
             <topicref href="odyseja_kosmiczna_2020.dita"/>
@@ -526,13 +533,6 @@
             <topicref href="chcemy_miec_lepsze_zdrowie__czy_szybzy_internet.dita"/>
             <topicref href="5g__koronawirus__a_rockefeller.dita"/>
         </topicref>
-        <topicref href="miszmasz.dita">
-            <topicref
-                href="zabronione_odkrycia__niewygodne_ekonomicznie_dla_wspolczesnego_swiata.dita"/>
-            <topicref href="starozytne_wynalazki__cywilizacja_z_balochistanu.dita"/>
-            <topicref href="cywilizacja__technologia_promienista__a_nie_indykcyjna.dita"/>
-            <topicref href="technologia__wajtmany__skrzydla_zuka_etc.dita"/>
-        </topicref>
         <topicref href="akasha.dita">
             <topicref
                 href="nassim_haramein__opowiada_o_akaszy__w_ktorej_zapisane_sa_dzieje_ziemi.dita"/>
@@ -541,7 +541,7 @@
             <topicref href="robert_downey_jr__chce_w_ciagu_dekady_oczyscic_ziemie.dita"/>
             <topicref href="knf_wydala_zgode_na_polski_e_pieniadz.dita"/>
             <topicref href="mamy_juz_ponad_bilion_zlotych_dlugu_publicznego.dita"/>
-            <topicref href="w_jaki_sposob_ai_oraz_ludzkosc_moga_koegzystowac.dita"/>
+            <topicref href="ai_vs_ludzkosc_koegzystencja.dita"/>
         </topicref>
         <topicref href="iii_rzesza.dita">
             <topicref href="kompleks_riese___dolina_krzemowa__iii_rzeszy.dita"/>
@@ -616,6 +616,7 @@
         </topicref>
         <topicref href="historia_ziemi_potop_baalbeck.dita"/>
         <topicref href="szkliwo_bron_wysokoenergetyczna.dita"/>
+        <topicref href="akakor.dita"/>
     </topicref>
     <topicref href="../Geografia/planeta_ziemia.dita">
         <topicref href="amazaonia_plonie.dita"/>

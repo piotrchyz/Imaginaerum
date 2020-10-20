@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="5g">
-    <title>Technologia 5G</title>
+    <title>Sieć 5G</title>
     <shortdesc>zakładka dotycząca technologii 5G</shortdesc>
     <body>
-        <p></p>
+        <p>Technologia 5G w Polsce to tak naprawdę zmodernizowane 4G.</p>
+        <p><keyword>Chiny</keyword> już dawno prześcigają Zachód (<keyword>USA</keyword>) na tym
+            polu. Jeżeli na to nałoży się zaawansowanie w opracowywaniu AI, a tak zapewne jest, to
+            wypracowują oni zasób strategiczny.</p>
     </body>
 </topic>

@@ -3,6 +3,7 @@
 <topic id="internet_wartosci_0">
     <title>Internet Wartości</title>
     <body>
-        <p></p>
+        <p>Powinien zawierać sporo abstrakcji, by wyrelacjonować dane już w silniku [patrz jak
+            zrobił Mendix]</p>
     </body>
 </topic>

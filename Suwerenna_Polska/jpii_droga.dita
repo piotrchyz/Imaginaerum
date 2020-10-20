@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="jpii_droga">
+    <title>JPII: Droga</title>
+    <body>
+        <p>Piękne słowa, godne szczyty.</p>
+        <p><object
+                data="https://www.youtube.com/embed/-ztuDN3baUg&amp;list=PLUBLx1KGFo_x1zMtQUEZ6QqBV4FqhU_l4"
+                outputclass="iframe">
+                <param name="allowfullscreen"/>
+            </object></p>
+    </body>
+</topic>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="sekwencyjnosc_sieci_neuronowej">
+    <title>Sekwencyjność Sieci Neuronowej</title>
+    <prolog>
+        <source>Arkadiusz Binder</source>
+    </prolog>
+    <body>
+        <p>Sekwencyjność w sieciach neuronowych nie jest wykorzystywana. Są to conajwyżej sieci
+            perceptronowe. Sieć neuronowa korzysta z modułów rozładowania i kumulowania stresu.
+            Operuje ona na sekwencyjności zdarzeń. </p>
+        <p>Obecnie sieci neuronowe wykorzystując mechanizm splątania i powiązań, ale nie sekwencji. </p>
+        <p>Nie można opierać rozwoju AI bez wykorzystywania sekwencji.</p>
+        <p/>
+    </body>
+</topic>

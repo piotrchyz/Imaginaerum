@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="grawitacja_to_nie_sila">
+    <title>Grawitacja to nie siła</title>
+    <shortdesc>czasoprzestrzeń jest zakrzywiona</shortdesc>
+    <body>
+        <p>Z tego wynika, że grawitacja nie istnieje, a po prostu czasoprzestrzeń jest zakrzywiona i
+            nasze obserwację na temat grawitacji są w pewnym stopniu błędne, ponieważ obserwujemy
+            coś spoza naturalnego flow czasoprzestrzeni.</p>
+        <p>To w takim razie: Ziemia kręci się wokół osi + przemieszcza się po orbicie wokół słońca +
+            przemieszcza się ze słońcem w układzie Droga Mleczna. A zatem jak dziwnie musi być
+            uformowana czasoprzestrzeń, by ludzie po przeciwnych stronach planety (w jakimkolwiek
+            jej punkcie) "przyciągali" się tak samo (lub Ziemia spadała na nich w ten sam sposób),
+            że stoją na Ziemi.</p>
+        <p>Jeżeli rzeczywiście czasoprzestrzeń jest zawinięta w jakieś spiralo-rogale, bliżej nam
+            nie zrozumiałe, to istnieje możliwość takiej kalibracji urządzenia, iż będzie w stanie
+            ono sprawić, iż obiekt stanie się nieważki.</p>
+        <p>To oznacza, iż wynoszenie masy na orbitę silnikami rakietowymi jest dlatego tak
+            nieefektywne, ponieważ tor przemieszczania się wektorów prędkości jest
+            nieodpowiedni.</p>
+        <p>Wydaje się, że możnaby ten problem rozwiązać.</p>
+        <p><object
+                data="https://www.youtube.com/embed/XRr1kaXKBsU&amp;feature=youtu.be&amp;fbclid=IwAR3NIX2nouHju3dNKhCj7bLo5qdpoeuJxHIRJK8yyNmtJ-ZkC0sKtmMmYKA"
+                outputclass="iframe">
+                <param name="allowfullscreen"/>
+            </object></p>
+    </body>
+</topic>
